@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/AC_HSC_CTRL/03_LITAF.tif
+#/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif
 from   PIL                   import Image
 from   scipy                 import ndimage
 from   skimage               import data
@@ -12,38 +12,24 @@ import mahotas
 import scipy
 import struct
 import nikhil_lib
-#import nikhil_load
-#y = nikhil_load
-z = nikhil_lib
+import scipy.ndimage
 import matplotlib.cm as cm
-
+import matplotlib.pyplot as plt
+import mahotas
+import scipy.ndimage
+import numpy
+import matplotlib.cm as cm
 cmap = cm.Greys_r
 
-a = z.loadslice()
+import marco_load
+import analysis
 
-#print a[0].mean()
+images = ['03_LITAF.tif', '03_nuleo.tif']
+imarrays = marco_load.loadslice(images)
 
-plt.imshow(a[1], cmap = plt.get_cmap('gray'))
-#plt.show()
-
-nucleus = a[1]
-threshold = mahotas.otsu(nucleus)
-print threshold 
-
-nucleus[nucleus < threshold] = 0
-nucleus[nucleus >= threshold] = 255
-
-#plt.imshow(nucleus)
-#plt.show()
-#print nucleus
-
-binarynucleus = nucleus / 255
-fillnuc = scipy.ndimage.morphology.binary_fill_holes(binarynucleus)
-fillnuc = fillnuc.astype(np.uint8)
-fillnuc[fillnuc > 0] = 255
-
-#print fillnuc
-plt.imshow(fillnuc, cmap)
+plt.imshow(imarrays[1], cmap)
 plt.show()
 
-
+litafselected = analysis.findnuclei(imarrays[1], imarrays[0])
+plt.imshow(a[1], cmap = plt.get_cmap('gray'))
+plt.show()

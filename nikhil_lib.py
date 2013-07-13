@@ -18,16 +18,32 @@ def r2g(img):
 #
 
 def loadslice():
-	img1in = raw_input("Enter path of LITAF image: ")
+	img1in = /home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif #raw_input("Enter path of LITAF image: ")
 	img1 = plt.imread(img1in)
 	#img1 = np.array(img1)
 	gscale = r2g(img1)    
-	img2in = raw_input("Enter path of nucleus image: ")
+	img2in = /home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif #raw_input("Enter path of nucleus image: ")
 	img2 = plt.imread(img2in)
+	gscale2 = r2g(img2)
 	#img2 = np.array(img2)
-	return [gscale, img2]
+	return [gscale, gscale2]
 
 #
+
+def otsufill(img1):
+	global filled
+	T = mahotas.thresholding.otsu(img1)
+	img1[ img1<T ] = 0
+	img1[ img1>=T ] = 255
+	C = img1 / 255
+	plt.imshow(img1, cmap)
+	plt.show()
+	filled = scipy.ndimage.morphology.binary_fill_holes(C)
+	filled = filled.astype(np.uint8)
+	filled[filled>0]=255
+	plt.imshow(filled, cmap)
+	plt.show()
+	
 
 
 

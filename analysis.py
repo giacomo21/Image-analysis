@@ -20,7 +20,6 @@ def findnuclei(A):
 	# plt.show()
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
 	filled = filled.astype(numpy.uint8)
-	# filled[filled>0]=255
 	return(filled)
 #
 
