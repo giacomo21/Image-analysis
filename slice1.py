@@ -44,6 +44,6 @@ def loadslice():
 	return [gscale,img2]
 
 a = loadslice()
-print [a(0)]
+print a[0]
 
 
