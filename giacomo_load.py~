@@ -4,4 +4,4 @@ def loadslice(nuclei, litaf):		# loading two images
 	Wnucleiarr = nucleiarr[:, :, 0]	# selecting the white channel for the nuclei images
 	Rlitafarr = litafarr[:,:,0]	# selecting the red channel for the litaf images
 	RWarr = [Wnucleiarr, Rlitafarr]
-	
+	return(RWarr)
