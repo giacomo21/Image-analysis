@@ -31,7 +31,7 @@ litafselectedAC = giacomo_analysis.analysis(tempdata2[0], tempdata2[1])
 
 litafnucleusaverageAC = giacomo_average.averageintens(litafselectedAC)
 
-plotbox = plotbox(litafselectedNA, litafselectedAC)
+Y = giacomo_plotvalues.plotbox(litafselectedNA, litafselectedAC)
 
 mann_whitney = scipy.stats.mannwhitneyu(litafselectedNA, litafselectedAC)
 
