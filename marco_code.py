@@ -2,12 +2,14 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 cmap = cm.Greys_r
 
-import marco_load
+import load
+import analysis
 
-temp = ['03_LITAF.tif','03_nucleo.tif']
-tempdata= marco_load.loadslice(temp)
+AC = ['../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_nucleus.tif','../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_LITAF.tif']
+NA = ['../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/03_nucleus.tif','../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/03_LITAF.tif']
 
-plt.imshow(tempdata[0], cmap)
-plt.show()
+ACdata= load.loadslice(AC)
+NAdata= load.loadslice(NA)
 
-
+ACres = analysis.litafnucleus(ACdata[0], ACdata[1])
+NAres = analysis.litafnucleus(NAdata[0], NAdata[1])
