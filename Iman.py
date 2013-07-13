@@ -8,7 +8,7 @@ ndarr = plt.imread('image.png')
 
 # Import a slice of images
 
-ndarr_slice = plt.imread[('image.png'),('image1.png')]
+ndarr_slice = plt.imread(['image.png'],['image1.png'])
 
 # Select the Red channel
 
