@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+import matplotlib.pyplot as plt
+
+import matplotlib.cm as cm
+
+original = plt.imread('image.png')
+
+cmap = cm.Greys_r
+
+ndarr=np.array(converted_img)
+=======
 something
 #!/usr/bin/env python
 
@@ -16,3 +27,7 @@ import struct
 
 
 jhsdfjfdjfdjdf
+fede
+nicola
+
+>>>>>>> bd8178fe267c80790fef9e02e896bf23388bf01c
