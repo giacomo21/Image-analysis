@@ -11,7 +11,6 @@ import pymorph
 import mahotas
 import scipy
 import struct
-import nikhil_lib
 import scipy.ndimage
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
@@ -24,12 +23,12 @@ cmap = cm.Greys_r
 import marco_load
 import analysis
 
-images = ['03_LITAF.tif', '03_nuleo.tif']
+images = ['03_LITAF.tif', '03_nucleo.tif']
 imarrays = marco_load.loadslice(images)
 
 plt.imshow(imarrays[1], cmap)
 plt.show()
 
-litafselected = analysis.findnuclei(imarrays[1], imarrays[0])
-plt.imshow(a[1], cmap = plt.get_cmap('gray'))
-plt.show()
+litafselected = analysis.findnuclei(imarrays[1])
+#plt.imshow(a[1], cmap = plt.get_cmap('gray'))
+#plt.show()

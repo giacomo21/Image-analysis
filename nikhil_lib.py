@@ -18,14 +18,15 @@ def r2g(img):
 #
 
 def loadslice():
-	img1in = raw_input("Enter path of LITAF image: ")
+	img1in = /home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif #raw_input("Enter path of LITAF image: ")
 	img1 = plt.imread(img1in)
 	#img1 = np.array(img1)
 	gscale = r2g(img1)    
-	img2in = raw_input("Enter path of nucleus image: ")
+	img2in = /home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif #raw_input("Enter path of nucleus image: ")
 	img2 = plt.imread(img2in)
+	gscale2 = r2g(img2)
 	#img2 = np.array(img2)
-	return [gscale, img2]
+	return [gscale, gscale2]
 
 #
 

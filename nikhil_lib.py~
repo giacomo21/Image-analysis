@@ -24,8 +24,9 @@ def loadslice():
 	gscale = r2g(img1)    
 	img2in = raw_input("Enter path of nucleus image: ")
 	img2 = plt.imread(img2in)
+	gscale2 = r2g(img2)
 	#img2 = np.array(img2)
-	return [gscale, img2]
+	return [gscale, gscale2]
 
 #
 
@@ -38,7 +39,7 @@ def otsufill(img1):
 	plt.imshow(img1, cmap)
 	plt.show()
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
-	filled = filled.astype(numpy.uint8)
+	filled = filled.astype(np.uint8)
 	filled[filled>0]=255
 	plt.imshow(filled, cmap)
 	plt.show()

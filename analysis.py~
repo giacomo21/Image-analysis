@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import mahotas
 import scipy.ndimage
 import numpy
-import matplotlib.cm as cm
+# import matplotlib.cm as cm
 
 cmap = cm.Greys_r
 

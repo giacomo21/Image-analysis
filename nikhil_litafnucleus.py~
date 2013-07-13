@@ -13,9 +13,6 @@ import scipy
 import struct
 import nikhil_lib
 import scipy.ndimage
-#import nikhil_load
-#y = nikhil_load
-z = nikhil_lib
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import mahotas
@@ -24,18 +21,15 @@ import numpy
 import matplotlib.cm as cm
 cmap = cm.Greys_r
 
-a = z.loadslice()
-b = otsufill
-#print a[0].mean()
+import marco_load
+import analysis
 
+images = ['03_LITAF.tif', '03_nuleo.tif']
+imarrays = marco_load.loadslice(images)
+
+plt.imshow(imarrays[1], cmap)
+plt.show()
+
+litafselected = analysis.findnuclei(imarrays[1], imarrays[0])
 plt.imshow(a[1], cmap = plt.get_cmap('gray'))
-#plt.show()
-
-nucleus = a[1]
-#threshold = mahotas.thresholding.otsu(nucleus)
-#print threshold 
-
-#nucleus[nucleus < threshold] = 0
-#nucleus[nucleus >= threshold] = 255
-
-print b[nucleus]
+plt.show()
