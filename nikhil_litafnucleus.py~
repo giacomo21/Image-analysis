@@ -25,7 +25,7 @@ import matplotlib.cm as cm
 cmap = cm.Greys_r
 
 a = z.loadslice()
-
+b = otsufill
 #print a[0].mean()
 
 plt.imshow(a[1], cmap = plt.get_cmap('gray'))
@@ -38,7 +38,4 @@ nucleus = a[1]
 #nucleus[nucleus < threshold] = 0
 #nucleus[nucleus >= threshold] = 255
 
-otsufill(nucleus)
-
-
-
+print b[nucleus]
