@@ -1,4 +1,4 @@
-#Import a single image
+# Import a single image
 
 import matplotlib.pyplot as plt
 
