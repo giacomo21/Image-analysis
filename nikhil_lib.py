@@ -29,6 +29,21 @@ def loadslice():
 
 #
 
+def otsufill(img1):
+	global filled
+	T = mahotas.thresholding.otsu(img1)
+	img1[ img1<T ] = 0
+	img1[ img1>=T ] = 255
+	C = img1 / 255
+	plt.imshow(img1, cmap)
+	plt.show()
+	filled = scipy.ndimage.morphology.binary_fill_holes(C)
+	filled = filled.astype(np.uint8)
+	filled[filled>0]=255
+	plt.imshow(filled, cmap)
+	plt.show()
+	
+
 
 
 #Select channel; grayscale

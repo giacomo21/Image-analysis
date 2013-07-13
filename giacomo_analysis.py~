@@ -17,6 +17,8 @@ def analysis(A, B):
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
 	filled = filled.astype(numpy.uint8)
 	filled[filled>0]=255
+	print filled
+	print filled.mean()
 	plt.imshow(filled, cmap)
 	plt.show()
 	selection = B[filled>0]

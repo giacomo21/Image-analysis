@@ -12,6 +12,7 @@ def analysis(A, B):
 	A[ A<T ] = 0
 	A[ A>=T ] = 255
 	C = A / 255
+	print C.mean()
 	plt.imshow(A, cmap)
 	plt.show()
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
