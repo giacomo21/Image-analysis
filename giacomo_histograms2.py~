@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+
+def histog(A, B):
+	w0 = np.ones_like(B)
+	w0[:len(B)/2] = 0.5
+

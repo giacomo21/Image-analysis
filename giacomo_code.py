@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt	# import libraries
 import matplotlib.cm as cm
 import scipy.ndimage
 import numpy as np
+import scipy.stats
 
 cmap = cm.Greys_r
 
@@ -9,10 +10,13 @@ import marco_load
 import giacomo_analysis
 import giacomo_average
 import giacomo_plotvalues
+import giacomo_histograms
+import giacomo_density
 
 temp1 = ['03_nucleo_NACTRL.tif', '03_LITAF_NACTRL.tif']
 tempdata1 = marco_load.loadslice(temp1)
 
+# to show the nuclei grayscale image
 # plt.imshow(tempdata1[0], cmap)
 # plt.show()
 
@@ -27,7 +31,17 @@ litafselectedAC = giacomo_analysis.analysis(tempdata2[0], tempdata2[1])
 
 litafnucleusaverageAC = giacomo_average.averageintens(litafselectedAC)
 
-plot1 = plot(litafselectedNA, litafselectedAC)
+plotbox = plotbox(litafselectedNA, litafselectedAC)
+
+mann_whitney = scipy.stats.mannwhitneyu(litafselectedNA, litafselectedAC)
+
+print mann_whitney
+
+histogram = giacomo_histograms.histog(litafselectedNA, litafselectedAC)
+
+density = giacomo_density.analyticaldistr(litafselectedNA, litafselectedAC)
+
+
 
 
 
