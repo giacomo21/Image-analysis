@@ -41,8 +41,9 @@ def loadslice():
 	img2in = raw_input("Enter path of nucleus image: ")
 	img2 = plt.imread(img2in)
 	#img2 = np.array(img2)
-	print img(gscale,img2)
+	return [gscale,img2]
 
-loadslice()
+a = loadslice()
+print [a(0)]
 
 
