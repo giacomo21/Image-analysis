@@ -15,6 +15,9 @@ import nikhil_lib
 #import nikhil_load
 #y = nikhil_load
 z = nikhil_lib
+import matplotlib.cm as cm
+
+cmap = cm.Greys_r
 
 a = z.loadslice()
 
@@ -28,19 +31,19 @@ threshold = mahotas.otsu(nucleus)
 print threshold 
 
 nucleus[nucleus < threshold] = 0
-nucleus[nucleus > threshold] = 255
+nucleus[nucleus >= threshold] = 255
 
 #plt.imshow(nucleus)
 #plt.show()
+#print nucleus
 
-binarynucleus = pymorph.binary(nucleus)
+binarynucleus = nucleus / 255
 fillnuc = scipy.ndimage.morphology.binary_fill_holes(binarynucleus)
 fillnuc = fillnuc.astype(np.uint8)
 fillnuc[fillnuc > 0] = 255
 
-
-print fillnuc
-plt.imshow(fillnuc)
+#print fillnuc
+plt.imshow(fillnuc, cmap)
 plt.show()
 
 
