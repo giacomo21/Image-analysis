@@ -15,25 +15,10 @@ import struct
 import nikhil_lib
 z = nikhil_lib
 
-#Select channel; grayscale
-
-'''
-impath = raw_input("Enter image path: ")
-print "Image path:", impath
-img = plt.imread(impath)
-
-def r2g(img):
-    return img[:,:,0]
-
-gscale = r2g(img)    
-print gscale
-plt.imshow(gscale, cmap = plt.get_cmap('gray'))
-plt.show()
-'''
-
 a = z.loadslice()
-print a
 
-plt.imshow(a, cmap = plt.get_cmap('gray'))
+#print a[0].mean()
+
+plt.imshow(a[1], cmap = plt.get_cmap('gray'))
 plt.show()
 
