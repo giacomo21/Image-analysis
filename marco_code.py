@@ -3,14 +3,13 @@ import matplotlib.cm as cm
 cmap = cm.Greys_r
 
 import load
-import marco_analysis
+import analysis
 
-temp = ['../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_nucleus.tif','../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_LITAF.tif']
-tempdata= load.loadslice(temp)
+AC = ['../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_nucleus.tif','../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_LITAF.tif']
+NA = ['../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/03_nucleus.tif','../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/03_LITAF.tif']
 
-plt.imshow(tempdata[0], cmap)
-plt.show()
+ACdata= load.loadslice(AC)
+NAdata= load.loadslice(NA)
 
-
-npos = marco_analysis.findnuclei(tempdata[0])
-nint = marco_analysis.selectregion(tempdata[1], npos)
+ACres = analysis.litafnucleus(ACdata[0], ACdata[1])
+NAres = analysis.litafnucleus(NAdata[0], NAdata[1])
