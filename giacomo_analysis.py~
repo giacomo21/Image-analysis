@@ -11,4 +11,4 @@ def analysis(A, B):
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
 	print filled
 	selection = B[filled] # bug
-	return(selection)
+	return(C)

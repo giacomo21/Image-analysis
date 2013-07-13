@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import mahotas
 import scipy.ndimage
+import numpy
 
 def analysis(A, B):
 	global filled
@@ -9,6 +10,7 @@ def analysis(A, B):
 	A[ A>=T ] = 255
 	C = A / 255
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
-	print filled
-	selection = B[filled] # bug
-	return(C)
+	filled = filled.astype(numpy.uint8)
+	filled[filled>0]=255
+	selection = B[filled>0]
+	return(selection)
