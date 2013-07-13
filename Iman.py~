@@ -10,6 +10,7 @@ ndarr = np.array(orig)
 
 # Import a slice of images
 
+f
 
 # Select the Red channel
 
