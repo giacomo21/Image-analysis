@@ -9,5 +9,6 @@ import numpy                 as     np
 import matplotlib.pyplot     as     plt
 import pymorph 
 import mahotas
-import scipy
+import ipy
 import struct
+jh
