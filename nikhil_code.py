@@ -16,17 +16,19 @@ import matplotlib.cm         as     cm
 
 import load
 import analysis
+a = load
+b = analysis
 
 cmap = cm.Greys_r
 
-img1in = raw_input("Enter path of LITAF image: ")
-img2in = raw_input("Enter path of nucleus image: ")
+AC = ['/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/AC_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/AC_HSC_CTRL/03_LITAF.tif']
+NA = ['/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif']
 
-images = [img1in, img2in]
-imarrays = load.loadslice(images)
+AC = a.loadslice(AC)
+NA = a.loadslice(NA)
 
-plt.imshow(imarrays[1], cmap)
-plt.show()
-
-litafselected = analysis.findnuclei(imarrays[1])
+AClitafselected = b.litafnucleus(AC[0],AC[1])
+NAlitafselected = b.litafnucleus(NA[0],NA[1])
+print AClitafselected.shape, AClitafselected.max(), AClitafselected.mean()
+print NAlitafselected.shape, NAlitafselected.max(), NAlitafselected.mean()
 
