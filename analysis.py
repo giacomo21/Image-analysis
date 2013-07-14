@@ -33,3 +33,5 @@ def litafnucleus(nucleus, litaf):
 	regi = selectregion(litaf, nu)
 	return(regi)
 #
+
+def litaf
