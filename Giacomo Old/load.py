@@ -11,6 +11,16 @@ def load_image(filename):
 #
 
 '''
+Select only 1 channel from multichannel images
+Input: ndarray (more than 2 dimensions)
+Output: ndarray (2 dimensions)
+'''
+def select_channel(ndarr, channel = 0):
+	temp = ndarr[:,:,channel]
+	return(temp)
+# 
+
+'''
 Load a set of images for the same slice.
 Input: list of image filenames
 Output: list of ndarrayas (in the same order as input data)
@@ -37,24 +47,12 @@ def load_slices(slices, togray = False):
 	return(slices_data)
 #
 
-# Select different channels 
-
 '''
-Select only 1 channel from multichannel images
-Input: ndarray (more than 2 dimensions)
-Output: ndarray (2 dimensions)
+Load stack of slices (multiple images per slice supported)
+Input: list of lists of image filenames
+Output: list of lists of ndarrayas (in the same order as input data)
 '''
-def select_channel(ndarr, channel = 0):
-	temp = ndarr[:,:,channel]
-	return(temp)
-#
-
-# '''
-# Load stack of slices (multiple images per slice supported)
-# Input: list of lists of image filenames
-# Output: list of lists of ndarrayas (in the same order as input data)
-# '''
-# # def loadstack(filenames):
+# def loadstack(filenames):
 # 	temp = []
 # 	for i in filenames:
 # 		temp.append(loadslice[i])
