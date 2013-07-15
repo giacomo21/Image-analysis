@@ -49,5 +49,5 @@ NA = [
 	['../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/05_nucleus.tif','../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/05_LITAF.tif'],
 	['../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/06_nucleus.tif','../data/Alisi/Hepatic_stellate/NA_HSC_CTRL/06_LITAF.tif']
 	]
-	
+
 analyze_slices(AC, NA)
