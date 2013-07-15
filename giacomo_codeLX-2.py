@@ -92,3 +92,49 @@ for j in slices_2_gray:
 	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[1]))
 
 #
+
+# control of the nuclei threshold + fill plt.imshow(slices_2_mask[1][0])
+# plt.show()
+
+# control of the litaf threshold + fill plt.imshow(slices_2_mask[1][1])
+# plt.show()
+
+#
+
+slices_1_mask_cyt = []
+for x in slices_1_mask:
+	slices_1_mask_cyt.append([])
+	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]-x[1])
+
+slices_2_mask_cyt = []
+for r in slices_2_mask:
+	slices_2_mask_cyt.append([])
+	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]-r[1])
+
+#
+
+# control of the cytoplasm mask plt.imshow(slices_1_mask_cyt[2][0])
+# plt.show() 
+
+# control of the cytoplasm mask plt.imshow(slices_2_mask_cyt[2][0])
+# plt.show()
+
+#
+
+# litaf selection in the cytoplasm
+
+cytlitaf1 = []
+for i in slices_1_mask_cyt:
+	for j in slices_1_gray:
+		cytlitaf1.append([])
+		cytlitaf1[len(cytlitaf1)-1].append(analysis.selectregion(j[1], i[0]))
+
+cytlitaf2 = []
+for i in slices_2_mask_cyt:
+	for j in slices_2_gray:
+		cytlitaf2.append([])
+		cytlitaf2[len(cytlitaf2)-1].append(analysis.selectregion(j[1], i[0]))
+
+#
+
+# litaf selection in the nucleus
