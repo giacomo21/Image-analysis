@@ -1,4 +1,4 @@
-import analysis
+import giacomo_fake_analysis
 import load
 import giacomo_histograms
 
@@ -83,21 +83,21 @@ for j in slices_2:
 slices_1_mask = []
 for i in slices_1_gray:
 	slices_1_mask.append([])
-	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[0]))
-	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[1]))
+	slices_1_mask[len(slices_1_mask)-1].append(giacomo_fake_analysis.findnuclei(i[0]))
+	slices_1_mask[len(slices_1_mask)-1].append(giacomo_fake_analysis.findnuclei(i[1]))
 
 slices_2_mask = []
 for j in slices_2_gray:
 	slices_2_mask.append([])
-	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[0]))
-	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[1]))
+	slices_2_mask[len(slices_2_mask)-1].append(giacomo_fake_analysis.findnuclei(j[0]))
+	slices_2_mask[len(slices_2_mask)-1].append(giacomo_fake_analysis.findnuclei(j[1]))
 
 #
 
-# plt.imshow(slices_2_mask[1][0])
+# control of the nuclei threshold + fill plt.imshow(slices_2_mask[1][0])
 # plt.show()
 
-# plt.imshow(slices_2_mask[1][1])
+# control of the litaf threshold + fill plt.imshow(slices_2_mask[1][1])
 # plt.show()
 
 #
@@ -105,12 +105,12 @@ for j in slices_2_gray:
 slices_1_mask_cyt = []
 for x in slices_1_mask:
 	slices_1_mask_cyt.append([])
-	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]*(1-x[1]))
+	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]-x[1])
 
 slices_2_mask_cyt = []
 for r in slices_2_mask:
 	slices_2_mask_cyt.append([])
-	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]*(1-r[1]))
+	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]-r[1])
 
 #
 
@@ -131,13 +131,13 @@ cytlitaf1 = []
 for i in slices_1_mask_cyt:
 	for j in slices_1_gray:
 		cytlitaf1.append([])
-		cytlitaf1[len(cytlitaf1)-1].append(analysis.selectregion(j[1], i[0]))
+		cytlitaf1[len(cytlitaf1)-1].append(giacomo_fake_analysis.selectregion(j[1], i[0]))
 
 cytlitaf2 = []
 for i in slices_2_mask_cyt:
 	for j in slices_2_gray:
 		cytlitaf2.append([])
-		cytlitaf2[len(cytlitaf2)-1].append(analysis.selectregion(j[1], i[0]))
+		cytlitaf2[len(cytlitaf2)-1].append(giacomo_fake_analysis.selectregion(j[1], i[0]))
 
 # litaf selection in the nucleus
 
@@ -145,13 +145,13 @@ nucleilitaf1 = []
 for i in slices_1_mask:
 	for j in slices_1_gray:
 		nucleilitaf1.append([])
-		nucleilitaf1[len(nucleilitaf1)-1].append(analysis.selectregion(j[1], i[0]))
+		nucleilitaf1[len(nucleilitaf1)-1].append(giacomo_fake_analysis.selectregion(j[1], i[0]))
 
 nucleilitaf2 = []
 for i in slices_2_mask:
 	for j in slices_2_gray:
 		nucleilitaf2.append([])
-		nucleilitaf2[len(nucleilitaf2)-1].append(analysis.selectregion(j[1], i[0]))
+		nucleilitaf2[len(nucleilitaf2)-1].append(giacomo_fake_analysis.selectregion(j[1], i[0]))
 
 # merge the distribution of pixels treated with the same drug
 
@@ -189,5 +189,5 @@ mergedcytlitaf2 = np.concatenate(temp5)
 
 #
 
-giacomo_histograms.histogram(mergedcytlitaf1, mergedcytlitaf2, 'a1', 'a2')
+giacomo_histograms.histogram(mergednucleilitaf1, mergednucleilitaf2, 'Nuclei - NT', 'Nuclei - 2hLPS100')
 
