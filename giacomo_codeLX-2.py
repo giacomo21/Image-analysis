@@ -138,8 +138,6 @@ for i in slices_2_mask_cyt:
 		cytlitaf2.append([])
 		cytlitaf2[len(cytlitaf2)-1].append(analysis.selectregion(j[1], i[0]))
 
-#
-
 # litaf selection in the nucleus
 
 nucleilitaf1 = []
@@ -153,3 +151,39 @@ for i in slices_2_mask:
 	for j in slices_2_gray:
 		nucleilitaf2.append([])
 		nucleilitaf2[len(nucleilitaf2)-1].append(analysis.selectregion(j[1], i[0]))
+
+# merge the distribution of pixels treated with the same drug
+
+temp2 = []
+for j in nucleilitaf1:
+	tmp = np.array([])
+	for k in j:
+		tmp = np.concatenate([tmp,k])
+		temp2.append(tmp)
+mergednucleilitaf1 = np.concatenate(temp2)
+
+temp3 = []
+for j in nucleilitaf2:
+	tmp = np.array([])
+	for k in j:
+		tmp = np.concatenate([tmp, k])
+		temp3.append(tmp)
+mergednucleilitaf2 = np.concatenate(temp3)
+
+temp4 = []
+for j in cytlitaf1:
+	tmp = np.array([])
+	for k in j:
+		tmp = np.concatenate([tmp, k])
+		temp4.append(tmp)
+mergedcytlitaf1 = np.concatenate(temp4)
+
+temp5 = []
+for j in cytlitaf2:
+	tmp = np.array([])
+	for k in j:
+		tmp = np.concatenate([tmp, k])
+		temp5.append(tmp)
+mergedcytlitaf2 = np.concatenate(temp5)
+
+#
