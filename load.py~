@@ -25,11 +25,12 @@ Load a set of images for the same slice.
 Input: list of image filenames
 Output: list of ndarrayas (in the same order as input data)
 '''
-def load_slice(filenames):
+def load_slice(filenames, togray = False):
 	temp = []
 	for i in filenames:
 		ndarr = load_image(i)
-		ndarr = select_channel(ndarr, 0) # move outside
+		if togray:
+			ndarr = select_channel(ndarr, 0) # move outside
 		temp.append(ndarr)
 	return(temp)
 #
@@ -39,10 +40,10 @@ Load several slices.
 Input: list of lists of image filenames
 Output: list of lists of ndarrayas (in the same order as input data)
 '''
-def load_slices(slices):
+def load_slices(slices, togray = False):
 	slices_data = []
 	for i in slices:
-		slices_data.append(load_slice(i))
+		slices_data.append(load_slice(i, togray))
 	return(slices_data)
 #
 
