@@ -10,7 +10,7 @@ def plot(data):
 	plt.show()
 #
 
-def findnuclei(A, B):
+def findnuclei(A):
 	T = mahotas.thresholding.otsu(A)
 	C = A.copy()
 	C[ C < T ] = 0
@@ -20,15 +20,7 @@ def findnuclei(A, B):
 	# plt.show()
 	filled = scipy.ndimage.morphology.binary_fill_holes(C)
 	filled = filled.astype(numpy.uint8)
-<<<<<<< HEAD
-	filled[filled>0]=255
-	#plt.imshow(filled, cmap)
-	#plt.show()
-	LON = B[filled>0]
-	return(LON)
-=======
 	return(filled)
->>>>>>> f47fa3cfbb91017f9431ada9307a84d84c65d33b
 #
 
 def selectregion(image, mask):
@@ -47,3 +39,4 @@ def histog(A, B):
 	AC = plt.hist(B, bins=255, alpha=0.5, color='r')
 	plt.show()
 #
+
