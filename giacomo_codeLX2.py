@@ -1,5 +1,6 @@
 import analysis
 import load
+import giacomo_histograms
 
 #
 
@@ -93,10 +94,10 @@ for j in slices_2_gray:
 
 #
 
-# control of the nuclei threshold + fill plt.imshow(slices_2_mask[1][0])
+# plt.imshow(slices_2_mask[1][0])
 # plt.show()
 
-# control of the litaf threshold + fill plt.imshow(slices_2_mask[1][1])
+# plt.imshow(slices_2_mask[1][1])
 # plt.show()
 
 #
@@ -104,12 +105,12 @@ for j in slices_2_gray:
 slices_1_mask_cyt = []
 for x in slices_1_mask:
 	slices_1_mask_cyt.append([])
-	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]-x[1])
+	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]*(1-x[1]))
 
 slices_2_mask_cyt = []
 for r in slices_2_mask:
 	slices_2_mask_cyt.append([])
-	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]-r[1])
+	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]*(1-r[1]))
 
 #
 
@@ -187,3 +188,6 @@ for j in cytlitaf2:
 mergedcytlitaf2 = np.concatenate(temp5)
 
 #
+
+giacomo_histograms.histogram(mergedcytlitaf1, mergedcytlitaf2, 'a1', 'a2')
+
