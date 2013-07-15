@@ -113,11 +113,14 @@ for r in slices_2_mask:
 
 #
 
-# control of the cytoplasm mask plt.imshow(slices_1_mask_cyt[2][0])
-# plt.show() 
+# plt.imshow(slices_1_mask[2][0])
+# plt.savefig('1_nuc.png') 
 
-# control of the cytoplasm mask plt.imshow(slices_2_mask_cyt[2][0])
-# plt.show()
+# plt.imshow(slices_1_mask[2][1])
+# plt.savefig('1_lit.png')
+
+# plt.imshow(slices_1_mask_cyt[2][0])
+# plt.savefig('1_cyt.png')
 
 #
 
@@ -138,3 +141,15 @@ for i in slices_2_mask_cyt:
 #
 
 # litaf selection in the nucleus
+
+nucleilitaf1 = []
+for i in slices_1_mask:
+	for j in slices_1_gray:
+		nucleilitaf1.append([])
+		nucleilitaf1[len(nucleilitaf1)-1].append(analysis.selectregion(j[1], i[0]))
+
+nucleilitaf2 = []
+for i in slices_2_mask:
+	for j in slices_2_gray:
+		nucleilitaf2.append([])
+		nucleilitaf2[len(nucleilitaf2)-1].append(analysis.selectregion(j[1], i[0]))
