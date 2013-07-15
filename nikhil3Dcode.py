@@ -25,10 +25,12 @@ AC = ['/home/nikhil/Desktop/Alisi Data/Stellate/AC_HSC_CTRL/03_nucleus.tif','/ho
 NA = ['/home/nikhil/Desktop/Alisi Data/Stellate/NA_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif']
 
 AC = a.load_slice(AC)
+
+'''
 NA = a.load_slice(NA)
 
 AClitafselected = b.litafnucleus(AC[0],AC[1])
 NAlitafselected = b.litafnucleus(NA[0],NA[1])
 print AClitafselected.max(), AClitafselected.mean()
 print NAlitafselected.max(), NAlitafselected.mean()
-
+'''
