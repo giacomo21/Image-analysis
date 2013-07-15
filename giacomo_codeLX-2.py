@@ -65,13 +65,30 @@ slices_2 = load.load_slices(drug_1)
 
 #
 
-
+slices_1_gray = []
 for i in slices_1:
-	i[0] = load.select_channel(i[0], channel = 1)
-	i[1] = load.select_channel(i[1], channel = 0)
+	slices_1_gray.append([])
+	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[0], channel = 1))
+	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[1], channel = 0))
 
+slices_2_gray = []
 for j in slices_2:
-	j[0] = load.select_channel(j[0], channel = 1)
-	j[1] = load.select_channel(j[1], channel = 0)
+	slices_2_gray.append([])
+	slices_2_gray[len(slices_2_gray)-1].append(load.select_channel(j[0], channel = 1))
+	slices_2_gray[len(slices_2_gray)-1].append(load.select_channel(j[1], channel = 0))
 
+#
 
+slices_1_mask = []
+for i in slices_1_gray:
+	slices_1_mask.append([])
+	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[0]))
+	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[1]))
+
+slices_2_mask = []
+for j in slices_2_gray:
+	slices_2_mask.append([])
+	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[0]))
+	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[1]))
+
+#
