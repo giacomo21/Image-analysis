@@ -65,9 +65,10 @@ slices_2 = load.load_slices(drug_1)
 
 #
 
-slices_1_gray = for i in slices_1:
-		i[0] = load.select_channel(i[0], channel = 1)
-		i[1] = load.select_channel(i[1], channel = 0)
-slices_2_gray = for j in slices_2:
-		j[0] = load.select_channel(j[0], channel = 1)
-		j[1] = load.select_channel(j[1], channel = 0)
+
+for i in slices_1:
+	i[0] = load.select_channel(i[0], channel = 1)
+	i[1] = load.select_channel(i[1], channel = 0)
+for j in slices_2:
+	j[0] = load.select_channel(j[0], channel = 1)
+	j[1] = load.select_channel(j[1], channel = 0)
