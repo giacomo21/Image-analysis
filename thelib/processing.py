@@ -1,7 +1,8 @@
 import scipy.ndimage
 import mahotas
-import numpy
-
+import numpy as np
+import scipy.stats
+import loader
 
 # # # # # # # # # # # # 
 #  Single image of pairs of images analysis
@@ -30,7 +31,7 @@ def find_ROI(A, otsu=False, fill_holes=False):
 	filled = C
 	if fill_holes:
 		filled = scipy.ndimage.morphology.binary_fill_holes(C)
-	filled = filled.astype(numpy.uint8)
+	filled = filled.astype(np.uint8)
 	return(filled)
 #
 
@@ -44,139 +45,72 @@ def get_intensity(nucleus, litaf):
 	return(regi)
 #
 
+def compare_distributions(dist1, dist2):
+	return(scipy.stats.ranksums(dist1, dist2))
+#
+
+'''
+Get molecular distribution from a deck of slices
+'''
+def get_molecule_distribution(dataset,
+		nucleus_index = 0, molecule_index = 1,
+		nucleus_channel = 1, molecule_channel = 0,
+		nucleus_fill_holes = True, nucleus_otsu = True,
+		molecule_fill_holes = False, molecule_otsu = True
+		):
+
+	slices = loader.load_slices(dataset)
+	slices_gray = []
+	for i in slices:
+		slices_gray.append([])
+		if not nucleus_channel == None:
+			slices_gray[len(slices_gray)-1].append(loader.select_channel(i[nucleus_index], channel = nucleus_channel))
+		else:
+			slices_gray[len(slices_gray)-1].append(i[nucleus_index])
+		if not molecule_channel == None:
+			slices_gray[len(slices_gray)-1].append(loader.select_channel(i[molecule_index], channel = molecule_channel))
+		else:
+			slices_gray[len(slices_gray)-1].append(i[molecule_index])
 
 
-# # # # # # # # # # # # # 
-# #  Analysis of sets of images 
-# # # # # # # # # # # # # 
+	slices_mask = []
+	for i in slices_gray:
+		slices_mask.append([])
+		slices_mask[len(slices_mask)-1].append(find_ROI(i[0], fill_holes=nucleus_fill_holes, otsu=nucleus_otsu))  # only nucleus
+		slices_mask[len(slices_mask)-1].append(find_ROI(i[1], fill_holes=molecule_fill_holes, otsu=molecule_otsu))  # whole cell
 
-# def find_ROIs(A):
-# rois = []
-# for i in slices_1_gray:
-# 	rois.append([])
-# 	rois[len(rois)-1].append(analysis.find_ROI(i[0]))
-# 	rois[len(rois)-1].append(analysis.findnuclei(i[1]))
-# #
+	for i in slices_mask:
+		i.append(i[1]*(1.0-i[0])) # only cyto
 
-# slices_1_gray = []
-# for i in slices_1:
-# 	slices_1_gray.append([])
-# 	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[0], channel = 1))
-# 	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[1], channel = 0))
 
-# slices_2_gray = []
-# for j in slices_2:
-# 	slices_2_gray.append([])
-# 	slices_2_gray[len(slices_2_gray)-1].append(load.select_channel(j[0], channel = 1))
-# 	slices_2_gray[len(slices_2_gray)-1].append(load.select_channel(j[1], channel = 0))
+	slices_intensity = []
+	for i in range(0,len(slices_mask)):
+		slices_intensity.append([])
+		for j in slices_mask[i]:
+	 		slices_intensity[len(slices_intensity)-1].append(select_region(slices_gray[i][1], j))
 
-# #
 
-# slices_1_mask = []
-# for i in slices_1_gray:
-# 	slices_1_mask.append([])
-# 	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[0]))
-# 	slices_1_mask[len(slices_1_mask)-1].append(analysis.findnuclei(i[1]))
+	merged_intensity = []
+	for i in range(0,len(slices_intensity[0])):
+		merged_intensity.append(np.array([]))
+	for j in slices_intensity:
+		for k in range(0,len(j)):
+			merged_intensity[k] = np.concatenate([merged_intensity[k], j[k]])
 
-# slices_2_mask = []
-# for j in slices_2_gray:
-# 	slices_2_mask.append([])
-# 	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[0]))
-# 	slices_2_mask[len(slices_2_mask)-1].append(analysis.findnuclei(j[1]))
+	# slices_nuclear_intensity = slices_intensity[:][0]
+	# slices_whole_intensity = slices_intensity[:][1]
+	# slices_extranuclear_intensity = slices_intensity[:][2]
+	# return((slices_nuclear_intensity, slices_whole_intensity, slices_extranuclear_intensity))
 
-# #
+	data = {}
+	data['slices'] = slices
+	data['slices_gray'] = slices_gray
+	data['slices_mask'] = slices_mask
+	data['slices_intensity'] = slices_intensity
+	data['merged_intensity'] = merged_intensity
+	data['slices_dataset'] = dataset
 
-# # control of the nuclei threshold + fill plt.imshow(slices_2_mask[1][0])
-# # plt.show()
+	return(data)
+#
 
-# # control of the litaf threshold + fill plt.imshow(slices_2_mask[1][1])
-# # plt.show()
 
-# #
-
-# slices_1_mask_cyt = []
-# for x in slices_1_mask:
-# 	slices_1_mask_cyt.append([])
-# 	slices_1_mask_cyt[len(slices_1_mask_cyt)-1].append(x[0]-x[1])
-
-# slices_2_mask_cyt = []
-# for r in slices_2_mask:
-# 	slices_2_mask_cyt.append([])
-# 	slices_2_mask_cyt[len(slices_2_mask_cyt)-1].append(r[0]-r[1])
-
-# #
-
-# # plt.imshow(slices_1_mask[2][0])
-# # plt.savefig('1_nuc.png') 
-
-# # plt.imshow(slices_1_mask[2][1])
-# # plt.savefig('1_lit.png')
-
-# # plt.imshow(slices_1_mask_cyt[2][0])
-# # plt.savefig('1_cyt.png')
-
-# #
-
-# # litaf selection in the cytoplasm
-
-# cytlitaf1 = []
-# for i in slices_1_mask_cyt:
-# 	for j in slices_1_gray:
-# 		cytlitaf1.append([])
-# 		cytlitaf1[len(cytlitaf1)-1].append(analysis.selectregion(j[1], i[0]))
-
-# cytlitaf2 = []
-# for i in slices_2_mask_cyt:
-# 	for j in slices_2_gray:
-# 		cytlitaf2.append([])
-# 		cytlitaf2[len(cytlitaf2)-1].append(analysis.selectregion(j[1], i[0]))
-
-# # litaf selection in the nucleus
-
-# nucleilitaf1 = []
-# for i in slices_1_mask:
-# 	for j in slices_1_gray:
-# 		nucleilitaf1.append([])
-# 		nucleilitaf1[len(nucleilitaf1)-1].append(analysis.selectregion(j[1], i[0]))
-
-# nucleilitaf2 = []
-# for i in slices_2_mask:
-# 	for j in slices_2_gray:
-# 		nucleilitaf2.append([])
-# 		nucleilitaf2[len(nucleilitaf2)-1].append(analysis.selectregion(j[1], i[0]))
-
-# # merge the distribution of pixels treated with the same drug
-
-# temp2 = []
-# for j in nucleilitaf1:
-# 	tmp = np.array([])
-# 	for k in j:
-# 		tmp = np.concatenate([tmp,k])
-# 		temp2.append(tmp)
-# mergednucleilitaf1 = np.concatenate(temp2)
-
-# temp3 = []
-# for j in nucleilitaf2:
-# 	tmp = np.array([])
-# 	for k in j:
-# 		tmp = np.concatenate([tmp, k])
-# 		temp3.append(tmp)
-# mergednucleilitaf2 = np.concatenate(temp3)
-
-# temp4 = []
-# for j in cytlitaf1:
-# 	tmp = np.array([])
-# 	for k in j:
-# 		tmp = np.concatenate([tmp, k])
-# 		temp4.append(tmp)
-# mergedcytlitaf1 = np.concatenate(temp4)
-
-# temp5 = []
-# for j in cytlitaf2:
-# 	tmp = np.array([])
-# 	for k in j:
-# 		tmp = np.concatenate([tmp, k])
-# 		temp5.append(tmp)
-# mergedcytlitaf2 = np.concatenate(temp5)
-
-# #

@@ -21,67 +21,6 @@ LPS500 = [
 ['../../data/Alisi/LX-2/2hLPS500/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/04_LITAF.tif']]
 
 
-ACdata = loader.load_slices(NA)
-slices_1_gray = []
-for i in ACdata:
-	slices_1_gray.append([])
-	slices_1_gray[len(slices_1_gray)-1].append(loader.select_channel(i[0], channel = 1))
-	slices_1_gray[len(slices_1_gray)-1].append(loader.select_channel(i[1], channel = 0))
-
-
-slices_1_mask = []
-for i in slices_1_gray:
-	slices_1_mask.append([])
-	slices_1_mask[len(slices_1_mask)-1].append(processing.find_ROI(i[0], fill_holes=True, otsu=True))  # only nucleus
-	slices_1_mask[len(slices_1_mask)-1].append(processing.find_ROI(i[1], fill_holes=False, otsu=True))  # whole cell
-
-for i in slices_1_mask:
-	i.append(i[1]*(1.0-i[0])) # only cyto
-
-
-slices_1_intensity = []
-for i in range(0,len(slices_1_mask)):
-	slices_1_intensity.append([])
-	for j in slices_1_mask[i]:
-		# slices_1_intensity.append([])
- 		slices_1_intensity[len(slices_1_intensity)-1].append(processing.select_region(slices_1_gray[i][1], j))
-
-NAres = slices_1_intensity
-
-ACdata = loader.load_slices(LPS500)
-slices_1_gray = []
-for i in ACdata:
-	slices_1_gray.append([])
-	slices_1_gray[len(slices_1_gray)-1].append(loader.select_channel(i[0], channel = 1))
-	slices_1_gray[len(slices_1_gray)-1].append(loader.select_channel(i[1], channel = 0))
-
-
-slices_1_mask = []
-for i in slices_1_gray:
-	slices_1_mask.append([])
-	slices_1_mask[len(slices_1_mask)-1].append(processing.find_ROI(i[0], fill_holes=True, otsu=True))  # only nucleus
-	slices_1_mask[len(slices_1_mask)-1].append(processing.find_ROI(i[1], fill_holes=False, otsu=True))  # whole cell
-
-for i in slices_1_mask:
-	i.append(i[1]*(1.0-i[0])) # only cyto
-
-
-slices_1_intensity = []
-for i in range(0,len(slices_1_mask)):
-	slices_1_intensity.append([])
-	for j in slices_1_mask[i]:
-		# slices_1_intensity.append([])
- 		slices_1_intensity[len(slices_1_intensity)-1].append(processing.select_region(slices_1_gray[i][1], j))
-
-
-merged_intensity = []
-for i in range(0,len(slices_1_intensity[0])):
-	merged_intensity.append(np.array([]))
-for j in slices_1_intensity:
-	for k in range(0,len(j)):
-		merged_intensity[k] = np.concatenate([merged_intensity[k], j[k]])
-
-LPS500res = slices_1_intensity
 
 
 plt.hist(merged_intensity[0], bins=255, color='r', alpha=0.5)
@@ -162,17 +101,18 @@ scipy.stats.ranksums(LPS500res[0][0], NAres[2][0])
 # 	['data/AC_HSC_CTRL/06_nucleus.tif','data/AC_HSC_CTRL/06_LITAF.tif']
 # 	]
 
-# NA = [
-# 	['data/NA_HSC_CTRL/01_nucleus.tif','data/NA_HSC_CTRL/01_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/02_nucleus.tif','data/NA_HSC_CTRL/02_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/03_nucleus.tif','data/NA_HSC_CTRL/03_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/04_nucleus.tif','data/NA_HSC_CTRL/04_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/05_nucleus.tif','data/NA_HSC_CTRL/05_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/06_nucleus.tif','data/NA_HSC_CTRL/06_LITAF.tif']
-# 	]
+NA = [
+	['data/NA_HSC_CTRL/01_nucleus.tif','data/NA_HSC_CTRL/01_LITAF.tif'],
+	['data/NA_HSC_CTRL/02_nucleus.tif','data/NA_HSC_CTRL/02_LITAF.tif'],
+	['data/NA_HSC_CTRL/03_nucleus.tif','data/NA_HSC_CTRL/03_LITAF.tif'],
+	['data/NA_HSC_CTRL/04_nucleus.tif','data/NA_HSC_CTRL/04_LITAF.tif'],
+	['data/NA_HSC_CTRL/05_nucleus.tif','data/NA_HSC_CTRL/05_LITAF.tif'],
+	['data/NA_HSC_CTRL/06_nucleus.tif','data/NA_HSC_CTRL/06_LITAF.tif']
+	]
 
 # intensity = analyze_slices(AC, NA)
 
 # plt.boxplot([intensity[0][0],intensity[1][0]])
 # output_file = 'test.png'
 # plt.savefig(output_file)
+
