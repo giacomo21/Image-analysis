@@ -14,18 +14,18 @@ import numpy                 as     np
 import matplotlib.pyplot     as     plt
 import matplotlib.cm         as     cm
 
-import load
+import nikhil3Dload
 import analysis
-a = load
+a = nikhil3Dload
 b = analysis
 
 cmap = cm.Greys_r
 
-AC = ['/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/AC_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/AC_HSC_CTRL/03_LITAF.tif']
-NA = ['/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif']
+AC = ['/home/nikhil/Desktop/Alisi Data/Stellate/AC_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/Alisi Data/Stellate/AC_HSC_CTRL/03_LITAF.tif']
+NA = ['/home/nikhil/Desktop/Alisi Data/Stellate/NA_HSC_CTRL/03_nucleus.tif','/home/nikhil/Desktop/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif']
 
-AC = a.loadslice(AC)
-NA = a.loadslice(NA)
+AC = a.load_slice(AC)
+NA = a.load_slice(NA)
 
 AClitafselected = b.litafnucleus(AC[0],AC[1])
 NAlitafselected = b.litafnucleus(NA[0],NA[1])
