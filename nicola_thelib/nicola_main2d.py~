@@ -96,19 +96,7 @@ for i in range(0,len(slices_1_mask)):
 
 #scipy.stats.ranksums(LPS500res[0][0], NAres[2][0])
 
-def boxplot(A, B, C, D):
-	box = plt.boxplot([A, B, C, D])
-	plt.xlabel('Condition')
-	plt.ylabel('Number of occurrencies')
-	plt.legend()
-	plt.show()
-
-BP_NT = boxplot(slices_1_intensity[0], slices_1_intensity[1], slices_1_intensity[2], slices_1_intensity[3])
-
-
-
-
-
+BP_NT = nicola_output.boxplot([slices_1_intensity[0], slices_1_intensity[1], slices_1_intensity[2], slices_1_intensity[3]], labels = None, outfile = None, xlab = '', ylab = '')
 
 # import matplotlib.pyplot as plt
 # import matplotlib.cm as cm
