@@ -113,4 +113,9 @@ def get_molecule_distribution(dataset,
 	return(data)
 #
 
-
+# def compare_molecule_distribution(dataset,
+# 		nucleus_index = 0, molecule_index = 1,
+# 		nucleus_channel = 1, molecule_channel = 0,
+# 		nucleus_fill_holes = True, nucleus_otsu = True,
+# 		molecule_fill_holes = False, molecule_otsu = True
+# 		):
