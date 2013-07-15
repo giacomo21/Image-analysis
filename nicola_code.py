@@ -68,11 +68,15 @@ NA = [
 
 A = analyze_slices(AC, NA1_100, NA)
 
-B = []
-for j in A:
+def merge_vectors(A):
 	tmp = np.array([])
-	for k in j:
+	for k in A:
 		tmp = np.concatenate([tmp,k])
-	B.append(tmp)
+	return(tmp)
 
+def merge_lists(A):
+	B = []
+	for j in A:
+		B.append(merge_vectors(j))
+	return B
 

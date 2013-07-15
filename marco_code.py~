@@ -3,7 +3,7 @@ import matplotlib.cm as cm
 cmap = cm.Greys_r
 
 import load
-import analysisa
+import analysis
 
 '''
 Comapares 2 slices
