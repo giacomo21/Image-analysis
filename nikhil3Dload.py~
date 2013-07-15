@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-import analysis
 '''
 Load single image
 Input: filename
@@ -59,15 +58,3 @@ Output: list of lists of ndarrayas (in the same order as input data)
 # 		temp.append(loadslice[i])
 # 	return(temp)
 #
-
-def analyze_slices(slices1, slices2):
-	slices1_data = load_slices(slices1)
-	slices2_data = load_slices(slices2)
-	slice1_distrib = []
-	for i in slices1_data:
-		slice1_distrib.append(analysis.litafnucleus(i[0], i[1]))
-	slice2_distrib = []
-	for i in slices2_data:
-		slice2_distrib.append(analysis.litafnucleus(i[0], i[1]))
-	return(slice1_distrib, slice2_distrib)
-
