@@ -60,12 +60,12 @@ NA = a.load_slices(NAimgs, togray = False)
 sliceanalysis = a.analyze_slices(ACimgs, NAimgs)
 print sliceanalysis[0][0].shape
 print sliceanalysis[0][0].mean()
+print sliceanalysis[0][1].shape
+print sliceanalysis[0][1].mean()
+print sliceanalysis[1][0].shape
+print sliceanalysis[1][0].mean()
 print sliceanalysis[1][1].shape
 print sliceanalysis[1][1].mean()
-print sliceanalysis[2][2].shape
-print sliceanalysis[2][2].mean()
-print sliceanalysis[3][3].shape
-print sliceanalysis[3][3].mean()
 
 #slices1_data = load_slices(slices1)
 #slices2_data = load_slices(slices2)
