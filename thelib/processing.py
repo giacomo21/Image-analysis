@@ -45,6 +45,10 @@ def get_intensity(nucleus, litaf):
 	return(regi)
 #
 
+def compare_distributions(dist1, dist2):
+	return(scipy.stats.ranksums(dist1, dist2))
+#
+
 '''
 Get molecular distribution from a deck of slices
 '''
@@ -93,9 +97,10 @@ def get_molecule_distribution(dataset,
 		for k in range(0,len(j)):
 			merged_intensity[k] = np.concatenate([merged_intensity[k], j[k]])
 
-	slices_nuclear_intensity = slices_intensity[:][0]
-	slices_whole_intensity = slices_intensity[:][1]
-	slices_extranuclear_intensity = slices_intensity[:][2]
+	# slices_nuclear_intensity = slices_intensity[:][0]
+	# slices_whole_intensity = slices_intensity[:][1]
+	# slices_extranuclear_intensity = slices_intensity[:][2]
+	# return((slices_nuclear_intensity, slices_whole_intensity, slices_extranuclear_intensity))
 
 	data = {}
 	data['slices'] = slices
@@ -106,9 +111,6 @@ def get_molecule_distribution(dataset,
 	data['slices_dataset'] = dataset
 
 	return(data)
-	# return((slices_nuclear_intensity, slices_whole_intensity, slices_extranuclear_intensity))
 #
 
-def compare_distributions(dist1, dist2):
-	return(scipy.stats.ranksums(dist1, dist2))
-#
+
