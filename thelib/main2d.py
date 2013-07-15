@@ -8,20 +8,32 @@ import loader
 import processing
 import output
 
-NA = [
+condition1_files = [
 ['../../data/Alisi/LX-2/NT/01_nucleus.tif', '../../data/Alisi/LX-2/NT/01_LITAF.tif'],
 ['../../data/Alisi/LX-2/NT/02_nucleus.tif', '../../data/Alisi/LX-2/NT/02_LITAF.tif'],
 ['../../data/Alisi/LX-2/NT/03_nucleus.tif', '../../data/Alisi/LX-2/NT/03_LITAF.tif'],
 ['../../data/Alisi/LX-2/NT/04_nucleus.tif', '../../data/Alisi/LX-2/NT/04_LITAF.tif']]
 
-LPS500 = [
+condition2_files = [
 ['../../data/Alisi/LX-2/2hLPS500/01_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/01_LITAF.tif'],
 ['../../data/Alisi/LX-2/2hLPS500/02_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/02_LITAF.tif'],
 ['../../data/Alisi/LX-2/2hLPS500/03_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/03_LITAF.tif'],
 ['../../data/Alisi/LX-2/2hLPS500/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/04_LITAF.tif']]
 
+condition1 = processing.get_molecule_distribution(condition1_files)
+condition2 = processing.get_molecule_distribution(condition2_files)
 
 
+nuclei_intensity_c1 = []
+for i in condition1['slices_intensity']:
+	nuclei_intensity_c1.append(i[0])
+
+nuclei_intensity_c2 = []
+for i in condition2['slices_intensity']:
+	nuclei_intensity_c2.append(i[0])
+
+nuclei_intensity = nuclei_intensity_c1 +  nuclei_intensity_c2
+output.boxplot(nuclei_intensity)
 
 plt.hist(merged_intensity[0], bins=255, color='r', alpha=0.5)
 plt.hist(merged_intensity[1], bins=255, color='g', alpha=0.5)
