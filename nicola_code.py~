@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import numpy as np
 cmap = cm.Greys_r
 
 import load
@@ -19,7 +20,7 @@ def analyze_3slices(slice1, slice2,slice3):
 	return(slice1_concentration, slice2_concentration, slice3_concentration)
 
 '''
-Comapares 3 sets of slices
+Compares 3 sets of slices
 Assume slices are described by N images. The first is the nucleus, the second LITAF (or any molecule to be considered)
 '''
 def analyze_slices(slices1, slices2, slices3):
@@ -65,20 +66,12 @@ NA = [
 	['/home/nicola/Desktop/Project/Alisi/Hepatic_stellate/NA_HSC_CTRL/06_nucleus.tif','/home/nicola/Desktop/Project/Alisi/Hepatic_stellate/NA_HSC_CTRL/06_LITAF.tif']
 	]
 
-R = analyze_slices(AC, NA1_100, NA)
+A = analyze_slices(AC, NA1_100, NA)
 
-A = np.concatenate([R[0][0], R[0][1], R[0][2], R[0][3], R[0][4], R[0][5]])
-
-B = np.concatenate([R[1][0], R[1][1], R[1][2], R[1][3], R[1][4], R[1][5]])
-
-C = np.concatenate([R[2][0], R[2][1], R[2][2], R[2][3], R[2][4], R[2][5]])
-
-
-
-
-
-
-
-
-
+B = []
+for j in A:
+	tmp = np.array([])
+	for k in j:
+		tmp = np.concatenate([tmp,k])
+	B.append(tmp)
 
