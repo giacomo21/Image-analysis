@@ -16,6 +16,7 @@ import matplotlib.pyplot     as     plt
 import matplotlib.cm         as     cm
 import Image, sys
 import cv2
+import matplotlib.image as mpimg
 
 cmap = cm.Greys_r
 
@@ -102,14 +103,64 @@ NAimgs = [
 NA = a.load_slices(NAimgs, togray = False)
 AC = a.load_slices(ACimgs, togray = False)
 
-sliceanalysis = a.analyze_slices(NAimgs, ACimgs)
-#print sliceanalysis
+def findnuclei(A):
+	T = mahotas.thresholding.otsu(A)
+	C = A.copy()
+	if T = 0:
+		C[ C <= T ] = 0
+		C[ C > T ] = 1
+	if T = 0:
+		C[ C < T ] = 0
+		C[ C >= T ] = 1
+	# C = A / 255
+	# plt.imshow(A, cmap)
+	# plt.show()
+	filled = scipy.ndimage.morphology.binary_fill_holes(C)
+	filled = filled.astype(numpy.uint8)
+	shape = filled[0].shape
+	for x in range(0,shape):
+		print filled[0][x],  filled[1][x]  
+	return(filled)
 
+
+
+
+#sliceanalysis = a.analyze_slices(NAimgs, ACimgs)
+
+'''
 B = []
 for j in sliceanalysis:
 	tmp = np.array([])
 	for k in j:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
+'''
+#e = b.findnuclei(NA[6][0])
+#print e
+for i in range(0,38):
+	nuclei = b.findnuclei(NA[i][0])
+	
+#print nuclei[0].mean()
 
+#A = NA[16][0]
+#plt.imshow(A, cmap)
+#plt.show()
+#print A.mean()
+#plt.hist(A.flatten())
+#T = mahotas.thresholding.otsu(A)
+#print T
+#C = A.copy()
+#C[ C <= T ] = 0
+#C[ C > T ] = 1
+#print C.mean()
+#C = C * 255
+#plt.imshow(C, cmap)
+#plt.show()
+#filled = scipy.ndimage.morphology.binary_fill_holes(C)
+#filled = filled.astype(np.uint8)
+#print filled[0][0][0]
+#print filled.mean()
+#filled[C > 0 ] = 255	
+#plt.imshow(filled, cmap)
+#plt.show()
 
