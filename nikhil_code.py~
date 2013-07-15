@@ -29,6 +29,6 @@ NA = a.load_slice(NA)
 
 AClitafselected = b.litafnucleus(AC[0],AC[1])
 NAlitafselected = b.litafnucleus(NA[0],NA[1])
-print AClitafselected.shape, AClitafselected.max(), AClitafselected.mean()
-print NAlitafselected.shape, NAlitafselected.max(), NAlitafselected.mean()
+print AClitafselected.max(), AClitafselected.mean()
+print NAlitafselected.max(), NAlitafselected.mean()
 

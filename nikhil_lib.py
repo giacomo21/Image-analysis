@@ -44,6 +44,7 @@ def otsufill(img1):
 	plt.imshow(filled, cmap)
 	plt.show()
 	
+'''
 
 
 
