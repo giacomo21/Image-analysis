@@ -13,21 +13,14 @@ def plot(data):
 def findnuclei(A):
 	T = mahotas.thresholding.otsu(A)
 	C = A.copy()
-	if T = 0:
-		C[ C <= T ] = 0
-		C[ C > T ] = 1
-	if T = 0:
-		C[ C < T ] = 0
-		C[ C >= T ] = 1
+	C[ C < T ] = 0
+	C[ C >= T ] = 1
 	# C = A / 255
 	# plt.imshow(A, cmap)
 	# plt.show()
-	filled = scipy.ndimage.morphology.binary_fill_holes(C)
-	filled = filled.astype(numpy.uint8)
-	shape = filled[0].shape
-	for x in range(0,shape):
-		print filled[0][x],  filled[1][x]  
-	return(filled)
+	# filled = scipy.ndimage.morphology.binary_fill_holes(C)
+	# filled = filled.astype(numpy.uint8)
+	return(C)
 #
 
 def selectregion(image, mask):
@@ -45,5 +38,3 @@ def histog(A, B):
 	NA = plt.hist(A, bins=255, alpha=0.5, color='b')
 	AC = plt.hist(B, bins=255, alpha=0.5, color='r')
 	plt.show()
-#
-
