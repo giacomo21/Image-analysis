@@ -141,3 +141,98 @@ A = condition5['merged_intensity']
 
 output.histogram([A[0], A[1], A[2]], labels = ['Nuclei', 'Whole cells', 'Cytoplasm'], outfile = 'Merged_intensities_nuclei+whole+cyt_2hLPS500+SB')
 
+###################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 01 in condition 1 (NT)
+
+A = condition1['slices_intensity']
+
+output.histogram([A[0][0], A[0][1], A[0][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_01_NT')
+
+###################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 02 in condition 1 (NT)
+
+A = condition1['slices_intensity']
+
+output.histogram([A[1][0], A[1][1], A[1][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_02_NT')
+
+###################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 03 in condition 1 (NT)
+
+A = condition1['slices_intensity']
+
+output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_03_NT')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 04 in condition 1 (NT)
+
+A = condition1['slices_intensity']
+
+output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_NT')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 01 in condition 2 (2hLPS100)
+
+A = condition2['slices_intensity']
+
+output.histogram([A[0][0], A[0][1], A[0][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_01_2hLPS100')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 02 in condition 2 (2hLPS100)
+
+A = condition2['slices_intensity']
+
+output.histogram([A[1][0], A[1][1], A[1][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_02_2hLPS100')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 03 in condition 2 (2hLPS100)
+
+A = condition2['slices_intensity']
+
+output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_03_2hLPS100')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 04 in condition 2 (2hLPS100)
+
+A = condition2['slices_intensity']
+
+output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_2hLPS100')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 01 in condition 3 (2hLPS100+SB)
+
+A = condition3['slices_intensity']
+
+output.histogram([A[0][0], A[0][1], A[0][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_01_2hLPS100+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 02 in condition 3 (2hLPS100+SB)
+
+A = condition3['slices_intensity']
+
+output.histogram([A[1][0], A[1][1], A[1][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_02_2hLPS100+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 03 in condition 3 (2hLPS100+SB)
+
+A = condition3['slices_intensity']
+
+output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_03_2hLPS100+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 04 in condition 3 (2hLPS100+SB)
+
+A = condition3['slices_intensity']
+
+output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_2hLPS100+SB')
