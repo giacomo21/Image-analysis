@@ -8,12 +8,12 @@ def plot(data):
 	plt.show()
 #
 
-def histogram(data, labels = None, outfile = None):
+def histogram(data, labels = None, outfile = None, log = False, a = None):
 	plt.clf()
 	if labels == None:
 		labels = [''] * len(data)
 	for i in range(0,len(data)):
-		plt.hist(data[i], bins=255, alpha=0.5, label = labels[i], histtype = 'step')
+		plt.hist(data[i], bins=128, alpha=0.5, label = labels[i], log = log, histtype = a)
 	plt.xlabel('Intensity')
 	plt.ylabel('Number of occurrencies')
 	plt.xlim(0, 256)
