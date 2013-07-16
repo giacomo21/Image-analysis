@@ -118,10 +118,10 @@ for j in sliceanalysis:
 '''
 #3D Construction Image Details
 #print 'Dimensions of stack:', NA[0][0].shape, '\n'
-#print b.TDAnalysis(NA, 39), '\n'
+#print b.TDAnalysis(NA, 10), '\n'
 #print 'Dimensions of stack:', AC[0][0].shape, '\n'
 #print b.TDAnalysis(AC, 27)
 
-#print b.CanNuc(NA, 39)
+print b.CanNuc(NA, 39)
 
-print b.findlitaf(NA, 39)
+#print b.findlitaf(NA, 39)
