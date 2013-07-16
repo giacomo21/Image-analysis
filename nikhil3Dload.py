@@ -20,11 +20,11 @@ from   skimage.morphology    import reconstruction
 
 cmap = cm.Greys_r
 
-import nikhil3Dload
-import nikhilanalysis
+#import nikhil3Dload
+#import nikhilanalysis
 import nikhil_lib
-a = nikhil3Dload
-b = nikhilanalysis
+#a = nikhil3Dload
+#b = nikhilanalysis
 c = nikhil_lib
 
 import analysis
