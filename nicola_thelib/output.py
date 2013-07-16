@@ -15,6 +15,7 @@ def histogram(data, labels = None, outfile = None):
 		plt.hist(data[i], bins=255, alpha=0.5, label = labels[i])
 	plt.xlabel('Intensity')
 	plt.ylabel('Number of occurrencies')
+	plt.xlim(0, 256)
 	plt.legend()
 	if outfile == None:
 		plt.show()
@@ -23,9 +24,15 @@ def histogram(data, labels = None, outfile = None):
 #
 
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = ''):
+	plt.clf()
 	if labels == None:
 		labels = [''] * len(x)
-	plt.boxplot(x)
+	r = plt.boxplot(x)
+	plt.setp(r['medians'], color='black')
+	plt.setp(r['boxes'], color='black')
+	plt.setp(r['fliers'], color='gray')
+	plt.setp(r['whiskers'], color='black', lw=2)
+	plt.setp(r['caps'], color='black', lw=2)
 	plt.xticks(range(1,len(x)+1), labels)
 	# y=range(0,256)
 	# plt.yticks(y, y)
