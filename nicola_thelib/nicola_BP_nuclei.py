@@ -60,9 +60,9 @@ for i in slices_1_gray:
 
 slices_1_intensity = []
 for i in range(0,len(slices_1_mask)):
-	slices_1_intensity.append([])
+#	slices_1_intensity.append([])
 	for j in slices_1_mask[i]:
-		# slices_1_intensity.append([])
+		slices_1_intensity.append([])
  		slices_1_intensity[len(slices_1_intensity)-1].append(nicola_processing.select_region(slices_1_gray[i][1], j))
 
 ####
@@ -87,9 +87,9 @@ for i in slices_2_gray:
 
 slices_2_intensity = []
 for i in range(0,len(slices_2_mask)):
-	slices_2_intensity.append([])
+#	slices_2_intensity.append([])
 	for j in slices_2_mask[i]:
-		# slices_2_intensity.append([])
+		slices_2_intensity.append([])
  		slices_2_intensity[len(slices_2_intensity)-1].append(nicola_processing.select_region(slices_2_gray[i][1], j))
 
 ####
@@ -114,9 +114,9 @@ for i in slices_3_gray:
 
 slices_3_intensity = []
 for i in range(0,len(slices_3_mask)):
-	slices_3_intensity.append([])
+#	slices_3_intensity.append([])
 	for j in slices_3_mask[i]:
-		# slices_3_intensity.append([])
+		slices_3_intensity.append([])
  		slices_3_intensity[len(slices_3_intensity)-1].append(nicola_processing.select_region(slices_3_gray[i][1], j))
 
 ####
@@ -141,9 +141,9 @@ for i in slices_4_gray:
 
 slices_4_intensity = []
 for i in range(0,len(slices_4_mask)):
-	slices_4_intensity.append([])
+#	slices_4_intensity.append([])
 	for j in slices_4_mask[i]:
-		# slices_4_intensity.append([])
+		slices_4_intensity.append([])
  		slices_4_intensity[len(slices_4_intensity)-1].append(nicola_processing.select_region(slices_4_gray[i][1], j))
 
 ####
@@ -168,9 +168,9 @@ for i in slices_5_gray:
 
 slices_5_intensity = []
 for i in range(0,len(slices_5_mask)):
-	slices_5_intensity.append([])
+#	slices_5_intensity.append([])
 	for j in slices_5_mask[i]:
-		# slices_5_intensity.append([])
+		slices_5_intensity.append([])
  		slices_5_intensity[len(slices_5_intensity)-1].append(nicola_processing.select_region(slices_5_gray[i][1], j))
 
 NTres = slices_1_intensity

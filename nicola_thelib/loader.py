@@ -49,13 +49,6 @@ def select_channel(ndarr, channel = 0):
 	return(temp)
 #
 
-# def select_channel(imgs)
-# imgs_ch = []
-# for i in slices_1:
-# 	slices_1_gray.append([])
-# 	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[0], channel = 1))
-# 	slices_1_gray[len(slices_1_gray)-1].append(load.select_channel(i[1], channel = 0))
-
 # '''
 # Load stack of slices (multiple images per slice supported)
 # Input: list of lists of image filenames

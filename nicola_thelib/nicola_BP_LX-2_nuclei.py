@@ -163,4 +163,3 @@ BP_nuclei_LPS500SB = output.boxplot(nuclei_intensity_LPS500SB, labels = ['1', '2
 # plt.boxplot([intensity[0][0],intensity[1][0]])
 # output_file = 'test.png'
 # plt.savefig(output_file)
-
