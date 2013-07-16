@@ -25,10 +25,10 @@ from   skimage.morphology    import reconstruction
 cmap = cm.Greys_r
 
 import nikhil3Dload
-import nikhilanalysis
+import nikhilanalysis60x
 import nikhil_lib
 a = nikhil3Dload
-b = nikhilanalysis
+b = nikhilanalysis60x
 c = nikhil_lib
 
 ACimgs = [
@@ -118,7 +118,7 @@ for j in sliceanalysis:
 '''
 #3D Construction Image Details
 #print 'Dimensions of stack:', NA[0][0].shape, '\n'
-print b.TDAnalysis(NA, 10), '\n'
+print b.TDAnalysis(NA, 39), '\n'
 #print 'Dimensions of stack:', AC[0][0].shape, '\n'
 #print b.TDAnalysis(AC, 27)
 

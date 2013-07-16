@@ -145,6 +145,7 @@ def histog(A, B):
 	
 def TDAnalysis(datatype, maxrange):
 	NC = 0
+	print 'Dimensions of stacks:', datatype[0][0].shape, '\n'
 	for i in range(0, maxrange):
 		A = datatype[i][0]
 		T = mahotas.thresholding.otsu(A)
