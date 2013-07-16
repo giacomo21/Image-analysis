@@ -9,6 +9,7 @@ def plot(data):
 #
 
 def histogram(data, labels = None, outfile = None):
+	plt.clf()
 	if labels == None:
 		labels = [''] * len(data)
 	for i in range(0,len(data)):

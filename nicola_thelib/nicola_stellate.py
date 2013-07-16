@@ -95,17 +95,24 @@ nuclei_intensity_NA_HSC_CTRL = []
 for i in NA_HSC_CTRL['slices_intensity']:
 	nuclei_intensity_NA_HSC_CTRL.append(i[0])
 
-BP_nuclei_AC_HSC_CTRL = output.boxplot(nuclei_intensity_AC_HSC_CTRL, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_AC_HSC_CTRL.png', xlab = 'Slices', ylab = 'Intensity')
+output.histogram(nuclei_intensity_AC_HSC_CTRL, labels = None, outfile = None)
+output.histogram(nuclei_intensity_NA_HSC_1hLPS100, labels = None, outfile = None)
+output.histogram(nuclei_intensity_NA_HSC_1hLPS500, labels = None, outfile = None)
+output.histogram(nuclei_intensity_NA_HSC_2hLPS100, labels = None, outfile = None)
+output.histogram(nuclei_intensity_NA_HSC_2hLPS500, labels = None, outfile = None)
+output.histogram(nuclei_intensity_NA_HSC_CTRL, labels = None, outfile = None)
 
-BP_nuclei_NA_HSC_1hLPS100 = output.boxplot(nuclei_intensity_NA_HSC_1hLPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_1hLPS100.png', xlab = 'Slices', ylab = 'Intensity')
+#BP_nuclei_AC_HSC_CTRL = output.boxplot(nuclei_intensity_AC_HSC_CTRL, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_AC_HSC_CTRL.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_NA_HSC_1hLPS500 = output.boxplot(nuclei_intensity_NA_HSC_1hLPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_1hLPS500.png', xlab = 'Slices', ylab = 'Intensity')
+#BP_nuclei_NA_HSC_1hLPS100 = output.boxplot(nuclei_intensity_NA_HSC_1hLPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_1hLPS100.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_NA_HSC_2hLPS100 = output.boxplot(nuclei_intensity_NA_HSC_2hLPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_2hLPS100.png', xlab = 'Slices', ylab = 'Intensity')
+#BP_nuclei_NA_HSC_1hLPS500 = output.boxplot(nuclei_intensity_NA_HSC_1hLPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_1hLPS500.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_NA_HSC_2hLPS500 = output.boxplot(nuclei_intensity_NA_HSC_2hLPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_2hLPS500.png', xlab = 'Slices', ylab = 'Intensity')
+#BP_nuclei_NA_HSC_2hLPS100 = output.boxplot(nuclei_intensity_NA_HSC_2hLPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_2hLPS100.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_NA_HSC_CTRL = output.boxplot(nuclei_intensity_NA_HSC_CTRL, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_CTRL.png', xlab = 'Slices', ylab = 'Intensity')
+#BP_nuclei_NA_HSC_2hLPS500 = output.boxplot(nuclei_intensity_NA_HSC_2hLPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_2hLPS500.png', xlab = 'Slices', ylab = 'Intensity')
+
+#BP_nuclei_NA_HSC_CTRL = output.boxplot(nuclei_intensity_NA_HSC_CTRL, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4', 'Slice5', 'Slice6'], outfile = 'BP_nuclei_NA_HSC_CTRL.png', xlab = 'Slices', ylab = 'Intensity')
 
 
 #plt.hist(merged_intensity[0], bins=255, color='r', alpha=0.5)
