@@ -117,11 +117,11 @@ for j in sliceanalysis:
 	B.append(tmp)
 '''
 #3D Construction Image Details
-print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/TDAnalysisNA60x.txt')
-print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/TDAnalysisAC60x.txt')
+#print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
+#print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
 
-print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/CanNucNA60x.txt')
-print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/CanNucAC60x.txt')
+#print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
+#print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucAC60x.txt')
 
-print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/findlitafNA60x.txt')
-print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/findlitafAC60x.txt')
+print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
+#print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafAC60x.txt')

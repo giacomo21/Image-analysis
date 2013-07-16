@@ -116,7 +116,6 @@ for j in sliceanalysis:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
 '''
-#3D Construction Image Details
 print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
 print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
 
