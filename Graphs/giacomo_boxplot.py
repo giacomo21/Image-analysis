@@ -88,3 +88,15 @@ output.boxplot([A[0], A[1], A[2]], labels = ['Nuclei', 'Whole cells', 'Cytoplasm
 A = condition5['merged_intensity']
 
 output.boxplot([A[0], A[1], A[2]], labels = ['Nuclei', 'Whole cells', 'Cytoplasm'], outfile = 'Merged_intensities_nuclei+whole+cyt_2hLPS500+SB', ylab = 'Intensity')
+
+#################################
+
+# Boxplot of the intensities of each cytoplasm of each cell through each condition
+
+A = condition1['slices_intensity']
+B = condition2['slices_intensity']
+C = condition3['slices_intensity']
+D = condition4['slices_intensity']
+E = condition5['slices_intensity']
+
+output.boxplot([A[0][2], A[1][2], A[2][2], A[3][2], B[0][2], B[1][2], B[2][2], B[3][2], C[0][2], C[1][2], C[2][2], C[3][2], D[0][2], D[1][2], D[2][2], D[3][2], E[0][2], E[1][2], E[2][2], E[3][2],], labels = ['NA-1', 'NA-2', 'NA-3', 'NA-4', 'NA-5', '2hLPS100-1', '2hLPS100-2', '2hLPS100-3', '2hLPS100-4', '2hLPS100-5', '2hLPS100+SB-1', '2hLPS100+SB-2', '2hLPS100+SB-3', '2hLPS100+SB-4', '2hLPS100+SB-5', '2hLPS500-1', '2hLPS500-2', '2hLPS500-3', '2hLPS500-4', '2hLPS500-5', '2hLPS500+SB-1', '2hLPS500+SB-2', '2hLPS500+SB-3', '2hLPS500+SB-4', '2hLPS500+SB-5'], outfile = 'Single_intensities_cytoplasm_through_conditions', ylab = 'Intensity')
