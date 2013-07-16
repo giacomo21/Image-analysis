@@ -65,15 +65,15 @@ nuclei_intensity_LPS500SB = []
 for i in LPS500SB['slices_intensity']:
 	nuclei_intensity_LPS500SB.append(i[0])
 
-BP_nuclei_NT = output.boxplot(nuclei_intensity_NT, labels = ['1', '2', '3', '4'], outfile = 'BP_nuclei_NT.png', xlab = 'Images', ylab = 'Intensity')
+BP_nuclei_NT = output.boxplot(nuclei_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_nuclei_NT.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_LPS100 = output.boxplot(nuclei_intensity_LPS100, labels = ['1', '2', '3', '4'], outfile = 'BP_nuclei_LPS100.png', xlab = 'Images', ylab = 'Intensity')
+BP_nuclei_LPS100 = output.boxplot(nuclei_intensity_LPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_nuclei_LPS100.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_LPS100SB = output.boxplot(nuclei_intensity_LPS100SB, labels = ['1', '2', '3', '4'], outfile = 'BP_nuclei_LPS100+SB.png', xlab = 'Images', ylab = 'Intensity')
+BP_nuclei_LPS100SB = output.boxplot(nuclei_intensity_LPS100SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_nuclei_LPS100+SB.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_LPS500 = output.boxplot(nuclei_intensity_LPS500, labels = ['1', '2', '3', '4'], outfile = 'BP_nuclei_LPS500.png', xlab = 'Images', ylab = 'Intensity')
+BP_nuclei_LPS500 = output.boxplot(nuclei_intensity_LPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_nuclei_LPS500.png', xlab = 'Slices', ylab = 'Intensity')
 
-BP_nuclei_LPS500SB = output.boxplot(nuclei_intensity_LPS500SB, labels = ['1', '2', '3', '4'], outfile = 'BP_nuclei_LPS500+SB.png', xlab = 'Images', ylab = 'Intensity')
+BP_nuclei_LPS500SB = output.boxplot(nuclei_intensity_LPS500SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_nuclei_LPS500+SB.png', xlab = 'Slices', ylab = 'Intensity')
 
 
 #plt.hist(merged_intensity[0], bins=255, color='r', alpha=0.5)
@@ -163,4 +163,3 @@ BP_nuclei_LPS500SB = output.boxplot(nuclei_intensity_LPS500SB, labels = ['1', '2
 # plt.boxplot([intensity[0][0],intensity[1][0]])
 # output_file = 'test.png'
 # plt.savefig(output_file)
-
