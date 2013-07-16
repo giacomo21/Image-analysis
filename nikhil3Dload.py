@@ -1,4 +1,31 @@
-import matplotlib.pyplot as plt
+#!/usr/bin/env python
+import cv2
+import Image, sys
+import itertools 
+import mahotas
+import pymorph 
+import scipy
+import scipy.ndimage
+import struct
+import numpy                 as     np
+import matplotlib.pyplot     as     plt
+import matplotlib.cm         as     cm
+import matplotlib.image      as     mpimg
+from   PIL                   import Image
+from   scipy                 import ndimage
+from   skimage               import data
+from   skimage.exposure      import rescale_intensity
+from   skimage.io	     import imread
+from   skimage.morphology    import reconstruction
+
+cmap = cm.Greys_r
+
+import nikhil3Dload
+import nikhilanalysis
+import nikhil_lib
+a = nikhil3Dload
+b = nikhilanalysis
+c = nikhil_lib
 
 import analysis
 '''

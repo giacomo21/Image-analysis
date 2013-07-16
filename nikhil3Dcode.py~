@@ -1,22 +1,22 @@
 #!/usr/bin/env python
-#/home/nikhil/Desktop/FBK Project/Alisi Data/Stellate/NA_HSC_CTRL/03_LITAF.tif
+import cv2
+import Image, sys
+import itertools 
+import mahotas
 import pymorph 
 import scipy
-import struct
-import mahotas
 import scipy.ndimage
+import struct
+import numpy                 as     np
+import matplotlib.pyplot     as     plt
+import matplotlib.cm         as     cm
+import matplotlib.image      as     mpimg
 from   PIL                   import Image
 from   scipy                 import ndimage
 from   skimage               import data
 from   skimage.exposure      import rescale_intensity
+from   skimage.io	     import imread
 from   skimage.morphology    import reconstruction
-from skimage.io		     import imread
-import numpy                 as     np
-import matplotlib.pyplot     as     plt
-import matplotlib.cm         as     cm
-import Image, sys
-import cv2
-import matplotlib.image as mpimg
 
 cmap = cm.Greys_r
 
@@ -26,8 +26,6 @@ import nikhil_lib
 a = nikhil3Dload
 b = nikhilanalysis
 c = nikhil_lib
-
-
 
 ACimgs = [
 	['/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C1.tif'],
@@ -100,33 +98,20 @@ NAimgs = [
 	['/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C1.tif'],
 	 ]
 
-NA = a.load_slices(NAimgs, togray = False)
-AC = a.load_slices(ACimgs, togray = False)
+#Load all images
+NA = a.load_slices(NAimgs, togray = True)
+AC = a.load_slices(ACimgs, togray = True)
 
-#for i in range(0,38):
-#	nuclei = b.findnuclei(NA[i][0])
-#print nuclei
-#sliceanalysis = a.analyze_slices(NAimgs, ACimgs)
-
-'''
+#Sliceanalysis
+sliceanalysis = a.analyze_slices(NAimgs, ACimgs)
 B = []
 for j in sliceanalysis:
 	tmp = np.array([])
 	for k in j:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
-'''
-#e = b.findnuclei(NA[6][0])
-#print e
-	
-#print nuclei[0].mean()
 
-A = NA[0][0]
-print A.shape
-T = mahotas.thresholding.otsu(A)
-C = A.copy()
-C[ C <= T ] = 0
-C[ C > T ] = 1
-filled = scipy.ndimage.morphology.binary_fill_holes(C)
-filled = filled.astype(np.uint8)
-print filled.shape
+#3D Construction Image Details
+print b.TDAnalysis(NA, 38)		
+print b.TDAnalysis(AC, 27)
+
