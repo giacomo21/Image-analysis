@@ -116,12 +116,11 @@ for j in sliceanalysis:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
 '''
-#3D Construction Image Details
-print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/TDAnalysisNA60x.txt')
-print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/TDAnalysisAC60x.txt')
+print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'w')
+print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'w')
 
-print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/CanNucNA60x.txt')
-print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/CanNucAC60x.txt')
+print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'a')
+print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'a')
 
-print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/findlitafNA60x.txt')
-print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/findlitafAC60x.txt')
+print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'a')
+print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'a')
