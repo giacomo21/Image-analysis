@@ -140,7 +140,7 @@ def compare_molecule_distribution(datasets,
 #
 
 def get_molecule_pos(data):
-	for i in range(0:len(data['slices_mask'])):
+	for i in range(0,len(data['slices_mask'])):
 		temp = np.where(data['slices_mask'][i] == 1)
 		XY = np.vstack((SC[0], SC[1], data['slices_mask'][i][temp]))
 	return XY
