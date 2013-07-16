@@ -1,5 +1,5 @@
 ##############################
-# TO GET BOXPLOTS
+# TO GET BOXPLOTS & HISTOGRAMS
 ##############################
 
 
@@ -236,3 +236,267 @@ output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell',
 A = condition3['slices_intensity']
 
 output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_2hLPS100+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 01 in condition 4 (2hLPS500)
+
+A = condition4['slices_intensity']
+
+output.histogram([A[0][0], A[0][1], A[0][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_01_2hLPS500')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 02 in condition 4 (2hLPS500)
+
+A = condition4['slices_intensity']
+
+output.histogram([A[1][0], A[1][1], A[1][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_02_2hLPS500')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 03 in condition 4 (2hLPS500)
+
+A = condition4['slices_intensity']
+
+output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_03_2hLPS500')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 04 in condition 4 (2hLPS500)
+
+A = condition4['slices_intensity']
+
+output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_2hLPS500')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 01 in condition 5 (2hLPS500+SB)
+
+A = condition5['slices_intensity']
+
+output.histogram([A[0][0], A[0][1], A[0][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_01_2hLPS500+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 02 in condition 5 (2hLPS500+SB)
+
+A = condition5['slices_intensity']
+
+output.histogram([A[1][0], A[1][1], A[1][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_02_2hLPS500+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 03 in condition 5 (2hLPS500+SB)
+
+A = condition5['slices_intensity']
+
+output.histogram([A[2][0], A[2][1], A[2][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_03_2hLPS500+SB')
+
+####################################
+
+# Histogram of the intensity of the nucleus, whole cell and cytoplasm for cell 04 in condition 5 (2hLPS500+SB)
+
+A = condition5['slices_intensity']
+
+output.histogram([A[3][0], A[3][1], A[3][2]], labels = ['Nucleus', 'Whole cell', 'Cytoplasm'], outfile = 'Intensity_nucleus+whole+cyt_04_2hLPS500+SB')
+
+#####################################
+
+# To save mask for condition1
+
+plt.imshow(condition1['slices_mask'][0][0], cmap)
+plt.savefig('mask1_image1_cond1')
+
+plt.imshow(condition1['slices_mask'][0][1], cmap)
+plt.savefig('mask2_image1_cond1')
+
+plt.imshow(condition1['slices_mask'][0][2], cmap)
+plt.savefig('mask3_image1_cond1')
+
+plt.imshow(condition1['slices_mask'][1][0], cmap)
+plt.savefig('mask1_image2_cond1')
+
+plt.imshow(condition1['slices_mask'][1][1], cmap)
+plt.savefig('mask2_image2_cond1')
+
+plt.imshow(condition1['slices_mask'][1][2], cmap)
+plt.savefig('mask3_image2_cond1')
+
+plt.imshow(condition1['slices_mask'][2][0], cmap)
+plt.savefig('mask1_image3_cond1')
+
+plt.imshow(condition1['slices_mask'][2][1], cmap)
+plt.savefig('mask2_image3_cond1')
+
+plt.imshow(condition1['slices_mask'][2][2], cmap)
+plt.savefig('mask3_image3_cond1')
+
+plt.imshow(condition1['slices_mask'][3][0], cmap)
+plt.savefig('mask1_image4_cond1')
+
+plt.imshow(condition1['slices_mask'][3][1], cmap)
+plt.savefig('mask2_image4_cond1')
+
+plt.imshow(condition1['slices_mask'][3][2], cmap)
+plt.savefig('mask3_image4_cond1')
+
+#####################################
+
+# To save mask for condition2
+
+plt.imshow(condition2['slices_mask'][0][0], cmap)
+plt.savefig('mask1_image1_cond2')
+
+plt.imshow(condition2['slices_mask'][0][1], cmap)
+plt.savefig('mask2_image1_cond2')
+
+plt.imshow(condition2['slices_mask'][0][2], cmap)
+plt.savefig('mask3_image1_cond2')
+
+plt.imshow(condition2['slices_mask'][1][0], cmap)
+plt.savefig('mask1_image2_cond2')
+
+plt.imshow(condition2['slices_mask'][1][1], cmap)
+plt.savefig('mask2_image2_cond2')
+
+plt.imshow(condition2['slices_mask'][1][2], cmap)
+plt.savefig('mask3_image2_cond2')
+
+plt.imshow(condition2['slices_mask'][2][0], cmap)
+plt.savefig('mask1_image3_cond2')
+
+plt.imshow(condition2['slices_mask'][2][1], cmap)
+plt.savefig('mask2_image3_cond2')
+
+plt.imshow(condition2['slices_mask'][2][2], cmap)
+plt.savefig('mask3_image3_cond2')
+
+plt.imshow(condition2['slices_mask'][3][0], cmap)
+plt.savefig('mask1_image4_cond2')
+
+plt.imshow(condition2['slices_mask'][3][1], cmap)
+plt.savefig('mask2_image4_cond2')
+
+plt.imshow(condition2['slices_mask'][3][2], cmap)
+plt.savefig('mask3_image4_cond2')
+
+#####################################
+
+# To save mask for condition3
+
+plt.imshow(condition3['slices_mask'][0][0], cmap)
+plt.savefig('mask1_image1_cond3')
+
+plt.imshow(condition3['slices_mask'][0][1], cmap)
+plt.savefig('mask2_image1_cond3')
+
+plt.imshow(condition3['slices_mask'][0][2], cmap)
+plt.savefig('mask3_image1_cond3')
+
+plt.imshow(condition3['slices_mask'][1][0], cmap)
+plt.savefig('mask1_image2_cond3')
+
+plt.imshow(condition3['slices_mask'][1][1], cmap)
+plt.savefig('mask2_image2_cond3')
+
+plt.imshow(condition3['slices_mask'][1][2], cmap)
+plt.savefig('mask3_image2_cond3')
+
+plt.imshow(condition3['slices_mask'][2][0], cmap)
+plt.savefig('mask1_image3_cond3')
+
+plt.imshow(condition3['slices_mask'][2][1], cmap)
+plt.savefig('mask2_image3_cond3')
+
+plt.imshow(condition3['slices_mask'][2][2], cmap)
+plt.savefig('mask3_image3_cond3')
+
+plt.imshow(condition3['slices_mask'][3][0], cmap)
+plt.savefig('mask1_image4_cond3')
+
+plt.imshow(condition3['slices_mask'][3][1], cmap)
+plt.savefig('mask2_image4_cond3')
+
+plt.imshow(condition3['slices_mask'][3][2], cmap)
+plt.savefig('mask3_image4_cond3')
+
+#####################################
+
+# To save mask for condition4
+
+plt.imshow(condition4['slices_mask'][0][0], cmap)
+plt.savefig('mask1_image1_cond4')
+
+plt.imshow(condition4['slices_mask'][0][1], cmap)
+plt.savefig('mask2_image1_cond4')
+
+plt.imshow(condition4['slices_mask'][0][2], cmap)
+plt.savefig('mask3_image1_cond4')
+
+plt.imshow(condition4['slices_mask'][1][0], cmap)
+plt.savefig('mask1_image2_cond4')
+
+plt.imshow(condition4['slices_mask'][1][1], cmap)
+plt.savefig('mask2_image2_cond4')
+
+plt.imshow(condition4['slices_mask'][1][2], cmap)
+plt.savefig('mask3_image2_cond4')
+
+plt.imshow(condition4['slices_mask'][2][0], cmap)
+plt.savefig('mask1_image3_cond4')
+
+plt.imshow(condition4['slices_mask'][2][1], cmap)
+plt.savefig('mask2_image3_cond4')
+
+plt.imshow(condition4['slices_mask'][2][2], cmap)
+plt.savefig('mask3_image3_cond4')
+
+plt.imshow(condition4['slices_mask'][3][0], cmap)
+plt.savefig('mask1_image4_cond4')
+
+plt.imshow(condition4['slices_mask'][3][1], cmap)
+plt.savefig('mask2_image4_cond4')
+
+plt.imshow(condition4['slices_mask'][3][2], cmap)
+plt.savefig('mask3_image4_cond4')
+
+#####################################
+
+# To save mask for condition5
+
+plt.imshow(condition5['slices_mask'][0][0], cmap)
+plt.savefig('mask1_image1_cond5')
+
+plt.imshow(condition5['slices_mask'][0][1], cmap)
+plt.savefig('mask2_image1_cond5')
+
+plt.imshow(condition5['slices_mask'][0][2], cmap)
+plt.savefig('mask3_image1_cond5')
+
+plt.imshow(condition5['slices_mask'][1][0], cmap)
+plt.savefig('mask1_image2_cond5')
+
+plt.imshow(condition5['slices_mask'][1][1], cmap)
+plt.savefig('mask2_image2_cond5')
+
+plt.imshow(condition5['slices_mask'][1][2], cmap)
+plt.savefig('mask3_image2_cond5')
+
+plt.imshow(condition5['slices_mask'][2][0], cmap)
+plt.savefig('mask1_image3_cond5')
+
+plt.imshow(condition5['slices_mask'][2][1], cmap)
+plt.savefig('mask2_image3_cond5')
+
+plt.imshow(condition5['slices_mask'][2][2], cmap)
+plt.savefig('mask3_image3_cond5')
+
+plt.imshow(condition5['slices_mask'][3][0], cmap)
+plt.savefig('mask1_image4_cond5')
+
+plt.imshow(condition5['slices_mask'][3][1], cmap)
+plt.savefig('mask2_image4_cond5')
+
+plt.imshow(condition5['slices_mask'][3][2], cmap)
+plt.savefig('mask3_image4_cond5')
