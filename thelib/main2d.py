@@ -20,20 +20,100 @@ condition2_files = [
 ['../../data/Alisi/LX-2/2hLPS500/03_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/03_LITAF.tif'],
 ['../../data/Alisi/LX-2/2hLPS500/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500/04_LITAF.tif']]
 
-condition1 = processing.get_molecule_distribution(condition1_files)
-condition2 = processing.get_molecule_distribution(condition2_files)
+condition3_files = [
+['../../data/Alisi/LX-2/2hLPS100/01_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100/01_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100/02_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100/02_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100/03_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100/03_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100/04_LITAF.tif']]
+
+condition4_files = [
+['../../data/Alisi/LX-2/2hLPS500+SB/01_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500+SB/01_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS500+SB/02_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500+SB/02_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS500+SB/03_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500+SB/03_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS500+SB/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS500+SB/04_LITAF.tif']]
+
+condition5_files = [
+['../../data/Alisi/LX-2/2hLPS100+SB/01_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100+SB/01_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100+SB/02_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100+SB/02_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100+SB/03_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100+SB/03_LITAF.tif'],
+['../../data/Alisi/LX-2/2hLPS100+SB/04_nucleus.tif', '../../data/Alisi/LX-2/2hLPS100+SB/04_LITAF.tif']]
 
 
-nuclei_intensity_c1 = []
-for i in condition1['slices_intensity']:
-	nuclei_intensity_c1.append(i[0])
+condition3_label = [
+'LX-2/2hLPS100/01',
+'LX-2/2hLPS100/02',
+'LX-2/2hLPS100/03',
+'LX-2/2hLPS100/04']
+
+condition5_label = [
+'LX-2/2hLPS100+SB/01',
+'LX-2/2hLPS100+SB/02',
+'LX-2/2hLPS100+SB/03',
+'LX-2/2hLPS100+SB/04']
+
+condition2_label = [
+'LX-2/2hLPS500/01',
+'LX-2/2hLPS500/02',
+'LX-2/2hLPS500/03',
+'LX-2/2hLPS500/04']
+
+condition4_label = [
+'LX-2/2hLPS500+SB/01',
+'LX-2/2hLPS500+SB/02',
+'LX-2/2hLPS500+SB/03',
+'LX-2/2hLPS500+SB/04']
+
+
+condition1 = processing.get_molecule_distribution(condition1_files, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
+condition2 = processing.get_molecule_distribution(condition2_files, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False) 
+condition3 = processing.get_molecule_distribution(condition3_files, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False) 
+condition4 = processing.get_molecule_distribution(condition4_files, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False) 
+condition5 = processing.get_molecule_distribution(condition5_files, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False) 
+		
+# labels_1 = ['NT 01', 'NT 02', 'NT 03', 'NT 04']
+# labels_2 = ['LPS500 01', 'LPS500 02', 'LPS500 03', 'LPS500 04']
+
+# merge intensity arrays for plotting, collecting the names consistently
+
+
+temp = output.select_arrays([condition3, condition5], merged = False, what = [0])
+output.histogram(temp, log=False, labels = condition3_label + condition5_label, histtype='stepfilled', bins=128, color = ['red']*4 + ['green']*4)
+temp = output.select_arrays([condition2, condition4], merged = False, what = [0])
+output.histogram(temp, log=False, labels = condition2_label + condition4_label, histtype='stepfilled', bins=128, color = ['red']*4 + ['green']*4)
+
+
+temp = output.select_images([condition1], name = 'slices_mask', what = [1])
+
+# select all intensity from the same condition
+nuclei_intensity_c1 = output.select_arrays([condition1], merged = False, what = [0])
+nuclei_intensity_c1 = output.select_arrays([condition1], merged = False, what = [0,1,2])
+nuclei_intensity_c1 = output.select_arrays([condition1, condition2], merged = False, what = [0])
+
+nuclei_intensity_c1 = output.select_arrays([condition1, condition2, condition3, condition4, condition5], merged = False, what = [0])
+
+nuclei_intensity_c1 = output.select_arrays([condition2, condition3], merged = True, what = [0,1,2])
+output.boxplot(nuclei_intensity_c1)
+output.histogram(nuclei_intensity_c1)
+
+
+# merge all intensity from the same condition
+
 
 nuclei_intensity_c2 = []
 for i in condition2['slices_intensity']:
 	nuclei_intensity_c2.append(i[0])
 
+extranuclei_intensity_c1 = []
+for i in condition1['slices_intensity']:
+	extranuclei_intensity_c1.append(i[2])	
+
+extranuclei_intensity_c2 = []
+for i in condition2['slices_intensity']:
+	extranuclei_intensity_c2.append(i[2])
+
 nuclei_intensity = nuclei_intensity_c1 +  nuclei_intensity_c2
 output.boxplot(nuclei_intensity)
+output.histogram(nuclei_intensity)
 
 plt.hist(merged_intensity[0], bins=255, color='r', alpha=0.5)
 plt.hist(merged_intensity[1], bins=255, color='g', alpha=0.5)
@@ -46,9 +126,6 @@ plt.hist(slices_1_intensity[0][2], bins=255, color='b', alpha=0.5)
 plt.show()
 
 scipy.stats.ranksums(LPS500res[0][0], NAres[2][0])
-
-
-
 
 
 

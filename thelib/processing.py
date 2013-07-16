@@ -51,6 +51,10 @@ def compare_distributions(dist1, dist2):
 
 '''
 Get molecular distribution from a deck of slices
+For each slice evaluate:
+- amount of molecule in pixels selected by mask
+- amount of molecule in pixels from all the molecule image
+- amount of molecule in pixels from all the molecule image but mask
 '''
 def get_molecule_distribution(dataset,
 		nucleus_index = 0, molecule_index = 1,
