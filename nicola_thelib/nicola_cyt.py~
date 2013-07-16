@@ -5,7 +5,7 @@ import scipy.stats
 cmap = cm.Greys_r
 
 import loader
-import processing
+import processing_no_otsu
 import output
 
 NT_data = [
@@ -38,11 +38,11 @@ LPS500SB_data = [
 ['/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/03_nucleus.tif', '/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/03_LITAF.tif'],
 ['/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/04_nucleus.tif', '/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/04_LITAF.tif']]
 
-NT = processing.get_molecule_distribution(NT_data)
-LPS100 = processing.get_molecule_distribution(LPS100_data)
-LPS100SB = processing.get_molecule_distribution(LPS100SB_data)
-LPS500 = processing.get_molecule_distribution(LPS500_data)
-LPS500SB = processing.get_molecule_distribution(LPS500SB_data)
+NT = processing_no_otsu.get_molecule_distribution(NT_data)
+LPS100 = processing_no_otsu.get_molecule_distribution(LPS100_data)
+LPS100SB = processing_no_otsu.get_molecule_distribution(LPS100SB_data)
+LPS500 = processing_no_otsu.get_molecule_distribution(LPS500_data)
+LPS500SB = processing_no_otsu.get_molecule_distribution(LPS500SB_data)
 
 
 cyt_intensity_NT = []
@@ -66,15 +66,15 @@ for i in LPS500SB['slices_intensity']:
 	cyt_intensity_LPS500SB.append(i[2])
 
 
-output.histogram(cyt_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_NT.png')
+output.histogram(cyt_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_NT.png', log = True, a = 'step')
 
-output.histogram(cyt_intensity_LPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS100.png')
+output.histogram(cyt_intensity_LPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS100.png', log = True, a = 'step')
 
-output.histogram(cyt_intensity_LPS100SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS100SB.png')
+output.histogram(cyt_intensity_LPS100SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS100SB.png', log = True, a = 'step')
 
-output.histogram(cyt_intensity_LPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS500.png')
+output.histogram(cyt_intensity_LPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS500.png', log = True, a = 'step')
 
-output.histogram(cyt_intensity_LPS500SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS500SB.png')
+output.histogram(cyt_intensity_LPS500SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_cyt_LPS500SB.png', log = True, a = 'step')
 
 
 #BP_cyt_NT = output.boxplot(cyt_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_cyt_NT.png', xlab = 'Slices', ylab = 'Intensity')
