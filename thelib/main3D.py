@@ -1,30 +1,9 @@
 #!/usr/bin/env python
-import cv2
-import Image, sys
-import itertools 
-import mahotas
-import pymorph 
-import scipy
-import scipy.ndimage
-import struct
-import numpy                 as     np
-import matplotlib.pyplot     as     plt
-import matplotlib.cm         as     cm
-import matplotlib.image      as     mpimg
-from   PIL                   import Image
-from   scipy                 import ndimage
-from   skimage               import data
-from   skimage               import filter
-from   skimage.exposure      import rescale_intensity
-from   skimage.io	     import imread
-from   skimage.morphology    import reconstruction
 
-cmap = cm.Greys_r
-
-import nikhil3Dload
-import nikhil_lib
-a = nikhil3Dload
-c = nikhil_lib
+import loader
+import processing
+import output
+import processing3D
 
 ACimgs = [
 	['/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C1.tif'],
@@ -97,128 +76,17 @@ NAimgs = [
 	['/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C1.tif'],
 	 ]
 
-NA = a.load_slices(NAimgs, togray = True)
-AC = a.load_slices(ACimgs, togray = True)
+data = compare_molecule_distribution([NAimgs, ACimgs],
+		nucleus_index = 0, molecule_index = 1,
+		nucleus_channel = 0, molecule_channel = 0,
+		nucleus_fill_holes = True, nucleus_otsu = True,
+		molecule_fill_holes = False, molecule_otsu = False)
 
+#3D Construction Image Details
+processing3D.TDAnalysis(data[0], '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
+processing3D.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
+processing3D.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
 
-def plot(data):
-	cmap = cm.Greys_r
-	plt.imshow(data, cmap)
-	plt.show()
-#
-
-def findnuclei(A):
-	T = mahotas.thresholding.otsu(A)
-	C = A.copy()
-	if T < 1:
-		C[ C <= T ] = 0
-		C[ C > T ] = 1
-	else:
-		C[ C < T ] = 0
-		C[ C >= T ] = 1
-	filled = scipy.ndimage.morphology.binary_fill_holes(C)
-	filled = filled.astype(np.uint8)
-	SC = np.where(filled==1)
-	print 'x-coordinates:', 	SC[0], '\n'
-	print 'y-coordinates:', 	SC[1], '\n'
-	#print 'intensity values:',      NA[0][i][SC[0],SC[1]], '\n'
-	#return(filled)
-
-#
-
-def selectregion(image, mask):
-	selection = image[mask>0]
-	return(selection)
-#
-
-def litafnucleus(nucleus, litaf):
-	nu = findnuclei(nucleus)
-	regi = selectregion(litaf, nu)
-	return(regi)
-#
-
-def histog(A, B):
-	NA = plt.hist(A, bins=255, alpha=0.5, color='b')
-	AC = plt.hist(B, bins=255, alpha=0.5, color='r')
-	plt.show()
-#
-
-def TDAnalysis(datatype, maxrange, outputfile, outputfiletype):
-	NC = 0
-	h = open(outputfile, outputfiletype)
-	h.write(str(datatype[0][0].shape[0]) + '\t' + str(datatype[0][0].shape[1]) + '\n')
-	for i in range(0, maxrange):
-		A = datatype[i][0]
-		T = mahotas.thresholding.otsu(A)
-		C = A.copy()
-		if T < 1:
-			C[ C <= T ] = 0
-			C[ C > T ] = 1
-		else:
-			C[ C < T ] = 0
-			C[ C >= T ] = 1
-		filled = scipy.ndimage.morphology.binary_fill_holes(C)
-		filled = filled.astype(np.uint8)
-		SC = np.where(filled == 1)
-		NC += len(SC[0])
-		#print 'X-coordinates:                          ', SC[0], '\n'
-		#print 'Y-coordinates:                          ', SC[1], '\n'
-		GRAY = datatype[i][1][SC[0], SC[1]]
-		#if len(SC[0]) >= 1:
-		#	if len(SC[1]) >= 1:
-		#		h.write('Intensity Values:' + str(GRAY) + '\n')
-		RED = GRAY.copy()
-		GREEN = GRAY.copy()
-		BLUE = GRAY.copy()
-		XY = np.vstack((SC[0], SC[1], [i*5]*len(RED), RED, GREEN, BLUE))
-		#print XY
-		for p in range(0, len(XY[0])):
-			for yel in range(0, len(XY)):
-				h.write(str(XY[yel][p]) + '\t')
-			h.write('\n')	
-	h.write(str(NC) + '\n')
-	h.write('.' + '\n')
-	h.close()
-	return 
-
-def CanNuc(datatype, maxrange, outputfile, outputfiletype):
-	h = open(outputfile, outputfiletype)
-	TC = 0	
-	for i in range(0, maxrange):
-		A = datatype[i][0]
-		T = mahotas.thresholding.otsu(A)
-		C = A.copy()
-		if T < 1:
-			C[ C <= T ] = 0
-			C[ C > T ] = 1
-		else:
-			C[ C < T ] = 0
-			C[ C >= T ] = 1
-		filled = scipy.ndimage.morphology.binary_fill_holes(C)
-		filled = filled.astype(np.uint8)
-		edges1 = filter.canny(filled, sigma=1)
-		edges1 = edges1.astype(np.uint8)
-		edges1 = np.where(edges1 == 1)
-		TC += len(edges1[0])
-		XY1 = np.vstack((edges1[0], edges1[1], [i*5]*len(edges1[0])))
-		for p in range(0, len(XY1[0])):
-			for yel in range(0, len(XY1)):
-				h.write(str(XY1[yel][p]) + '\t')
-			h.write('\n')
-	h.write(str(TC) + '\n')
-	h.write('.' + '\n')
-	h.close()
-def findlitaf(datatype, maxrange, outputfile, outputfiletype):
-	h = open(outputfile, outputfiletype)	
-	TC = 0
-	for i in range(0, maxrange):
-		A = datatype[i][0]
-		LI = np.where(A > 0)
-		TC += len(LI[0])		
-		LI = np.vstack((LI[0],LI[1], [i*5]*len(LI[0])))
-		for p in range(0, len(LI[0])):
-			for yel in range(0, len(LI)):
-				h.write(str(LI[yel][p]) + '\t')
-			h.write('\n')
-	h.write(str(TC) + '\n')
-	h.close()
+# print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
+# print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucAC60x.txt')
+# print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafAC60x.txt')
