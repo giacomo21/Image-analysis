@@ -117,11 +117,11 @@ for j in sliceanalysis:
 	B.append(tmp)
 '''
 #3D Construction Image Details
-#print 'Dimensions of stack:', NA[0][0].shape, '\n'
-print b.TDAnalysis(NA, 39), '\n'
-#print 'Dimensions of stack:', AC[0][0].shape, '\n'
-#print b.TDAnalysis(AC, 27)
+print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
+print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
 
-#print b.CanNuc(NA, 39)
+print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
+print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucAC60x.txt')
 
-#print b.findlitaf(NA, 39)
+print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
+print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafAC60x.txt')

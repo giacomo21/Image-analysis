@@ -191,7 +191,7 @@ def CanNuc(datatype, maxrange):
 		XY1 = np.vstack((edges1[0], edges1[1]))
 		print 'Stack Number (Distance from origin):    ', i, '(', i*5, ')', '\n'
 		for y in itertools.combinations(XY1, 2):
-			print 'X, Y Coordinates of Nuclei:'#, zip(*y), '\n'
+			print 'X, Y Coordinates of Nuclei:', zip(*y), '\n'
 	
 def findlitaf(datatype, maxrange):
 	for i in range(0, maxrange):
