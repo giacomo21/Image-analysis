@@ -143,10 +143,10 @@ def histog(A, B):
 	plt.show()
 #
 
-def TDAnalysis(datatype, maxrange, outputfile):
+def TDAnalysis(datatype, maxrange, outputfile, outputfiletype):
 	NC = 0
-	h = open(outputfile, 'w')
-	h.write('Dimensions of stacks: ' + str(datatype[0][0].shape) + '\n' + '\n')
+	h = open(outputfile, outputfiletype)
+	h.write(str(datatype[0][0].shape[0]) + '\t' + str(datatype[0][0].shape[1]) + '\n')
 	for i in range(0, maxrange):
 		A = datatype[i][0]
 		T = mahotas.thresholding.otsu(A)
@@ -161,7 +161,6 @@ def TDAnalysis(datatype, maxrange, outputfile):
 		filled = filled.astype(np.uint8)
 		SC = np.where(filled == 1)
 		NC += len(SC[0])
-		h.write('Stack Number (Distance from origin): '+ str(i) + ' (' + str(i*5) + ')' + '\n' + '\n')
 		#print 'X-coordinates:                          ', SC[0], '\n'
 		#print 'Y-coordinates:                          ', SC[1], '\n'
 		GRAY = datatype[i][1][SC[0], SC[1]]
@@ -171,18 +170,20 @@ def TDAnalysis(datatype, maxrange, outputfile):
 		RED = GRAY.copy()
 		GREEN = GRAY.copy()
 		BLUE = GRAY.copy()
-		XY = np.vstack((SC[0], SC[1], [i]*len(RED), RED, GREEN, BLUE))
+		XY = np.vstack((SC[0], SC[1], [i*5]*len(RED), RED, GREEN, BLUE))
 		#print XY
 		for p in range(0, len(XY[0])):
 			for yel in range(0, len(XY)):
 				h.write(str(XY[yel][p]) + '\t')
-			h.write('\n' + '\n')	
-	h.write('Number of Coordinates: ' + str(NC) + '\n')
+			h.write('\n')	
+	h.write(str(NC) + '\n')
+	h.write('.' + '\n')
 	h.close()
 	return 
 
-def CanNuc(datatype, maxrange, outputfile):
-	h = open(outputfile, 'w')
+def CanNuc(datatype, maxrange, outputfile, outputfiletype):
+	h = open(outputfile, outputfiletype)
+	TC = 0	
 	for i in range(0, maxrange):
 		A = datatype[i][0]
 		T = mahotas.thresholding.otsu(A)
@@ -198,23 +199,26 @@ def CanNuc(datatype, maxrange, outputfile):
 		edges1 = filter.canny(filled, sigma=1)
 		edges1 = edges1.astype(np.uint8)
 		edges1 = np.where(edges1 == 1)
-		XY1 = np.vstack((edges1[0], edges1[1]))
-		h.write('Stack Number (Distance from origin): ' + str(i) + ' (' + str(i*5) + ')' + '\n' + '\n')
+		TC += len(edges1[0])
+		XY1 = np.vstack((edges1[0], edges1[1], [i*5]*len(edges1[0])))
 		for p in range(0, len(XY1[0])):
 			for yel in range(0, len(XY1)):
 				h.write(str(XY1[yel][p]) + '\t')
-			h.write('\n' + '\n')
+			h.write('\n')
+	h.write(str(TC) + '\n')
+	h.write('.' + '\n')
 	h.close()
-def findlitaf(datatype, maxrange, outputfile):
-	h = open(outputfile, 'w')	
+def findlitaf(datatype, maxrange, outputfile, outputfiletype):
+	h = open(outputfile, outputfiletype)	
+	TC = 0
 	for i in range(0, maxrange):
 		A = datatype[i][0]
 		LI = np.where(A > 0)
-		h.write('Stack Number (Distance from origin): ' + str(i) + ' (' + str(i*5) + ')' + '\n' + '\n')
-		LI = np.vstack((LI[0],LI[1]))
+		TC += len(LI[0])		
+		LI = np.vstack((LI[0],LI[1], [i*5]*len(LI[0])))
 		for p in range(0, len(LI[0])):
 			for yel in range(0, len(LI)):
 				h.write(str(LI[yel][p]) + '\t')
-			h.write('\n' + '\n')
-#		for m in itertools.combinations(LI, 2):
-#			h.write('X, Y Coordinates of Original LITAF: ' + str(zip(*m)) + '\n')
+			h.write('\n')
+	h.write(str(TC) + '\n')
+	h.close()

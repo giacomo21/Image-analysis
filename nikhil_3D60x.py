@@ -116,11 +116,11 @@ for j in sliceanalysis:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
 '''
-print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
-print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
+print b.TDAnalysis(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'w')
+print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'w')
 
-print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
-print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucAC60x.txt')
+print b.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'a')
+print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'a')
 
-print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
-print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafAC60x.txt')
+print b.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'a')
+print b.findlitaf(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/ACFullData.txt', 'a')
