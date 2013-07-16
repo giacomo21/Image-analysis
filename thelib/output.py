@@ -28,7 +28,7 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
 
 	plt.xlabel('Intensity')
-	plt.ylabel('Number of occurrencies')
+	plt.ylabel('Number of occurrences')
 	plt.xlim(0, 256)
 	plt.ylim(minim, maxim)
 	plt.legend()
