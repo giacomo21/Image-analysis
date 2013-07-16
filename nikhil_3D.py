@@ -1,8 +1,11 @@
 #!/usr/bin/env python
+#stack number, number*5: x,y,intensity.
 import cv2
 import Image, sys
 import itertools 
 import mahotas
+import pickle
+import pprint
 import pymorph 
 import scipy
 import scipy.ndimage
@@ -14,6 +17,7 @@ import matplotlib.image      as     mpimg
 from   PIL                   import Image
 from   scipy                 import ndimage
 from   skimage               import data
+from   skimage               import filter
 from   skimage.exposure      import rescale_intensity
 from   skimage.io	     import imread
 from   skimage.morphology    import reconstruction
@@ -103,6 +107,7 @@ NA = a.load_slices(NAimgs, togray = True)
 AC = a.load_slices(ACimgs, togray = True)
 
 #Sliceanalysis
+'''
 sliceanalysis = a.analyze_slices(NAimgs, ACimgs)
 B = []
 for j in sliceanalysis:
@@ -110,8 +115,13 @@ for j in sliceanalysis:
 	for k in j:
 		tmp = np.concatenate([tmp,k])
 	B.append(tmp)
-
+'''
 #3D Construction Image Details
-print b.TDAnalysis(NA, 38)		
-print b.TDAnalysis(AC, 27)
+#print 'Dimensions of stack:', NA[0][0].shape, '\n'
+#print b.TDAnalysis(NA, 39), '\n'
+#print 'Dimensions of stack:', AC[0][0].shape, '\n'
+#print b.TDAnalysis(AC, 27)
 
+#print b.CanNuc(NA, 39)
+
+print b.findlitaf(NA, 39)
