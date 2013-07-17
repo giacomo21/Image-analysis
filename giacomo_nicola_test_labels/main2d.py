@@ -14,17 +14,17 @@ condition1_files = [
 ]
 
 condition2_files = [
-['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/01_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/03_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_LITAF.tif'],
+['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/01_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/03_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_LITAF.tif'],
 ]
 
 
 
 # def test1(conditions, out_folder, conditions_labels=None, mask_label='nuclei', molecule_label='LITAF'):
-data1 = processing.compare_molecule_distribution(condition1_files,
+data1 = processing.get_molecule_distribution(condition1_files,
 		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
 		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
 
-data2 = processing.compare_molecule_distribution(condition2_files,
+data2 = processing.get_molecule_distribution(condition2_files,
 		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
 		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
 #	temp = output.select_arrays(data, merged = False, what = [0])
@@ -94,7 +94,7 @@ data2 = processing.compare_molecule_distribution(condition2_files,
 #'LX-2-2hLPS100+SB-04']
 
 
-A = giacomo_nicola_labels.labelfunc(data1['slices_gray'], condition_name = ['NT'], condition_name_slice = ['01', '02', '03', '04'])
+A = giacomo_nicola_labels.labelfunc(data1['slices_gray'], condition_name = ['NT'], condition_name_slice = ['01', '02', '03', '04'], condition_channel = ['nucleus', 'LITAF'])
 print A
 
 B = giacomo_nicola_labels.labelfunc(data2['slices_gray'])

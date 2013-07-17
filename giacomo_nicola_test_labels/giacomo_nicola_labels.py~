@@ -23,5 +23,9 @@ def labelfunc(condition, condition_name = None, condition_name_slice = None, con
 			for j in label_cond_name_slice:
 				label_cond_name_slice_chann.append(j + '_' + i)
 	else:
-			
-	return(label_cond_name, label_cond_name_slice)
+		for j in label_cond_name_slice:
+			for i in condition:
+				for y in i:
+					for r in y:
+						label_cond_name_slice_chann.append(j + '_' + str(y.index(r)))	
+	return(label_cond_name, label_cond_name_slice, label_cond_name_slice_chann)
