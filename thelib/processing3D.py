@@ -3,6 +3,10 @@ import numpy as np
 import mahotas
 import scipy
 from skimage import filter 
+import pymorph
+import matplotlib.pyplot     as     plt
+from scipy import ndimage
+
 
 def get_molecule_pos(data):
 	for i in range(0, len(data['slices_mask'])):
@@ -55,6 +59,8 @@ def CanNuc(datatype, maxrange, outputfile, outputfiletype):
 	TC = 0	
 	for i in range(0, maxrange):
 		A = datatype[i][0]
+		rmax = pymorph.regmax(A)
+		seeds, nr_nuclei = ndimage.label(rmax)
 		T = mahotas.thresholding.otsu(A)
 		C = A.copy()
 		if T < 1:
@@ -65,18 +71,38 @@ def CanNuc(datatype, maxrange, outputfile, outputfiletype):
 			C[ C >= T ] = 1
 		filled = scipy.ndimage.morphology.binary_fill_holes(C)
 		filled = filled.astype(np.uint8)
-		edges1 = filter.canny(filled, sigma=1)
-		edges1 = edges1.astype(np.uint8)
-		edges1 = np.where(edges1 == 1)
-		TC += len(edges1[0])
-		XY1 = np.vstack((edges1[0], edges1[1], [i*5]*len(edges1[0])))
-		for p in range(0, len(XY1[0])):
-			for yel in range(0, len(XY1)):
-				h.write(str(XY1[yel][p]) + '\t')
-			h.write('\n')
+		
+		dist = ndimage.distance_transform_edt(filled > T)
+		dist = dist.max() - dist
+		dist -= dist.min()
+		dist = dist/float(dist.ptp()) * 255
+		dist = dist.astype(np.uint8)
+		
+		nuclei = pymorph.cwatershed(dist, seeds)
+		find = mahotas.label(nuclei)
+		h.write('Stack number: ' + str(i) +'\n')
+		for n in range(0, find[1] + 1):
+			CD = np.where(find[0] == n)
+			XY1 = np.vstack((CD[0], CD[1]))
+			edges = filter.canny(XY1, sigma=1)
+			edges = edges.astype(np.uint8)
+			edges = np.where(edges == 1)
+			TC += len(edges[0])
+						
+			h.write('Cell number: ' + str(n) + '\n')
+		#TC += len(edges1[0])
+		#XY1 = np.vstack((edges1[0], edges1[1], [i*5]*len(edges1[0])))
+			for p in range(0, len(XY1[0])):
+				for yel in range(0, len(XY1)):
+					h.write(str(XY1[yel][p]) + '\t')
+				h.write('\n')
 	h.write(str(TC) + '\n')
 	h.write('.' + '\n')
 	h.close()
+
+
+
+
 def findlitaf(datatype, maxrange, outputfile, outputfiletype):
 	h = open(outputfile, outputfiletype)	
 	TC = 0
