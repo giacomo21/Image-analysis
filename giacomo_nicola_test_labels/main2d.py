@@ -9,12 +9,24 @@ import processing
 import output
 import giacomo_nicola_labels
 
+condition1_files = [
+['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/01_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/02_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/03_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/04_LITAF.tif'],
+]
+
+condition2_files = [
+['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/01_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/03_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_LITAF.tif'],
+]
+
+
 
 # def test1(conditions, out_folder, conditions_labels=None, mask_label='nuclei', molecule_label='LITAF'):
-#	data = processing.compare_molecule_distribution(conditions,
-#		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
-#		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
+data1 = processing.compare_molecule_distribution(condition1_files,
+		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
+		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
 
+data2 = processing.compare_molecule_distribution(condition2_files,
+		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
+		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
 #	temp = output.select_arrays(data, merged = False, what = [0])
 #	output.histogram(temp, log=False, labels = None, histtype='stepfilled', bins=128, color = None)
 
@@ -26,13 +38,6 @@ import giacomo_nicola_labels
 # 
 
 
-condition1_files = [
-['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/01_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/02_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/03_LITAF.tif'],['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/NT/04_LITAF.tif'],
-]
-
-condition2_files = [
-['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/01_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/01_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/02_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/2hLPS100/NT/03_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/03_LITAF.tif'], ['/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_nucleus.tif', '/home/giacomo/Scrivania/Image analysis/Alisi/LX-2/2hLPS100/04_LITAF.tif'],
-]
 
 
 # condition3_files = [
@@ -55,7 +60,7 @@ condition2_files = [
 
 #conditions_labels = ['NT', '2hLPS500', '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
 
-#conditions_files = [condition1_files, condition2_files, condition3_files, condition4_files, condition5_files]
+# conditions_files = [condition1_files, condition2_files]
 # test1(conditions_files, '.', conditions_labels)
 
 #condition1_label = [
@@ -89,10 +94,10 @@ condition2_files = [
 #'LX-2-2hLPS100+SB-04']
 
 
-A = giacomo_nicola_labels.labelfunc([condition1_files], condition_name = ['NT'], condition_name_slice = ['01', '02', '03', '04'])
+A = giacomo_nicola_labels.labelfunc(data1['slices_gray'], condition_name = ['NT'], condition_name_slice = ['01', '02', '03', '04'])
 print A
 
-B = giacomo_nicola_labels.labelfunc([condition2_files])
+B = giacomo_nicola_labels.labelfunc(data2['slices_gray'])
 print B
 
 
