@@ -145,3 +145,52 @@ def get_molecule_pos(data):
 		XY = np.vstack((SC[0], SC[1], data['slices_mask'][i][temp]))
 	return XY
 #
+
+
+
+def compare(condition1, condition2, output_folder=None):
+	c1_arrays = output.select_arrays([condition1], merged = True, what = [0])
+	c2_arrays = output.select_arrays([condition2], merged = True, what = [0])
+
+	rank_sum_merged = scipy.stats.ranksums(c1_arrays[0], c2_arrays[0])
+	t_test_merged = scipy.stats.ttest_ind(c1_arrays[0], c2_arrays[0])
+
+	c1_arrays = output.select_arrays([condition1], merged = False, what = [0])
+	c2_arrays = output.select_arrays([condition2], merged = False, what = [0])
+
+	c1_median = []
+	c1_mean = []
+	c1_var = []
+	c1_sum = []
+	for i in c1_arrays:
+		c1_median.append(np.median(i))
+		c1_mean.append(np.mean(i))
+		c1_var.append(np.var(i))
+		c1_sum.append(np.sum(i))
+
+	c2_median = []
+	c2_mean = []
+	c2_var = []
+	c2_sum = []
+	for i in c2_arrays:
+		c2_median.append(np.median(i))
+		c2_mean.append(np.mean(i))
+		c2_var.append(np.var(i))
+		c2_sum.append(np.sum(i))
+
+	rank_sum_median = scipy.stats.ranksums(c1_median, c2_median)
+	t_test_median = scipy.stats.ttest_ind(c1_median, c2_median)
+	rank_sum_mean = scipy.stats.ranksums(c1_mean, c2_mean)
+	t_test_mean = scipy.stats.ttest_ind(c1_mean, c2_mean)
+	rank_sum_sum = scipy.stats.ranksums(c1_sum, c2_sum)
+	t_test_sum = scipy.stats.ttest_ind(c1_sum, c2_sum)
+
+	results = {}
+	results['median'] = [c1_median, c2_median]
+	results['mean'] = [c1_mean, c2_mean]
+	results['sum'] = [c1_sum, c2_sum]
+	results['rank_sum_median'] = rank_sum_median
+	results['rank_sum_mean'] = rank_sum_mean
+	results['rank_sum_sum'] = rank_sum_sum
+	return(results)
+#
