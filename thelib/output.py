@@ -45,8 +45,8 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 	else:
 		plt.savefig(outfile, dpi=72)
 #
-
-<<<<<<< HEAD
+'''
+<<<<<<<
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', rotation=0):
 =======
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
@@ -78,7 +78,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	else:
 		plt.savefig(outfile, dpi=72)
 #
-
+'''
 def select_images(conditions, name = 'slices_mask', what=[0]):
 	data = []
 	for i in conditions:

@@ -5,7 +5,7 @@ import scipy
 import numpy as np
 import loader
 import processing as a
-import output
+#import output
 import processing3D as b 
 import nikimgdb as c
 import matplotlib.pyplot     as     plt
@@ -30,7 +30,7 @@ dataHEP = a.compare_molecule_distribution([c.CCKimgs, c.NCKimgs],
 #dna = plt.imread(dataHEP[0]['slices_gray'][10][0])
 A = dataHEP[0]['slices_mask'][10][0]
 labeled, nr_objects = ndimage.label(A > 0)
-print nr_objects
+#print nr_objects
 #plt.imshow(labeled)
 #plt.jet()
 #plt.show()
@@ -52,13 +52,22 @@ dist = dist.astype(np.uint8)
 nuclei = pymorph.cwatershed(dist, seeds)
 #plt.imshow(nuclei)
 #plt.show()
-
-regions = mahotas.label(nuclei)
-print regions
-print regions[0]
-
-labeled, n_nucleus  = mahotas.label(f)
-print('Found {} nuclei.'.format(n_nucleus))
+labeled, regions = mahotas.label(nuclei)
+print('Found {} nuclei.'.format(regions))
+find = mahotas.label(nuclei)
+print find[1]
+output = ''
+h = open('/home/nikhil/Image-analysis/thelib/trialseg.txt', 'w')
+for i in range(0, find[1] + 1):
+	CD = np.where(find[0] == i)
+	XY = np.vstack((CD[0], CD[1]))
+	h.write('Cell number: ' + str(i) + '\n')
+	for p in range(0, len(XY[0])):
+		for yel in range(0, len(XY)):
+			h.write(str(XY[yel][p]) + '\t')
+		h.write('\n')
+	h.write('\n')
+h.close()
 
 #3D Construction Image Details of NA60x
 #b.TDAnalysis(dataHSC[0]['slices_mask'], 39, '/home/nikhil/Image-analysis/Nikhil_Trials/NAFullData.txt', 'w')
