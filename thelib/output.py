@@ -23,7 +23,7 @@ def histogram(data, labels = None, outfile = None):
 		plt.savefig(outfile)
 #
 
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = ''):
+def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', rotation=0):
 	if labels == None:
 		labels = [''] * len(x)
 	r = plt.boxplot(x)
@@ -32,7 +32,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = ''):
 	plt.setp(r['fliers'], color='gray')
 	plt.setp(r['whiskers'], color='black', lw=2)
 	plt.setp(r['caps'], color='black', lw=2)
-	plt.xticks(range(1,len(x)+1), labels)
+	plt.xticks(range(1,len(x)+1), labels, rotation=rotation)
 	# y=range(0,256)
 	# plt.yticks(y, y)
 	plt.ylim(0, 256)
