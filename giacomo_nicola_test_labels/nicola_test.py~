@@ -1,0 +1,28 @@
+def test1(conditions, out_folder, conditions_labels=None, mask_label='nuclei', molecule_label='LITAF'):
+	data = processing.compare_molecule_distribution(conditions, nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, 	molecule_channel = 0, nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
+	
+	temp = output.select_arrays(data, merged = False, what = [0])
+	output.histogram(temp, log=False, labels = None, histtype='stepfilled', bins=128, color = None)
+
+	temp = output.select_arrays(data, merged = True, what = [0])
+	output.boxplot(temp, labels = conditions_labels, outfile=out_folder + '/boxplot.png')
+
+	temp = output.select_images([condition1], name = 'slices_mask', what = [1])
+	return(data)
+ 
+def select_arrays(conditions, merged=False, what=[0]):
+	data = []
+	if merged:
+		tos = 'merged_intensity'
+		for i in conditions:
+			j = i[tos]
+			for k in what:
+				data.append(j[k])
+	else:
+		tos = 'slices_intensity'
+		for i in conditions:
+			for j in i[tos]:
+				for k in what:
+					data.append(j[k])
+	# version with dict first and list after
+	return(data)
