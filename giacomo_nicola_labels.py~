@@ -1,0 +1,19 @@
+def labelfunc(condition, condition_name = None):
+	print len(condition)
+	print condition_name
+	label_cond = []
+	if not condition_name == None:
+		label_cond = condition_name * len(condition)
+	else:
+		for i in range(0, len(condition)):
+			label_cond.append(i+1)
+	return(label_cond)
+#	if not condition_slice_name == None:
+		
+#	else:
+
+#	if not condition_channel == None:
+
+#	else:
+			
+# , condition_slice_name = None, condition_channel = None
