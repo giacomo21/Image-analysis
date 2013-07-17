@@ -4,16 +4,8 @@ import numpy as np
 import math
 from PIL import Image
 
-<<<<<<< HEAD
 def plot(data, outfile = None):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
-=======
-def plot(data):
-<<<<<<< HEAD
-	plt.clf()
-=======
->>>>>>> a1ef0e169d03f4a436a94b93e2a24f1d1a052fbc
->>>>>>> 900320c08a713d469600ed18a3774e000c9064c0
 	cmap = cm.Greys_r
 	plt.imshow(data, cmap)
 	if outfile == None:
@@ -22,36 +14,8 @@ def plot(data):
 		plt.savefig(outfile, dpi=100)
 #
 
-<<<<<<< HEAD
 def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
-=======
-<<<<<<< HEAD
-def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
-	if labels == None:
-		labels = [''] * len(data)
-	plt.clf()
-	minim = 1
-	maxim = 0
-	for i in range(0,len(data)):
-		temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		if maxim < temp[0].max():
-			maxim = temp[0].max()
-
-	plt.clf()
-	for i in range(0,len(data)):
-		if color == None:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		else:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
-
-	plt.xlabel('Intensity')
-	plt.ylabel('Number of occurrences')
-	plt.xlim(0, 256)
-	plt.ylim(minim, maxim)
-=======
-def histogram(data, labels = None, outfile = None):
->>>>>>> 900320c08a713d469600ed18a3774e000c9064c0
 	if labels == None:
 		labels = [''] * len(data)
 	if len(labels) < len(data):
@@ -74,11 +38,7 @@ def histogram(data, labels = None, outfile = None):
 	plt.xlabel('Intensity')
 	plt.ylabel('Number of occurrences')
 	plt.xlim(0, 256)
-<<<<<<< HEAD
 	plt.ylim(minim, maxim)
-=======
->>>>>>> a1ef0e169d03f4a436a94b93e2a24f1d1a052fbc
->>>>>>> 900320c08a713d469600ed18a3774e000c9064c0
 	plt.legend()
 	if outfile == None:
 		plt.show()
@@ -86,21 +46,9 @@ def histogram(data, labels = None, outfile = None):
 		plt.savefig(outfile, dpi=72)
 #
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', rotation=0):
-=======
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
 	# plt.clf()
->>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
-=======
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
-	plt.clf()
-=======
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = ''):
->>>>>>> a1ef0e169d03f4a436a94b93e2a24f1d1a052fbc
->>>>>>> 900320c08a713d469600ed18a3774e000c9064c0
 	if labels == None:
 		labels = [''] * len(x)
 	if len(labels) < len(x):
@@ -111,18 +59,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = ''):
 	plt.setp(r['fliers'], color='gray')
 	plt.setp(r['whiskers'], color='black', lw=2)
 	plt.setp(r['caps'], color='black', lw=2)
-<<<<<<< HEAD
-<<<<<<< HEAD
-	plt.xticks(range(1,len(x)+1), labels, rotation=rotation)
-=======
 	plt.xticks(range(1,len(x)+1), labels, rotation=xrot)
->>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
-=======
-	plt.xticks(range(1,len(x)+1), labels, rotation=xrot)
-=======
-	plt.xticks(range(1,len(x)+1), labels)
->>>>>>> a1ef0e169d03f4a436a94b93e2a24f1d1a052fbc
->>>>>>> 900320c08a713d469600ed18a3774e000c9064c0
 	# y=range(0,256)
 	# plt.yticks(y, y)
 	plt.ylim(0, 256)
@@ -144,22 +81,29 @@ def select_images(conditions, name = 'slices_mask', what=[0]):
 	return(data)
 #
 
-def select_arrays(conditions, merged=False, what=[0]):
+def select_arrays(conditions, merged=False, what=[0], conditions_name = None, slices_name = None, channels_name = None):
 	data = []
+	labels = []
 	if merged:
 		tos = 'merged_intensity'
-		for i in conditions:
-			j = i[tos]
+		for i in range(0, len(conditions)):
+			temp1 = conditions_name[i]
+			j = conditions[i][tos]
+			temp2 = 'merged'
 			for k in what:
 				data.append(j[k])
+				labels.append(temp1 + '_' + temp2 + '_' + channels_name[k])					
 	else:
 		tos = 'slices_intensity'
-		for i in conditions:
-			for j in i[tos]:
+		for i in range(0, len(conditions)):
+			temp1 = conditions_name[i]
+			for j in range(0, len(i[tos])):
+				temp2 = slices_name[j]				
 				for k in what:
 					data.append(j[k])
+					labels.append(temp1 + '_' + channels_name[k])			
 	# version with dict first and list after
-	return(data)
+	return(data, labels)
 #
 
 # def print_single_histograms(data, folder = '.'):
@@ -235,75 +179,20 @@ def plot_all(data, out_folder, conditions, conditions_labels=None):
 			histogram(temp, log=True, labels = labels, histtype='stepfilled', bins=128, color = color, outfile = out_folder + '/' + conditions_labels[i] + '-' + conditions_labels[j] + '_histogram_filled.png')
 
 # INTER CONDITION - masks - histo + boxplot - merged slices
-	temp = select_arrays(data, merged = True, what = [0])
-	labels = conditions_labels
-	boxplot(temp, labels = labels, outfile = out_folder + '/' + 'mask' + '_merged_boxplot.png')
-	histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'mask' + '_merged_histogram.png')
+	temp = select_arrays(data, merged = True, conditions_name = ?, slices_name = ?, channels_name = ?,  what = [0])
+	boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + 'mask' + '_merged_boxplot.png')
+	histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'mask' + '_merged_histogram.png')
 	
 
 # SINGLE CONDITION - mask vs all - histo + boxplot - single slices
 	for i in range(0,len(data)):
-		temp = select_arrays([data[i]], merged = False, what = [0,1])
-		labels = [ conditions_labels[i] + '_nuclei' , conditions_labels[i] + '_all']
-		histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_histogram.png')
-		boxplot(temp, labels = labels, outfile = out_folder + '/' + conditions_labels[i] + '_boxplot.png')
+		temp = select_arrays([data[i]], merged = False, conditions_name = ?, slices_name = ?, channels_name = ['nuclei', 'all'], what = [0,1])
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_histogram.png')
+		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + conditions_labels[i] + '_boxplot.png')
 
 # SINGLE CONDITION - mask vs all - histo + boxplot - merged slices
 	for i in range(0,len(data)):
-		temp = select_arrays([data[i]], merged = True, what = [0,1])
-		labels = [ conditions_labels[i] + '_nuclei' , conditions_labels[i] + '_all']
-		histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_merged_histogram.png')
-		boxplot(temp, labels = labels, outfile = out_folder + '/' + conditions_labels[i] + '_merged_boxplot.png')
+		temp = select_arrays([data[i]], merged = True, conditions_name = ?, slices_name = ?, channels_name = ['nuclei', 'all'], what = [0,1])
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_merged_histogram.png')
+		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + conditions_labels[i] + '_merged_boxplot.png')
 #
-<<<<<<< HEAD
-
-def select_images(conditions, name = 'slices_mask', what=[0]):
-	data = []
-	for i in conditions:
-		for j in i[name]:
-			for k in what:
-				data.append(j[k])
-	# version with dict first and list after
-	return(data)
-#
-
-def select_arrays(conditions, merged=False, what=[0]):
-	data = []
-	if merged:
-		tos = 'merged_intensity'
-		for i in conditions:
-			j = i[tos]
-			for k in what:
-				data.append(j[k])
-	else:
-		tos = 'slices_intensity'
-		for i in conditions:
-			for j in i[tos]:
-				for k in what:
-					data.append(j[k])
-	# version with dict first and list after
-	return(data)
-#
-
-# def print_single_histograms(data, folder = '.'):
-
-# 	fna = folder + "/slice_"
-# 	data['slices']
-# 	data['slices_gray'] = slices_gray
-# 	data['slices_mask'] = slices_mask
-# 	data['slices_dataset'] = dataset
-
-# 	fna = folder + "/intensity_"
-
-# 	boxplot()
-# 	for i in data['slices_intensity']:
-# 		histogram
-
-		
-# 	data['merged_intensity'] = merged_intensity
-
-
-
-# #
-=======
->>>>>>> a1ef0e169d03f4a436a94b93e2a24f1d1a052fbc

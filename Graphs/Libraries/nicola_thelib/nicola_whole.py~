@@ -5,7 +5,7 @@ import scipy.stats
 cmap = cm.Greys_r
 
 import loader
-import processing
+import processing_no_otsu
 import output
 
 NT_data = [
@@ -38,11 +38,11 @@ LPS500SB_data = [
 ['/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/03_nucleus.tif', '/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/03_LITAF.tif'],
 ['/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/04_nucleus.tif', '/home/nicola/Desktop/Project/Alisi/LX-2/2hLPS500+SB/04_LITAF.tif']]
 
-NT = processing.get_molecule_distribution(NT_data)
-LPS100 = processing.get_molecule_distribution(LPS100_data)
-LPS100SB = processing.get_molecule_distribution(LPS100SB_data)
-LPS500 = processing.get_molecule_distribution(LPS500_data)
-LPS500SB = processing.get_molecule_distribution(LPS500SB_data)
+NT = processing_no_otsu.get_molecule_distribution(NT_data)
+LPS100 = processing_no_otsu.get_molecule_distribution(LPS100_data)
+LPS100SB = processing_no_otsu.get_molecule_distribution(LPS100SB_data)
+LPS500 = processing_no_otsu.get_molecule_distribution(LPS500_data)
+LPS500SB = processing_no_otsu.get_molecule_distribution(LPS500SB_data)
 
 
 whole_intensity_NT = []
@@ -65,15 +65,15 @@ whole_intensity_LPS500SB = []
 for i in LPS500SB['slices_intensity']:
 	whole_intensity_LPS500SB.append(i[1])
 
-output.histogram(whole_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_whole_NT.png')
+output.histogram(whole_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'no_otsu_hist_whole_NT.png', log = True, a = 'step')
 
-output.histogram(whole_intensity_LPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_whole_LPS100.png')
+output.histogram(whole_intensity_LPS100, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'no_otsu_hist_whole_LPS100.png', log = True, a = 'step')
 
-output.histogram(whole_intensity_LPS100SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_whole_LPS100SB.png')
+output.histogram(whole_intensity_LPS100SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'no_otsu_hist_whole_LPS100SB.png', log = True, a = 'step')
 
-output.histogram(whole_intensity_LPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_whole_LPS500.png')
+output.histogram(whole_intensity_LPS500, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'no_otsu_hist_whole_LPS500.png', log = True, a = 'step')
 
-output.histogram(whole_intensity_LPS500SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'hist_whole_LPS500SB.png')
+output.histogram(whole_intensity_LPS500SB, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'no_otsu_hist_whole_LPS500SB.png', log = True, a = 'step')
 
 
 #BP_whole_NT = output.boxplot(whole_intensity_NT, labels = ['Slice1', 'Slice2', 'Slice3', 'Slice4'], outfile = 'BP_whole_NT.png', xlab = 'Slices', ylab = 'Intensity')
