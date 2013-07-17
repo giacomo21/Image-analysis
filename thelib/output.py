@@ -14,32 +14,55 @@ def plot(data, outfile = None):
 		plt.savefig(outfile, dpi=100)
 #
 
-def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
-	fig = plt.figure(figsize=(23.5, 13.0)) 
+def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None, freq = False):
+	fig = plt.figure(figsize=(15.0, 10.0)) 
 	if labels == None:
 		labels = [''] * len(data)
 	if len(labels) < len(data):
 		labels = labels * int(math.ceil(float(len(data))/ len(labels)))
-	plt.clf()
-	minim = 1
-	maxim = 0
-	for i in range(0,len(data)):
-		temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		if maxim < temp[0].max():
-			maxim = temp[0].max()
 
 	plt.clf()
-	for i in range(0,len(data)):
-		if color == None:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		else:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+	if freq:
+		minim = 0
+		maxim = 0
+		for i in range(0,len(data)):
+			temp = plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			if maxim < temp[0].max():
+				maxim = temp[0].max()
 
-	plt.xlabel('Intensity')
-	plt.ylabel('Number of occurrences')
-	plt.xlim(0, 256)
-	plt.ylim(minim, maxim)
-	plt.legend()
+		plt.clf()
+		for i in range(0,len(data)):
+			if color == None:
+				plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			else:
+				plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+
+		plt.xlabel('Intensity')
+		plt.ylabel('Number of occurrences')
+		plt.xlim(0, 256)
+		plt.ylim(minim, maxim)
+		plt.legend()
+	else:
+		minim = 1
+		maxim = 0
+		for i in range(0,len(data)):
+			temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			if maxim < temp[0].max():
+				maxim = temp[0].max()
+
+		plt.clf()
+		for i in range(0,len(data)):
+			if color == None:
+				plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			else:
+				plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+
+		plt.xlabel('Intensity')
+		plt.ylabel('Number of occurrences')
+		plt.xlim(0, 256)
+		plt.ylim(minim, maxim)
+		plt.legend()
+
 	if outfile == None:
 		plt.show()
 	else:
