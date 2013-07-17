@@ -69,7 +69,6 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 		plt.savefig(outfile, dpi=72)
 #
 
-<<<<<<<
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrotation=0):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
 	if labels == None:
