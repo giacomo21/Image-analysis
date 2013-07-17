@@ -20,7 +20,7 @@ def test1(conditions, out_folder, conditions_labels = None, mask_label = 'mask',
 
 def test2(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
 	data = processing.compare_molecule_distribution(conditions,
-		nucleus_index = 0, molecule_index = 1, nucleus_channel = None, molecule_channel = None,
+		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
 		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
 	output.plot_all(data, out_folder, conditions, conditions_labels)
 	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])

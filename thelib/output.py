@@ -14,45 +14,64 @@ def plot(data, outfile = None):
 		plt.savefig(outfile, dpi=100)
 #
 
-def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
-	fig = plt.figure(figsize=(23.5, 13.0)) 
+def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None, freq = False):
+	fig = plt.figure(figsize=(15.0, 10.0)) 
 	if labels == None:
 		labels = [''] * len(data)
 	if len(labels) < len(data):
 		labels = labels * int(math.ceil(float(len(data))/ len(labels)))
-	plt.clf()
-	minim = 1
-	maxim = 0
-	for i in range(0,len(data)):
-		temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		if maxim < temp[0].max():
-			maxim = temp[0].max()
 
 	plt.clf()
-	for i in range(0,len(data)):
-		if color == None:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
-		else:
-			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+	if freq:
+		minim = 0
+		maxim = 0
+		for i in range(0,len(data)):
+			temp = plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			if maxim < temp[0].max():
+				maxim = temp[0].max()
 
-	plt.xlabel('Intensity')
-	plt.ylabel('Number of occurrences')
-	plt.xlim(0, 256)
-	plt.ylim(minim, maxim)
-	plt.legend()
+		plt.clf()
+		for i in range(0,len(data)):
+			if color == None:
+				plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			else:
+				plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+
+		plt.xlabel('Intensity')
+		plt.ylabel('Number of occurrences')
+		plt.xlim(0, 256)
+		plt.ylim(minim, maxim)
+		plt.legend()
+	else:
+		minim = 1
+		maxim = 0
+		for i in range(0,len(data)):
+			temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			if maxim < temp[0].max():
+				maxim = temp[0].max()
+
+		plt.clf()
+		for i in range(0,len(data)):
+			if color == None:
+				plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			else:
+				plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+
+		plt.xlabel('Intensity')
+		plt.ylabel('Number of occurrences')
+		plt.xlim(0, 256)
+		plt.ylim(minim, maxim)
+		plt.legend()
+
 	if outfile == None:
 		plt.show()
 	else:
 		plt.savefig(outfile, dpi=72)
 #
-'''
+
 <<<<<<<
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', rotation=0):
-=======
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
+def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrotation=0):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
-	# plt.clf()
->>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
 	if labels == None:
 		labels = [''] * len(x)
 	if len(labels) < len(x):
@@ -63,11 +82,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	plt.setp(r['fliers'], color='gray')
 	plt.setp(r['whiskers'], color='black', lw=2)
 	plt.setp(r['caps'], color='black', lw=2)
-<<<<<<< HEAD
-	plt.xticks(range(1,len(x)+1), labels, rotation=rotation)
-=======
-	plt.xticks(range(1,len(x)+1), labels, rotation=xrot)
->>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
+	plt.xticks(range(1,len(x)+1), labels, rotation=xrotation)
 	# y=range(0,256)
 	# plt.yticks(y, y)
 	plt.ylim(0, 256)
@@ -78,7 +93,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	else:
 		plt.savefig(outfile, dpi=72)
 #
-'''
+
 def select_images(conditions, name = 'slices_mask', what=[0]):
 	data = []
 	for i in conditions:
