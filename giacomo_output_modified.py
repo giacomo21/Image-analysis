@@ -135,67 +135,65 @@ def select_arrays(conditions, merged=False, what=[0], conditions_name = None, sl
 # #
 
 
-def plot_all(data, out_folder, conditions, conditions_labels=None):
+def plot_all(data, out_folder, conditions, conditions_labels=None, slices_name = None, channels_name = None):
 
 # SINGLE SLICE - masks and molecule masks - BWplots - single slices
 
 	for j in range(0,len(data)):
-		mask = select_images([data[j]], name = 'slices_mask',  conditions_name = conditions_labels, slices_name = None, channels_name = 'Nuclei', what = [0])
+		mask = select_images([data[j]], name = 'slices_mask',  conditions_name = conditions_labels, slices_name = None, channels_name = 'mask', what = [0])
 		molecule = select_images([data[j]], name = 'slices_mask', what = [1],  conditions_name = conditions_labels, slices_name = None, channels_name = 'all')
 		for i in range(0, len(mask[0])):
-			A = mask[i][0].copy()
+			A = mask[0][i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_mask' + '.tif')
+			plot(A, out_folder + '/' + mask[1][i] + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_mask' + '.tif', 'tiff')
-			A = molecule[i].copy()
+			A = molecule[0][i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_molecule_mask' + '.tif')
+			plot(A, out_folder + '/' + molecule[1][i] + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_molecule' + '.tif', 'tiff')
 
 # SINGLE SLICE - masks and molecule gray - BWplots - single slices
 
 	for j in range(0,len(data)):
-		mask = select_images([data[j]], name = 'slices_gray', what = [0],  conditions_name = conditions_labels, slices_name = None, channels_name = 'Nuclei')
+		mask = select_images([data[j]], name = 'slices_gray', what = [0],  conditions_name = conditions_labels, slices_name = None, channels_name = 'mask')
 		molecule = select_images([data[j]], name = 'slices_gray', what = [1],  conditions_name = conditions_labels, slices_name = None, channels_name = 'all')
 		for i in range(0, len(mask[0])):
-			A = mask[i][0].copy()
+			A = mask[0][i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_mask_gray' + '.tif')
+			plot(A, out_folder + '/' + mask[1][i] + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_mask' + '.tif', 'tiff')
-			A = molecule[i].copy()
+			A = molecule[0][i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_molecule_gray' + '.tif')
+			plot(A, out_folder + '/' + molecule[1][i] + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_molecule' + '.tif', 'tiff')
 
 # PAIRWISE INTER CONDITION - masks - histo + boxplot - single slices
 	for i in range(0,len(data)-1):
 		for j in range(i+1,len(data)):
-			temp = select_arrays([data[i], data[j]], merged = False, conditions_name = conditions_labels, slices_name = None, channels_name = ['nuclei', 'all'], what = [0])
+			temp = select_arrays([data[i], data[j]], merged = False, conditions_name = conditions_labels, slices_name = None, channels_name = ['mask'], what = [0])
 			color1 = ['red'] *len(conditions[i])
 			color2 = ['green'] * len(conditions[j])
 			color = color1 + color2
-			print temp
-			print labels
-			print color
+			print temp[0]
 			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + conditions_labels[i] + '-' + conditions_labels[j] + '_histogram.png')
-			boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + conditions_labels[i]  + '-' + conditions_labels[j] + '_boxplot.png')
-			histogram(temp[0], log=True, labels = temp[1], histtype='stepfilled', bins=128, color = color, outfile = out_folder + '/' + conditions_labels[i] + '-' + conditions_labels[j] + '_histogram_filled.png')
+			boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + temp[1][i]  + '-' + temp[1][j] + '_boxplot.png')
+			histogram(temp[0], log=True, labels = temp[1], histtype='stepfilled', bins=128, color = color, outfile = out_folder + '/' + temp[1][i] + '-' + temp[1][j] + '_histogram_filled.png')
 
 # INTER CONDITION - masks - histo + boxplot - merged slices
-	temp = select_arrays(data, merged = True, conditions_name = conditions_labels, slices_name = None, channels_name = ['nuclei'],  what = [0])
-	boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + 'mask' + '_merged_boxplot.png')
-	histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'mask' + '_merged_histogram.png')
+	temp = select_arrays(data, merged = True, conditions_name = conditions_labels, slices_name = None, channels_name = ['mask'],  what = [0])
+	boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + temp[1] + '_merged_boxplot.png')
+	histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = None, outfile = out_folder + '/' + temp[1] + '_merged_histogram.png')
 	
 
 # SINGLE CONDITION - mask vs all - histo + boxplot - single slices
 	for i in range(0,len(data)):
-		temp = select_arrays([data[i]], merged = False, conditions_name = conditions_labels, slices_name = None, channels_name = ['nuclei', 'all'], what = [0,1])
-		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp[0])/2), outfile = out_folder + '/' + conditions_labels[i] + '_histogram.png')
-		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + conditions_labels[i] + '_boxplot.png')
+		temp = select_arrays([data[i]], merged = False, conditions_name = conditions_labels, slices_name = None, channels_name = ['mask', 'all'], what = [0,1])
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp[0])/2), outfile = out_folder + '/' + temp[1][i] + '_histogram.png')
+		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + temp[1][i] + '_boxplot.png')
 
 # SINGLE CONDITION - mask vs all - histo + boxplot - merged slices
 	for i in range(0,len(data)):
-		temp = select_arrays([data[i]], merged = True, conditions_name = conditions_labels, slices_name = None, channels_name = ['nuclei', 'all'], what = [0,1])
-		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp[0])/2), outfile = out_folder + '/' + conditions_labels[i] + '_merged_histogram.png')
-		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + conditions_labels[i] + '_merged_boxplot.png')
+		temp = select_arrays([data[i]], merged = True, conditions_name = conditions_labels, slices_name = None, channels_name = ['mask', 'all'], what = [0,1])
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = ['green', 'red']*(len(temp[0])/2), outfile = out_folder + '/' + temp[1][i] + '_merged_histogram.png')
+		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + temp[1][i] + '_merged_boxplot.png')
 #
