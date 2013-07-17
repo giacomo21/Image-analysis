@@ -94,7 +94,7 @@ data = processing.compare_molecule_distribution([NAimgs, ACimgs],
 		molecule_fill_holes = False, molecule_otsu = False)
 
 #3D Construction Image Details
-processing3D.TDAnalysis(data[0]['slices_gray'], 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60xN.txt', 'w')
+processing3D.TDAnalysis(data[0]['slices_mask'], 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60xN.txt', 'w')
 
 
 

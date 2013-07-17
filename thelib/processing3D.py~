@@ -83,6 +83,4 @@ def TDAnalysis(datatype, maxrange, outputfile, outputfiletype):
 	h.write('.' + '\n')
 	h.close()
 	return 
-#h.write(str(data[0]['slices_mask'][0][0].shape[0]) + '\t' + str(data[0]['slices_mask'][0][0].shape[1]) + '\n')
-#	A = data[0]['slices_mask'][i][0]
-#	GRAY = data[0]['slices_mask'][i][1][SC[0], SC[1]]
+

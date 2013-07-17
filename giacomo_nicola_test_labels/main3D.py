@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-import mahotas
-import scipy
-import numpy as np
 import loader
 import processing
 import output
@@ -79,28 +76,16 @@ NAimgs = [
 	['/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z38_C1.tif'],
 	 ]
 
-NACimgs = [
-	['/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z0_C1.tif'],
-	['/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z1_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_A_60x/8_Z1_C1.tif'],
-	 ]
-NNAimgs = [
-	['/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z0_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z0_C1.tif'],
-	['/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z1_C2.tif','/home/nikhil/Desktop/Alisi Data/3D/8_N_60x/8_Z1_C1.tif'],
-	 ]
-data = processing.compare_molecule_distribution([NAimgs, ACimgs],
+data = compare_molecule_distribution([NAimgs, ACimgs],
 		nucleus_index = 0, molecule_index = 1,
 		nucleus_channel = 0, molecule_channel = 0,
 		nucleus_fill_holes = True, nucleus_otsu = True,
 		molecule_fill_holes = False, molecule_otsu = False)
 
 #3D Construction Image Details
-processing3D.TDAnalysis(data[0]['slices_gray'], 39, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60xN.txt', 'w')
-
-
-
-
-#processing3D.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
-#processing3D.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
+processing3D.TDAnalysis(data[0], '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisNA60x.txt')
+processing3D.CanNuc(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucNA60x.txt')
+processing3D.findlitaf(NA, 39, '/home/nikhil/Image-analysis/Nikhil_Trials/findlitafNA60x.txt')
 
 # print b.TDAnalysis(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/TDAnalysisAC60x.txt')
 # print b.CanNuc(AC, 27, '/home/nikhil/Image-analysis/Nikhil_Trials/CanNucAC60x.txt')

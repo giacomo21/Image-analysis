@@ -1,0 +1,110 @@
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import numpy as np
+
+def plot(data):
+	plt.clf()
+	cmap = cm.Greys_r
+	plt.imshow(data, cmap)
+	plt.show()
+#
+
+def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
+	if labels == None:
+		labels = [''] * len(data)
+	plt.clf()
+	minim = 1
+	maxim = 0
+	for i in range(0,len(data)):
+		temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+		if maxim < temp[0].max():
+			maxim = temp[0].max()
+
+	plt.clf()
+	for i in range(0,len(data)):
+		if color == None:
+			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+		else:
+			plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype, color = color[i])
+
+	plt.xlabel('Intensity')
+	plt.ylabel('Number of occurrences')
+	plt.xlim(0, 256)
+	plt.ylim(minim, maxim)
+	plt.legend()
+	if outfile == None:
+		plt.show()
+	else:
+		plt.savefig(outfile)
+#
+
+def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
+	plt.clf()
+	if labels == None:
+		labels = [''] * len(x)
+	r = plt.boxplot(x)
+	plt.setp(r['medians'], color='black')
+	plt.setp(r['boxes'], color='black')
+	plt.setp(r['fliers'], color='gray')
+	plt.setp(r['whiskers'], color='black', lw=2)
+	plt.setp(r['caps'], color='black', lw=2)
+	plt.xticks(range(1,len(x)+1), labels, rotation=xrot)
+	# y=range(0,256)
+	# plt.yticks(y, y)
+	plt.ylim(0, 256)
+	plt.xlabel(xlab)
+	plt.ylabel(ylab)
+	if outfile == None:
+		plt.show()
+	else:
+		plt.savefig(outfile)
+#
+
+def select_images(conditions, name = 'slices_mask', what=[0]):
+	data = []
+	for i in conditions:
+		for j in i[name]:
+			for k in what:
+				data.append(j[k])
+	# version with dict first and list after
+	return(data)
+#
+
+def select_arrays(conditions, merged=False, what=[0]):
+	data = []
+	if merged:
+		tos = 'merged_intensity'
+		for i in conditions:
+			j = i[tos]
+			for k in what:
+				data.append(j[k])
+	else:
+		tos = 'slices_intensity'
+		for i in conditions:
+			for j in i[tos]:
+				for k in what:
+					data.append(j[k])
+	# version with dict first and list after
+	return(data)
+#
+
+# def print_single_histograms(data, folder = '.'):
+
+# 	fna = folder + "/slice_"
+# 	data['slices']
+# 	data['slices_gray'] = slices_gray
+# 	data['slices_mask'] = slices_mask
+# 	data['slices_dataset'] = dataset
+
+# 	fna = folder + "/intensity_"
+
+# 	boxplot()
+# 	for i in data['slices_intensity']:
+# 		histogram
+
+		
+# 	data['merged_intensity'] = merged_intensity
+
+
+
+# #
