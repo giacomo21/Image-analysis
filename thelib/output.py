@@ -11,7 +11,7 @@ def plot(data, outfile = None):
 	if outfile == None:
 		plt.show()
 	else:
-		plt.savefig(outfile, dpi=200)
+		plt.savefig(outfile, dpi=100)
 #
 
 def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
@@ -123,21 +123,37 @@ def select_arrays(conditions, merged=False, what=[0]):
 
 def plot_all(data, out_folder, conditions, conditions_labels=None):
 
-# SINGLE SLICE - masks - BWplots - single slices
+# SINGLE SLICE - masks and molecule masks - BWplots - single slices
 
 	for j in range(0,len(data)):
 		mask = select_images([data[j]], name = 'slices_mask', what = [0])
+		molecule = select_images([data[j]], name = 'slices_mask', what = [1])
+		for i in range(0, len(mask)):
+			A = mask[i].copy()
+			# I = Image.fromarray(A)
+			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_mask' + '.tif')
+			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_mask' + '.tif', 'tiff')
+			A = molecule[i].copy()
+			# I = Image.fromarray(A)
+			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_molecule_mask' + '.tif')
+			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_molecule' + '.tif', 'tiff')
+
+# SINGLE SLICE - masks and molecule gray - BWplots - single slices
+
+	for j in range(0,len(data)):
+		mask = select_images([data[j]], name = 'slices_gray', what = [0])
 		molecule = select_images([data[j]], name = 'slices_gray', what = [1])
 		for i in range(0, len(mask)):
 			A = mask[i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_mask' + '.tif')
+			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_mask_gray' + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_mask' + '.tif', 'tiff')
 			A = molecule[i].copy()
 			# I = Image.fromarray(A)
-			plot(A, out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_molecule' + '.tif')
+			plot(A, out_folder + '/' + conditions_labels[j] + '_slice_' + str(i) + '_molecule_gray' + '.tif')
 			# I.save(out_folder + '/' + conditions_labels[i] + '_slice_' + str(i) + '_molecule' + '.tif', 'tiff')
-			
+
+
 # PAIRWISE INTER CONDITION - masks - histo + boxplot - single slices
 	for i in range(0,len(data)-1):
 		for j in range(i+1,len(data)):
