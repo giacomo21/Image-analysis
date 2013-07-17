@@ -2,7 +2,7 @@ import processing
 import numpy as np
 import mahotas
 import scipy
- 
+from skimage import filter 
 
 def get_molecule_pos(data):
 	for i in range(0, len(data['slices_mask'])):
@@ -83,4 +83,5 @@ def TDAnalysis(datatype, maxrange, outputfile, outputfiletype):
 	h.write('.' + '\n')
 	h.close()
 	return 
+
 

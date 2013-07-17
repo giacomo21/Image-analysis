@@ -13,49 +13,50 @@ def test1(conditions, out_folder, conditions_labels = None, mask_label = 'mask',
 	data = processing.compare_molecule_distribution(conditions,
 		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
 		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
-
-# PAIRWISE INTER CONDITION - masks - histo + boxplot - single slices
-	for i in range(0,len(data)-1):
-		for j in range(i+1,len(data)):
-			temp = output.select_arrays([data[i], data[j]], merged = False, what = [0])
-			labels1 = [conditions_labels[i]]*len(conditions[i])
-			labels2 = [conditions_labels[j]]*len(conditions[j])
-			labels = labels1 + labels2
-			color1 = ['red'] *len(conditions[i])
-			color2 = ['green'] * len(conditions[j])
-			color = color1 + color2
-			print temp
-			print labels
-			print color
-			output.histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = color, outfile = out_folder + '/' + conditions_labels[i] + '-' + conditions_labels[j] + '_histogram.png')
-			output.boxplot(temp, labels = labels, outfile = out_folder + '/' + conditions_labels[i]  + '-' + conditions_labels[j] + '_boxplot.png')
-
-# INTER CONDITION - masks - histo + boxplot - merged slices
-	temp = output.select_arrays(data, merged = True, what = [0])
-	labels = conditions_labels
-	output.boxplot(temp, labels = labels, outfile = out_folder + '/' + 'mask' + '_merged_boxplot.png')
-	output.histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'mask' + '_merged_histogram.png')
-	
-
-# SINGLE CONDITION - mask vs all - histo + boxplot - single slices
-	for i in range(0,len(data)):
-		temp = output.select_arrays([data[i]], merged = False, what = [0,1])
-		labels = [ conditions_labels[i] + '_nuclei' , conditions_labels[i] + '_all']
-		output.histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_histogram.png')
-		output.boxplot(temp, labels = labels, outfile = out_folder + '/' + conditions_labels[i] + '_boxplot.png')
-
-# SINGLE CONDITION - mask vs all - histo + boxplot - merged slices
-	for i in range(0,len(data)):
-		temp = output.select_arrays([data[i]], merged = True, what = [0,1])
-		labels = [ conditions_labels[i] + '_nuclei' , conditions_labels[i] + '_all']
-		output.histogram(temp, log=True, labels = labels, histtype='step', bins=128, color = ['green', 'red']*(len(temp)/2), outfile = out_folder + '/' + conditions_labels[i] + '_merged_histogram.png')
-		output.boxplot(temp, labels = labels, outfile = out_folder + '/' + conditions_labels[i] + '_merged_boxplot.png')
-
-
+	output.plot_all(data, out_folder, conditions, conditions_labels)
 	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
 	return(data)
 # 
 
+def test2(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
+	data = processing.compare_molecule_distribution(conditions,
+		nucleus_index = 0, molecule_index = 1, nucleus_channel = None, molecule_channel = None,
+		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
+	output.plot_all(data, out_folder, conditions, conditions_labels)
+	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
+	return(data)
+# 
+
+def test3(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
+	data = processing.compare_molecule_distribution(conditions,
+		nucleus_index = 0, molecule_index = 1, nucleus_channel = None, molecule_channel = None,
+		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
+	output.plot_all(data, out_folder, conditions, conditions_labels)
+	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
+	return(data)
+# 
+
+
+condition1_files = [
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/01_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/01_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/02_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/02_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/03_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/04_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/04_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/05_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/05_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/06_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/06_LITAF.tif']]
+
+condition2_files = [
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/01_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/01_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/02_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/02_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/03_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/03_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/04_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/04_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/05_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/05_LITAF.tif'],
+	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/06_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/06_LITAF.tif']
+	]
+
+conditions_labels = ['hsc_NT', 'hsc_1hLPS100'] #, '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
+conditions_files = [condition1_files, condition2_files] #, condition3_files, condition4_files, condition5_files]
+# test3(conditions_files, '.', conditions_labels)
 
 condition1_files = [
 ['../../data/Alisi/LX-2/NT/01_nucleus.tif', '../../data/Alisi/LX-2/NT/01_LITAF.tif'],
@@ -92,6 +93,20 @@ conditions_labels = ['NT', '2hLPS500', '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
 conditions_files = [condition1_files, condition2_files, condition3_files, condition4_files, condition5_files]
 test1(conditions_files, '.', conditions_labels)
 
+
+conditions_files = [
+	[
+		['omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c0.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c1.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c2.tiff.ome.tif'],
+		['omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c0.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c1.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c2.tiff.ome.tif']
+	], [
+		['omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c0.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c1.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c2.tiff.ome.tif'],
+		['omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c0.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c1.tiff.ome.tif', 'omerotest/OME-TIF/HSC_A_60x_serieZ.oib [Series 1]_t00_z10_c2.tiff.ome.tif']
+	]]
+
+conditions_labels = ['A','B']
+
+# test2(conditions_files, '.', conditions_labels)
+
 condition1_label = [
 'LX-2-NT-01',
 'LX-2-NT-02',
@@ -127,22 +142,7 @@ condition5_label = [
 # temp = output.select_arrays([condition2, condition4], merged = False, what = [0])	
 # output.histogram(temp, log=False, labels = condition2_label + condition4_label, histtype='stepfilled', bins=128, color = ['red']*4 + ['green']*4)	
 
-# condition1_files = [
-# 	['../../data/Alisi/AC_HSC_CTRL/01_nucleus.tif','data/AC_HSC_CTRL/01_LITAF.tif'],
-# 	['data/AC_HSC_CTRL/02_nucleus.tif','data/AC_HSC_CTRL/02_LITAF.tif'],
-# 	['data/AC_HSC_CTRL/03_nucleus.tif','data/AC_HSC_CTRL/03_LITAF.tif'],
-# 	['data/AC_HSC_CTRL/04_nucleus.tif','data/AC_HSC_CTRL/04_LITAF.tif'],
-# 	['data/AC_HSC_CTRL/05_nucleus.tif','data/AC_HSC_CTRL/05_LITAF.tif'],
-# 	['data/AC_HSC_CTRL/06_nucleus.tif','data/AC_HSC_CTRL/06_LITAF.tif']]
 
-# condition2_files = [
-# 	['data/NA_HSC_CTRL/01_nucleus.tif','data/NA_HSC_CTRL/01_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/02_nucleus.tif','data/NA_HSC_CTRL/02_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/03_nucleus.tif','data/NA_HSC_CTRL/03_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/04_nucleus.tif','data/NA_HSC_CTRL/04_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/05_nucleus.tif','data/NA_HSC_CTRL/05_LITAF.tif'],
-# 	['data/NA_HSC_CTRL/06_nucleus.tif','data/NA_HSC_CTRL/06_LITAF.tif']
-# 	]
 
 # # export only nuclei images
 # import PIL.Image as im
