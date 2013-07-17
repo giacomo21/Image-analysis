@@ -3,7 +3,7 @@ import mahotas
 import numpy as np
 import scipy.stats
 import loader
-#import output
+import output
 
 # # # # # # # # # # # # 
 #  Single image of pairs of images analysis
