@@ -82,7 +82,7 @@ def get_molecule_distribution(dataset,
 	for i in slices_gray:
 		slices_mask.append([])
 		slices_mask[len(slices_mask)-1].append(find_ROI(i[0], fill_holes=nucleus_fill_holes, otsu=nucleus_otsu))  # only nucleus
-		slices_mask[len(slices_mask)-1].append(find_ROI(i[1], fill_holes=molecule_fill_holes, otsu=molecule_otsu))  # whole cell
+		slices_mask[len(slices_mask)-1].append(find_ROI(i[1], fill_holes=molecule_fill_holes, otsu=molecule_otsu))  # whole intensity
 
 	for i in slices_mask:
 		i.append(i[1]*(1.0-i[0])) # only cyto

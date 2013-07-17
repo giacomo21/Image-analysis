@@ -8,34 +8,19 @@ import loader
 import processing
 import output
 
-
-def test1(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
-	data = processing.compare_molecule_distribution(conditions,
-		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
-		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
-	output.plot_all(data, out_folder, conditions, conditions_labels)
-	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
-	return(data)
-# 
-
-def test2(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
-	data = processing.compare_molecule_distribution(conditions,
-		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
-		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
-	output.plot_all(data, out_folder, conditions, conditions_labels)
-	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
-	return(data)
-# 
-
-def test3(conditions, out_folder, conditions_labels = None, mask_label = 'mask', molecule_label = 'molecule'):
-	data = processing.compare_molecule_distribution(conditions,
-		nucleus_index = 0, molecule_index = 1, nucleus_channel = None, molecule_channel = None,
-		nucleus_fill_holes = True, nucleus_otsu = True, molecule_fill_holes = False, molecule_otsu = False)
-	output.plot_all(data, out_folder, conditions, conditions_labels)
-	# temp = output.select_images([condition1], name = 'slices_mask', what = [1])
-	return(data)
-# 
-
+def main_api(conditions, out_folder, condition_labels = None, slice_labels = None, channel_labels = None,
+		mask_index = 0, molecule_index = 1, mask_channel = None, molecule_channel = None,
+		mask_otsu = True, mask_fillholes = True, molecule_otsu = False, molecule_fillholes = False
+		):
+	proc = processing.compare_molecule_distribution(conditions,
+			nucleus_index = mask_index, molecule_index = molecule_index,
+			nucleus_channel = mask_channel, molecule_channel = molecule_channel,
+			nucleus_fill_holes = mask_fillholes, nucleus_otsu = mask_otsu,
+			molecule_fill_holes = molecule_fillholes, molecule_otsu = molecule_otsu)
+	out = output.plot_all(proc, conditions, out_folder,
+			condition_labels = condition_labels, obj_labels = slice_labels, channel_labels = channel_labels)
+	return(out)
+#
 
 condition1_files = [
 	['../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/01_nucleus.tif','../../data/Alisi/Hepatic_stellate/AC_HSC_CTRL/01_LITAF.tif'],
@@ -54,9 +39,18 @@ condition2_files = [
 	['../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/06_nucleus.tif','../../data/Alisi/Hepatic_stellate/NA_HSC_1h100LPS/06_LITAF.tif']
 	]
 
-conditions_labels = ['hsc_NT', 'hsc_1hLPS100'] #, '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
+conditions_labels = ['hsc_AC', 'hsc_1hLPS100'] #, '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
 conditions_files = [condition1_files, condition2_files] #, condition3_files, condition4_files, condition5_files]
-# test3(conditions_files, '.', conditions_labels)
+main_api(conditions_files, '.', condition_labels = conditions_labels, slice_labels = None, channel_labels = ['nuclei','LITAF'],
+		mask_index = 0, molecule_index = 1, mask_channel = 0, molecule_channel = 0,
+		mask_otsu = True, mask_fillholes = True, molecule_otsu = False, molecule_fillholes = False)
+
+# 1
+# 		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
+# 2
+# 		nucleus_index = 0, molecule_index = 1, nucleus_channel = 1, molecule_channel = 0,
+# 3
+# 		nucleus_index = 0, molecule_index = 1, nucleus_channel = None, molecule_channel = None,
 
 condition1_files = [
 ['../../data/Alisi/LX-2/NT/01_nucleus.tif', '../../data/Alisi/LX-2/NT/01_LITAF.tif'],
@@ -91,7 +85,7 @@ condition5_files = [
 conditions_labels = ['NT', '2hLPS500', '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
 
 conditions_files = [condition1_files, condition2_files, condition3_files, condition4_files, condition5_files]
-test1(conditions_files, '.', conditions_labels)
+# test1(conditions_files, '.', conditions_labels)
 
 
 conditions_files = [
