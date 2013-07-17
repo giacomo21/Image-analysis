@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import numpy as np
+import math
 
 def plot(data):
 	plt.clf()
@@ -10,8 +11,11 @@ def plot(data):
 #
 
 def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None):
+	fig = plt.figure(figsize=(23.5, 13.0)) 
 	if labels == None:
 		labels = [''] * len(data)
+	if len(labels) < len(data):
+		labels = labels * int(math.ceil(float(len(data))/ len(labels)))
 	plt.clf()
 	minim = 1
 	maxim = 0
@@ -35,13 +39,16 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 	if outfile == None:
 		plt.show()
 	else:
-		plt.savefig(outfile)
+		plt.savefig(outfile, dpi=72)
 #
 
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
-	plt.clf()
+	fig = plt.figure(figsize=(23.5, 13.0)) 
+	# plt.clf()
 	if labels == None:
 		labels = [''] * len(x)
+	if len(labels) < len(x):
+		labels = labels * int(math.ceil(float(len(x))/ len(labels)))
 	r = plt.boxplot(x)
 	plt.setp(r['medians'], color='black')
 	plt.setp(r['boxes'], color='black')
@@ -57,7 +64,7 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	if outfile == None:
 		plt.show()
 	else:
-		plt.savefig(outfile)
+		plt.savefig(outfile, dpi=72)
 #
 
 def select_images(conditions, name = 'slices_mask', what=[0]):
