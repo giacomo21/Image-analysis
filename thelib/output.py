@@ -46,9 +46,13 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 		plt.savefig(outfile, dpi=72)
 #
 
+<<<<<<< HEAD
+def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', rotation=0):
+=======
 def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
 	# plt.clf()
+>>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
 	if labels == None:
 		labels = [''] * len(x)
 	if len(labels) < len(x):
@@ -59,7 +63,11 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrot = 0):
 	plt.setp(r['fliers'], color='gray')
 	plt.setp(r['whiskers'], color='black', lw=2)
 	plt.setp(r['caps'], color='black', lw=2)
+<<<<<<< HEAD
+	plt.xticks(range(1,len(x)+1), labels, rotation=rotation)
+=======
 	plt.xticks(range(1,len(x)+1), labels, rotation=xrot)
+>>>>>>> 6a0d08000b331cd1ae787e5fe8064035979eed7b
 	# y=range(0,256)
 	# plt.yticks(y, y)
 	plt.ylim(0, 256)
