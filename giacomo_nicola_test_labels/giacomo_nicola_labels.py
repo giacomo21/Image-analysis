@@ -1,0 +1,24 @@
+def labelfunc(condition, condition_name = None, condition_name_slice = None, condition_channel = None):
+	label_cond_name = []
+	if not condition_name == None:
+		for j in condition:
+			for i in j:
+				label_cond_name = condition_name * len(j)
+	else:
+		for j in condition:
+			for i in j:
+				label_cond_name.append(str(condition.index(j)))
+	label_cond_name_slice = []
+	if not condition_name_slice == None:
+		for i in condition_name_slice:
+			for j in label_cond_name:
+				label_cond_name_slice = j + '_' + i
+	else:
+		for j in label_cond_name:
+			label_cond_name_slice = j + '_' + str(label_cond_name.index(j))
+
+#	if not condition_channel == None:
+
+#	else:
+			
+	return(label_cond_name, label_cond_name_slice)
