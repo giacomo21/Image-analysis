@@ -3,9 +3,10 @@ import matplotlib.cm as cm
 import numpy as np
 import math
 from PIL import Image
+from scipy.stats import gaussian_kde
 
 def plot(data, outfile = None):
-	fig = plt.figure(figsize=(20.0, 20.0)) 
+	fig = plt.figure(figsize=(15.0, 15.0)) 
 	cmap = cm.Greys_r
 	plt.imshow(data, cmap)
 	if outfile == None:
@@ -14,7 +15,7 @@ def plot(data, outfile = None):
 		plt.savefig(outfile, dpi=100)
 #
 
-def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None, freq = False):
+def histogram(data, labels = None, outfile = None, log=False, histtype='stepfilled', bins=255, color = None, freq = False, density = False):
 	fig = plt.figure(figsize=(15.0, 10.0)) 
 	if labels == None:
 		labels = [''] * len(data)
@@ -22,13 +23,55 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 		labels = labels * int(math.ceil(float(len(data))/ len(labels)))
 
 	plt.clf()
-	if freq:
+
+	if density:
+
 		minim = 0
 		maxim = 0
+		xminim = 0
+		xmaxim = 256
+
 		for i in range(0,len(data)):
 			temp = plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
 			if maxim < temp[0].max():
 				maxim = temp[0].max()
+			if xmaxim < temp[1].max():
+				xmaxim = math.ceil(temp[1].max())
+		plt.clf()				
+		for i in range(0,len(data)):
+			if color == None:
+				dataf = data[i].astype(np.float32)
+				density = gaussian_kde(dataf)
+				xs = np.linspace(xminim,xmaxim,bins)
+				density.covariance_factor = lambda : .25
+				density._compute_covariance()
+				plt.plot(xs,density(xs), label = labels[i])
+				# plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			else:
+				dataf = data[i].astype(np.float32)
+				density = gaussian_kde(dataf)
+				xs = np.linspace(xminim,xmaxim,bins)
+				density.covariance_factor = lambda : .25
+				density._compute_covariance()
+				plt.plot(xs,density(xs), label = labels[i], color = color[i])
+		plt.xlabel('Intensity')
+		plt.ylabel('Number of occurrences')
+		plt.xlim(0, xmaxim)
+		# plt.ylim(minim, maxim)
+		plt.legend()
+
+	elif freq:
+		minim = 0
+		maxim = 0
+		xminim = 0
+		xmaxim = 256
+
+		for i in range(0,len(data)):
+			temp = plt.hist(data[i], normed = True, bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
+			if maxim < temp[0].max():
+				maxim = temp[0].max()
+			if xmaxim < temp[1].max():
+				xmaxim = math.ceil(temp[1].max())
 
 		plt.clf()
 		for i in range(0,len(data)):
@@ -39,16 +82,20 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 
 		plt.xlabel('Intensity')
 		plt.ylabel('Number of occurrences')
-		plt.xlim(0, 256)
+		plt.xlim(0, xmaxim)
 		plt.ylim(minim, maxim)
 		plt.legend()
 	else:
 		minim = 1
 		maxim = 0
+		xminim = 0
+		xmaxim = 256
 		for i in range(0,len(data)):
 			temp = plt.hist(data[i], bins=bins, alpha=0.5, label = labels[i], log=log, histtype=histtype)
 			if maxim < temp[0].max():
 				maxim = temp[0].max()
+			if xmaxim < temp[1].max():
+				xmaxim = math.ceil(temp[1].max())
 
 		plt.clf()
 		for i in range(0,len(data)):
@@ -59,7 +106,7 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 
 		plt.xlabel('Intensity')
 		plt.ylabel('Number of occurrences')
-		plt.xlim(0, 256)
+		plt.xlim(0, xmaxim)
 		plt.ylim(minim, maxim)
 		plt.legend()
 
@@ -69,7 +116,7 @@ def histogram(data, labels = None, outfile = None, log=False, histtype='stepfill
 		plt.savefig(outfile, dpi=150)
 #
 
-def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrotation=0):
+def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', ylim = 256, xrotation=0):
 	fig = plt.figure(figsize=(23.5, 13.0)) 
 	if labels == None:
 		labels = [''] * len(x)
@@ -84,7 +131,8 @@ def boxplot(x, labels = None, outfile = None, xlab = '', ylab = '', xrotation=0)
 	plt.xticks(range(1,len(x)+1), labels, rotation=xrotation)
 	# y=range(0,256)
 	# plt.yticks(y, y)
-	plt.ylim(0, 256)
+
+	# plt.ylim(0, ylim)
 	plt.xlabel(xlab)
 	plt.ylabel(ylab)
 	if outfile == None:
@@ -237,6 +285,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 			condition_labels = [condition_labels[i]], obj_labels = obj_labels, channel_labels = channel_labels)		
 		color = ['green', 'red']*(len(temp[0])/2)
 		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_merged_histogram.png')
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_merged_histogram_density.png', density=True)
 		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i] + '_merged_boxplot.png', xrotation = 45)
 
 # SINGLE CONDITION - mask vs all - histo + boxplot - single slices
@@ -246,6 +295,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 			condition_labels = [condition_labels[i]], obj_labels = obj_labels, channel_labels = channel_labels)		
 		color = ['green', 'red']*(len(temp[0])/2)
 		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_histogram.png')
+		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_histogram_density.png', density=True)
 		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i] + '_boxplot.png', xrotation = 45)
 
 # INTER CONDITION - masks - histo + boxplot - merged slices
@@ -255,6 +305,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 
 	boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + 'merged_boxplots.png', xrotation = 45)
 	histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'merged_histograms.png')
+	histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = None, outfile = out_folder + '/' + 'merged_histograms_density.png', density=True)
 
 # PAIRWISE INTER CONDITION - masks - histo + boxplot - single slices
 	for i in range(0,len(data)-1):
@@ -272,7 +323,15 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 			histogram(temp[0], log=True, labels = temp[1], histtype='stepfilled', bins=128, color = color, 
 				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_filled.png')
 			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, 
-				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_density.png', freq=True)
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_freq.png', freq=True)
+
+			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, 
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_density.png', density=True)
+			histogram(temp[0], log=True, labels = temp[1], histtype='stepfilled', bins=128, color = color, 
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_filled_density.png', density=True)
+			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, 
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_density_density.png', density=True)
+
 
 			boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i]  + '-' + condition_labels[j] + '_boxplot.png', xrotation = 45)
 
