@@ -5,7 +5,7 @@ import math
 from PIL import Image
 
 def plot(data, outfile = None):
-	fig = plt.figure(figsize=(23.5, 13.0)) 
+	fig = plt.figure(figsize=(20.0, 20.0)) 
 	cmap = cm.Greys_r
 	plt.imshow(data, cmap)
 	if outfile == None:
@@ -234,7 +234,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 	for i in range(0,len(data)):
 		temp = select_arrays([data[i]], 
 			name = 'slices_intensity', merged = True, what = [0,1],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)		
+			condition_labels = [condition_labels[i]], obj_labels = obj_labels, channel_labels = channel_labels)		
 		color = ['green', 'red']*(len(temp[0])/2)
 		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_merged_histogram.png')
 		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i] + '_merged_boxplot.png', xrotation = 45)
@@ -243,7 +243,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 	for i in range(0,len(data)):
 		temp = select_arrays([data[i]], 
 			name = 'slices_intensity', merged = False, what = [0,1],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)		
+			condition_labels = [condition_labels[i]], obj_labels = obj_labels, channel_labels = channel_labels)		
 		color = ['green', 'red']*(len(temp[0])/2)
 		histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, outfile = out_folder + '/' + condition_labels[i] + '_histogram.png')
 		boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i] + '_boxplot.png', xrotation = 45)
@@ -261,7 +261,7 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 		for j in range(i+1,len(data)):
 			temp = select_arrays([data[i], data[j]], 
 				name = 'slices_intensity', merged = False, what = [0],
-				condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)
+				condition_labels = [condition_labels[i],condition_labels[j]], obj_labels = obj_labels, channel_labels = channel_labels)
 
 			color1 = ['red'] *len(conditions[i])
 			color2 = ['green'] * len(conditions[j])
@@ -270,20 +270,20 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, 
 				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram.png')
 			histogram(temp[0], log=True, labels = temp[1], histtype='stepfilled', bins=128, color = color, 
-				outfile = out_folder + '/' + temp[1][i] + '-' + temp[1][j] + '_histogram_filled.png')
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_filled.png')
 			histogram(temp[0], log=True, labels = temp[1], histtype='step', bins=128, color = color, 
-				outfile = out_folder + '/' + temp[1][i] + '-' + temp[1][j] + '_histogram_density.png', freq=True)
+				outfile = out_folder + '/' + condition_labels[i] + '-' + condition_labels[j] + '_histogram_density.png', freq=True)
 
-			boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + temp[1][i]  + '-' + temp[1][j] + '_boxplot.png', xrotation = 45)
+			boxplot(temp[0], labels = temp[1], outfile = out_folder + '/' + condition_labels[i]  + '-' + condition_labels[j] + '_boxplot.png', xrotation = 45)
 
 
 # SINGLE SLICE - masks and molecule masks - BWplots - single slices
 
 	for j in range(0,len(data)):
 		mask = select_images([data[j]], name = 'slices_mask', what = [0],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)
+			condition_labels = [condition_labels[j]], obj_labels = obj_labels, channel_labels = channel_labels)
 		molecule = select_images([data[j]], name = 'slices_mask', what = [1],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)
+			condition_labels = [condition_labels[j]], obj_labels = obj_labels, channel_labels = channel_labels)
 		for i in range(0, len(mask[0])):
 			A = mask[0][i].copy()
 			plot(A, out_folder + '/' + mask[1][i] + '_mask.tif')
@@ -294,9 +294,9 @@ def plot_all(data, conditions, out_folder = '.', condition_labels = None, obj_la
 
 	for j in range(0,len(data)):
 		mask = select_images([data[j]], name = 'slices_gray', what = [0],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)
+			condition_labels = [condition_labels[j]], obj_labels = obj_labels, channel_labels = channel_labels)
 		molecule = select_images([data[j]], name = 'slices_gray', what = [1],
-			condition_labels = condition_labels, obj_labels = obj_labels, channel_labels = channel_labels)
+			condition_labels = [condition_labels[j]], obj_labels = obj_labels, channel_labels = channel_labels)
 		for i in range(0, len(mask[0])):
 			A = mask[0][i].copy()
 			plot(A, out_folder + '/' + mask[1][i] + '_gray.tif')

@@ -3,7 +3,7 @@ import mahotas
 import numpy as np
 import scipy.stats
 import loader
-#import output
+import output
 
 # # # # # # # # # # # # 
 #  Single image of pairs of images analysis
@@ -147,50 +147,173 @@ def get_molecule_pos(data):
 #
 
 
+def collect_statistics(conditions, output_folder=None):
+# def compare(condition1, condition2, output_folder=None):
+	
+	nuclei_arrays = []
+	for i in range(0, len(conditions)):
+		nuclei_arrays.append(output.select_arrays([conditions[i]], merged = True, what = [0])[0])
+	all_arrays = []
+	for i in range(0, len(conditions)):
+		all_arrays.append(output.select_arrays([conditions[i]], merged = True, what = [1])[0])
+	diff_arrays = []
+	for i in range(0, len(conditions)):
+		diff_arrays.append(output.select_arrays([conditions[i]], merged = True, what = [2])[0])
 
-def compare(condition1, condition2, output_folder=None):
-	c1_arrays = output.select_arrays([condition1], merged = True, what = [0])
-	c2_arrays = output.select_arrays([condition2], merged = True, what = [0])
+	nuclei_arrays = []
+	for i in range(0, len(conditions)):
+		nuclei_arrays.append(output.select_arrays([conditions[i]], merged = False, what = [0])[0])
+	all_arrays = []
+	for i in range(0, len(conditions)):
+		all_arrays.append(output.select_arrays([conditions[i]], merged = False, what = [1])[0])
+	diff_arrays = []
+	for i in range(0, len(conditions)):
+		diff_arrays.append(output.select_arrays([conditions[i]], merged = False, what = [2])[0])
 
-	rank_sum_merged = scipy.stats.ranksums(c1_arrays[0], c2_arrays[0])
-	t_test_merged = scipy.stats.ttest_ind(c1_arrays[0], c2_arrays[0])
 
-	c1_arrays = output.select_arrays([condition1], merged = False, what = [0])
-	c2_arrays = output.select_arrays([condition2], merged = False, what = [0])
+	nuclei_median = []
+	nuclei_mean = []
+	nuclei_var = []
+	nuclei_sum = []
+	for i in nuclei_arrays:
+		temp = []
+		for j in i:
+			temp.append(np.median(j))
+		nuclei_median.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.mean(j))
+		nuclei_mean.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.sum(j))
+		nuclei_sum.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.var(j))
+		nuclei_var.append(temp)
 
-	c1_median = []
-	c1_mean = []
-	c1_var = []
-	c1_sum = []
-	for i in c1_arrays:
-		c1_median.append(np.median(i))
-		c1_mean.append(np.mean(i))
-		c1_var.append(np.var(i))
-		c1_sum.append(np.sum(i))
+	all_median = []
+	all_mean = []
+	all_var = []
+	all_sum = []
+	for i in all_arrays:
+		temp = []
+		for j in i:
+			temp.append(np.median(j))
+		all_median.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.mean(j))
+		all_mean.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.sum(j))
+		all_sum.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.var(j))
+		all_var.append(temp)
 
-	c2_median = []
-	c2_mean = []
-	c2_var = []
-	c2_sum = []
-	for i in c2_arrays:
-		c2_median.append(np.median(i))
-		c2_mean.append(np.mean(i))
-		c2_var.append(np.var(i))
-		c2_sum.append(np.sum(i))
+	diff_median = []
+	diff_mean = []
+	diff_var = []
+	diff_sum = []
+	for i in diff_arrays:
+		temp = []
+		for j in i:
+			temp.append(np.median(j))
+		diff_median.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.mean(j))
+		diff_mean.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.sum(j))
+		diff_sum.append(temp)
+		temp = []
+		for j in i:
+			temp.append(np.var(j))
+		diff_var.append(temp)
 
-	rank_sum_median = scipy.stats.ranksums(c1_median, c2_median)
-	t_test_median = scipy.stats.ttest_ind(c1_median, c2_median)
-	rank_sum_mean = scipy.stats.ranksums(c1_mean, c2_mean)
-	t_test_mean = scipy.stats.ttest_ind(c1_mean, c2_mean)
-	rank_sum_sum = scipy.stats.ranksums(c1_sum, c2_sum)
-	t_test_sum = scipy.stats.ttest_ind(c1_sum, c2_sum)
+
+	ratio_median = []
+	ratio_mean = []
+	ratio_sum = []
+	for i in range(0, len(nuclei_arrays)):
+		temp = []
+		for j in range(0, len(nuclei_arrays[i])):
+			temp.append(float(nuclei_median[i][j])/all_median[i][j])
+		ratio_median.append(temp)
+		temp = []
+		for j in range(0, len(nuclei_arrays[i])):
+			temp.append(float(nuclei_mean[i][j])/all_mean[i][j])
+		ratio_mean.append(temp)
+		temp = []
+		for j in range(0, len(nuclei_arrays[i])):
+			temp.append(float(nuclei_sum[i][j])/all_sum[i][j])
+		ratio_sum.append(temp)
 
 	results = {}
-	results['median'] = [c1_median, c2_median]
-	results['mean'] = [c1_mean, c2_mean]
-	results['sum'] = [c1_sum, c2_sum]
-	results['rank_sum_median'] = rank_sum_median
-	results['rank_sum_mean'] = rank_sum_mean
-	results['rank_sum_sum'] = rank_sum_sum
+	results['median'] = [nuclei_median, all_median, diff_median]
+	results['mean'] = [nuclei_mean, all_mean, diff_mean]
+	results['sum'] = [nuclei_sum, all_sum, diff_sum]
+	results['median_ratio'] = ratio_median
+	results['mean_ratio'] = ratio_mean
+	results['sum_ratio'] = ratio_sum
+
 	return(results)
 #
+
+def compare_statistics(x):
+	statistics = np.zeros((len(x['sum_ratio'])*(len(x['sum_ratio'])-1)/2 , 6))
+	cup = 0
+	for i in range(0, len(x['sum_ratio'])-1):
+		for j in range(i+1, len(x['sum_ratio'])):
+			print str(i) + '  ' + str(j)
+			# print x['median'][0][i]
+			# print x['median'][0][j]
+			statistics[cup,:] = [
+				scipy.stats.ranksums(x['median'][0][i], x['median'][0][j])[1]
+				,scipy.stats.ranksums(x['mean'][0][i], x['mean'][0][j])[1]
+				,scipy.stats.ranksums(x['sum'][0][i], x['sum'][0][j])[1]
+				,scipy.stats.ranksums(x['median_ratio'][i], x['median_ratio'][j])[1]
+				,scipy.stats.ranksums(x['mean_ratio'][i], x['mean_ratio'][j])[1]
+				,scipy.stats.ranksums(x['sum_ratio'][i], x['sum_ratio'][j])[1]
+				]
+			cup += 1
+
+	return(statistics)
+
+def save_statistics(x, output_file, condition_labels):
+	h = open(output_file, 'w')
+	nr = 0
+	for i in range(0, len(condition_labels)-1):
+		for j in range(i+1, len(condition_labels)):
+			rc = condition_labels[i] + "\t" + condition_labels[j]
+			row = x[nr, :]
+			for k in row:
+				rc += "\t" + str(k)
+			print rc
+			h.write(rc + "\n")
+			nr += 1
+	h.close()
+#
+
+
+# def all_statistics(x, out_folder, condition_labels = None, obj_labels = None, channel_labels = None):
+# 	for i in range(0, len(x)-1):
+# 		for j in range(i+1, len(x)):
+# 			statistics = processing.compare(x[i], x[j])
+
+# 			print(condition_labels[i] + '\t' +
+# 			condition_labels[j] + '\t' +
+# 			str(statistics['rank_sum_median'][1]) + '\t' +
+# 			str(statistics['rank_sum_mean'][1]) + '\t' +
+# 			str(statistics['rank_sum_sum'][1]) + '\t' +
+# 			str(statistics['rank_sum_median_ratio'][1]) + '\t' +
+# 			str(statistics['rank_sum_mean_ratio'][1]) + '\t' +
+# 			str(statistics['rank_sum_sum_ratio'][1]) + '\n')
+
+# #
