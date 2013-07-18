@@ -79,6 +79,8 @@ def CanNuc(datatype, maxrange, outputfile, outputfiletype):
 		dist = dist.astype(np.uint8)
 		
 		nuclei = pymorph.cwatershed(dist, seeds)
+		plt.imshow(nuclei)
+		plt.show()
 		find = mahotas.label(nuclei)
 		h.write('Stack number: ' + str(i) +'\n')
 		for n in range(0, find[1] + 1):

@@ -27,7 +27,31 @@ dataHEP = a.compare_molecule_distribution([c.CCKimgs, c.NCKimgs],
 		nucleus_fill_holes = True, nucleus_otsu = True,
 		molecule_fill_holes = False, molecule_otsu = False)
 
-
+A = dataHEP[0]['slices_mask'][10][0]
+rmax = pymorph.regmax(A)
+seeds, nr_nuclei = ndimage.label(rmax)
+print nr_nuclei
+T = mahotas.thresholding.otsu(A)
+C = A.copy()
+if T < 1:
+	C[ C <= T ] = 0
+	C[ C > T ] = 1
+else:
+	C[ C < T ] = 0
+	C[ C >= T ] = 1
+filled = scipy.ndimage.morphology.binary_fill_holes(C)
+filled = filled.astype(np.uint8)
+	
+dist = ndimage.distance_transform_edt(filled > T)
+dist = dist.max() - dist
+dist -= dist.min()
+dist = dist/float(dist.ptp()) * 255
+dist = dist.astype(np.uint8)
+		
+nuclei = pymorph.cwatershed(dist, seeds)
+print seeds
+plt.imshow(nuclei)
+plt.show()
 
 
 #3D Construction Image Details of NA60x
@@ -42,7 +66,7 @@ dataHEP = a.compare_molecule_distribution([c.CCKimgs, c.NCKimgs],
 
 #3D Construction Image Details of CCK
 #b.TDAnalysis(dataHEP[0]['slices_mask'], 30, '/home/nikhil/Image-analysis/Nikhil_Trials/CCKFullData.txt', 'w')
-b.CanNuc(dataHEP[0]['slices_mask'], 30, '/home/nikhil/Image-analysis/Nikhil_Trials/CCKFullData.txt', 'a')
+#b.CanNuc(dataHEP[0]['slices_mask'], 1, '/home/nikhil/Image-analysis/Nikhil_Trials/CCKFullData.txt', 'a')
 #b.findlitaf(dataHEP[0]['slices_mask'], 30, '/home/nikhil/Image-analysis/Nikhil_Trials/CCKFullData.txt', 'a')
 
 #3D Construction Image Details of NCK
