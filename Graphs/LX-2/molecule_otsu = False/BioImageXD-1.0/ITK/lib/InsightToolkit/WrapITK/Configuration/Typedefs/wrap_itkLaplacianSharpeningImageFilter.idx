@@ -1,0 +1,20 @@
+{itk::LaplacianSharpeningImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkLaplacianSharpeningImageFilterID2ID2} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkLaplacianSharpeningImageFilterID2ID2_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkLaplacianSharpeningImageFilterID3ID3} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkLaplacianSharpeningImageFilterID3ID3_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkLaplacianSharpeningImageFilterIF2IF2} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkLaplacianSharpeningImageFilterIF2IF2_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkLaplacianSharpeningImageFilterIF3IF3} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkLaplacianSharpeningImageFilterIF3IF3_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLaplacianSharpeningImageFilterIUC2IUC2} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLaplacianSharpeningImageFilterIUC2IUC2_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLaplacianSharpeningImageFilterIUC3IUC3} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLaplacianSharpeningImageFilterIUC3IUC3_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLaplacianSharpeningImageFilterIUL2IUL2} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLaplacianSharpeningImageFilterIUL2IUL2_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLaplacianSharpeningImageFilterIUL3IUL3} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLaplacianSharpeningImageFilterIUL3IUL3_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLaplacianSharpeningImageFilterIUS2IUS2} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLaplacianSharpeningImageFilterIUS2IUS2_Pointer} {itkLaplacianSharpeningImageFilter}
+{itk::LaplacianSharpeningImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLaplacianSharpeningImageFilterIUS3IUS3} {itkLaplacianSharpeningImageFilter}
+{itk::SmartPointer<itk::LaplacianSharpeningImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLaplacianSharpeningImageFilterIUS3IUS3_Pointer} {itkLaplacianSharpeningImageFilter}

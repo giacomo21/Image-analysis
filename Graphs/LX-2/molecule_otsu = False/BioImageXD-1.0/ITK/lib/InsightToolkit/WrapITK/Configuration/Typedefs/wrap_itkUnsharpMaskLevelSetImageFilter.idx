@@ -1,0 +1,8 @@
+{itk::UnsharpMaskLevelSetImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkUnsharpMaskLevelSetImageFilterID2ID2} {itkUnsharpMaskLevelSetImageFilter}
+{itk::SmartPointer<itk::UnsharpMaskLevelSetImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkUnsharpMaskLevelSetImageFilterID2ID2_Pointer} {itkUnsharpMaskLevelSetImageFilter}
+{itk::UnsharpMaskLevelSetImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkUnsharpMaskLevelSetImageFilterID3ID3} {itkUnsharpMaskLevelSetImageFilter}
+{itk::SmartPointer<itk::UnsharpMaskLevelSetImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkUnsharpMaskLevelSetImageFilterID3ID3_Pointer} {itkUnsharpMaskLevelSetImageFilter}
+{itk::UnsharpMaskLevelSetImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkUnsharpMaskLevelSetImageFilterIF2IF2} {itkUnsharpMaskLevelSetImageFilter}
+{itk::SmartPointer<itk::UnsharpMaskLevelSetImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkUnsharpMaskLevelSetImageFilterIF2IF2_Pointer} {itkUnsharpMaskLevelSetImageFilter}
+{itk::UnsharpMaskLevelSetImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkUnsharpMaskLevelSetImageFilterIF3IF3} {itkUnsharpMaskLevelSetImageFilter}
+{itk::SmartPointer<itk::UnsharpMaskLevelSetImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkUnsharpMaskLevelSetImageFilterIF3IF3_Pointer} {itkUnsharpMaskLevelSetImageFilter}

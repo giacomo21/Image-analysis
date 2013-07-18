@@ -1,0 +1,4 @@
+{itk::AutoCropLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkAutoCropLabelMapFilterLM2} {itkAutoCropLabelMapFilter}
+{itk::SmartPointer<itk::AutoCropLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkAutoCropLabelMapFilterLM2_Pointer} {itkAutoCropLabelMapFilter}
+{itk::AutoCropLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkAutoCropLabelMapFilterLM3} {itkAutoCropLabelMapFilter}
+{itk::SmartPointer<itk::AutoCropLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkAutoCropLabelMapFilterLM3_Pointer} {itkAutoCropLabelMapFilter}

@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkDisplacementFieldJacobianDeterminantFilterIVF33D)
+DECLARE_REF_COUNT_CLASS(itkDisplacementFieldJacobianDeterminantFilterIVF33F)
+DECLARE_REF_COUNT_CLASS(itkDisplacementFieldJacobianDeterminantFilterIVF22D)
+DECLARE_REF_COUNT_CLASS(itkDisplacementFieldJacobianDeterminantFilterIVF22F)
+

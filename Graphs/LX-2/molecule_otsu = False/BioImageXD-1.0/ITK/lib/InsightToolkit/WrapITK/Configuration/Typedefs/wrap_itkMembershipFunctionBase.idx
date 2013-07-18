@@ -1,0 +1,4 @@
+{itk::Statistics::MembershipFunctionBase<itk::Vector<float, 2u> >} {itkMembershipFunctionBaseVF2} {itkMembershipFunctionBase}
+{itk::SmartPointer<itk::Statistics::MembershipFunctionBase<itk::Vector<float, 2u> > >} {itkMembershipFunctionBaseVF2_Pointer} {itkMembershipFunctionBase}
+{itk::Statistics::MembershipFunctionBase<itk::Vector<float, 3u> >} {itkMembershipFunctionBaseVF3} {itkMembershipFunctionBase}
+{itk::SmartPointer<itk::Statistics::MembershipFunctionBase<itk::Vector<float, 3u> > >} {itkMembershipFunctionBaseVF3_Pointer} {itkMembershipFunctionBase}

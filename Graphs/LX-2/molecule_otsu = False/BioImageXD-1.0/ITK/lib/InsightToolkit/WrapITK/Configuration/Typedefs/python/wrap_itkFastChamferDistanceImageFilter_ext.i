@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkFastChamferDistanceImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkFastChamferDistanceImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkFastChamferDistanceImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkFastChamferDistanceImageFilterIF2IF2)
+

@@ -1,0 +1,4 @@
+{itk::ContinuousIndex<double,2u>} {itkContinuousIndexD2} {itkContinuousIndex}
+{itk::ContinuousIndex<double,3u>} {itkContinuousIndexD3} {itkContinuousIndex}
+{itk::ContinuousIndex<float,2u>} {itkContinuousIndexF2} {itkContinuousIndex}
+{itk::ContinuousIndex<float,3u>} {itkContinuousIndexF3} {itkContinuousIndex}

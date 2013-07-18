@@ -1,0 +1,20 @@
+{itk::DiscreteGaussianImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkDiscreteGaussianImageFilterID2ID2} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkDiscreteGaussianImageFilterID2ID2_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkDiscreteGaussianImageFilterID3ID3} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkDiscreteGaussianImageFilterID3ID3_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkDiscreteGaussianImageFilterIF2IF2} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkDiscreteGaussianImageFilterIF2IF2_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkDiscreteGaussianImageFilterIF3IF3} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkDiscreteGaussianImageFilterIF3IF3_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkDiscreteGaussianImageFilterIUC2IUC2} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkDiscreteGaussianImageFilterIUC2IUC2_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkDiscreteGaussianImageFilterIUC3IUC3} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkDiscreteGaussianImageFilterIUC3IUC3_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkDiscreteGaussianImageFilterIUL2IUL2} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkDiscreteGaussianImageFilterIUL2IUL2_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkDiscreteGaussianImageFilterIUL3IUL3} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkDiscreteGaussianImageFilterIUL3IUL3_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkDiscreteGaussianImageFilterIUS2IUS2} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkDiscreteGaussianImageFilterIUS2IUS2_Pointer} {itkDiscreteGaussianImageFilter}
+{itk::DiscreteGaussianImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkDiscreteGaussianImageFilterIUS3IUS3} {itkDiscreteGaussianImageFilter}
+{itk::SmartPointer<itk::DiscreteGaussianImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkDiscreteGaussianImageFilterIUS3IUS3_Pointer} {itkDiscreteGaussianImageFilter}

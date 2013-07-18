@@ -1,0 +1,4 @@
+{itk::Path<double,itk::ContinuousIndex<double, 2u>,2u>} {itkPathDCID22} {itkPath}
+{itk::SmartPointer<itk::Path<double, itk::ContinuousIndex<double, 2u>, 2u> >} {itkPathDCID22_Pointer} {itkPath}
+{itk::Path<double,itk::ContinuousIndex<double, 3u>,3u>} {itkPathDCID33} {itkPath}
+{itk::SmartPointer<itk::Path<double, itk::ContinuousIndex<double, 3u>, 3u> >} {itkPathDCID33_Pointer} {itkPath}

@@ -1,0 +1,8 @@
+{itk::IsoContourDistanceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkIsoContourDistanceImageFilterID2ID2} {itkIsoContourDistanceImageFilter}
+{itk::SmartPointer<itk::IsoContourDistanceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkIsoContourDistanceImageFilterID2ID2_Pointer} {itkIsoContourDistanceImageFilter}
+{itk::IsoContourDistanceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkIsoContourDistanceImageFilterID3ID3} {itkIsoContourDistanceImageFilter}
+{itk::SmartPointer<itk::IsoContourDistanceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkIsoContourDistanceImageFilterID3ID3_Pointer} {itkIsoContourDistanceImageFilter}
+{itk::IsoContourDistanceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkIsoContourDistanceImageFilterIF2IF2} {itkIsoContourDistanceImageFilter}
+{itk::SmartPointer<itk::IsoContourDistanceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkIsoContourDistanceImageFilterIF2IF2_Pointer} {itkIsoContourDistanceImageFilter}
+{itk::IsoContourDistanceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkIsoContourDistanceImageFilterIF3IF3} {itkIsoContourDistanceImageFilter}
+{itk::SmartPointer<itk::IsoContourDistanceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkIsoContourDistanceImageFilterIF3IF3_Pointer} {itkIsoContourDistanceImageFilter}

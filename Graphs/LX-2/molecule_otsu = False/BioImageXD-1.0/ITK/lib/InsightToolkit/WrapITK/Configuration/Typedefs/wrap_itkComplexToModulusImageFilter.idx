@@ -1,0 +1,8 @@
+{itk::ComplexToModulusImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<float, 2u> >} {itkComplexToModulusImageFilterICF2IF2} {itkComplexToModulusImageFilter}
+{itk::SmartPointer<itk::ComplexToModulusImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<float, 2u> > >} {itkComplexToModulusImageFilterICF2IF2_Pointer} {itkComplexToModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<float, 2u>,itk::Function::ComplexToModulus<std::complex<float>, float> >} {itkComplexToModulusImageFilterICF2IF2_Superclass} {itkComplexToModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<float, 2u>, itk::Function::ComplexToModulus<std::complex<float>, float> > >} {itkComplexToModulusImageFilterICF2IF2_Superclass_Pointer} {itkComplexToModulusImageFilter}
+{itk::ComplexToModulusImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<float, 3u> >} {itkComplexToModulusImageFilterICF3IF3} {itkComplexToModulusImageFilter}
+{itk::SmartPointer<itk::ComplexToModulusImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<float, 3u> > >} {itkComplexToModulusImageFilterICF3IF3_Pointer} {itkComplexToModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<float, 3u>,itk::Function::ComplexToModulus<std::complex<float>, float> >} {itkComplexToModulusImageFilterICF3IF3_Superclass} {itkComplexToModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<float, 3u>, itk::Function::ComplexToModulus<std::complex<float>, float> > >} {itkComplexToModulusImageFilterICF3IF3_Superclass_Pointer} {itkComplexToModulusImageFilter}

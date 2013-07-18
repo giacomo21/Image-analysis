@@ -1,0 +1,20 @@
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSaltAndPepperNoiseImageFilterID2ID2} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSaltAndPepperNoiseImageFilterID2ID2_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSaltAndPepperNoiseImageFilterID3ID3} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSaltAndPepperNoiseImageFilterID3ID3_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSaltAndPepperNoiseImageFilterIF2IF2} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSaltAndPepperNoiseImageFilterIF2IF2_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSaltAndPepperNoiseImageFilterIF3IF3} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSaltAndPepperNoiseImageFilterIF3IF3_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkSaltAndPepperNoiseImageFilterIUC2IUC2} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkSaltAndPepperNoiseImageFilterIUC2IUC2_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkSaltAndPepperNoiseImageFilterIUC3IUC3} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkSaltAndPepperNoiseImageFilterIUC3IUC3_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkSaltAndPepperNoiseImageFilterIUL2IUL2} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkSaltAndPepperNoiseImageFilterIUL2IUL2_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkSaltAndPepperNoiseImageFilterIUL3IUL3} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkSaltAndPepperNoiseImageFilterIUL3IUL3_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkSaltAndPepperNoiseImageFilterIUS2IUS2} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkSaltAndPepperNoiseImageFilterIUS2IUS2_Pointer} {itkSaltAndPepperNoiseImageFilter}
+{itk::SaltAndPepperNoiseImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkSaltAndPepperNoiseImageFilterIUS3IUS3} {itkSaltAndPepperNoiseImageFilter}
+{itk::SmartPointer<itk::SaltAndPepperNoiseImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkSaltAndPepperNoiseImageFilterIUS3IUS3_Pointer} {itkSaltAndPepperNoiseImageFilter}

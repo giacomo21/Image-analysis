@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkDerivativeImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkDerivativeImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkDerivativeImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkDerivativeImageFilterIF2IF2)
+

@@ -1,0 +1,4 @@
+{itk::GaussianSpatialObject<2u>} {itkGaussianSpatialObject2} {itkGaussianSpatialObject}
+{itk::SmartPointer<itk::GaussianSpatialObject<2u> >} {itkGaussianSpatialObject2_Pointer} {itkGaussianSpatialObject}
+{itk::GaussianSpatialObject<3u>} {itkGaussianSpatialObject3} {itkGaussianSpatialObject}
+{itk::SmartPointer<itk::GaussianSpatialObject<3u> >} {itkGaussianSpatialObject3_Pointer} {itkGaussianSpatialObject}

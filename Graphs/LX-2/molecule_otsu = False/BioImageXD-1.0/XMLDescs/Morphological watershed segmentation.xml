@@ -1,0 +1,9 @@
+<StaticBox label="">
+    <br>
+    <IntegerInput id="Level" label="Segmentation Level"/>
+    <br>
+    <BooleanInput id="MarkWatershedLine" label="Mark the watershed line/>
+    <StaticBox label="Minimum object size (in pixels)">
+        <br>
+        <IntegerInput id="Threshold" label="Remove objects with less voxels than:"/>
+    </StaticBox>

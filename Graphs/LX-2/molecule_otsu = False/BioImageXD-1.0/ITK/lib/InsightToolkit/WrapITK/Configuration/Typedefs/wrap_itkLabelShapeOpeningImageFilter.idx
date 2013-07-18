@@ -1,0 +1,12 @@
+{itk::LabelShapeOpeningImageFilter<itk::Image<unsigned char, 2u> >} {itkLabelShapeOpeningImageFilterIUC2} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<unsigned char, 2u> > >} {itkLabelShapeOpeningImageFilterIUC2_Pointer} {itkLabelShapeOpeningImageFilter}
+{itk::LabelShapeOpeningImageFilter<itk::Image<unsigned char, 3u> >} {itkLabelShapeOpeningImageFilterIUC3} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<unsigned char, 3u> > >} {itkLabelShapeOpeningImageFilterIUC3_Pointer} {itkLabelShapeOpeningImageFilter}
+{itk::LabelShapeOpeningImageFilter<itk::Image<long unsigned int, 2u> >} {itkLabelShapeOpeningImageFilterIUL2} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<long unsigned int, 2u> > >} {itkLabelShapeOpeningImageFilterIUL2_Pointer} {itkLabelShapeOpeningImageFilter}
+{itk::LabelShapeOpeningImageFilter<itk::Image<long unsigned int, 3u> >} {itkLabelShapeOpeningImageFilterIUL3} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<long unsigned int, 3u> > >} {itkLabelShapeOpeningImageFilterIUL3_Pointer} {itkLabelShapeOpeningImageFilter}
+{itk::LabelShapeOpeningImageFilter<itk::Image<short unsigned int, 2u> >} {itkLabelShapeOpeningImageFilterIUS2} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<short unsigned int, 2u> > >} {itkLabelShapeOpeningImageFilterIUS2_Pointer} {itkLabelShapeOpeningImageFilter}
+{itk::LabelShapeOpeningImageFilter<itk::Image<short unsigned int, 3u> >} {itkLabelShapeOpeningImageFilterIUS3} {itkLabelShapeOpeningImageFilter}
+{itk::SmartPointer<itk::LabelShapeOpeningImageFilter<itk::Image<short unsigned int, 3u> > >} {itkLabelShapeOpeningImageFilterIUS3_Pointer} {itkLabelShapeOpeningImageFilter}

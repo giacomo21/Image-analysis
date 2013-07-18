@@ -1,0 +1,4 @@
+{itk::AffineTransform<double,2u>} {itkAffineTransformD2} {itkAffineTransform}
+{itk::SmartPointer<itk::AffineTransform<double, 2u> >} {itkAffineTransformD2_Pointer} {itkAffineTransform}
+{itk::AffineTransform<double,3u>} {itkAffineTransformD3} {itkAffineTransform}
+{itk::SmartPointer<itk::AffineTransform<double, 3u> >} {itkAffineTransformD3_Pointer} {itkAffineTransform}

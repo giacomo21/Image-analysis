@@ -1,0 +1,611 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkAdditiveGaussianNoiseImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBinaryMarkBranchingPointImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBinaryThinning3DImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDynamicThreshold3DImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDynamicThresholdImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHistogramToRunLengthFeaturesFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkLabelShapeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkN3MRIBiasFieldCorrectionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPeakSignalToNoiseRatioCalculator.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSaltAndPepperNoiseImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkScalarImageToRunLengthMatrixFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkShotNoiseImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSimpleMultipleContourExtractorImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSmoothColorFieldImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpeckleNoiseImageFilter.h"
+
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkAdditiveGaussianNoiseImageFilterIUC2IUC2;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUC2IUC2_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkAdditiveGaussianNoiseImageFilterIUC3IUC3;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUC3IUC3_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkAdditiveGaussianNoiseImageFilterIUL2IUL2;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUL2IUL2_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkAdditiveGaussianNoiseImageFilterIUL3IUL3;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUL3IUL3_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkAdditiveGaussianNoiseImageFilterIUS2IUS2;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUS2IUS2_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkAdditiveGaussianNoiseImageFilterIUS3IUS3;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkAdditiveGaussianNoiseImageFilterIUS3IUS3_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkAdditiveGaussianNoiseImageFilterIF2IF2;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkAdditiveGaussianNoiseImageFilterIF2IF2_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkAdditiveGaussianNoiseImageFilterIF3IF3;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkAdditiveGaussianNoiseImageFilterIF3IF3_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkAdditiveGaussianNoiseImageFilterID2ID2;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkAdditiveGaussianNoiseImageFilterID2ID2_Pointer;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkAdditiveGaussianNoiseImageFilterID3ID3;
+typedef itk::AdditiveGaussianNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkAdditiveGaussianNoiseImageFilterID3ID3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > > itkBinaryMarkBranchingPointImageFilterIUC2IUL2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC2IUL2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > > itkBinaryMarkBranchingPointImageFilterIUC3IUL3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC3IUL3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkBinaryMarkBranchingPointImageFilterIUC2IUC2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC2IUC2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkBinaryMarkBranchingPointImageFilterIUC3IUC3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC3IUC3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > > itkBinaryMarkBranchingPointImageFilterIUC2IUS2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC2IUS2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > > itkBinaryMarkBranchingPointImageFilterIUC3IUS3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUC3IUS3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkBinaryMarkBranchingPointImageFilterIUL2IUL2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL2IUL2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkBinaryMarkBranchingPointImageFilterIUL3IUL3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL3IUL3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkBinaryMarkBranchingPointImageFilterIUL2IUC2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL2IUC2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkBinaryMarkBranchingPointImageFilterIUL3IUC3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL3IUC3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > > itkBinaryMarkBranchingPointImageFilterIUL2IUS2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL2IUS2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > > itkBinaryMarkBranchingPointImageFilterIUL3IUS3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUL3IUS3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > > itkBinaryMarkBranchingPointImageFilterIUS2IUL2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS2IUL2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > > itkBinaryMarkBranchingPointImageFilterIUS3IUL3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS3IUL3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkBinaryMarkBranchingPointImageFilterIUS2IUC2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS2IUC2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkBinaryMarkBranchingPointImageFilterIUS3IUC3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS3IUC3_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkBinaryMarkBranchingPointImageFilterIUS2IUS2;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS2IUS2_Pointer;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkBinaryMarkBranchingPointImageFilterIUS3IUS3;
+typedef itk::BinaryMarkBranchingPointImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkBinaryMarkBranchingPointImageFilterIUS3IUS3_Pointer;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkBinaryThinning3DImageFilterIUC3IUC3;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkBinaryThinning3DImageFilterIUC3IUC3_Pointer;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkBinaryThinning3DImageFilterIUL3IUL3;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkBinaryThinning3DImageFilterIUL3IUL3_Pointer;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkBinaryThinning3DImageFilterIUS3IUS3;
+typedef itk::BinaryThinning3DImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkBinaryThinning3DImageFilterIUS3IUS3_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkDynamicThreshold3DImageFilterIUC2IUC2;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkDynamicThreshold3DImageFilterIUC2IUC2_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkDynamicThreshold3DImageFilterIUC3IUC3;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkDynamicThreshold3DImageFilterIUC3IUC3_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkDynamicThreshold3DImageFilterIUL2IUL2;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkDynamicThreshold3DImageFilterIUL2IUL2_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkDynamicThreshold3DImageFilterIUL3IUL3;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkDynamicThreshold3DImageFilterIUL3IUL3_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkDynamicThreshold3DImageFilterIUS2IUS2;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkDynamicThreshold3DImageFilterIUS2IUS2_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkDynamicThreshold3DImageFilterIUS3IUS3;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkDynamicThreshold3DImageFilterIUS3IUS3_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkDynamicThreshold3DImageFilterIF2IF2;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkDynamicThreshold3DImageFilterIF2IF2_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkDynamicThreshold3DImageFilterIF3IF3;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkDynamicThreshold3DImageFilterIF3IF3_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkDynamicThreshold3DImageFilterID2ID2;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkDynamicThreshold3DImageFilterID2ID2_Pointer;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkDynamicThreshold3DImageFilterID3ID3;
+typedef itk::DynamicThreshold3DImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkDynamicThreshold3DImageFilterID3ID3_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkDynamicThresholdImageFilterIUC2IUC2;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkDynamicThresholdImageFilterIUC2IUC2_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkDynamicThresholdImageFilterIUC3IUC3;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkDynamicThresholdImageFilterIUC3IUC3_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkDynamicThresholdImageFilterIUL2IUL2;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkDynamicThresholdImageFilterIUL2IUL2_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkDynamicThresholdImageFilterIUL3IUL3;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkDynamicThresholdImageFilterIUL3IUL3_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkDynamicThresholdImageFilterIUS2IUS2;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkDynamicThresholdImageFilterIUS2IUS2_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkDynamicThresholdImageFilterIUS3IUS3;
+typedef itk::DynamicThresholdImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkDynamicThresholdImageFilterIUS3IUS3_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkDynamicThresholdImageFilterIF2IF2;
+typedef itk::DynamicThresholdImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkDynamicThresholdImageFilterIF2IF2_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkDynamicThresholdImageFilterIF3IF3;
+typedef itk::DynamicThresholdImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkDynamicThresholdImageFilterIF3IF3_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkDynamicThresholdImageFilterID2ID2;
+typedef itk::DynamicThresholdImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkDynamicThresholdImageFilterID2ID2_Pointer;
+typedef itk::DynamicThresholdImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkDynamicThresholdImageFilterID3ID3;
+typedef itk::DynamicThresholdImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkDynamicThresholdImageFilterID3ID3_Pointer;
+typedef itk::Statistics::HistogramToRunLengthFeaturesFilter< itk::Statistics::Histogram< float > > itkHistogramToRunLengthFeaturesFilterHF;
+typedef itk::Statistics::HistogramToRunLengthFeaturesFilter< itk::Statistics::Histogram< float > >::Pointer itkHistogramToRunLengthFeaturesFilterHF_Pointer;
+typedef itk::Statistics::HistogramToRunLengthFeaturesFilter< itk::Statistics::Histogram< double > > itkHistogramToRunLengthFeaturesFilterHD;
+typedef itk::Statistics::HistogramToRunLengthFeaturesFilter< itk::Statistics::Histogram< double > >::Pointer itkHistogramToRunLengthFeaturesFilterHD_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned char,2 > > itkLabelShapeImageFilterIUC2;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned char,2 > >::Pointer itkLabelShapeImageFilterIUC2_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned char,3 > > itkLabelShapeImageFilterIUC3;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned char,3 > >::Pointer itkLabelShapeImageFilterIUC3_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned long,2 > > itkLabelShapeImageFilterIUL2;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned long,2 > >::Pointer itkLabelShapeImageFilterIUL2_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned long,3 > > itkLabelShapeImageFilterIUL3;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned long,3 > >::Pointer itkLabelShapeImageFilterIUL3_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned short,2 > > itkLabelShapeImageFilterIUS2;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned short,2 > >::Pointer itkLabelShapeImageFilterIUS2_Pointer;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned short,3 > > itkLabelShapeImageFilterIUS3;
+typedef itk::LabelShapeImageFilter< itk::Image< unsigned short,3 > >::Pointer itkLabelShapeImageFilterIUS3_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkN3MRIBiasFieldCorrectionImageFilterIUC2IUC2;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUC2IUC2_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkN3MRIBiasFieldCorrectionImageFilterIUC3IUC3;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUC3IUC3_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkN3MRIBiasFieldCorrectionImageFilterIUL2IUC2;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUL2IUC2_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkN3MRIBiasFieldCorrectionImageFilterIUL3IUC3;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUL3IUC3_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkN3MRIBiasFieldCorrectionImageFilterIUS2IUC2;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUS2IUC2_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkN3MRIBiasFieldCorrectionImageFilterIUS3IUC3;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIUS3IUC3_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > > itkN3MRIBiasFieldCorrectionImageFilterIF2IUC2;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIF2IUC2_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > > itkN3MRIBiasFieldCorrectionImageFilterIF3IUC3;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterIF3IUC3_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > > itkN3MRIBiasFieldCorrectionImageFilterID2IUC2;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterID2IUC2_Pointer;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > > itkN3MRIBiasFieldCorrectionImageFilterID3IUC3;
+typedef itk::N3MRIBiasFieldCorrectionImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Pointer itkN3MRIBiasFieldCorrectionImageFilterID3IUC3_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned char,2 > > itkPeakSignalToNoiseRatioCalculatorIUC2;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned char,2 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUC2_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned char,3 > > itkPeakSignalToNoiseRatioCalculatorIUC3;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned char,3 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUC3_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned long,2 > > itkPeakSignalToNoiseRatioCalculatorIUL2;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned long,2 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUL2_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned long,3 > > itkPeakSignalToNoiseRatioCalculatorIUL3;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned long,3 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUL3_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned short,2 > > itkPeakSignalToNoiseRatioCalculatorIUS2;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned short,2 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUS2_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned short,3 > > itkPeakSignalToNoiseRatioCalculatorIUS3;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< unsigned short,3 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIUS3_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< float,2 > > itkPeakSignalToNoiseRatioCalculatorIF2;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< float,2 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIF2_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< float,3 > > itkPeakSignalToNoiseRatioCalculatorIF3;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< float,3 > >::Pointer itkPeakSignalToNoiseRatioCalculatorIF3_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< double,2 > > itkPeakSignalToNoiseRatioCalculatorID2;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< double,2 > >::Pointer itkPeakSignalToNoiseRatioCalculatorID2_Pointer;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< double,3 > > itkPeakSignalToNoiseRatioCalculatorID3;
+typedef itk::PeakSignalToNoiseRatioCalculator< itk::Image< double,3 > >::Pointer itkPeakSignalToNoiseRatioCalculatorID3_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkSaltAndPepperNoiseImageFilterIUC2IUC2;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkSaltAndPepperNoiseImageFilterIUC2IUC2_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkSaltAndPepperNoiseImageFilterIUC3IUC3;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkSaltAndPepperNoiseImageFilterIUC3IUC3_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkSaltAndPepperNoiseImageFilterIUL2IUL2;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkSaltAndPepperNoiseImageFilterIUL2IUL2_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkSaltAndPepperNoiseImageFilterIUL3IUL3;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkSaltAndPepperNoiseImageFilterIUL3IUL3_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkSaltAndPepperNoiseImageFilterIUS2IUS2;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkSaltAndPepperNoiseImageFilterIUS2IUS2_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkSaltAndPepperNoiseImageFilterIUS3IUS3;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkSaltAndPepperNoiseImageFilterIUS3IUS3_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSaltAndPepperNoiseImageFilterIF2IF2;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSaltAndPepperNoiseImageFilterIF2IF2_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSaltAndPepperNoiseImageFilterIF3IF3;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSaltAndPepperNoiseImageFilterIF3IF3_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSaltAndPepperNoiseImageFilterID2ID2;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSaltAndPepperNoiseImageFilterID2ID2_Pointer;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSaltAndPepperNoiseImageFilterID3ID3;
+typedef itk::SaltAndPepperNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSaltAndPepperNoiseImageFilterID3ID3_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned char,2 > > itkScalarImageToRunLengthMatrixFilterIUC2;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned char,2 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUC2_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned char,3 > > itkScalarImageToRunLengthMatrixFilterIUC3;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned char,3 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUC3_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned long,2 > > itkScalarImageToRunLengthMatrixFilterIUL2;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned long,2 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUL2_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned long,3 > > itkScalarImageToRunLengthMatrixFilterIUL3;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned long,3 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUL3_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned short,2 > > itkScalarImageToRunLengthMatrixFilterIUS2;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned short,2 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUS2_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned short,3 > > itkScalarImageToRunLengthMatrixFilterIUS3;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< unsigned short,3 > >::Pointer itkScalarImageToRunLengthMatrixFilterIUS3_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< float,2 > > itkScalarImageToRunLengthMatrixFilterIF2;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< float,2 > >::Pointer itkScalarImageToRunLengthMatrixFilterIF2_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< float,3 > > itkScalarImageToRunLengthMatrixFilterIF3;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< float,3 > >::Pointer itkScalarImageToRunLengthMatrixFilterIF3_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< double,2 > > itkScalarImageToRunLengthMatrixFilterID2;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< double,2 > >::Pointer itkScalarImageToRunLengthMatrixFilterID2_Pointer;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< double,3 > > itkScalarImageToRunLengthMatrixFilterID3;
+typedef itk::Statistics::ScalarImageToRunLengthMatrixFilter< itk::Image< double,3 > >::Pointer itkScalarImageToRunLengthMatrixFilterID3_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkShotNoiseImageFilterIUC2IUC2;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkShotNoiseImageFilterIUC2IUC2_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkShotNoiseImageFilterIUC3IUC3;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkShotNoiseImageFilterIUC3IUC3_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkShotNoiseImageFilterIUL2IUL2;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkShotNoiseImageFilterIUL2IUL2_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkShotNoiseImageFilterIUL3IUL3;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkShotNoiseImageFilterIUL3IUL3_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkShotNoiseImageFilterIUS2IUS2;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkShotNoiseImageFilterIUS2IUS2_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkShotNoiseImageFilterIUS3IUS3;
+typedef itk::ShotNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkShotNoiseImageFilterIUS3IUS3_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkShotNoiseImageFilterIF2IF2;
+typedef itk::ShotNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkShotNoiseImageFilterIF2IF2_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkShotNoiseImageFilterIF3IF3;
+typedef itk::ShotNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkShotNoiseImageFilterIF3IF3_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkShotNoiseImageFilterID2ID2;
+typedef itk::ShotNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkShotNoiseImageFilterID2ID2_Pointer;
+typedef itk::ShotNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkShotNoiseImageFilterID3ID3;
+typedef itk::ShotNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkShotNoiseImageFilterID3ID3_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkSimpleMultipleContourExtractorImageFilterIUC2IUC2;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUC2IUC2_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkSimpleMultipleContourExtractorImageFilterIUC3IUC3;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUC3IUC3_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkSimpleMultipleContourExtractorImageFilterIUL2IUL2;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUL2IUL2_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkSimpleMultipleContourExtractorImageFilterIUL3IUL3;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUL3IUL3_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkSimpleMultipleContourExtractorImageFilterIUS2IUS2;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUS2IUS2_Pointer;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkSimpleMultipleContourExtractorImageFilterIUS3IUS3;
+typedef itk::SimpleMultipleContourExtractorImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkSimpleMultipleContourExtractorImageFilterIUS3IUS3_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUC2ICVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUC2ICVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUC3ICVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUC3ICVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUL2ICVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUL2ICVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUL3ICVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUL3ICVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUS2ICVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUS2ICVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUS3ICVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUS3ICVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkSmoothColorFieldImageFilterIF2ICVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIF2ICVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkSmoothColorFieldImageFilterIF3ICVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIF3ICVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkSmoothColorFieldImageFilterID2ICVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterID2ICVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkSmoothColorFieldImageFilterID3ICVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterID3ICVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUC2IVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUC2IVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUC3IVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUC3IVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUL2IVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUL2IVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUL3IVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUL3IVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkSmoothColorFieldImageFilterIUS2IVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIUS2IVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkSmoothColorFieldImageFilterIUS3IVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIUS3IVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkSmoothColorFieldImageFilterIF2IVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterIF2IVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkSmoothColorFieldImageFilterIF3IVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< float,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterIF3IVF33_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkSmoothColorFieldImageFilterID2IVF22;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkSmoothColorFieldImageFilterID2IVF22_Pointer;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkSmoothColorFieldImageFilterID3IVF33;
+typedef itk::SmoothColorFieldImageFilter< itk::Image< double,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkSmoothColorFieldImageFilterID3IVF33_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkSpeckleNoiseImageFilterIUC2IUC2;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkSpeckleNoiseImageFilterIUC2IUC2_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkSpeckleNoiseImageFilterIUC3IUC3;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkSpeckleNoiseImageFilterIUC3IUC3_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkSpeckleNoiseImageFilterIUL2IUL2;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkSpeckleNoiseImageFilterIUL2IUL2_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkSpeckleNoiseImageFilterIUL3IUL3;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkSpeckleNoiseImageFilterIUL3IUL3_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkSpeckleNoiseImageFilterIUS2IUS2;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkSpeckleNoiseImageFilterIUS2IUS2_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkSpeckleNoiseImageFilterIUS3IUS3;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkSpeckleNoiseImageFilterIUS3IUS3_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSpeckleNoiseImageFilterIF2IF2;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSpeckleNoiseImageFilterIF2IF2_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSpeckleNoiseImageFilterIF3IF3;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSpeckleNoiseImageFilterIF3IF3_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSpeckleNoiseImageFilterID2ID2;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSpeckleNoiseImageFilterID2ID2_Pointer;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSpeckleNoiseImageFilterID3ID3;
+typedef itk::SpeckleNoiseImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSpeckleNoiseImageFilterID3ID3_Pointer;
+

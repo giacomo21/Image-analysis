@@ -1,0 +1,8 @@
+{itk::FastMarchingExtensionImageFilter<itk::Image<double, 2u>,unsigned char,1u,itk::Image<double, 2u> >} {itkFastMarchingExtensionImageFilterID2UC1ID2} {itkFastMarchingExtensionImageFilter}
+{itk::SmartPointer<itk::FastMarchingExtensionImageFilter<itk::Image<double, 2u>, unsigned char, 1u, itk::Image<double, 2u> > >} {itkFastMarchingExtensionImageFilterID2UC1ID2_Pointer} {itkFastMarchingExtensionImageFilter}
+{itk::FastMarchingExtensionImageFilter<itk::Image<double, 3u>,unsigned char,1u,itk::Image<double, 3u> >} {itkFastMarchingExtensionImageFilterID3UC1ID3} {itkFastMarchingExtensionImageFilter}
+{itk::SmartPointer<itk::FastMarchingExtensionImageFilter<itk::Image<double, 3u>, unsigned char, 1u, itk::Image<double, 3u> > >} {itkFastMarchingExtensionImageFilterID3UC1ID3_Pointer} {itkFastMarchingExtensionImageFilter}
+{itk::FastMarchingExtensionImageFilter<itk::Image<float, 2u>,unsigned char,1u,itk::Image<float, 2u> >} {itkFastMarchingExtensionImageFilterIF2UC1IF2} {itkFastMarchingExtensionImageFilter}
+{itk::SmartPointer<itk::FastMarchingExtensionImageFilter<itk::Image<float, 2u>, unsigned char, 1u, itk::Image<float, 2u> > >} {itkFastMarchingExtensionImageFilterIF2UC1IF2_Pointer} {itkFastMarchingExtensionImageFilter}
+{itk::FastMarchingExtensionImageFilter<itk::Image<float, 3u>,unsigned char,1u,itk::Image<float, 3u> >} {itkFastMarchingExtensionImageFilterIF3UC1IF3} {itkFastMarchingExtensionImageFilter}
+{itk::SmartPointer<itk::FastMarchingExtensionImageFilter<itk::Image<float, 3u>, unsigned char, 1u, itk::Image<float, 3u> > >} {itkFastMarchingExtensionImageFilterIF3UC1IF3_Pointer} {itkFastMarchingExtensionImageFilter}

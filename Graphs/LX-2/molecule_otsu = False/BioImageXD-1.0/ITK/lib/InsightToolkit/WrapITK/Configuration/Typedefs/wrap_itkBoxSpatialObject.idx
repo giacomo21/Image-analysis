@@ -1,0 +1,4 @@
+{itk::BoxSpatialObject<2u>} {itkBoxSpatialObject2} {itkBoxSpatialObject}
+{itk::SmartPointer<itk::BoxSpatialObject<2u> >} {itkBoxSpatialObject2_Pointer} {itkBoxSpatialObject}
+{itk::BoxSpatialObject<3u>} {itkBoxSpatialObject3} {itkBoxSpatialObject}
+{itk::SmartPointer<itk::BoxSpatialObject<3u> >} {itkBoxSpatialObject3_Pointer} {itkBoxSpatialObject}

@@ -1,0 +1,4 @@
+{itk::Rigid2DTransform<double>} {itkRigid2DTransformD} {ITKRigidTransforms}
+{itk::SmartPointer<itk::Rigid2DTransform<double> >} {itkRigid2DTransformD_Pointer} {ITKRigidTransforms}
+{itk::Rigid3DTransform<double>} {itkRigid3DTransformD} {ITKRigidTransforms}
+{itk::SmartPointer<itk::Rigid3DTransform<double> >} {itkRigid3DTransformD_Pointer} {ITKRigidTransforms}

@@ -1,0 +1,20 @@
+{itk::IsolatedWatershedImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkIsolatedWatershedImageFilterID2ID2} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkIsolatedWatershedImageFilterID2ID2_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkIsolatedWatershedImageFilterID3ID3} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkIsolatedWatershedImageFilterID3ID3_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkIsolatedWatershedImageFilterIF2IF2} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkIsolatedWatershedImageFilterIF2IF2_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkIsolatedWatershedImageFilterIF3IF3} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkIsolatedWatershedImageFilterIF3IF3_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkIsolatedWatershedImageFilterIUC2IUC2} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkIsolatedWatershedImageFilterIUC2IUC2_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkIsolatedWatershedImageFilterIUC3IUC3} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkIsolatedWatershedImageFilterIUC3IUC3_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkIsolatedWatershedImageFilterIUL2IUL2} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkIsolatedWatershedImageFilterIUL2IUL2_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkIsolatedWatershedImageFilterIUL3IUL3} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkIsolatedWatershedImageFilterIUL3IUL3_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkIsolatedWatershedImageFilterIUS2IUS2} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkIsolatedWatershedImageFilterIUS2IUS2_Pointer} {itkIsolatedWatershedImageFilter}
+{itk::IsolatedWatershedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkIsolatedWatershedImageFilterIUS3IUS3} {itkIsolatedWatershedImageFilter}
+{itk::SmartPointer<itk::IsolatedWatershedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkIsolatedWatershedImageFilterIUS3IUS3_Pointer} {itkIsolatedWatershedImageFilter}

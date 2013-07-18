@@ -1,0 +1,18 @@
+{itk::SimpleDataObjectDecorator<bool>} {itkSimpleDataObjectDecoratorB} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<bool> >} {itkSimpleDataObjectDecoratorB_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<double>} {itkSimpleDataObjectDecoratorD} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<double> >} {itkSimpleDataObjectDecoratorD_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<float>} {itkSimpleDataObjectDecoratorF} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<float> >} {itkSimpleDataObjectDecoratorF_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<signed char>} {itkSimpleDataObjectDecoratorSC} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<signed char> >} {itkSimpleDataObjectDecoratorSC_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<long int>} {itkSimpleDataObjectDecoratorSL} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<long int> >} {itkSimpleDataObjectDecoratorSL_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<short int>} {itkSimpleDataObjectDecoratorSS} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<short int> >} {itkSimpleDataObjectDecoratorSS_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<unsigned char>} {itkSimpleDataObjectDecoratorUC} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<unsigned char> >} {itkSimpleDataObjectDecoratorUC_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<long unsigned int>} {itkSimpleDataObjectDecoratorUL} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<long unsigned int> >} {itkSimpleDataObjectDecoratorUL_Pointer} {itkSimpleDataObjectDecorator}
+{itk::SimpleDataObjectDecorator<short unsigned int>} {itkSimpleDataObjectDecoratorUS} {itkSimpleDataObjectDecorator}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<short unsigned int> >} {itkSimpleDataObjectDecoratorUS_Pointer} {itkSimpleDataObjectDecorator}

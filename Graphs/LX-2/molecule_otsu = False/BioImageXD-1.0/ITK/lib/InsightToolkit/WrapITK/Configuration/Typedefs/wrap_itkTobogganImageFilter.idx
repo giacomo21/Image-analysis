@@ -1,0 +1,20 @@
+{itk::TobogganImageFilter<itk::Image<double, 2u> >} {itkTobogganImageFilterID2} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<double, 2u> > >} {itkTobogganImageFilterID2_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<double, 3u> >} {itkTobogganImageFilterID3} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<double, 3u> > >} {itkTobogganImageFilterID3_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<float, 2u> >} {itkTobogganImageFilterIF2} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<float, 2u> > >} {itkTobogganImageFilterIF2_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<float, 3u> >} {itkTobogganImageFilterIF3} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<float, 3u> > >} {itkTobogganImageFilterIF3_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<unsigned char, 2u> >} {itkTobogganImageFilterIUC2} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<unsigned char, 2u> > >} {itkTobogganImageFilterIUC2_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<unsigned char, 3u> >} {itkTobogganImageFilterIUC3} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<unsigned char, 3u> > >} {itkTobogganImageFilterIUC3_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<long unsigned int, 2u> >} {itkTobogganImageFilterIUL2} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<long unsigned int, 2u> > >} {itkTobogganImageFilterIUL2_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<long unsigned int, 3u> >} {itkTobogganImageFilterIUL3} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<long unsigned int, 3u> > >} {itkTobogganImageFilterIUL3_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<short unsigned int, 2u> >} {itkTobogganImageFilterIUS2} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<short unsigned int, 2u> > >} {itkTobogganImageFilterIUS2_Pointer} {itkTobogganImageFilter}
+{itk::TobogganImageFilter<itk::Image<short unsigned int, 3u> >} {itkTobogganImageFilterIUS3} {itkTobogganImageFilter}
+{itk::SmartPointer<itk::TobogganImageFilter<itk::Image<short unsigned int, 3u> > >} {itkTobogganImageFilterIUS3_Pointer} {itkTobogganImageFilter}

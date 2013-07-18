@@ -1,0 +1,64 @@
+{itk::ImageFileWriter<itk::Image<std::complex<float>, 2u> >} {itkImageFileWriterICF2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<std::complex<float>, 2u> > >} {itkImageFileWriterICF2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<std::complex<float>, 3u> >} {itkImageFileWriterICF3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<std::complex<float>, 3u> > >} {itkImageFileWriterICF3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageFileWriterICVF22} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkImageFileWriterICVF22_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageFileWriterICVF33} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkImageFileWriterICVF33_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<double, 2u> >} {itkImageFileWriterID2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<double, 2u> > >} {itkImageFileWriterID2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<double, 3u> >} {itkImageFileWriterID3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<double, 3u> > >} {itkImageFileWriterID3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<float, 2u> >} {itkImageFileWriterIF2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<float, 2u> > >} {itkImageFileWriterIF2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<float, 3u> >} {itkImageFileWriterIF3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<float, 3u> > >} {itkImageFileWriterIF3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageFileWriterIRGBAUS2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkImageFileWriterIRGBAUS2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageFileWriterIRGBAUS3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkImageFileWriterIRGBAUS3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBPixel<unsigned char>, 2u> >} {itkImageFileWriterIRGBUC2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBPixel<unsigned char>, 2u> > >} {itkImageFileWriterIRGBUC2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBPixel<unsigned char>, 3u> >} {itkImageFileWriterIRGBUC3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBPixel<unsigned char>, 3u> > >} {itkImageFileWriterIRGBUC3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageFileWriterIRGBUS2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageFileWriterIRGBUS2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageFileWriterIRGBUS3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkImageFileWriterIRGBUS3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<unsigned char, 2u> >} {itkImageFileWriterIUC2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<unsigned char, 2u> > >} {itkImageFileWriterIUC2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<unsigned char, 3u> >} {itkImageFileWriterIUC3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<unsigned char, 3u> > >} {itkImageFileWriterIUC3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<long unsigned int, 2u> >} {itkImageFileWriterIUL2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<long unsigned int, 2u> > >} {itkImageFileWriterIUL2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<long unsigned int, 3u> >} {itkImageFileWriterIUL3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<long unsigned int, 3u> > >} {itkImageFileWriterIUL3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<short unsigned int, 2u> >} {itkImageFileWriterIUS2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<short unsigned int, 2u> > >} {itkImageFileWriterIUS2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<short unsigned int, 3u> >} {itkImageFileWriterIUS3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<short unsigned int, 3u> > >} {itkImageFileWriterIUS3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageFileWriterIVF22} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkImageFileWriterIVF22_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageFileWriterIVF33} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkImageFileWriterIVF33_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<double, 2u> >} {itkImageFileWriterVID2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<double, 2u> > >} {itkImageFileWriterVID2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<double, 3u> >} {itkImageFileWriterVID3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<double, 3u> > >} {itkImageFileWriterVID3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<float, 2u> >} {itkImageFileWriterVIF2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<float, 2u> > >} {itkImageFileWriterVIF2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<float, 3u> >} {itkImageFileWriterVIF3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<float, 3u> > >} {itkImageFileWriterVIF3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<unsigned char, 2u> >} {itkImageFileWriterVIUC2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<unsigned char, 2u> > >} {itkImageFileWriterVIUC2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<unsigned char, 3u> >} {itkImageFileWriterVIUC3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<unsigned char, 3u> > >} {itkImageFileWriterVIUC3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<long unsigned int, 2u> >} {itkImageFileWriterVIUL2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<long unsigned int, 2u> > >} {itkImageFileWriterVIUL2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<long unsigned int, 3u> >} {itkImageFileWriterVIUL3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<long unsigned int, 3u> > >} {itkImageFileWriterVIUL3_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<short unsigned int, 2u> >} {itkImageFileWriterVIUS2} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<short unsigned int, 2u> > >} {itkImageFileWriterVIUS2_Pointer} {itkImageFileWriter}
+{itk::ImageFileWriter<itk::VectorImage<short unsigned int, 3u> >} {itkImageFileWriterVIUS3} {itkImageFileWriter}
+{itk::SmartPointer<itk::ImageFileWriter<itk::VectorImage<short unsigned int, 3u> > >} {itkImageFileWriterVIUS3_Pointer} {itkImageFileWriter}

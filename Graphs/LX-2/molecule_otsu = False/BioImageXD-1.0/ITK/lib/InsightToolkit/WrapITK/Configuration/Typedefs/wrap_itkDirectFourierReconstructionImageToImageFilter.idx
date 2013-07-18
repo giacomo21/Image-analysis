@@ -1,0 +1,4 @@
+{itk::DirectFourierReconstructionImageToImageFilter<double,double>} {itkDirectFourierReconstructionImageToImageFilterDD} {itkDirectFourierReconstructionImageToImageFilter}
+{itk::SmartPointer<itk::DirectFourierReconstructionImageToImageFilter<double, double> >} {itkDirectFourierReconstructionImageToImageFilterDD_Pointer} {itkDirectFourierReconstructionImageToImageFilter}
+{itk::DirectFourierReconstructionImageToImageFilter<float,float>} {itkDirectFourierReconstructionImageToImageFilterFF} {itkDirectFourierReconstructionImageToImageFilter}
+{itk::SmartPointer<itk::DirectFourierReconstructionImageToImageFilter<float, float> >} {itkDirectFourierReconstructionImageToImageFilterFF_Pointer} {itkDirectFourierReconstructionImageToImageFilter}

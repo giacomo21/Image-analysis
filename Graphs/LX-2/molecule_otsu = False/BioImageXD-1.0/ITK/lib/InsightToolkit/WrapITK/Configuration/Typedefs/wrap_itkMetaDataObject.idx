@@ -1,0 +1,8 @@
+{itk::MetaDataObject<double>} {itkMetaDataObjectD} {itkMetaDataObject}
+{itk::SmartPointer<itk::MetaDataObject<double> >} {itkMetaDataObjectD_Pointer} {itkMetaDataObject}
+{itk::MetaDataObject<float>} {itkMetaDataObjectF} {itkMetaDataObject}
+{itk::SmartPointer<itk::MetaDataObject<float> >} {itkMetaDataObjectF_Pointer} {itkMetaDataObject}
+{itk::MetaDataObject<unsigned int>} {itkMetaDataObjectUI} {itkMetaDataObject}
+{itk::SmartPointer<itk::MetaDataObject<unsigned int> >} {itkMetaDataObjectUI_Pointer} {itkMetaDataObject}
+{itk::MetaDataObject<long unsigned int>} {itkMetaDataObjectUL} {itkMetaDataObject}
+{itk::SmartPointer<itk::MetaDataObject<long unsigned int> >} {itkMetaDataObjectUL_Pointer} {itkMetaDataObject}

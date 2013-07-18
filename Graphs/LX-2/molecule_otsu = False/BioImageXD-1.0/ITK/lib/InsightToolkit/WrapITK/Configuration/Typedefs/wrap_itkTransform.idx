@@ -1,0 +1,18 @@
+{itk::DataObjectDecorator<itk::Transform<double, 2u, 2u> >} {itkDataObjectDecoratorTD22} {itkTransform}
+{itk::SmartPointer<itk::DataObjectDecorator<itk::Transform<double, 2u, 2u> > >} {itkDataObjectDecoratorTD22_Pointer} {itkTransform}
+{itk::DataObjectDecorator<itk::Transform<double, 2u, 3u> >} {itkDataObjectDecoratorTD23} {itkTransform}
+{itk::SmartPointer<itk::DataObjectDecorator<itk::Transform<double, 2u, 3u> > >} {itkDataObjectDecoratorTD23_Pointer} {itkTransform}
+{itk::DataObjectDecorator<itk::Transform<double, 3u, 2u> >} {itkDataObjectDecoratorTD32} {itkTransform}
+{itk::SmartPointer<itk::DataObjectDecorator<itk::Transform<double, 3u, 2u> > >} {itkDataObjectDecoratorTD32_Pointer} {itkTransform}
+{itk::DataObjectDecorator<itk::Transform<double, 3u, 3u> >} {itkDataObjectDecoratorTD33} {itkTransform}
+{itk::SmartPointer<itk::DataObjectDecorator<itk::Transform<double, 3u, 3u> > >} {itkDataObjectDecoratorTD33_Pointer} {itkTransform}
+{itk::TransformBase} {itkTransformBase} {itkTransform}
+{itk::SmartPointer<itk::TransformBase>} {itkTransformBase_Pointer} {itkTransform}
+{itk::Transform<double,2u,2u>} {itkTransformD22} {itkTransform}
+{itk::SmartPointer<itk::Transform<double, 2u, 2u> >} {itkTransformD22_Pointer} {itkTransform}
+{itk::Transform<double,2u,3u>} {itkTransformD23} {itkTransform}
+{itk::SmartPointer<itk::Transform<double, 2u, 3u> >} {itkTransformD23_Pointer} {itkTransform}
+{itk::Transform<double,3u,2u>} {itkTransformD32} {itkTransform}
+{itk::SmartPointer<itk::Transform<double, 3u, 2u> >} {itkTransformD32_Pointer} {itkTransform}
+{itk::Transform<double,3u,3u>} {itkTransformD33} {itkTransform}
+{itk::SmartPointer<itk::Transform<double, 3u, 3u> >} {itkTransformD33_Pointer} {itkTransform}

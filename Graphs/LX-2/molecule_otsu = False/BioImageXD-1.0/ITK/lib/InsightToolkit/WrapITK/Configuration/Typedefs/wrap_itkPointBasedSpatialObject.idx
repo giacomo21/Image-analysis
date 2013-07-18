@@ -1,0 +1,4 @@
+{itk::PointBasedSpatialObject<2u>} {itkPointBasedSpatialObject2} {itkPointBasedSpatialObject}
+{itk::SmartPointer<itk::PointBasedSpatialObject<2u> >} {itkPointBasedSpatialObject2_Pointer} {itkPointBasedSpatialObject}
+{itk::PointBasedSpatialObject<3u>} {itkPointBasedSpatialObject3} {itkPointBasedSpatialObject}
+{itk::SmartPointer<itk::PointBasedSpatialObject<3u> >} {itkPointBasedSpatialObject3_Pointer} {itkPointBasedSpatialObject}

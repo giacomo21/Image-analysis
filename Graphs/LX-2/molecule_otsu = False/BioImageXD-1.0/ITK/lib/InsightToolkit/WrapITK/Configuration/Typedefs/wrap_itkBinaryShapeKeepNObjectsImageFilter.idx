@@ -1,0 +1,12 @@
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 2u> >} {itkBinaryShapeKeepNObjectsImageFilterIUC2} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 2u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUC2_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 3u> >} {itkBinaryShapeKeepNObjectsImageFilterIUC3} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 3u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUC3_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 2u> >} {itkBinaryShapeKeepNObjectsImageFilterIUL2} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 2u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUL2_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 3u> >} {itkBinaryShapeKeepNObjectsImageFilterIUL3} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 3u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUL3_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 2u> >} {itkBinaryShapeKeepNObjectsImageFilterIUS2} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 2u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUS2_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 3u> >} {itkBinaryShapeKeepNObjectsImageFilterIUS3} {itkBinaryShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::BinaryShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 3u> > >} {itkBinaryShapeKeepNObjectsImageFilterIUS3_Pointer} {itkBinaryShapeKeepNObjectsImageFilter}

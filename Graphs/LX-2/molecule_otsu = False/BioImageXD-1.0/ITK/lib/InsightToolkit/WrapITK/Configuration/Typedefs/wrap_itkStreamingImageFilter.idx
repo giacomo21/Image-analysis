@@ -1,0 +1,20 @@
+{itk::StreamingImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkStreamingImageFilterID2ID2} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkStreamingImageFilterID2ID2_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkStreamingImageFilterID3ID3} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkStreamingImageFilterID3ID3_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkStreamingImageFilterIF2IF2} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkStreamingImageFilterIF2IF2_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkStreamingImageFilterIF3IF3} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkStreamingImageFilterIF3IF3_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkStreamingImageFilterIUC2IUC2} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkStreamingImageFilterIUC2IUC2_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkStreamingImageFilterIUC3IUC3} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkStreamingImageFilterIUC3IUC3_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkStreamingImageFilterIUL2IUL2} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkStreamingImageFilterIUL2IUL2_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkStreamingImageFilterIUL3IUL3} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkStreamingImageFilterIUL3IUL3_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkStreamingImageFilterIUS2IUS2} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkStreamingImageFilterIUS2IUS2_Pointer} {itkStreamingImageFilter}
+{itk::StreamingImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkStreamingImageFilterIUS3IUS3} {itkStreamingImageFilter}
+{itk::SmartPointer<itk::StreamingImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkStreamingImageFilterIUS3IUS3_Pointer} {itkStreamingImageFilter}

@@ -1,0 +1,4 @@
+{itk::ImageRegion<2u>} {itkImageRegion2} {ITKRegions}
+{itk::ImageRegion<3u>} {itkImageRegion3} {ITKRegions}
+{itk::MeshRegion} {itkMeshRegion} {ITKRegions}
+{itk::Region} {itkRegion} {ITKRegions}

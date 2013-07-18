@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkLaplacianImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkLaplacianImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkLaplacianImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkLaplacianImageFilterIF2IF2)
+

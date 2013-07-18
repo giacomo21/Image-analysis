@@ -1,0 +1,1111 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBlackTopHatImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkClosingByReconstructionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDilateObjectMorphologyImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkErodeObjectMorphologyImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleConnectedClosingImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleConnectedOpeningImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleDilateImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleErodeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleFillholeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleFunctionDilateImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleFunctionErodeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleGeodesicDilateImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleGeodesicErodeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleGrindPeakImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleMorphologicalClosingImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGrayscaleMorphologicalOpeningImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHConcaveImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHConvexImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHMaximaImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHMinimaImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMorphologicalGradientImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkOpeningByReconstructionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkReconstructionByDilationImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkReconstructionByErosionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkWhiteTopHatImageFilter.h"
+
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkBlackTopHatImageFilterIUC2IUC2SE2;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkBlackTopHatImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkBlackTopHatImageFilterIUL2IUL2SE2;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkBlackTopHatImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkBlackTopHatImageFilterIUS2IUS2SE2;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkBlackTopHatImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkBlackTopHatImageFilterIF2IF2SE2;
+typedef itk::BlackTopHatImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkBlackTopHatImageFilterIF2IF2SE2_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkBlackTopHatImageFilterID2ID2SE2;
+typedef itk::BlackTopHatImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkBlackTopHatImageFilterID2ID2SE2_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkBlackTopHatImageFilterIUC3IUC3SE3;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkBlackTopHatImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkBlackTopHatImageFilterIUL3IUL3SE3;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkBlackTopHatImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkBlackTopHatImageFilterIUS3IUS3SE3;
+typedef itk::BlackTopHatImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkBlackTopHatImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkBlackTopHatImageFilterIF3IF3SE3;
+typedef itk::BlackTopHatImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkBlackTopHatImageFilterIF3IF3SE3_Pointer;
+typedef itk::BlackTopHatImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkBlackTopHatImageFilterID3ID3SE3;
+typedef itk::BlackTopHatImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkBlackTopHatImageFilterID3ID3SE3_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkClosingByReconstructionImageFilterIUC2IUC2SE2;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkClosingByReconstructionImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkClosingByReconstructionImageFilterIUL2IUL2SE2;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkClosingByReconstructionImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkClosingByReconstructionImageFilterIUS2IUS2SE2;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkClosingByReconstructionImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkClosingByReconstructionImageFilterIF2IF2SE2;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkClosingByReconstructionImageFilterIF2IF2SE2_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkClosingByReconstructionImageFilterID2ID2SE2;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkClosingByReconstructionImageFilterID2ID2SE2_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkClosingByReconstructionImageFilterIUC3IUC3SE3;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkClosingByReconstructionImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkClosingByReconstructionImageFilterIUL3IUL3SE3;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkClosingByReconstructionImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkClosingByReconstructionImageFilterIUS3IUS3SE3;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkClosingByReconstructionImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkClosingByReconstructionImageFilterIF3IF3SE3;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkClosingByReconstructionImageFilterIF3IF3SE3_Pointer;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkClosingByReconstructionImageFilterID3ID3SE3;
+typedef itk::ClosingByReconstructionImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkClosingByReconstructionImageFilterID3ID3SE3_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkDilateObjectMorphologyImageFilterIUC2IUC2SE2_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUC2IUC2SE2_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkDilateObjectMorphologyImageFilterIUC2IUC2SE2;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkDilateObjectMorphologyImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkDilateObjectMorphologyImageFilterIUL2IUL2SE2_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUL2IUL2SE2_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkDilateObjectMorphologyImageFilterIUL2IUL2SE2;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkDilateObjectMorphologyImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkDilateObjectMorphologyImageFilterIUS2IUS2SE2_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUS2IUS2SE2_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkDilateObjectMorphologyImageFilterIUS2IUS2SE2;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkDilateObjectMorphologyImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkDilateObjectMorphologyImageFilterIF2IF2SE2_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIF2IF2SE2_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkDilateObjectMorphologyImageFilterIF2IF2SE2;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkDilateObjectMorphologyImageFilterIF2IF2SE2_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkDilateObjectMorphologyImageFilterID2ID2SE2_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterID2ID2SE2_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkDilateObjectMorphologyImageFilterID2ID2SE2;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkDilateObjectMorphologyImageFilterID2ID2SE2_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkDilateObjectMorphologyImageFilterIUC3IUC3SE3_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUC3IUC3SE3_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkDilateObjectMorphologyImageFilterIUC3IUC3SE3;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkDilateObjectMorphologyImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkDilateObjectMorphologyImageFilterIUL3IUL3SE3_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUL3IUL3SE3_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkDilateObjectMorphologyImageFilterIUL3IUL3SE3;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkDilateObjectMorphologyImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkDilateObjectMorphologyImageFilterIUS3IUS3SE3_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIUS3IUS3SE3_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkDilateObjectMorphologyImageFilterIUS3IUS3SE3;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkDilateObjectMorphologyImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkDilateObjectMorphologyImageFilterIF3IF3SE3_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterIF3IF3SE3_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkDilateObjectMorphologyImageFilterIF3IF3SE3;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkDilateObjectMorphologyImageFilterIF3IF3SE3_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkDilateObjectMorphologyImageFilterID3ID3SE3_Superclass;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkDilateObjectMorphologyImageFilterID3ID3SE3_Superclass_Pointer;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkDilateObjectMorphologyImageFilterID3ID3SE3;
+typedef itk::DilateObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkDilateObjectMorphologyImageFilterID3ID3SE3_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkErodeObjectMorphologyImageFilterIUC2IUC2SE2;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkErodeObjectMorphologyImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkErodeObjectMorphologyImageFilterIUL2IUL2SE2;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkErodeObjectMorphologyImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkErodeObjectMorphologyImageFilterIUS2IUS2SE2;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkErodeObjectMorphologyImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkErodeObjectMorphologyImageFilterIF2IF2SE2;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkErodeObjectMorphologyImageFilterIF2IF2SE2_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkErodeObjectMorphologyImageFilterID2ID2SE2;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkErodeObjectMorphologyImageFilterID2ID2SE2_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkErodeObjectMorphologyImageFilterIUC3IUC3SE3;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkErodeObjectMorphologyImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkErodeObjectMorphologyImageFilterIUL3IUL3SE3;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkErodeObjectMorphologyImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkErodeObjectMorphologyImageFilterIUS3IUS3SE3;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkErodeObjectMorphologyImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkErodeObjectMorphologyImageFilterIF3IF3SE3;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkErodeObjectMorphologyImageFilterIF3IF3SE3_Pointer;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkErodeObjectMorphologyImageFilterID3ID3SE3;
+typedef itk::ErodeObjectMorphologyImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkErodeObjectMorphologyImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleConnectedClosingImageFilterIUC2IUC2;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleConnectedClosingImageFilterIUC3IUC3;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleConnectedClosingImageFilterIUL2IUL2;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleConnectedClosingImageFilterIUL3IUL3;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleConnectedClosingImageFilterIUS2IUS2;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleConnectedClosingImageFilterIUS3IUS3;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleConnectedClosingImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleConnectedClosingImageFilterIF2IF2;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleConnectedClosingImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleConnectedClosingImageFilterIF3IF3;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleConnectedClosingImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleConnectedClosingImageFilterID2ID2;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleConnectedClosingImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleConnectedClosingImageFilterID3ID3;
+typedef itk::GrayscaleConnectedClosingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleConnectedClosingImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleConnectedOpeningImageFilterIUC2IUC2;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleConnectedOpeningImageFilterIUC3IUC3;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleConnectedOpeningImageFilterIUL2IUL2;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleConnectedOpeningImageFilterIUL3IUL3;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleConnectedOpeningImageFilterIUS2IUS2;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleConnectedOpeningImageFilterIUS3IUS3;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleConnectedOpeningImageFilterIF2IF2;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleConnectedOpeningImageFilterIF3IF3;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleConnectedOpeningImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleConnectedOpeningImageFilterID2ID2;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleConnectedOpeningImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleConnectedOpeningImageFilterID3ID3;
+typedef itk::GrayscaleConnectedOpeningImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleConnectedOpeningImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleDilateImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleDilateImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleDilateImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleDilateImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleDilateImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleDilateImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleDilateImageFilterIF2IF2SE2;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleDilateImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleDilateImageFilterID2ID2SE2;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleDilateImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleDilateImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleDilateImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleDilateImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleDilateImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleDilateImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleDilateImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleDilateImageFilterIF3IF3SE3;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleDilateImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleDilateImageFilterID3ID3SE3;
+typedef itk::GrayscaleDilateImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleDilateImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleErodeImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleErodeImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleErodeImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleErodeImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleErodeImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleErodeImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleErodeImageFilterIF2IF2SE2;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleErodeImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleErodeImageFilterID2ID2SE2;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleErodeImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleErodeImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleErodeImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleErodeImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleErodeImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleErodeImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleErodeImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleErodeImageFilterIF3IF3SE3;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleErodeImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleErodeImageFilterID3ID3SE3;
+typedef itk::GrayscaleErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleErodeImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleFillholeImageFilterIUC2IUC2;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleFillholeImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleFillholeImageFilterIUC3IUC3;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleFillholeImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleFillholeImageFilterIUL2IUL2;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleFillholeImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleFillholeImageFilterIUL3IUL3;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleFillholeImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleFillholeImageFilterIUS2IUS2;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleFillholeImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleFillholeImageFilterIUS3IUS3;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleFillholeImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleFillholeImageFilterIF2IF2;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleFillholeImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleFillholeImageFilterIF3IF3;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleFillholeImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleFillholeImageFilterID2ID2;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleFillholeImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleFillholeImageFilterID3ID3;
+typedef itk::GrayscaleFillholeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleFillholeImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionDilateImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionDilateImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionDilateImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionDilateImageFilterIF2IF2SE2;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionDilateImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionDilateImageFilterID2ID2SE2;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionDilateImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionDilateImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionDilateImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionDilateImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionDilateImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionDilateImageFilterIF3IF3SE3;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionDilateImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionDilateImageFilterID3ID3SE3;
+typedef itk::GrayscaleFunctionDilateImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionDilateImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUC2IUC2SE2_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUC2IUC2SE2_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionErodeImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUL2IUL2SE2_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUL2IUL2SE2_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionErodeImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUS2IUS2SE2_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUS2IUS2SE2_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionErodeImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkGrayscaleFunctionErodeImageFilterIF2IF2SE2_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIF2IF2SE2_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionErodeImageFilterIF2IF2SE2;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionErodeImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Superclass itkGrayscaleFunctionErodeImageFilterID2ID2SE2_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterID2ID2SE2_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleFunctionErodeImageFilterID2ID2SE2;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleFunctionErodeImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUC3IUC3SE3_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUC3IUC3SE3_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionErodeImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUL3IUL3SE3_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUL3IUL3SE3_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionErodeImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkGrayscaleFunctionErodeImageFilterIUS3IUS3SE3_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIUS3IUS3SE3_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionErodeImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionErodeImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkGrayscaleFunctionErodeImageFilterIF3IF3SE3_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterIF3IF3SE3_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionErodeImageFilterIF3IF3SE3;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionErodeImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Superclass itkGrayscaleFunctionErodeImageFilterID3ID3SE3_Superclass;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Superclass::Pointer itkGrayscaleFunctionErodeImageFilterID3ID3SE3_Superclass_Pointer;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleFunctionErodeImageFilterID3ID3SE3;
+typedef itk::GrayscaleFunctionErodeImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleFunctionErodeImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleGeodesicDilateImageFilterIUC2IUC2;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleGeodesicDilateImageFilterIUC3IUC3;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleGeodesicDilateImageFilterIUL2IUL2;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleGeodesicDilateImageFilterIUL3IUL3;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleGeodesicDilateImageFilterIUS2IUS2;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleGeodesicDilateImageFilterIUS3IUS3;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleGeodesicDilateImageFilterIF2IF2;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleGeodesicDilateImageFilterIF3IF3;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleGeodesicDilateImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleGeodesicDilateImageFilterID2ID2;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleGeodesicDilateImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleGeodesicDilateImageFilterID3ID3;
+typedef itk::GrayscaleGeodesicDilateImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleGeodesicDilateImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleGeodesicErodeImageFilterIUC2IUC2;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleGeodesicErodeImageFilterIUC3IUC3;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleGeodesicErodeImageFilterIUL2IUL2;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleGeodesicErodeImageFilterIUL3IUL3;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleGeodesicErodeImageFilterIUS2IUS2;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleGeodesicErodeImageFilterIUS3IUS3;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleGeodesicErodeImageFilterIF2IF2;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleGeodesicErodeImageFilterIF3IF3;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleGeodesicErodeImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleGeodesicErodeImageFilterID2ID2;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleGeodesicErodeImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleGeodesicErodeImageFilterID3ID3;
+typedef itk::GrayscaleGeodesicErodeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleGeodesicErodeImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkGrayscaleGrindPeakImageFilterIUC2IUC2;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkGrayscaleGrindPeakImageFilterIUC2IUC2_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkGrayscaleGrindPeakImageFilterIUC3IUC3;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkGrayscaleGrindPeakImageFilterIUC3IUC3_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkGrayscaleGrindPeakImageFilterIUL2IUL2;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkGrayscaleGrindPeakImageFilterIUL2IUL2_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkGrayscaleGrindPeakImageFilterIUL3IUL3;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkGrayscaleGrindPeakImageFilterIUL3IUL3_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkGrayscaleGrindPeakImageFilterIUS2IUS2;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkGrayscaleGrindPeakImageFilterIUS2IUS2_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkGrayscaleGrindPeakImageFilterIUS3IUS3;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkGrayscaleGrindPeakImageFilterIUS3IUS3_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGrayscaleGrindPeakImageFilterIF2IF2;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGrayscaleGrindPeakImageFilterIF2IF2_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGrayscaleGrindPeakImageFilterIF3IF3;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGrayscaleGrindPeakImageFilterIF3IF3_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGrayscaleGrindPeakImageFilterID2ID2;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGrayscaleGrindPeakImageFilterID2ID2_Pointer;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGrayscaleGrindPeakImageFilterID3ID3;
+typedef itk::GrayscaleGrindPeakImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGrayscaleGrindPeakImageFilterID3ID3_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalClosingImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalClosingImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalClosingImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalClosingImageFilterIF2IF2SE2;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalClosingImageFilterID2ID2SE2;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalClosingImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalClosingImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalClosingImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalClosingImageFilterIF3IF3SE3;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalClosingImageFilterID3ID3SE3;
+typedef itk::GrayscaleMorphologicalClosingImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalClosingImageFilterID3ID3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalOpeningImageFilterIUC2IUC2SE2;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalOpeningImageFilterIUL2IUL2SE2;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalOpeningImageFilterIUS2IUS2SE2;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalOpeningImageFilterIF2IF2SE2;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIF2IF2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkGrayscaleMorphologicalOpeningImageFilterID2ID2SE2;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterID2ID2SE2_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalOpeningImageFilterIUC3IUC3SE3;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalOpeningImageFilterIUL3IUL3SE3;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalOpeningImageFilterIUS3IUS3SE3;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalOpeningImageFilterIF3IF3SE3;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterIF3IF3SE3_Pointer;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkGrayscaleMorphologicalOpeningImageFilterID3ID3SE3;
+typedef itk::GrayscaleMorphologicalOpeningImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkGrayscaleMorphologicalOpeningImageFilterID3ID3SE3_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkHConcaveImageFilterIUC2IUC2;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkHConcaveImageFilterIUC2IUC2_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkHConcaveImageFilterIUC3IUC3;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkHConcaveImageFilterIUC3IUC3_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkHConcaveImageFilterIUL2IUL2;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkHConcaveImageFilterIUL2IUL2_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkHConcaveImageFilterIUL3IUL3;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkHConcaveImageFilterIUL3IUL3_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkHConcaveImageFilterIUS2IUS2;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkHConcaveImageFilterIUS2IUS2_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkHConcaveImageFilterIUS3IUS3;
+typedef itk::HConcaveImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkHConcaveImageFilterIUS3IUS3_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkHConcaveImageFilterIF2IF2;
+typedef itk::HConcaveImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkHConcaveImageFilterIF2IF2_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkHConcaveImageFilterIF3IF3;
+typedef itk::HConcaveImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkHConcaveImageFilterIF3IF3_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkHConcaveImageFilterID2ID2;
+typedef itk::HConcaveImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkHConcaveImageFilterID2ID2_Pointer;
+typedef itk::HConcaveImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkHConcaveImageFilterID3ID3;
+typedef itk::HConcaveImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkHConcaveImageFilterID3ID3_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkHConvexImageFilterIUC2IUC2;
+typedef itk::HConvexImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkHConvexImageFilterIUC2IUC2_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkHConvexImageFilterIUC3IUC3;
+typedef itk::HConvexImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkHConvexImageFilterIUC3IUC3_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkHConvexImageFilterIUL2IUL2;
+typedef itk::HConvexImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkHConvexImageFilterIUL2IUL2_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkHConvexImageFilterIUL3IUL3;
+typedef itk::HConvexImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkHConvexImageFilterIUL3IUL3_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkHConvexImageFilterIUS2IUS2;
+typedef itk::HConvexImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkHConvexImageFilterIUS2IUS2_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkHConvexImageFilterIUS3IUS3;
+typedef itk::HConvexImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkHConvexImageFilterIUS3IUS3_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkHConvexImageFilterIF2IF2;
+typedef itk::HConvexImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkHConvexImageFilterIF2IF2_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkHConvexImageFilterIF3IF3;
+typedef itk::HConvexImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkHConvexImageFilterIF3IF3_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkHConvexImageFilterID2ID2;
+typedef itk::HConvexImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkHConvexImageFilterID2ID2_Pointer;
+typedef itk::HConvexImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkHConvexImageFilterID3ID3;
+typedef itk::HConvexImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkHConvexImageFilterID3ID3_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkHMaximaImageFilterIUC2IUC2;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkHMaximaImageFilterIUC2IUC2_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkHMaximaImageFilterIUC3IUC3;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkHMaximaImageFilterIUC3IUC3_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkHMaximaImageFilterIUL2IUL2;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkHMaximaImageFilterIUL2IUL2_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkHMaximaImageFilterIUL3IUL3;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkHMaximaImageFilterIUL3IUL3_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkHMaximaImageFilterIUS2IUS2;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkHMaximaImageFilterIUS2IUS2_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkHMaximaImageFilterIUS3IUS3;
+typedef itk::HMaximaImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkHMaximaImageFilterIUS3IUS3_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkHMaximaImageFilterIF2IF2;
+typedef itk::HMaximaImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkHMaximaImageFilterIF2IF2_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkHMaximaImageFilterIF3IF3;
+typedef itk::HMaximaImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkHMaximaImageFilterIF3IF3_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkHMaximaImageFilterID2ID2;
+typedef itk::HMaximaImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkHMaximaImageFilterID2ID2_Pointer;
+typedef itk::HMaximaImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkHMaximaImageFilterID3ID3;
+typedef itk::HMaximaImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkHMaximaImageFilterID3ID3_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkHMinimaImageFilterIUC2IUC2;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkHMinimaImageFilterIUC2IUC2_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkHMinimaImageFilterIUC3IUC3;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkHMinimaImageFilterIUC3IUC3_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkHMinimaImageFilterIUL2IUL2;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkHMinimaImageFilterIUL2IUL2_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkHMinimaImageFilterIUL3IUL3;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkHMinimaImageFilterIUL3IUL3_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkHMinimaImageFilterIUS2IUS2;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkHMinimaImageFilterIUS2IUS2_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkHMinimaImageFilterIUS3IUS3;
+typedef itk::HMinimaImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkHMinimaImageFilterIUS3IUS3_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkHMinimaImageFilterIF2IF2;
+typedef itk::HMinimaImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkHMinimaImageFilterIF2IF2_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkHMinimaImageFilterIF3IF3;
+typedef itk::HMinimaImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkHMinimaImageFilterIF3IF3_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkHMinimaImageFilterID2ID2;
+typedef itk::HMinimaImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkHMinimaImageFilterID2ID2_Pointer;
+typedef itk::HMinimaImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkHMinimaImageFilterID3ID3;
+typedef itk::HMinimaImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkHMinimaImageFilterID3ID3_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkMorphologicalGradientImageFilterIUC2IUC2SE2;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkMorphologicalGradientImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkMorphologicalGradientImageFilterIUL2IUL2SE2;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkMorphologicalGradientImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkMorphologicalGradientImageFilterIUS2IUS2SE2;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkMorphologicalGradientImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkMorphologicalGradientImageFilterIF2IF2SE2;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkMorphologicalGradientImageFilterIF2IF2SE2_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkMorphologicalGradientImageFilterID2ID2SE2;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkMorphologicalGradientImageFilterID2ID2SE2_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkMorphologicalGradientImageFilterIUC3IUC3SE3;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkMorphologicalGradientImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkMorphologicalGradientImageFilterIUL3IUL3SE3;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkMorphologicalGradientImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkMorphologicalGradientImageFilterIUS3IUS3SE3;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkMorphologicalGradientImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkMorphologicalGradientImageFilterIF3IF3SE3;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkMorphologicalGradientImageFilterIF3IF3SE3_Pointer;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkMorphologicalGradientImageFilterID3ID3SE3;
+typedef itk::MorphologicalGradientImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkMorphologicalGradientImageFilterID3ID3SE3_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkOpeningByReconstructionImageFilterIUC2IUC2SE2;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkOpeningByReconstructionImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkOpeningByReconstructionImageFilterIUL2IUL2SE2;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkOpeningByReconstructionImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkOpeningByReconstructionImageFilterIUS2IUS2SE2;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkOpeningByReconstructionImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkOpeningByReconstructionImageFilterIF2IF2SE2;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkOpeningByReconstructionImageFilterIF2IF2SE2_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkOpeningByReconstructionImageFilterID2ID2SE2;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkOpeningByReconstructionImageFilterID2ID2SE2_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkOpeningByReconstructionImageFilterIUC3IUC3SE3;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkOpeningByReconstructionImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkOpeningByReconstructionImageFilterIUL3IUL3SE3;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkOpeningByReconstructionImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkOpeningByReconstructionImageFilterIUS3IUS3SE3;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkOpeningByReconstructionImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkOpeningByReconstructionImageFilterIF3IF3SE3;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkOpeningByReconstructionImageFilterIF3IF3SE3_Pointer;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkOpeningByReconstructionImageFilterID3ID3SE3;
+typedef itk::OpeningByReconstructionImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkOpeningByReconstructionImageFilterID3ID3SE3_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkReconstructionByDilationImageFilterIUC2IUC2_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkReconstructionByDilationImageFilterIUC2IUC2;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkReconstructionByDilationImageFilterIUC2IUC2_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkReconstructionByDilationImageFilterIUC3IUC3_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkReconstructionByDilationImageFilterIUC3IUC3;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkReconstructionByDilationImageFilterIUC3IUC3_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkReconstructionByDilationImageFilterIUL2IUL2_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkReconstructionByDilationImageFilterIUL2IUL2;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkReconstructionByDilationImageFilterIUL2IUL2_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkReconstructionByDilationImageFilterIUL3IUL3_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkReconstructionByDilationImageFilterIUL3IUL3;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkReconstructionByDilationImageFilterIUL3IUL3_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkReconstructionByDilationImageFilterIUS2IUS2_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkReconstructionByDilationImageFilterIUS2IUS2;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkReconstructionByDilationImageFilterIUS2IUS2_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkReconstructionByDilationImageFilterIUS3IUS3_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkReconstructionByDilationImageFilterIUS3IUS3;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkReconstructionByDilationImageFilterIUS3IUS3_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkReconstructionByDilationImageFilterIF2IF2_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkReconstructionByDilationImageFilterIF2IF2;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkReconstructionByDilationImageFilterIF2IF2_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkReconstructionByDilationImageFilterIF3IF3_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkReconstructionByDilationImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkReconstructionByDilationImageFilterIF3IF3;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkReconstructionByDilationImageFilterIF3IF3_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkReconstructionByDilationImageFilterID2ID2_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkReconstructionByDilationImageFilterID2ID2_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkReconstructionByDilationImageFilterID2ID2;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkReconstructionByDilationImageFilterID2ID2_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkReconstructionByDilationImageFilterID3ID3_Superclass;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkReconstructionByDilationImageFilterID3ID3_Superclass_Pointer;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkReconstructionByDilationImageFilterID3ID3;
+typedef itk::ReconstructionByDilationImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkReconstructionByDilationImageFilterID3ID3_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkReconstructionByErosionImageFilterIUC2IUC2_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkReconstructionByErosionImageFilterIUC2IUC2;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkReconstructionByErosionImageFilterIUC2IUC2_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkReconstructionByErosionImageFilterIUC3IUC3_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkReconstructionByErosionImageFilterIUC3IUC3;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkReconstructionByErosionImageFilterIUC3IUC3_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkReconstructionByErosionImageFilterIUL2IUL2_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkReconstructionByErosionImageFilterIUL2IUL2;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkReconstructionByErosionImageFilterIUL2IUL2_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkReconstructionByErosionImageFilterIUL3IUL3_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkReconstructionByErosionImageFilterIUL3IUL3;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkReconstructionByErosionImageFilterIUL3IUL3_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkReconstructionByErosionImageFilterIUS2IUS2_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkReconstructionByErosionImageFilterIUS2IUS2;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkReconstructionByErosionImageFilterIUS2IUS2_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkReconstructionByErosionImageFilterIUS3IUS3_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkReconstructionByErosionImageFilterIUS3IUS3;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkReconstructionByErosionImageFilterIUS3IUS3_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkReconstructionByErosionImageFilterIF2IF2_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkReconstructionByErosionImageFilterIF2IF2;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkReconstructionByErosionImageFilterIF2IF2_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkReconstructionByErosionImageFilterIF3IF3_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkReconstructionByErosionImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkReconstructionByErosionImageFilterIF3IF3;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkReconstructionByErosionImageFilterIF3IF3_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkReconstructionByErosionImageFilterID2ID2_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkReconstructionByErosionImageFilterID2ID2_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkReconstructionByErosionImageFilterID2ID2;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkReconstructionByErosionImageFilterID2ID2_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkReconstructionByErosionImageFilterID3ID3_Superclass;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkReconstructionByErosionImageFilterID3ID3_Superclass_Pointer;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkReconstructionByErosionImageFilterID3ID3;
+typedef itk::ReconstructionByErosionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkReconstructionByErosionImageFilterID3ID3_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > > itkWhiteTopHatImageFilterIUC2IUC2SE2;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned char,2 >,itk::Image< unsigned char,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkWhiteTopHatImageFilterIUC2IUC2SE2_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > > itkWhiteTopHatImageFilterIUL2IUL2SE2;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned long,2 >,itk::Image< unsigned long,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkWhiteTopHatImageFilterIUL2IUL2SE2_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > > itkWhiteTopHatImageFilterIUS2IUS2SE2;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned short,2 >,itk::Image< unsigned short,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkWhiteTopHatImageFilterIUS2IUS2SE2_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > > itkWhiteTopHatImageFilterIF2IF2SE2;
+typedef itk::WhiteTopHatImageFilter< itk::Image< float,2 >,itk::Image< float,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkWhiteTopHatImageFilterIF2IF2SE2_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > > itkWhiteTopHatImageFilterID2ID2SE2;
+typedef itk::WhiteTopHatImageFilter< itk::Image< double,2 >,itk::Image< double,2 >,itk::FlatStructuringElement< 2 > >::Pointer itkWhiteTopHatImageFilterID2ID2SE2_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > > itkWhiteTopHatImageFilterIUC3IUC3SE3;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkWhiteTopHatImageFilterIUC3IUC3SE3_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > > itkWhiteTopHatImageFilterIUL3IUL3SE3;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkWhiteTopHatImageFilterIUL3IUL3SE3_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > > itkWhiteTopHatImageFilterIUS3IUS3SE3;
+typedef itk::WhiteTopHatImageFilter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkWhiteTopHatImageFilterIUS3IUS3SE3_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > > itkWhiteTopHatImageFilterIF3IF3SE3;
+typedef itk::WhiteTopHatImageFilter< itk::Image< float,3 >,itk::Image< float,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkWhiteTopHatImageFilterIF3IF3SE3_Pointer;
+typedef itk::WhiteTopHatImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > > itkWhiteTopHatImageFilterID3ID3SE3;
+typedef itk::WhiteTopHatImageFilter< itk::Image< double,3 >,itk::Image< double,3 >,itk::FlatStructuringElement< 3 > >::Pointer itkWhiteTopHatImageFilterID3ID3SE3_Pointer;
+

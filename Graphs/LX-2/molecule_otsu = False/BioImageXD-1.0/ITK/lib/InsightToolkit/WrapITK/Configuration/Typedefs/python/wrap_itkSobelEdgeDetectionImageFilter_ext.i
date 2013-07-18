@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkSobelEdgeDetectionImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkSobelEdgeDetectionImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkSobelEdgeDetectionImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkSobelEdgeDetectionImageFilterIF2IF2)
+

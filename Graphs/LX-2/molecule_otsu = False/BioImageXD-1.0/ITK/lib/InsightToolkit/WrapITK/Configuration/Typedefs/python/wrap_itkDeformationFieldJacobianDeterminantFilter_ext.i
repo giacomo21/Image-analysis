@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkDeformationFieldJacobianDeterminantFilterIVF33D)
+DECLARE_REF_COUNT_CLASS(itkDeformationFieldJacobianDeterminantFilterIVF33F)
+DECLARE_REF_COUNT_CLASS(itkDeformationFieldJacobianDeterminantFilterIVF22D)
+DECLARE_REF_COUNT_CLASS(itkDeformationFieldJacobianDeterminantFilterIVF22F)
+

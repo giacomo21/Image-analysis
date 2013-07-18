@@ -1,0 +1,20 @@
+{itk::RelabelComponentImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkRelabelComponentImageFilterIUC2IUC2} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkRelabelComponentImageFilterIUC2IUC2_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkRelabelComponentImageFilterIUC3IUC3} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkRelabelComponentImageFilterIUC3IUC3_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkRelabelComponentImageFilterIUL2IUC2} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkRelabelComponentImageFilterIUL2IUC2_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkRelabelComponentImageFilterIUL2IUL2} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkRelabelComponentImageFilterIUL2IUL2_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkRelabelComponentImageFilterIUL2IUS2} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkRelabelComponentImageFilterIUL2IUS2_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkRelabelComponentImageFilterIUL3IUC3} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkRelabelComponentImageFilterIUL3IUC3_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkRelabelComponentImageFilterIUL3IUL3} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkRelabelComponentImageFilterIUL3IUL3_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkRelabelComponentImageFilterIUL3IUS3} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkRelabelComponentImageFilterIUL3IUS3_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkRelabelComponentImageFilterIUS2IUS2} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkRelabelComponentImageFilterIUS2IUS2_Pointer} {itkRelabelComponentImageFilter}
+{itk::RelabelComponentImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkRelabelComponentImageFilterIUS3IUS3} {itkRelabelComponentImageFilter}
+{itk::SmartPointer<itk::RelabelComponentImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkRelabelComponentImageFilterIUS3IUS3_Pointer} {itkRelabelComponentImageFilter}

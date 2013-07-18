@@ -1,0 +1,120 @@
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVID2UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVID2UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVID2UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVID2UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVID2ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVID2ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVID2ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVID2ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVID2USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVID2USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVID2USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 2u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVID2USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVID3UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVID3UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVID3UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVID3UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVID3ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVID3ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVID3ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVID3ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVID3USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVID3USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVID3USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<double, 3u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVID3USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIF2UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIF2UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIF2UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIF2UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIF2ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIF2ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIF2ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIF2ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIF2USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIF2USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIF2USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 2u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIF2USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIF3UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIF3UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIF3UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIF3UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIF3ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIF3ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIF3ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIF3ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIF3USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIF3USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIF3USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<float, 3u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIF3USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUC2UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUC2UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUC2UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUC2UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUC2ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUC2ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUC2ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUC2ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUC2USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUC2USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUC2USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 2u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUC2USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUC3UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUC3UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUC3UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUC3UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUC3ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUC3ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUC3ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUC3ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUC3USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUC3USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUC3USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<unsigned char, 3u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUC3USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUL2UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUL2UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUL2UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUL2UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUL2ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUL2ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUL2ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUL2ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUL2USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUL2USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUL2USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 2u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUL2USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUL3UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUL3UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUL3UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUL3UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUL3ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUL3ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUL3ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUL3ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUL3USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUL3USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUL3USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<long unsigned int, 3u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUL3USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUS2UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUS2UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUS2UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUS2UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUS2ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUS2ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUS2ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUS2ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUS2USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUS2USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUS2USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 2u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUS2USFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,unsigned char,double,double>} {itkBayesianClassifierImageFilterVIUS3UCDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, unsigned char, double, double> >} {itkBayesianClassifierImageFilterVIUS3UCDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,unsigned char,float,float>} {itkBayesianClassifierImageFilterVIUS3UCFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, unsigned char, float, float> >} {itkBayesianClassifierImageFilterVIUS3UCFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,long unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUS3ULDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, long unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUS3ULDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,long unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUS3ULFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, long unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUS3ULFF_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,short unsigned int,double,double>} {itkBayesianClassifierImageFilterVIUS3USDD} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, short unsigned int, double, double> >} {itkBayesianClassifierImageFilterVIUS3USDD_Pointer} {itkBayesianClassifierImageFilter}
+{itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>,short unsigned int,float,float>} {itkBayesianClassifierImageFilterVIUS3USFF} {itkBayesianClassifierImageFilter}
+{itk::SmartPointer<itk::BayesianClassifierImageFilter<itk::VectorImage<short unsigned int, 3u>, short unsigned int, float, float> >} {itkBayesianClassifierImageFilterVIUS3USFF_Pointer} {itkBayesianClassifierImageFilter}

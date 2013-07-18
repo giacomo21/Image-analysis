@@ -1,0 +1,20 @@
+{itk::PasteImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkPasteImageFilterID2} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkPasteImageFilterID2_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkPasteImageFilterID3} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkPasteImageFilterID3_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkPasteImageFilterIF2} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkPasteImageFilterIF2_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkPasteImageFilterIF3} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkPasteImageFilterIF3_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkPasteImageFilterIUC2} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkPasteImageFilterIUC2_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkPasteImageFilterIUC3} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkPasteImageFilterIUC3_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkPasteImageFilterIUL2} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkPasteImageFilterIUL2_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkPasteImageFilterIUL3} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkPasteImageFilterIUL3_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkPasteImageFilterIUS2} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkPasteImageFilterIUS2_Pointer} {itkPasteImageFilter}
+{itk::PasteImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkPasteImageFilterIUS3} {itkPasteImageFilter}
+{itk::SmartPointer<itk::PasteImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkPasteImageFilterIUS3_Pointer} {itkPasteImageFilter}

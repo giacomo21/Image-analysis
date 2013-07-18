@@ -1,0 +1,4 @@
+{itk::AffineGeometryFrame<double,2u>} {itkAffineGeometryFrameD2} {itkAffineGeometryFrame}
+{itk::SmartPointer<itk::AffineGeometryFrame<double, 2u> >} {itkAffineGeometryFrameD2_Pointer} {itkAffineGeometryFrame}
+{itk::AffineGeometryFrame<double,3u>} {itkAffineGeometryFrameD3} {itkAffineGeometryFrame}
+{itk::SmartPointer<itk::AffineGeometryFrame<double, 3u> >} {itkAffineGeometryFrameD3_Pointer} {itkAffineGeometryFrame}

@@ -1,0 +1,20 @@
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>,itk::Image<double, 2u> >} {itkSpatialObjectToImageFilterSO2ID2} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>, itk::Image<double, 2u> > >} {itkSpatialObjectToImageFilterSO2ID2_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>,itk::Image<float, 2u> >} {itkSpatialObjectToImageFilterSO2IF2} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>, itk::Image<float, 2u> > >} {itkSpatialObjectToImageFilterSO2IF2_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>,itk::Image<unsigned char, 2u> >} {itkSpatialObjectToImageFilterSO2IUC2} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>, itk::Image<unsigned char, 2u> > >} {itkSpatialObjectToImageFilterSO2IUC2_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>,itk::Image<long unsigned int, 2u> >} {itkSpatialObjectToImageFilterSO2IUL2} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>, itk::Image<long unsigned int, 2u> > >} {itkSpatialObjectToImageFilterSO2IUL2_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>,itk::Image<short unsigned int, 2u> >} {itkSpatialObjectToImageFilterSO2IUS2} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<2u>, itk::Image<short unsigned int, 2u> > >} {itkSpatialObjectToImageFilterSO2IUS2_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>,itk::Image<double, 3u> >} {itkSpatialObjectToImageFilterSO3ID3} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>, itk::Image<double, 3u> > >} {itkSpatialObjectToImageFilterSO3ID3_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>,itk::Image<float, 3u> >} {itkSpatialObjectToImageFilterSO3IF3} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>, itk::Image<float, 3u> > >} {itkSpatialObjectToImageFilterSO3IF3_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>,itk::Image<unsigned char, 3u> >} {itkSpatialObjectToImageFilterSO3IUC3} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>, itk::Image<unsigned char, 3u> > >} {itkSpatialObjectToImageFilterSO3IUC3_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>,itk::Image<long unsigned int, 3u> >} {itkSpatialObjectToImageFilterSO3IUL3} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>, itk::Image<long unsigned int, 3u> > >} {itkSpatialObjectToImageFilterSO3IUL3_Pointer} {itkSpatialObjectToImageFilter}
+{itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>,itk::Image<short unsigned int, 3u> >} {itkSpatialObjectToImageFilterSO3IUS3} {itkSpatialObjectToImageFilter}
+{itk::SmartPointer<itk::SpatialObjectToImageFilter<itk::SpatialObject<3u>, itk::Image<short unsigned int, 3u> > >} {itkSpatialObjectToImageFilterSO3IUS3_Pointer} {itkSpatialObjectToImageFilter}

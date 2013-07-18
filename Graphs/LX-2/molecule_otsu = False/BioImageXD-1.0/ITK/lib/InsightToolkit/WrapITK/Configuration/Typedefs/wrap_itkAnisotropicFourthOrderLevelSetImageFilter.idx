@@ -1,0 +1,8 @@
+{itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAnisotropicFourthOrderLevelSetImageFilterID2ID2} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::SmartPointer<itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAnisotropicFourthOrderLevelSetImageFilterID2ID2_Pointer} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAnisotropicFourthOrderLevelSetImageFilterID3ID3} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::SmartPointer<itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAnisotropicFourthOrderLevelSetImageFilterID3ID3_Pointer} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAnisotropicFourthOrderLevelSetImageFilterIF2IF2} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::SmartPointer<itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAnisotropicFourthOrderLevelSetImageFilterIF2IF2_Pointer} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAnisotropicFourthOrderLevelSetImageFilterIF3IF3} {itkAnisotropicFourthOrderLevelSetImageFilter}
+{itk::SmartPointer<itk::AnisotropicFourthOrderLevelSetImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAnisotropicFourthOrderLevelSetImageFilterIF3IF3_Pointer} {itkAnisotropicFourthOrderLevelSetImageFilter}

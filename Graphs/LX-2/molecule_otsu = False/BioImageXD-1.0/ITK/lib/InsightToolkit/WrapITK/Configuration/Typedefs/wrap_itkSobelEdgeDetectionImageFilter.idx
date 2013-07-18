@@ -1,0 +1,8 @@
+{itk::SobelEdgeDetectionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSobelEdgeDetectionImageFilterID2ID2} {itkSobelEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::SobelEdgeDetectionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSobelEdgeDetectionImageFilterID2ID2_Pointer} {itkSobelEdgeDetectionImageFilter}
+{itk::SobelEdgeDetectionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSobelEdgeDetectionImageFilterID3ID3} {itkSobelEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::SobelEdgeDetectionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSobelEdgeDetectionImageFilterID3ID3_Pointer} {itkSobelEdgeDetectionImageFilter}
+{itk::SobelEdgeDetectionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSobelEdgeDetectionImageFilterIF2IF2} {itkSobelEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::SobelEdgeDetectionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSobelEdgeDetectionImageFilterIF2IF2_Pointer} {itkSobelEdgeDetectionImageFilter}
+{itk::SobelEdgeDetectionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSobelEdgeDetectionImageFilterIF3IF3} {itkSobelEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::SobelEdgeDetectionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSobelEdgeDetectionImageFilterIF3IF3_Pointer} {itkSobelEdgeDetectionImageFilter}

@@ -1,0 +1,408 @@
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vcl_complex.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vcl_complex.h"
+#include "vnl/vnl_vector.h"
+#include "vnl/vnl_matrix.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vcl_complex.h"
+#include "vnl/vnl_matrix.h"
+#include "vnl/vnl_vector.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_unary_function.h"
+#include "vnl/vnl_vector.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vcl_complex.h"
+#include "vnl/vnl_c_vector.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_cost_function.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vcl_complex.h"
+#include "vnl/vnl_diag_matrix.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_file_matrix.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_file_vector.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_fortran_copy.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_least_squares_function.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_matrix_fixed.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_matrix_fixed_ref.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_matrix_ref.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "vnl/vnl_vector_ref.h"
+
+typedef vcl_complex< float > vcl_complexF;
+typedef vcl_complex< double > vcl_complexD;
+typedef vcl_complex< long double > vcl_complexLD;
+typedef vnl_matrix< double > vnl_matrixD;
+typedef vnl_matrix< vcl_complex<double> > vnl_matrix_vcl_complexD;
+typedef vnl_matrix< float > vnl_matrixF;
+typedef vnl_matrix< vcl_complex<float> > vnl_matrix_vcl_complexF;
+typedef vnl_matrix< signed int > vnl_matrixSI;
+typedef vnl_matrix< signed long > vnl_matrixSL;
+typedef vnl_matrix< long double > vnl_matrixLD;
+typedef vnl_matrix< vcl_complex<long double> > vnl_matrix_vcl_complexLD;
+typedef vnl_matrix< signed char > vnl_matrixSC;
+typedef vnl_matrix< unsigned char > vnl_matrixUC;
+typedef vnl_matrix< unsigned int > vnl_matrixUI;
+typedef vnl_matrix< unsigned long > vnl_matrixUL;
+typedef vnl_vector< double > vnl_vectorD;
+typedef vnl_vector< float > vnl_vectorF;
+typedef vnl_vector< signed int > vnl_vectorSI;
+typedef vnl_vector< signed long > vnl_vectorSL;
+typedef vnl_vector< long double > vnl_vectorLD;
+typedef vnl_vector< signed char > vnl_vectorSC;
+typedef vnl_vector< unsigned char > vnl_vectorUC;
+typedef vnl_vector< unsigned short > vnl_vectorUS;
+typedef vnl_vector< unsigned int > vnl_vectorUI;
+typedef vnl_vector< unsigned long > vnl_vectorUL;
+typedef vnl_vector< vcl_complex<double> > vnl_vector_vcl_complexD;
+typedef vnl_vector< vcl_complex<float> > vnl_vector_vcl_complexF;
+typedef vnl_vector< vcl_complex<long double> > vnl_vector_vcl_complexLD;
+typedef vnl_unary_function< double, vnl_vector< double > > vnl_unary_functionD_vnl_vectorD;
+typedef vnl_c_vector< double > vnl_c_vectorD;
+typedef vnl_c_vector< vcl_complex<double> > vnl_c_vector_vcl_complexD;
+typedef vnl_c_vector< float > vnl_c_vectorF;
+typedef vnl_c_vector< vcl_complex<float> > vnl_c_vector_vcl_complexF;
+typedef vnl_c_vector< signed int > vnl_c_vectorSI;
+typedef vnl_c_vector< signed long > vnl_c_vectorSL;
+typedef vnl_c_vector< long double > vnl_c_vectorLD;
+typedef vnl_c_vector< vcl_complex<long double> > vnl_c_vector_vcl_complexLD;
+typedef vnl_c_vector< signed char > vnl_c_vectorSC;
+typedef vnl_c_vector< unsigned char > vnl_c_vectorUC;
+typedef vnl_c_vector< unsigned int > vnl_c_vectorUI;
+typedef vnl_c_vector< unsigned long > vnl_c_vectorUL;
+typedef vnl_cost_function vnl_cost_function;
+typedef vnl_diag_matrix< double > vnl_diag_matrixD;
+typedef vnl_diag_matrix< vcl_complex<double> > vnl_diag_matrix_vcl_complexD;
+typedef vnl_diag_matrix< float > vnl_diag_matrixF;
+typedef vnl_diag_matrix< vcl_complex<float> > vnl_diag_matrix_vcl_complexF;
+typedef vnl_diag_matrix< signed int > vnl_diag_matrixSI;
+typedef vnl_diag_matrix< long double > vnl_diag_matrixLD;
+typedef vnl_file_matrix< double > vnl_file_matrixD;
+typedef vnl_file_matrix< float > vnl_file_matrixF;
+typedef vnl_file_vector< double > vnl_file_vectorD;
+typedef vnl_fortran_copy< double > vnl_fortran_copyD;
+typedef vnl_fortran_copy< vcl_complex<double> > vnl_fortran_copy_vcl_complexD;
+typedef vnl_fortran_copy< float > vnl_fortran_copyF;
+typedef vnl_fortran_copy< vcl_complex<float> > vnl_fortran_copy_vcl_complexF;
+typedef vnl_least_squares_function vnl_least_squares_function;
+typedef vnl_matrix_fixed< double,2,2 > vnl_matrix_fixedD_2_2;
+typedef vnl_matrix_fixed< double,2,3 > vnl_matrix_fixedD_2_3;
+typedef vnl_matrix_fixed< double,2,6 > vnl_matrix_fixedD_2_6;
+typedef vnl_matrix_fixed< double,3,12 > vnl_matrix_fixedD_3_12;
+typedef vnl_matrix_fixed< double,3,3 > vnl_matrix_fixedD_3_3;
+typedef vnl_matrix_fixed< double,3,4 > vnl_matrix_fixedD_3_4;
+typedef vnl_matrix_fixed< double,4,3 > vnl_matrix_fixedD_4_3;
+typedef vnl_matrix_fixed< double,4,4 > vnl_matrix_fixedD_4_4;
+typedef vnl_matrix_fixed< float,3,3 > vnl_matrix_fixedF_3_3;
+typedef vnl_matrix_fixed_ref_const< float,3,3 > vnl_matrix_fixed_ref_constF_3_3;
+typedef vnl_matrix_fixed_ref< float,3,3 > vnl_matrix_fixed_refF_3_3;
+typedef vnl_matrix_ref< double > vnl_matrix_refD;
+typedef vnl_matrix_ref< float > vnl_matrix_refF;
+typedef vnl_vector_ref< double > vnl_vector_refD;
+typedef vnl_vector_ref< float > vnl_vector_refF;
+typedef vnl_vector_ref< signed int > vnl_vector_refSI;
+typedef vnl_vector_ref< signed long > vnl_vector_refSL;
+typedef vnl_vector_ref< long double > vnl_vector_refLD;
+typedef vnl_vector_ref< signed char > vnl_vector_refSC;
+typedef vnl_vector_ref< unsigned char > vnl_vector_refUC;
+typedef vnl_vector_ref< unsigned short > vnl_vector_refUS;
+typedef vnl_vector_ref< unsigned int > vnl_vector_refUI;
+typedef vnl_vector_ref< unsigned long > vnl_vector_refUL;
+typedef vnl_vector_ref< vcl_complex<double> > vnl_vector_ref_vcl_complexD;
+typedef vnl_vector_ref< vcl_complex<float> > vnl_vector_ref_vcl_complexF;
+typedef vnl_vector_ref< vcl_complex<long double> > vnl_vector_ref_vcl_complexLD;
+

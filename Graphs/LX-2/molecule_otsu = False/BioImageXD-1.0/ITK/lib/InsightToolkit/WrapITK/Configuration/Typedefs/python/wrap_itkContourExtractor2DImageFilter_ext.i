@@ -1,0 +1,8 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkContourExtractor2DImageFilterID2)
+DECLARE_REF_COUNT_CLASS(itkContourExtractor2DImageFilterIF2)
+DECLARE_REF_COUNT_CLASS(itkContourExtractor2DImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkContourExtractor2DImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkContourExtractor2DImageFilterIUC2)
+

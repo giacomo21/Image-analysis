@@ -1,0 +1,20 @@
+{itk::VectorImage<double,2u>} {itkVectorImageD2} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<double, 2u> >} {itkVectorImageD2_Pointer} {itkVectorImage}
+{itk::VectorImage<double,3u>} {itkVectorImageD3} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<double, 3u> >} {itkVectorImageD3_Pointer} {itkVectorImage}
+{itk::VectorImage<float,2u>} {itkVectorImageF2} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<float, 2u> >} {itkVectorImageF2_Pointer} {itkVectorImage}
+{itk::VectorImage<float,3u>} {itkVectorImageF3} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<float, 3u> >} {itkVectorImageF3_Pointer} {itkVectorImage}
+{itk::VectorImage<unsigned char,2u>} {itkVectorImageUC2} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<unsigned char, 2u> >} {itkVectorImageUC2_Pointer} {itkVectorImage}
+{itk::VectorImage<unsigned char,3u>} {itkVectorImageUC3} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<unsigned char, 3u> >} {itkVectorImageUC3_Pointer} {itkVectorImage}
+{itk::VectorImage<long unsigned int,2u>} {itkVectorImageUL2} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<long unsigned int, 2u> >} {itkVectorImageUL2_Pointer} {itkVectorImage}
+{itk::VectorImage<long unsigned int,3u>} {itkVectorImageUL3} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<long unsigned int, 3u> >} {itkVectorImageUL3_Pointer} {itkVectorImage}
+{itk::VectorImage<short unsigned int,2u>} {itkVectorImageUS2} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<short unsigned int, 2u> >} {itkVectorImageUS2_Pointer} {itkVectorImage}
+{itk::VectorImage<short unsigned int,3u>} {itkVectorImageUS3} {itkVectorImage}
+{itk::SmartPointer<itk::VectorImage<short unsigned int, 3u> >} {itkVectorImageUS3_Pointer} {itkVectorImage}

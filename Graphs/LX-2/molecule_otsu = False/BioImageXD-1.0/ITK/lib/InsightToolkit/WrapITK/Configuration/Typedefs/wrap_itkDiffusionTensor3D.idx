@@ -1,0 +1,2 @@
+{itk::DiffusionTensor3D<double>} {itkDiffusionTensor3DD} {itkDiffusionTensor3D}
+{itk::DiffusionTensor3D<float>} {itkDiffusionTensor3DF} {itkDiffusionTensor3D}

@@ -1,0 +1,3 @@
+<StaticBox label="Measurement results">
+    <FileSelection id="StatisticsFile label="Results file:" fileMask="*.csv" dialogTitle="Select the file to which the statistics will be writen"/>
+</StaticBox>

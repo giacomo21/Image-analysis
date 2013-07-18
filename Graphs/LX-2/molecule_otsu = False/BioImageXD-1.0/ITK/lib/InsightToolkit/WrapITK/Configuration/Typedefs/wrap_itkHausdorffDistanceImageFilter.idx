@@ -1,0 +1,20 @@
+{itk::HausdorffDistanceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkHausdorffDistanceImageFilterID2ID2} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkHausdorffDistanceImageFilterID2ID2_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkHausdorffDistanceImageFilterID3ID3} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkHausdorffDistanceImageFilterID3ID3_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkHausdorffDistanceImageFilterIF2IF2} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkHausdorffDistanceImageFilterIF2IF2_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkHausdorffDistanceImageFilterIF3IF3} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkHausdorffDistanceImageFilterIF3IF3_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkHausdorffDistanceImageFilterIUC2IUC2} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkHausdorffDistanceImageFilterIUC2IUC2_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkHausdorffDistanceImageFilterIUC3IUC3} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkHausdorffDistanceImageFilterIUC3IUC3_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkHausdorffDistanceImageFilterIUL2IUL2} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkHausdorffDistanceImageFilterIUL2IUL2_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkHausdorffDistanceImageFilterIUL3IUL3} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkHausdorffDistanceImageFilterIUL3IUL3_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkHausdorffDistanceImageFilterIUS2IUS2} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkHausdorffDistanceImageFilterIUS2IUS2_Pointer} {itkHausdorffDistanceImageFilter}
+{itk::HausdorffDistanceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkHausdorffDistanceImageFilterIUS3IUS3} {itkHausdorffDistanceImageFilter}
+{itk::SmartPointer<itk::HausdorffDistanceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkHausdorffDistanceImageFilterIUS3IUS3_Pointer} {itkHausdorffDistanceImageFilter}

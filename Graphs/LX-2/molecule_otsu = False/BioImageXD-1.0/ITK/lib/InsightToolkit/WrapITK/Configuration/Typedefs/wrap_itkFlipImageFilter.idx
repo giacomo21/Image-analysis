@@ -1,0 +1,20 @@
+{itk::FlipImageFilter<itk::Image<double, 2u> >} {itkFlipImageFilterID2} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<double, 2u> > >} {itkFlipImageFilterID2_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<double, 3u> >} {itkFlipImageFilterID3} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<double, 3u> > >} {itkFlipImageFilterID3_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<float, 2u> >} {itkFlipImageFilterIF2} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<float, 2u> > >} {itkFlipImageFilterIF2_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<float, 3u> >} {itkFlipImageFilterIF3} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<float, 3u> > >} {itkFlipImageFilterIF3_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<unsigned char, 2u> >} {itkFlipImageFilterIUC2} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<unsigned char, 2u> > >} {itkFlipImageFilterIUC2_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<unsigned char, 3u> >} {itkFlipImageFilterIUC3} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<unsigned char, 3u> > >} {itkFlipImageFilterIUC3_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<long unsigned int, 2u> >} {itkFlipImageFilterIUL2} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<long unsigned int, 2u> > >} {itkFlipImageFilterIUL2_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<long unsigned int, 3u> >} {itkFlipImageFilterIUL3} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<long unsigned int, 3u> > >} {itkFlipImageFilterIUL3_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<short unsigned int, 2u> >} {itkFlipImageFilterIUS2} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<short unsigned int, 2u> > >} {itkFlipImageFilterIUS2_Pointer} {itkFlipImageFilter}
+{itk::FlipImageFilter<itk::Image<short unsigned int, 3u> >} {itkFlipImageFilterIUS3} {itkFlipImageFilter}
+{itk::SmartPointer<itk::FlipImageFilter<itk::Image<short unsigned int, 3u> > >} {itkFlipImageFilterIUS3_Pointer} {itkFlipImageFilter}

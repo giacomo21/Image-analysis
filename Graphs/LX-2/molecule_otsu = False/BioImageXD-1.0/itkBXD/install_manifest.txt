@@ -1,0 +1,9 @@
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/ClassIndex/itkBXD.mdx
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/ClassIndex/wrap_itkBXDPython.idx
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/ClassIndex/wrap_itkDynamicThresholdImageFilter.idx
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/Python/itkBXD.py
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/Python/Configuration/itkBXDConfig.py
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/SWIG/itkBXD.swg
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/lib/_itkBXDPython.so
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/lib/itkBXDPython.py
+/home/lopaavol/ITK_INS/lib/InsightToolkit/WrapITK/lib/itkDynamicThresholdImageFilter.py

@@ -1,0 +1,20 @@
+{itk::MeanSquaresImageToImageMetric<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkMeanSquaresImageToImageMetricID2ID2} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkMeanSquaresImageToImageMetricID2ID2_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkMeanSquaresImageToImageMetricID3ID3} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkMeanSquaresImageToImageMetricID3ID3_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkMeanSquaresImageToImageMetricIF2IF2} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkMeanSquaresImageToImageMetricIF2IF2_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkMeanSquaresImageToImageMetricIF3IF3} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkMeanSquaresImageToImageMetricIF3IF3_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkMeanSquaresImageToImageMetricIUC2IUC2} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkMeanSquaresImageToImageMetricIUC2IUC2_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkMeanSquaresImageToImageMetricIUC3IUC3} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkMeanSquaresImageToImageMetricIUC3IUC3_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkMeanSquaresImageToImageMetricIUL2IUL2} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkMeanSquaresImageToImageMetricIUL2IUL2_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkMeanSquaresImageToImageMetricIUL3IUL3} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkMeanSquaresImageToImageMetricIUL3IUL3_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkMeanSquaresImageToImageMetricIUS2IUS2} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkMeanSquaresImageToImageMetricIUS2IUS2_Pointer} {itkMeanSquaresImageToImageMetric}
+{itk::MeanSquaresImageToImageMetric<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkMeanSquaresImageToImageMetricIUS3IUS3} {itkMeanSquaresImageToImageMetric}
+{itk::SmartPointer<itk::MeanSquaresImageToImageMetric<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkMeanSquaresImageToImageMetricIUS3IUS3_Pointer} {itkMeanSquaresImageToImageMetric}

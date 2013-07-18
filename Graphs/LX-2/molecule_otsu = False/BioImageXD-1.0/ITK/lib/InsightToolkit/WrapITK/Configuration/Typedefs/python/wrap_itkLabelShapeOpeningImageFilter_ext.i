@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkLabelShapeOpeningImageFilterIUC2)
+

@@ -1,0 +1,16 @@
+{itk::PointSet<double,2u,itk::DefaultDynamicMeshTraits<double, 2u, 2u, double, float, double> >} {itkPointSetD2D} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 2u, itk::DefaultDynamicMeshTraits<double, 2u, 2u, double, float, double> > >} {itkPointSetD2D_Pointer} {itkPointSet}
+{itk::PointSet<double,2u,itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> >} {itkPointSetD2Q} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 2u, itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> > >} {itkPointSetD2Q_Pointer} {itkPointSet}
+{itk::PointSet<double,2u,itk::DefaultStaticMeshTraits<double, 2u, 2u, double, float, double> >} {itkPointSetD2S} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 2u, itk::DefaultStaticMeshTraits<double, 2u, 2u, double, float, double> > >} {itkPointSetD2S_Pointer} {itkPointSet}
+{itk::PointSet<double,3u,itk::DefaultDynamicMeshTraits<double, 3u, 3u, double, float, double> >} {itkPointSetD3D} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 3u, itk::DefaultDynamicMeshTraits<double, 3u, 3u, double, float, double> > >} {itkPointSetD3D_Pointer} {itkPointSet}
+{itk::PointSet<double,3u,itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> >} {itkPointSetD3Q} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkPointSetD3Q_Pointer} {itkPointSet}
+{itk::PointSet<double,3u,itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> >} {itkPointSetD3S} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<double, 3u, itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> > >} {itkPointSetD3S_Pointer} {itkPointSet}
+{itk::PointSet<itk::Point<double, 2u>,2u,itk::DefaultStaticMeshTraits<double, 2u, 2u, double, double, double> >} {itkPointSetPD22S} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<itk::Point<double, 2u>, 2u, itk::DefaultStaticMeshTraits<double, 2u, 2u, double, double, double> > >} {itkPointSetPD22S_Pointer} {itkPointSet}
+{itk::PointSet<itk::Point<double, 3u>,3u,itk::DefaultStaticMeshTraits<double, 3u, 3u, double, double, double> >} {itkPointSetPD33S} {itkPointSet}
+{itk::SmartPointer<itk::PointSet<itk::Point<double, 3u>, 3u, itk::DefaultStaticMeshTraits<double, 3u, 3u, double, double, double> > >} {itkPointSetPD33S_Pointer} {itkPointSet}

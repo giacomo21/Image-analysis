@@ -1,0 +1,54 @@
+{itk::ExtractImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<std::complex<float>, 2u> >} {itkExtractImageFilterICF2ICF2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<std::complex<float>, 2u> > >} {itkExtractImageFilterICF2ICF2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<std::complex<float>, 2u> >} {itkExtractImageFilterICF3ICF2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<std::complex<float>, 2u> > >} {itkExtractImageFilterICF3ICF2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<std::complex<float>, 3u> >} {itkExtractImageFilterICF3ICF3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<std::complex<float>, 3u> > >} {itkExtractImageFilterICF3ICF3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkExtractImageFilterICVF22ICVF22} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkExtractImageFilterICVF22ICVF22_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkExtractImageFilterICVF33ICVF33} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkExtractImageFilterICVF33ICVF33_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkExtractImageFilterID2ID2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkExtractImageFilterID2ID2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<double, 3u>,itk::Image<double, 2u> >} {itkExtractImageFilterID3ID2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<double, 3u>, itk::Image<double, 2u> > >} {itkExtractImageFilterID3ID2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkExtractImageFilterID3ID3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkExtractImageFilterID3ID3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkExtractImageFilterIF2IF2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkExtractImageFilterIF2IF2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<float, 3u>,itk::Image<float, 2u> >} {itkExtractImageFilterIF3IF2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<float, 3u>, itk::Image<float, 2u> > >} {itkExtractImageFilterIF3IF2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkExtractImageFilterIF3IF3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkExtractImageFilterIF3IF3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkExtractImageFilterIRGBAUS2IRGBAUS2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkExtractImageFilterIRGBAUS2IRGBAUS2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkExtractImageFilterIRGBAUS3IRGBAUS3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkExtractImageFilterIRGBAUS3IRGBAUS3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkExtractImageFilterIRGBUS2IRGBUS2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkExtractImageFilterIRGBUS2IRGBUS2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkExtractImageFilterIRGBUS3IRGBUS2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkExtractImageFilterIRGBUS3IRGBUS2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkExtractImageFilterIRGBUS3IRGBUS3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkExtractImageFilterIRGBUS3IRGBUS3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkExtractImageFilterIUC2IUC2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkExtractImageFilterIUC2IUC2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 2u> >} {itkExtractImageFilterIUC3IUC2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 2u> > >} {itkExtractImageFilterIUC3IUC2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkExtractImageFilterIUC3IUC3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkExtractImageFilterIUC3IUC3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkExtractImageFilterIUL2IUL2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkExtractImageFilterIUL2IUL2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 2u> >} {itkExtractImageFilterIUL3IUL2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 2u> > >} {itkExtractImageFilterIUL3IUL2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkExtractImageFilterIUL3IUL3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkExtractImageFilterIUL3IUL3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkExtractImageFilterIUS2IUS2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkExtractImageFilterIUS2IUS2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 2u> >} {itkExtractImageFilterIUS3IUS2} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 2u> > >} {itkExtractImageFilterIUS3IUS2_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkExtractImageFilterIUS3IUS3} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkExtractImageFilterIUS3IUS3_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkExtractImageFilterIVF22IVF22} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkExtractImageFilterIVF22IVF22_Pointer} {itkExtractImageFilter}
+{itk::ExtractImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkExtractImageFilterIVF33IVF33} {itkExtractImageFilter}
+{itk::SmartPointer<itk::ExtractImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkExtractImageFilterIVF33IVF33_Pointer} {itkExtractImageFilter}

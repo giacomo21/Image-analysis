@@ -1,0 +1,16 @@
+{itk::FiniteDifferenceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkFiniteDifferenceImageFilterICVF22ICVF22} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkFiniteDifferenceImageFilterICVF22ICVF22_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkFiniteDifferenceImageFilterICVF33ICVF33} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkFiniteDifferenceImageFilterICVF33ICVF33_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkFiniteDifferenceImageFilterID2ID2} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkFiniteDifferenceImageFilterID2ID2_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkFiniteDifferenceImageFilterID3ID3} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkFiniteDifferenceImageFilterID3ID3_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkFiniteDifferenceImageFilterIF2IF2} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkFiniteDifferenceImageFilterIF2IF2_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkFiniteDifferenceImageFilterIF3IF3} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkFiniteDifferenceImageFilterIF3IF3_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkFiniteDifferenceImageFilterIVF22IVF22} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkFiniteDifferenceImageFilterIVF22IVF22_Pointer} {itkFiniteDifferenceImageFilter}
+{itk::FiniteDifferenceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkFiniteDifferenceImageFilterIVF33IVF33} {itkFiniteDifferenceImageFilter}
+{itk::SmartPointer<itk::FiniteDifferenceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkFiniteDifferenceImageFilterIVF33IVF33_Pointer} {itkFiniteDifferenceImageFilter}

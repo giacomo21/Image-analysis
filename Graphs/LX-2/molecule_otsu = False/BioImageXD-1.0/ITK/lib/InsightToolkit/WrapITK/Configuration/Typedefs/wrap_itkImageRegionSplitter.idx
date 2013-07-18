@@ -1,0 +1,4 @@
+{itk::ImageRegionSplitter<2u>} {itkImageRegionSplitter2} {itkImageRegionSplitter}
+{itk::SmartPointer<itk::ImageRegionSplitter<2u> >} {itkImageRegionSplitter2_Pointer} {itkImageRegionSplitter}
+{itk::ImageRegionSplitter<3u>} {itkImageRegionSplitter3} {itkImageRegionSplitter}
+{itk::SmartPointer<itk::ImageRegionSplitter<3u> >} {itkImageRegionSplitter3_Pointer} {itkImageRegionSplitter}

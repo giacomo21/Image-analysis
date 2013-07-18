@@ -1,0 +1,4 @@
+{itk::ImageMaskSpatialObject<2u>} {itkImageMaskSpatialObject2} {itkImageMaskSpatialObject}
+{itk::SmartPointer<itk::ImageMaskSpatialObject<2u> >} {itkImageMaskSpatialObject2_Pointer} {itkImageMaskSpatialObject}
+{itk::ImageMaskSpatialObject<3u>} {itkImageMaskSpatialObject3} {itkImageMaskSpatialObject}
+{itk::SmartPointer<itk::ImageMaskSpatialObject<3u> >} {itkImageMaskSpatialObject3_Pointer} {itkImageMaskSpatialObject}

@@ -1,0 +1,4 @@
+{itk::SpatialObjectWriter<2u,unsigned char,itk::DefaultStaticMeshTraits<unsigned char, 2u, 2u, float, float, unsigned char> >} {itkSpatialObjectWriter2} {itkSpatialObjectWriter}
+{itk::SmartPointer<itk::SpatialObjectWriter<2u, unsigned char, itk::DefaultStaticMeshTraits<unsigned char, 2u, 2u, float, float, unsigned char> > >} {itkSpatialObjectWriter2_Pointer} {itkSpatialObjectWriter}
+{itk::SpatialObjectWriter<3u,unsigned char,itk::DefaultStaticMeshTraits<unsigned char, 3u, 3u, float, float, unsigned char> >} {itkSpatialObjectWriter3} {itkSpatialObjectWriter}
+{itk::SmartPointer<itk::SpatialObjectWriter<3u, unsigned char, itk::DefaultStaticMeshTraits<unsigned char, 3u, 3u, float, float, unsigned char> > >} {itkSpatialObjectWriter3_Pointer} {itkSpatialObjectWriter}

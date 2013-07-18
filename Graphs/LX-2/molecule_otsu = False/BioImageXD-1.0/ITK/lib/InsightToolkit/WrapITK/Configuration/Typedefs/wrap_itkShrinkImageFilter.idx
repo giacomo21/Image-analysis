@@ -1,0 +1,20 @@
+{itk::ShrinkImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkShrinkImageFilterID2ID2} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkShrinkImageFilterID2ID2_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkShrinkImageFilterID3ID3} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkShrinkImageFilterID3ID3_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkShrinkImageFilterIF2IF2} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkShrinkImageFilterIF2IF2_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkShrinkImageFilterIF3IF3} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkShrinkImageFilterIF3IF3_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkShrinkImageFilterIUC2IUC2} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkShrinkImageFilterIUC2IUC2_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkShrinkImageFilterIUC3IUC3} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkShrinkImageFilterIUC3IUC3_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkShrinkImageFilterIUL2IUL2} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkShrinkImageFilterIUL2IUL2_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkShrinkImageFilterIUL3IUL3} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkShrinkImageFilterIUL3IUL3_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkShrinkImageFilterIUS2IUS2} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkShrinkImageFilterIUS2IUS2_Pointer} {itkShrinkImageFilter}
+{itk::ShrinkImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkShrinkImageFilterIUS3IUS3} {itkShrinkImageFilter}
+{itk::SmartPointer<itk::ShrinkImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkShrinkImageFilterIUS3IUS3_Pointer} {itkShrinkImageFilter}

@@ -1,0 +1,8 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkCenteredVersorTransformInitializerID3ID3)
+DECLARE_REF_COUNT_CLASS(itkCenteredVersorTransformInitializerIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkCenteredVersorTransformInitializerIUS3IUS3)
+DECLARE_REF_COUNT_CLASS(itkCenteredVersorTransformInitializerIUL3IUL3)
+DECLARE_REF_COUNT_CLASS(itkCenteredVersorTransformInitializerIUC3IUC3)
+

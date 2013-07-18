@@ -1,0 +1,20 @@
+{itk::WarpImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWarpImageFilterID2ID2IVF22} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWarpImageFilterID2ID2IVF22_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWarpImageFilterID3ID3IVF33} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWarpImageFilterID3ID3IVF33_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWarpImageFilterIF2IF2IVF22} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWarpImageFilterIF2IF2IVF22_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWarpImageFilterIF3IF3IVF33} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWarpImageFilterIF3IF3IVF33_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWarpImageFilterIUC2IUC2IVF22} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWarpImageFilterIUC2IUC2IVF22_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWarpImageFilterIUC3IUC3IVF33} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWarpImageFilterIUC3IUC3IVF33_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWarpImageFilterIUL2IUL2IVF22} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWarpImageFilterIUL2IUL2IVF22_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWarpImageFilterIUL3IUL3IVF33} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWarpImageFilterIUL3IUL3IVF33_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWarpImageFilterIUS2IUS2IVF22} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWarpImageFilterIUS2IUS2IVF22_Pointer} {itkWarpImageFilter}
+{itk::WarpImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWarpImageFilterIUS3IUS3IVF33} {itkWarpImageFilter}
+{itk::SmartPointer<itk::WarpImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWarpImageFilterIUS3IUS3IVF33_Pointer} {itkWarpImageFilter}

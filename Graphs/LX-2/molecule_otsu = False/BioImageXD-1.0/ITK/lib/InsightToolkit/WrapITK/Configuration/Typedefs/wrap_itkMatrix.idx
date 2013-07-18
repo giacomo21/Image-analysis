@@ -1,0 +1,4 @@
+{itk::Matrix<double,2u,2u>} {itkMatrixD22} {itkMatrix}
+{itk::Matrix<double,3u,3u>} {itkMatrixD33} {itkMatrix}
+{itk::Matrix<float,2u,2u>} {itkMatrixF22} {itkMatrix}
+{itk::Matrix<float,3u,3u>} {itkMatrixF33} {itkMatrix}

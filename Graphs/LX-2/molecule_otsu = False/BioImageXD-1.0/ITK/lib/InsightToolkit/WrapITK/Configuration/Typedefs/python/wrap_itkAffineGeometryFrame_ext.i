@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkAffineGeometryFrameD3)
+DECLARE_REF_COUNT_CLASS(itkAffineGeometryFrameD2)
+

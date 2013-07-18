@@ -1,0 +1,4 @@
+{itk::DTITubeSpatialObject<3u>} {itkDTITubeSpatialObject3} {itkDTITubeSpatialObject}
+{itk::SmartPointer<itk::DTITubeSpatialObject<3u> >} {itkDTITubeSpatialObject3_Pointer} {itkDTITubeSpatialObject}
+{itk::TubeSpatialObject<3u,itk::DTITubeSpatialObjectPoint<3u> >} {itkDTITubeSpatialObject3_Superclass} {itkDTITubeSpatialObject}
+{itk::SmartPointer<itk::TubeSpatialObject<3u, itk::DTITubeSpatialObjectPoint<3u> > >} {itkDTITubeSpatialObject3_Superclass_Pointer} {itkDTITubeSpatialObject}

@@ -1,0 +1,4 @@
+{itk::VectorExpandImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkVectorExpandImageFilterIVF22IVF22} {itkVectorExpandImageFilter}
+{itk::SmartPointer<itk::VectorExpandImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkVectorExpandImageFilterIVF22IVF22_Pointer} {itkVectorExpandImageFilter}
+{itk::VectorExpandImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkVectorExpandImageFilterIVF33IVF33} {itkVectorExpandImageFilter}
+{itk::SmartPointer<itk::VectorExpandImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkVectorExpandImageFilterIVF33IVF33_Pointer} {itkVectorExpandImageFilter}

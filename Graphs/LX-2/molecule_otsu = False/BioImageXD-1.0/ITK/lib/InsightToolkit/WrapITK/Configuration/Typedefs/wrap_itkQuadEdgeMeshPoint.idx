@@ -1,0 +1,2 @@
+{itk::QuadEdgeMeshPoint<float,2u,itk::GeometricalQuadEdge<long unsigned int, long unsigned int, bool, bool, true> >} {itkQuadEdgeMeshPointF2} {itkQuadEdgeMeshPoint}
+{itk::QuadEdgeMeshPoint<float,3u,itk::GeometricalQuadEdge<long unsigned int, long unsigned int, bool, bool, true> >} {itkQuadEdgeMeshPointF3} {itkQuadEdgeMeshPoint}

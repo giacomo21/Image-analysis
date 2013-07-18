@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkReinitializeLevelSetImageFilterID3)
+DECLARE_REF_COUNT_CLASS(itkReinitializeLevelSetImageFilterID2)
+DECLARE_REF_COUNT_CLASS(itkReinitializeLevelSetImageFilterIF3)
+DECLARE_REF_COUNT_CLASS(itkReinitializeLevelSetImageFilterIF2)
+

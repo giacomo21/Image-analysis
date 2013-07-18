@@ -1,0 +1,346 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkComplexToImaginaryImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkComplexToModulusImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkComplexToPhaseImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkComplexToRealImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDirectFourierReconstructionImageToImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkFFTComplexConjugateToRealImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkFFTComplexToComplexImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkFFTRealToComplexConjugateImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMagnitudeAndPhaseToComplexImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkRealAndImaginaryToComplexImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVnlFFTComplexConjugateToRealImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVnlFFTRealToComplexConjugateImageFilter.h"
+
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass itkComplexToImaginaryImageFilterICF2IF2_Superclass;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass::Pointer itkComplexToImaginaryImageFilterICF2IF2_Superclass_Pointer;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > > itkComplexToImaginaryImageFilterICF2IF2;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Pointer itkComplexToImaginaryImageFilterICF2IF2_Pointer;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass itkComplexToImaginaryImageFilterICF3IF3_Superclass;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass::Pointer itkComplexToImaginaryImageFilterICF3IF3_Superclass_Pointer;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > > itkComplexToImaginaryImageFilterICF3IF3;
+typedef itk::ComplexToImaginaryImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Pointer itkComplexToImaginaryImageFilterICF3IF3_Pointer;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass itkComplexToModulusImageFilterICF2IF2_Superclass;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass::Pointer itkComplexToModulusImageFilterICF2IF2_Superclass_Pointer;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > > itkComplexToModulusImageFilterICF2IF2;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Pointer itkComplexToModulusImageFilterICF2IF2_Pointer;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass itkComplexToModulusImageFilterICF3IF3_Superclass;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass::Pointer itkComplexToModulusImageFilterICF3IF3_Superclass_Pointer;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > > itkComplexToModulusImageFilterICF3IF3;
+typedef itk::ComplexToModulusImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Pointer itkComplexToModulusImageFilterICF3IF3_Pointer;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass itkComplexToPhaseImageFilterICF2IF2_Superclass;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass::Pointer itkComplexToPhaseImageFilterICF2IF2_Superclass_Pointer;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > > itkComplexToPhaseImageFilterICF2IF2;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Pointer itkComplexToPhaseImageFilterICF2IF2_Pointer;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass itkComplexToPhaseImageFilterICF3IF3_Superclass;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass::Pointer itkComplexToPhaseImageFilterICF3IF3_Superclass_Pointer;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > > itkComplexToPhaseImageFilterICF3IF3;
+typedef itk::ComplexToPhaseImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Pointer itkComplexToPhaseImageFilterICF3IF3_Pointer;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass itkComplexToRealImageFilterICF2IF2_Superclass;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Superclass::Pointer itkComplexToRealImageFilterICF2IF2_Superclass_Pointer;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > > itkComplexToRealImageFilterICF2IF2;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< float,2 > >::Pointer itkComplexToRealImageFilterICF2IF2_Pointer;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass itkComplexToRealImageFilterICF3IF3_Superclass;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Superclass::Pointer itkComplexToRealImageFilterICF3IF3_Superclass_Pointer;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > > itkComplexToRealImageFilterICF3IF3;
+typedef itk::ComplexToRealImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< float,3 > >::Pointer itkComplexToRealImageFilterICF3IF3_Pointer;
+typedef itk::DirectFourierReconstructionImageToImageFilter< float, float > itkDirectFourierReconstructionImageToImageFilterFF;
+typedef itk::DirectFourierReconstructionImageToImageFilter< float, float >::Pointer itkDirectFourierReconstructionImageToImageFilterFF_Pointer;
+typedef itk::DirectFourierReconstructionImageToImageFilter< double, double > itkDirectFourierReconstructionImageToImageFilterDD;
+typedef itk::DirectFourierReconstructionImageToImageFilter< double, double >::Pointer itkDirectFourierReconstructionImageToImageFilterDD_Pointer;
+typedef itk::FFTComplexConjugateToRealImageFilter< float,2 > itkFFTComplexConjugateToRealImageFilterF2;
+typedef itk::FFTComplexConjugateToRealImageFilter< float,2 >::Pointer itkFFTComplexConjugateToRealImageFilterF2_Pointer;
+typedef itk::FFTComplexConjugateToRealImageFilter< float,3 > itkFFTComplexConjugateToRealImageFilterF3;
+typedef itk::FFTComplexConjugateToRealImageFilter< float,3 >::Pointer itkFFTComplexConjugateToRealImageFilterF3_Pointer;
+typedef itk::FFTComplexToComplexImageFilter< float,2 > itkFFTComplexToComplexImageFilterF2;
+typedef itk::FFTComplexToComplexImageFilter< float,2 >::Pointer itkFFTComplexToComplexImageFilterF2_Pointer;
+typedef itk::FFTComplexToComplexImageFilter< float,3 > itkFFTComplexToComplexImageFilterF3;
+typedef itk::FFTComplexToComplexImageFilter< float,3 >::Pointer itkFFTComplexToComplexImageFilterF3_Pointer;
+typedef itk::FFTRealToComplexConjugateImageFilter< float,2 > itkFFTRealToComplexConjugateImageFilterF2;
+typedef itk::FFTRealToComplexConjugateImageFilter< float,2 >::Pointer itkFFTRealToComplexConjugateImageFilterF2_Pointer;
+typedef itk::FFTRealToComplexConjugateImageFilter< float,3 > itkFFTRealToComplexConjugateImageFilterF3;
+typedef itk::FFTRealToComplexConjugateImageFilter< float,3 >::Pointer itkFFTRealToComplexConjugateImageFilterF3_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,2 >::Superclass itkMagnitudeAndPhaseToComplexImageFilterFFF2_Superclass;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,2 >::Superclass::Pointer itkMagnitudeAndPhaseToComplexImageFilterFFF2_Superclass_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,2 > itkMagnitudeAndPhaseToComplexImageFilterFFF2;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,2 >::Pointer itkMagnitudeAndPhaseToComplexImageFilterFFF2_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,2 >::Superclass itkMagnitudeAndPhaseToComplexImageFilterDDF2_Superclass;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,2 >::Superclass::Pointer itkMagnitudeAndPhaseToComplexImageFilterDDF2_Superclass_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,2 > itkMagnitudeAndPhaseToComplexImageFilterDDF2;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,2 >::Pointer itkMagnitudeAndPhaseToComplexImageFilterDDF2_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,3 >::Superclass itkMagnitudeAndPhaseToComplexImageFilterFFF3_Superclass;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,3 >::Superclass::Pointer itkMagnitudeAndPhaseToComplexImageFilterFFF3_Superclass_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,3 > itkMagnitudeAndPhaseToComplexImageFilterFFF3;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< float,float,float,3 >::Pointer itkMagnitudeAndPhaseToComplexImageFilterFFF3_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,3 >::Superclass itkMagnitudeAndPhaseToComplexImageFilterDDF3_Superclass;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,3 >::Superclass::Pointer itkMagnitudeAndPhaseToComplexImageFilterDDF3_Superclass_Pointer;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,3 > itkMagnitudeAndPhaseToComplexImageFilterDDF3;
+typedef itk::MagnitudeAndPhaseToComplexImageFilter< double,double,float,3 >::Pointer itkMagnitudeAndPhaseToComplexImageFilterDDF3_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,2 >::Superclass itkRealAndImaginaryToComplexImageFilterFFF2_Superclass;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,2 >::Superclass::Pointer itkRealAndImaginaryToComplexImageFilterFFF2_Superclass_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,2 > itkRealAndImaginaryToComplexImageFilterFFF2;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,2 >::Pointer itkRealAndImaginaryToComplexImageFilterFFF2_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,2 >::Superclass itkRealAndImaginaryToComplexImageFilterDDF2_Superclass;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,2 >::Superclass::Pointer itkRealAndImaginaryToComplexImageFilterDDF2_Superclass_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,2 > itkRealAndImaginaryToComplexImageFilterDDF2;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,2 >::Pointer itkRealAndImaginaryToComplexImageFilterDDF2_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,3 >::Superclass itkRealAndImaginaryToComplexImageFilterFFF3_Superclass;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,3 >::Superclass::Pointer itkRealAndImaginaryToComplexImageFilterFFF3_Superclass_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,3 > itkRealAndImaginaryToComplexImageFilterFFF3;
+typedef itk::RealAndImaginaryToComplexImageFilter< float,float,float,3 >::Pointer itkRealAndImaginaryToComplexImageFilterFFF3_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,3 >::Superclass itkRealAndImaginaryToComplexImageFilterDDF3_Superclass;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,3 >::Superclass::Pointer itkRealAndImaginaryToComplexImageFilterDDF3_Superclass_Pointer;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,3 > itkRealAndImaginaryToComplexImageFilterDDF3;
+typedef itk::RealAndImaginaryToComplexImageFilter< double,double,float,3 >::Pointer itkRealAndImaginaryToComplexImageFilterDDF3_Pointer;
+typedef itk::VnlFFTComplexConjugateToRealImageFilter< float,2 > itkVnlFFTComplexConjugateToRealImageFilterF2;
+typedef itk::VnlFFTComplexConjugateToRealImageFilter< float,2 >::Pointer itkVnlFFTComplexConjugateToRealImageFilterF2_Pointer;
+typedef itk::VnlFFTComplexConjugateToRealImageFilter< float,3 > itkVnlFFTComplexConjugateToRealImageFilterF3;
+typedef itk::VnlFFTComplexConjugateToRealImageFilter< float,3 >::Pointer itkVnlFFTComplexConjugateToRealImageFilterF3_Pointer;
+typedef itk::VnlFFTRealToComplexConjugateImageFilter< float,2 > itkVnlFFTRealToComplexConjugateImageFilterF2;
+typedef itk::VnlFFTRealToComplexConjugateImageFilter< float,2 >::Pointer itkVnlFFTRealToComplexConjugateImageFilterF2_Pointer;
+typedef itk::VnlFFTRealToComplexConjugateImageFilter< float,3 > itkVnlFFTRealToComplexConjugateImageFilterF3;
+typedef itk::VnlFFTRealToComplexConjugateImageFilter< float,3 >::Pointer itkVnlFFTRealToComplexConjugateImageFilterF3_Pointer;
+

@@ -1,0 +1,5 @@
+/home/lopaavol/VTK_INS/lib/libvtkBXDProcessing.so
+/home/lopaavol/VTK_INS/lib/libvtkBXDProcessingPythonD.so
+/home/lopaavol/VTK_INS/lib/python2.5/site-packages/vtkbxd/libvtkBXDProcessingPython.so
+/home/lopaavol/VTK_INS/lib/python2.5/site-packages/vtkbxd.pth
+/home/lopaavol/VTK_INS/lib/python2.5/site-packages/vtkbxd/__init__.py

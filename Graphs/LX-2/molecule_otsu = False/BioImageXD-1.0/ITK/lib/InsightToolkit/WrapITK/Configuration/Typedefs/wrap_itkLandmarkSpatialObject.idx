@@ -1,0 +1,4 @@
+{itk::LandmarkSpatialObject<2u>} {itkLandmarkSpatialObject2} {itkLandmarkSpatialObject}
+{itk::SmartPointer<itk::LandmarkSpatialObject<2u> >} {itkLandmarkSpatialObject2_Pointer} {itkLandmarkSpatialObject}
+{itk::LandmarkSpatialObject<3u>} {itkLandmarkSpatialObject3} {itkLandmarkSpatialObject}
+{itk::SmartPointer<itk::LandmarkSpatialObject<3u> >} {itkLandmarkSpatialObject3_Pointer} {itkLandmarkSpatialObject}

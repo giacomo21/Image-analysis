@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkMinMaxCurvatureFlowImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkMinMaxCurvatureFlowImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkMinMaxCurvatureFlowImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkMinMaxCurvatureFlowImageFilterIF2IF2)
+

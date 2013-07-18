@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterID3)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterID2)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIF3)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIF2)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkWatershedImageFilterIUC2)
+

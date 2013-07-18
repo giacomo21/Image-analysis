@@ -1,0 +1,8 @@
+{itk::CurvatureFlowImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCurvatureFlowImageFilterID2ID2} {itkCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::CurvatureFlowImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCurvatureFlowImageFilterID2ID2_Pointer} {itkCurvatureFlowImageFilter}
+{itk::CurvatureFlowImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCurvatureFlowImageFilterID3ID3} {itkCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::CurvatureFlowImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCurvatureFlowImageFilterID3ID3_Pointer} {itkCurvatureFlowImageFilter}
+{itk::CurvatureFlowImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCurvatureFlowImageFilterIF2IF2} {itkCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::CurvatureFlowImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCurvatureFlowImageFilterIF2IF2_Pointer} {itkCurvatureFlowImageFilter}
+{itk::CurvatureFlowImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCurvatureFlowImageFilterIF3IF3} {itkCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::CurvatureFlowImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCurvatureFlowImageFilterIF3IF3_Pointer} {itkCurvatureFlowImageFilter}

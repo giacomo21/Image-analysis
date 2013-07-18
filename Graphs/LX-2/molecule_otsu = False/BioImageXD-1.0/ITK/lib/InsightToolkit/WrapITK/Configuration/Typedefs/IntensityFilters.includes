@@ -1,0 +1,1274 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+#include "Numerics.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkAdaptiveHistogramEqualizationImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHistogramMatchingImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkIntensityWindowingImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkInvertIntensityImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMaskImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMaskNegatedImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkNormalizeImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkRescaleIntensityImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkShiftScaleImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSigmoidImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVectorRescaleIntensityImageFilter.h"
+
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned char,2 > > itkAdaptiveHistogramEqualizationImageFilterIUC2;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned char,2 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUC2_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned char,3 > > itkAdaptiveHistogramEqualizationImageFilterIUC3;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned char,3 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUC3_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned long,2 > > itkAdaptiveHistogramEqualizationImageFilterIUL2;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned long,2 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUL2_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned long,3 > > itkAdaptiveHistogramEqualizationImageFilterIUL3;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned long,3 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUL3_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned short,2 > > itkAdaptiveHistogramEqualizationImageFilterIUS2;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned short,2 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUS2_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned short,3 > > itkAdaptiveHistogramEqualizationImageFilterIUS3;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< unsigned short,3 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIUS3_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< float,2 > > itkAdaptiveHistogramEqualizationImageFilterIF2;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< float,2 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIF2_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< float,3 > > itkAdaptiveHistogramEqualizationImageFilterIF3;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< float,3 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterIF3_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< double,2 > > itkAdaptiveHistogramEqualizationImageFilterID2;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< double,2 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterID2_Pointer;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< double,3 > > itkAdaptiveHistogramEqualizationImageFilterID3;
+typedef itk::AdaptiveHistogramEqualizationImageFilter< itk::Image< double,3 > >::Pointer itkAdaptiveHistogramEqualizationImageFilterID3_Pointer;
+typedef itk::HistogramMatchingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkHistogramMatchingImageFilterIF2IF2;
+typedef itk::HistogramMatchingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkHistogramMatchingImageFilterIF2IF2_Pointer;
+typedef itk::HistogramMatchingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkHistogramMatchingImageFilterIF3IF3;
+typedef itk::HistogramMatchingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkHistogramMatchingImageFilterIF3IF3_Pointer;
+typedef itk::HistogramMatchingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkHistogramMatchingImageFilterID2ID2;
+typedef itk::HistogramMatchingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkHistogramMatchingImageFilterID2ID2_Pointer;
+typedef itk::HistogramMatchingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkHistogramMatchingImageFilterID3ID3;
+typedef itk::HistogramMatchingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkHistogramMatchingImageFilterID3ID3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkIntensityWindowingImageFilterIUC2IUC2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkIntensityWindowingImageFilterIUC2IUC2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkIntensityWindowingImageFilterIUC2IUC2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkIntensityWindowingImageFilterIUC3IUC3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkIntensityWindowingImageFilterIUC3IUC3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkIntensityWindowingImageFilterIUC3IUC3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass itkIntensityWindowingImageFilterIUC2IUL2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC2IUL2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > > itkIntensityWindowingImageFilterIUC2IUL2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Pointer itkIntensityWindowingImageFilterIUC2IUL2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass itkIntensityWindowingImageFilterIUC3IUL3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC3IUL3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > > itkIntensityWindowingImageFilterIUC3IUL3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Pointer itkIntensityWindowingImageFilterIUC3IUL3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass itkIntensityWindowingImageFilterIUC2IUS2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC2IUS2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > > itkIntensityWindowingImageFilterIUC2IUS2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Pointer itkIntensityWindowingImageFilterIUC2IUS2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass itkIntensityWindowingImageFilterIUC3IUS3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC3IUS3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > > itkIntensityWindowingImageFilterIUC3IUS3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Pointer itkIntensityWindowingImageFilterIUC3IUS3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass itkIntensityWindowingImageFilterIUC2IF2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC2IF2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkIntensityWindowingImageFilterIUC2IF2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkIntensityWindowingImageFilterIUC2IF2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass itkIntensityWindowingImageFilterIUC3IF3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC3IF3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkIntensityWindowingImageFilterIUC3IF3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkIntensityWindowingImageFilterIUC3IF3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass itkIntensityWindowingImageFilterIUC2ID2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC2ID2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkIntensityWindowingImageFilterIUC2ID2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkIntensityWindowingImageFilterIUC2ID2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass itkIntensityWindowingImageFilterIUC3ID3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUC3ID3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkIntensityWindowingImageFilterIUC3ID3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkIntensityWindowingImageFilterIUC3ID3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass itkIntensityWindowingImageFilterIUL2IUC2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL2IUC2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkIntensityWindowingImageFilterIUL2IUC2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkIntensityWindowingImageFilterIUL2IUC2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass itkIntensityWindowingImageFilterIUL3IUC3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL3IUC3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkIntensityWindowingImageFilterIUL3IUC3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkIntensityWindowingImageFilterIUL3IUC3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkIntensityWindowingImageFilterIUL2IUL2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkIntensityWindowingImageFilterIUL2IUL2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkIntensityWindowingImageFilterIUL2IUL2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkIntensityWindowingImageFilterIUL3IUL3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkIntensityWindowingImageFilterIUL3IUL3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkIntensityWindowingImageFilterIUL3IUL3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass itkIntensityWindowingImageFilterIUL2IUS2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL2IUS2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > > itkIntensityWindowingImageFilterIUL2IUS2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Pointer itkIntensityWindowingImageFilterIUL2IUS2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass itkIntensityWindowingImageFilterIUL3IUS3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL3IUS3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > > itkIntensityWindowingImageFilterIUL3IUS3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Pointer itkIntensityWindowingImageFilterIUL3IUS3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass itkIntensityWindowingImageFilterIUL2IF2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL2IF2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkIntensityWindowingImageFilterIUL2IF2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkIntensityWindowingImageFilterIUL2IF2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass itkIntensityWindowingImageFilterIUL3IF3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL3IF3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkIntensityWindowingImageFilterIUL3IF3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkIntensityWindowingImageFilterIUL3IF3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass itkIntensityWindowingImageFilterIUL2ID2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL2ID2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkIntensityWindowingImageFilterIUL2ID2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkIntensityWindowingImageFilterIUL2ID2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass itkIntensityWindowingImageFilterIUL3ID3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUL3ID3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkIntensityWindowingImageFilterIUL3ID3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkIntensityWindowingImageFilterIUL3ID3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass itkIntensityWindowingImageFilterIUS2IUC2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS2IUC2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkIntensityWindowingImageFilterIUS2IUC2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkIntensityWindowingImageFilterIUS2IUC2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass itkIntensityWindowingImageFilterIUS3IUC3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS3IUC3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkIntensityWindowingImageFilterIUS3IUC3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkIntensityWindowingImageFilterIUS3IUC3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass itkIntensityWindowingImageFilterIUS2IUL2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS2IUL2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > > itkIntensityWindowingImageFilterIUS2IUL2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Pointer itkIntensityWindowingImageFilterIUS2IUL2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass itkIntensityWindowingImageFilterIUS3IUL3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS3IUL3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > > itkIntensityWindowingImageFilterIUS3IUL3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Pointer itkIntensityWindowingImageFilterIUS3IUL3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkIntensityWindowingImageFilterIUS2IUS2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkIntensityWindowingImageFilterIUS2IUS2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkIntensityWindowingImageFilterIUS2IUS2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkIntensityWindowingImageFilterIUS3IUS3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkIntensityWindowingImageFilterIUS3IUS3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkIntensityWindowingImageFilterIUS3IUS3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass itkIntensityWindowingImageFilterIUS2IF2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS2IF2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkIntensityWindowingImageFilterIUS2IF2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkIntensityWindowingImageFilterIUS2IF2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass itkIntensityWindowingImageFilterIUS3IF3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS3IF3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkIntensityWindowingImageFilterIUS3IF3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkIntensityWindowingImageFilterIUS3IF3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass itkIntensityWindowingImageFilterIUS2ID2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS2ID2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkIntensityWindowingImageFilterIUS2ID2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkIntensityWindowingImageFilterIUS2ID2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass itkIntensityWindowingImageFilterIUS3ID3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIUS3ID3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkIntensityWindowingImageFilterIUS3ID3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkIntensityWindowingImageFilterIUS3ID3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Superclass itkIntensityWindowingImageFilterIF2IUC2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF2IUC2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > > itkIntensityWindowingImageFilterIF2IUC2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Pointer itkIntensityWindowingImageFilterIF2IUC2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Superclass itkIntensityWindowingImageFilterIF3IUC3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF3IUC3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > > itkIntensityWindowingImageFilterIF3IUC3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Pointer itkIntensityWindowingImageFilterIF3IUC3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Superclass itkIntensityWindowingImageFilterIF2IUL2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF2IUL2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > > itkIntensityWindowingImageFilterIF2IUL2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Pointer itkIntensityWindowingImageFilterIF2IUL2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Superclass itkIntensityWindowingImageFilterIF3IUL3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF3IUL3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > > itkIntensityWindowingImageFilterIF3IUL3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Pointer itkIntensityWindowingImageFilterIF3IUL3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Superclass itkIntensityWindowingImageFilterIF2IUS2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF2IUS2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > > itkIntensityWindowingImageFilterIF2IUS2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Pointer itkIntensityWindowingImageFilterIF2IUS2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Superclass itkIntensityWindowingImageFilterIF3IUS3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF3IUS3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > > itkIntensityWindowingImageFilterIF3IUS3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Pointer itkIntensityWindowingImageFilterIF3IUS3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkIntensityWindowingImageFilterIF2IF2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkIntensityWindowingImageFilterIF2IF2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkIntensityWindowingImageFilterIF2IF2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkIntensityWindowingImageFilterIF3IF3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkIntensityWindowingImageFilterIF3IF3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkIntensityWindowingImageFilterIF3IF3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Superclass itkIntensityWindowingImageFilterIF2ID2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF2ID2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< double,2 > > itkIntensityWindowingImageFilterIF2ID2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Pointer itkIntensityWindowingImageFilterIF2ID2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Superclass itkIntensityWindowingImageFilterIF3ID3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterIF3ID3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< double,3 > > itkIntensityWindowingImageFilterIF3ID3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Pointer itkIntensityWindowingImageFilterIF3ID3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Superclass itkIntensityWindowingImageFilterID2IUC2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterID2IUC2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > > itkIntensityWindowingImageFilterID2IUC2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Pointer itkIntensityWindowingImageFilterID2IUC2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Superclass itkIntensityWindowingImageFilterID3IUC3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterID3IUC3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > > itkIntensityWindowingImageFilterID3IUC3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Pointer itkIntensityWindowingImageFilterID3IUC3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Superclass itkIntensityWindowingImageFilterID2IUL2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterID2IUL2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > > itkIntensityWindowingImageFilterID2IUL2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Pointer itkIntensityWindowingImageFilterID2IUL2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Superclass itkIntensityWindowingImageFilterID3IUL3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterID3IUL3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > > itkIntensityWindowingImageFilterID3IUL3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Pointer itkIntensityWindowingImageFilterID3IUL3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Superclass itkIntensityWindowingImageFilterID2IUS2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterID2IUS2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > > itkIntensityWindowingImageFilterID2IUS2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Pointer itkIntensityWindowingImageFilterID2IUS2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Superclass itkIntensityWindowingImageFilterID3IUS3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterID3IUS3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > > itkIntensityWindowingImageFilterID3IUS3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Pointer itkIntensityWindowingImageFilterID3IUS3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Superclass itkIntensityWindowingImageFilterID2IF2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterID2IF2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< float,2 > > itkIntensityWindowingImageFilterID2IF2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Pointer itkIntensityWindowingImageFilterID2IF2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Superclass itkIntensityWindowingImageFilterID3IF3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterID3IF3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< float,3 > > itkIntensityWindowingImageFilterID3IF3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Pointer itkIntensityWindowingImageFilterID3IF3_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkIntensityWindowingImageFilterID2ID2_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkIntensityWindowingImageFilterID2ID2_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkIntensityWindowingImageFilterID2ID2;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkIntensityWindowingImageFilterID2ID2_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkIntensityWindowingImageFilterID3ID3_Superclass;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkIntensityWindowingImageFilterID3ID3_Superclass_Pointer;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkIntensityWindowingImageFilterID3ID3;
+typedef itk::IntensityWindowingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkIntensityWindowingImageFilterID3ID3_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkInvertIntensityImageFilterIUC2IUC2_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkInvertIntensityImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkInvertIntensityImageFilterIUC2IUC2;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkInvertIntensityImageFilterIUC2IUC2_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkInvertIntensityImageFilterIUC3IUC3_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkInvertIntensityImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkInvertIntensityImageFilterIUC3IUC3;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkInvertIntensityImageFilterIUC3IUC3_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkInvertIntensityImageFilterIUL2IUL2_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkInvertIntensityImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkInvertIntensityImageFilterIUL2IUL2;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkInvertIntensityImageFilterIUL2IUL2_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkInvertIntensityImageFilterIUL3IUL3_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkInvertIntensityImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkInvertIntensityImageFilterIUL3IUL3;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkInvertIntensityImageFilterIUL3IUL3_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkInvertIntensityImageFilterIUS2IUS2_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkInvertIntensityImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkInvertIntensityImageFilterIUS2IUS2;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkInvertIntensityImageFilterIUS2IUS2_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkInvertIntensityImageFilterIUS3IUS3_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkInvertIntensityImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkInvertIntensityImageFilterIUS3IUS3;
+typedef itk::InvertIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkInvertIntensityImageFilterIUS3IUS3_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkInvertIntensityImageFilterIF2IF2_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkInvertIntensityImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkInvertIntensityImageFilterIF2IF2;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkInvertIntensityImageFilterIF2IF2_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkInvertIntensityImageFilterIF3IF3_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkInvertIntensityImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkInvertIntensityImageFilterIF3IF3;
+typedef itk::InvertIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkInvertIntensityImageFilterIF3IF3_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkInvertIntensityImageFilterID2ID2_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkInvertIntensityImageFilterID2ID2_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkInvertIntensityImageFilterID2ID2;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkInvertIntensityImageFilterID2ID2_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkInvertIntensityImageFilterID3ID3_Superclass;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkInvertIntensityImageFilterID3ID3_Superclass_Pointer;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkInvertIntensityImageFilterID3ID3;
+typedef itk::InvertIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkInvertIntensityImageFilterID3ID3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBUS2IUC2IRGBUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBUS2IUC2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskImageFilterIRGBUS2IUC2IRGBUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBUS2IUC2IRGBUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBUS3IUC3IRGBUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBUS3IUC3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskImageFilterIRGBUS3IUC3IRGBUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBUS3IUC3IRGBUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBUS2IUL2IRGBUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBUS2IUL2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskImageFilterIRGBUS2IUL2IRGBUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBUS2IUL2IRGBUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBUS3IUL3IRGBUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBUS3IUL3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskImageFilterIRGBUS3IUL3IRGBUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBUS3IUL3IRGBUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBUS2IUS2IRGBUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBUS2IUS2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskImageFilterIRGBUS2IUS2IRGBUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBUS2IUS2IRGBUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBUS3IUS3IRGBUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBUS3IUS3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskImageFilterIRGBUS3IUS3IRGBUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBUS3IUS3IRGBUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBAUS2IUC2IRGBAUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS2IUC2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskImageFilterIRGBAUS2IUC2IRGBAUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBAUS2IUC2IRGBAUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBAUS3IUC3IRGBAUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS3IUC3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskImageFilterIRGBAUS3IUC3IRGBAUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBAUS3IUC3IRGBAUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBAUS2IUL2IRGBAUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS2IUL2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskImageFilterIRGBAUS2IUL2IRGBAUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBAUS2IUL2IRGBAUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBAUS3IUL3IRGBAUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS3IUL3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskImageFilterIRGBAUS3IUL3IRGBAUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBAUS3IUL3IRGBAUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskImageFilterIRGBAUS2IUS2IRGBAUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS2IUS2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskImageFilterIRGBAUS2IUS2IRGBAUS2;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskImageFilterIRGBAUS2IUS2IRGBAUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskImageFilterIRGBAUS3IUS3IRGBAUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskImageFilterIRGBAUS3IUS3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskImageFilterIRGBAUS3IUS3IRGBAUS3;
+typedef itk::MaskImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskImageFilterIRGBAUS3IUS3IRGBAUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskImageFilterIVF22IUC2IVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterIVF22IUC2IVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskImageFilterIVF22IUC2IVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskImageFilterIVF22IUC2IVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskImageFilterIVF33IUC3IVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterIVF33IUC3IVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskImageFilterIVF33IUC3IVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskImageFilterIVF33IUC3IVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskImageFilterIVF22IUL2IVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterIVF22IUL2IVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskImageFilterIVF22IUL2IVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskImageFilterIVF22IUL2IVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskImageFilterIVF33IUL3IVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterIVF33IUL3IVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskImageFilterIVF33IUL3IVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskImageFilterIVF33IUL3IVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskImageFilterIVF22IUS2IVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterIVF22IUS2IVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskImageFilterIVF22IUS2IVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskImageFilterIVF22IUS2IVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskImageFilterIVF33IUS3IVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterIVF33IUS3IVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskImageFilterIVF33IUS3IVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskImageFilterIVF33IUS3IVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskImageFilterICVF22IUC2ICVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterICVF22IUC2ICVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskImageFilterICVF22IUC2ICVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskImageFilterICVF22IUC2ICVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskImageFilterICVF33IUC3ICVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterICVF33IUC3ICVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskImageFilterICVF33IUC3ICVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskImageFilterICVF33IUC3ICVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskImageFilterICVF22IUL2ICVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterICVF22IUL2ICVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskImageFilterICVF22IUL2ICVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskImageFilterICVF22IUL2ICVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskImageFilterICVF33IUL3ICVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterICVF33IUL3ICVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskImageFilterICVF33IUL3ICVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskImageFilterICVF33IUL3ICVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskImageFilterICVF22IUS2ICVF22_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskImageFilterICVF22IUS2ICVF22_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskImageFilterICVF22IUS2ICVF22;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskImageFilterICVF22IUS2ICVF22_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskImageFilterICVF33IUS3ICVF33_Superclass;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskImageFilterICVF33IUS3ICVF33_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskImageFilterICVF33IUS3ICVF33;
+typedef itk::MaskImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskImageFilterICVF33IUS3ICVF33_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskImageFilterIUC2IUC2IUC2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskImageFilterIUC2IUC2IUC2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkMaskImageFilterIUC2IUC2IUC2;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskImageFilterIUC2IUC2IUC2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskImageFilterIUC3IUC3IUC3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskImageFilterIUC3IUC3IUC3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkMaskImageFilterIUC3IUC3IUC3;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskImageFilterIUC3IUC3IUC3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskImageFilterIUC2IUL2IUC2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskImageFilterIUC2IUL2IUC2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkMaskImageFilterIUC2IUL2IUC2;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskImageFilterIUC2IUL2IUC2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskImageFilterIUC3IUL3IUC3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskImageFilterIUC3IUL3IUC3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkMaskImageFilterIUC3IUL3IUC3;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskImageFilterIUC3IUL3IUC3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskImageFilterIUC2IUS2IUC2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskImageFilterIUC2IUS2IUC2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkMaskImageFilterIUC2IUS2IUC2;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskImageFilterIUC2IUS2IUC2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskImageFilterIUC3IUS3IUC3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskImageFilterIUC3IUS3IUC3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkMaskImageFilterIUC3IUS3IUC3;
+typedef itk::MaskImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskImageFilterIUC3IUS3IUC3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskImageFilterIUL2IUC2IUL2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskImageFilterIUL2IUC2IUL2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > > itkMaskImageFilterIUL2IUC2IUL2;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskImageFilterIUL2IUC2IUL2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskImageFilterIUL3IUC3IUL3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskImageFilterIUL3IUC3IUL3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > > itkMaskImageFilterIUL3IUC3IUL3;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskImageFilterIUL3IUC3IUL3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskImageFilterIUL2IUL2IUL2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskImageFilterIUL2IUL2IUL2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkMaskImageFilterIUL2IUL2IUL2;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskImageFilterIUL2IUL2IUL2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskImageFilterIUL3IUL3IUL3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskImageFilterIUL3IUL3IUL3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkMaskImageFilterIUL3IUL3IUL3;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskImageFilterIUL3IUL3IUL3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskImageFilterIUL2IUS2IUL2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskImageFilterIUL2IUS2IUL2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > > itkMaskImageFilterIUL2IUS2IUL2;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskImageFilterIUL2IUS2IUL2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskImageFilterIUL3IUS3IUL3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskImageFilterIUL3IUS3IUL3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > > itkMaskImageFilterIUL3IUS3IUL3;
+typedef itk::MaskImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskImageFilterIUL3IUS3IUL3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskImageFilterIUS2IUC2IUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskImageFilterIUS2IUC2IUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > > itkMaskImageFilterIUS2IUC2IUS2;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskImageFilterIUS2IUC2IUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskImageFilterIUS3IUC3IUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskImageFilterIUS3IUC3IUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > > itkMaskImageFilterIUS3IUC3IUS3;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskImageFilterIUS3IUC3IUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskImageFilterIUS2IUL2IUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskImageFilterIUS2IUL2IUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > > itkMaskImageFilterIUS2IUL2IUS2;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskImageFilterIUS2IUL2IUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskImageFilterIUS3IUL3IUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskImageFilterIUS3IUL3IUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > > itkMaskImageFilterIUS3IUL3IUS3;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskImageFilterIUS3IUL3IUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskImageFilterIUS2IUS2IUS2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskImageFilterIUS2IUS2IUS2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkMaskImageFilterIUS2IUS2IUS2;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskImageFilterIUS2IUS2IUS2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskImageFilterIUS3IUS3IUS3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskImageFilterIUS3IUS3IUS3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkMaskImageFilterIUS3IUS3IUS3;
+typedef itk::MaskImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskImageFilterIUS3IUS3IUS3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass itkMaskImageFilterIF2IUC2IF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskImageFilterIF2IUC2IF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkMaskImageFilterIF2IUC2IF2;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkMaskImageFilterIF2IUC2IF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass itkMaskImageFilterIF3IUC3IF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskImageFilterIF3IUC3IF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkMaskImageFilterIF3IUC3IF3;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkMaskImageFilterIF3IUC3IF3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass itkMaskImageFilterIF2IUL2IF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskImageFilterIF2IUL2IF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkMaskImageFilterIF2IUL2IF2;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkMaskImageFilterIF2IUL2IF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass itkMaskImageFilterIF3IUL3IF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskImageFilterIF3IUL3IF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkMaskImageFilterIF3IUL3IF3;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkMaskImageFilterIF3IUL3IF3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass itkMaskImageFilterIF2IUS2IF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskImageFilterIF2IUS2IF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkMaskImageFilterIF2IUS2IF2;
+typedef itk::MaskImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkMaskImageFilterIF2IUS2IF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass itkMaskImageFilterIF3IUS3IF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskImageFilterIF3IUS3IF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkMaskImageFilterIF3IUS3IF3;
+typedef itk::MaskImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkMaskImageFilterIF3IUS3IF3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass itkMaskImageFilterID2IUC2ID2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskImageFilterID2IUC2ID2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkMaskImageFilterID2IUC2ID2;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkMaskImageFilterID2IUC2ID2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass itkMaskImageFilterID3IUC3ID3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskImageFilterID3IUC3ID3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkMaskImageFilterID3IUC3ID3;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkMaskImageFilterID3IUC3ID3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass itkMaskImageFilterID2IUL2ID2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskImageFilterID2IUL2ID2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkMaskImageFilterID2IUL2ID2;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkMaskImageFilterID2IUL2ID2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass itkMaskImageFilterID3IUL3ID3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskImageFilterID3IUL3ID3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkMaskImageFilterID3IUL3ID3;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkMaskImageFilterID3IUL3ID3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass itkMaskImageFilterID2IUS2ID2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskImageFilterID2IUS2ID2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkMaskImageFilterID2IUS2ID2;
+typedef itk::MaskImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkMaskImageFilterID2IUS2ID2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass itkMaskImageFilterID3IUS3ID3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskImageFilterID3IUS3ID3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkMaskImageFilterID3IUS3ID3;
+typedef itk::MaskImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkMaskImageFilterID3IUS3ID3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskImageFilterICF2IUC2ICF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskImageFilterICF2IUC2ICF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > > itkMaskImageFilterICF2IUC2ICF2;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskImageFilterICF2IUC2ICF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskImageFilterICF3IUC3ICF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskImageFilterICF3IUC3ICF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > > itkMaskImageFilterICF3IUC3ICF3;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskImageFilterICF3IUC3ICF3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskImageFilterICF2IUL2ICF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskImageFilterICF2IUL2ICF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > > itkMaskImageFilterICF2IUL2ICF2;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskImageFilterICF2IUL2ICF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskImageFilterICF3IUL3ICF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskImageFilterICF3IUL3ICF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > > itkMaskImageFilterICF3IUL3ICF3;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskImageFilterICF3IUL3ICF3_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskImageFilterICF2IUS2ICF2_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskImageFilterICF2IUS2ICF2_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > > itkMaskImageFilterICF2IUS2ICF2;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskImageFilterICF2IUS2ICF2_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskImageFilterICF3IUS3ICF3_Superclass;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskImageFilterICF3IUS3ICF3_Superclass_Pointer;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > > itkMaskImageFilterICF3IUS3ICF3;
+typedef itk::MaskImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskImageFilterICF3IUS3ICF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBUS2IUC2IRGBUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS2IUC2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBUS2IUC2IRGBUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBUS2IUC2IRGBUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBUS3IUC3IRGBUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS3IUC3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBUS3IUC3IRGBUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBUS3IUC3IRGBUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBUS2IUL2IRGBUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS2IUL2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBUS2IUL2IRGBUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBUS2IUL2IRGBUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBUS3IUL3IRGBUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS3IUL3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBUS3IUL3IRGBUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBUS3IUL3IRGBUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBUS2IUS2IRGBUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS2IUS2IRGBUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBUS2IUS2IRGBUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBUS2IUS2IRGBUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBUS3IUS3IRGBUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBUS3IUS3IRGBUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBUS3IUS3IRGBUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBUS3IUS3IRGBUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBAUS2IUC2IRGBAUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS2IUC2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBAUS2IUC2IRGBAUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBAUS2IUC2IRGBAUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBAUS3IUC3IRGBAUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS3IUC3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBAUS3IUC3IRGBAUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBAUS3IUC3IRGBAUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBAUS2IUL2IRGBAUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS2IUL2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBAUS2IUL2IRGBAUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBAUS2IUL2IRGBAUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBAUS3IUL3IRGBAUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS3IUL3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBAUS3IUL3IRGBAUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBAUS3IUL3IRGBAUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass itkMaskNegatedImageFilterIRGBAUS2IUS2IRGBAUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS2IUS2IRGBAUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkMaskNegatedImageFilterIRGBAUS2IUS2IRGBAUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkMaskNegatedImageFilterIRGBAUS2IUS2IRGBAUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass itkMaskNegatedImageFilterIRGBAUS3IUS3IRGBAUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIRGBAUS3IUS3IRGBAUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkMaskNegatedImageFilterIRGBAUS3IUS3IRGBAUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkMaskNegatedImageFilterIRGBAUS3IUS3IRGBAUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterIVF22IUC2IVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF22IUC2IVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskNegatedImageFilterIVF22IUC2IVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterIVF22IUC2IVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterIVF33IUC3IVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF33IUC3IVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskNegatedImageFilterIVF33IUC3IVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterIVF33IUC3IVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterIVF22IUL2IVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF22IUL2IVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskNegatedImageFilterIVF22IUL2IVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterIVF22IUL2IVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterIVF33IUL3IVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF33IUL3IVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskNegatedImageFilterIVF33IUL3IVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterIVF33IUL3IVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterIVF22IUS2IVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF22IUS2IVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkMaskNegatedImageFilterIVF22IUS2IVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterIVF22IUS2IVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterIVF33IUS3IVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIVF33IUS3IVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkMaskNegatedImageFilterIVF33IUS3IVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterIVF33IUS3IVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterICVF22IUC2ICVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF22IUC2ICVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskNegatedImageFilterICVF22IUC2ICVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned char,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterICVF22IUC2ICVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterICVF33IUC3ICVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF33IUC3ICVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskNegatedImageFilterICVF33IUC3ICVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned char,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterICVF33IUC3ICVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterICVF22IUL2ICVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF22IUL2ICVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskNegatedImageFilterICVF22IUL2ICVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned long,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterICVF22IUL2ICVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterICVF33IUL3ICVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF33IUL3ICVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskNegatedImageFilterICVF33IUL3ICVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned long,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterICVF33IUL3ICVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass itkMaskNegatedImageFilterICVF22IUS2ICVF22_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF22IUS2ICVF22_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkMaskNegatedImageFilterICVF22IUS2ICVF22;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< unsigned short,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkMaskNegatedImageFilterICVF22IUS2ICVF22_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass itkMaskNegatedImageFilterICVF33IUS3ICVF33_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICVF33IUS3ICVF33_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkMaskNegatedImageFilterICVF33IUS3ICVF33;
+typedef itk::MaskNegatedImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< unsigned short,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkMaskNegatedImageFilterICVF33IUS3ICVF33_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskNegatedImageFilterIUC2IUC2IUC2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC2IUC2IUC2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkMaskNegatedImageFilterIUC2IUC2IUC2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskNegatedImageFilterIUC2IUC2IUC2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskNegatedImageFilterIUC3IUC3IUC3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC3IUC3IUC3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkMaskNegatedImageFilterIUC3IUC3IUC3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskNegatedImageFilterIUC3IUC3IUC3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskNegatedImageFilterIUC2IUL2IUC2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC2IUL2IUC2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkMaskNegatedImageFilterIUC2IUL2IUC2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskNegatedImageFilterIUC2IUL2IUC2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskNegatedImageFilterIUC3IUL3IUC3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC3IUL3IUC3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkMaskNegatedImageFilterIUC3IUL3IUC3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskNegatedImageFilterIUC3IUL3IUC3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass itkMaskNegatedImageFilterIUC2IUS2IUC2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC2IUS2IUC2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkMaskNegatedImageFilterIUC2IUS2IUC2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkMaskNegatedImageFilterIUC2IUS2IUC2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass itkMaskNegatedImageFilterIUC3IUS3IUC3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUC3IUS3IUC3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkMaskNegatedImageFilterIUC3IUS3IUC3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkMaskNegatedImageFilterIUC3IUS3IUC3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskNegatedImageFilterIUL2IUC2IUL2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL2IUC2IUL2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > > itkMaskNegatedImageFilterIUL2IUC2IUL2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskNegatedImageFilterIUL2IUC2IUL2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskNegatedImageFilterIUL3IUC3IUL3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL3IUC3IUL3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > > itkMaskNegatedImageFilterIUL3IUC3IUL3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskNegatedImageFilterIUL3IUC3IUL3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskNegatedImageFilterIUL2IUL2IUL2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL2IUL2IUL2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkMaskNegatedImageFilterIUL2IUL2IUL2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskNegatedImageFilterIUL2IUL2IUL2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskNegatedImageFilterIUL3IUL3IUL3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL3IUL3IUL3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkMaskNegatedImageFilterIUL3IUL3IUL3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskNegatedImageFilterIUL3IUL3IUL3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass itkMaskNegatedImageFilterIUL2IUS2IUL2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL2IUS2IUL2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > > itkMaskNegatedImageFilterIUL2IUS2IUL2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Pointer itkMaskNegatedImageFilterIUL2IUS2IUL2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass itkMaskNegatedImageFilterIUL3IUS3IUL3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUL3IUS3IUL3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > > itkMaskNegatedImageFilterIUL3IUS3IUL3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Pointer itkMaskNegatedImageFilterIUL3IUS3IUL3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskNegatedImageFilterIUS2IUC2IUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS2IUC2IUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > > itkMaskNegatedImageFilterIUS2IUC2IUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskNegatedImageFilterIUS2IUC2IUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskNegatedImageFilterIUS3IUC3IUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS3IUC3IUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > > itkMaskNegatedImageFilterIUS3IUC3IUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskNegatedImageFilterIUS3IUC3IUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskNegatedImageFilterIUS2IUL2IUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS2IUL2IUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > > itkMaskNegatedImageFilterIUS2IUL2IUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskNegatedImageFilterIUS2IUL2IUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskNegatedImageFilterIUS3IUL3IUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS3IUL3IUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > > itkMaskNegatedImageFilterIUS3IUL3IUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskNegatedImageFilterIUS3IUL3IUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkMaskNegatedImageFilterIUS2IUS2IUS2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS2IUS2IUS2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkMaskNegatedImageFilterIUS2IUS2IUS2;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkMaskNegatedImageFilterIUS2IUS2IUS2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkMaskNegatedImageFilterIUS3IUS3IUS3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIUS3IUS3IUS3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkMaskNegatedImageFilterIUS3IUS3IUS3;
+typedef itk::MaskNegatedImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkMaskNegatedImageFilterIUS3IUS3IUS3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass itkMaskNegatedImageFilterIF2IUC2IF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIF2IUC2IF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkMaskNegatedImageFilterIF2IUC2IF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkMaskNegatedImageFilterIF2IUC2IF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass itkMaskNegatedImageFilterIF3IUC3IF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIF3IUC3IF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkMaskNegatedImageFilterIF3IUC3IF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkMaskNegatedImageFilterIF3IUC3IF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass itkMaskNegatedImageFilterIF2IUL2IF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIF2IUL2IF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkMaskNegatedImageFilterIF2IUL2IF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkMaskNegatedImageFilterIF2IUL2IF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass itkMaskNegatedImageFilterIF3IUL3IF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIF3IUL3IF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkMaskNegatedImageFilterIF3IUL3IF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkMaskNegatedImageFilterIF3IUL3IF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass itkMaskNegatedImageFilterIF2IUS2IF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass::Pointer itkMaskNegatedImageFilterIF2IUS2IF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkMaskNegatedImageFilterIF2IUS2IF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkMaskNegatedImageFilterIF2IUS2IF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass itkMaskNegatedImageFilterIF3IUS3IF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass::Pointer itkMaskNegatedImageFilterIF3IUS3IF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkMaskNegatedImageFilterIF3IUS3IF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkMaskNegatedImageFilterIF3IUS3IF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass itkMaskNegatedImageFilterID2IUC2ID2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskNegatedImageFilterID2IUC2ID2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkMaskNegatedImageFilterID2IUC2ID2;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkMaskNegatedImageFilterID2IUC2ID2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass itkMaskNegatedImageFilterID3IUC3ID3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskNegatedImageFilterID3IUC3ID3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkMaskNegatedImageFilterID3IUC3ID3;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkMaskNegatedImageFilterID3IUC3ID3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass itkMaskNegatedImageFilterID2IUL2ID2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskNegatedImageFilterID2IUL2ID2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkMaskNegatedImageFilterID2IUL2ID2;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkMaskNegatedImageFilterID2IUL2ID2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass itkMaskNegatedImageFilterID3IUL3ID3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskNegatedImageFilterID3IUL3ID3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkMaskNegatedImageFilterID3IUL3ID3;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkMaskNegatedImageFilterID3IUL3ID3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass itkMaskNegatedImageFilterID2IUS2ID2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass::Pointer itkMaskNegatedImageFilterID2IUS2ID2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkMaskNegatedImageFilterID2IUS2ID2;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkMaskNegatedImageFilterID2IUS2ID2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass itkMaskNegatedImageFilterID3IUS3ID3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass::Pointer itkMaskNegatedImageFilterID3IUS3ID3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkMaskNegatedImageFilterID3IUS3ID3;
+typedef itk::MaskNegatedImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkMaskNegatedImageFilterID3IUS3ID3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskNegatedImageFilterICF2IUC2ICF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICF2IUC2ICF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > > itkMaskNegatedImageFilterICF2IUC2ICF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned char,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskNegatedImageFilterICF2IUC2ICF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskNegatedImageFilterICF3IUC3ICF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICF3IUC3ICF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > > itkMaskNegatedImageFilterICF3IUC3ICF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned char,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskNegatedImageFilterICF3IUC3ICF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskNegatedImageFilterICF2IUL2ICF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICF2IUL2ICF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > > itkMaskNegatedImageFilterICF2IUL2ICF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned long,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskNegatedImageFilterICF2IUL2ICF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskNegatedImageFilterICF3IUL3ICF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICF3IUL3ICF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > > itkMaskNegatedImageFilterICF3IUL3ICF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned long,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskNegatedImageFilterICF3IUL3ICF3_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Superclass itkMaskNegatedImageFilterICF2IUS2ICF2_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Superclass::Pointer itkMaskNegatedImageFilterICF2IUS2ICF2_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > > itkMaskNegatedImageFilterICF2IUS2ICF2;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,2 >, itk::Image< unsigned short,2 >, itk::Image< std::complex< float >,2 > >::Pointer itkMaskNegatedImageFilterICF2IUS2ICF2_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Superclass itkMaskNegatedImageFilterICF3IUS3ICF3_Superclass;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Superclass::Pointer itkMaskNegatedImageFilterICF3IUS3ICF3_Superclass_Pointer;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > > itkMaskNegatedImageFilterICF3IUS3ICF3;
+typedef itk::MaskNegatedImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< unsigned short,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkMaskNegatedImageFilterICF3IUS3ICF3_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkNormalizeImageFilterIUC2IUC2;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkNormalizeImageFilterIUC2IUC2_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkNormalizeImageFilterIUC3IUC3;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkNormalizeImageFilterIUC3IUC3_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkNormalizeImageFilterIUL2IUL2;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkNormalizeImageFilterIUL2IUL2_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkNormalizeImageFilterIUL3IUL3;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkNormalizeImageFilterIUL3IUL3_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkNormalizeImageFilterIUS2IUS2;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkNormalizeImageFilterIUS2IUS2_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkNormalizeImageFilterIUS3IUS3;
+typedef itk::NormalizeImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkNormalizeImageFilterIUS3IUS3_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkNormalizeImageFilterIF2IF2;
+typedef itk::NormalizeImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkNormalizeImageFilterIF2IF2_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkNormalizeImageFilterIF3IF3;
+typedef itk::NormalizeImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkNormalizeImageFilterIF3IF3_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkNormalizeImageFilterID2ID2;
+typedef itk::NormalizeImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkNormalizeImageFilterID2ID2_Pointer;
+typedef itk::NormalizeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkNormalizeImageFilterID3ID3;
+typedef itk::NormalizeImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkNormalizeImageFilterID3ID3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkRescaleIntensityImageFilterIUC2IUC2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkRescaleIntensityImageFilterIUC2IUC2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkRescaleIntensityImageFilterIUC2IUC2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkRescaleIntensityImageFilterIUC3IUC3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkRescaleIntensityImageFilterIUC3IUC3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkRescaleIntensityImageFilterIUC3IUC3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass itkRescaleIntensityImageFilterIUC2IUL2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC2IUL2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > > itkRescaleIntensityImageFilterIUC2IUL2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned long,2 > >::Pointer itkRescaleIntensityImageFilterIUC2IUL2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass itkRescaleIntensityImageFilterIUC3IUL3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC3IUL3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > > itkRescaleIntensityImageFilterIUC3IUL3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned long,3 > >::Pointer itkRescaleIntensityImageFilterIUC3IUL3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass itkRescaleIntensityImageFilterIUC2IUS2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC2IUS2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > > itkRescaleIntensityImageFilterIUC2IUS2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned short,2 > >::Pointer itkRescaleIntensityImageFilterIUC2IUS2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass itkRescaleIntensityImageFilterIUC3IUS3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC3IUS3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > > itkRescaleIntensityImageFilterIUC3IUS3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned short,3 > >::Pointer itkRescaleIntensityImageFilterIUC3IUS3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass itkRescaleIntensityImageFilterIUC2IF2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC2IF2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkRescaleIntensityImageFilterIUC2IF2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkRescaleIntensityImageFilterIUC2IF2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass itkRescaleIntensityImageFilterIUC3IF3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC3IF3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkRescaleIntensityImageFilterIUC3IF3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkRescaleIntensityImageFilterIUC3IF3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass itkRescaleIntensityImageFilterIUC2ID2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC2ID2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkRescaleIntensityImageFilterIUC2ID2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkRescaleIntensityImageFilterIUC2ID2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass itkRescaleIntensityImageFilterIUC3ID3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUC3ID3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkRescaleIntensityImageFilterIUC3ID3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkRescaleIntensityImageFilterIUC3ID3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass itkRescaleIntensityImageFilterIUL2IUC2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL2IUC2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > > itkRescaleIntensityImageFilterIUL2IUC2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned char,2 > >::Pointer itkRescaleIntensityImageFilterIUL2IUC2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass itkRescaleIntensityImageFilterIUL3IUC3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL3IUC3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > > itkRescaleIntensityImageFilterIUL3IUC3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned char,3 > >::Pointer itkRescaleIntensityImageFilterIUL3IUC3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkRescaleIntensityImageFilterIUL2IUL2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkRescaleIntensityImageFilterIUL2IUL2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkRescaleIntensityImageFilterIUL2IUL2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkRescaleIntensityImageFilterIUL3IUL3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkRescaleIntensityImageFilterIUL3IUL3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkRescaleIntensityImageFilterIUL3IUL3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass itkRescaleIntensityImageFilterIUL2IUS2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL2IUS2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > > itkRescaleIntensityImageFilterIUL2IUS2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned short,2 > >::Pointer itkRescaleIntensityImageFilterIUL2IUS2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass itkRescaleIntensityImageFilterIUL3IUS3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL3IUS3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > > itkRescaleIntensityImageFilterIUL3IUS3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned short,3 > >::Pointer itkRescaleIntensityImageFilterIUL3IUS3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass itkRescaleIntensityImageFilterIUL2IF2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL2IF2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkRescaleIntensityImageFilterIUL2IF2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkRescaleIntensityImageFilterIUL2IF2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass itkRescaleIntensityImageFilterIUL3IF3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL3IF3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkRescaleIntensityImageFilterIUL3IF3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkRescaleIntensityImageFilterIUL3IF3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass itkRescaleIntensityImageFilterIUL2ID2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL2ID2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkRescaleIntensityImageFilterIUL2ID2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkRescaleIntensityImageFilterIUL2ID2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass itkRescaleIntensityImageFilterIUL3ID3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUL3ID3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkRescaleIntensityImageFilterIUL3ID3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkRescaleIntensityImageFilterIUL3ID3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass itkRescaleIntensityImageFilterIUS2IUC2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS2IUC2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > > itkRescaleIntensityImageFilterIUS2IUC2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned char,2 > >::Pointer itkRescaleIntensityImageFilterIUS2IUC2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass itkRescaleIntensityImageFilterIUS3IUC3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS3IUC3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > > itkRescaleIntensityImageFilterIUS3IUC3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned char,3 > >::Pointer itkRescaleIntensityImageFilterIUS3IUC3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass itkRescaleIntensityImageFilterIUS2IUL2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS2IUL2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > > itkRescaleIntensityImageFilterIUS2IUL2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned long,2 > >::Pointer itkRescaleIntensityImageFilterIUS2IUL2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass itkRescaleIntensityImageFilterIUS3IUL3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS3IUL3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > > itkRescaleIntensityImageFilterIUS3IUL3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned long,3 > >::Pointer itkRescaleIntensityImageFilterIUS3IUL3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkRescaleIntensityImageFilterIUS2IUS2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkRescaleIntensityImageFilterIUS2IUS2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkRescaleIntensityImageFilterIUS2IUS2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkRescaleIntensityImageFilterIUS3IUS3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkRescaleIntensityImageFilterIUS3IUS3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkRescaleIntensityImageFilterIUS3IUS3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass itkRescaleIntensityImageFilterIUS2IF2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS2IF2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkRescaleIntensityImageFilterIUS2IF2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkRescaleIntensityImageFilterIUS2IF2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass itkRescaleIntensityImageFilterIUS3IF3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS3IF3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkRescaleIntensityImageFilterIUS3IF3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkRescaleIntensityImageFilterIUS3IF3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass itkRescaleIntensityImageFilterIUS2ID2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS2ID2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkRescaleIntensityImageFilterIUS2ID2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkRescaleIntensityImageFilterIUS2ID2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass itkRescaleIntensityImageFilterIUS3ID3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIUS3ID3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkRescaleIntensityImageFilterIUS3ID3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkRescaleIntensityImageFilterIUS3ID3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Superclass itkRescaleIntensityImageFilterIF2IUC2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF2IUC2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > > itkRescaleIntensityImageFilterIF2IUC2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned char,2 > >::Pointer itkRescaleIntensityImageFilterIF2IUC2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Superclass itkRescaleIntensityImageFilterIF3IUC3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF3IUC3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > > itkRescaleIntensityImageFilterIF3IUC3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned char,3 > >::Pointer itkRescaleIntensityImageFilterIF3IUC3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Superclass itkRescaleIntensityImageFilterIF2IUL2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF2IUL2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > > itkRescaleIntensityImageFilterIF2IUL2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned long,2 > >::Pointer itkRescaleIntensityImageFilterIF2IUL2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Superclass itkRescaleIntensityImageFilterIF3IUL3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF3IUL3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > > itkRescaleIntensityImageFilterIF3IUL3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned long,3 > >::Pointer itkRescaleIntensityImageFilterIF3IUL3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Superclass itkRescaleIntensityImageFilterIF2IUS2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF2IUS2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > > itkRescaleIntensityImageFilterIF2IUS2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< unsigned short,2 > >::Pointer itkRescaleIntensityImageFilterIF2IUS2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Superclass itkRescaleIntensityImageFilterIF3IUS3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF3IUS3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > > itkRescaleIntensityImageFilterIF3IUS3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< unsigned short,3 > >::Pointer itkRescaleIntensityImageFilterIF3IUS3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkRescaleIntensityImageFilterIF2IF2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkRescaleIntensityImageFilterIF2IF2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkRescaleIntensityImageFilterIF2IF2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkRescaleIntensityImageFilterIF3IF3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkRescaleIntensityImageFilterIF3IF3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkRescaleIntensityImageFilterIF3IF3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Superclass itkRescaleIntensityImageFilterIF2ID2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF2ID2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< double,2 > > itkRescaleIntensityImageFilterIF2ID2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,2 >, itk::Image< double,2 > >::Pointer itkRescaleIntensityImageFilterIF2ID2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Superclass itkRescaleIntensityImageFilterIF3ID3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterIF3ID3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< double,3 > > itkRescaleIntensityImageFilterIF3ID3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< float,3 >, itk::Image< double,3 > >::Pointer itkRescaleIntensityImageFilterIF3ID3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Superclass itkRescaleIntensityImageFilterID2IUC2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterID2IUC2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > > itkRescaleIntensityImageFilterID2IUC2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned char,2 > >::Pointer itkRescaleIntensityImageFilterID2IUC2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Superclass itkRescaleIntensityImageFilterID3IUC3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterID3IUC3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > > itkRescaleIntensityImageFilterID3IUC3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned char,3 > >::Pointer itkRescaleIntensityImageFilterID3IUC3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Superclass itkRescaleIntensityImageFilterID2IUL2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterID2IUL2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > > itkRescaleIntensityImageFilterID2IUL2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned long,2 > >::Pointer itkRescaleIntensityImageFilterID2IUL2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Superclass itkRescaleIntensityImageFilterID3IUL3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterID3IUL3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > > itkRescaleIntensityImageFilterID3IUL3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned long,3 > >::Pointer itkRescaleIntensityImageFilterID3IUL3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Superclass itkRescaleIntensityImageFilterID2IUS2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterID2IUS2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > > itkRescaleIntensityImageFilterID2IUS2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< unsigned short,2 > >::Pointer itkRescaleIntensityImageFilterID2IUS2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Superclass itkRescaleIntensityImageFilterID3IUS3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterID3IUS3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > > itkRescaleIntensityImageFilterID3IUS3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< unsigned short,3 > >::Pointer itkRescaleIntensityImageFilterID3IUS3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Superclass itkRescaleIntensityImageFilterID2IF2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterID2IF2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< float,2 > > itkRescaleIntensityImageFilterID2IF2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< float,2 > >::Pointer itkRescaleIntensityImageFilterID2IF2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Superclass itkRescaleIntensityImageFilterID3IF3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterID3IF3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< float,3 > > itkRescaleIntensityImageFilterID3IF3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< float,3 > >::Pointer itkRescaleIntensityImageFilterID3IF3_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkRescaleIntensityImageFilterID2ID2_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkRescaleIntensityImageFilterID2ID2_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkRescaleIntensityImageFilterID2ID2;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkRescaleIntensityImageFilterID2ID2_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkRescaleIntensityImageFilterID3ID3_Superclass;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkRescaleIntensityImageFilterID3ID3_Superclass_Pointer;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkRescaleIntensityImageFilterID3ID3;
+typedef itk::RescaleIntensityImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkRescaleIntensityImageFilterID3ID3_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkShiftScaleImageFilterIUC2IUC2;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkShiftScaleImageFilterIUC2IUC2_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkShiftScaleImageFilterIUC3IUC3;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkShiftScaleImageFilterIUC3IUC3_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkShiftScaleImageFilterIUL2IUL2;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkShiftScaleImageFilterIUL2IUL2_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkShiftScaleImageFilterIUL3IUL3;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkShiftScaleImageFilterIUL3IUL3_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkShiftScaleImageFilterIUS2IUS2;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkShiftScaleImageFilterIUS2IUS2_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkShiftScaleImageFilterIUS3IUS3;
+typedef itk::ShiftScaleImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkShiftScaleImageFilterIUS3IUS3_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkShiftScaleImageFilterIF2IF2;
+typedef itk::ShiftScaleImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkShiftScaleImageFilterIF2IF2_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkShiftScaleImageFilterIF3IF3;
+typedef itk::ShiftScaleImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkShiftScaleImageFilterIF3IF3_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkShiftScaleImageFilterID2ID2;
+typedef itk::ShiftScaleImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkShiftScaleImageFilterID2ID2_Pointer;
+typedef itk::ShiftScaleImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkShiftScaleImageFilterID3ID3;
+typedef itk::ShiftScaleImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkShiftScaleImageFilterID3ID3_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass itkSigmoidImageFilterIUC2IUC2_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Superclass::Pointer itkSigmoidImageFilterIUC2IUC2_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkSigmoidImageFilterIUC2IUC2;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkSigmoidImageFilterIUC2IUC2_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass itkSigmoidImageFilterIUC3IUC3_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Superclass::Pointer itkSigmoidImageFilterIUC3IUC3_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkSigmoidImageFilterIUC3IUC3;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkSigmoidImageFilterIUC3IUC3_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass itkSigmoidImageFilterIUL2IUL2_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Superclass::Pointer itkSigmoidImageFilterIUL2IUL2_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkSigmoidImageFilterIUL2IUL2;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkSigmoidImageFilterIUL2IUL2_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass itkSigmoidImageFilterIUL3IUL3_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Superclass::Pointer itkSigmoidImageFilterIUL3IUL3_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkSigmoidImageFilterIUL3IUL3;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkSigmoidImageFilterIUL3IUL3_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass itkSigmoidImageFilterIUS2IUS2_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Superclass::Pointer itkSigmoidImageFilterIUS2IUS2_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkSigmoidImageFilterIUS2IUS2;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkSigmoidImageFilterIUS2IUS2_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass itkSigmoidImageFilterIUS3IUS3_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Superclass::Pointer itkSigmoidImageFilterIUS3IUS3_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkSigmoidImageFilterIUS3IUS3;
+typedef itk::SigmoidImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkSigmoidImageFilterIUS3IUS3_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass itkSigmoidImageFilterIF2IF2_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Superclass::Pointer itkSigmoidImageFilterIF2IF2_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSigmoidImageFilterIF2IF2;
+typedef itk::SigmoidImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSigmoidImageFilterIF2IF2_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass itkSigmoidImageFilterIF3IF3_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Superclass::Pointer itkSigmoidImageFilterIF3IF3_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSigmoidImageFilterIF3IF3;
+typedef itk::SigmoidImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSigmoidImageFilterIF3IF3_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass itkSigmoidImageFilterID2ID2_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Superclass::Pointer itkSigmoidImageFilterID2ID2_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSigmoidImageFilterID2ID2;
+typedef itk::SigmoidImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSigmoidImageFilterID2ID2_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass itkSigmoidImageFilterID3ID3_Superclass;
+typedef itk::SigmoidImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Superclass::Pointer itkSigmoidImageFilterID3ID3_Superclass_Pointer;
+typedef itk::SigmoidImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSigmoidImageFilterID3ID3;
+typedef itk::SigmoidImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSigmoidImageFilterID3ID3_Pointer;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass itkVectorRescaleIntensityImageFilterIVF22IVF22_Superclass;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Superclass::Pointer itkVectorRescaleIntensityImageFilterIVF22IVF22_Superclass_Pointer;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkVectorRescaleIntensityImageFilterIVF22IVF22;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkVectorRescaleIntensityImageFilterIVF22IVF22_Pointer;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass itkVectorRescaleIntensityImageFilterIVF33IVF33_Superclass;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Superclass::Pointer itkVectorRescaleIntensityImageFilterIVF33IVF33_Superclass_Pointer;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkVectorRescaleIntensityImageFilterIVF33IVF33;
+typedef itk::VectorRescaleIntensityImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkVectorRescaleIntensityImageFilterIVF33IVF33_Pointer;
+

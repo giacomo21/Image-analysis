@@ -1,0 +1,8 @@
+{itk::LaplacianImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkLaplacianImageFilterID2ID2} {itkLaplacianImageFilter}
+{itk::SmartPointer<itk::LaplacianImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkLaplacianImageFilterID2ID2_Pointer} {itkLaplacianImageFilter}
+{itk::LaplacianImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkLaplacianImageFilterID3ID3} {itkLaplacianImageFilter}
+{itk::SmartPointer<itk::LaplacianImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkLaplacianImageFilterID3ID3_Pointer} {itkLaplacianImageFilter}
+{itk::LaplacianImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkLaplacianImageFilterIF2IF2} {itkLaplacianImageFilter}
+{itk::SmartPointer<itk::LaplacianImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkLaplacianImageFilterIF2IF2_Pointer} {itkLaplacianImageFilter}
+{itk::LaplacianImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkLaplacianImageFilterIF3IF3} {itkLaplacianImageFilter}
+{itk::SmartPointer<itk::LaplacianImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkLaplacianImageFilterIF3IF3_Pointer} {itkLaplacianImageFilter}

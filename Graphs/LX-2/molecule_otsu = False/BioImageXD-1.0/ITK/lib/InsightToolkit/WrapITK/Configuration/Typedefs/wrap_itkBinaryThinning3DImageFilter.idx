@@ -1,0 +1,6 @@
+{itk::BinaryThinning3DImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBinaryThinning3DImageFilterIUC3IUC3} {itkBinaryThinning3DImageFilter}
+{itk::SmartPointer<itk::BinaryThinning3DImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBinaryThinning3DImageFilterIUC3IUC3_Pointer} {itkBinaryThinning3DImageFilter}
+{itk::BinaryThinning3DImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBinaryThinning3DImageFilterIUL3IUL3} {itkBinaryThinning3DImageFilter}
+{itk::SmartPointer<itk::BinaryThinning3DImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBinaryThinning3DImageFilterIUL3IUL3_Pointer} {itkBinaryThinning3DImageFilter}
+{itk::BinaryThinning3DImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBinaryThinning3DImageFilterIUS3IUS3} {itkBinaryThinning3DImageFilter}
+{itk::SmartPointer<itk::BinaryThinning3DImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBinaryThinning3DImageFilterIUS3IUS3_Pointer} {itkBinaryThinning3DImageFilter}

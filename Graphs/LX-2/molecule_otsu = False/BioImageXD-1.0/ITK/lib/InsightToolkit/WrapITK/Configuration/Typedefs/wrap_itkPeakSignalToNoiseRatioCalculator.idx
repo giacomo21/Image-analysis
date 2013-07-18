@@ -1,0 +1,20 @@
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<double, 2u> >} {itkPeakSignalToNoiseRatioCalculatorID2} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<double, 2u> > >} {itkPeakSignalToNoiseRatioCalculatorID2_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<double, 3u> >} {itkPeakSignalToNoiseRatioCalculatorID3} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<double, 3u> > >} {itkPeakSignalToNoiseRatioCalculatorID3_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<float, 2u> >} {itkPeakSignalToNoiseRatioCalculatorIF2} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<float, 2u> > >} {itkPeakSignalToNoiseRatioCalculatorIF2_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<float, 3u> >} {itkPeakSignalToNoiseRatioCalculatorIF3} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<float, 3u> > >} {itkPeakSignalToNoiseRatioCalculatorIF3_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<unsigned char, 2u> >} {itkPeakSignalToNoiseRatioCalculatorIUC2} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<unsigned char, 2u> > >} {itkPeakSignalToNoiseRatioCalculatorIUC2_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<unsigned char, 3u> >} {itkPeakSignalToNoiseRatioCalculatorIUC3} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<unsigned char, 3u> > >} {itkPeakSignalToNoiseRatioCalculatorIUC3_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<long unsigned int, 2u> >} {itkPeakSignalToNoiseRatioCalculatorIUL2} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<long unsigned int, 2u> > >} {itkPeakSignalToNoiseRatioCalculatorIUL2_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<long unsigned int, 3u> >} {itkPeakSignalToNoiseRatioCalculatorIUL3} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<long unsigned int, 3u> > >} {itkPeakSignalToNoiseRatioCalculatorIUL3_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<short unsigned int, 2u> >} {itkPeakSignalToNoiseRatioCalculatorIUS2} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<short unsigned int, 2u> > >} {itkPeakSignalToNoiseRatioCalculatorIUS2_Pointer} {itkPeakSignalToNoiseRatioCalculator}
+{itk::PeakSignalToNoiseRatioCalculator<itk::Image<short unsigned int, 3u> >} {itkPeakSignalToNoiseRatioCalculatorIUS3} {itkPeakSignalToNoiseRatioCalculator}
+{itk::SmartPointer<itk::PeakSignalToNoiseRatioCalculator<itk::Image<short unsigned int, 3u> > >} {itkPeakSignalToNoiseRatioCalculatorIUS3_Pointer} {itkPeakSignalToNoiseRatioCalculator}

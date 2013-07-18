@@ -1,0 +1,2 @@
+{itk::LabelObjectLine<2u>} {itkLabelObjectLine2} {itkLabelObjectLine}
+{itk::LabelObjectLine<3u>} {itkLabelObjectLine3} {itkLabelObjectLine}

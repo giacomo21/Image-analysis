@@ -1,0 +1,8 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkHessian3DToVesselnessMeasureImageFilterD)
+DECLARE_REF_COUNT_CLASS(itkHessian3DToVesselnessMeasureImageFilterF)
+DECLARE_REF_COUNT_CLASS(itkHessian3DToVesselnessMeasureImageFilterUS)
+DECLARE_REF_COUNT_CLASS(itkHessian3DToVesselnessMeasureImageFilterUL)
+DECLARE_REF_COUNT_CLASS(itkHessian3DToVesselnessMeasureImageFilterUC)
+

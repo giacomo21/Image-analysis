@@ -1,0 +1,2 @@
+{itk::TubeSpatialObjectPoint<2u>} {itkTubeSpatialObjectPoint2} {itkTubeSpatialObjectPoint}
+{itk::TubeSpatialObjectPoint<3u>} {itkTubeSpatialObjectPoint3} {itkTubeSpatialObjectPoint}

@@ -1,0 +1,2 @@
+{itk::SurfaceSpatialObjectPoint<2u>} {itkSurfaceSpatialObjectPoint2} {itkSurfaceSpatialObjectPoint}
+{itk::SurfaceSpatialObjectPoint<3u>} {itkSurfaceSpatialObjectPoint3} {itkSurfaceSpatialObjectPoint}

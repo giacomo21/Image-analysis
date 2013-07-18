@@ -1,0 +1,2 @@
+{itk::Rigid3DPerspectiveTransform<double>} {itkRigid3DPerspectiveTransformD} {ITKRigidPerspectiveTransform}
+{itk::SmartPointer<itk::Rigid3DPerspectiveTransform<double> >} {itkRigid3DPerspectiveTransformD_Pointer} {ITKRigidPerspectiveTransform}

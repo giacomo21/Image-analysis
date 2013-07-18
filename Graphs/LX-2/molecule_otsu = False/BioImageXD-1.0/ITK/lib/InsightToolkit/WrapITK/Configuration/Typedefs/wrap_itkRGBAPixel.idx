@@ -1,0 +1,3 @@
+{itk::RGBAPixel<float>} {itkRGBAPixelF} {itkRGBAPixel}
+{itk::RGBAPixel<unsigned char>} {itkRGBAPixelUC} {itkRGBAPixel}
+{itk::RGBAPixel<short unsigned int>} {itkRGBAPixelUS} {itkRGBAPixel}

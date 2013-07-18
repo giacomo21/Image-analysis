@@ -1,0 +1,4 @@
+{itk::ParametricPath<2u>} {itkParametricPath2} {itkParametricPath}
+{itk::SmartPointer<itk::ParametricPath<2u> >} {itkParametricPath2_Pointer} {itkParametricPath}
+{itk::ParametricPath<3u>} {itkParametricPath3} {itkParametricPath}
+{itk::SmartPointer<itk::ParametricPath<3u> >} {itkParametricPath3_Pointer} {itkParametricPath}

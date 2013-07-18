@@ -1,0 +1,40 @@
+{itk::SmoothColorFieldImageFilter<itk::Image<double, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterID2ICVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<double, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterID2ICVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<double, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterID2IVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<double, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterID2IVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<double, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterID3ICVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<double, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterID3ICVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<double, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterID3IVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<double, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterID3IVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<float, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIF2ICVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<float, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIF2ICVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<float, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIF2IVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<float, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIF2IVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<float, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIF3ICVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<float, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIF3ICVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<float, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIF3IVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<float, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIF3IVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUC2ICVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUC2ICVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUC2IVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUC2IVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUC3ICVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUC3ICVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUC3IVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<unsigned char, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUC3IVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUL2ICVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUL2ICVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUL2IVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUL2IVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUL3ICVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUL3ICVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUL3IVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUL3IVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUS2ICVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUS2ICVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkSmoothColorFieldImageFilterIUS2IVF22} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkSmoothColorFieldImageFilterIUS2IVF22_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUS3ICVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUS3ICVF33_Pointer} {itkSmoothColorFieldImageFilter}
+{itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkSmoothColorFieldImageFilterIUS3IVF33} {itkSmoothColorFieldImageFilter}
+{itk::SmartPointer<itk::SmoothColorFieldImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkSmoothColorFieldImageFilterIUS3IVF33_Pointer} {itkSmoothColorFieldImageFilter}

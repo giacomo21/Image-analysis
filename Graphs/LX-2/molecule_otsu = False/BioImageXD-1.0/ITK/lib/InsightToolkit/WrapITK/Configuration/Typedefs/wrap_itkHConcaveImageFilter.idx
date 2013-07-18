@@ -1,0 +1,20 @@
+{itk::HConcaveImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkHConcaveImageFilterID2ID2} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkHConcaveImageFilterID2ID2_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkHConcaveImageFilterID3ID3} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkHConcaveImageFilterID3ID3_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkHConcaveImageFilterIF2IF2} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkHConcaveImageFilterIF2IF2_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkHConcaveImageFilterIF3IF3} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkHConcaveImageFilterIF3IF3_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkHConcaveImageFilterIUC2IUC2} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkHConcaveImageFilterIUC2IUC2_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkHConcaveImageFilterIUC3IUC3} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkHConcaveImageFilterIUC3IUC3_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkHConcaveImageFilterIUL2IUL2} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkHConcaveImageFilterIUL2IUL2_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkHConcaveImageFilterIUL3IUL3} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkHConcaveImageFilterIUL3IUL3_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkHConcaveImageFilterIUS2IUS2} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkHConcaveImageFilterIUS2IUS2_Pointer} {itkHConcaveImageFilter}
+{itk::HConcaveImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkHConcaveImageFilterIUS3IUS3} {itkHConcaveImageFilter}
+{itk::SmartPointer<itk::HConcaveImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkHConcaveImageFilterIUS3IUS3_Pointer} {itkHConcaveImageFilter}

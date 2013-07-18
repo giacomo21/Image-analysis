@@ -1,0 +1,30 @@
+{itk::BandNode<itk::Index<2u>,double>} {itkBandNodeI2D} {itkNarrowBand}
+{itk::BandNode<itk::Index<2u>,float>} {itkBandNodeI2F} {itkNarrowBand}
+{itk::BandNode<itk::Index<2u>,unsigned char>} {itkBandNodeI2UC} {itkNarrowBand}
+{itk::BandNode<itk::Index<2u>,long unsigned int>} {itkBandNodeI2UL} {itkNarrowBand}
+{itk::BandNode<itk::Index<2u>,short unsigned int>} {itkBandNodeI2US} {itkNarrowBand}
+{itk::BandNode<itk::Index<3u>,double>} {itkBandNodeI3D} {itkNarrowBand}
+{itk::BandNode<itk::Index<3u>,float>} {itkBandNodeI3F} {itkNarrowBand}
+{itk::BandNode<itk::Index<3u>,unsigned char>} {itkBandNodeI3UC} {itkNarrowBand}
+{itk::BandNode<itk::Index<3u>,long unsigned int>} {itkBandNodeI3UL} {itkNarrowBand}
+{itk::BandNode<itk::Index<3u>,short unsigned int>} {itkBandNodeI3US} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<2u>, double> >} {itkNarrowBandBNI2D} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<2u>, double> > >} {itkNarrowBandBNI2D_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<2u>, float> >} {itkNarrowBandBNI2F} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<2u>, float> > >} {itkNarrowBandBNI2F_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<2u>, unsigned char> >} {itkNarrowBandBNI2UC} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<2u>, unsigned char> > >} {itkNarrowBandBNI2UC_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<2u>, long unsigned int> >} {itkNarrowBandBNI2UL} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<2u>, long unsigned int> > >} {itkNarrowBandBNI2UL_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<2u>, short unsigned int> >} {itkNarrowBandBNI2US} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<2u>, short unsigned int> > >} {itkNarrowBandBNI2US_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<3u>, double> >} {itkNarrowBandBNI3D} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<3u>, double> > >} {itkNarrowBandBNI3D_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<3u>, float> >} {itkNarrowBandBNI3F} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<3u>, float> > >} {itkNarrowBandBNI3F_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<3u>, unsigned char> >} {itkNarrowBandBNI3UC} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<3u>, unsigned char> > >} {itkNarrowBandBNI3UC_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<3u>, long unsigned int> >} {itkNarrowBandBNI3UL} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<3u>, long unsigned int> > >} {itkNarrowBandBNI3UL_Pointer} {itkNarrowBand}
+{itk::NarrowBand<itk::BandNode<itk::Index<3u>, short unsigned int> >} {itkNarrowBandBNI3US} {itkNarrowBand}
+{itk::SmartPointer<itk::NarrowBand<itk::BandNode<itk::Index<3u>, short unsigned int> > >} {itkNarrowBandBNI3US_Pointer} {itkNarrowBand}

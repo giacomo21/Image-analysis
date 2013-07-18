@@ -1,0 +1,40 @@
+{itk::SquareImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSquareImageFilterID2ID2} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSquareImageFilterID2ID2_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Function::Square<double, double> >} {itkSquareImageFilterID2ID2_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Function::Square<double, double> > >} {itkSquareImageFilterID2ID2_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSquareImageFilterID3ID3} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSquareImageFilterID3ID3_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Function::Square<double, double> >} {itkSquareImageFilterID3ID3_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Function::Square<double, double> > >} {itkSquareImageFilterID3ID3_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSquareImageFilterIF2IF2} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSquareImageFilterIF2IF2_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Function::Square<float, float> >} {itkSquareImageFilterIF2IF2_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Function::Square<float, float> > >} {itkSquareImageFilterIF2IF2_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSquareImageFilterIF3IF3} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSquareImageFilterIF3IF3_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Function::Square<float, float> >} {itkSquareImageFilterIF3IF3_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Function::Square<float, float> > >} {itkSquareImageFilterIF3IF3_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkSquareImageFilterIUC2IUC2} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkSquareImageFilterIUC2IUC2_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Function::Square<unsigned char, unsigned char> >} {itkSquareImageFilterIUC2IUC2_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Function::Square<unsigned char, unsigned char> > >} {itkSquareImageFilterIUC2IUC2_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkSquareImageFilterIUC3IUC3} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkSquareImageFilterIUC3IUC3_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Function::Square<unsigned char, unsigned char> >} {itkSquareImageFilterIUC3IUC3_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Function::Square<unsigned char, unsigned char> > >} {itkSquareImageFilterIUC3IUC3_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkSquareImageFilterIUL2IUL2} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkSquareImageFilterIUL2IUL2_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Function::Square<long unsigned int, long unsigned int> >} {itkSquareImageFilterIUL2IUL2_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Function::Square<long unsigned int, long unsigned int> > >} {itkSquareImageFilterIUL2IUL2_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkSquareImageFilterIUL3IUL3} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkSquareImageFilterIUL3IUL3_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Function::Square<long unsigned int, long unsigned int> >} {itkSquareImageFilterIUL3IUL3_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Function::Square<long unsigned int, long unsigned int> > >} {itkSquareImageFilterIUL3IUL3_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkSquareImageFilterIUS2IUS2} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkSquareImageFilterIUS2IUS2_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Function::Square<short unsigned int, short unsigned int> >} {itkSquareImageFilterIUS2IUS2_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Function::Square<short unsigned int, short unsigned int> > >} {itkSquareImageFilterIUS2IUS2_Superclass_Pointer} {itkSquareImageFilter}
+{itk::SquareImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkSquareImageFilterIUS3IUS3} {itkSquareImageFilter}
+{itk::SmartPointer<itk::SquareImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkSquareImageFilterIUS3IUS3_Pointer} {itkSquareImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Function::Square<short unsigned int, short unsigned int> >} {itkSquareImageFilterIUS3IUS3_Superclass} {itkSquareImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Function::Square<short unsigned int, short unsigned int> > >} {itkSquareImageFilterIUS3IUS3_Superclass_Pointer} {itkSquareImageFilter}

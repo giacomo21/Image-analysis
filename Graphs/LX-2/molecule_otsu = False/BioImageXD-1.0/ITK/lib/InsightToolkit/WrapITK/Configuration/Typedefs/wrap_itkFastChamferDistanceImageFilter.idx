@@ -1,0 +1,8 @@
+{itk::FastChamferDistanceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkFastChamferDistanceImageFilterID2ID2} {itkFastChamferDistanceImageFilter}
+{itk::SmartPointer<itk::FastChamferDistanceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkFastChamferDistanceImageFilterID2ID2_Pointer} {itkFastChamferDistanceImageFilter}
+{itk::FastChamferDistanceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkFastChamferDistanceImageFilterID3ID3} {itkFastChamferDistanceImageFilter}
+{itk::SmartPointer<itk::FastChamferDistanceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkFastChamferDistanceImageFilterID3ID3_Pointer} {itkFastChamferDistanceImageFilter}
+{itk::FastChamferDistanceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkFastChamferDistanceImageFilterIF2IF2} {itkFastChamferDistanceImageFilter}
+{itk::SmartPointer<itk::FastChamferDistanceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkFastChamferDistanceImageFilterIF2IF2_Pointer} {itkFastChamferDistanceImageFilter}
+{itk::FastChamferDistanceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkFastChamferDistanceImageFilterIF3IF3} {itkFastChamferDistanceImageFilter}
+{itk::SmartPointer<itk::FastChamferDistanceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkFastChamferDistanceImageFilterIF3IF3_Pointer} {itkFastChamferDistanceImageFilter}

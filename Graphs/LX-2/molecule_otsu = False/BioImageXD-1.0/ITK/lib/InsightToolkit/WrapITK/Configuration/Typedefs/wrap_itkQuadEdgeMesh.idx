@@ -1,0 +1,2 @@
+{itk::QuadEdgeMesh<double,3u,itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> >} {itkQuadEdgeMeshD3S} {itkQuadEdgeMesh}
+{itk::SmartPointer<itk::QuadEdgeMesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkQuadEdgeMeshD3S_Pointer} {itkQuadEdgeMesh}

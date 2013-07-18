@@ -1,0 +1,2 @@
+{itk::VersorRigid3DTransform<double>} {itkVersorRigid3DTransformD} {ITKVersorRigidTransform}
+{itk::SmartPointer<itk::VersorRigid3DTransform<double> >} {itkVersorRigid3DTransformD_Pointer} {ITKVersorRigidTransform}

@@ -1,0 +1,98 @@
+{itk::NumericTraits<bool>} {itkNumericTraitsB} {itkNumericTraits}
+{itk::NumericTraits<itk::CovariantVector<float, 2u> >} {itkNumericTraitsCVF2} {itkNumericTraits}
+{itk::NumericTraits<itk::CovariantVector<float, 3u> >} {itkNumericTraitsCVF3} {itkNumericTraits}
+{itk::NumericTraits<double>} {itkNumericTraitsD} {itkNumericTraits}
+{itk::NumericTraits<float>} {itkNumericTraitsF} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<double, 1u> >} {itkNumericTraitsFAD1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<double, 2u> >} {itkNumericTraitsFAD2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<double, 3u> >} {itkNumericTraitsFAD3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<double, 4u> >} {itkNumericTraitsFAD4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<double, 6u> >} {itkNumericTraitsFAD6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<float, 1u> >} {itkNumericTraitsFAF1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<float, 2u> >} {itkNumericTraitsFAF2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<float, 3u> >} {itkNumericTraitsFAF3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<float, 4u> >} {itkNumericTraitsFAF4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<float, 6u> >} {itkNumericTraitsFAF6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<signed char, 1u> >} {itkNumericTraitsFASC1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<signed char, 2u> >} {itkNumericTraitsFASC2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<signed char, 3u> >} {itkNumericTraitsFASC3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<signed char, 4u> >} {itkNumericTraitsFASC4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<signed char, 6u> >} {itkNumericTraitsFASC6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long int, 1u> >} {itkNumericTraitsFASL1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long int, 2u> >} {itkNumericTraitsFASL2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long int, 3u> >} {itkNumericTraitsFASL3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long int, 4u> >} {itkNumericTraitsFASL4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long int, 6u> >} {itkNumericTraitsFASL6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short int, 1u> >} {itkNumericTraitsFASS1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short int, 2u> >} {itkNumericTraitsFASS2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short int, 3u> >} {itkNumericTraitsFASS3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short int, 4u> >} {itkNumericTraitsFASS4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short int, 6u> >} {itkNumericTraitsFASS6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned char, 1u> >} {itkNumericTraitsFAUC1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned char, 2u> >} {itkNumericTraitsFAUC2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned char, 3u> >} {itkNumericTraitsFAUC3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned char, 4u> >} {itkNumericTraitsFAUC4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned char, 6u> >} {itkNumericTraitsFAUC6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned int, 1u> >} {itkNumericTraitsFAUI1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned int, 2u> >} {itkNumericTraitsFAUI2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned int, 3u> >} {itkNumericTraitsFAUI3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned int, 4u> >} {itkNumericTraitsFAUI4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<unsigned int, 6u> >} {itkNumericTraitsFAUI6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long unsigned int, 1u> >} {itkNumericTraitsFAUL1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long unsigned int, 2u> >} {itkNumericTraitsFAUL2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long unsigned int, 3u> >} {itkNumericTraitsFAUL3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long unsigned int, 4u> >} {itkNumericTraitsFAUL4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<long unsigned int, 6u> >} {itkNumericTraitsFAUL6} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short unsigned int, 1u> >} {itkNumericTraitsFAUS1} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short unsigned int, 2u> >} {itkNumericTraitsFAUS2} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short unsigned int, 3u> >} {itkNumericTraitsFAUS3} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short unsigned int, 4u> >} {itkNumericTraitsFAUS4} {itkNumericTraits}
+{itk::NumericTraits<itk::FixedArray<short unsigned int, 6u> >} {itkNumericTraitsFAUS6} {itkNumericTraits}
+{itk::NumericTraits<long double>} {itkNumericTraitsLD} {itkNumericTraits}
+{itk::NumericTraits<itk::RGBAPixel<short unsigned int> >} {itkNumericTraitsRGBAUS} {itkNumericTraits}
+{itk::NumericTraits<itk::RGBPixel<short unsigned int> >} {itkNumericTraitsRGBUS} {itkNumericTraits}
+{itk::NumericTraits<signed char>} {itkNumericTraitsSC} {itkNumericTraits}
+{itk::NumericTraits<int>} {itkNumericTraitsSI} {itkNumericTraits}
+{itk::NumericTraits<long int>} {itkNumericTraitsSL} {itkNumericTraits}
+{itk::NumericTraits<short int>} {itkNumericTraitsSS} {itkNumericTraits}
+{itk::NumericTraits<unsigned char>} {itkNumericTraitsUC} {itkNumericTraits}
+{itk::NumericTraits<unsigned int>} {itkNumericTraitsUI} {itkNumericTraits}
+{itk::NumericTraits<long unsigned int>} {itkNumericTraitsUL} {itkNumericTraits}
+{itk::NumericTraits<short unsigned int>} {itkNumericTraitsUS} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<double, 1u> >} {itkNumericTraitsVD1} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<double, 2u> >} {itkNumericTraitsVD2} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<double, 3u> >} {itkNumericTraitsVD3} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<double, 6u> >} {itkNumericTraitsVD6} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<float, 1u> >} {itkNumericTraitsVF1} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<float, 2u> >} {itkNumericTraitsVF2} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<float, 3u> >} {itkNumericTraitsVF3} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<float, 6u> >} {itkNumericTraitsVF6} {itkNumericTraits}
+{itk::NumericTraits<itk::VariableLengthVector<double> >} {itkNumericTraitsVLVD} {itkNumericTraits}
+{itk::NumericTraits<itk::VariableLengthVector<float> >} {itkNumericTraitsVLVF} {itkNumericTraits}
+{itk::NumericTraits<itk::VariableLengthVector<unsigned char> >} {itkNumericTraitsVLVUC} {itkNumericTraits}
+{itk::NumericTraits<itk::VariableLengthVector<long unsigned int> >} {itkNumericTraitsVLVUL} {itkNumericTraits}
+{itk::NumericTraits<itk::VariableLengthVector<short unsigned int> >} {itkNumericTraitsVLVUS} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<unsigned char, 1u> >} {itkNumericTraitsVUC1} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<unsigned char, 2u> >} {itkNumericTraitsVUC2} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<unsigned char, 3u> >} {itkNumericTraitsVUC3} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<unsigned char, 6u> >} {itkNumericTraitsVUC6} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<long unsigned int, 1u> >} {itkNumericTraitsVUL1} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<long unsigned int, 2u> >} {itkNumericTraitsVUL2} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<long unsigned int, 3u> >} {itkNumericTraitsVUL3} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<long unsigned int, 6u> >} {itkNumericTraitsVUL6} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<short unsigned int, 1u> >} {itkNumericTraitsVUS1} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<short unsigned int, 2u> >} {itkNumericTraitsVUS2} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<short unsigned int, 3u> >} {itkNumericTraitsVUS3} {itkNumericTraits}
+{itk::NumericTraits<itk::Vector<short unsigned int, 6u> >} {itkNumericTraitsVUS6} {itkNumericTraits}
+{std::numeric_limits<bool>} {vcl_numeric_limitsB} {itkNumericTraits}
+{std::numeric_limits<double>} {vcl_numeric_limitsD} {itkNumericTraits}
+{std::numeric_limits<float>} {vcl_numeric_limitsF} {itkNumericTraits}
+{std::numeric_limits<long double>} {vcl_numeric_limitsLD} {itkNumericTraits}
+{std::numeric_limits<signed char>} {vcl_numeric_limitsSC} {itkNumericTraits}
+{std::numeric_limits<int>} {vcl_numeric_limitsSI} {itkNumericTraits}
+{std::numeric_limits<long int>} {vcl_numeric_limitsSL} {itkNumericTraits}
+{std::numeric_limits<short int>} {vcl_numeric_limitsSS} {itkNumericTraits}
+{std::numeric_limits<unsigned char>} {vcl_numeric_limitsUC} {itkNumericTraits}
+{std::numeric_limits<unsigned int>} {vcl_numeric_limitsUI} {itkNumericTraits}
+{std::numeric_limits<long unsigned int>} {vcl_numeric_limitsUL} {itkNumericTraits}
+{std::numeric_limits<short unsigned int>} {vcl_numeric_limitsUS} {itkNumericTraits}

@@ -1,0 +1,60 @@
+{itk::ImageFileReader<itk::Image<std::complex<float>, 2u>,itk::DefaultConvertPixelTraits<std::complex<float> > >} {itkImageFileReaderICF2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<std::complex<float>, 2u>, itk::DefaultConvertPixelTraits<std::complex<float> > > >} {itkImageFileReaderICF2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<std::complex<float>, 3u>,itk::DefaultConvertPixelTraits<std::complex<float> > >} {itkImageFileReaderICF3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<std::complex<float>, 3u>, itk::DefaultConvertPixelTraits<std::complex<float> > > >} {itkImageFileReaderICF3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::DefaultConvertPixelTraits<itk::CovariantVector<float, 2u> > >} {itkImageFileReaderICVF22} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::DefaultConvertPixelTraits<itk::CovariantVector<float, 2u> > > >} {itkImageFileReaderICVF22_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::DefaultConvertPixelTraits<itk::CovariantVector<float, 3u> > >} {itkImageFileReaderICVF33} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::DefaultConvertPixelTraits<itk::CovariantVector<float, 3u> > > >} {itkImageFileReaderICVF33_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<double, 2u>,itk::DefaultConvertPixelTraits<double> >} {itkImageFileReaderID2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<double, 2u>, itk::DefaultConvertPixelTraits<double> > >} {itkImageFileReaderID2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<double, 3u>,itk::DefaultConvertPixelTraits<double> >} {itkImageFileReaderID3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<double, 3u>, itk::DefaultConvertPixelTraits<double> > >} {itkImageFileReaderID3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<float, 2u>,itk::DefaultConvertPixelTraits<float> >} {itkImageFileReaderIF2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<float, 2u>, itk::DefaultConvertPixelTraits<float> > >} {itkImageFileReaderIF2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<float, 3u>,itk::DefaultConvertPixelTraits<float> >} {itkImageFileReaderIF3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<float, 3u>, itk::DefaultConvertPixelTraits<float> > >} {itkImageFileReaderIF3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::DefaultConvertPixelTraits<itk::RGBAPixel<short unsigned int> > >} {itkImageFileReaderIRGBAUS2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::DefaultConvertPixelTraits<itk::RGBAPixel<short unsigned int> > > >} {itkImageFileReaderIRGBAUS2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::DefaultConvertPixelTraits<itk::RGBAPixel<short unsigned int> > >} {itkImageFileReaderIRGBAUS3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::DefaultConvertPixelTraits<itk::RGBAPixel<short unsigned int> > > >} {itkImageFileReaderIRGBAUS3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::DefaultConvertPixelTraits<itk::RGBPixel<short unsigned int> > >} {itkImageFileReaderIRGBUS2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::DefaultConvertPixelTraits<itk::RGBPixel<short unsigned int> > > >} {itkImageFileReaderIRGBUS2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::DefaultConvertPixelTraits<itk::RGBPixel<short unsigned int> > >} {itkImageFileReaderIRGBUS3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::DefaultConvertPixelTraits<itk::RGBPixel<short unsigned int> > > >} {itkImageFileReaderIRGBUS3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<unsigned char, 2u>,itk::DefaultConvertPixelTraits<unsigned char> >} {itkImageFileReaderIUC2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<unsigned char, 2u>, itk::DefaultConvertPixelTraits<unsigned char> > >} {itkImageFileReaderIUC2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<unsigned char, 3u>,itk::DefaultConvertPixelTraits<unsigned char> >} {itkImageFileReaderIUC3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<unsigned char, 3u>, itk::DefaultConvertPixelTraits<unsigned char> > >} {itkImageFileReaderIUC3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<long unsigned int, 2u>,itk::DefaultConvertPixelTraits<long unsigned int> >} {itkImageFileReaderIUL2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<long unsigned int, 2u>, itk::DefaultConvertPixelTraits<long unsigned int> > >} {itkImageFileReaderIUL2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<long unsigned int, 3u>,itk::DefaultConvertPixelTraits<long unsigned int> >} {itkImageFileReaderIUL3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<long unsigned int, 3u>, itk::DefaultConvertPixelTraits<long unsigned int> > >} {itkImageFileReaderIUL3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<short unsigned int, 2u>,itk::DefaultConvertPixelTraits<short unsigned int> >} {itkImageFileReaderIUS2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<short unsigned int, 2u>, itk::DefaultConvertPixelTraits<short unsigned int> > >} {itkImageFileReaderIUS2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<short unsigned int, 3u>,itk::DefaultConvertPixelTraits<short unsigned int> >} {itkImageFileReaderIUS3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<short unsigned int, 3u>, itk::DefaultConvertPixelTraits<short unsigned int> > >} {itkImageFileReaderIUS3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::Vector<float, 2u>, 2u>,itk::DefaultConvertPixelTraits<itk::Vector<float, 2u> > >} {itkImageFileReaderIVF22} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::Vector<float, 2u>, 2u>, itk::DefaultConvertPixelTraits<itk::Vector<float, 2u> > > >} {itkImageFileReaderIVF22_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::Image<itk::Vector<float, 3u>, 3u>,itk::DefaultConvertPixelTraits<itk::Vector<float, 3u> > >} {itkImageFileReaderIVF33} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::Image<itk::Vector<float, 3u>, 3u>, itk::DefaultConvertPixelTraits<itk::Vector<float, 3u> > > >} {itkImageFileReaderIVF33_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<double, 2u>,itk::DefaultConvertPixelTraits<double> >} {itkImageFileReaderVID2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<double, 2u>, itk::DefaultConvertPixelTraits<double> > >} {itkImageFileReaderVID2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<double, 3u>,itk::DefaultConvertPixelTraits<double> >} {itkImageFileReaderVID3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<double, 3u>, itk::DefaultConvertPixelTraits<double> > >} {itkImageFileReaderVID3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<float, 2u>,itk::DefaultConvertPixelTraits<float> >} {itkImageFileReaderVIF2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<float, 2u>, itk::DefaultConvertPixelTraits<float> > >} {itkImageFileReaderVIF2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<float, 3u>,itk::DefaultConvertPixelTraits<float> >} {itkImageFileReaderVIF3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<float, 3u>, itk::DefaultConvertPixelTraits<float> > >} {itkImageFileReaderVIF3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<unsigned char, 2u>,itk::DefaultConvertPixelTraits<unsigned char> >} {itkImageFileReaderVIUC2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<unsigned char, 2u>, itk::DefaultConvertPixelTraits<unsigned char> > >} {itkImageFileReaderVIUC2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<unsigned char, 3u>,itk::DefaultConvertPixelTraits<unsigned char> >} {itkImageFileReaderVIUC3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<unsigned char, 3u>, itk::DefaultConvertPixelTraits<unsigned char> > >} {itkImageFileReaderVIUC3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<long unsigned int, 2u>,itk::DefaultConvertPixelTraits<long unsigned int> >} {itkImageFileReaderVIUL2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<long unsigned int, 2u>, itk::DefaultConvertPixelTraits<long unsigned int> > >} {itkImageFileReaderVIUL2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<long unsigned int, 3u>,itk::DefaultConvertPixelTraits<long unsigned int> >} {itkImageFileReaderVIUL3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<long unsigned int, 3u>, itk::DefaultConvertPixelTraits<long unsigned int> > >} {itkImageFileReaderVIUL3_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<short unsigned int, 2u>,itk::DefaultConvertPixelTraits<short unsigned int> >} {itkImageFileReaderVIUS2} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<short unsigned int, 2u>, itk::DefaultConvertPixelTraits<short unsigned int> > >} {itkImageFileReaderVIUS2_Pointer} {itkImageFileReader}
+{itk::ImageFileReader<itk::VectorImage<short unsigned int, 3u>,itk::DefaultConvertPixelTraits<short unsigned int> >} {itkImageFileReaderVIUS3} {itkImageFileReader}
+{itk::SmartPointer<itk::ImageFileReader<itk::VectorImage<short unsigned int, 3u>, itk::DefaultConvertPixelTraits<short unsigned int> > >} {itkImageFileReaderVIUS3_Pointer} {itkImageFileReader}

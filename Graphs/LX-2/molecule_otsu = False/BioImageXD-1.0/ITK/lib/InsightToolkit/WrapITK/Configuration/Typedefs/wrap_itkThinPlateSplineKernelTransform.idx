@@ -1,0 +1,4 @@
+{itk::ThinPlateSplineKernelTransform<double,2u>} {itkThinPlateSplineKernelTransformD2} {itkThinPlateSplineKernelTransform}
+{itk::SmartPointer<itk::ThinPlateSplineKernelTransform<double, 2u> >} {itkThinPlateSplineKernelTransformD2_Pointer} {itkThinPlateSplineKernelTransform}
+{itk::ThinPlateSplineKernelTransform<double,3u>} {itkThinPlateSplineKernelTransformD3} {itkThinPlateSplineKernelTransform}
+{itk::SmartPointer<itk::ThinPlateSplineKernelTransform<double, 3u> >} {itkThinPlateSplineKernelTransformD3_Pointer} {itkThinPlateSplineKernelTransform}

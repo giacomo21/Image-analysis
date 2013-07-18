@@ -1,0 +1,517 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCurvatureFlowImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMinMaxCurvatureFlowImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVotingBinaryImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkAnisotropicDiffusionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBilateralImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBinaryMedianImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBinaryMinMaxCurvatureFlowImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCurvatureAnisotropicDiffusionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGradientAnisotropicDiffusionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMeanImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMedianImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVectorCurvatureAnisotropicDiffusionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVectorGradientAnisotropicDiffusionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVotingBinaryHoleFillingImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVotingBinaryIterativeHoleFillingImageFilter.h"
+
+typedef itk::CurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkCurvatureFlowImageFilterIF2IF2;
+typedef itk::CurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkCurvatureFlowImageFilterIF2IF2_Pointer;
+typedef itk::CurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkCurvatureFlowImageFilterIF3IF3;
+typedef itk::CurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkCurvatureFlowImageFilterIF3IF3_Pointer;
+typedef itk::CurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkCurvatureFlowImageFilterID2ID2;
+typedef itk::CurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkCurvatureFlowImageFilterID2ID2_Pointer;
+typedef itk::CurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkCurvatureFlowImageFilterID3ID3;
+typedef itk::CurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkCurvatureFlowImageFilterID3ID3_Pointer;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkMinMaxCurvatureFlowImageFilterIF2IF2;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkMinMaxCurvatureFlowImageFilterIF2IF2_Pointer;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkMinMaxCurvatureFlowImageFilterIF3IF3;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkMinMaxCurvatureFlowImageFilterIF3IF3_Pointer;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkMinMaxCurvatureFlowImageFilterID2ID2;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkMinMaxCurvatureFlowImageFilterID2ID2_Pointer;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkMinMaxCurvatureFlowImageFilterID3ID3;
+typedef itk::MinMaxCurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkMinMaxCurvatureFlowImageFilterID3ID3_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkVotingBinaryImageFilterIUC2IUC2;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkVotingBinaryImageFilterIUC2IUC2_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkVotingBinaryImageFilterIUC3IUC3;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkVotingBinaryImageFilterIUC3IUC3_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkVotingBinaryImageFilterIUL2IUL2;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkVotingBinaryImageFilterIUL2IUL2_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkVotingBinaryImageFilterIUL3IUL3;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkVotingBinaryImageFilterIUL3IUL3_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkVotingBinaryImageFilterIUS2IUS2;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkVotingBinaryImageFilterIUS2IUS2_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkVotingBinaryImageFilterIUS3IUS3;
+typedef itk::VotingBinaryImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkVotingBinaryImageFilterIUS3IUS3_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkVotingBinaryImageFilterIF2IF2;
+typedef itk::VotingBinaryImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkVotingBinaryImageFilterIF2IF2_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkVotingBinaryImageFilterIF3IF3;
+typedef itk::VotingBinaryImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkVotingBinaryImageFilterIF3IF3_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkVotingBinaryImageFilterID2ID2;
+typedef itk::VotingBinaryImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkVotingBinaryImageFilterID2ID2_Pointer;
+typedef itk::VotingBinaryImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkVotingBinaryImageFilterID3ID3;
+typedef itk::VotingBinaryImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkVotingBinaryImageFilterID3ID3_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkAnisotropicDiffusionImageFilterIF2IF2;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkAnisotropicDiffusionImageFilterIF2IF2_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkAnisotropicDiffusionImageFilterIF3IF3;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkAnisotropicDiffusionImageFilterIF3IF3_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkAnisotropicDiffusionImageFilterID2ID2;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkAnisotropicDiffusionImageFilterID2ID2_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkAnisotropicDiffusionImageFilterID3ID3;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkAnisotropicDiffusionImageFilterID3ID3_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkAnisotropicDiffusionImageFilterIVF22IVF22;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkAnisotropicDiffusionImageFilterIVF22IVF22_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkAnisotropicDiffusionImageFilterIVF33IVF33;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkAnisotropicDiffusionImageFilterIVF33IVF33_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkAnisotropicDiffusionImageFilterICVF22ICVF22;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkAnisotropicDiffusionImageFilterICVF22ICVF22_Pointer;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkAnisotropicDiffusionImageFilterICVF33ICVF33;
+typedef itk::AnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkAnisotropicDiffusionImageFilterICVF33ICVF33_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkBilateralImageFilterIUC2IUC2;
+typedef itk::BilateralImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkBilateralImageFilterIUC2IUC2_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkBilateralImageFilterIUC3IUC3;
+typedef itk::BilateralImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkBilateralImageFilterIUC3IUC3_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkBilateralImageFilterIUL2IUL2;
+typedef itk::BilateralImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkBilateralImageFilterIUL2IUL2_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkBilateralImageFilterIUL3IUL3;
+typedef itk::BilateralImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkBilateralImageFilterIUL3IUL3_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkBilateralImageFilterIUS2IUS2;
+typedef itk::BilateralImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkBilateralImageFilterIUS2IUS2_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkBilateralImageFilterIUS3IUS3;
+typedef itk::BilateralImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkBilateralImageFilterIUS3IUS3_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkBilateralImageFilterIF2IF2;
+typedef itk::BilateralImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkBilateralImageFilterIF2IF2_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkBilateralImageFilterIF3IF3;
+typedef itk::BilateralImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkBilateralImageFilterIF3IF3_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkBilateralImageFilterID2ID2;
+typedef itk::BilateralImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkBilateralImageFilterID2ID2_Pointer;
+typedef itk::BilateralImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkBilateralImageFilterID3ID3;
+typedef itk::BilateralImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkBilateralImageFilterID3ID3_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkBinaryMedianImageFilterIUC2IUC2;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkBinaryMedianImageFilterIUC2IUC2_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkBinaryMedianImageFilterIUC3IUC3;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkBinaryMedianImageFilterIUC3IUC3_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkBinaryMedianImageFilterIUL2IUL2;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkBinaryMedianImageFilterIUL2IUL2_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkBinaryMedianImageFilterIUL3IUL3;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkBinaryMedianImageFilterIUL3IUL3_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkBinaryMedianImageFilterIUS2IUS2;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkBinaryMedianImageFilterIUS2IUS2_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkBinaryMedianImageFilterIUS3IUS3;
+typedef itk::BinaryMedianImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkBinaryMedianImageFilterIUS3IUS3_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkBinaryMedianImageFilterIF2IF2;
+typedef itk::BinaryMedianImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkBinaryMedianImageFilterIF2IF2_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkBinaryMedianImageFilterIF3IF3;
+typedef itk::BinaryMedianImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkBinaryMedianImageFilterIF3IF3_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkBinaryMedianImageFilterID2ID2;
+typedef itk::BinaryMedianImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkBinaryMedianImageFilterID2ID2_Pointer;
+typedef itk::BinaryMedianImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkBinaryMedianImageFilterID3ID3;
+typedef itk::BinaryMedianImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkBinaryMedianImageFilterID3ID3_Pointer;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkBinaryMinMaxCurvatureFlowImageFilterIF2IF2;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkBinaryMinMaxCurvatureFlowImageFilterIF2IF2_Pointer;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkBinaryMinMaxCurvatureFlowImageFilterIF3IF3;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkBinaryMinMaxCurvatureFlowImageFilterIF3IF3_Pointer;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkBinaryMinMaxCurvatureFlowImageFilterID2ID2;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkBinaryMinMaxCurvatureFlowImageFilterID2ID2_Pointer;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkBinaryMinMaxCurvatureFlowImageFilterID3ID3;
+typedef itk::BinaryMinMaxCurvatureFlowImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkBinaryMinMaxCurvatureFlowImageFilterID3ID3_Pointer;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkCurvatureAnisotropicDiffusionImageFilterIF2IF2;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkCurvatureAnisotropicDiffusionImageFilterIF2IF2_Pointer;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkCurvatureAnisotropicDiffusionImageFilterIF3IF3;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkCurvatureAnisotropicDiffusionImageFilterIF3IF3_Pointer;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkCurvatureAnisotropicDiffusionImageFilterID2ID2;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkCurvatureAnisotropicDiffusionImageFilterID2ID2_Pointer;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkCurvatureAnisotropicDiffusionImageFilterID3ID3;
+typedef itk::CurvatureAnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkCurvatureAnisotropicDiffusionImageFilterID3ID3_Pointer;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkGradientAnisotropicDiffusionImageFilterIF2IF2;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkGradientAnisotropicDiffusionImageFilterIF2IF2_Pointer;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkGradientAnisotropicDiffusionImageFilterIF3IF3;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkGradientAnisotropicDiffusionImageFilterIF3IF3_Pointer;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkGradientAnisotropicDiffusionImageFilterID2ID2;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkGradientAnisotropicDiffusionImageFilterID2ID2_Pointer;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkGradientAnisotropicDiffusionImageFilterID3ID3;
+typedef itk::GradientAnisotropicDiffusionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkGradientAnisotropicDiffusionImageFilterID3ID3_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkMeanImageFilterIUC2IUC2;
+typedef itk::MeanImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkMeanImageFilterIUC2IUC2_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkMeanImageFilterIUC3IUC3;
+typedef itk::MeanImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkMeanImageFilterIUC3IUC3_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkMeanImageFilterIUL2IUL2;
+typedef itk::MeanImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkMeanImageFilterIUL2IUL2_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkMeanImageFilterIUL3IUL3;
+typedef itk::MeanImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkMeanImageFilterIUL3IUL3_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkMeanImageFilterIUS2IUS2;
+typedef itk::MeanImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkMeanImageFilterIUS2IUS2_Pointer;
+typedef itk::MeanImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkMeanImageFilterIUS3IUS3;
+typedef itk::MeanImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkMeanImageFilterIUS3IUS3_Pointer;
+typedef itk::MeanImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkMeanImageFilterIF2IF2;
+typedef itk::MeanImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkMeanImageFilterIF2IF2_Pointer;
+typedef itk::MeanImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkMeanImageFilterIF3IF3;
+typedef itk::MeanImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkMeanImageFilterIF3IF3_Pointer;
+typedef itk::MeanImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkMeanImageFilterID2ID2;
+typedef itk::MeanImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkMeanImageFilterID2ID2_Pointer;
+typedef itk::MeanImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkMeanImageFilterID3ID3;
+typedef itk::MeanImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkMeanImageFilterID3ID3_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkMedianImageFilterIUC2IUC2;
+typedef itk::MedianImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkMedianImageFilterIUC2IUC2_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkMedianImageFilterIUC3IUC3;
+typedef itk::MedianImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkMedianImageFilterIUC3IUC3_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkMedianImageFilterIUL2IUL2;
+typedef itk::MedianImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkMedianImageFilterIUL2IUL2_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkMedianImageFilterIUL3IUL3;
+typedef itk::MedianImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkMedianImageFilterIUL3IUL3_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkMedianImageFilterIUS2IUS2;
+typedef itk::MedianImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkMedianImageFilterIUS2IUS2_Pointer;
+typedef itk::MedianImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkMedianImageFilterIUS3IUS3;
+typedef itk::MedianImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkMedianImageFilterIUS3IUS3_Pointer;
+typedef itk::MedianImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkMedianImageFilterIF2IF2;
+typedef itk::MedianImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkMedianImageFilterIF2IF2_Pointer;
+typedef itk::MedianImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkMedianImageFilterIF3IF3;
+typedef itk::MedianImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkMedianImageFilterIF3IF3_Pointer;
+typedef itk::MedianImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkMedianImageFilterID2ID2;
+typedef itk::MedianImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkMedianImageFilterID2ID2_Pointer;
+typedef itk::MedianImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkMedianImageFilterID3ID3;
+typedef itk::MedianImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkMedianImageFilterID3ID3_Pointer;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkVectorCurvatureAnisotropicDiffusionImageFilterIVF22IVF22;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkVectorCurvatureAnisotropicDiffusionImageFilterIVF22IVF22_Pointer;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkVectorCurvatureAnisotropicDiffusionImageFilterIVF33IVF33;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkVectorCurvatureAnisotropicDiffusionImageFilterIVF33IVF33_Pointer;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkVectorCurvatureAnisotropicDiffusionImageFilterICVF22ICVF22;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkVectorCurvatureAnisotropicDiffusionImageFilterICVF22ICVF22_Pointer;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkVectorCurvatureAnisotropicDiffusionImageFilterICVF33ICVF33;
+typedef itk::VectorCurvatureAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkVectorCurvatureAnisotropicDiffusionImageFilterICVF33ICVF33_Pointer;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > > itkVectorGradientAnisotropicDiffusionImageFilterIVF22IVF22;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,2 >,2 >, itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkVectorGradientAnisotropicDiffusionImageFilterIVF22IVF22_Pointer;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkVectorGradientAnisotropicDiffusionImageFilterIVF33IVF33;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkVectorGradientAnisotropicDiffusionImageFilterIVF33IVF33_Pointer;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > > itkVectorGradientAnisotropicDiffusionImageFilterICVF22ICVF22;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,2 >,2 >, itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkVectorGradientAnisotropicDiffusionImageFilterICVF22ICVF22_Pointer;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkVectorGradientAnisotropicDiffusionImageFilterICVF33ICVF33;
+typedef itk::VectorGradientAnisotropicDiffusionImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkVectorGradientAnisotropicDiffusionImageFilterICVF33ICVF33_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkVotingBinaryHoleFillingImageFilterIUC2IUC2;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUC2IUC2_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkVotingBinaryHoleFillingImageFilterIUC3IUC3;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUC3IUC3_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkVotingBinaryHoleFillingImageFilterIUL2IUL2;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUL2IUL2_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkVotingBinaryHoleFillingImageFilterIUL3IUL3;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUL3IUL3_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkVotingBinaryHoleFillingImageFilterIUS2IUS2;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUS2IUS2_Pointer;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkVotingBinaryHoleFillingImageFilterIUS3IUS3;
+typedef itk::VotingBinaryHoleFillingImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkVotingBinaryHoleFillingImageFilterIUS3IUS3_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned char,2 > > itkVotingBinaryIterativeHoleFillingImageFilterIUC2;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned char,2 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUC2_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned char,3 > > itkVotingBinaryIterativeHoleFillingImageFilterIUC3;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned char,3 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUC3_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned long,2 > > itkVotingBinaryIterativeHoleFillingImageFilterIUL2;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned long,2 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUL2_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned long,3 > > itkVotingBinaryIterativeHoleFillingImageFilterIUL3;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned long,3 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUL3_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned short,2 > > itkVotingBinaryIterativeHoleFillingImageFilterIUS2;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned short,2 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUS2_Pointer;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned short,3 > > itkVotingBinaryIterativeHoleFillingImageFilterIUS3;
+typedef itk::VotingBinaryIterativeHoleFillingImageFilter< itk::Image< unsigned short,3 > >::Pointer itkVotingBinaryIterativeHoleFillingImageFilterIUS3_Pointer;
+

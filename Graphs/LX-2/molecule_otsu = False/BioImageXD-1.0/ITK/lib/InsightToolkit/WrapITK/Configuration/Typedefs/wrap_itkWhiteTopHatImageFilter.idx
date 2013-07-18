@@ -1,0 +1,20 @@
+{itk::WhiteTopHatImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::FlatStructuringElement<2u> >} {itkWhiteTopHatImageFilterID2ID2SE2} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::FlatStructuringElement<2u> > >} {itkWhiteTopHatImageFilterID2ID2SE2_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::FlatStructuringElement<3u> >} {itkWhiteTopHatImageFilterID3ID3SE3} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::FlatStructuringElement<3u> > >} {itkWhiteTopHatImageFilterID3ID3SE3_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::FlatStructuringElement<2u> >} {itkWhiteTopHatImageFilterIF2IF2SE2} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::FlatStructuringElement<2u> > >} {itkWhiteTopHatImageFilterIF2IF2SE2_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::FlatStructuringElement<3u> >} {itkWhiteTopHatImageFilterIF3IF3SE3} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::FlatStructuringElement<3u> > >} {itkWhiteTopHatImageFilterIF3IF3SE3_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::FlatStructuringElement<2u> >} {itkWhiteTopHatImageFilterIUC2IUC2SE2} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::FlatStructuringElement<2u> > >} {itkWhiteTopHatImageFilterIUC2IUC2SE2_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::FlatStructuringElement<3u> >} {itkWhiteTopHatImageFilterIUC3IUC3SE3} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::FlatStructuringElement<3u> > >} {itkWhiteTopHatImageFilterIUC3IUC3SE3_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::FlatStructuringElement<2u> >} {itkWhiteTopHatImageFilterIUL2IUL2SE2} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::FlatStructuringElement<2u> > >} {itkWhiteTopHatImageFilterIUL2IUL2SE2_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::FlatStructuringElement<3u> >} {itkWhiteTopHatImageFilterIUL3IUL3SE3} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::FlatStructuringElement<3u> > >} {itkWhiteTopHatImageFilterIUL3IUL3SE3_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::FlatStructuringElement<2u> >} {itkWhiteTopHatImageFilterIUS2IUS2SE2} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::FlatStructuringElement<2u> > >} {itkWhiteTopHatImageFilterIUS2IUS2SE2_Pointer} {itkWhiteTopHatImageFilter}
+{itk::WhiteTopHatImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::FlatStructuringElement<3u> >} {itkWhiteTopHatImageFilterIUS3IUS3SE3} {itkWhiteTopHatImageFilter}
+{itk::SmartPointer<itk::WhiteTopHatImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::FlatStructuringElement<3u> > >} {itkWhiteTopHatImageFilterIUS3IUS3SE3_Pointer} {itkWhiteTopHatImageFilter}

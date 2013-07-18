@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkShapePriorSegmentationLevelSetImageFilterID3ID3D)
+DECLARE_REF_COUNT_CLASS(itkShapePriorSegmentationLevelSetImageFilterIF3IF3F)
+DECLARE_REF_COUNT_CLASS(itkShapePriorSegmentationLevelSetImageFilterID2ID2D)
+DECLARE_REF_COUNT_CLASS(itkShapePriorSegmentationLevelSetImageFilterIF2IF2F)
+

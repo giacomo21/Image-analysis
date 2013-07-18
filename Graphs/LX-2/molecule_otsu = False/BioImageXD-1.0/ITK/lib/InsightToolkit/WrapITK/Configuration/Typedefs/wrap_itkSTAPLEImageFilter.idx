@@ -1,0 +1,8 @@
+{itk::STAPLEImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSTAPLEImageFilterID2ID2} {itkSTAPLEImageFilter}
+{itk::SmartPointer<itk::STAPLEImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSTAPLEImageFilterID2ID2_Pointer} {itkSTAPLEImageFilter}
+{itk::STAPLEImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSTAPLEImageFilterID3ID3} {itkSTAPLEImageFilter}
+{itk::SmartPointer<itk::STAPLEImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSTAPLEImageFilterID3ID3_Pointer} {itkSTAPLEImageFilter}
+{itk::STAPLEImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSTAPLEImageFilterIF2IF2} {itkSTAPLEImageFilter}
+{itk::SmartPointer<itk::STAPLEImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSTAPLEImageFilterIF2IF2_Pointer} {itkSTAPLEImageFilter}
+{itk::STAPLEImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSTAPLEImageFilterIF3IF3} {itkSTAPLEImageFilter}
+{itk::SmartPointer<itk::STAPLEImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSTAPLEImageFilterIF3IF3_Pointer} {itkSTAPLEImageFilter}

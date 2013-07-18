@@ -1,0 +1,20 @@
+{itk::MutualInformationImageToImageMetric<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkMutualInformationImageToImageMetricID2ID2} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkMutualInformationImageToImageMetricID2ID2_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkMutualInformationImageToImageMetricID3ID3} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkMutualInformationImageToImageMetricID3ID3_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkMutualInformationImageToImageMetricIF2IF2} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkMutualInformationImageToImageMetricIF2IF2_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkMutualInformationImageToImageMetricIF3IF3} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkMutualInformationImageToImageMetricIF3IF3_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkMutualInformationImageToImageMetricIUC2IUC2} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkMutualInformationImageToImageMetricIUC2IUC2_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkMutualInformationImageToImageMetricIUC3IUC3} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkMutualInformationImageToImageMetricIUC3IUC3_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkMutualInformationImageToImageMetricIUL2IUL2} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkMutualInformationImageToImageMetricIUL2IUL2_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkMutualInformationImageToImageMetricIUL3IUL3} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkMutualInformationImageToImageMetricIUL3IUL3_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkMutualInformationImageToImageMetricIUS2IUS2} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkMutualInformationImageToImageMetricIUS2IUS2_Pointer} {itkMutualInformationImageToImageMetric}
+{itk::MutualInformationImageToImageMetric<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkMutualInformationImageToImageMetricIUS3IUS3} {itkMutualInformationImageToImageMetric}
+{itk::SmartPointer<itk::MutualInformationImageToImageMetric<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkMutualInformationImageToImageMetricIUS3IUS3_Pointer} {itkMutualInformationImageToImageMetric}

@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkCompose3DCovariantVectorImageFilterIF3ICVF33)
+DECLARE_REF_COUNT_CLASS(itkCompose3DCovariantVectorImageFilterIF3ICVF33_Superclass)
+

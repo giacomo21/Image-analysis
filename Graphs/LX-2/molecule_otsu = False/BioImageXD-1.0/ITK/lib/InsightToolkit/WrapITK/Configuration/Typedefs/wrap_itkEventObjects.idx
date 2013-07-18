@@ -1,0 +1,15 @@
+{itk::AbortCheckEvent} {itkAbortCheckEvent} {itkEventObjects}
+{itk::AnyEvent} {itkAnyEvent} {itkEventObjects}
+{itk::DeleteEvent} {itkDeleteEvent} {itkEventObjects}
+{itk::EndEvent} {itkEndEvent} {itkEventObjects}
+{itk::EndPickEvent} {itkEndPickEvent} {itkEventObjects}
+{itk::EventObject} {itkEventObject} {itkEventObjects}
+{itk::ExitEvent} {itkExitEvent} {itkEventObjects}
+{itk::IterationEvent} {itkIterationEvent} {itkEventObjects}
+{itk::ModifiedEvent} {itkModifiedEvent} {itkEventObjects}
+{itk::NoEvent} {itkNoEvent} {itkEventObjects}
+{itk::PickEvent} {itkPickEvent} {itkEventObjects}
+{itk::ProgressEvent} {itkProgressEvent} {itkEventObjects}
+{itk::StartEvent} {itkStartEvent} {itkEventObjects}
+{itk::StartPickEvent} {itkStartPickEvent} {itkEventObjects}
+{itk::UserEvent} {itkUserEvent} {itkEventObjects}

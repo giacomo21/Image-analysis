@@ -1,0 +1,4 @@
+{vnl_fortran_copy<double>} {vnl_fortran_copyD} {vnl_fortran_copy}
+{vnl_fortran_copy<float>} {vnl_fortran_copyF} {vnl_fortran_copy}
+{vnl_fortran_copy<std::complex<double> >} {vnl_fortran_copy_vcl_complexD} {vnl_fortran_copy}
+{vnl_fortran_copy<std::complex<float> >} {vnl_fortran_copy_vcl_complexF} {vnl_fortran_copy}

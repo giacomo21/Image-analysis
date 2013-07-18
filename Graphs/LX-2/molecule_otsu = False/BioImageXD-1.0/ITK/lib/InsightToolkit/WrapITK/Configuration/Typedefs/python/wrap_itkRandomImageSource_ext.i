@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceID3)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceID2)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIF3)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIF2)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUS3)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUS2)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUL3)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUL2)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUC3)
+DECLARE_REF_COUNT_CLASS(itkRandomImageSourceIUC2)
+

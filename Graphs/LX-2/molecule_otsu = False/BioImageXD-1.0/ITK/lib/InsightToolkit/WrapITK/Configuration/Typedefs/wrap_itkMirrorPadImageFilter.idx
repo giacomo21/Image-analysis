@@ -1,0 +1,40 @@
+{itk::MirrorPadImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<std::complex<float>, 2u> >} {itkMirrorPadImageFilterICF2ICF2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<std::complex<float>, 2u> > >} {itkMirrorPadImageFilterICF2ICF2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<std::complex<float>, 3u> >} {itkMirrorPadImageFilterICF3ICF3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<std::complex<float>, 3u> > >} {itkMirrorPadImageFilterICF3ICF3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkMirrorPadImageFilterICVF22ICVF22} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkMirrorPadImageFilterICVF22ICVF22_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkMirrorPadImageFilterICVF33ICVF33} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkMirrorPadImageFilterICVF33ICVF33_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkMirrorPadImageFilterID2ID2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkMirrorPadImageFilterID2ID2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkMirrorPadImageFilterID3ID3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkMirrorPadImageFilterID3ID3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkMirrorPadImageFilterIF2IF2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkMirrorPadImageFilterIF2IF2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkMirrorPadImageFilterIF3IF3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkMirrorPadImageFilterIF3IF3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkMirrorPadImageFilterIRGBAUS2IRGBAUS2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkMirrorPadImageFilterIRGBAUS2IRGBAUS2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkMirrorPadImageFilterIRGBAUS3IRGBAUS3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkMirrorPadImageFilterIRGBAUS3IRGBAUS3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkMirrorPadImageFilterIRGBUS2IRGBUS2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkMirrorPadImageFilterIRGBUS2IRGBUS2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkMirrorPadImageFilterIRGBUS3IRGBUS3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkMirrorPadImageFilterIRGBUS3IRGBUS3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkMirrorPadImageFilterIUC2IUC2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkMirrorPadImageFilterIUC2IUC2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkMirrorPadImageFilterIUC3IUC3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkMirrorPadImageFilterIUC3IUC3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkMirrorPadImageFilterIUL2IUL2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkMirrorPadImageFilterIUL2IUL2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkMirrorPadImageFilterIUL3IUL3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkMirrorPadImageFilterIUL3IUL3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkMirrorPadImageFilterIUS2IUS2} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkMirrorPadImageFilterIUS2IUS2_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkMirrorPadImageFilterIUS3IUS3} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkMirrorPadImageFilterIUS3IUS3_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkMirrorPadImageFilterIVF22IVF22} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkMirrorPadImageFilterIVF22IVF22_Pointer} {itkMirrorPadImageFilter}
+{itk::MirrorPadImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkMirrorPadImageFilterIVF33IVF33} {itkMirrorPadImageFilter}
+{itk::SmartPointer<itk::MirrorPadImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkMirrorPadImageFilterIVF33IVF33_Pointer} {itkMirrorPadImageFilter}

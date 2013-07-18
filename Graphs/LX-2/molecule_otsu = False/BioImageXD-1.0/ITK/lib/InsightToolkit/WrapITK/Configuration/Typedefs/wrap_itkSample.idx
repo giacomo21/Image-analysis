@@ -1,0 +1,56 @@
+{itk::Statistics::Sample<itk::Array<double> >} {itkSampleAD} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::Array<double> > >} {itkSampleAD_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::Array<float> >} {itkSampleAF} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::Array<float> > >} {itkSampleAF_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<double, 1u> >} {itkSampleFAD1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<double, 1u> > >} {itkSampleFAD1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<double, 2u> >} {itkSampleFAD2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<double, 2u> > >} {itkSampleFAD2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<double, 3u> >} {itkSampleFAD3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<double, 3u> > >} {itkSampleFAD3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<float, 1u> >} {itkSampleFAF1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<float, 1u> > >} {itkSampleFAF1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<float, 2u> >} {itkSampleFAF2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<float, 2u> > >} {itkSampleFAF2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<float, 3u> >} {itkSampleFAF3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<float, 3u> > >} {itkSampleFAF3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<signed char, 1u> >} {itkSampleFASC1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<signed char, 1u> > >} {itkSampleFASC1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<signed char, 2u> >} {itkSampleFASC2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<signed char, 2u> > >} {itkSampleFASC2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<signed char, 3u> >} {itkSampleFASC3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<signed char, 3u> > >} {itkSampleFASC3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long int, 1u> >} {itkSampleFASL1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long int, 1u> > >} {itkSampleFASL1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long int, 2u> >} {itkSampleFASL2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long int, 2u> > >} {itkSampleFASL2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long int, 3u> >} {itkSampleFASL3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long int, 3u> > >} {itkSampleFASL3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short int, 1u> >} {itkSampleFASS1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short int, 1u> > >} {itkSampleFASS1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short int, 2u> >} {itkSampleFASS2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short int, 2u> > >} {itkSampleFASS2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short int, 3u> >} {itkSampleFASS3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short int, 3u> > >} {itkSampleFASS3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<unsigned char, 1u> >} {itkSampleFAUC1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<unsigned char, 1u> > >} {itkSampleFAUC1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<unsigned char, 2u> >} {itkSampleFAUC2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<unsigned char, 2u> > >} {itkSampleFAUC2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<unsigned char, 3u> >} {itkSampleFAUC3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<unsigned char, 3u> > >} {itkSampleFAUC3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long unsigned int, 1u> >} {itkSampleFAUL1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long unsigned int, 1u> > >} {itkSampleFAUL1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long unsigned int, 2u> >} {itkSampleFAUL2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long unsigned int, 2u> > >} {itkSampleFAUL2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<long unsigned int, 3u> >} {itkSampleFAUL3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<long unsigned int, 3u> > >} {itkSampleFAUL3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short unsigned int, 1u> >} {itkSampleFAUS1} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short unsigned int, 1u> > >} {itkSampleFAUS1_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short unsigned int, 2u> >} {itkSampleFAUS2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short unsigned int, 2u> > >} {itkSampleFAUS2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::FixedArray<short unsigned int, 3u> >} {itkSampleFAUS3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::FixedArray<short unsigned int, 3u> > >} {itkSampleFAUS3_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::Vector<float, 2u> >} {itkSampleVF2} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::Vector<float, 2u> > >} {itkSampleVF2_Pointer} {itkSample}
+{itk::Statistics::Sample<itk::Vector<float, 3u> >} {itkSampleVF3} {itkSample}
+{itk::SmartPointer<itk::Statistics::Sample<itk::Vector<float, 3u> > >} {itkSampleVF3_Pointer} {itkSample}

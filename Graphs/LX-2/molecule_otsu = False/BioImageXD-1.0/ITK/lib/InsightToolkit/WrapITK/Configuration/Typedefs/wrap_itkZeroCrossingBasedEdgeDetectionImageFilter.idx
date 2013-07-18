@@ -1,0 +1,8 @@
+{itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkZeroCrossingBasedEdgeDetectionImageFilterID2ID2} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkZeroCrossingBasedEdgeDetectionImageFilterID2ID2_Pointer} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkZeroCrossingBasedEdgeDetectionImageFilterID3ID3} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkZeroCrossingBasedEdgeDetectionImageFilterID3ID3_Pointer} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkZeroCrossingBasedEdgeDetectionImageFilterIF2IF2} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkZeroCrossingBasedEdgeDetectionImageFilterIF2IF2_Pointer} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkZeroCrossingBasedEdgeDetectionImageFilterIF3IF3} {itkZeroCrossingBasedEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingBasedEdgeDetectionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkZeroCrossingBasedEdgeDetectionImageFilterIF3IF3_Pointer} {itkZeroCrossingBasedEdgeDetectionImageFilter}

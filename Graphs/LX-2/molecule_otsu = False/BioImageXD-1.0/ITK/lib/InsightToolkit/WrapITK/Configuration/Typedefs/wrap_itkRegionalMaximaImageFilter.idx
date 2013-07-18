@@ -1,0 +1,20 @@
+{itk::RegionalMaximaImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkRegionalMaximaImageFilterID2ID2} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkRegionalMaximaImageFilterID2ID2_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkRegionalMaximaImageFilterID3ID3} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkRegionalMaximaImageFilterID3ID3_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkRegionalMaximaImageFilterIF2IF2} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkRegionalMaximaImageFilterIF2IF2_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkRegionalMaximaImageFilterIF3IF3} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkRegionalMaximaImageFilterIF3IF3_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkRegionalMaximaImageFilterIUC2IUC2} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkRegionalMaximaImageFilterIUC2IUC2_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkRegionalMaximaImageFilterIUC3IUC3} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkRegionalMaximaImageFilterIUC3IUC3_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkRegionalMaximaImageFilterIUL2IUL2} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkRegionalMaximaImageFilterIUL2IUL2_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkRegionalMaximaImageFilterIUL3IUL3} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkRegionalMaximaImageFilterIUL3IUL3_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkRegionalMaximaImageFilterIUS2IUS2} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkRegionalMaximaImageFilterIUS2IUS2_Pointer} {itkRegionalMaximaImageFilter}
+{itk::RegionalMaximaImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkRegionalMaximaImageFilterIUS3IUS3} {itkRegionalMaximaImageFilter}
+{itk::SmartPointer<itk::RegionalMaximaImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkRegionalMaximaImageFilterIUS3IUS3_Pointer} {itkRegionalMaximaImageFilter}

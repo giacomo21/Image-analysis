@@ -1,0 +1,9 @@
+<StaticBox label="Region of Interest">
+    <br>
+    <BooleanInput id="UseROI" label="Use Region of Interest to define resulting region/>
+    <ROISelection id="ROI"/>
+</StaticBox>
+<StaticBox label="Slices">
+    <SliceSelection id="FirstSlice" label="First Slice in Resulting Stack"/>
+    <SliceSelection id="LastSlice" label="Last Slice in Resulting Stack"/>
+</StaticBox>

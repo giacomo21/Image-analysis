@@ -1,0 +1,12 @@
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkVotingBinaryHoleFillingImageFilterIUC2IUC2} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkVotingBinaryHoleFillingImageFilterIUC2IUC2_Pointer} {itkVotingBinaryHoleFillingImageFilter}
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkVotingBinaryHoleFillingImageFilterIUC3IUC3} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkVotingBinaryHoleFillingImageFilterIUC3IUC3_Pointer} {itkVotingBinaryHoleFillingImageFilter}
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkVotingBinaryHoleFillingImageFilterIUL2IUL2} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkVotingBinaryHoleFillingImageFilterIUL2IUL2_Pointer} {itkVotingBinaryHoleFillingImageFilter}
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkVotingBinaryHoleFillingImageFilterIUL3IUL3} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkVotingBinaryHoleFillingImageFilterIUL3IUL3_Pointer} {itkVotingBinaryHoleFillingImageFilter}
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkVotingBinaryHoleFillingImageFilterIUS2IUS2} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkVotingBinaryHoleFillingImageFilterIUS2IUS2_Pointer} {itkVotingBinaryHoleFillingImageFilter}
+{itk::VotingBinaryHoleFillingImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkVotingBinaryHoleFillingImageFilterIUS3IUS3} {itkVotingBinaryHoleFillingImageFilter}
+{itk::SmartPointer<itk::VotingBinaryHoleFillingImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkVotingBinaryHoleFillingImageFilterIUS3IUS3_Pointer} {itkVotingBinaryHoleFillingImageFilter}

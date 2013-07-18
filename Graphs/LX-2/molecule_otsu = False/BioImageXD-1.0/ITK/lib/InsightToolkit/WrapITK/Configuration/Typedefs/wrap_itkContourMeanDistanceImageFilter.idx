@@ -1,0 +1,20 @@
+{itk::ContourMeanDistanceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkContourMeanDistanceImageFilterID2ID2} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkContourMeanDistanceImageFilterID2ID2_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkContourMeanDistanceImageFilterID3ID3} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkContourMeanDistanceImageFilterID3ID3_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkContourMeanDistanceImageFilterIF2IF2} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkContourMeanDistanceImageFilterIF2IF2_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkContourMeanDistanceImageFilterIF3IF3} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkContourMeanDistanceImageFilterIF3IF3_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkContourMeanDistanceImageFilterIUC2IUC2} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkContourMeanDistanceImageFilterIUC2IUC2_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkContourMeanDistanceImageFilterIUC3IUC3} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkContourMeanDistanceImageFilterIUC3IUC3_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkContourMeanDistanceImageFilterIUL2IUL2} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkContourMeanDistanceImageFilterIUL2IUL2_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkContourMeanDistanceImageFilterIUL3IUL3} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkContourMeanDistanceImageFilterIUL3IUL3_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkContourMeanDistanceImageFilterIUS2IUS2} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkContourMeanDistanceImageFilterIUS2IUS2_Pointer} {itkContourMeanDistanceImageFilter}
+{itk::ContourMeanDistanceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkContourMeanDistanceImageFilterIUS3IUS3} {itkContourMeanDistanceImageFilter}
+{itk::SmartPointer<itk::ContourMeanDistanceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkContourMeanDistanceImageFilterIUS3IUS3_Pointer} {itkContourMeanDistanceImageFilter}

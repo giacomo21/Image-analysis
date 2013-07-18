@@ -1,0 +1,20 @@
+{itk::ConvolutionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkConvolutionImageFilterID2ID2} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkConvolutionImageFilterID2ID2_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkConvolutionImageFilterID3ID3} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkConvolutionImageFilterID3ID3_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkConvolutionImageFilterIF2IF2} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkConvolutionImageFilterIF2IF2_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkConvolutionImageFilterIF3IF3} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkConvolutionImageFilterIF3IF3_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkConvolutionImageFilterIUC2IUC2} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkConvolutionImageFilterIUC2IUC2_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkConvolutionImageFilterIUC3IUC3} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkConvolutionImageFilterIUC3IUC3_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkConvolutionImageFilterIUL2IUL2} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConvolutionImageFilterIUL2IUL2_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkConvolutionImageFilterIUL3IUL3} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConvolutionImageFilterIUL3IUL3_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkConvolutionImageFilterIUS2IUS2} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConvolutionImageFilterIUS2IUS2_Pointer} {itkConvolutionImageFilter}
+{itk::ConvolutionImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkConvolutionImageFilterIUS3IUS3} {itkConvolutionImageFilter}
+{itk::SmartPointer<itk::ConvolutionImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConvolutionImageFilterIUS3IUS3_Pointer} {itkConvolutionImageFilter}

@@ -1,0 +1,4 @@
+{itk::StatisticsKeepNObjectsLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkStatisticsKeepNObjectsLabelMapFilterLM2} {itkStatisticsKeepNObjectsLabelMapFilter}
+{itk::SmartPointer<itk::StatisticsKeepNObjectsLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkStatisticsKeepNObjectsLabelMapFilterLM2_Pointer} {itkStatisticsKeepNObjectsLabelMapFilter}
+{itk::StatisticsKeepNObjectsLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkStatisticsKeepNObjectsLabelMapFilterLM3} {itkStatisticsKeepNObjectsLabelMapFilter}
+{itk::SmartPointer<itk::StatisticsKeepNObjectsLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkStatisticsKeepNObjectsLabelMapFilterLM3_Pointer} {itkStatisticsKeepNObjectsLabelMapFilter}

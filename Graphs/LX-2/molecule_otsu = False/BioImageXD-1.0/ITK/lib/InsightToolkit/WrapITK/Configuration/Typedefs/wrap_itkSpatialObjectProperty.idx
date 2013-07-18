@@ -1,0 +1,2 @@
+{itk::SpatialObjectProperty<float>} {itkSpatialObjectPropertyF} {itkSpatialObjectProperty}
+{itk::SmartPointer<itk::SpatialObjectProperty<float> >} {itkSpatialObjectPropertyF_Pointer} {itkSpatialObjectProperty}

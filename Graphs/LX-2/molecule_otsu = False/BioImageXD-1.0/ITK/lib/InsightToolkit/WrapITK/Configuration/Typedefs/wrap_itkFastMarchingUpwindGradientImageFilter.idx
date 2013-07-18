@@ -1,0 +1,8 @@
+{itk::FastMarchingUpwindGradientImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkFastMarchingUpwindGradientImageFilterID2ID2} {itkFastMarchingUpwindGradientImageFilter}
+{itk::SmartPointer<itk::FastMarchingUpwindGradientImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkFastMarchingUpwindGradientImageFilterID2ID2_Pointer} {itkFastMarchingUpwindGradientImageFilter}
+{itk::FastMarchingUpwindGradientImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkFastMarchingUpwindGradientImageFilterID3ID3} {itkFastMarchingUpwindGradientImageFilter}
+{itk::SmartPointer<itk::FastMarchingUpwindGradientImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkFastMarchingUpwindGradientImageFilterID3ID3_Pointer} {itkFastMarchingUpwindGradientImageFilter}
+{itk::FastMarchingUpwindGradientImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkFastMarchingUpwindGradientImageFilterIF2IF2} {itkFastMarchingUpwindGradientImageFilter}
+{itk::SmartPointer<itk::FastMarchingUpwindGradientImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkFastMarchingUpwindGradientImageFilterIF2IF2_Pointer} {itkFastMarchingUpwindGradientImageFilter}
+{itk::FastMarchingUpwindGradientImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkFastMarchingUpwindGradientImageFilterIF3IF3} {itkFastMarchingUpwindGradientImageFilter}
+{itk::SmartPointer<itk::FastMarchingUpwindGradientImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkFastMarchingUpwindGradientImageFilterIF3IF3_Pointer} {itkFastMarchingUpwindGradientImageFilter}

@@ -1,0 +1,40 @@
+{itk::ExpImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkExpImageFilterID2ID2} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkExpImageFilterID2ID2_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Function::Exp<double, double> >} {itkExpImageFilterID2ID2_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Function::Exp<double, double> > >} {itkExpImageFilterID2ID2_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkExpImageFilterID3ID3} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkExpImageFilterID3ID3_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Function::Exp<double, double> >} {itkExpImageFilterID3ID3_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Function::Exp<double, double> > >} {itkExpImageFilterID3ID3_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkExpImageFilterIF2IF2} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkExpImageFilterIF2IF2_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Function::Exp<float, float> >} {itkExpImageFilterIF2IF2_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Function::Exp<float, float> > >} {itkExpImageFilterIF2IF2_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkExpImageFilterIF3IF3} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkExpImageFilterIF3IF3_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Function::Exp<float, float> >} {itkExpImageFilterIF3IF3_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Function::Exp<float, float> > >} {itkExpImageFilterIF3IF3_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkExpImageFilterIUC2IUC2} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkExpImageFilterIUC2IUC2_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Function::Exp<unsigned char, unsigned char> >} {itkExpImageFilterIUC2IUC2_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Function::Exp<unsigned char, unsigned char> > >} {itkExpImageFilterIUC2IUC2_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkExpImageFilterIUC3IUC3} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkExpImageFilterIUC3IUC3_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Function::Exp<unsigned char, unsigned char> >} {itkExpImageFilterIUC3IUC3_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Function::Exp<unsigned char, unsigned char> > >} {itkExpImageFilterIUC3IUC3_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkExpImageFilterIUL2IUL2} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkExpImageFilterIUL2IUL2_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Function::Exp<long unsigned int, long unsigned int> >} {itkExpImageFilterIUL2IUL2_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Function::Exp<long unsigned int, long unsigned int> > >} {itkExpImageFilterIUL2IUL2_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkExpImageFilterIUL3IUL3} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkExpImageFilterIUL3IUL3_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Function::Exp<long unsigned int, long unsigned int> >} {itkExpImageFilterIUL3IUL3_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Function::Exp<long unsigned int, long unsigned int> > >} {itkExpImageFilterIUL3IUL3_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkExpImageFilterIUS2IUS2} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkExpImageFilterIUS2IUS2_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Function::Exp<short unsigned int, short unsigned int> >} {itkExpImageFilterIUS2IUS2_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Function::Exp<short unsigned int, short unsigned int> > >} {itkExpImageFilterIUS2IUS2_Superclass_Pointer} {itkExpImageFilter}
+{itk::ExpImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkExpImageFilterIUS3IUS3} {itkExpImageFilter}
+{itk::SmartPointer<itk::ExpImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkExpImageFilterIUS3IUS3_Pointer} {itkExpImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Function::Exp<short unsigned int, short unsigned int> >} {itkExpImageFilterIUS3IUS3_Superclass} {itkExpImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Function::Exp<short unsigned int, short unsigned int> > >} {itkExpImageFilterIUS3IUS3_Superclass_Pointer} {itkExpImageFilter}

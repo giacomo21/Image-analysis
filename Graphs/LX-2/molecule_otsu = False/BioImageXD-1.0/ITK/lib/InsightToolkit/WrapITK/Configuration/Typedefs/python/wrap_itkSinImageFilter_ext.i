@@ -1,0 +1,11 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterID3ID3_Superclass)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterID2ID2_Superclass)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterIF3IF3_Superclass)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterIF2IF2)
+DECLARE_REF_COUNT_CLASS(itkSinImageFilterIF2IF2_Superclass)
+

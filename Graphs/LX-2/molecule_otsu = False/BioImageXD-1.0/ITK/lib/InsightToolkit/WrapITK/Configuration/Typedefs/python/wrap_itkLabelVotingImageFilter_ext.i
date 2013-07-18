@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUS3IUS3)
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUS2IUS2)
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUL3IUL3)
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUL2IUL2)
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUC3IUC3)
+DECLARE_REF_COUNT_CLASS(itkLabelVotingImageFilterIUC2IUC2)
+

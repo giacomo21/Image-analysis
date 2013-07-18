@@ -1,0 +1,4 @@
+{itk::IdentityTransform<double,2u>} {itkIdentityTransformD2} {itkIdentityTransform}
+{itk::SmartPointer<itk::IdentityTransform<double, 2u> >} {itkIdentityTransformD2_Pointer} {itkIdentityTransform}
+{itk::IdentityTransform<double,3u>} {itkIdentityTransformD3} {itkIdentityTransform}
+{itk::SmartPointer<itk::IdentityTransform<double, 3u> >} {itkIdentityTransformD3_Pointer} {itkIdentityTransform}

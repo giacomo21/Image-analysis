@@ -1,0 +1,4 @@
+{itk::ContourSpatialObject<2u>} {itkContourSpatialObject2} {itkContourSpatialObject}
+{itk::SmartPointer<itk::ContourSpatialObject<2u> >} {itkContourSpatialObject2_Pointer} {itkContourSpatialObject}
+{itk::ContourSpatialObject<3u>} {itkContourSpatialObject3} {itkContourSpatialObject}
+{itk::SmartPointer<itk::ContourSpatialObject<3u> >} {itkContourSpatialObject3_Pointer} {itkContourSpatialObject}

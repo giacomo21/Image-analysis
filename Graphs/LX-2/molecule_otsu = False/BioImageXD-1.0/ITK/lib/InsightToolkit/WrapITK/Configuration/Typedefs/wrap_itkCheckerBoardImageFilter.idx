@@ -1,0 +1,32 @@
+{itk::CheckerBoardImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkCheckerBoardImageFilterICVF22} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkCheckerBoardImageFilterICVF22_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkCheckerBoardImageFilterICVF33} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkCheckerBoardImageFilterICVF33_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<double, 2u> >} {itkCheckerBoardImageFilterID2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<double, 2u> > >} {itkCheckerBoardImageFilterID2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<double, 3u> >} {itkCheckerBoardImageFilterID3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<double, 3u> > >} {itkCheckerBoardImageFilterID3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<float, 2u> >} {itkCheckerBoardImageFilterIF2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<float, 2u> > >} {itkCheckerBoardImageFilterIF2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<float, 3u> >} {itkCheckerBoardImageFilterIF3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<float, 3u> > >} {itkCheckerBoardImageFilterIF3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkCheckerBoardImageFilterIRGBUS2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkCheckerBoardImageFilterIRGBUS2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkCheckerBoardImageFilterIRGBUS3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkCheckerBoardImageFilterIRGBUS3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<unsigned char, 2u> >} {itkCheckerBoardImageFilterIUC2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<unsigned char, 2u> > >} {itkCheckerBoardImageFilterIUC2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<unsigned char, 3u> >} {itkCheckerBoardImageFilterIUC3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<unsigned char, 3u> > >} {itkCheckerBoardImageFilterIUC3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<long unsigned int, 2u> >} {itkCheckerBoardImageFilterIUL2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<long unsigned int, 2u> > >} {itkCheckerBoardImageFilterIUL2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<long unsigned int, 3u> >} {itkCheckerBoardImageFilterIUL3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<long unsigned int, 3u> > >} {itkCheckerBoardImageFilterIUL3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<short unsigned int, 2u> >} {itkCheckerBoardImageFilterIUS2} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<short unsigned int, 2u> > >} {itkCheckerBoardImageFilterIUS2_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<short unsigned int, 3u> >} {itkCheckerBoardImageFilterIUS3} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<short unsigned int, 3u> > >} {itkCheckerBoardImageFilterIUS3_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkCheckerBoardImageFilterIVF22} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkCheckerBoardImageFilterIVF22_Pointer} {itkCheckerBoardImageFilter}
+{itk::CheckerBoardImageFilter<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkCheckerBoardImageFilterIVF33} {itkCheckerBoardImageFilter}
+{itk::SmartPointer<itk::CheckerBoardImageFilter<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkCheckerBoardImageFilterIVF33_Pointer} {itkCheckerBoardImageFilter}

@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterID3)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterID2)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIF3)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIF2)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkThresholdImageFilterIUC2)
+

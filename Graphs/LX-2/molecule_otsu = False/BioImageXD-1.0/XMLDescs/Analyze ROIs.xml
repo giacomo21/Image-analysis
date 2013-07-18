@@ -1,0 +1,6 @@
+<StaticBox label="">
+    <ROISelection id="ROI"/>
+    <br>
+    <BooleanInput id="AllROIs" label="Measure all ROIs/>
+    <br>
+    <BooleanInput id="SecondInput" label="Use second input as ROI/>

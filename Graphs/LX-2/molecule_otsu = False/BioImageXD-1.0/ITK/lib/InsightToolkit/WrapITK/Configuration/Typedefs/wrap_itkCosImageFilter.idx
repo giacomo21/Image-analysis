@@ -1,0 +1,16 @@
+{itk::CosImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCosImageFilterID2ID2} {itkCosImageFilter}
+{itk::SmartPointer<itk::CosImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCosImageFilterID2ID2_Pointer} {itkCosImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Functor::Cos<double, double> >} {itkCosImageFilterID2ID2_Superclass} {itkCosImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Functor::Cos<double, double> > >} {itkCosImageFilterID2ID2_Superclass_Pointer} {itkCosImageFilter}
+{itk::CosImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCosImageFilterID3ID3} {itkCosImageFilter}
+{itk::SmartPointer<itk::CosImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCosImageFilterID3ID3_Pointer} {itkCosImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Functor::Cos<double, double> >} {itkCosImageFilterID3ID3_Superclass} {itkCosImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Functor::Cos<double, double> > >} {itkCosImageFilterID3ID3_Superclass_Pointer} {itkCosImageFilter}
+{itk::CosImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCosImageFilterIF2IF2} {itkCosImageFilter}
+{itk::SmartPointer<itk::CosImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCosImageFilterIF2IF2_Pointer} {itkCosImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Functor::Cos<float, float> >} {itkCosImageFilterIF2IF2_Superclass} {itkCosImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Functor::Cos<float, float> > >} {itkCosImageFilterIF2IF2_Superclass_Pointer} {itkCosImageFilter}
+{itk::CosImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCosImageFilterIF3IF3} {itkCosImageFilter}
+{itk::SmartPointer<itk::CosImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCosImageFilterIF3IF3_Pointer} {itkCosImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Functor::Cos<float, float> >} {itkCosImageFilterIF3IF3_Superclass} {itkCosImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Functor::Cos<float, float> > >} {itkCosImageFilterIF3IF3_Superclass_Pointer} {itkCosImageFilter}

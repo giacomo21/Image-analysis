@@ -1,0 +1,2 @@
+{vnl_file_matrix<double>} {vnl_file_matrixD} {vnl_file_matrix}
+{vnl_file_matrix<float>} {vnl_file_matrixF} {vnl_file_matrix}

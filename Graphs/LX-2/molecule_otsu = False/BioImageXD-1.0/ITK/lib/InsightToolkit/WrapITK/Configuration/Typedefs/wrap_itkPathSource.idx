@@ -1,0 +1,4 @@
+{itk::PathSource<itk::PolyLineParametricPath<2u> >} {itkPathSourcePLPP2} {itkPathSource}
+{itk::SmartPointer<itk::PathSource<itk::PolyLineParametricPath<2u> > >} {itkPathSourcePLPP2_Pointer} {itkPathSource}
+{itk::PathSource<itk::PolyLineParametricPath<3u> >} {itkPathSourcePLPP3} {itkPathSource}
+{itk::SmartPointer<itk::PathSource<itk::PolyLineParametricPath<3u> > >} {itkPathSourcePLPP3_Pointer} {itkPathSource}

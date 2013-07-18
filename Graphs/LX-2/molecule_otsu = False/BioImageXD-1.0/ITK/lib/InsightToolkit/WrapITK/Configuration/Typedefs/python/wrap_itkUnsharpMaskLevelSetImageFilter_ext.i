@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkUnsharpMaskLevelSetImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkUnsharpMaskLevelSetImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkUnsharpMaskLevelSetImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkUnsharpMaskLevelSetImageFilterIF2IF2)
+

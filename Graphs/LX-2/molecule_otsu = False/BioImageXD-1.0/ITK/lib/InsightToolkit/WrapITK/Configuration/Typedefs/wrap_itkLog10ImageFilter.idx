@@ -1,0 +1,40 @@
+{itk::Log10ImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkLog10ImageFilterID2ID2} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkLog10ImageFilterID2ID2_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Function::Log10<double, double> >} {itkLog10ImageFilterID2ID2_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Function::Log10<double, double> > >} {itkLog10ImageFilterID2ID2_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkLog10ImageFilterID3ID3} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkLog10ImageFilterID3ID3_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Function::Log10<double, double> >} {itkLog10ImageFilterID3ID3_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Function::Log10<double, double> > >} {itkLog10ImageFilterID3ID3_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkLog10ImageFilterIF2IF2} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkLog10ImageFilterIF2IF2_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Function::Log10<float, float> >} {itkLog10ImageFilterIF2IF2_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Function::Log10<float, float> > >} {itkLog10ImageFilterIF2IF2_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkLog10ImageFilterIF3IF3} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkLog10ImageFilterIF3IF3_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Function::Log10<float, float> >} {itkLog10ImageFilterIF3IF3_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Function::Log10<float, float> > >} {itkLog10ImageFilterIF3IF3_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLog10ImageFilterIUC2IUC2} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLog10ImageFilterIUC2IUC2_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Function::Log10<unsigned char, unsigned char> >} {itkLog10ImageFilterIUC2IUC2_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Function::Log10<unsigned char, unsigned char> > >} {itkLog10ImageFilterIUC2IUC2_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLog10ImageFilterIUC3IUC3} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLog10ImageFilterIUC3IUC3_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Function::Log10<unsigned char, unsigned char> >} {itkLog10ImageFilterIUC3IUC3_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Function::Log10<unsigned char, unsigned char> > >} {itkLog10ImageFilterIUC3IUC3_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLog10ImageFilterIUL2IUL2} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLog10ImageFilterIUL2IUL2_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Function::Log10<long unsigned int, long unsigned int> >} {itkLog10ImageFilterIUL2IUL2_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Function::Log10<long unsigned int, long unsigned int> > >} {itkLog10ImageFilterIUL2IUL2_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLog10ImageFilterIUL3IUL3} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLog10ImageFilterIUL3IUL3_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Function::Log10<long unsigned int, long unsigned int> >} {itkLog10ImageFilterIUL3IUL3_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Function::Log10<long unsigned int, long unsigned int> > >} {itkLog10ImageFilterIUL3IUL3_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLog10ImageFilterIUS2IUS2} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLog10ImageFilterIUS2IUS2_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Function::Log10<short unsigned int, short unsigned int> >} {itkLog10ImageFilterIUS2IUS2_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Function::Log10<short unsigned int, short unsigned int> > >} {itkLog10ImageFilterIUS2IUS2_Superclass_Pointer} {itkLog10ImageFilter}
+{itk::Log10ImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLog10ImageFilterIUS3IUS3} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::Log10ImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLog10ImageFilterIUS3IUS3_Pointer} {itkLog10ImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Function::Log10<short unsigned int, short unsigned int> >} {itkLog10ImageFilterIUS3IUS3_Superclass} {itkLog10ImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Function::Log10<short unsigned int, short unsigned int> > >} {itkLog10ImageFilterIUS3IUS3_Superclass_Pointer} {itkLog10ImageFilter}

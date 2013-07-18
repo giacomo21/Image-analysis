@@ -1,0 +1,4 @@
+{itk::BSplineInterpolationWeightFunction<double,2u,2u>} {itkBSplineInterpolationWeightFunctionD22} {itkBSplineInterpolationWeightFunction}
+{itk::SmartPointer<itk::BSplineInterpolationWeightFunction<double, 2u, 2u> >} {itkBSplineInterpolationWeightFunctionD22_Pointer} {itkBSplineInterpolationWeightFunction}
+{itk::BSplineInterpolationWeightFunction<double,3u,3u>} {itkBSplineInterpolationWeightFunctionD33} {itkBSplineInterpolationWeightFunction}
+{itk::SmartPointer<itk::BSplineInterpolationWeightFunction<double, 3u, 3u> >} {itkBSplineInterpolationWeightFunctionD33_Pointer} {itkBSplineInterpolationWeightFunction}

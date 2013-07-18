@@ -1,0 +1,50 @@
+{itk::FixedArray<bool,1u>} {itkFixedArrayB1} {itkFixedArray}
+{itk::FixedArray<bool,2u>} {itkFixedArrayB2} {itkFixedArray}
+{itk::FixedArray<bool,3u>} {itkFixedArrayB3} {itkFixedArray}
+{itk::FixedArray<bool,4u>} {itkFixedArrayB4} {itkFixedArray}
+{itk::FixedArray<bool,6u>} {itkFixedArrayB6} {itkFixedArray}
+{itk::FixedArray<double,1u>} {itkFixedArrayD1} {itkFixedArray}
+{itk::FixedArray<double,2u>} {itkFixedArrayD2} {itkFixedArray}
+{itk::FixedArray<double,3u>} {itkFixedArrayD3} {itkFixedArray}
+{itk::FixedArray<double,4u>} {itkFixedArrayD4} {itkFixedArray}
+{itk::FixedArray<double,6u>} {itkFixedArrayD6} {itkFixedArray}
+{itk::FixedArray<float,1u>} {itkFixedArrayF1} {itkFixedArray}
+{itk::FixedArray<float,2u>} {itkFixedArrayF2} {itkFixedArray}
+{itk::FixedArray<float,3u>} {itkFixedArrayF3} {itkFixedArray}
+{itk::FixedArray<float,4u>} {itkFixedArrayF4} {itkFixedArray}
+{itk::FixedArray<float,6u>} {itkFixedArrayF6} {itkFixedArray}
+{itk::FixedArray<signed char,1u>} {itkFixedArraySC1} {itkFixedArray}
+{itk::FixedArray<signed char,2u>} {itkFixedArraySC2} {itkFixedArray}
+{itk::FixedArray<signed char,3u>} {itkFixedArraySC3} {itkFixedArray}
+{itk::FixedArray<signed char,4u>} {itkFixedArraySC4} {itkFixedArray}
+{itk::FixedArray<signed char,6u>} {itkFixedArraySC6} {itkFixedArray}
+{itk::FixedArray<long int,1u>} {itkFixedArraySL1} {itkFixedArray}
+{itk::FixedArray<long int,2u>} {itkFixedArraySL2} {itkFixedArray}
+{itk::FixedArray<long int,3u>} {itkFixedArraySL3} {itkFixedArray}
+{itk::FixedArray<long int,4u>} {itkFixedArraySL4} {itkFixedArray}
+{itk::FixedArray<long int,6u>} {itkFixedArraySL6} {itkFixedArray}
+{itk::FixedArray<short int,1u>} {itkFixedArraySS1} {itkFixedArray}
+{itk::FixedArray<short int,2u>} {itkFixedArraySS2} {itkFixedArray}
+{itk::FixedArray<short int,3u>} {itkFixedArraySS3} {itkFixedArray}
+{itk::FixedArray<short int,4u>} {itkFixedArraySS4} {itkFixedArray}
+{itk::FixedArray<short int,6u>} {itkFixedArraySS6} {itkFixedArray}
+{itk::FixedArray<unsigned char,1u>} {itkFixedArrayUC1} {itkFixedArray}
+{itk::FixedArray<unsigned char,2u>} {itkFixedArrayUC2} {itkFixedArray}
+{itk::FixedArray<unsigned char,3u>} {itkFixedArrayUC3} {itkFixedArray}
+{itk::FixedArray<unsigned char,4u>} {itkFixedArrayUC4} {itkFixedArray}
+{itk::FixedArray<unsigned char,6u>} {itkFixedArrayUC6} {itkFixedArray}
+{itk::FixedArray<unsigned int,1u>} {itkFixedArrayUI1} {itkFixedArray}
+{itk::FixedArray<unsigned int,2u>} {itkFixedArrayUI2} {itkFixedArray}
+{itk::FixedArray<unsigned int,3u>} {itkFixedArrayUI3} {itkFixedArray}
+{itk::FixedArray<unsigned int,4u>} {itkFixedArrayUI4} {itkFixedArray}
+{itk::FixedArray<unsigned int,6u>} {itkFixedArrayUI6} {itkFixedArray}
+{itk::FixedArray<long unsigned int,1u>} {itkFixedArrayUL1} {itkFixedArray}
+{itk::FixedArray<long unsigned int,2u>} {itkFixedArrayUL2} {itkFixedArray}
+{itk::FixedArray<long unsigned int,3u>} {itkFixedArrayUL3} {itkFixedArray}
+{itk::FixedArray<long unsigned int,4u>} {itkFixedArrayUL4} {itkFixedArray}
+{itk::FixedArray<long unsigned int,6u>} {itkFixedArrayUL6} {itkFixedArray}
+{itk::FixedArray<short unsigned int,1u>} {itkFixedArrayUS1} {itkFixedArray}
+{itk::FixedArray<short unsigned int,2u>} {itkFixedArrayUS2} {itkFixedArray}
+{itk::FixedArray<short unsigned int,3u>} {itkFixedArrayUS3} {itkFixedArray}
+{itk::FixedArray<short unsigned int,4u>} {itkFixedArrayUS4} {itkFixedArray}
+{itk::FixedArray<short unsigned int,6u>} {itkFixedArrayUS6} {itkFixedArray}

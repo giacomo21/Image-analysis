@@ -1,0 +1,2 @@
+{vnl_matrix_fixed_ref<float,3u,3u>} {vnl_matrix_fixed_refF_3_3} {vnl_matrix_fixed_ref}
+{vnl_matrix_fixed_ref_const<float,3u,3u>} {vnl_matrix_fixed_ref_constF_3_3} {vnl_matrix_fixed_ref}

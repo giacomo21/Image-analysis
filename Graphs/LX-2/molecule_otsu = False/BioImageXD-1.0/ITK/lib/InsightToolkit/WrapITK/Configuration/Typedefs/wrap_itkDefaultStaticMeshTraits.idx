@@ -1,0 +1,4 @@
+{itk::DefaultStaticMeshTraits<double,2u,2u,double,float,double>} {itkDefaultStaticMeshTraitsD22D} {itkDefaultStaticMeshTraits}
+{itk::DefaultStaticMeshTraits<double,2u,2u,double,double,double>} {itkDefaultStaticMeshTraitsD22DD} {itkDefaultStaticMeshTraits}
+{itk::DefaultStaticMeshTraits<double,3u,3u,double,float,double>} {itkDefaultStaticMeshTraitsD33D} {itkDefaultStaticMeshTraits}
+{itk::DefaultStaticMeshTraits<double,3u,3u,double,double,double>} {itkDefaultStaticMeshTraitsD33DD} {itkDefaultStaticMeshTraits}

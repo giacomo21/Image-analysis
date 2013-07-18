@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkSparseFieldLayerPSFLSNI3)
+DECLARE_REF_COUNT_CLASS(itkSparseFieldLayerPSFLSNI2)
+DECLARE_REF_COUNT_CLASS(itkParallelSparseFieldLevelSetImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkParallelSparseFieldLevelSetImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkParallelSparseFieldLevelSetImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkParallelSparseFieldLevelSetImageFilterIF2IF2)
+

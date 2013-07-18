@@ -1,0 +1,196 @@
+{itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkInPlaceImageFilterICVF22ICVF22} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkInPlaceImageFilterICVF22ICVF22_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkInPlaceImageFilterICVF22IVF22} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkInPlaceImageFilterICVF22IVF22_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkInPlaceImageFilterICVF33ICVF33} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkInPlaceImageFilterICVF33ICVF33_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkInPlaceImageFilterICVF33IVF33} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkInPlaceImageFilterICVF33IVF33_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkInPlaceImageFilterID2ID2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkInPlaceImageFilterID2ID2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<float, 2u> >} {itkInPlaceImageFilterID2IF2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<float, 2u> > >} {itkInPlaceImageFilterID2IF2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterID2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterID2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterID2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterID2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u> >} {itkInPlaceImageFilterID2IUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u> > >} {itkInPlaceImageFilterID2IUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u> >} {itkInPlaceImageFilterID2IUL2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInPlaceImageFilterID2IUL2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterID2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterID2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkInPlaceImageFilterID3ID3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkInPlaceImageFilterID3ID3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<float, 3u> >} {itkInPlaceImageFilterID3IF3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<float, 3u> > >} {itkInPlaceImageFilterID3IF3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterID3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterID3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterID3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterID3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u> >} {itkInPlaceImageFilterID3IUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u> > >} {itkInPlaceImageFilterID3IUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u> >} {itkInPlaceImageFilterID3IUL3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInPlaceImageFilterID3IUL3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterID3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterID3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<double, 2u> >} {itkInPlaceImageFilterIF2ID2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<double, 2u> > >} {itkInPlaceImageFilterIF2ID2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkInPlaceImageFilterIF2IF2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkInPlaceImageFilterIF2IF2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIF2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIF2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIF2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIF2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u> >} {itkInPlaceImageFilterIF2IUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u> > >} {itkInPlaceImageFilterIF2IUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u> >} {itkInPlaceImageFilterIF2IUL2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInPlaceImageFilterIF2IUL2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIF2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIF2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<double, 3u> >} {itkInPlaceImageFilterIF3ID3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<double, 3u> > >} {itkInPlaceImageFilterIF3ID3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkInPlaceImageFilterIF3IF3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkInPlaceImageFilterIF3IF3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIF3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIF3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIF3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIF3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u> >} {itkInPlaceImageFilterIF3IUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u> > >} {itkInPlaceImageFilterIF3IUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u> >} {itkInPlaceImageFilterIF3IUL3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInPlaceImageFilterIF3IUL3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIF3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIF3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 2u>,itk::Image<itk::RGBAPixel<unsigned char>, 2u> >} {itkInPlaceImageFilterIRGBAUC2IRGBAUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 2u>, itk::Image<itk::RGBAPixel<unsigned char>, 2u> > >} {itkInPlaceImageFilterIRGBAUC2IRGBAUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIRGBAUC2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIRGBAUC2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 3u>,itk::Image<itk::RGBAPixel<unsigned char>, 3u> >} {itkInPlaceImageFilterIRGBAUC3IRGBAUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 3u>, itk::Image<itk::RGBAPixel<unsigned char>, 3u> > >} {itkInPlaceImageFilterIRGBAUC3IRGBAUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIRGBAUC3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<unsigned char>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIRGBAUC3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<itk::RGBAPixel<unsigned char>, 2u> >} {itkInPlaceImageFilterIRGBAUS2IRGBAUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<itk::RGBAPixel<unsigned char>, 2u> > >} {itkInPlaceImageFilterIRGBAUS2IRGBAUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIRGBAUS2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIRGBAUS2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIRGBAUS2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIRGBAUS2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<unsigned char>, 3u> >} {itkInPlaceImageFilterIRGBAUS3IRGBAUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<unsigned char>, 3u> > >} {itkInPlaceImageFilterIRGBAUS3IRGBAUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIRGBAUS3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIRGBAUS3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIRGBAUS3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIRGBAUS3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 2u>,itk::Image<itk::RGBPixel<unsigned char>, 2u> >} {itkInPlaceImageFilterIRGBUC2IRGBUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 2u>, itk::Image<itk::RGBPixel<unsigned char>, 2u> > >} {itkInPlaceImageFilterIRGBUC2IRGBUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIRGBUC2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIRGBUC2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 3u>,itk::Image<itk::RGBPixel<unsigned char>, 3u> >} {itkInPlaceImageFilterIRGBUC3IRGBUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 3u>, itk::Image<itk::RGBPixel<unsigned char>, 3u> > >} {itkInPlaceImageFilterIRGBUC3IRGBUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIRGBUC3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<unsigned char>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIRGBUC3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<itk::RGBPixel<unsigned char>, 2u> >} {itkInPlaceImageFilterIRGBUS2IRGBUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<itk::RGBPixel<unsigned char>, 2u> > >} {itkInPlaceImageFilterIRGBUS2IRGBUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIRGBUS2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIRGBUS2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIRGBUS2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIRGBUS2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<unsigned char>, 3u> >} {itkInPlaceImageFilterIRGBUS3IRGBUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<unsigned char>, 3u> > >} {itkInPlaceImageFilterIRGBUS3IRGBUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIRGBUS3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIRGBUS3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIRGBUS3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIRGBUS3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkInPlaceImageFilterIUC2ID2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkInPlaceImageFilterIUC2ID2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkInPlaceImageFilterIUC2IF2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkInPlaceImageFilterIUC2IF2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUC2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUC2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUC2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUC2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkInPlaceImageFilterIUC2IUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkInPlaceImageFilterIUC2IUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkInPlaceImageFilterIUC2IUL2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInPlaceImageFilterIUC2IUL2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIUC2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIUC2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkInPlaceImageFilterIUC3ID3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkInPlaceImageFilterIUC3ID3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkInPlaceImageFilterIUC3IF3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkInPlaceImageFilterIUC3IF3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUC3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUC3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUC3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUC3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkInPlaceImageFilterIUC3IUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkInPlaceImageFilterIUC3IUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkInPlaceImageFilterIUC3IUL3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInPlaceImageFilterIUC3IUL3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIUC3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIUC3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkInPlaceImageFilterIUL2ID2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkInPlaceImageFilterIUL2ID2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkInPlaceImageFilterIUL2IF2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkInPlaceImageFilterIUL2IF2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUL2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUL2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUL2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUL2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkInPlaceImageFilterIUL2IUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkInPlaceImageFilterIUL2IUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkInPlaceImageFilterIUL2IUL2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInPlaceImageFilterIUL2IUL2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIUL2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIUL2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkInPlaceImageFilterIUL3ID3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkInPlaceImageFilterIUL3ID3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkInPlaceImageFilterIUL3IF3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkInPlaceImageFilterIUL3IF3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUL3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUL3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUL3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUL3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkInPlaceImageFilterIUL3IUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkInPlaceImageFilterIUL3IUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkInPlaceImageFilterIUL3IUL3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInPlaceImageFilterIUL3IUL3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIUL3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIUL3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkInPlaceImageFilterIUS2ID2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkInPlaceImageFilterIUS2ID2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkInPlaceImageFilterIUS2IF2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkInPlaceImageFilterIUS2IF2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUS2IRGBAUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUS2IRGBAUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkInPlaceImageFilterIUS2IRGBUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkInPlaceImageFilterIUS2IRGBUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkInPlaceImageFilterIUS2IUC2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkInPlaceImageFilterIUS2IUC2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkInPlaceImageFilterIUS2IUL2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInPlaceImageFilterIUS2IUL2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkInPlaceImageFilterIUS2IUS2} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInPlaceImageFilterIUS2IUS2_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkInPlaceImageFilterIUS3ID3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkInPlaceImageFilterIUS3ID3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkInPlaceImageFilterIUS3IF3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkInPlaceImageFilterIUS3IF3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUS3IRGBAUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUS3IRGBAUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkInPlaceImageFilterIUS3IRGBUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkInPlaceImageFilterIUS3IRGBUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkInPlaceImageFilterIUS3IUC3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkInPlaceImageFilterIUS3IUC3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkInPlaceImageFilterIUS3IUL3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInPlaceImageFilterIUS3IUL3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkInPlaceImageFilterIUS3IUS3} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInPlaceImageFilterIUS3IUS3_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkInPlaceImageFilterIVF22ICVF22} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkInPlaceImageFilterIVF22ICVF22_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkInPlaceImageFilterIVF22IVF22} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkInPlaceImageFilterIVF22IVF22_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkInPlaceImageFilterIVF33ICVF33} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkInPlaceImageFilterIVF33ICVF33_Pointer} {itkInPlaceImageFilterA}
+{itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkInPlaceImageFilterIVF33IVF33} {itkInPlaceImageFilterA}
+{itk::SmartPointer<itk::InPlaceImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkInPlaceImageFilterIVF33IVF33_Pointer} {itkInPlaceImageFilterA}

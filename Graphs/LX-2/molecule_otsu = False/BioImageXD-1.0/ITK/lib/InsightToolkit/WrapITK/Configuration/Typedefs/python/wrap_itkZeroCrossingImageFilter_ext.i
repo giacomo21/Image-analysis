@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkZeroCrossingImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkZeroCrossingImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkZeroCrossingImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkZeroCrossingImageFilterIF2IF2)
+

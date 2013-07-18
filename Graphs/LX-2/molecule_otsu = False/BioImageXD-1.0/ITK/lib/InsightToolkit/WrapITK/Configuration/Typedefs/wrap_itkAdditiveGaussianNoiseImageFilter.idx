@@ -1,0 +1,20 @@
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAdditiveGaussianNoiseImageFilterID2ID2} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAdditiveGaussianNoiseImageFilterID2ID2_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAdditiveGaussianNoiseImageFilterID3ID3} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAdditiveGaussianNoiseImageFilterID3ID3_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAdditiveGaussianNoiseImageFilterIF2IF2} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAdditiveGaussianNoiseImageFilterIF2IF2_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAdditiveGaussianNoiseImageFilterIF3IF3} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAdditiveGaussianNoiseImageFilterIF3IF3_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkAdditiveGaussianNoiseImageFilterIUC2IUC2} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkAdditiveGaussianNoiseImageFilterIUC2IUC2_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkAdditiveGaussianNoiseImageFilterIUC3IUC3} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkAdditiveGaussianNoiseImageFilterIUC3IUC3_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkAdditiveGaussianNoiseImageFilterIUL2IUL2} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkAdditiveGaussianNoiseImageFilterIUL2IUL2_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkAdditiveGaussianNoiseImageFilterIUL3IUL3} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkAdditiveGaussianNoiseImageFilterIUL3IUL3_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkAdditiveGaussianNoiseImageFilterIUS2IUS2} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkAdditiveGaussianNoiseImageFilterIUS2IUS2_Pointer} {itkAdditiveGaussianNoiseImageFilter}
+{itk::AdditiveGaussianNoiseImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkAdditiveGaussianNoiseImageFilterIUS3IUS3} {itkAdditiveGaussianNoiseImageFilter}
+{itk::SmartPointer<itk::AdditiveGaussianNoiseImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkAdditiveGaussianNoiseImageFilterIUS3IUS3_Pointer} {itkAdditiveGaussianNoiseImageFilter}

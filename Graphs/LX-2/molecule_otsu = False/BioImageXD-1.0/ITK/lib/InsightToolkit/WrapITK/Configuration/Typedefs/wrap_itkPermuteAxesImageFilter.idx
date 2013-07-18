@@ -1,0 +1,20 @@
+{itk::PermuteAxesImageFilter<itk::Image<double, 2u> >} {itkPermuteAxesImageFilterID2} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<double, 2u> > >} {itkPermuteAxesImageFilterID2_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<double, 3u> >} {itkPermuteAxesImageFilterID3} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<double, 3u> > >} {itkPermuteAxesImageFilterID3_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<float, 2u> >} {itkPermuteAxesImageFilterIF2} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<float, 2u> > >} {itkPermuteAxesImageFilterIF2_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<float, 3u> >} {itkPermuteAxesImageFilterIF3} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<float, 3u> > >} {itkPermuteAxesImageFilterIF3_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<unsigned char, 2u> >} {itkPermuteAxesImageFilterIUC2} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<unsigned char, 2u> > >} {itkPermuteAxesImageFilterIUC2_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<unsigned char, 3u> >} {itkPermuteAxesImageFilterIUC3} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<unsigned char, 3u> > >} {itkPermuteAxesImageFilterIUC3_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<long unsigned int, 2u> >} {itkPermuteAxesImageFilterIUL2} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<long unsigned int, 2u> > >} {itkPermuteAxesImageFilterIUL2_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<long unsigned int, 3u> >} {itkPermuteAxesImageFilterIUL3} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<long unsigned int, 3u> > >} {itkPermuteAxesImageFilterIUL3_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<short unsigned int, 2u> >} {itkPermuteAxesImageFilterIUS2} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<short unsigned int, 2u> > >} {itkPermuteAxesImageFilterIUS2_Pointer} {itkPermuteAxesImageFilter}
+{itk::PermuteAxesImageFilter<itk::Image<short unsigned int, 3u> >} {itkPermuteAxesImageFilterIUS3} {itkPermuteAxesImageFilter}
+{itk::SmartPointer<itk::PermuteAxesImageFilter<itk::Image<short unsigned int, 3u> > >} {itkPermuteAxesImageFilterIUS3_Pointer} {itkPermuteAxesImageFilter}

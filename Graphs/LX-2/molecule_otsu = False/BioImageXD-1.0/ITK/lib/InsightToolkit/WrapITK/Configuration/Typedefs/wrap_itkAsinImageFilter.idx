@@ -1,0 +1,40 @@
+{itk::AsinImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAsinImageFilterID2ID2} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAsinImageFilterID2ID2_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Functor::Asin<double, double> >} {itkAsinImageFilterID2ID2_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Functor::Asin<double, double> > >} {itkAsinImageFilterID2ID2_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAsinImageFilterID3ID3} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAsinImageFilterID3ID3_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Functor::Asin<double, double> >} {itkAsinImageFilterID3ID3_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Functor::Asin<double, double> > >} {itkAsinImageFilterID3ID3_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAsinImageFilterIF2IF2} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAsinImageFilterIF2IF2_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Functor::Asin<float, float> >} {itkAsinImageFilterIF2IF2_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Functor::Asin<float, float> > >} {itkAsinImageFilterIF2IF2_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAsinImageFilterIF3IF3} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAsinImageFilterIF3IF3_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Functor::Asin<float, float> >} {itkAsinImageFilterIF3IF3_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Functor::Asin<float, float> > >} {itkAsinImageFilterIF3IF3_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkAsinImageFilterIUC2IUC2} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkAsinImageFilterIUC2IUC2_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Asin<unsigned char, unsigned char> >} {itkAsinImageFilterIUC2IUC2_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Asin<unsigned char, unsigned char> > >} {itkAsinImageFilterIUC2IUC2_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkAsinImageFilterIUC3IUC3} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkAsinImageFilterIUC3IUC3_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Asin<unsigned char, unsigned char> >} {itkAsinImageFilterIUC3IUC3_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Asin<unsigned char, unsigned char> > >} {itkAsinImageFilterIUC3IUC3_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkAsinImageFilterIUL2IUL2} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkAsinImageFilterIUL2IUL2_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Asin<long unsigned int, long unsigned int> >} {itkAsinImageFilterIUL2IUL2_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Asin<long unsigned int, long unsigned int> > >} {itkAsinImageFilterIUL2IUL2_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkAsinImageFilterIUL3IUL3} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkAsinImageFilterIUL3IUL3_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Asin<long unsigned int, long unsigned int> >} {itkAsinImageFilterIUL3IUL3_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Asin<long unsigned int, long unsigned int> > >} {itkAsinImageFilterIUL3IUL3_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkAsinImageFilterIUS2IUS2} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkAsinImageFilterIUS2IUS2_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Asin<short unsigned int, short unsigned int> >} {itkAsinImageFilterIUS2IUS2_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Asin<short unsigned int, short unsigned int> > >} {itkAsinImageFilterIUS2IUS2_Superclass_Pointer} {itkAsinImageFilter}
+{itk::AsinImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkAsinImageFilterIUS3IUS3} {itkAsinImageFilter}
+{itk::SmartPointer<itk::AsinImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkAsinImageFilterIUS3IUS3_Pointer} {itkAsinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Asin<short unsigned int, short unsigned int> >} {itkAsinImageFilterIUS3IUS3_Superclass} {itkAsinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Asin<short unsigned int, short unsigned int> > >} {itkAsinImageFilterIUS3IUS3_Superclass_Pointer} {itkAsinImageFilter}

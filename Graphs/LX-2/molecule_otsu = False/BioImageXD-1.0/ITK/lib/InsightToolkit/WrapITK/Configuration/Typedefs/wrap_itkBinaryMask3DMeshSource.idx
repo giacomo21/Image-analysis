@@ -1,0 +1,6 @@
+{itk::BinaryMask3DMeshSource<itk::Image<unsigned char, 3u>,itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkBinaryMask3DMeshSourceIUC3MD3Q} {itkBinaryMask3DMeshSource}
+{itk::SmartPointer<itk::BinaryMask3DMeshSource<itk::Image<unsigned char, 3u>, itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > > >} {itkBinaryMask3DMeshSourceIUC3MD3Q_Pointer} {itkBinaryMask3DMeshSource}
+{itk::BinaryMask3DMeshSource<itk::Image<long unsigned int, 3u>,itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkBinaryMask3DMeshSourceIUL3MD3Q} {itkBinaryMask3DMeshSource}
+{itk::SmartPointer<itk::BinaryMask3DMeshSource<itk::Image<long unsigned int, 3u>, itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > > >} {itkBinaryMask3DMeshSourceIUL3MD3Q_Pointer} {itkBinaryMask3DMeshSource}
+{itk::BinaryMask3DMeshSource<itk::Image<short unsigned int, 3u>,itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkBinaryMask3DMeshSourceIUS3MD3Q} {itkBinaryMask3DMeshSource}
+{itk::SmartPointer<itk::BinaryMask3DMeshSource<itk::Image<short unsigned int, 3u>, itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > > >} {itkBinaryMask3DMeshSourceIUS3MD3Q_Pointer} {itkBinaryMask3DMeshSource}

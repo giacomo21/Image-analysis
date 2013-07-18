@@ -1,0 +1,450 @@
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultDynamicMeshTraits.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultStaticMeshTraits.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdge.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGeometricalQuadEdge.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeMeshPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeCellTraitsInfo.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeCellTraitsInfo.h"
+#include "itkCellInterface.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGeometricalQuadEdge.h"
+#include "itkQuadEdgeMeshPoint.h"
+#include "itkMesh.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkMapContainer.h"
+#include "itkBoundingBox.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeCellTraitsInfo.h"
+#include "itkCellInterface.h"
+#include "itkQuadEdgeMeshLineCell.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultStaticMeshTraits.h"
+#include "itkDefaultDynamicMeshTraits.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkPointSet.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultStaticMeshTraits.h"
+#include "itkDefaultDynamicMeshTraits.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkMesh.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkQuadEdgeMesh.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMesh.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkMeshSource.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMesh.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkImageToMeshFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMesh.h"
+#include "itkQuadEdgeMeshTraits.h"
+#include "itkBinaryMask3DMeshSource.h"
+
+typedef itk::DefaultDynamicMeshTraits< double,2,2,double,double > itkDefaultDynamicMeshTraitsD22DD;
+typedef itk::DefaultDynamicMeshTraits< double,2,2,double > itkDefaultDynamicMeshTraitsD22D;
+typedef itk::DefaultDynamicMeshTraits< double,3,3,double,double > itkDefaultDynamicMeshTraitsD33DD;
+typedef itk::DefaultDynamicMeshTraits< double,3,3,double > itkDefaultDynamicMeshTraitsD33D;
+typedef itk::DefaultStaticMeshTraits< double,2,2,double,double > itkDefaultStaticMeshTraitsD22DD;
+typedef itk::DefaultStaticMeshTraits< double,2,2,double > itkDefaultStaticMeshTraitsD22D;
+typedef itk::DefaultStaticMeshTraits< double,3,3,double,double > itkDefaultStaticMeshTraitsD33DD;
+typedef itk::DefaultStaticMeshTraits< double,3,3,double > itkDefaultStaticMeshTraitsD33D;
+typedef itk::QuadEdge itkQuadEdge;
+typedef itk::GeometricalQuadEdge< unsigned long, unsigned long, bool, bool, true > itkGeometricalQuadEdgeULULBBF;
+typedef itk::GeometricalQuadEdge< unsigned long, unsigned long, bool, bool, false > itkGeometricalQuadEdgeULULBBT;
+typedef itk::QuadEdgeMeshPoint< float, 2 > itkQuadEdgeMeshPointF2;
+typedef itk::QuadEdgeMeshPoint< float, 3 > itkQuadEdgeMeshPointF3;
+typedef itk::QuadEdgeMeshTraits< double, 2, bool, bool, float, float > itkQuadEdgeMeshTraitsD2BBFF;
+typedef itk::QuadEdgeMeshTraits< double, 3, bool, bool, float, float > itkQuadEdgeMeshTraitsD3BBFF;
+typedef itk::QuadEdgeMeshCellTraitsInfo< 2 > itkQuadEdgeMeshCellTraitsInfo2;
+typedef itk::QuadEdgeMeshCellTraitsInfo< 3 > itkQuadEdgeMeshCellTraitsInfo3;
+typedef itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > > itkCellInterfaceDQEMCTI2;
+typedef itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > >::SelfAutoPointer itkCellInterfaceDQEMCTI2_AutoPointer;
+typedef itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > > itkCellInterfaceDQEMCTI3;
+typedef itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > >::SelfAutoPointer itkCellInterfaceDQEMCTI3_AutoPointer;
+typedef itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 2 > > itkMapContainerULQEMPF2;
+typedef itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 2 > >::Pointer itkMapContainerULQEMPF2_Pointer;
+typedef itk::MapContainer< unsigned long, itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > >* > itkMapContainerULCIDQEMCTI2;
+typedef itk::MapContainer< unsigned long, itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > >* >::Pointer itkMapContainerULCIDQEMCTI2_Pointer;
+typedef itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 3 > > itkMapContainerULQEMPF3;
+typedef itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 3 > >::Pointer itkMapContainerULQEMPF3_Pointer;
+typedef itk::MapContainer< unsigned long, itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > >* > itkMapContainerULCIDQEMCTI3;
+typedef itk::MapContainer< unsigned long, itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > >* >::Pointer itkMapContainerULCIDQEMCTI3_Pointer;
+typedef itk::BoundingBox< unsigned long, 2, float, itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 2 > > > itkBoundingBoxUL2FMCULQEMPF2;
+typedef itk::BoundingBox< unsigned long, 2, float, itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 2 > > >::Pointer itkBoundingBoxUL2FMCULQEMPF2_Pointer;
+typedef itk::BoundingBox< unsigned long, 3, float, itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 3 > > > itkBoundingBoxUL3FMCULQEMPF3;
+typedef itk::BoundingBox< unsigned long, 3, float, itk::MapContainer< unsigned long, itk::QuadEdgeMeshPoint< float, 3 > > >::Pointer itkBoundingBoxUL3FMCULQEMPF3_Pointer;
+typedef itk::QuadEdgeMeshLineCell< itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > > > itkQuadEdgeMeshLineCellCIDQEMCTIF2;
+typedef itk::QuadEdgeMeshLineCell< itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 2 > > >::SelfAutoPointer itkQuadEdgeMeshLineCellCIDQEMCTIF2_AutoPointer;
+typedef itk::QuadEdgeMeshLineCell< itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > > > itkQuadEdgeMeshLineCellCIDQEMCTIF3;
+typedef itk::QuadEdgeMeshLineCell< itk::CellInterface< double, itk::QuadEdgeMeshCellTraitsInfo< 3 > > >::SelfAutoPointer itkQuadEdgeMeshLineCellCIDQEMCTIF3_AutoPointer;
+typedef itk::PointSet< double,2,itk::DefaultStaticMeshTraits< double,2,2,double > > itkPointSetD2S;
+typedef itk::PointSet< double,2,itk::DefaultStaticMeshTraits< double,2,2,double > >::Pointer itkPointSetD2S_Pointer;
+typedef itk::PointSet< double,2,itk::DefaultDynamicMeshTraits< double,2,2,double > > itkPointSetD2D;
+typedef itk::PointSet< double,2,itk::DefaultDynamicMeshTraits< double,2,2,double > >::Pointer itkPointSetD2D_Pointer;
+typedef itk::PointSet< itk::Point< double,2 >,2,itk::DefaultStaticMeshTraits< double,2,2,double,double > > itkPointSetPD22S;
+typedef itk::PointSet< itk::Point< double,2 >,2,itk::DefaultStaticMeshTraits< double,2,2,double,double > >::Pointer itkPointSetPD22S_Pointer;
+typedef itk::PointSet< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > itkPointSetD2Q;
+typedef itk::PointSet< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > >::Pointer itkPointSetD2Q_Pointer;
+typedef itk::PointSet< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > itkPointSetD3S;
+typedef itk::PointSet< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > >::Pointer itkPointSetD3S_Pointer;
+typedef itk::PointSet< double,3,itk::DefaultDynamicMeshTraits< double,3,3,double > > itkPointSetD3D;
+typedef itk::PointSet< double,3,itk::DefaultDynamicMeshTraits< double,3,3,double > >::Pointer itkPointSetD3D_Pointer;
+typedef itk::PointSet< itk::Point< double,3 >,3,itk::DefaultStaticMeshTraits< double,3,3,double,double > > itkPointSetPD33S;
+typedef itk::PointSet< itk::Point< double,3 >,3,itk::DefaultStaticMeshTraits< double,3,3,double,double > >::Pointer itkPointSetPD33S_Pointer;
+typedef itk::PointSet< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > itkPointSetD3Q;
+typedef itk::PointSet< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > >::Pointer itkPointSetD3Q_Pointer;
+typedef itk::Mesh< double,2,itk::DefaultStaticMeshTraits< double,2,2,double > > itkMeshD2S;
+typedef itk::Mesh< double,2,itk::DefaultStaticMeshTraits< double,2,2,double > >::Pointer itkMeshD2S_Pointer;
+typedef itk::Mesh< double,2,itk::DefaultDynamicMeshTraits< double,2,2,double > > itkMeshD2D;
+typedef itk::Mesh< double,2,itk::DefaultDynamicMeshTraits< double,2,2,double > >::Pointer itkMeshD2D_Pointer;
+typedef itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > itkMeshD2Q;
+typedef itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > >::Pointer itkMeshD2Q_Pointer;
+typedef itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > itkMeshD3S;
+typedef itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > >::Pointer itkMeshD3S_Pointer;
+typedef itk::Mesh< double,3,itk::DefaultDynamicMeshTraits< double,3,3,double > > itkMeshD3D;
+typedef itk::Mesh< double,3,itk::DefaultDynamicMeshTraits< double,3,3,double > >::Pointer itkMeshD3D_Pointer;
+typedef itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > itkMeshD3Q;
+typedef itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > >::Pointer itkMeshD3Q_Pointer;
+typedef itk::QuadEdgeMesh< double,3 > itkQuadEdgeMeshD3S;
+typedef itk::QuadEdgeMesh< double,3 >::Pointer itkQuadEdgeMeshD3S_Pointer;
+typedef itk::MeshSource< itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > > itkMeshSourceMD2Q;
+typedef itk::MeshSource< itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > >::Pointer itkMeshSourceMD2Q_Pointer;
+typedef itk::MeshSource< itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkMeshSourceMD3Q;
+typedef itk::MeshSource< itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkMeshSourceMD3Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned char,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > > itkImageToMeshFilterIUC2MD2Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned char,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUC2MD2Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned long,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > > itkImageToMeshFilterIUL2MD2Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned long,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUL2MD2Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned short,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > > itkImageToMeshFilterIUS2MD2Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned short,2 >, itk::Mesh< double,2,itk::QuadEdgeMeshTraits< double,2,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUS2MD2Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned char,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkImageToMeshFilterIUC3MD3Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned char,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUC3MD3Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned long,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkImageToMeshFilterIUL3MD3Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned long,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUL3MD3Q_Pointer;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned short,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkImageToMeshFilterIUS3MD3Q;
+typedef itk::ImageToMeshFilter< itk::Image< unsigned short,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkImageToMeshFilterIUS3MD3Q_Pointer;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned char,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkBinaryMask3DMeshSourceIUC3MD3Q;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned char,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkBinaryMask3DMeshSourceIUC3MD3Q_Pointer;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned long,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkBinaryMask3DMeshSourceIUL3MD3Q;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned long,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkBinaryMask3DMeshSourceIUL3MD3Q_Pointer;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned short,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > > itkBinaryMask3DMeshSourceIUS3MD3Q;
+typedef itk::BinaryMask3DMeshSource< itk::Image< unsigned short,3 >, itk::Mesh< double,3,itk::QuadEdgeMeshTraits< double,3,bool,bool,float,float > > >::Pointer itkBinaryMask3DMeshSourceIUS3MD3Q_Pointer;
+

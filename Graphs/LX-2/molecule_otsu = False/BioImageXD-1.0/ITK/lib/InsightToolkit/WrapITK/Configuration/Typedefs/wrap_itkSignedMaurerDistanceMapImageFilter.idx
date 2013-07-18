@@ -1,0 +1,32 @@
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSignedMaurerDistanceMapImageFilterID2ID2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSignedMaurerDistanceMapImageFilterID2ID2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSignedMaurerDistanceMapImageFilterID3ID3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSignedMaurerDistanceMapImageFilterID3ID3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSignedMaurerDistanceMapImageFilterIF2IF2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIF2IF2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSignedMaurerDistanceMapImageFilterIF3IF3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIF3IF3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUC2ID2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUC2ID2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUC2IF2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUC2IF2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUC3ID3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUC3ID3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUC3IF3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUC3IF3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUL2ID2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUL2ID2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUL2IF2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUL2IF2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUL3ID3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUL3ID3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUL3IF3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUL3IF3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUS2ID2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUS2ID2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkSignedMaurerDistanceMapImageFilterIUS2IF2} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkSignedMaurerDistanceMapImageFilterIUS2IF2_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUS3ID3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUS3ID3_Pointer} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkSignedMaurerDistanceMapImageFilterIUS3IF3} {itkSignedMaurerDistanceMapImageFilter}
+{itk::SmartPointer<itk::SignedMaurerDistanceMapImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkSignedMaurerDistanceMapImageFilterIUS3IF3_Pointer} {itkSignedMaurerDistanceMapImageFilter}

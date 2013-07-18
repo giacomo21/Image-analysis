@@ -1,0 +1,6 @@
+{vnl_diag_matrix<double>} {vnl_diag_matrixD} {vnl_diag_matrix}
+{vnl_diag_matrix<float>} {vnl_diag_matrixF} {vnl_diag_matrix}
+{vnl_diag_matrix<long double>} {vnl_diag_matrixLD} {vnl_diag_matrix}
+{vnl_diag_matrix<int>} {vnl_diag_matrixSI} {vnl_diag_matrix}
+{vnl_diag_matrix<std::complex<double> >} {vnl_diag_matrix_vcl_complexD} {vnl_diag_matrix}
+{vnl_diag_matrix<std::complex<float> >} {vnl_diag_matrix_vcl_complexF} {vnl_diag_matrix}

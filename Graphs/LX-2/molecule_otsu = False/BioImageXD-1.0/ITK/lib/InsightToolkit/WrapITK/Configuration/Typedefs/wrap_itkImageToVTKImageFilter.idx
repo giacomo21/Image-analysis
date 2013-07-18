@@ -1,0 +1,20 @@
+{itk::ImageToVTKImageFilter<itk::Image<double, 2u> >} {itkImageToVTKImageFilterID2} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<double, 2u> > >} {itkImageToVTKImageFilterID2_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<double, 3u> >} {itkImageToVTKImageFilterID3} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<double, 3u> > >} {itkImageToVTKImageFilterID3_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<float, 2u> >} {itkImageToVTKImageFilterIF2} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<float, 2u> > >} {itkImageToVTKImageFilterIF2_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<float, 3u> >} {itkImageToVTKImageFilterIF3} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<float, 3u> > >} {itkImageToVTKImageFilterIF3_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<unsigned char, 2u> >} {itkImageToVTKImageFilterIUC2} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<unsigned char, 2u> > >} {itkImageToVTKImageFilterIUC2_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<unsigned char, 3u> >} {itkImageToVTKImageFilterIUC3} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<unsigned char, 3u> > >} {itkImageToVTKImageFilterIUC3_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<long unsigned int, 2u> >} {itkImageToVTKImageFilterIUL2} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<long unsigned int, 2u> > >} {itkImageToVTKImageFilterIUL2_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<long unsigned int, 3u> >} {itkImageToVTKImageFilterIUL3} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<long unsigned int, 3u> > >} {itkImageToVTKImageFilterIUL3_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<short unsigned int, 2u> >} {itkImageToVTKImageFilterIUS2} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<short unsigned int, 2u> > >} {itkImageToVTKImageFilterIUS2_Pointer} {itkImageToVTKImageFilter}
+{itk::ImageToVTKImageFilter<itk::Image<short unsigned int, 3u> >} {itkImageToVTKImageFilterIUS3} {itkImageToVTKImageFilter}
+{itk::SmartPointer<itk::ImageToVTKImageFilter<itk::Image<short unsigned int, 3u> > >} {itkImageToVTKImageFilterIUS3_Pointer} {itkImageToVTKImageFilter}

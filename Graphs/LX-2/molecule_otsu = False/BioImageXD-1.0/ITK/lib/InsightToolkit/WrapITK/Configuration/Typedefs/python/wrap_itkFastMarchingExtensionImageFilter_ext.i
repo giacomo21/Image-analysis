@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkFastMarchingExtensionImageFilterID3UC1ID3)
+DECLARE_REF_COUNT_CLASS(itkFastMarchingExtensionImageFilterIF3UC1IF3)
+DECLARE_REF_COUNT_CLASS(itkFastMarchingExtensionImageFilterID2UC1ID2)
+DECLARE_REF_COUNT_CLASS(itkFastMarchingExtensionImageFilterIF2UC1IF2)
+

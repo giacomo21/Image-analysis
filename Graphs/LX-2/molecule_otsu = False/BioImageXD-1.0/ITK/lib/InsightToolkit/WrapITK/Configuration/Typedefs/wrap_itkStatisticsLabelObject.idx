@@ -1,0 +1,4 @@
+{itk::StatisticsLabelObject<long unsigned int,2u>} {itkStatisticsLabelObjectUL2} {itkStatisticsLabelObject}
+{itk::SmartPointer<itk::StatisticsLabelObject<long unsigned int, 2u> >} {itkStatisticsLabelObjectUL2_Pointer} {itkStatisticsLabelObject}
+{itk::StatisticsLabelObject<long unsigned int,3u>} {itkStatisticsLabelObjectUL3} {itkStatisticsLabelObject}
+{itk::SmartPointer<itk::StatisticsLabelObject<long unsigned int, 3u> >} {itkStatisticsLabelObjectUL3_Pointer} {itkStatisticsLabelObject}

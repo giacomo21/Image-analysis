@@ -1,0 +1,13 @@
+{vnl_vector_ref<double>} {vnl_vector_refD} {vnl_vector_ref}
+{vnl_vector_ref<float>} {vnl_vector_refF} {vnl_vector_ref}
+{vnl_vector_ref<long double>} {vnl_vector_refLD} {vnl_vector_ref}
+{vnl_vector_ref<signed char>} {vnl_vector_refSC} {vnl_vector_ref}
+{vnl_vector_ref<int>} {vnl_vector_refSI} {vnl_vector_ref}
+{vnl_vector_ref<long int>} {vnl_vector_refSL} {vnl_vector_ref}
+{vnl_vector_ref<unsigned char>} {vnl_vector_refUC} {vnl_vector_ref}
+{vnl_vector_ref<unsigned int>} {vnl_vector_refUI} {vnl_vector_ref}
+{vnl_vector_ref<long unsigned int>} {vnl_vector_refUL} {vnl_vector_ref}
+{vnl_vector_ref<short unsigned int>} {vnl_vector_refUS} {vnl_vector_ref}
+{vnl_vector_ref<std::complex<double> >} {vnl_vector_ref_vcl_complexD} {vnl_vector_ref}
+{vnl_vector_ref<std::complex<float> >} {vnl_vector_ref_vcl_complexF} {vnl_vector_ref}
+{vnl_vector_ref<std::complex<long double> >} {vnl_vector_ref_vcl_complexLD} {vnl_vector_ref}

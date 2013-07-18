@@ -1,0 +1,20 @@
+{itk::ConnectedThresholdImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkConnectedThresholdImageFilterID2ID2} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkConnectedThresholdImageFilterID2ID2_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkConnectedThresholdImageFilterID3ID3} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkConnectedThresholdImageFilterID3ID3_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkConnectedThresholdImageFilterIF2IF2} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkConnectedThresholdImageFilterIF2IF2_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkConnectedThresholdImageFilterIF3IF3} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkConnectedThresholdImageFilterIF3IF3_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkConnectedThresholdImageFilterIUC2IUC2} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkConnectedThresholdImageFilterIUC2IUC2_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkConnectedThresholdImageFilterIUC3IUC3} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkConnectedThresholdImageFilterIUC3IUC3_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkConnectedThresholdImageFilterIUL2IUL2} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConnectedThresholdImageFilterIUL2IUL2_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkConnectedThresholdImageFilterIUL3IUL3} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConnectedThresholdImageFilterIUL3IUL3_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkConnectedThresholdImageFilterIUS2IUS2} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConnectedThresholdImageFilterIUS2IUS2_Pointer} {itkConnectedThresholdImageFilter}
+{itk::ConnectedThresholdImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkConnectedThresholdImageFilterIUS3IUS3} {itkConnectedThresholdImageFilter}
+{itk::SmartPointer<itk::ConnectedThresholdImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConnectedThresholdImageFilterIUS3IUS3_Pointer} {itkConnectedThresholdImageFilter}

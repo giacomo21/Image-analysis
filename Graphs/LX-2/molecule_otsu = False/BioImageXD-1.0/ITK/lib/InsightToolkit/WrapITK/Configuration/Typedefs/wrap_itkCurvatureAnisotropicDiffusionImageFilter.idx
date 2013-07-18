@@ -1,0 +1,8 @@
+{itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCurvatureAnisotropicDiffusionImageFilterID2ID2} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCurvatureAnisotropicDiffusionImageFilterID2ID2_Pointer} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCurvatureAnisotropicDiffusionImageFilterID3ID3} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCurvatureAnisotropicDiffusionImageFilterID3ID3_Pointer} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCurvatureAnisotropicDiffusionImageFilterIF2IF2} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCurvatureAnisotropicDiffusionImageFilterIF2IF2_Pointer} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCurvatureAnisotropicDiffusionImageFilterIF3IF3} {itkCurvatureAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::CurvatureAnisotropicDiffusionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCurvatureAnisotropicDiffusionImageFilterIF3IF3_Pointer} {itkCurvatureAnisotropicDiffusionImageFilter}

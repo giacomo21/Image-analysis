@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkKdTreeLSVF3)
+DECLARE_REF_COUNT_CLASS(itkKdTreeLSVF2)
+

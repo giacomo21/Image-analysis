@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkHistogramMatchingImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkHistogramMatchingImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkHistogramMatchingImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkHistogramMatchingImageFilterIF2IF2)
+

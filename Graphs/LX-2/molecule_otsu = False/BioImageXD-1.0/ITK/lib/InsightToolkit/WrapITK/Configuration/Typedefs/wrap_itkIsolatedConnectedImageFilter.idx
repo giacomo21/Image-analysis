@@ -1,0 +1,20 @@
+{itk::IsolatedConnectedImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkIsolatedConnectedImageFilterID2ID2} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkIsolatedConnectedImageFilterID2ID2_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkIsolatedConnectedImageFilterID3ID3} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkIsolatedConnectedImageFilterID3ID3_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkIsolatedConnectedImageFilterIF2IF2} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkIsolatedConnectedImageFilterIF2IF2_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkIsolatedConnectedImageFilterIF3IF3} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkIsolatedConnectedImageFilterIF3IF3_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkIsolatedConnectedImageFilterIUC2IUC2} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkIsolatedConnectedImageFilterIUC2IUC2_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkIsolatedConnectedImageFilterIUC3IUC3} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkIsolatedConnectedImageFilterIUC3IUC3_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkIsolatedConnectedImageFilterIUL2IUL2} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkIsolatedConnectedImageFilterIUL2IUL2_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkIsolatedConnectedImageFilterIUL3IUL3} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkIsolatedConnectedImageFilterIUL3IUL3_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkIsolatedConnectedImageFilterIUS2IUS2} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkIsolatedConnectedImageFilterIUS2IUS2_Pointer} {itkIsolatedConnectedImageFilter}
+{itk::IsolatedConnectedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkIsolatedConnectedImageFilterIUS3IUS3} {itkIsolatedConnectedImageFilter}
+{itk::SmartPointer<itk::IsolatedConnectedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkIsolatedConnectedImageFilterIUS3IUS3_Pointer} {itkIsolatedConnectedImageFilter}

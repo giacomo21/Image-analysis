@@ -1,0 +1,8 @@
+{itk::NarrowBandLevelSetImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,double,itk::Image<double, 2u> >} {itkNarrowBandLevelSetImageFilterID2ID2D} {itkNarrowBandLevelSetImageFilter}
+{itk::SmartPointer<itk::NarrowBandLevelSetImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, double, itk::Image<double, 2u> > >} {itkNarrowBandLevelSetImageFilterID2ID2D_Pointer} {itkNarrowBandLevelSetImageFilter}
+{itk::NarrowBandLevelSetImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,double,itk::Image<double, 3u> >} {itkNarrowBandLevelSetImageFilterID3ID3D} {itkNarrowBandLevelSetImageFilter}
+{itk::SmartPointer<itk::NarrowBandLevelSetImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, double, itk::Image<double, 3u> > >} {itkNarrowBandLevelSetImageFilterID3ID3D_Pointer} {itkNarrowBandLevelSetImageFilter}
+{itk::NarrowBandLevelSetImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,float,itk::Image<float, 2u> >} {itkNarrowBandLevelSetImageFilterIF2IF2F} {itkNarrowBandLevelSetImageFilter}
+{itk::SmartPointer<itk::NarrowBandLevelSetImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, float, itk::Image<float, 2u> > >} {itkNarrowBandLevelSetImageFilterIF2IF2F_Pointer} {itkNarrowBandLevelSetImageFilter}
+{itk::NarrowBandLevelSetImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,float,itk::Image<float, 3u> >} {itkNarrowBandLevelSetImageFilterIF3IF3F} {itkNarrowBandLevelSetImageFilter}
+{itk::SmartPointer<itk::NarrowBandLevelSetImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, float, itk::Image<float, 3u> > >} {itkNarrowBandLevelSetImageFilterIF3IF3F_Pointer} {itkNarrowBandLevelSetImageFilter}

@@ -1,0 +1,195 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBSplineInterpolateImageFunction.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBSplineInterpolationWeightFunction.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBSplineResampleImageFunction.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkLinearInterpolateImageFunction.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkNearestNeighborInterpolateImageFunction.h"
+
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned char,2 >,double,unsigned char > itkBSplineInterpolateImageFunctionIUC2DUC;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned char,2 >,double,unsigned char >::Pointer itkBSplineInterpolateImageFunctionIUC2DUC_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned long,2 >,double,unsigned long > itkBSplineInterpolateImageFunctionIUL2DUL;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned long,2 >,double,unsigned long >::Pointer itkBSplineInterpolateImageFunctionIUL2DUL_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned short,2 >,double,unsigned short > itkBSplineInterpolateImageFunctionIUS2DUS;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned short,2 >,double,unsigned short >::Pointer itkBSplineInterpolateImageFunctionIUS2DUS_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< float,2 >,double,float > itkBSplineInterpolateImageFunctionIF2DF;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< float,2 >,double,float >::Pointer itkBSplineInterpolateImageFunctionIF2DF_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< double,2 >,double,double > itkBSplineInterpolateImageFunctionID2DD;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< double,2 >,double,double >::Pointer itkBSplineInterpolateImageFunctionID2DD_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned char,3 >,double,unsigned char > itkBSplineInterpolateImageFunctionIUC3DUC;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned char,3 >,double,unsigned char >::Pointer itkBSplineInterpolateImageFunctionIUC3DUC_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned long,3 >,double,unsigned long > itkBSplineInterpolateImageFunctionIUL3DUL;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned long,3 >,double,unsigned long >::Pointer itkBSplineInterpolateImageFunctionIUL3DUL_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned short,3 >,double,unsigned short > itkBSplineInterpolateImageFunctionIUS3DUS;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< unsigned short,3 >,double,unsigned short >::Pointer itkBSplineInterpolateImageFunctionIUS3DUS_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< float,3 >,double,float > itkBSplineInterpolateImageFunctionIF3DF;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< float,3 >,double,float >::Pointer itkBSplineInterpolateImageFunctionIF3DF_Pointer;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< double,3 >,double,double > itkBSplineInterpolateImageFunctionID3DD;
+typedef itk::BSplineInterpolateImageFunction< itk::Image< double,3 >,double,double >::Pointer itkBSplineInterpolateImageFunctionID3DD_Pointer;
+typedef itk::BSplineInterpolationWeightFunction< double,2,2 > itkBSplineInterpolationWeightFunctionD22;
+typedef itk::BSplineInterpolationWeightFunction< double,2,2 >::Pointer itkBSplineInterpolationWeightFunctionD22_Pointer;
+typedef itk::BSplineInterpolationWeightFunction< double,3,3 > itkBSplineInterpolationWeightFunctionD33;
+typedef itk::BSplineInterpolationWeightFunction< double,3,3 >::Pointer itkBSplineInterpolationWeightFunctionD33_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned char,2 >,double > itkBSplineResampleImageFunctionIUC2D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned char,2 >,double >::Pointer itkBSplineResampleImageFunctionIUC2D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned long,2 >,double > itkBSplineResampleImageFunctionIUL2D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned long,2 >,double >::Pointer itkBSplineResampleImageFunctionIUL2D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned short,2 >,double > itkBSplineResampleImageFunctionIUS2D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned short,2 >,double >::Pointer itkBSplineResampleImageFunctionIUS2D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< float,2 >,double > itkBSplineResampleImageFunctionIF2D;
+typedef itk::BSplineResampleImageFunction< itk::Image< float,2 >,double >::Pointer itkBSplineResampleImageFunctionIF2D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< double,2 >,double > itkBSplineResampleImageFunctionID2D;
+typedef itk::BSplineResampleImageFunction< itk::Image< double,2 >,double >::Pointer itkBSplineResampleImageFunctionID2D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned char,3 >,double > itkBSplineResampleImageFunctionIUC3D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned char,3 >,double >::Pointer itkBSplineResampleImageFunctionIUC3D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned long,3 >,double > itkBSplineResampleImageFunctionIUL3D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned long,3 >,double >::Pointer itkBSplineResampleImageFunctionIUL3D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned short,3 >,double > itkBSplineResampleImageFunctionIUS3D;
+typedef itk::BSplineResampleImageFunction< itk::Image< unsigned short,3 >,double >::Pointer itkBSplineResampleImageFunctionIUS3D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< float,3 >,double > itkBSplineResampleImageFunctionIF3D;
+typedef itk::BSplineResampleImageFunction< itk::Image< float,3 >,double >::Pointer itkBSplineResampleImageFunctionIF3D_Pointer;
+typedef itk::BSplineResampleImageFunction< itk::Image< double,3 >,double > itkBSplineResampleImageFunctionID3D;
+typedef itk::BSplineResampleImageFunction< itk::Image< double,3 >,double >::Pointer itkBSplineResampleImageFunctionID3D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned char,2 >,double > itkLinearInterpolateImageFunctionIUC2D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned char,2 >,double >::Pointer itkLinearInterpolateImageFunctionIUC2D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned long,2 >,double > itkLinearInterpolateImageFunctionIUL2D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned long,2 >,double >::Pointer itkLinearInterpolateImageFunctionIUL2D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned short,2 >,double > itkLinearInterpolateImageFunctionIUS2D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned short,2 >,double >::Pointer itkLinearInterpolateImageFunctionIUS2D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< float,2 >,double > itkLinearInterpolateImageFunctionIF2D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< float,2 >,double >::Pointer itkLinearInterpolateImageFunctionIF2D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< double,2 >,double > itkLinearInterpolateImageFunctionID2D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< double,2 >,double >::Pointer itkLinearInterpolateImageFunctionID2D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned char,3 >,double > itkLinearInterpolateImageFunctionIUC3D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned char,3 >,double >::Pointer itkLinearInterpolateImageFunctionIUC3D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned long,3 >,double > itkLinearInterpolateImageFunctionIUL3D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned long,3 >,double >::Pointer itkLinearInterpolateImageFunctionIUL3D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned short,3 >,double > itkLinearInterpolateImageFunctionIUS3D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< unsigned short,3 >,double >::Pointer itkLinearInterpolateImageFunctionIUS3D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< float,3 >,double > itkLinearInterpolateImageFunctionIF3D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< float,3 >,double >::Pointer itkLinearInterpolateImageFunctionIF3D_Pointer;
+typedef itk::LinearInterpolateImageFunction< itk::Image< double,3 >,double > itkLinearInterpolateImageFunctionID3D;
+typedef itk::LinearInterpolateImageFunction< itk::Image< double,3 >,double >::Pointer itkLinearInterpolateImageFunctionID3D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned char,2 >,double > itkNearestNeighborInterpolateImageFunctionIUC2D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned char,2 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUC2D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned long,2 >,double > itkNearestNeighborInterpolateImageFunctionIUL2D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned long,2 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUL2D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned short,2 >,double > itkNearestNeighborInterpolateImageFunctionIUS2D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned short,2 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUS2D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< float,2 >,double > itkNearestNeighborInterpolateImageFunctionIF2D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< float,2 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIF2D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< double,2 >,double > itkNearestNeighborInterpolateImageFunctionID2D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< double,2 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionID2D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned char,3 >,double > itkNearestNeighborInterpolateImageFunctionIUC3D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned char,3 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUC3D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned long,3 >,double > itkNearestNeighborInterpolateImageFunctionIUL3D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned long,3 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUL3D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned short,3 >,double > itkNearestNeighborInterpolateImageFunctionIUS3D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< unsigned short,3 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIUS3D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< float,3 >,double > itkNearestNeighborInterpolateImageFunctionIF3D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< float,3 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionIF3D_Pointer;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< double,3 >,double > itkNearestNeighborInterpolateImageFunctionID3D;
+typedef itk::NearestNeighborInterpolateImageFunction< itk::Image< double,3 >,double >::Pointer itkNearestNeighborInterpolateImageFunctionID3D_Pointer;
+

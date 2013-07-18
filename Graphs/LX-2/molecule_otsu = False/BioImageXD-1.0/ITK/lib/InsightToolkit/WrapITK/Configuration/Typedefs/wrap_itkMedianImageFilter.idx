@@ -1,0 +1,20 @@
+{itk::MedianImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkMedianImageFilterID2ID2} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkMedianImageFilterID2ID2_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkMedianImageFilterID3ID3} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkMedianImageFilterID3ID3_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkMedianImageFilterIF2IF2} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkMedianImageFilterIF2IF2_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkMedianImageFilterIF3IF3} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkMedianImageFilterIF3IF3_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkMedianImageFilterIUC2IUC2} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkMedianImageFilterIUC2IUC2_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkMedianImageFilterIUC3IUC3} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkMedianImageFilterIUC3IUC3_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkMedianImageFilterIUL2IUL2} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkMedianImageFilterIUL2IUL2_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkMedianImageFilterIUL3IUL3} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkMedianImageFilterIUL3IUL3_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkMedianImageFilterIUS2IUS2} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkMedianImageFilterIUS2IUS2_Pointer} {itkMedianImageFilter}
+{itk::MedianImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkMedianImageFilterIUS3IUS3} {itkMedianImageFilter}
+{itk::SmartPointer<itk::MedianImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkMedianImageFilterIUS3IUS3_Pointer} {itkMedianImageFilter}

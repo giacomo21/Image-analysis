@@ -1,0 +1,4 @@
+{itk::MatrixOffsetTransformBase<double,2u,2u>} {itkMatrixOffsetTransformBaseD22} {itkMatrixOffsetTransformBase}
+{itk::SmartPointer<itk::MatrixOffsetTransformBase<double, 2u, 2u> >} {itkMatrixOffsetTransformBaseD22_Pointer} {itkMatrixOffsetTransformBase}
+{itk::MatrixOffsetTransformBase<double,3u,3u>} {itkMatrixOffsetTransformBaseD33} {itkMatrixOffsetTransformBase}
+{itk::SmartPointer<itk::MatrixOffsetTransformBase<double, 3u, 3u> >} {itkMatrixOffsetTransformBaseD33_Pointer} {itkMatrixOffsetTransformBase}

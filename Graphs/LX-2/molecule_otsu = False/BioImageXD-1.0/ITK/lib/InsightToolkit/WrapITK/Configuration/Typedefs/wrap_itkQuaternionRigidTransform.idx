@@ -1,0 +1,2 @@
+{itk::QuaternionRigidTransform<double>} {itkQuaternionRigidTransformD} {itkQuaternionRigidTransform}
+{itk::SmartPointer<itk::QuaternionRigidTransform<double> >} {itkQuaternionRigidTransformD_Pointer} {itkQuaternionRigidTransform}

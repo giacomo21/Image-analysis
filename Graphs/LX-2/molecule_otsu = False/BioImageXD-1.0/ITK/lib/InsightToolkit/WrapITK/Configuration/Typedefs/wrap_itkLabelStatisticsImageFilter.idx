@@ -1,0 +1,60 @@
+{itk::LabelStatisticsImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelStatisticsImageFilterID2IUC2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelStatisticsImageFilterID2IUC2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelStatisticsImageFilterID2IUL2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelStatisticsImageFilterID2IUL2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelStatisticsImageFilterID2IUS2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelStatisticsImageFilterID2IUS2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelStatisticsImageFilterID3IUC3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelStatisticsImageFilterID3IUC3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelStatisticsImageFilterID3IUL3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelStatisticsImageFilterID3IUL3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelStatisticsImageFilterID3IUS3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelStatisticsImageFilterID3IUS3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelStatisticsImageFilterIF2IUC2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelStatisticsImageFilterIF2IUC2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelStatisticsImageFilterIF2IUL2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIF2IUL2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelStatisticsImageFilterIF2IUS2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIF2IUS2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelStatisticsImageFilterIF3IUC3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelStatisticsImageFilterIF3IUC3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelStatisticsImageFilterIF3IUL3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIF3IUL3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelStatisticsImageFilterIF3IUS3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIF3IUS3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelStatisticsImageFilterIUC2IUC2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelStatisticsImageFilterIUC2IUC2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUC2IUL2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUC2IUL2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUC2IUS2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUC2IUS2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelStatisticsImageFilterIUC3IUC3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelStatisticsImageFilterIUC3IUC3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUC3IUL3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUC3IUL3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUC3IUS3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUC3IUS3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelStatisticsImageFilterIUL2IUC2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelStatisticsImageFilterIUL2IUC2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUL2IUL2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUL2IUL2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUL2IUS2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUL2IUS2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelStatisticsImageFilterIUL3IUC3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelStatisticsImageFilterIUL3IUC3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUL3IUL3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUL3IUL3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUL3IUS3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUL3IUS3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelStatisticsImageFilterIUS2IUC2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelStatisticsImageFilterIUS2IUC2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUS2IUL2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUS2IUL2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelStatisticsImageFilterIUS2IUS2} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelStatisticsImageFilterIUS2IUS2_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelStatisticsImageFilterIUS3IUC3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelStatisticsImageFilterIUS3IUC3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUS3IUL3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUS3IUL3_Pointer} {itkLabelStatisticsImageFilter}
+{itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelStatisticsImageFilterIUS3IUS3} {itkLabelStatisticsImageFilter}
+{itk::SmartPointer<itk::LabelStatisticsImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelStatisticsImageFilterIUS3IUS3_Pointer} {itkLabelStatisticsImageFilter}

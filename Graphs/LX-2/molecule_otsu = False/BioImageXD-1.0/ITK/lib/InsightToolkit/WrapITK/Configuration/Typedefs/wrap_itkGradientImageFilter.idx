@@ -1,0 +1,20 @@
+{itk::GradientImageFilter<itk::Image<double, 2u>,float,float>} {itkGradientImageFilterID2FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<double, 2u>, float, float> >} {itkGradientImageFilterID2FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<double, 3u>,float,float>} {itkGradientImageFilterID3FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<double, 3u>, float, float> >} {itkGradientImageFilterID3FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<float, 2u>,float,float>} {itkGradientImageFilterIF2FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<float, 2u>, float, float> >} {itkGradientImageFilterIF2FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<float, 3u>,float,float>} {itkGradientImageFilterIF3FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<float, 3u>, float, float> >} {itkGradientImageFilterIF3FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<unsigned char, 2u>,float,float>} {itkGradientImageFilterIUC2FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<unsigned char, 2u>, float, float> >} {itkGradientImageFilterIUC2FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<unsigned char, 3u>,float,float>} {itkGradientImageFilterIUC3FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<unsigned char, 3u>, float, float> >} {itkGradientImageFilterIUC3FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<long unsigned int, 2u>,float,float>} {itkGradientImageFilterIUL2FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<long unsigned int, 2u>, float, float> >} {itkGradientImageFilterIUL2FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<long unsigned int, 3u>,float,float>} {itkGradientImageFilterIUL3FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<long unsigned int, 3u>, float, float> >} {itkGradientImageFilterIUL3FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<short unsigned int, 2u>,float,float>} {itkGradientImageFilterIUS2FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<short unsigned int, 2u>, float, float> >} {itkGradientImageFilterIUS2FF_Pointer} {itkGradientImageFilter}
+{itk::GradientImageFilter<itk::Image<short unsigned int, 3u>,float,float>} {itkGradientImageFilterIUS3FF} {itkGradientImageFilter}
+{itk::SmartPointer<itk::GradientImageFilter<itk::Image<short unsigned int, 3u>, float, float> >} {itkGradientImageFilterIUS3FF_Pointer} {itkGradientImageFilter}

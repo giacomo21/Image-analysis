@@ -1,0 +1,12 @@
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 2u> >} {itkLabelShapeKeepNObjectsImageFilterIUC2} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 2u> > >} {itkLabelShapeKeepNObjectsImageFilterIUC2_Pointer} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 3u> >} {itkLabelShapeKeepNObjectsImageFilterIUC3} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<unsigned char, 3u> > >} {itkLabelShapeKeepNObjectsImageFilterIUC3_Pointer} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 2u> >} {itkLabelShapeKeepNObjectsImageFilterIUL2} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 2u> > >} {itkLabelShapeKeepNObjectsImageFilterIUL2_Pointer} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 3u> >} {itkLabelShapeKeepNObjectsImageFilterIUL3} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<long unsigned int, 3u> > >} {itkLabelShapeKeepNObjectsImageFilterIUL3_Pointer} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 2u> >} {itkLabelShapeKeepNObjectsImageFilterIUS2} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 2u> > >} {itkLabelShapeKeepNObjectsImageFilterIUS2_Pointer} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::LabelShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 3u> >} {itkLabelShapeKeepNObjectsImageFilterIUS3} {itkLabelShapeKeepNObjectsImageFilter}
+{itk::SmartPointer<itk::LabelShapeKeepNObjectsImageFilter<itk::Image<short unsigned int, 3u> > >} {itkLabelShapeKeepNObjectsImageFilterIUS3_Pointer} {itkLabelShapeKeepNObjectsImageFilter}

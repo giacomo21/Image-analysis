@@ -1,0 +1,4 @@
+{itk::Euler2DTransform<double>} {itkEuler2DTransformD} {ITKEulerTransform}
+{itk::SmartPointer<itk::Euler2DTransform<double> >} {itkEuler2DTransformD_Pointer} {ITKEulerTransform}
+{itk::Euler3DTransform<double>} {itkEuler3DTransformD} {ITKEulerTransform}
+{itk::SmartPointer<itk::Euler3DTransform<double> >} {itkEuler3DTransformD_Pointer} {ITKEulerTransform}

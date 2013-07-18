@@ -1,0 +1,20 @@
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<double, 2u> >} {itkScalarImageToHistogramGeneratorID2} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<double, 2u> > >} {itkScalarImageToHistogramGeneratorID2_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<double, 3u> >} {itkScalarImageToHistogramGeneratorID3} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<double, 3u> > >} {itkScalarImageToHistogramGeneratorID3_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<float, 2u> >} {itkScalarImageToHistogramGeneratorIF2} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<float, 2u> > >} {itkScalarImageToHistogramGeneratorIF2_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<float, 3u> >} {itkScalarImageToHistogramGeneratorIF3} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<float, 3u> > >} {itkScalarImageToHistogramGeneratorIF3_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<unsigned char, 2u> >} {itkScalarImageToHistogramGeneratorIUC2} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<unsigned char, 2u> > >} {itkScalarImageToHistogramGeneratorIUC2_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<unsigned char, 3u> >} {itkScalarImageToHistogramGeneratorIUC3} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<unsigned char, 3u> > >} {itkScalarImageToHistogramGeneratorIUC3_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<long unsigned int, 2u> >} {itkScalarImageToHistogramGeneratorIUL2} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<long unsigned int, 2u> > >} {itkScalarImageToHistogramGeneratorIUL2_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<long unsigned int, 3u> >} {itkScalarImageToHistogramGeneratorIUL3} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<long unsigned int, 3u> > >} {itkScalarImageToHistogramGeneratorIUL3_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<short unsigned int, 2u> >} {itkScalarImageToHistogramGeneratorIUS2} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<short unsigned int, 2u> > >} {itkScalarImageToHistogramGeneratorIUS2_Pointer} {itkScalarImageToHistogramGenerator}
+{itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<short unsigned int, 3u> >} {itkScalarImageToHistogramGeneratorIUS3} {itkScalarImageToHistogramGenerator}
+{itk::SmartPointer<itk::Statistics::ScalarImageToHistogramGenerator<itk::Image<short unsigned int, 3u> > >} {itkScalarImageToHistogramGeneratorIUS3_Pointer} {itkScalarImageToHistogramGenerator}

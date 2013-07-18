@@ -1,0 +1,4 @@
+{itk::EllipseSpatialObject<2u>} {itkEllipseSpatialObject2} {itkEllipseSpatialObject}
+{itk::SmartPointer<itk::EllipseSpatialObject<2u> >} {itkEllipseSpatialObject2_Pointer} {itkEllipseSpatialObject}
+{itk::EllipseSpatialObject<3u>} {itkEllipseSpatialObject3} {itkEllipseSpatialObject}
+{itk::SmartPointer<itk::EllipseSpatialObject<3u> >} {itkEllipseSpatialObject3_Pointer} {itkEllipseSpatialObject}

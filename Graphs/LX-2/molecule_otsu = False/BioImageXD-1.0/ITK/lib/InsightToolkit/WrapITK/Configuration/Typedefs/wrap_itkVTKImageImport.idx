@@ -1,0 +1,20 @@
+{itk::VTKImageImport<itk::Image<double, 2u> >} {itkVTKImageImportID2} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<double, 2u> > >} {itkVTKImageImportID2_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<double, 3u> >} {itkVTKImageImportID3} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<double, 3u> > >} {itkVTKImageImportID3_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<float, 2u> >} {itkVTKImageImportIF2} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<float, 2u> > >} {itkVTKImageImportIF2_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<float, 3u> >} {itkVTKImageImportIF3} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<float, 3u> > >} {itkVTKImageImportIF3_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<unsigned char, 2u> >} {itkVTKImageImportIUC2} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<unsigned char, 2u> > >} {itkVTKImageImportIUC2_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<unsigned char, 3u> >} {itkVTKImageImportIUC3} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<unsigned char, 3u> > >} {itkVTKImageImportIUC3_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<long unsigned int, 2u> >} {itkVTKImageImportIUL2} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<long unsigned int, 2u> > >} {itkVTKImageImportIUL2_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<long unsigned int, 3u> >} {itkVTKImageImportIUL3} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<long unsigned int, 3u> > >} {itkVTKImageImportIUL3_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<short unsigned int, 2u> >} {itkVTKImageImportIUS2} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<short unsigned int, 2u> > >} {itkVTKImageImportIUS2_Pointer} {itkVTKImageImport}
+{itk::VTKImageImport<itk::Image<short unsigned int, 3u> >} {itkVTKImageImportIUS3} {itkVTKImageImport}
+{itk::SmartPointer<itk::VTKImageImport<itk::Image<short unsigned int, 3u> > >} {itkVTKImageImportIUS3_Pointer} {itkVTKImageImport}

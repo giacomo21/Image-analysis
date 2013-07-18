@@ -1,0 +1,60 @@
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u> >} {itkConfidenceConnectedImageFilterID2IUC2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u> > >} {itkConfidenceConnectedImageFilterID2IUC2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u> >} {itkConfidenceConnectedImageFilterID2IUL2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterID2IUL2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u> >} {itkConfidenceConnectedImageFilterID2IUS2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterID2IUS2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u> >} {itkConfidenceConnectedImageFilterID3IUC3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u> > >} {itkConfidenceConnectedImageFilterID3IUC3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u> >} {itkConfidenceConnectedImageFilterID3IUL3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterID3IUL3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u> >} {itkConfidenceConnectedImageFilterID3IUS3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterID3IUS3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u> >} {itkConfidenceConnectedImageFilterIF2IUC2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u> > >} {itkConfidenceConnectedImageFilterIF2IUC2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIF2IUL2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIF2IUL2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIF2IUS2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIF2IUS2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u> >} {itkConfidenceConnectedImageFilterIF3IUC3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u> > >} {itkConfidenceConnectedImageFilterIF3IUC3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIF3IUL3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIF3IUL3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIF3IUS3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIF3IUS3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkConfidenceConnectedImageFilterIUC2IUC2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkConfidenceConnectedImageFilterIUC2IUC2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUC2IUL2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUC2IUL2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUC2IUS2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUC2IUS2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkConfidenceConnectedImageFilterIUC3IUC3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkConfidenceConnectedImageFilterIUC3IUC3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUC3IUL3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUC3IUL3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUC3IUS3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUC3IUS3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkConfidenceConnectedImageFilterIUL2IUC2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkConfidenceConnectedImageFilterIUL2IUC2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUL2IUL2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUL2IUL2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUL2IUS2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUL2IUS2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkConfidenceConnectedImageFilterIUL3IUC3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkConfidenceConnectedImageFilterIUL3IUC3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUL3IUL3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUL3IUL3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUL3IUS3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUL3IUS3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkConfidenceConnectedImageFilterIUS2IUC2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkConfidenceConnectedImageFilterIUS2IUC2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUS2IUL2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUS2IUL2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkConfidenceConnectedImageFilterIUS2IUS2} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkConfidenceConnectedImageFilterIUS2IUS2_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkConfidenceConnectedImageFilterIUS3IUC3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkConfidenceConnectedImageFilterIUS3IUC3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUS3IUL3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUS3IUL3_Pointer} {itkConfidenceConnectedImageFilter}
+{itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkConfidenceConnectedImageFilterIUS3IUS3} {itkConfidenceConnectedImageFilter}
+{itk::SmartPointer<itk::ConfidenceConnectedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkConfidenceConnectedImageFilterIUS3IUS3_Pointer} {itkConfidenceConnectedImageFilter}

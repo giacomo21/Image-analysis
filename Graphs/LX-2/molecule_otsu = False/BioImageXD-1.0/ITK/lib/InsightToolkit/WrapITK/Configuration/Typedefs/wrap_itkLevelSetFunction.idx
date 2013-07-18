@@ -1,0 +1,8 @@
+{itk::LevelSetFunction<itk::Image<double, 2u> >} {itkLevelSetFunctionID2} {itkLevelSetFunction}
+{itk::SmartPointer<itk::LevelSetFunction<itk::Image<double, 2u> > >} {itkLevelSetFunctionID2_Pointer} {itkLevelSetFunction}
+{itk::LevelSetFunction<itk::Image<double, 3u> >} {itkLevelSetFunctionID3} {itkLevelSetFunction}
+{itk::SmartPointer<itk::LevelSetFunction<itk::Image<double, 3u> > >} {itkLevelSetFunctionID3_Pointer} {itkLevelSetFunction}
+{itk::LevelSetFunction<itk::Image<float, 2u> >} {itkLevelSetFunctionIF2} {itkLevelSetFunction}
+{itk::SmartPointer<itk::LevelSetFunction<itk::Image<float, 2u> > >} {itkLevelSetFunctionIF2_Pointer} {itkLevelSetFunction}
+{itk::LevelSetFunction<itk::Image<float, 3u> >} {itkLevelSetFunctionIF3} {itkLevelSetFunction}
+{itk::SmartPointer<itk::LevelSetFunction<itk::Image<float, 3u> > >} {itkLevelSetFunctionIF3_Pointer} {itkLevelSetFunction}

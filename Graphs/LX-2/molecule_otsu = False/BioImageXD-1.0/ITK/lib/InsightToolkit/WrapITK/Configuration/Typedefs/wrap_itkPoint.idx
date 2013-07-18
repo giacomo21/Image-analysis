@@ -1,0 +1,4 @@
+{itk::Point<double,2u>} {itkPointD2} {itkPoint}
+{itk::Point<double,3u>} {itkPointD3} {itkPoint}
+{itk::Point<float,2u>} {itkPointF2} {itkPoint}
+{itk::Point<float,3u>} {itkPointF3} {itkPoint}

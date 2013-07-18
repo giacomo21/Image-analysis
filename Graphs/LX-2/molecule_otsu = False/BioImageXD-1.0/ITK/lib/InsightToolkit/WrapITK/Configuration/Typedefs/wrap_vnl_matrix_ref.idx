@@ -1,0 +1,2 @@
+{vnl_matrix_ref<double>} {vnl_matrix_refD} {vnl_matrix_ref}
+{vnl_matrix_ref<float>} {vnl_matrix_refF} {vnl_matrix_ref}

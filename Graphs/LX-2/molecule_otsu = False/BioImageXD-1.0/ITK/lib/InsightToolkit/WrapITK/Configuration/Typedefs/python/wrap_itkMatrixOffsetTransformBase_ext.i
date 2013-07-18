@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkMatrixOffsetTransformBaseD33)
+DECLARE_REF_COUNT_CLASS(itkMatrixOffsetTransformBaseD22)
+

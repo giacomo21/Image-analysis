@@ -1,0 +1,20 @@
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkGrayscaleGeodesicDilateImageFilterID2ID2} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkGrayscaleGeodesicDilateImageFilterID2ID2_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkGrayscaleGeodesicDilateImageFilterID3ID3} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkGrayscaleGeodesicDilateImageFilterID3ID3_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkGrayscaleGeodesicDilateImageFilterIF2IF2} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkGrayscaleGeodesicDilateImageFilterIF2IF2_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkGrayscaleGeodesicDilateImageFilterIF3IF3} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkGrayscaleGeodesicDilateImageFilterIF3IF3_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkGrayscaleGeodesicDilateImageFilterIUC2IUC2} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkGrayscaleGeodesicDilateImageFilterIUC2IUC2_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkGrayscaleGeodesicDilateImageFilterIUC3IUC3} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkGrayscaleGeodesicDilateImageFilterIUC3IUC3_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkGrayscaleGeodesicDilateImageFilterIUL2IUL2} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkGrayscaleGeodesicDilateImageFilterIUL2IUL2_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkGrayscaleGeodesicDilateImageFilterIUL3IUL3} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkGrayscaleGeodesicDilateImageFilterIUL3IUL3_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkGrayscaleGeodesicDilateImageFilterIUS2IUS2} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkGrayscaleGeodesicDilateImageFilterIUS2IUS2_Pointer} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::GrayscaleGeodesicDilateImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkGrayscaleGeodesicDilateImageFilterIUS3IUS3} {itkGrayscaleGeodesicDilateImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicDilateImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkGrayscaleGeodesicDilateImageFilterIUS3IUS3_Pointer} {itkGrayscaleGeodesicDilateImageFilter}

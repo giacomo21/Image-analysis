@@ -1,0 +1,4 @@
+{itk::AzimuthElevationToCartesianTransform<double,2u>} {itkAzimuthElevationToCartesianTransformD2} {itkAzimuthElevationToCartesianTransform}
+{itk::SmartPointer<itk::AzimuthElevationToCartesianTransform<double, 2u> >} {itkAzimuthElevationToCartesianTransformD2_Pointer} {itkAzimuthElevationToCartesianTransform}
+{itk::AzimuthElevationToCartesianTransform<double,3u>} {itkAzimuthElevationToCartesianTransformD3} {itkAzimuthElevationToCartesianTransform}
+{itk::SmartPointer<itk::AzimuthElevationToCartesianTransform<double, 3u> >} {itkAzimuthElevationToCartesianTransformD3_Pointer} {itkAzimuthElevationToCartesianTransform}

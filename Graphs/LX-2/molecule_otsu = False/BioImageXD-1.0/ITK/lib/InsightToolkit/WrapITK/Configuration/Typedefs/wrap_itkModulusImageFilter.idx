@@ -1,0 +1,24 @@
+{itk::ModulusImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkModulusImageFilterIUC2IUC2} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkModulusImageFilterIUC2IUC2_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::ModulusTransform<unsigned char, unsigned char> >} {itkModulusImageFilterIUC2IUC2_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::ModulusTransform<unsigned char, unsigned char> > >} {itkModulusImageFilterIUC2IUC2_Superclass_Pointer} {itkModulusImageFilter}
+{itk::ModulusImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkModulusImageFilterIUC3IUC3} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkModulusImageFilterIUC3IUC3_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::ModulusTransform<unsigned char, unsigned char> >} {itkModulusImageFilterIUC3IUC3_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::ModulusTransform<unsigned char, unsigned char> > >} {itkModulusImageFilterIUC3IUC3_Superclass_Pointer} {itkModulusImageFilter}
+{itk::ModulusImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkModulusImageFilterIUL2IUL2} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkModulusImageFilterIUL2IUL2_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::ModulusTransform<long unsigned int, long unsigned int> >} {itkModulusImageFilterIUL2IUL2_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::ModulusTransform<long unsigned int, long unsigned int> > >} {itkModulusImageFilterIUL2IUL2_Superclass_Pointer} {itkModulusImageFilter}
+{itk::ModulusImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkModulusImageFilterIUL3IUL3} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkModulusImageFilterIUL3IUL3_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::ModulusTransform<long unsigned int, long unsigned int> >} {itkModulusImageFilterIUL3IUL3_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::ModulusTransform<long unsigned int, long unsigned int> > >} {itkModulusImageFilterIUL3IUL3_Superclass_Pointer} {itkModulusImageFilter}
+{itk::ModulusImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkModulusImageFilterIUS2IUS2} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkModulusImageFilterIUS2IUS2_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::ModulusTransform<short unsigned int, short unsigned int> >} {itkModulusImageFilterIUS2IUS2_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::ModulusTransform<short unsigned int, short unsigned int> > >} {itkModulusImageFilterIUS2IUS2_Superclass_Pointer} {itkModulusImageFilter}
+{itk::ModulusImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkModulusImageFilterIUS3IUS3} {itkModulusImageFilter}
+{itk::SmartPointer<itk::ModulusImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkModulusImageFilterIUS3IUS3_Pointer} {itkModulusImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::ModulusTransform<short unsigned int, short unsigned int> >} {itkModulusImageFilterIUS3IUS3_Superclass} {itkModulusImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::ModulusTransform<short unsigned int, short unsigned int> > >} {itkModulusImageFilterIUS3IUS3_Superclass_Pointer} {itkModulusImageFilter}

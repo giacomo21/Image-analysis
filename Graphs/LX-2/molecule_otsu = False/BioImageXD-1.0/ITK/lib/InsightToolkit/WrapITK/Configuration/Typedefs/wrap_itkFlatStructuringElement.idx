@@ -1,0 +1,2 @@
+{itk::FlatStructuringElement<2u>} {itkFlatStructuringElement2} {itkFlatStructuringElement}
+{itk::FlatStructuringElement<3u>} {itkFlatStructuringElement3} {itkFlatStructuringElement}

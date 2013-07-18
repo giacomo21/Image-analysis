@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkVesselTubeSpatialObject3)
+DECLARE_REF_COUNT_CLASS(itkVesselTubeSpatialObject3_Superclass)
+DECLARE_REF_COUNT_CLASS(itkVesselTubeSpatialObject2)
+DECLARE_REF_COUNT_CLASS(itkVesselTubeSpatialObject2_Superclass)
+

@@ -1,0 +1,2 @@
+{itk::CenteredEuler3DTransform<double>} {itkCenteredEuler3DTransformD} {ITKCenteredEulerTransform}
+{itk::SmartPointer<itk::CenteredEuler3DTransform<double> >} {itkCenteredEuler3DTransformD_Pointer} {ITKCenteredEulerTransform}

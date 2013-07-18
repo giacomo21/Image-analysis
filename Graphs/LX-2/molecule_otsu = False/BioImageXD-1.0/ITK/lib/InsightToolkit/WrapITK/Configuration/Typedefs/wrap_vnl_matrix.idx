@@ -1,0 +1,12 @@
+{vnl_matrix<double>} {vnl_matrixD} {vnl_matrix}
+{vnl_matrix<float>} {vnl_matrixF} {vnl_matrix}
+{vnl_matrix<long double>} {vnl_matrixLD} {vnl_matrix}
+{vnl_matrix<signed char>} {vnl_matrixSC} {vnl_matrix}
+{vnl_matrix<int>} {vnl_matrixSI} {vnl_matrix}
+{vnl_matrix<long int>} {vnl_matrixSL} {vnl_matrix}
+{vnl_matrix<unsigned char>} {vnl_matrixUC} {vnl_matrix}
+{vnl_matrix<unsigned int>} {vnl_matrixUI} {vnl_matrix}
+{vnl_matrix<long unsigned int>} {vnl_matrixUL} {vnl_matrix}
+{vnl_matrix<std::complex<double> >} {vnl_matrix_vcl_complexD} {vnl_matrix}
+{vnl_matrix<std::complex<float> >} {vnl_matrix_vcl_complexF} {vnl_matrix}
+{vnl_matrix<std::complex<long double> >} {vnl_matrix_vcl_complexLD} {vnl_matrix}

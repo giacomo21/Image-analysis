@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkEigenAnalysis2DImageFilterID2ID2IVF22)
+DECLARE_REF_COUNT_CLASS(itkEigenAnalysis2DImageFilterIF2IF2IVF22)
+

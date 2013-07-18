@@ -1,0 +1,20 @@
+{itk::HMaximaImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkHMaximaImageFilterID2ID2} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkHMaximaImageFilterID2ID2_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkHMaximaImageFilterID3ID3} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkHMaximaImageFilterID3ID3_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkHMaximaImageFilterIF2IF2} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkHMaximaImageFilterIF2IF2_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkHMaximaImageFilterIF3IF3} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkHMaximaImageFilterIF3IF3_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkHMaximaImageFilterIUC2IUC2} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkHMaximaImageFilterIUC2IUC2_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkHMaximaImageFilterIUC3IUC3} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkHMaximaImageFilterIUC3IUC3_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkHMaximaImageFilterIUL2IUL2} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkHMaximaImageFilterIUL2IUL2_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkHMaximaImageFilterIUL3IUL3} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkHMaximaImageFilterIUL3IUL3_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkHMaximaImageFilterIUS2IUS2} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkHMaximaImageFilterIUS2IUS2_Pointer} {itkHMaximaImageFilter}
+{itk::HMaximaImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkHMaximaImageFilterIUS3IUS3} {itkHMaximaImageFilter}
+{itk::SmartPointer<itk::HMaximaImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkHMaximaImageFilterIUS3IUS3_Pointer} {itkHMaximaImageFilter}

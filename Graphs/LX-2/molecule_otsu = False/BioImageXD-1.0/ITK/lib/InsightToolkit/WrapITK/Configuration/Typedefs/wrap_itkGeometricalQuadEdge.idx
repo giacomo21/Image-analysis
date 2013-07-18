@@ -1,0 +1,2 @@
+{itk::GeometricalQuadEdge<long unsigned int,long unsigned int,bool,bool,true>} {itkGeometricalQuadEdgeULULBBF} {itkGeometricalQuadEdge}
+{itk::GeometricalQuadEdge<long unsigned int,long unsigned int,bool,bool,false>} {itkGeometricalQuadEdgeULULBBT} {itkGeometricalQuadEdge}

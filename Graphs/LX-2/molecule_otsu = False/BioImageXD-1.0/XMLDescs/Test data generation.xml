@@ -1,0 +1,60 @@
+<StaticBox label="Dimensions">
+    <br>
+    <IntegerInput id="X" label="X:"/>
+    <br>
+    <IntegerInput id="Y" label="Y:"/>
+    <br>
+    <IntegerInput id="Z" label="Z:"/>
+    <br>
+    <IntegerInput id="Time" label="Number of timepoints"/>
+</StaticBox>
+<StaticBox label="Shift">
+    <br>
+    <BooleanInput id="Shift" label="Create shift in the data/>
+    <br>
+    <IntegerInput id="ShiftStart" label="Min. shift (in px):"/>
+    <br>
+    <IntegerInput id="ShiftEnd" label="Max. shift (in px)"/>
+</StaticBox>
+<StaticBox label="Noise">
+    <br>
+    <FloatInput id="ShotNoiseAmount" label="% of shot noise"/>
+    <br>
+    <IntegerInput id="ShotNoiseMin" label="Min. intensity of shot noise"/>
+    <br>
+    <FloatInput id="BackgroundNoiseAmount" label="% of background noise"/>
+    <br>
+    <IntegerInput id="BackgroundNoiseMin" label="Min. intensity of bg noise"/>
+    <br>
+    <IntegerInput id="BackgroundNoiseMax" label="Max. intensity of bg noise"/>
+</StaticBox>
+<StaticBox label="Objects">
+    <br>
+    <IntegerInput id="NumberOfObjectsStart" label="# objects (at least)"/>
+    <br>
+    <IntegerInput id="NumberOfObjectsEnd" label="# of objects (at most)"/>
+    <br>
+    <IntegerInput id="ObjSizeStart" label="Min. size of object (in px)"/>
+    <br>
+    <IntegerInput id="ObjSizeEnd" label="Max. size of object (in px)"/>
+    <br>
+    <IntegerInput id="ObjectFluctuationStart" label="Min. change in object #"/>
+    <br>
+    <IntegerInput id="ObjectFluctuationEnd" label="Max. change in object #"/>
+</StaticBox>
+<StaticBox label="Colocalization">
+    <br>
+    <BooleanInput id="Coloc" label="Create colocalization between channels/>
+    <br>
+    <IntegerInput id="ColocAmountStart" label="Coloc. amnt (at start)"/>
+    <br>
+    <IntegerInput id="ColocAmountEnd" label="Coloc. amnt (at end)"/>
+</StaticBox>
+<StaticBox label="Movement strategy">
+    <br>
+    <BooleanInput id="RandomMovement" label="Move randomly/>
+    <br>
+    <BooleanInput id="MoveTowardsPoint" label="Move towards a point/>
+    <br>
+    <BooleanInput id="Clustering" label="Objects should cluster/>
+</StaticBox>

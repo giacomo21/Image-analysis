@@ -1,0 +1,4 @@
+{itk::ScaleLogarithmicTransform<double,2u>} {itkScaleLogarithmicTransformD2} {itkScaleLogarithmicTransform}
+{itk::SmartPointer<itk::ScaleLogarithmicTransform<double, 2u> >} {itkScaleLogarithmicTransformD2_Pointer} {itkScaleLogarithmicTransform}
+{itk::ScaleLogarithmicTransform<double,3u>} {itkScaleLogarithmicTransformD3} {itkScaleLogarithmicTransform}
+{itk::SmartPointer<itk::ScaleLogarithmicTransform<double, 3u> >} {itkScaleLogarithmicTransformD3_Pointer} {itkScaleLogarithmicTransform}

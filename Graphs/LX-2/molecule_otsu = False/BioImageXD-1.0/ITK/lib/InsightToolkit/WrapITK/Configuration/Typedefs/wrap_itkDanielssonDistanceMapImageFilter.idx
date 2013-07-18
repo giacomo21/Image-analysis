@@ -1,0 +1,44 @@
+{itk::DanielssonDistanceMapImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkDanielssonDistanceMapImageFilterID2ID2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkDanielssonDistanceMapImageFilterID2ID2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkDanielssonDistanceMapImageFilterID3ID3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkDanielssonDistanceMapImageFilterID3ID3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkDanielssonDistanceMapImageFilterIF2IF2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkDanielssonDistanceMapImageFilterIF2IF2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkDanielssonDistanceMapImageFilterIF3IF3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkDanielssonDistanceMapImageFilterIF3IF3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkDanielssonDistanceMapImageFilterIUC2ID2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkDanielssonDistanceMapImageFilterIUC2ID2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkDanielssonDistanceMapImageFilterIUC2IF2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkDanielssonDistanceMapImageFilterIUC2IF2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkDanielssonDistanceMapImageFilterIUC2IUC2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkDanielssonDistanceMapImageFilterIUC2IUC2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkDanielssonDistanceMapImageFilterIUC3ID3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkDanielssonDistanceMapImageFilterIUC3ID3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkDanielssonDistanceMapImageFilterIUC3IF3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkDanielssonDistanceMapImageFilterIUC3IF3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkDanielssonDistanceMapImageFilterIUC3IUC3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkDanielssonDistanceMapImageFilterIUC3IUC3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkDanielssonDistanceMapImageFilterIUL2ID2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkDanielssonDistanceMapImageFilterIUL2ID2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkDanielssonDistanceMapImageFilterIUL2IF2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkDanielssonDistanceMapImageFilterIUL2IF2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkDanielssonDistanceMapImageFilterIUL2IUL2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkDanielssonDistanceMapImageFilterIUL2IUL2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkDanielssonDistanceMapImageFilterIUL3ID3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkDanielssonDistanceMapImageFilterIUL3ID3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkDanielssonDistanceMapImageFilterIUL3IF3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkDanielssonDistanceMapImageFilterIUL3IF3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkDanielssonDistanceMapImageFilterIUL3IUL3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkDanielssonDistanceMapImageFilterIUL3IUL3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkDanielssonDistanceMapImageFilterIUS2ID2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkDanielssonDistanceMapImageFilterIUS2ID2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkDanielssonDistanceMapImageFilterIUS2IF2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkDanielssonDistanceMapImageFilterIUS2IF2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkDanielssonDistanceMapImageFilterIUS2IUS2} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkDanielssonDistanceMapImageFilterIUS2IUS2_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkDanielssonDistanceMapImageFilterIUS3ID3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkDanielssonDistanceMapImageFilterIUS3ID3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkDanielssonDistanceMapImageFilterIUS3IF3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkDanielssonDistanceMapImageFilterIUS3IF3_Pointer} {itkDanielssonDistanceMapImageFilter}
+{itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkDanielssonDistanceMapImageFilterIUS3IUS3} {itkDanielssonDistanceMapImageFilter}
+{itk::SmartPointer<itk::DanielssonDistanceMapImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkDanielssonDistanceMapImageFilterIUS3IUS3_Pointer} {itkDanielssonDistanceMapImageFilter}

@@ -1,0 +1,138 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+#include "SimpleFilters.includes"
+#include "Mesh.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageToVTKImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultStaticMeshTraits.h"
+#include "itkMeshToVTKPolyData.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVTKImageToImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDefaultStaticMeshTraits.h"
+#include "itkVTKPolyDataToMesh.h"
+
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned char,2 > > itkImageToVTKImageFilterIUC2;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned char,2 > >::Pointer itkImageToVTKImageFilterIUC2_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned char,3 > > itkImageToVTKImageFilterIUC3;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned char,3 > >::Pointer itkImageToVTKImageFilterIUC3_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned long,2 > > itkImageToVTKImageFilterIUL2;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned long,2 > >::Pointer itkImageToVTKImageFilterIUL2_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned long,3 > > itkImageToVTKImageFilterIUL3;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned long,3 > >::Pointer itkImageToVTKImageFilterIUL3_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned short,2 > > itkImageToVTKImageFilterIUS2;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned short,2 > >::Pointer itkImageToVTKImageFilterIUS2_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned short,3 > > itkImageToVTKImageFilterIUS3;
+typedef itk::ImageToVTKImageFilter< itk::Image< unsigned short,3 > >::Pointer itkImageToVTKImageFilterIUS3_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< float,2 > > itkImageToVTKImageFilterIF2;
+typedef itk::ImageToVTKImageFilter< itk::Image< float,2 > >::Pointer itkImageToVTKImageFilterIF2_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< float,3 > > itkImageToVTKImageFilterIF3;
+typedef itk::ImageToVTKImageFilter< itk::Image< float,3 > >::Pointer itkImageToVTKImageFilterIF3_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< double,2 > > itkImageToVTKImageFilterID2;
+typedef itk::ImageToVTKImageFilter< itk::Image< double,2 > >::Pointer itkImageToVTKImageFilterID2_Pointer;
+typedef itk::ImageToVTKImageFilter< itk::Image< double,3 > > itkImageToVTKImageFilterID3;
+typedef itk::ImageToVTKImageFilter< itk::Image< double,3 > >::Pointer itkImageToVTKImageFilterID3_Pointer;
+typedef itk::MeshToVTKPolyData< itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > > itkMeshToVTKPolyDataMD3S;
+typedef itk::MeshToVTKPolyData< itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > >::Pointer itkMeshToVTKPolyDataMD3S_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned char,2 > > itkVTKImageToImageFilterIUC2;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned char,2 > >::Pointer itkVTKImageToImageFilterIUC2_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned char,3 > > itkVTKImageToImageFilterIUC3;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned char,3 > >::Pointer itkVTKImageToImageFilterIUC3_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned long,2 > > itkVTKImageToImageFilterIUL2;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned long,2 > >::Pointer itkVTKImageToImageFilterIUL2_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned long,3 > > itkVTKImageToImageFilterIUL3;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned long,3 > >::Pointer itkVTKImageToImageFilterIUL3_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned short,2 > > itkVTKImageToImageFilterIUS2;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned short,2 > >::Pointer itkVTKImageToImageFilterIUS2_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned short,3 > > itkVTKImageToImageFilterIUS3;
+typedef itk::VTKImageToImageFilter< itk::Image< unsigned short,3 > >::Pointer itkVTKImageToImageFilterIUS3_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< float,2 > > itkVTKImageToImageFilterIF2;
+typedef itk::VTKImageToImageFilter< itk::Image< float,2 > >::Pointer itkVTKImageToImageFilterIF2_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< float,3 > > itkVTKImageToImageFilterIF3;
+typedef itk::VTKImageToImageFilter< itk::Image< float,3 > >::Pointer itkVTKImageToImageFilterIF3_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< double,2 > > itkVTKImageToImageFilterID2;
+typedef itk::VTKImageToImageFilter< itk::Image< double,2 > >::Pointer itkVTKImageToImageFilterID2_Pointer;
+typedef itk::VTKImageToImageFilter< itk::Image< double,3 > > itkVTKImageToImageFilterID3;
+typedef itk::VTKImageToImageFilter< itk::Image< double,3 > >::Pointer itkVTKImageToImageFilterID3_Pointer;
+typedef itk::VTKPolyDataToMesh< itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > > itkVTKPolyDataToMeshMD3S;
+typedef itk::VTKPolyDataToMesh< itk::Mesh< double,3,itk::DefaultStaticMeshTraits< double,3,3,double > > >::Pointer itkVTKPolyDataToMeshMD3S_Pointer;
+

@@ -1,0 +1,20 @@
+{itk::BSplineResampleImageFunction<itk::Image<double, 2u>,double>} {itkBSplineResampleImageFunctionID2D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<double, 2u>, double> >} {itkBSplineResampleImageFunctionID2D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<double, 3u>,double>} {itkBSplineResampleImageFunctionID3D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<double, 3u>, double> >} {itkBSplineResampleImageFunctionID3D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<float, 2u>,double>} {itkBSplineResampleImageFunctionIF2D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<float, 2u>, double> >} {itkBSplineResampleImageFunctionIF2D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<float, 3u>,double>} {itkBSplineResampleImageFunctionIF3D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<float, 3u>, double> >} {itkBSplineResampleImageFunctionIF3D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<unsigned char, 2u>,double>} {itkBSplineResampleImageFunctionIUC2D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<unsigned char, 2u>, double> >} {itkBSplineResampleImageFunctionIUC2D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<unsigned char, 3u>,double>} {itkBSplineResampleImageFunctionIUC3D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<unsigned char, 3u>, double> >} {itkBSplineResampleImageFunctionIUC3D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<long unsigned int, 2u>,double>} {itkBSplineResampleImageFunctionIUL2D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<long unsigned int, 2u>, double> >} {itkBSplineResampleImageFunctionIUL2D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<long unsigned int, 3u>,double>} {itkBSplineResampleImageFunctionIUL3D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<long unsigned int, 3u>, double> >} {itkBSplineResampleImageFunctionIUL3D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<short unsigned int, 2u>,double>} {itkBSplineResampleImageFunctionIUS2D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<short unsigned int, 2u>, double> >} {itkBSplineResampleImageFunctionIUS2D_Pointer} {itkBSplineResampleImageFunction}
+{itk::BSplineResampleImageFunction<itk::Image<short unsigned int, 3u>,double>} {itkBSplineResampleImageFunctionIUS3D} {itkBSplineResampleImageFunction}
+{itk::SmartPointer<itk::BSplineResampleImageFunction<itk::Image<short unsigned int, 3u>, double> >} {itkBSplineResampleImageFunctionIUS3D_Pointer} {itkBSplineResampleImageFunction}

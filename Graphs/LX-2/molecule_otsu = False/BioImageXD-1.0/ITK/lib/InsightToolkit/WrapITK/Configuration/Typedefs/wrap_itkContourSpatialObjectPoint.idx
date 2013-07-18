@@ -1,0 +1,2 @@
+{itk::ContourSpatialObjectPoint<2u>} {itkContourSpatialObjectPoint2} {itkContourSpatialObjectPoint}
+{itk::ContourSpatialObjectPoint<3u>} {itkContourSpatialObjectPoint3} {itkContourSpatialObjectPoint}

@@ -1,0 +1,163 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCannyEdgeDetectionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSimpleContourExtractorImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSobelEdgeDetectionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkZeroCrossingBasedEdgeDetectionImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkZeroCrossingImageFilter.h"
+
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkCannyEdgeDetectionImageFilterIF2IF2;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkCannyEdgeDetectionImageFilterIF2IF2_Pointer;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkCannyEdgeDetectionImageFilterIF3IF3;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkCannyEdgeDetectionImageFilterIF3IF3_Pointer;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkCannyEdgeDetectionImageFilterID2ID2;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkCannyEdgeDetectionImageFilterID2ID2_Pointer;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkCannyEdgeDetectionImageFilterID3ID3;
+typedef itk::CannyEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkCannyEdgeDetectionImageFilterID3ID3_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkSimpleContourExtractorImageFilterIUC2IUC2;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkSimpleContourExtractorImageFilterIUC2IUC2_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkSimpleContourExtractorImageFilterIUC3IUC3;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkSimpleContourExtractorImageFilterIUC3IUC3_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkSimpleContourExtractorImageFilterIUL2IUL2;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkSimpleContourExtractorImageFilterIUL2IUL2_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkSimpleContourExtractorImageFilterIUL3IUL3;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkSimpleContourExtractorImageFilterIUL3IUL3_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkSimpleContourExtractorImageFilterIUS2IUS2;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkSimpleContourExtractorImageFilterIUS2IUS2_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkSimpleContourExtractorImageFilterIUS3IUS3;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkSimpleContourExtractorImageFilterIUS3IUS3_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSimpleContourExtractorImageFilterIF2IF2;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSimpleContourExtractorImageFilterIF2IF2_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSimpleContourExtractorImageFilterIF3IF3;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSimpleContourExtractorImageFilterIF3IF3_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSimpleContourExtractorImageFilterID2ID2;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSimpleContourExtractorImageFilterID2ID2_Pointer;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSimpleContourExtractorImageFilterID3ID3;
+typedef itk::SimpleContourExtractorImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSimpleContourExtractorImageFilterID3ID3_Pointer;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSobelEdgeDetectionImageFilterIF2IF2;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSobelEdgeDetectionImageFilterIF2IF2_Pointer;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSobelEdgeDetectionImageFilterIF3IF3;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSobelEdgeDetectionImageFilterIF3IF3_Pointer;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSobelEdgeDetectionImageFilterID2ID2;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSobelEdgeDetectionImageFilterID2ID2_Pointer;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSobelEdgeDetectionImageFilterID3ID3;
+typedef itk::SobelEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSobelEdgeDetectionImageFilterID3ID3_Pointer;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkZeroCrossingBasedEdgeDetectionImageFilterIF2IF2;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkZeroCrossingBasedEdgeDetectionImageFilterIF2IF2_Pointer;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkZeroCrossingBasedEdgeDetectionImageFilterIF3IF3;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkZeroCrossingBasedEdgeDetectionImageFilterIF3IF3_Pointer;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkZeroCrossingBasedEdgeDetectionImageFilterID2ID2;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkZeroCrossingBasedEdgeDetectionImageFilterID2ID2_Pointer;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkZeroCrossingBasedEdgeDetectionImageFilterID3ID3;
+typedef itk::ZeroCrossingBasedEdgeDetectionImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkZeroCrossingBasedEdgeDetectionImageFilterID3ID3_Pointer;
+typedef itk::ZeroCrossingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkZeroCrossingImageFilterIF2IF2;
+typedef itk::ZeroCrossingImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkZeroCrossingImageFilterIF2IF2_Pointer;
+typedef itk::ZeroCrossingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkZeroCrossingImageFilterIF3IF3;
+typedef itk::ZeroCrossingImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkZeroCrossingImageFilterIF3IF3_Pointer;
+typedef itk::ZeroCrossingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkZeroCrossingImageFilterID2ID2;
+typedef itk::ZeroCrossingImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkZeroCrossingImageFilterID2ID2_Pointer;
+typedef itk::ZeroCrossingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkZeroCrossingImageFilterID3ID3;
+typedef itk::ZeroCrossingImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkZeroCrossingImageFilterID3ID3_Pointer;
+

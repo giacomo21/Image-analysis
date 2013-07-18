@@ -1,0 +1,2 @@
+{itk::SpatialFunction<double,2u,itk::Point<double, 2u> >} {itkSpatialFunctionD2PD2} {itkSpatialFunction}
+{itk::SpatialFunction<double,3u,itk::Point<double, 3u> >} {itkSpatialFunctionD3PD3} {itkSpatialFunction}

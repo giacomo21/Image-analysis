@@ -1,0 +1,4 @@
+{itk::Statistics::ListSample<itk::Vector<float, 2u> >} {itkListSampleVF2} {itkListSample}
+{itk::SmartPointer<itk::Statistics::ListSample<itk::Vector<float, 2u> > >} {itkListSampleVF2_Pointer} {itkListSample}
+{itk::Statistics::ListSample<itk::Vector<float, 3u> >} {itkListSampleVF3} {itkListSample}
+{itk::SmartPointer<itk::Statistics::ListSample<itk::Vector<float, 3u> > >} {itkListSampleVF3_Pointer} {itkListSample}

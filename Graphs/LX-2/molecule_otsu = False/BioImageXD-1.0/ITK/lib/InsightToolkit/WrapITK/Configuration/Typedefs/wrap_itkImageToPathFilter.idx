@@ -1,0 +1,20 @@
+{itk::ImageToPathFilter<itk::Image<double, 2u>,itk::PolyLineParametricPath<2u> >} {itkImageToPathFilterID2PLPP2} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<double, 2u>, itk::PolyLineParametricPath<2u> > >} {itkImageToPathFilterID2PLPP2_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<double, 3u>,itk::PolyLineParametricPath<3u> >} {itkImageToPathFilterID3PLPP3} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<double, 3u>, itk::PolyLineParametricPath<3u> > >} {itkImageToPathFilterID3PLPP3_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<float, 2u>,itk::PolyLineParametricPath<2u> >} {itkImageToPathFilterIF2PLPP2} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<float, 2u>, itk::PolyLineParametricPath<2u> > >} {itkImageToPathFilterIF2PLPP2_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<float, 3u>,itk::PolyLineParametricPath<3u> >} {itkImageToPathFilterIF3PLPP3} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<float, 3u>, itk::PolyLineParametricPath<3u> > >} {itkImageToPathFilterIF3PLPP3_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<unsigned char, 2u>,itk::PolyLineParametricPath<2u> >} {itkImageToPathFilterIUC2PLPP2} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<unsigned char, 2u>, itk::PolyLineParametricPath<2u> > >} {itkImageToPathFilterIUC2PLPP2_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<unsigned char, 3u>,itk::PolyLineParametricPath<3u> >} {itkImageToPathFilterIUC3PLPP3} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<unsigned char, 3u>, itk::PolyLineParametricPath<3u> > >} {itkImageToPathFilterIUC3PLPP3_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<long unsigned int, 2u>,itk::PolyLineParametricPath<2u> >} {itkImageToPathFilterIUL2PLPP2} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<long unsigned int, 2u>, itk::PolyLineParametricPath<2u> > >} {itkImageToPathFilterIUL2PLPP2_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<long unsigned int, 3u>,itk::PolyLineParametricPath<3u> >} {itkImageToPathFilterIUL3PLPP3} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<long unsigned int, 3u>, itk::PolyLineParametricPath<3u> > >} {itkImageToPathFilterIUL3PLPP3_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<short unsigned int, 2u>,itk::PolyLineParametricPath<2u> >} {itkImageToPathFilterIUS2PLPP2} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<short unsigned int, 2u>, itk::PolyLineParametricPath<2u> > >} {itkImageToPathFilterIUS2PLPP2_Pointer} {itkImageToPathFilter}
+{itk::ImageToPathFilter<itk::Image<short unsigned int, 3u>,itk::PolyLineParametricPath<3u> >} {itkImageToPathFilterIUS3PLPP3} {itkImageToPathFilter}
+{itk::SmartPointer<itk::ImageToPathFilter<itk::Image<short unsigned int, 3u>, itk::PolyLineParametricPath<3u> > >} {itkImageToPathFilterIUS3PLPP3_Pointer} {itkImageToPathFilter}

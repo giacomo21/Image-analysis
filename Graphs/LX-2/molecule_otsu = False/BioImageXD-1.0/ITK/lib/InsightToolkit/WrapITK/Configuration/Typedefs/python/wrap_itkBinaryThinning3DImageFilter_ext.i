@@ -1,0 +1,6 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkBinaryThinning3DImageFilterIUS3IUS3)
+DECLARE_REF_COUNT_CLASS(itkBinaryThinning3DImageFilterIUL3IUL3)
+DECLARE_REF_COUNT_CLASS(itkBinaryThinning3DImageFilterIUC3IUC3)
+

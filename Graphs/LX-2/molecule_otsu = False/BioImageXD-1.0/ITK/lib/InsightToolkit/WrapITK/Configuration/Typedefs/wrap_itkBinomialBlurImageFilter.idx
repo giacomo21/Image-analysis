@@ -1,0 +1,20 @@
+{itk::BinomialBlurImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBinomialBlurImageFilterID2ID2} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBinomialBlurImageFilterID2ID2_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBinomialBlurImageFilterID3ID3} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBinomialBlurImageFilterID3ID3_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBinomialBlurImageFilterIF2IF2} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBinomialBlurImageFilterIF2IF2_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBinomialBlurImageFilterIF3IF3} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBinomialBlurImageFilterIF3IF3_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBinomialBlurImageFilterIUC2IUC2} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBinomialBlurImageFilterIUC2IUC2_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBinomialBlurImageFilterIUC3IUC3} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBinomialBlurImageFilterIUC3IUC3_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBinomialBlurImageFilterIUL2IUL2} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBinomialBlurImageFilterIUL2IUL2_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBinomialBlurImageFilterIUL3IUL3} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBinomialBlurImageFilterIUL3IUL3_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBinomialBlurImageFilterIUS2IUS2} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBinomialBlurImageFilterIUS2IUS2_Pointer} {itkBinomialBlurImageFilter}
+{itk::BinomialBlurImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBinomialBlurImageFilterIUS3IUS3} {itkBinomialBlurImageFilter}
+{itk::SmartPointer<itk::BinomialBlurImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBinomialBlurImageFilterIUS3IUS3_Pointer} {itkBinomialBlurImageFilter}

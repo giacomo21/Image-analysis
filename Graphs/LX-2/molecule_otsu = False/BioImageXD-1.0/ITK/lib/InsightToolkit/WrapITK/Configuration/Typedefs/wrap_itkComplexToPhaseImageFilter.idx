@@ -1,0 +1,8 @@
+{itk::ComplexToPhaseImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<float, 2u> >} {itkComplexToPhaseImageFilterICF2IF2} {itkComplexToPhaseImageFilter}
+{itk::SmartPointer<itk::ComplexToPhaseImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<float, 2u> > >} {itkComplexToPhaseImageFilterICF2IF2_Pointer} {itkComplexToPhaseImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<float, 2u>,itk::Function::ComplexToPhase<std::complex<float>, float> >} {itkComplexToPhaseImageFilterICF2IF2_Superclass} {itkComplexToPhaseImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<float, 2u>, itk::Function::ComplexToPhase<std::complex<float>, float> > >} {itkComplexToPhaseImageFilterICF2IF2_Superclass_Pointer} {itkComplexToPhaseImageFilter}
+{itk::ComplexToPhaseImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<float, 3u> >} {itkComplexToPhaseImageFilterICF3IF3} {itkComplexToPhaseImageFilter}
+{itk::SmartPointer<itk::ComplexToPhaseImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<float, 3u> > >} {itkComplexToPhaseImageFilterICF3IF3_Pointer} {itkComplexToPhaseImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<float, 3u>,itk::Function::ComplexToPhase<std::complex<float>, float> >} {itkComplexToPhaseImageFilterICF3IF3_Superclass} {itkComplexToPhaseImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<float, 3u>, itk::Function::ComplexToPhase<std::complex<float>, float> > >} {itkComplexToPhaseImageFilterICF3IF3_Superclass_Pointer} {itkComplexToPhaseImageFilter}

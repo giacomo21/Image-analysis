@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject3D)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject3F)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject3US)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject3UL)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject3UC)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject2D)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject2F)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject2US)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject2UL)
+DECLARE_REF_COUNT_CLASS(itkImageSpatialObject2UC)
+

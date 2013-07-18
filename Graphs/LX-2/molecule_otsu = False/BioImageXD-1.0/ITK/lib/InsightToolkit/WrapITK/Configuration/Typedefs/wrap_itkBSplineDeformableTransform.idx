@@ -1,0 +1,4 @@
+{itk::BSplineDeformableTransform<double,2u,2u>} {itkBSplineDeformableTransformD22} {itkBSplineDeformableTransform}
+{itk::SmartPointer<itk::BSplineDeformableTransform<double, 2u, 2u> >} {itkBSplineDeformableTransformD22_Pointer} {itkBSplineDeformableTransform}
+{itk::BSplineDeformableTransform<double,3u,3u>} {itkBSplineDeformableTransformD33} {itkBSplineDeformableTransform}
+{itk::SmartPointer<itk::BSplineDeformableTransform<double, 3u, 3u> >} {itkBSplineDeformableTransformD33_Pointer} {itkBSplineDeformableTransform}

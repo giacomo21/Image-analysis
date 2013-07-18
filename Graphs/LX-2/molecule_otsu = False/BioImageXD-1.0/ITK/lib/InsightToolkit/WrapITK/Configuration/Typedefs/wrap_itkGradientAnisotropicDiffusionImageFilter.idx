@@ -1,0 +1,8 @@
+{itk::GradientAnisotropicDiffusionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkGradientAnisotropicDiffusionImageFilterID2ID2} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::GradientAnisotropicDiffusionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkGradientAnisotropicDiffusionImageFilterID2ID2_Pointer} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::GradientAnisotropicDiffusionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkGradientAnisotropicDiffusionImageFilterID3ID3} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::GradientAnisotropicDiffusionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkGradientAnisotropicDiffusionImageFilterID3ID3_Pointer} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::GradientAnisotropicDiffusionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkGradientAnisotropicDiffusionImageFilterIF2IF2} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::GradientAnisotropicDiffusionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkGradientAnisotropicDiffusionImageFilterIF2IF2_Pointer} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::GradientAnisotropicDiffusionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkGradientAnisotropicDiffusionImageFilterIF3IF3} {itkGradientAnisotropicDiffusionImageFilter}
+{itk::SmartPointer<itk::GradientAnisotropicDiffusionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkGradientAnisotropicDiffusionImageFilterIF3IF3_Pointer} {itkGradientAnisotropicDiffusionImageFilter}

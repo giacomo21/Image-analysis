@@ -1,0 +1,52 @@
+{itk::ImageSource<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageSourceLM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageSource<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageSourceLM2_Pointer} {ITKLabelMapBase}
+{itk::ImageSource<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageSourceLM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageSource<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageSourceLM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<double, 2u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterID2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<double, 2u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterID2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<double, 3u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterID3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<double, 3u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterID3LM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<float, 2u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterIF2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<float, 2u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterIF2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<float, 3u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterIF3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<float, 3u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterIF3LM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<unsigned char, 2u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterIUC2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<unsigned char, 2u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterIUC2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<unsigned char, 3u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterIUC3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<unsigned char, 3u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterIUC3LM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<long unsigned int, 2u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterIUL2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<long unsigned int, 2u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterIUL2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<long unsigned int, 3u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterIUL3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<long unsigned int, 3u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterIUL3LM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<short unsigned int, 2u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterIUS2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<short unsigned int, 2u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterIUS2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::Image<short unsigned int, 3u>,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterIUS3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::Image<short unsigned int, 3u>, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterIUS3LM3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<double, 2u> >} {itkImageToImageFilterLM2ID2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<double, 2u> > >} {itkImageToImageFilterLM2ID2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<float, 2u> >} {itkImageToImageFilterLM2IF2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<float, 2u> > >} {itkImageToImageFilterLM2IF2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageToImageFilterLM2IRGBUS2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageToImageFilterLM2IRGBUS2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<unsigned char, 2u> >} {itkImageToImageFilterLM2IUC2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<unsigned char, 2u> > >} {itkImageToImageFilterLM2IUC2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<long unsigned int, 2u> >} {itkImageToImageFilterLM2IUL2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<long unsigned int, 2u> > >} {itkImageToImageFilterLM2IUL2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::Image<short unsigned int, 2u> >} {itkImageToImageFilterLM2IUS2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::Image<short unsigned int, 2u> > >} {itkImageToImageFilterLM2IUS2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkImageToImageFilterLM2LM2} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> >, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkImageToImageFilterLM2LM2_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<double, 3u> >} {itkImageToImageFilterLM3ID3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<double, 3u> > >} {itkImageToImageFilterLM3ID3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<float, 3u> >} {itkImageToImageFilterLM3IF3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<float, 3u> > >} {itkImageToImageFilterLM3IF3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageToImageFilterLM3IRGBUS3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkImageToImageFilterLM3IRGBUS3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<unsigned char, 3u> >} {itkImageToImageFilterLM3IUC3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<unsigned char, 3u> > >} {itkImageToImageFilterLM3IUC3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<long unsigned int, 3u> >} {itkImageToImageFilterLM3IUL3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<long unsigned int, 3u> > >} {itkImageToImageFilterLM3IUL3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::Image<short unsigned int, 3u> >} {itkImageToImageFilterLM3IUS3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::Image<short unsigned int, 3u> > >} {itkImageToImageFilterLM3IUS3_Pointer} {ITKLabelMapBase}
+{itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >,itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkImageToImageFilterLM3LM3} {ITKLabelMapBase}
+{itk::SmartPointer<itk::ImageToImageFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> >, itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkImageToImageFilterLM3LM3_Pointer} {ITKLabelMapBase}

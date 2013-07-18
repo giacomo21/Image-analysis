@@ -1,0 +1,3 @@
+{std::complex<double>} {vcl_complexD} {vcl_complex}
+{std::complex<float>} {vcl_complexF} {vcl_complex}
+{std::complex<long double>} {vcl_complexLD} {vcl_complex}

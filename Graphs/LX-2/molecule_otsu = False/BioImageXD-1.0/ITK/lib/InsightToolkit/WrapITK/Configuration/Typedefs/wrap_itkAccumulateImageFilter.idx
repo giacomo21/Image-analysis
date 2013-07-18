@@ -1,0 +1,20 @@
+{itk::AccumulateImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAccumulateImageFilterID2ID2} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAccumulateImageFilterID2ID2_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAccumulateImageFilterID3ID3} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAccumulateImageFilterID3ID3_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAccumulateImageFilterIF2IF2} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAccumulateImageFilterIF2IF2_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAccumulateImageFilterIF3IF3} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAccumulateImageFilterIF3IF3_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkAccumulateImageFilterIUC2IUC2} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkAccumulateImageFilterIUC2IUC2_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkAccumulateImageFilterIUC3IUC3} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkAccumulateImageFilterIUC3IUC3_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkAccumulateImageFilterIUL2IUL2} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkAccumulateImageFilterIUL2IUL2_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkAccumulateImageFilterIUL3IUL3} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkAccumulateImageFilterIUL3IUL3_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkAccumulateImageFilterIUS2IUS2} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkAccumulateImageFilterIUS2IUS2_Pointer} {itkAccumulateImageFilter}
+{itk::AccumulateImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkAccumulateImageFilterIUS3IUS3} {itkAccumulateImageFilter}
+{itk::SmartPointer<itk::AccumulateImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkAccumulateImageFilterIUS3IUS3_Pointer} {itkAccumulateImageFilter}

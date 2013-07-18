@@ -1,0 +1,4 @@
+{itk::ChangeLabelLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkChangeLabelLabelMapFilterLM2} {itkChangeLabelLabelMapFilter}
+{itk::SmartPointer<itk::ChangeLabelLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkChangeLabelLabelMapFilterLM2_Pointer} {itkChangeLabelLabelMapFilter}
+{itk::ChangeLabelLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkChangeLabelLabelMapFilterLM3} {itkChangeLabelLabelMapFilter}
+{itk::SmartPointer<itk::ChangeLabelLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkChangeLabelLabelMapFilterLM3_Pointer} {itkChangeLabelLabelMapFilter}

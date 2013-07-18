@@ -1,0 +1,5 @@
+<StaticBox label="">
+    <br>
+    <FloatInput id="Threshold" label="Segmentation Threshold"/>
+    <br>
+    <FloatInput id="Level" label="Segmentation Level"/>

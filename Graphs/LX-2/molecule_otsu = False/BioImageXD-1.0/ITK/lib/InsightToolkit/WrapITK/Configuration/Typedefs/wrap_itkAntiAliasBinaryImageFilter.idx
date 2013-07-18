@@ -1,0 +1,8 @@
+{itk::AntiAliasBinaryImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAntiAliasBinaryImageFilterID2ID2} {itkAntiAliasBinaryImageFilter}
+{itk::SmartPointer<itk::AntiAliasBinaryImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAntiAliasBinaryImageFilterID2ID2_Pointer} {itkAntiAliasBinaryImageFilter}
+{itk::AntiAliasBinaryImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAntiAliasBinaryImageFilterID3ID3} {itkAntiAliasBinaryImageFilter}
+{itk::SmartPointer<itk::AntiAliasBinaryImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAntiAliasBinaryImageFilterID3ID3_Pointer} {itkAntiAliasBinaryImageFilter}
+{itk::AntiAliasBinaryImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAntiAliasBinaryImageFilterIF2IF2} {itkAntiAliasBinaryImageFilter}
+{itk::SmartPointer<itk::AntiAliasBinaryImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAntiAliasBinaryImageFilterIF2IF2_Pointer} {itkAntiAliasBinaryImageFilter}
+{itk::AntiAliasBinaryImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAntiAliasBinaryImageFilterIF3IF3} {itkAntiAliasBinaryImageFilter}
+{itk::SmartPointer<itk::AntiAliasBinaryImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAntiAliasBinaryImageFilterIF3IF3_Pointer} {itkAntiAliasBinaryImageFilter}

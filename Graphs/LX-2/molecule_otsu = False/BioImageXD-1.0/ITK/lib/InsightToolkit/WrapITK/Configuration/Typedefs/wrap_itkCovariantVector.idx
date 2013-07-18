@@ -1,0 +1,4 @@
+{itk::CovariantVector<double,2u>} {itkCovariantVectorD2} {itkCovariantVector}
+{itk::CovariantVector<double,3u>} {itkCovariantVectorD3} {itkCovariantVector}
+{itk::CovariantVector<float,2u>} {itkCovariantVectorF2} {itkCovariantVector}
+{itk::CovariantVector<float,3u>} {itkCovariantVectorF3} {itkCovariantVector}

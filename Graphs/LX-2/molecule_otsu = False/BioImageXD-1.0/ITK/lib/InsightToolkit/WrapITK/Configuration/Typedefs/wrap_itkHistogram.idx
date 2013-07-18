@@ -1,0 +1,8 @@
+{itk::Statistics::Histogram<double,itk::Statistics::DenseFrequencyContainer2>} {itkHistogramD} {itkHistogram}
+{itk::SmartPointer<itk::Statistics::Histogram<double, itk::Statistics::DenseFrequencyContainer2> >} {itkHistogramD_Pointer} {itkHistogram}
+{itk::Statistics::Histogram<float,itk::Statistics::DenseFrequencyContainer2>} {itkHistogramF} {itkHistogram}
+{itk::SmartPointer<itk::Statistics::Histogram<float, itk::Statistics::DenseFrequencyContainer2> >} {itkHistogramF_Pointer} {itkHistogram}
+{itk::SimpleDataObjectDecorator<itk::Statistics::Histogram<double, itk::Statistics::DenseFrequencyContainer2>*>} {itkSimpleDataObjectDecoratorHD} {itkHistogram}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<itk::Statistics::Histogram<double, itk::Statistics::DenseFrequencyContainer2>*> >} {itkSimpleDataObjectDecoratorHD_Pointer} {itkHistogram}
+{itk::SimpleDataObjectDecorator<itk::Statistics::Histogram<float, itk::Statistics::DenseFrequencyContainer2>*>} {itkSimpleDataObjectDecoratorHF} {itkHistogram}
+{itk::SmartPointer<itk::SimpleDataObjectDecorator<itk::Statistics::Histogram<float, itk::Statistics::DenseFrequencyContainer2>*> >} {itkSimpleDataObjectDecoratorHF_Pointer} {itkHistogram}

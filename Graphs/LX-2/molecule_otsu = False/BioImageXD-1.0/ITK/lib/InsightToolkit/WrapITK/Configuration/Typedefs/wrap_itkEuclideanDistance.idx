@@ -1,0 +1,4 @@
+{itk::Statistics::EuclideanDistanceMetric<itk::Vector<float, 2u> >} {itkEuclideanDistanceMetricVF2} {itkEuclideanDistance}
+{itk::SmartPointer<itk::Statistics::EuclideanDistanceMetric<itk::Vector<float, 2u> > >} {itkEuclideanDistanceMetricVF2_Pointer} {itkEuclideanDistance}
+{itk::Statistics::EuclideanDistanceMetric<itk::Vector<float, 3u> >} {itkEuclideanDistanceMetricVF3} {itkEuclideanDistance}
+{itk::SmartPointer<itk::Statistics::EuclideanDistanceMetric<itk::Vector<float, 3u> > >} {itkEuclideanDistanceMetricVF3_Pointer} {itkEuclideanDistance}

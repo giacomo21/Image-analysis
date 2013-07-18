@@ -1,0 +1,16 @@
+{itk::AtanImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkAtanImageFilterID2ID2} {itkAtanImageFilter}
+{itk::SmartPointer<itk::AtanImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkAtanImageFilterID2ID2_Pointer} {itkAtanImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Functor::Atan<double, double> >} {itkAtanImageFilterID2ID2_Superclass} {itkAtanImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Functor::Atan<double, double> > >} {itkAtanImageFilterID2ID2_Superclass_Pointer} {itkAtanImageFilter}
+{itk::AtanImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkAtanImageFilterID3ID3} {itkAtanImageFilter}
+{itk::SmartPointer<itk::AtanImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkAtanImageFilterID3ID3_Pointer} {itkAtanImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Functor::Atan<double, double> >} {itkAtanImageFilterID3ID3_Superclass} {itkAtanImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Functor::Atan<double, double> > >} {itkAtanImageFilterID3ID3_Superclass_Pointer} {itkAtanImageFilter}
+{itk::AtanImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkAtanImageFilterIF2IF2} {itkAtanImageFilter}
+{itk::SmartPointer<itk::AtanImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkAtanImageFilterIF2IF2_Pointer} {itkAtanImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Functor::Atan<float, float> >} {itkAtanImageFilterIF2IF2_Superclass} {itkAtanImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Functor::Atan<float, float> > >} {itkAtanImageFilterIF2IF2_Superclass_Pointer} {itkAtanImageFilter}
+{itk::AtanImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkAtanImageFilterIF3IF3} {itkAtanImageFilter}
+{itk::SmartPointer<itk::AtanImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkAtanImageFilterIF3IF3_Pointer} {itkAtanImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Functor::Atan<float, float> >} {itkAtanImageFilterIF3IF3_Superclass} {itkAtanImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Functor::Atan<float, float> > >} {itkAtanImageFilterIF3IF3_Superclass_Pointer} {itkAtanImageFilter}
