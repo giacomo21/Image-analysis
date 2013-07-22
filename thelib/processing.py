@@ -37,6 +37,33 @@ def find_ROI(A, otsu=False, fill_holes=False):
 #
 
 
+def find_ROI_single_obj(mask, otsu=False, fill_holes=False):	
+	dist = scipy.ndimage.distance_transform_edt(mask > 0)
+	dist = dist.max() - dist
+	dist -= dist.min()
+	dist = dist/float(dist.ptp()) * 255
+	dist = dist.astype(np.uint8)
+	
+	rmax = pymorph.regmax(mask)
+	seeds, nr_nuclei = scipy.ndimage.label(rmax)
+
+	nuclei = pymorph.cwatershed(dist, seeds)
+	find = mahotas.label(nuclei)
+	TC = 0
+	for n in range(0, find[1] + 1):
+		CD = np.where(find[0] == n)
+		XY1 = np.vstack((CD[0], CD[1]))
+		edges = filter.canny(XY1, sigma=1)
+		edges = edges.astype(np.uint8)
+		edges = np.where(edges == 1)
+		TC += len(CD[0])
+		XY1 = np.vstack((CD[0], CD[1], [i*5]*len(CD[0]), [n]*len(CD[0])))			
+		for p in range(0, len(XY1[0])):
+			for yel in range(0, len(XY1)):
+				h.write(str(XY1[yel][p]) + '\t')
+			h.write('\n')
+#
+
 '''
 Identify ROI and returns molecule intensity values of selected pixels
 '''
@@ -49,6 +76,8 @@ def get_intensity(nucleus, litaf):
 def compare_distributions(dist1, dist2):
 	return(scipy.stats.ranksums(dist1, dist2))
 #
+
+
 
 '''
 Get molecular distribution from a deck of slices
@@ -87,6 +116,13 @@ def get_molecule_distribution(dataset,
 
 	for i in slices_mask:
 		i.append(i[1]*(1.0-i[0])) # only cyto
+
+
+	if single_object_analysis:
+		objs_mask = []
+		for i in slices_mask:
+			objs_mask.append(find_ROI_single_obj(i[0], fill_holes=nucleus_fill_holes, otsu=nucleus_otsu))  # only nucleus
+
 
 
 	slices_intensity = []

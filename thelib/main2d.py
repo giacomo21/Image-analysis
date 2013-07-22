@@ -10,7 +10,7 @@ import output
 
 def main_api(conditions, out_folder, condition_labels = None, slice_labels = None, channel_labels = None,
 		mask_index = 0, molecule_index = 1, mask_channel = None, molecule_channel = None,
-		mask_otsu = True, mask_fillholes = True, molecule_otsu = False, molecule_fillholes = False,
+		mask_otsu = True, mask_fillholes = True, molecule_otsu = True, molecule_fillholes = False,
 		single_object_analysis = False
 		):
 	global out
@@ -21,10 +21,13 @@ def main_api(conditions, out_folder, condition_labels = None, slice_labels = Non
 			molecule_fill_holes = molecule_fillholes, molecule_otsu = molecule_otsu,
 			single_object_analysis=single_object_analysis)
 	out = processing.collect_statistics(proc, out_folder)
+	# return out
+
 	out = processing.compare_statistics(out)
 	processing.save_statistics(out, out_folder + '/condition_comparison_pvalues.txt', condition_labels)
 	out = output.plot_all(proc, conditions, out_folder,
 			condition_labels = condition_labels, obj_labels = slice_labels, channel_labels = channel_labels)
+
 
 	return(out)
 #
@@ -85,9 +88,23 @@ condition6_files = [
 
 conditions_labels = ['NA', '1hLPS100', '1hLPS500', '2hLPS100', '2hLPS500', 'AC']
 conditions_files = [condition1_files, condition2_files, condition3_files, condition4_files, condition5_files, condition6_files]
-main_api(conditions_files, '.', condition_labels = conditions_labels, slice_labels = None, channel_labels = ['nuclei','LITAF'],
+out = main_api(conditions_files, 'HSC', condition_labels = conditions_labels, slice_labels = None, channel_labels = ['nuclei','LITAF'],
 		mask_index = 0, molecule_index = 1, mask_channel = 0, molecule_channel = 0,
 		mask_otsu = True, mask_fillholes = True, molecule_otsu = False, molecule_fillholes = False)
+
+
+
+temp = out['mean'][0]
+color1 = cm.rainbow(np.linspace(0, 1, len(temp)))
+output.boxplot(temp, labels = conditions_labels, outfile = '1.png', xrotation = 45, color=color1)
+
+
+temp= out['median'][0]
+output.boxplot(temp, labels = conditions_labels, outfile = '2.png', xrotation = 45, color=color1)
+
+temp = out['sum'][0]
+output.boxplot(temp, labels = conditions_labels, outfile = '3.png', xrotation = 45, color=color1)
+
 
 ### Test on LX-2
 condition1_files = [
@@ -146,7 +163,7 @@ condition5_files = [
 
 condition_labels = ['NT', '2hLPS500', '2hLPS100', '2hLPS500+SB', '2hLPs100+SB']
 condition_files = [condition1_files, condition2_files, condition3_files, condition4_files, condition5_files]
-# main_api(condition_files, '.', condition_labels = condition_labels, slice_labels = None, channel_labels = ['nuclei','LITAF'],
+# main_api(condition_files, 'lx2', condition_labels = condition_labels, slice_labels = None, channel_labels = ['nuclei','LITAF'],
 		# mask_index = 0, molecule_index = 1, mask_channel = 1, molecule_channel = 0,
 		# mask_otsu = True, mask_fillholes = True, molecule_otsu = False, molecule_fillholes = False)
 
