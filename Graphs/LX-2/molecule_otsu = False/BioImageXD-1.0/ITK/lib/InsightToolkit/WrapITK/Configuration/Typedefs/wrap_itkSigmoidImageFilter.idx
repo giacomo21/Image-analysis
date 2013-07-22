@@ -1,0 +1,40 @@
+{itk::SigmoidImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSigmoidImageFilterID2ID2} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSigmoidImageFilterID2ID2_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Function::Sigmoid<double, double> >} {itkSigmoidImageFilterID2ID2_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Function::Sigmoid<double, double> > >} {itkSigmoidImageFilterID2ID2_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSigmoidImageFilterID3ID3} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSigmoidImageFilterID3ID3_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Function::Sigmoid<double, double> >} {itkSigmoidImageFilterID3ID3_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Function::Sigmoid<double, double> > >} {itkSigmoidImageFilterID3ID3_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSigmoidImageFilterIF2IF2} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSigmoidImageFilterIF2IF2_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Function::Sigmoid<float, float> >} {itkSigmoidImageFilterIF2IF2_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Function::Sigmoid<float, float> > >} {itkSigmoidImageFilterIF2IF2_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSigmoidImageFilterIF3IF3} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSigmoidImageFilterIF3IF3_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Function::Sigmoid<float, float> >} {itkSigmoidImageFilterIF3IF3_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Function::Sigmoid<float, float> > >} {itkSigmoidImageFilterIF3IF3_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkSigmoidImageFilterIUC2IUC2} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkSigmoidImageFilterIUC2IUC2_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Function::Sigmoid<unsigned char, unsigned char> >} {itkSigmoidImageFilterIUC2IUC2_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Function::Sigmoid<unsigned char, unsigned char> > >} {itkSigmoidImageFilterIUC2IUC2_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkSigmoidImageFilterIUC3IUC3} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkSigmoidImageFilterIUC3IUC3_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Function::Sigmoid<unsigned char, unsigned char> >} {itkSigmoidImageFilterIUC3IUC3_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Function::Sigmoid<unsigned char, unsigned char> > >} {itkSigmoidImageFilterIUC3IUC3_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkSigmoidImageFilterIUL2IUL2} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkSigmoidImageFilterIUL2IUL2_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Function::Sigmoid<long unsigned int, long unsigned int> >} {itkSigmoidImageFilterIUL2IUL2_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Function::Sigmoid<long unsigned int, long unsigned int> > >} {itkSigmoidImageFilterIUL2IUL2_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkSigmoidImageFilterIUL3IUL3} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkSigmoidImageFilterIUL3IUL3_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Function::Sigmoid<long unsigned int, long unsigned int> >} {itkSigmoidImageFilterIUL3IUL3_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Function::Sigmoid<long unsigned int, long unsigned int> > >} {itkSigmoidImageFilterIUL3IUL3_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkSigmoidImageFilterIUS2IUS2} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkSigmoidImageFilterIUS2IUS2_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Function::Sigmoid<short unsigned int, short unsigned int> >} {itkSigmoidImageFilterIUS2IUS2_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Function::Sigmoid<short unsigned int, short unsigned int> > >} {itkSigmoidImageFilterIUS2IUS2_Superclass_Pointer} {itkSigmoidImageFilter}
+{itk::SigmoidImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkSigmoidImageFilterIUS3IUS3} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::SigmoidImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkSigmoidImageFilterIUS3IUS3_Pointer} {itkSigmoidImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Function::Sigmoid<short unsigned int, short unsigned int> >} {itkSigmoidImageFilterIUS3IUS3_Superclass} {itkSigmoidImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Function::Sigmoid<short unsigned int, short unsigned int> > >} {itkSigmoidImageFilterIUS3IUS3_Superclass_Pointer} {itkSigmoidImageFilter}

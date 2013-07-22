@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkComplexToPhaseImageFilterICF3IF3)
+DECLARE_REF_COUNT_CLASS(itkComplexToPhaseImageFilterICF3IF3_Superclass)
+DECLARE_REF_COUNT_CLASS(itkComplexToPhaseImageFilterICF2IF2)
+DECLARE_REF_COUNT_CLASS(itkComplexToPhaseImageFilterICF2IF2_Superclass)
+

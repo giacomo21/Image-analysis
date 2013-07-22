@@ -1,0 +1,4 @@
+{itk::MeshSource<itk::Mesh<double, 2u, itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> > >} {itkMeshSourceMD2Q} {itkMeshSource}
+{itk::SmartPointer<itk::MeshSource<itk::Mesh<double, 2u, itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> > > >} {itkMeshSourceMD2Q_Pointer} {itkMeshSource}
+{itk::MeshSource<itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkMeshSourceMD3Q} {itkMeshSource}
+{itk::SmartPointer<itk::MeshSource<itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > > >} {itkMeshSourceMD3Q_Pointer} {itkMeshSource}

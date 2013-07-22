@@ -1,0 +1,3 @@
+{itk::Offset<1u>} {itkOffset1} {itkOffset}
+{itk::Offset<2u>} {itkOffset2} {itkOffset}
+{itk::Offset<3u>} {itkOffset3} {itkOffset}

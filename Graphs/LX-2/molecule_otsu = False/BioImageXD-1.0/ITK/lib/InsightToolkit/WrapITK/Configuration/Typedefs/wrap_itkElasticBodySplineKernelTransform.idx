@@ -1,0 +1,4 @@
+{itk::ElasticBodySplineKernelTransform<double,2u>} {itkElasticBodySplineKernelTransformD2} {itkElasticBodySplineKernelTransform}
+{itk::SmartPointer<itk::ElasticBodySplineKernelTransform<double, 2u> >} {itkElasticBodySplineKernelTransformD2_Pointer} {itkElasticBodySplineKernelTransform}
+{itk::ElasticBodySplineKernelTransform<double,3u>} {itkElasticBodySplineKernelTransformD3} {itkElasticBodySplineKernelTransform}
+{itk::SmartPointer<itk::ElasticBodySplineKernelTransform<double, 3u> >} {itkElasticBodySplineKernelTransformD3_Pointer} {itkElasticBodySplineKernelTransform}

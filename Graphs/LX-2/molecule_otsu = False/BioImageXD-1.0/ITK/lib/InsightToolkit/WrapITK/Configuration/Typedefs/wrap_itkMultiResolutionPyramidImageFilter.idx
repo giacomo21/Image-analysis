@@ -1,0 +1,20 @@
+{itk::MultiResolutionPyramidImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkMultiResolutionPyramidImageFilterID2ID2} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkMultiResolutionPyramidImageFilterID2ID2_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkMultiResolutionPyramidImageFilterID3ID3} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkMultiResolutionPyramidImageFilterID3ID3_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkMultiResolutionPyramidImageFilterIF2IF2} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkMultiResolutionPyramidImageFilterIF2IF2_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkMultiResolutionPyramidImageFilterIF3IF3} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkMultiResolutionPyramidImageFilterIF3IF3_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkMultiResolutionPyramidImageFilterIUC2IUC2} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkMultiResolutionPyramidImageFilterIUC2IUC2_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkMultiResolutionPyramidImageFilterIUC3IUC3} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkMultiResolutionPyramidImageFilterIUC3IUC3_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkMultiResolutionPyramidImageFilterIUL2IUL2} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkMultiResolutionPyramidImageFilterIUL2IUL2_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkMultiResolutionPyramidImageFilterIUL3IUL3} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkMultiResolutionPyramidImageFilterIUL3IUL3_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkMultiResolutionPyramidImageFilterIUS2IUS2} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkMultiResolutionPyramidImageFilterIUS2IUS2_Pointer} {itkMultiResolutionPyramidImageFilter}
+{itk::MultiResolutionPyramidImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkMultiResolutionPyramidImageFilterIUS3IUS3} {itkMultiResolutionPyramidImageFilter}
+{itk::SmartPointer<itk::MultiResolutionPyramidImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkMultiResolutionPyramidImageFilterIUS3IUS3_Pointer} {itkMultiResolutionPyramidImageFilter}

@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkComplexToRealImageFilterICF3IF3)
+DECLARE_REF_COUNT_CLASS(itkComplexToRealImageFilterICF3IF3_Superclass)
+DECLARE_REF_COUNT_CLASS(itkComplexToRealImageFilterICF2IF2)
+DECLARE_REF_COUNT_CLASS(itkComplexToRealImageFilterICF2IF2_Superclass)
+

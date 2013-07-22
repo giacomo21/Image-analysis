@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkDataObjectDecoratorTD33)
+DECLARE_REF_COUNT_CLASS(itkDataObjectDecoratorTD32)
+DECLARE_REF_COUNT_CLASS(itkDataObjectDecoratorTD23)
+DECLARE_REF_COUNT_CLASS(itkDataObjectDecoratorTD22)
+DECLARE_REF_COUNT_CLASS(itkTransformD33)
+DECLARE_REF_COUNT_CLASS(itkTransformD32)
+DECLARE_REF_COUNT_CLASS(itkTransformD23)
+DECLARE_REF_COUNT_CLASS(itkTransformD22)
+DECLARE_REF_COUNT_CLASS(itkTransformBase)
+%template(listitkTransformBase_Pointer) std::list< itkTransformBase_Pointer >;
+

@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkAntiAliasBinaryImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkAntiAliasBinaryImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkAntiAliasBinaryImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkAntiAliasBinaryImageFilterIF2IF2)
+

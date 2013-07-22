@@ -1,0 +1,4 @@
+{itk::ScaleTransform<double,2u>} {itkScaleTransformD2} {itkScaleTransform}
+{itk::SmartPointer<itk::ScaleTransform<double, 2u> >} {itkScaleTransformD2_Pointer} {itkScaleTransform}
+{itk::ScaleTransform<double,3u>} {itkScaleTransformD3} {itkScaleTransform}
+{itk::SmartPointer<itk::ScaleTransform<double, 3u> >} {itkScaleTransformD3_Pointer} {itkScaleTransform}

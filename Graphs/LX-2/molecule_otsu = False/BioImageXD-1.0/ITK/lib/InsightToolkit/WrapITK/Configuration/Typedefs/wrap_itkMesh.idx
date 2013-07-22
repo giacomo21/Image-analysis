@@ -1,0 +1,12 @@
+{itk::Mesh<double,2u,itk::DefaultDynamicMeshTraits<double, 2u, 2u, double, float, double> >} {itkMeshD2D} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 2u, itk::DefaultDynamicMeshTraits<double, 2u, 2u, double, float, double> > >} {itkMeshD2D_Pointer} {itkMesh}
+{itk::Mesh<double,2u,itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> >} {itkMeshD2Q} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 2u, itk::QuadEdgeMeshTraits<double, 2u, bool, bool, float, float> > >} {itkMeshD2Q_Pointer} {itkMesh}
+{itk::Mesh<double,2u,itk::DefaultStaticMeshTraits<double, 2u, 2u, double, float, double> >} {itkMeshD2S} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 2u, itk::DefaultStaticMeshTraits<double, 2u, 2u, double, float, double> > >} {itkMeshD2S_Pointer} {itkMesh}
+{itk::Mesh<double,3u,itk::DefaultDynamicMeshTraits<double, 3u, 3u, double, float, double> >} {itkMeshD3D} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 3u, itk::DefaultDynamicMeshTraits<double, 3u, 3u, double, float, double> > >} {itkMeshD3D_Pointer} {itkMesh}
+{itk::Mesh<double,3u,itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> >} {itkMeshD3Q} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 3u, itk::QuadEdgeMeshTraits<double, 3u, bool, bool, float, float> > >} {itkMeshD3Q_Pointer} {itkMesh}
+{itk::Mesh<double,3u,itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> >} {itkMeshD3S} {itkMesh}
+{itk::SmartPointer<itk::Mesh<double, 3u, itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> > >} {itkMeshD3S_Pointer} {itkMesh}

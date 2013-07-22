@@ -1,0 +1,16 @@
+{itk::SinImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSinImageFilterID2ID2} {itkSinImageFilter}
+{itk::SmartPointer<itk::SinImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSinImageFilterID2ID2_Pointer} {itkSinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Function::Sin<double, double> >} {itkSinImageFilterID2ID2_Superclass} {itkSinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Function::Sin<double, double> > >} {itkSinImageFilterID2ID2_Superclass_Pointer} {itkSinImageFilter}
+{itk::SinImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSinImageFilterID3ID3} {itkSinImageFilter}
+{itk::SmartPointer<itk::SinImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSinImageFilterID3ID3_Pointer} {itkSinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Function::Sin<double, double> >} {itkSinImageFilterID3ID3_Superclass} {itkSinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Function::Sin<double, double> > >} {itkSinImageFilterID3ID3_Superclass_Pointer} {itkSinImageFilter}
+{itk::SinImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSinImageFilterIF2IF2} {itkSinImageFilter}
+{itk::SmartPointer<itk::SinImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSinImageFilterIF2IF2_Pointer} {itkSinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Function::Sin<float, float> >} {itkSinImageFilterIF2IF2_Superclass} {itkSinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Function::Sin<float, float> > >} {itkSinImageFilterIF2IF2_Superclass_Pointer} {itkSinImageFilter}
+{itk::SinImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSinImageFilterIF3IF3} {itkSinImageFilter}
+{itk::SmartPointer<itk::SinImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSinImageFilterIF3IF3_Pointer} {itkSinImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Function::Sin<float, float> >} {itkSinImageFilterIF3IF3_Superclass} {itkSinImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Function::Sin<float, float> > >} {itkSinImageFilterIF3IF3_Superclass_Pointer} {itkSinImageFilter}

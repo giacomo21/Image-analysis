@@ -1,0 +1,20 @@
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkGrayscaleGeodesicErodeImageFilterID2ID2} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkGrayscaleGeodesicErodeImageFilterID2ID2_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkGrayscaleGeodesicErodeImageFilterID3ID3} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkGrayscaleGeodesicErodeImageFilterID3ID3_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkGrayscaleGeodesicErodeImageFilterIF2IF2} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkGrayscaleGeodesicErodeImageFilterIF2IF2_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkGrayscaleGeodesicErodeImageFilterIF3IF3} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkGrayscaleGeodesicErodeImageFilterIF3IF3_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkGrayscaleGeodesicErodeImageFilterIUC2IUC2} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkGrayscaleGeodesicErodeImageFilterIUC2IUC2_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkGrayscaleGeodesicErodeImageFilterIUC3IUC3} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkGrayscaleGeodesicErodeImageFilterIUC3IUC3_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkGrayscaleGeodesicErodeImageFilterIUL2IUL2} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkGrayscaleGeodesicErodeImageFilterIUL2IUL2_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkGrayscaleGeodesicErodeImageFilterIUL3IUL3} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkGrayscaleGeodesicErodeImageFilterIUL3IUL3_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkGrayscaleGeodesicErodeImageFilterIUS2IUS2} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkGrayscaleGeodesicErodeImageFilterIUS2IUS2_Pointer} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::GrayscaleGeodesicErodeImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkGrayscaleGeodesicErodeImageFilterIUS3IUS3} {itkGrayscaleGeodesicErodeImageFilter}
+{itk::SmartPointer<itk::GrayscaleGeodesicErodeImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkGrayscaleGeodesicErodeImageFilterIUS3IUS3_Pointer} {itkGrayscaleGeodesicErodeImageFilter}

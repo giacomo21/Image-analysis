@@ -1,0 +1,20 @@
+{itk::NeighborhoodConnectedImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkNeighborhoodConnectedImageFilterID2ID2} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkNeighborhoodConnectedImageFilterID2ID2_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkNeighborhoodConnectedImageFilterID3ID3} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkNeighborhoodConnectedImageFilterID3ID3_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkNeighborhoodConnectedImageFilterIF2IF2} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkNeighborhoodConnectedImageFilterIF2IF2_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkNeighborhoodConnectedImageFilterIF3IF3} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkNeighborhoodConnectedImageFilterIF3IF3_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkNeighborhoodConnectedImageFilterIUC2IUC2} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkNeighborhoodConnectedImageFilterIUC2IUC2_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkNeighborhoodConnectedImageFilterIUC3IUC3} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkNeighborhoodConnectedImageFilterIUC3IUC3_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkNeighborhoodConnectedImageFilterIUL2IUL2} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkNeighborhoodConnectedImageFilterIUL2IUL2_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkNeighborhoodConnectedImageFilterIUL3IUL3} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkNeighborhoodConnectedImageFilterIUL3IUL3_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkNeighborhoodConnectedImageFilterIUS2IUS2} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkNeighborhoodConnectedImageFilterIUS2IUS2_Pointer} {itkNeighborhoodConnectedImageFilter}
+{itk::NeighborhoodConnectedImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkNeighborhoodConnectedImageFilterIUS3IUS3} {itkNeighborhoodConnectedImageFilter}
+{itk::SmartPointer<itk::NeighborhoodConnectedImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkNeighborhoodConnectedImageFilterIUS3IUS3_Pointer} {itkNeighborhoodConnectedImageFilter}

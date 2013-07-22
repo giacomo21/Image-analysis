@@ -1,0 +1,80 @@
+{itk::ConstantBoundaryCondition<itk::Image<std::complex<float>, 2u> >} {itkConstantBoundaryConditionICF2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<std::complex<float>, 3u> >} {itkConstantBoundaryConditionICF3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkConstantBoundaryConditionICVF22} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkConstantBoundaryConditionICVF33} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<double, 2u> >} {itkConstantBoundaryConditionID2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<double, 3u> >} {itkConstantBoundaryConditionID3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<float, 2u> >} {itkConstantBoundaryConditionIF2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<float, 3u> >} {itkConstantBoundaryConditionIF3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkConstantBoundaryConditionIRGBAUS2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkConstantBoundaryConditionIRGBAUS3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkConstantBoundaryConditionIRGBUS2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkConstantBoundaryConditionIRGBUS3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<unsigned char, 2u> >} {itkConstantBoundaryConditionIUC2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<unsigned char, 3u> >} {itkConstantBoundaryConditionIUC3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<long unsigned int, 2u> >} {itkConstantBoundaryConditionIUL2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<long unsigned int, 3u> >} {itkConstantBoundaryConditionIUL3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<short unsigned int, 2u> >} {itkConstantBoundaryConditionIUS2} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<short unsigned int, 3u> >} {itkConstantBoundaryConditionIUS3} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkConstantBoundaryConditionIVF22} {itkImageBoundaryCondition}
+{itk::ConstantBoundaryCondition<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkConstantBoundaryConditionIVF33} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<std::complex<float>, 2u> >} {itkImageBoundaryConditionICF2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<std::complex<float>, 3u> >} {itkImageBoundaryConditionICF3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageBoundaryConditionICVF22} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageBoundaryConditionICVF33} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<double, 2u> >} {itkImageBoundaryConditionID2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<double, 3u> >} {itkImageBoundaryConditionID3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<float, 2u> >} {itkImageBoundaryConditionIF2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<float, 3u> >} {itkImageBoundaryConditionIF3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageBoundaryConditionIRGBAUS2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageBoundaryConditionIRGBAUS3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageBoundaryConditionIRGBUS2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageBoundaryConditionIRGBUS3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<unsigned char, 2u> >} {itkImageBoundaryConditionIUC2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<unsigned char, 3u> >} {itkImageBoundaryConditionIUC3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<long unsigned int, 2u> >} {itkImageBoundaryConditionIUL2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<long unsigned int, 3u> >} {itkImageBoundaryConditionIUL3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<short unsigned int, 2u> >} {itkImageBoundaryConditionIUS2} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<short unsigned int, 3u> >} {itkImageBoundaryConditionIUS3} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageBoundaryConditionIVF22} {itkImageBoundaryCondition}
+{itk::ImageBoundaryCondition<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageBoundaryConditionIVF33} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<std::complex<float>, 2u> >} {itkPeriodicBoundaryConditionICF2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<std::complex<float>, 3u> >} {itkPeriodicBoundaryConditionICF3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkPeriodicBoundaryConditionICVF22} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkPeriodicBoundaryConditionICVF33} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<double, 2u> >} {itkPeriodicBoundaryConditionID2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<double, 3u> >} {itkPeriodicBoundaryConditionID3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<float, 2u> >} {itkPeriodicBoundaryConditionIF2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<float, 3u> >} {itkPeriodicBoundaryConditionIF3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkPeriodicBoundaryConditionIRGBAUS2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkPeriodicBoundaryConditionIRGBAUS3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkPeriodicBoundaryConditionIRGBUS2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkPeriodicBoundaryConditionIRGBUS3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<unsigned char, 2u> >} {itkPeriodicBoundaryConditionIUC2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<unsigned char, 3u> >} {itkPeriodicBoundaryConditionIUC3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<long unsigned int, 2u> >} {itkPeriodicBoundaryConditionIUL2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<long unsigned int, 3u> >} {itkPeriodicBoundaryConditionIUL3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<short unsigned int, 2u> >} {itkPeriodicBoundaryConditionIUS2} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<short unsigned int, 3u> >} {itkPeriodicBoundaryConditionIUS3} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkPeriodicBoundaryConditionIVF22} {itkImageBoundaryCondition}
+{itk::PeriodicBoundaryCondition<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkPeriodicBoundaryConditionIVF33} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<std::complex<float>, 2u> >} {itkZeroFluxNeumannBoundaryConditionICF2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<std::complex<float>, 3u> >} {itkZeroFluxNeumannBoundaryConditionICF3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkZeroFluxNeumannBoundaryConditionICVF22} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkZeroFluxNeumannBoundaryConditionICVF33} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<double, 2u> >} {itkZeroFluxNeumannBoundaryConditionID2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<double, 3u> >} {itkZeroFluxNeumannBoundaryConditionID3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<float, 2u> >} {itkZeroFluxNeumannBoundaryConditionIF2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<float, 3u> >} {itkZeroFluxNeumannBoundaryConditionIF3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkZeroFluxNeumannBoundaryConditionIRGBAUS2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkZeroFluxNeumannBoundaryConditionIRGBAUS3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkZeroFluxNeumannBoundaryConditionIRGBUS2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkZeroFluxNeumannBoundaryConditionIRGBUS3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<unsigned char, 2u> >} {itkZeroFluxNeumannBoundaryConditionIUC2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<unsigned char, 3u> >} {itkZeroFluxNeumannBoundaryConditionIUC3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<long unsigned int, 2u> >} {itkZeroFluxNeumannBoundaryConditionIUL2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<long unsigned int, 3u> >} {itkZeroFluxNeumannBoundaryConditionIUL3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<short unsigned int, 2u> >} {itkZeroFluxNeumannBoundaryConditionIUS2} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<short unsigned int, 3u> >} {itkZeroFluxNeumannBoundaryConditionIUS3} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkZeroFluxNeumannBoundaryConditionIVF22} {itkImageBoundaryCondition}
+{itk::ZeroFluxNeumannBoundaryCondition<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkZeroFluxNeumannBoundaryConditionIVF33} {itkImageBoundaryCondition}

@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkGradientAnisotropicDiffusionImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkGradientAnisotropicDiffusionImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkGradientAnisotropicDiffusionImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkGradientAnisotropicDiffusionImageFilterIF2IF2)
+

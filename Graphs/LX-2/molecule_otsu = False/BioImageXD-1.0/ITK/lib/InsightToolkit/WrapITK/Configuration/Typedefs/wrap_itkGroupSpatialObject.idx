@@ -1,0 +1,4 @@
+{itk::GroupSpatialObject<2u>} {itkGroupSpatialObject2} {itkGroupSpatialObject}
+{itk::SmartPointer<itk::GroupSpatialObject<2u> >} {itkGroupSpatialObject2_Pointer} {itkGroupSpatialObject}
+{itk::GroupSpatialObject<3u>} {itkGroupSpatialObject3} {itkGroupSpatialObject}
+{itk::SmartPointer<itk::GroupSpatialObject<3u> >} {itkGroupSpatialObject3_Pointer} {itkGroupSpatialObject}

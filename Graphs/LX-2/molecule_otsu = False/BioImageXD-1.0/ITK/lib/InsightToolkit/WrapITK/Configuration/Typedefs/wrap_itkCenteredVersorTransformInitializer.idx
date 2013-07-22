@@ -1,0 +1,10 @@
+{itk::CenteredVersorTransformInitializer<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCenteredVersorTransformInitializerID3ID3} {itkCenteredVersorTransformInitializer}
+{itk::SmartPointer<itk::CenteredVersorTransformInitializer<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCenteredVersorTransformInitializerID3ID3_Pointer} {itkCenteredVersorTransformInitializer}
+{itk::CenteredVersorTransformInitializer<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCenteredVersorTransformInitializerIF3IF3} {itkCenteredVersorTransformInitializer}
+{itk::SmartPointer<itk::CenteredVersorTransformInitializer<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCenteredVersorTransformInitializerIF3IF3_Pointer} {itkCenteredVersorTransformInitializer}
+{itk::CenteredVersorTransformInitializer<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkCenteredVersorTransformInitializerIUC3IUC3} {itkCenteredVersorTransformInitializer}
+{itk::SmartPointer<itk::CenteredVersorTransformInitializer<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkCenteredVersorTransformInitializerIUC3IUC3_Pointer} {itkCenteredVersorTransformInitializer}
+{itk::CenteredVersorTransformInitializer<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkCenteredVersorTransformInitializerIUL3IUL3} {itkCenteredVersorTransformInitializer}
+{itk::SmartPointer<itk::CenteredVersorTransformInitializer<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCenteredVersorTransformInitializerIUL3IUL3_Pointer} {itkCenteredVersorTransformInitializer}
+{itk::CenteredVersorTransformInitializer<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkCenteredVersorTransformInitializerIUS3IUS3} {itkCenteredVersorTransformInitializer}
+{itk::SmartPointer<itk::CenteredVersorTransformInitializer<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCenteredVersorTransformInitializerIUS3IUS3_Pointer} {itkCenteredVersorTransformInitializer}

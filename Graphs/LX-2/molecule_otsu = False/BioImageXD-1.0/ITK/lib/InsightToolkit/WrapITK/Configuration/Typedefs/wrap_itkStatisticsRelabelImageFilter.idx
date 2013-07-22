@@ -1,0 +1,60 @@
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkStatisticsRelabelImageFilterIUC2ID2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkStatisticsRelabelImageFilterIUC2ID2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkStatisticsRelabelImageFilterIUC2IF2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkStatisticsRelabelImageFilterIUC2IF2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkStatisticsRelabelImageFilterIUC2IUC2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkStatisticsRelabelImageFilterIUC2IUC2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUC2IUL2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUC2IUL2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUC2IUS2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUC2IUS2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkStatisticsRelabelImageFilterIUC3ID3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkStatisticsRelabelImageFilterIUC3ID3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkStatisticsRelabelImageFilterIUC3IF3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkStatisticsRelabelImageFilterIUC3IF3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkStatisticsRelabelImageFilterIUC3IUC3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkStatisticsRelabelImageFilterIUC3IUC3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUC3IUL3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUC3IUL3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUC3IUS3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUC3IUS3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkStatisticsRelabelImageFilterIUL2ID2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkStatisticsRelabelImageFilterIUL2ID2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkStatisticsRelabelImageFilterIUL2IF2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkStatisticsRelabelImageFilterIUL2IF2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkStatisticsRelabelImageFilterIUL2IUC2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkStatisticsRelabelImageFilterIUL2IUC2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUL2IUL2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUL2IUL2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUL2IUS2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUL2IUS2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkStatisticsRelabelImageFilterIUL3ID3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkStatisticsRelabelImageFilterIUL3ID3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkStatisticsRelabelImageFilterIUL3IF3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkStatisticsRelabelImageFilterIUL3IF3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkStatisticsRelabelImageFilterIUL3IUC3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkStatisticsRelabelImageFilterIUL3IUC3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUL3IUL3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUL3IUL3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUL3IUS3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUL3IUS3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkStatisticsRelabelImageFilterIUS2ID2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkStatisticsRelabelImageFilterIUS2ID2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkStatisticsRelabelImageFilterIUS2IF2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkStatisticsRelabelImageFilterIUS2IF2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkStatisticsRelabelImageFilterIUS2IUC2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkStatisticsRelabelImageFilterIUS2IUC2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUS2IUL2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUS2IUL2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkStatisticsRelabelImageFilterIUS2IUS2} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkStatisticsRelabelImageFilterIUS2IUS2_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkStatisticsRelabelImageFilterIUS3ID3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkStatisticsRelabelImageFilterIUS3ID3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkStatisticsRelabelImageFilterIUS3IF3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkStatisticsRelabelImageFilterIUS3IF3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkStatisticsRelabelImageFilterIUS3IUC3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkStatisticsRelabelImageFilterIUS3IUC3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUS3IUL3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUS3IUL3_Pointer} {itkStatisticsRelabelImageFilter}
+{itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkStatisticsRelabelImageFilterIUS3IUS3} {itkStatisticsRelabelImageFilter}
+{itk::SmartPointer<itk::StatisticsRelabelImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkStatisticsRelabelImageFilterIUS3IUS3_Pointer} {itkStatisticsRelabelImageFilter}

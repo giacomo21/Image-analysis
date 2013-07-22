@@ -1,0 +1,20 @@
+{itk::OrientImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<std::complex<float>, 3u> >} {itkOrientImageFilterICF3ICF3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<std::complex<float>, 3u> > >} {itkOrientImageFilterICF3ICF3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkOrientImageFilterICVF33ICVF33} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkOrientImageFilterICVF33ICVF33_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkOrientImageFilterID3ID3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkOrientImageFilterID3ID3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkOrientImageFilterIF3IF3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkOrientImageFilterIF3IF3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkOrientImageFilterIRGBAUS3IRGBAUS3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkOrientImageFilterIRGBAUS3IRGBAUS3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkOrientImageFilterIRGBUS3IRGBUS3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkOrientImageFilterIRGBUS3IRGBUS3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkOrientImageFilterIUC3IUC3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkOrientImageFilterIUC3IUC3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkOrientImageFilterIUL3IUL3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkOrientImageFilterIUL3IUL3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkOrientImageFilterIUS3IUS3} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkOrientImageFilterIUS3IUS3_Pointer} {itkOrientImageFilter}
+{itk::OrientImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkOrientImageFilterIVF33IVF33} {itkOrientImageFilter}
+{itk::SmartPointer<itk::OrientImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkOrientImageFilterIVF33IVF33_Pointer} {itkOrientImageFilter}

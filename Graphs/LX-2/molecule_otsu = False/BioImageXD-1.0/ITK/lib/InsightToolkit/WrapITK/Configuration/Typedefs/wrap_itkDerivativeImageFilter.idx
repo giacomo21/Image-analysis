@@ -1,0 +1,8 @@
+{itk::DerivativeImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkDerivativeImageFilterID2ID2} {itkDerivativeImageFilter}
+{itk::SmartPointer<itk::DerivativeImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkDerivativeImageFilterID2ID2_Pointer} {itkDerivativeImageFilter}
+{itk::DerivativeImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkDerivativeImageFilterID3ID3} {itkDerivativeImageFilter}
+{itk::SmartPointer<itk::DerivativeImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkDerivativeImageFilterID3ID3_Pointer} {itkDerivativeImageFilter}
+{itk::DerivativeImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkDerivativeImageFilterIF2IF2} {itkDerivativeImageFilter}
+{itk::SmartPointer<itk::DerivativeImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkDerivativeImageFilterIF2IF2_Pointer} {itkDerivativeImageFilter}
+{itk::DerivativeImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkDerivativeImageFilterIF3IF3} {itkDerivativeImageFilter}
+{itk::SmartPointer<itk::DerivativeImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkDerivativeImageFilterIF3IF3_Pointer} {itkDerivativeImageFilter}

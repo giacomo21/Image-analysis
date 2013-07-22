@@ -1,0 +1,4 @@
+{itk::ExponentialDeformationFieldImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkExponentialDeformationFieldImageFilterIVF22IVF22} {itkExponentialDeformationFieldImageFilter}
+{itk::SmartPointer<itk::ExponentialDeformationFieldImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkExponentialDeformationFieldImageFilterIVF22IVF22_Pointer} {itkExponentialDeformationFieldImageFilter}
+{itk::ExponentialDeformationFieldImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkExponentialDeformationFieldImageFilterIVF33IVF33} {itkExponentialDeformationFieldImageFilter}
+{itk::SmartPointer<itk::ExponentialDeformationFieldImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkExponentialDeformationFieldImageFilterIVF33IVF33_Pointer} {itkExponentialDeformationFieldImageFilter}

@@ -1,0 +1,20 @@
+{itk::BSplineDecompositionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBSplineDecompositionImageFilterID2ID2} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBSplineDecompositionImageFilterID2ID2_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBSplineDecompositionImageFilterID3ID3} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBSplineDecompositionImageFilterID3ID3_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBSplineDecompositionImageFilterIF2IF2} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBSplineDecompositionImageFilterIF2IF2_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBSplineDecompositionImageFilterIF3IF3} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBSplineDecompositionImageFilterIF3IF3_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBSplineDecompositionImageFilterIUC2IUC2} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBSplineDecompositionImageFilterIUC2IUC2_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBSplineDecompositionImageFilterIUC3IUC3} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBSplineDecompositionImageFilterIUC3IUC3_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBSplineDecompositionImageFilterIUL2IUL2} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBSplineDecompositionImageFilterIUL2IUL2_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBSplineDecompositionImageFilterIUL3IUL3} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBSplineDecompositionImageFilterIUL3IUL3_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBSplineDecompositionImageFilterIUS2IUS2} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBSplineDecompositionImageFilterIUS2IUS2_Pointer} {itkBSplineDecompositionImageFilter}
+{itk::BSplineDecompositionImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBSplineDecompositionImageFilterIUS3IUS3} {itkBSplineDecompositionImageFilter}
+{itk::SmartPointer<itk::BSplineDecompositionImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBSplineDecompositionImageFilterIUS3IUS3_Pointer} {itkBSplineDecompositionImageFilter}

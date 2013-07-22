@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkAutoCropLabelMapFilterLM3)
+DECLARE_REF_COUNT_CLASS(itkAutoCropLabelMapFilterLM2)
+

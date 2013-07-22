@@ -1,0 +1,10 @@
+{itk::LevelSetNode<double,2u>} {itkLevelSetNodeD2} {itkLevelSet}
+{itk::LevelSetNode<double,3u>} {itkLevelSetNodeD3} {itkLevelSet}
+{itk::LevelSetNode<float,2u>} {itkLevelSetNodeF2} {itkLevelSet}
+{itk::LevelSetNode<float,3u>} {itkLevelSetNodeF3} {itkLevelSet}
+{itk::LevelSetNode<unsigned char,2u>} {itkLevelSetNodeUC2} {itkLevelSet}
+{itk::LevelSetNode<unsigned char,3u>} {itkLevelSetNodeUC3} {itkLevelSet}
+{itk::LevelSetNode<long unsigned int,2u>} {itkLevelSetNodeUL2} {itkLevelSet}
+{itk::LevelSetNode<long unsigned int,3u>} {itkLevelSetNodeUL3} {itkLevelSet}
+{itk::LevelSetNode<short unsigned int,2u>} {itkLevelSetNodeUS2} {itkLevelSet}
+{itk::LevelSetNode<short unsigned int,3u>} {itkLevelSetNodeUS3} {itkLevelSet}

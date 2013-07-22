@@ -1,0 +1,4 @@
+{itk::PolyLineParametricPath<2u>} {itkPolyLineParametricPath2} {itkPolyLineParametricPath}
+{itk::SmartPointer<itk::PolyLineParametricPath<2u> >} {itkPolyLineParametricPath2_Pointer} {itkPolyLineParametricPath}
+{itk::PolyLineParametricPath<3u>} {itkPolyLineParametricPath3} {itkPolyLineParametricPath}
+{itk::SmartPointer<itk::PolyLineParametricPath<3u> >} {itkPolyLineParametricPath3_Pointer} {itkPolyLineParametricPath}

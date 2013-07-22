@@ -1,0 +1,48 @@
+{itk::ImageFunction<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Vector<double, 2u>,double>} {itkImageFunctionICVF22VD2D} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Vector<double, 2u>, double> >} {itkImageFunctionICVF22VD2D_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Vector<double, 3u>,double>} {itkImageFunctionICVF33VD3D} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Vector<double, 3u>, double> >} {itkImageFunctionICVF33VD3D_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<double, 2u>,double,double>} {itkImageFunctionID2DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<double, 2u>, double, double> >} {itkImageFunctionID2DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<double, 2u>,double,float>} {itkImageFunctionID2DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<double, 2u>, double, float> >} {itkImageFunctionID2DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<double, 3u>,double,double>} {itkImageFunctionID3DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<double, 3u>, double, double> >} {itkImageFunctionID3DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<double, 3u>,double,float>} {itkImageFunctionID3DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<double, 3u>, double, float> >} {itkImageFunctionID3DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<float, 2u>,double,double>} {itkImageFunctionIF2DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<float, 2u>, double, double> >} {itkImageFunctionIF2DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<float, 2u>,double,float>} {itkImageFunctionIF2DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<float, 2u>, double, float> >} {itkImageFunctionIF2DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<float, 3u>,double,double>} {itkImageFunctionIF3DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<float, 3u>, double, double> >} {itkImageFunctionIF3DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<float, 3u>,double,float>} {itkImageFunctionIF3DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<float, 3u>, double, float> >} {itkImageFunctionIF3DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<unsigned char, 2u>,double,double>} {itkImageFunctionIUC2DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<unsigned char, 2u>, double, double> >} {itkImageFunctionIUC2DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<unsigned char, 2u>,double,float>} {itkImageFunctionIUC2DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<unsigned char, 2u>, double, float> >} {itkImageFunctionIUC2DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<unsigned char, 3u>,double,double>} {itkImageFunctionIUC3DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<unsigned char, 3u>, double, double> >} {itkImageFunctionIUC3DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<unsigned char, 3u>,double,float>} {itkImageFunctionIUC3DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<unsigned char, 3u>, double, float> >} {itkImageFunctionIUC3DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<long unsigned int, 2u>,double,double>} {itkImageFunctionIUL2DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<long unsigned int, 2u>, double, double> >} {itkImageFunctionIUL2DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<long unsigned int, 2u>,double,float>} {itkImageFunctionIUL2DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<long unsigned int, 2u>, double, float> >} {itkImageFunctionIUL2DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<long unsigned int, 3u>,double,double>} {itkImageFunctionIUL3DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<long unsigned int, 3u>, double, double> >} {itkImageFunctionIUL3DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<long unsigned int, 3u>,double,float>} {itkImageFunctionIUL3DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<long unsigned int, 3u>, double, float> >} {itkImageFunctionIUL3DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<short unsigned int, 2u>,double,double>} {itkImageFunctionIUS2DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<short unsigned int, 2u>, double, double> >} {itkImageFunctionIUS2DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<short unsigned int, 2u>,double,float>} {itkImageFunctionIUS2DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<short unsigned int, 2u>, double, float> >} {itkImageFunctionIUS2DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<short unsigned int, 3u>,double,double>} {itkImageFunctionIUS3DD} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<short unsigned int, 3u>, double, double> >} {itkImageFunctionIUS3DD_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<short unsigned int, 3u>,double,float>} {itkImageFunctionIUS3DF} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<short unsigned int, 3u>, double, float> >} {itkImageFunctionIUS3DF_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Vector<double, 2u>,double>} {itkImageFunctionIVF22VD2D} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Vector<double, 2u>, double> >} {itkImageFunctionIVF22VD2D_Pointer} {itkImageFunction}
+{itk::ImageFunction<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Vector<double, 3u>,double>} {itkImageFunctionIVF33VD3D} {itkImageFunction}
+{itk::SmartPointer<itk::ImageFunction<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Vector<double, 3u>, double> >} {itkImageFunctionIVF33VD3D_Pointer} {itkImageFunction}

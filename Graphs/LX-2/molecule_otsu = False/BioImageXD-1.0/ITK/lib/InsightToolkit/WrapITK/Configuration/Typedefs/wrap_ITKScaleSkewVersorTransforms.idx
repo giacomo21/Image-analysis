@@ -1,0 +1,2 @@
+{itk::ScaleSkewVersor3DTransform<double>} {itkScaleSkewVersor3DTransformD} {ITKScaleSkewVersorTransforms}
+{itk::SmartPointer<itk::ScaleSkewVersor3DTransform<double> >} {itkScaleSkewVersor3DTransformD_Pointer} {ITKScaleSkewVersorTransforms}

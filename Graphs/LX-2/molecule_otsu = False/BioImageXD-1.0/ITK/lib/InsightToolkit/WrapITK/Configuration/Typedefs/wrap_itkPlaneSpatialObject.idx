@@ -1,0 +1,4 @@
+{itk::PlaneSpatialObject<2u>} {itkPlaneSpatialObject2} {itkPlaneSpatialObject}
+{itk::SmartPointer<itk::PlaneSpatialObject<2u> >} {itkPlaneSpatialObject2_Pointer} {itkPlaneSpatialObject}
+{itk::PlaneSpatialObject<3u>} {itkPlaneSpatialObject3} {itkPlaneSpatialObject}
+{itk::SmartPointer<itk::PlaneSpatialObject<3u> >} {itkPlaneSpatialObject3_Pointer} {itkPlaneSpatialObject}

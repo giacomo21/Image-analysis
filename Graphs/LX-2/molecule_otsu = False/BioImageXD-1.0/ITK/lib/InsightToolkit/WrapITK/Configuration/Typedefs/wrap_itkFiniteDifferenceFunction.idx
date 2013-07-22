@@ -1,0 +1,28 @@
+{itk::FiniteDifferenceFunction<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkFiniteDifferenceFunctionICVF22} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkFiniteDifferenceFunctionICVF22_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkFiniteDifferenceFunctionICVF33} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkFiniteDifferenceFunctionICVF33_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<double, 2u> >} {itkFiniteDifferenceFunctionID2} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<double, 2u> > >} {itkFiniteDifferenceFunctionID2_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<double, 3u> >} {itkFiniteDifferenceFunctionID3} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<double, 3u> > >} {itkFiniteDifferenceFunctionID3_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<float, 2u> >} {itkFiniteDifferenceFunctionIF2} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<float, 2u> > >} {itkFiniteDifferenceFunctionIF2_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<float, 3u> >} {itkFiniteDifferenceFunctionIF3} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<float, 3u> > >} {itkFiniteDifferenceFunctionIF3_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<unsigned char, 2u> >} {itkFiniteDifferenceFunctionIUC2} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<unsigned char, 2u> > >} {itkFiniteDifferenceFunctionIUC2_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<unsigned char, 3u> >} {itkFiniteDifferenceFunctionIUC3} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<unsigned char, 3u> > >} {itkFiniteDifferenceFunctionIUC3_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<long unsigned int, 2u> >} {itkFiniteDifferenceFunctionIUL2} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<long unsigned int, 2u> > >} {itkFiniteDifferenceFunctionIUL2_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<long unsigned int, 3u> >} {itkFiniteDifferenceFunctionIUL3} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<long unsigned int, 3u> > >} {itkFiniteDifferenceFunctionIUL3_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<short unsigned int, 2u> >} {itkFiniteDifferenceFunctionIUS2} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<short unsigned int, 2u> > >} {itkFiniteDifferenceFunctionIUS2_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<short unsigned int, 3u> >} {itkFiniteDifferenceFunctionIUS3} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<short unsigned int, 3u> > >} {itkFiniteDifferenceFunctionIUS3_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkFiniteDifferenceFunctionIVF22} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkFiniteDifferenceFunctionIVF22_Pointer} {itkFiniteDifferenceFunction}
+{itk::FiniteDifferenceFunction<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkFiniteDifferenceFunctionIVF33} {itkFiniteDifferenceFunction}
+{itk::SmartPointer<itk::FiniteDifferenceFunction<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkFiniteDifferenceFunctionIVF33_Pointer} {itkFiniteDifferenceFunction}

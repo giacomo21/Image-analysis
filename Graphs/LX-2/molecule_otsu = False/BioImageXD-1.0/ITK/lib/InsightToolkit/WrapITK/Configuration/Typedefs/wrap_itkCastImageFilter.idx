@@ -1,0 +1,200 @@
+{itk::CastImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCastImageFilterID2ID2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCastImageFilterID2ID2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Functor::Cast<double, double> >} {itkCastImageFilterID2ID2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Functor::Cast<double, double> > >} {itkCastImageFilterID2ID2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 2u>,itk::Image<float, 2u> >} {itkCastImageFilterID2IF2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 2u>, itk::Image<float, 2u> > >} {itkCastImageFilterID2IF2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<float, 2u>,itk::Functor::Cast<double, float> >} {itkCastImageFilterID2IF2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<float, 2u>, itk::Functor::Cast<double, float> > >} {itkCastImageFilterID2IF2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u> >} {itkCastImageFilterID2IUC2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u> > >} {itkCastImageFilterID2IUC2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Cast<double, unsigned char> >} {itkCastImageFilterID2IUC2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Cast<double, unsigned char> > >} {itkCastImageFilterID2IUC2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u> >} {itkCastImageFilterID2IUL2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u> > >} {itkCastImageFilterID2IUL2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Cast<double, long unsigned int> >} {itkCastImageFilterID2IUL2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Cast<double, long unsigned int> > >} {itkCastImageFilterID2IUL2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u> >} {itkCastImageFilterID2IUS2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u> > >} {itkCastImageFilterID2IUS2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Cast<double, short unsigned int> >} {itkCastImageFilterID2IUS2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Cast<double, short unsigned int> > >} {itkCastImageFilterID2IUS2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCastImageFilterID3ID3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCastImageFilterID3ID3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Functor::Cast<double, double> >} {itkCastImageFilterID3ID3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Functor::Cast<double, double> > >} {itkCastImageFilterID3ID3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 3u>,itk::Image<float, 3u> >} {itkCastImageFilterID3IF3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 3u>, itk::Image<float, 3u> > >} {itkCastImageFilterID3IF3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<float, 3u>,itk::Functor::Cast<double, float> >} {itkCastImageFilterID3IF3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<float, 3u>, itk::Functor::Cast<double, float> > >} {itkCastImageFilterID3IF3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u> >} {itkCastImageFilterID3IUC3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u> > >} {itkCastImageFilterID3IUC3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Cast<double, unsigned char> >} {itkCastImageFilterID3IUC3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Cast<double, unsigned char> > >} {itkCastImageFilterID3IUC3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u> >} {itkCastImageFilterID3IUL3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCastImageFilterID3IUL3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Cast<double, long unsigned int> >} {itkCastImageFilterID3IUL3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Cast<double, long unsigned int> > >} {itkCastImageFilterID3IUL3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u> >} {itkCastImageFilterID3IUS3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCastImageFilterID3IUS3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Cast<double, short unsigned int> >} {itkCastImageFilterID3IUS3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Cast<double, short unsigned int> > >} {itkCastImageFilterID3IUS3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 2u>,itk::Image<double, 2u> >} {itkCastImageFilterIF2ID2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 2u>, itk::Image<double, 2u> > >} {itkCastImageFilterIF2ID2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<double, 2u>,itk::Functor::Cast<float, double> >} {itkCastImageFilterIF2ID2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<double, 2u>, itk::Functor::Cast<float, double> > >} {itkCastImageFilterIF2ID2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCastImageFilterIF2IF2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCastImageFilterIF2IF2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Functor::Cast<float, float> >} {itkCastImageFilterIF2IF2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Functor::Cast<float, float> > >} {itkCastImageFilterIF2IF2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u> >} {itkCastImageFilterIF2IUC2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u> > >} {itkCastImageFilterIF2IUC2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Cast<float, unsigned char> >} {itkCastImageFilterIF2IUC2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Cast<float, unsigned char> > >} {itkCastImageFilterIF2IUC2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u> >} {itkCastImageFilterIF2IUL2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u> > >} {itkCastImageFilterIF2IUL2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Cast<float, long unsigned int> >} {itkCastImageFilterIF2IUL2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Cast<float, long unsigned int> > >} {itkCastImageFilterIF2IUL2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u> >} {itkCastImageFilterIF2IUS2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u> > >} {itkCastImageFilterIF2IUS2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Cast<float, short unsigned int> >} {itkCastImageFilterIF2IUS2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Cast<float, short unsigned int> > >} {itkCastImageFilterIF2IUS2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 3u>,itk::Image<double, 3u> >} {itkCastImageFilterIF3ID3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 3u>, itk::Image<double, 3u> > >} {itkCastImageFilterIF3ID3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<double, 3u>,itk::Functor::Cast<float, double> >} {itkCastImageFilterIF3ID3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<double, 3u>, itk::Functor::Cast<float, double> > >} {itkCastImageFilterIF3ID3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCastImageFilterIF3IF3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCastImageFilterIF3IF3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Functor::Cast<float, float> >} {itkCastImageFilterIF3IF3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Functor::Cast<float, float> > >} {itkCastImageFilterIF3IF3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u> >} {itkCastImageFilterIF3IUC3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u> > >} {itkCastImageFilterIF3IUC3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Cast<float, unsigned char> >} {itkCastImageFilterIF3IUC3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Cast<float, unsigned char> > >} {itkCastImageFilterIF3IUC3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u> >} {itkCastImageFilterIF3IUL3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCastImageFilterIF3IUL3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Cast<float, long unsigned int> >} {itkCastImageFilterIF3IUL3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Cast<float, long unsigned int> > >} {itkCastImageFilterIF3IUL3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u> >} {itkCastImageFilterIF3IUS3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCastImageFilterIF3IUS3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Cast<float, short unsigned int> >} {itkCastImageFilterIF3IUS3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Cast<float, short unsigned int> > >} {itkCastImageFilterIF3IUS3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkCastImageFilterIUC2ID2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkCastImageFilterIUC2ID2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u>,itk::Functor::Cast<unsigned char, double> >} {itkCastImageFilterIUC2ID2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u>, itk::Functor::Cast<unsigned char, double> > >} {itkCastImageFilterIUC2ID2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkCastImageFilterIUC2IF2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkCastImageFilterIUC2IF2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u>,itk::Functor::Cast<unsigned char, float> >} {itkCastImageFilterIUC2IF2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u>, itk::Functor::Cast<unsigned char, float> > >} {itkCastImageFilterIUC2IF2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkCastImageFilterIUC2IUC2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkCastImageFilterIUC2IUC2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Cast<unsigned char, unsigned char> >} {itkCastImageFilterIUC2IUC2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Cast<unsigned char, unsigned char> > >} {itkCastImageFilterIUC2IUC2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkCastImageFilterIUC2IUL2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkCastImageFilterIUC2IUL2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Cast<unsigned char, long unsigned int> >} {itkCastImageFilterIUC2IUL2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Cast<unsigned char, long unsigned int> > >} {itkCastImageFilterIUC2IUL2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkCastImageFilterIUC2IUS2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkCastImageFilterIUC2IUS2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Cast<unsigned char, short unsigned int> >} {itkCastImageFilterIUC2IUS2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Cast<unsigned char, short unsigned int> > >} {itkCastImageFilterIUC2IUS2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkCastImageFilterIUC3ID3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkCastImageFilterIUC3ID3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u>,itk::Functor::Cast<unsigned char, double> >} {itkCastImageFilterIUC3ID3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u>, itk::Functor::Cast<unsigned char, double> > >} {itkCastImageFilterIUC3ID3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkCastImageFilterIUC3IF3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkCastImageFilterIUC3IF3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u>,itk::Functor::Cast<unsigned char, float> >} {itkCastImageFilterIUC3IF3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u>, itk::Functor::Cast<unsigned char, float> > >} {itkCastImageFilterIUC3IF3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkCastImageFilterIUC3IUC3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkCastImageFilterIUC3IUC3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Cast<unsigned char, unsigned char> >} {itkCastImageFilterIUC3IUC3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Cast<unsigned char, unsigned char> > >} {itkCastImageFilterIUC3IUC3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkCastImageFilterIUC3IUL3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCastImageFilterIUC3IUL3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Cast<unsigned char, long unsigned int> >} {itkCastImageFilterIUC3IUL3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Cast<unsigned char, long unsigned int> > >} {itkCastImageFilterIUC3IUL3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkCastImageFilterIUC3IUS3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCastImageFilterIUC3IUS3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Cast<unsigned char, short unsigned int> >} {itkCastImageFilterIUC3IUS3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Cast<unsigned char, short unsigned int> > >} {itkCastImageFilterIUC3IUS3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkCastImageFilterIUL2ID2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkCastImageFilterIUL2ID2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u>,itk::Functor::Cast<long unsigned int, double> >} {itkCastImageFilterIUL2ID2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u>, itk::Functor::Cast<long unsigned int, double> > >} {itkCastImageFilterIUL2ID2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkCastImageFilterIUL2IF2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkCastImageFilterIUL2IF2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u>,itk::Functor::Cast<long unsigned int, float> >} {itkCastImageFilterIUL2IF2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u>, itk::Functor::Cast<long unsigned int, float> > >} {itkCastImageFilterIUL2IF2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkCastImageFilterIUL2IUC2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkCastImageFilterIUL2IUC2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Cast<long unsigned int, unsigned char> >} {itkCastImageFilterIUL2IUC2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Cast<long unsigned int, unsigned char> > >} {itkCastImageFilterIUL2IUC2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkCastImageFilterIUL2IUL2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkCastImageFilterIUL2IUL2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Cast<long unsigned int, long unsigned int> >} {itkCastImageFilterIUL2IUL2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Cast<long unsigned int, long unsigned int> > >} {itkCastImageFilterIUL2IUL2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkCastImageFilterIUL2IUS2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkCastImageFilterIUL2IUS2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Cast<long unsigned int, short unsigned int> >} {itkCastImageFilterIUL2IUS2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Cast<long unsigned int, short unsigned int> > >} {itkCastImageFilterIUL2IUS2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkCastImageFilterIUL3ID3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkCastImageFilterIUL3ID3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u>,itk::Functor::Cast<long unsigned int, double> >} {itkCastImageFilterIUL3ID3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u>, itk::Functor::Cast<long unsigned int, double> > >} {itkCastImageFilterIUL3ID3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkCastImageFilterIUL3IF3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkCastImageFilterIUL3IF3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u>,itk::Functor::Cast<long unsigned int, float> >} {itkCastImageFilterIUL3IF3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u>, itk::Functor::Cast<long unsigned int, float> > >} {itkCastImageFilterIUL3IF3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkCastImageFilterIUL3IUC3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkCastImageFilterIUL3IUC3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Cast<long unsigned int, unsigned char> >} {itkCastImageFilterIUL3IUC3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Cast<long unsigned int, unsigned char> > >} {itkCastImageFilterIUL3IUC3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkCastImageFilterIUL3IUL3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCastImageFilterIUL3IUL3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Cast<long unsigned int, long unsigned int> >} {itkCastImageFilterIUL3IUL3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Cast<long unsigned int, long unsigned int> > >} {itkCastImageFilterIUL3IUL3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkCastImageFilterIUL3IUS3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCastImageFilterIUL3IUS3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Cast<long unsigned int, short unsigned int> >} {itkCastImageFilterIUL3IUS3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Cast<long unsigned int, short unsigned int> > >} {itkCastImageFilterIUL3IUS3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkCastImageFilterIUS2ID2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkCastImageFilterIUS2ID2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u>,itk::Functor::Cast<short unsigned int, double> >} {itkCastImageFilterIUS2ID2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u>, itk::Functor::Cast<short unsigned int, double> > >} {itkCastImageFilterIUS2ID2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkCastImageFilterIUS2IF2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkCastImageFilterIUS2IF2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u>,itk::Functor::Cast<short unsigned int, float> >} {itkCastImageFilterIUS2IF2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u>, itk::Functor::Cast<short unsigned int, float> > >} {itkCastImageFilterIUS2IF2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkCastImageFilterIUS2IUC2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkCastImageFilterIUS2IUC2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Cast<short unsigned int, unsigned char> >} {itkCastImageFilterIUS2IUC2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Cast<short unsigned int, unsigned char> > >} {itkCastImageFilterIUS2IUC2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkCastImageFilterIUS2IUL2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkCastImageFilterIUS2IUL2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Cast<short unsigned int, long unsigned int> >} {itkCastImageFilterIUS2IUL2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Cast<short unsigned int, long unsigned int> > >} {itkCastImageFilterIUS2IUL2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkCastImageFilterIUS2IUS2} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkCastImageFilterIUS2IUS2_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Cast<short unsigned int, short unsigned int> >} {itkCastImageFilterIUS2IUS2_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Cast<short unsigned int, short unsigned int> > >} {itkCastImageFilterIUS2IUS2_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkCastImageFilterIUS3ID3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkCastImageFilterIUS3ID3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u>,itk::Functor::Cast<short unsigned int, double> >} {itkCastImageFilterIUS3ID3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u>, itk::Functor::Cast<short unsigned int, double> > >} {itkCastImageFilterIUS3ID3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkCastImageFilterIUS3IF3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkCastImageFilterIUS3IF3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u>,itk::Functor::Cast<short unsigned int, float> >} {itkCastImageFilterIUS3IF3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u>, itk::Functor::Cast<short unsigned int, float> > >} {itkCastImageFilterIUS3IF3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkCastImageFilterIUS3IUC3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkCastImageFilterIUS3IUC3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Cast<short unsigned int, unsigned char> >} {itkCastImageFilterIUS3IUC3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Cast<short unsigned int, unsigned char> > >} {itkCastImageFilterIUS3IUC3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkCastImageFilterIUS3IUL3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkCastImageFilterIUS3IUL3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Cast<short unsigned int, long unsigned int> >} {itkCastImageFilterIUS3IUL3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Cast<short unsigned int, long unsigned int> > >} {itkCastImageFilterIUS3IUL3_Superclass_Pointer} {itkCastImageFilter}
+{itk::CastImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkCastImageFilterIUS3IUS3} {itkCastImageFilter}
+{itk::SmartPointer<itk::CastImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkCastImageFilterIUS3IUS3_Pointer} {itkCastImageFilter}
+{itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Cast<short unsigned int, short unsigned int> >} {itkCastImageFilterIUS3IUS3_Superclass} {itkCastImageFilter}
+{itk::SmartPointer<itk::UnaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Cast<short unsigned int, short unsigned int> > >} {itkCastImageFilterIUS3IUS3_Superclass_Pointer} {itkCastImageFilter}

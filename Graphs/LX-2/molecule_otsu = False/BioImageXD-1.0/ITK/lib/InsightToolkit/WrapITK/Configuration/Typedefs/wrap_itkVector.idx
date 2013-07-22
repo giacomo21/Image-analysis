@@ -1,0 +1,20 @@
+{itk::Vector<double,1u>} {itkVectorD1} {itkVector}
+{itk::Vector<double,2u>} {itkVectorD2} {itkVector}
+{itk::Vector<double,3u>} {itkVectorD3} {itkVector}
+{itk::Vector<double,6u>} {itkVectorD6} {itkVector}
+{itk::Vector<float,1u>} {itkVectorF1} {itkVector}
+{itk::Vector<float,2u>} {itkVectorF2} {itkVector}
+{itk::Vector<float,3u>} {itkVectorF3} {itkVector}
+{itk::Vector<float,6u>} {itkVectorF6} {itkVector}
+{itk::Vector<unsigned char,1u>} {itkVectorUC1} {itkVector}
+{itk::Vector<unsigned char,2u>} {itkVectorUC2} {itkVector}
+{itk::Vector<unsigned char,3u>} {itkVectorUC3} {itkVector}
+{itk::Vector<unsigned char,6u>} {itkVectorUC6} {itkVector}
+{itk::Vector<long unsigned int,1u>} {itkVectorUL1} {itkVector}
+{itk::Vector<long unsigned int,2u>} {itkVectorUL2} {itkVector}
+{itk::Vector<long unsigned int,3u>} {itkVectorUL3} {itkVector}
+{itk::Vector<long unsigned int,6u>} {itkVectorUL6} {itkVector}
+{itk::Vector<short unsigned int,1u>} {itkVectorUS1} {itkVector}
+{itk::Vector<short unsigned int,2u>} {itkVectorUS2} {itkVector}
+{itk::Vector<short unsigned int,3u>} {itkVectorUS3} {itkVector}
+{itk::Vector<short unsigned int,6u>} {itkVectorUS6} {itkVector}

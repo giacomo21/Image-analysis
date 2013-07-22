@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkGradientVectorFlowImageFilterIVF33IVF33F)
+DECLARE_REF_COUNT_CLASS(itkGradientVectorFlowImageFilterIVF22IVF22F)
+

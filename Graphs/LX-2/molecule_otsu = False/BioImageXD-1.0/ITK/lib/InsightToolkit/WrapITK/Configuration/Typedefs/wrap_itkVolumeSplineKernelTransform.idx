@@ -1,0 +1,4 @@
+{itk::VolumeSplineKernelTransform<double,2u>} {itkVolumeSplineKernelTransformD2} {itkVolumeSplineKernelTransform}
+{itk::SmartPointer<itk::VolumeSplineKernelTransform<double, 2u> >} {itkVolumeSplineKernelTransformD2_Pointer} {itkVolumeSplineKernelTransform}
+{itk::VolumeSplineKernelTransform<double,3u>} {itkVolumeSplineKernelTransformD3} {itkVolumeSplineKernelTransform}
+{itk::SmartPointer<itk::VolumeSplineKernelTransform<double, 3u> >} {itkVolumeSplineKernelTransformD3_Pointer} {itkVolumeSplineKernelTransform}

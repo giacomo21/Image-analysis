@@ -1,0 +1,9 @@
+{vnl_matrix_fixed<double,2u,2u>} {vnl_matrix_fixedD_2_2} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,2u,3u>} {vnl_matrix_fixedD_2_3} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,2u,6u>} {vnl_matrix_fixedD_2_6} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,3u,12u>} {vnl_matrix_fixedD_3_12} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,3u,3u>} {vnl_matrix_fixedD_3_3} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,3u,4u>} {vnl_matrix_fixedD_3_4} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,4u,3u>} {vnl_matrix_fixedD_4_3} {vnl_matrix_fixed}
+{vnl_matrix_fixed<double,4u,4u>} {vnl_matrix_fixedD_4_4} {vnl_matrix_fixed}
+{vnl_matrix_fixed<float,3u,3u>} {vnl_matrix_fixedF_3_3} {vnl_matrix_fixed}

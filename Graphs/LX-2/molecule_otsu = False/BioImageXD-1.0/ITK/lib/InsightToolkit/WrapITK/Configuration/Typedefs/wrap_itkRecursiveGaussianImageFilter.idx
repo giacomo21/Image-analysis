@@ -1,0 +1,20 @@
+{itk::RecursiveGaussianImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkRecursiveGaussianImageFilterID2ID2} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkRecursiveGaussianImageFilterID2ID2_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkRecursiveGaussianImageFilterID3ID3} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkRecursiveGaussianImageFilterID3ID3_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkRecursiveGaussianImageFilterIF2IF2} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkRecursiveGaussianImageFilterIF2IF2_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkRecursiveGaussianImageFilterIF3IF3} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkRecursiveGaussianImageFilterIF3IF3_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkRecursiveGaussianImageFilterIUC2IUC2} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkRecursiveGaussianImageFilterIUC2IUC2_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkRecursiveGaussianImageFilterIUC3IUC3} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkRecursiveGaussianImageFilterIUC3IUC3_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkRecursiveGaussianImageFilterIUL2IUL2} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkRecursiveGaussianImageFilterIUL2IUL2_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkRecursiveGaussianImageFilterIUL3IUL3} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkRecursiveGaussianImageFilterIUL3IUL3_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkRecursiveGaussianImageFilterIUS2IUS2} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkRecursiveGaussianImageFilterIUS2IUS2_Pointer} {itkRecursiveGaussianImageFilter}
+{itk::RecursiveGaussianImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkRecursiveGaussianImageFilterIUS3IUS3} {itkRecursiveGaussianImageFilter}
+{itk::SmartPointer<itk::RecursiveGaussianImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkRecursiveGaussianImageFilterIUS3IUS3_Pointer} {itkRecursiveGaussianImageFilter}

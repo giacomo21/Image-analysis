@@ -1,0 +1,4 @@
+{itk::VectorResampleImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u>,double>} {itkVectorResampleImageFilterIVF22IVF22} {itkVectorResampleImageFilter}
+{itk::SmartPointer<itk::VectorResampleImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u>, double> >} {itkVectorResampleImageFilterIVF22IVF22_Pointer} {itkVectorResampleImageFilter}
+{itk::VectorResampleImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u>,double>} {itkVectorResampleImageFilterIVF33IVF33} {itkVectorResampleImageFilter}
+{itk::SmartPointer<itk::VectorResampleImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u>, double> >} {itkVectorResampleImageFilterIVF33IVF33_Pointer} {itkVectorResampleImageFilter}

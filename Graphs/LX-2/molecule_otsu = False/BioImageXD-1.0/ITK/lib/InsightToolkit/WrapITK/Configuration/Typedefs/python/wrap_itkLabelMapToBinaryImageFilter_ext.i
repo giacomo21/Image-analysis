@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM3IUS3)
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM2IUS2)
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM3IUL3)
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM2IUL2)
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM3IUC3)
+DECLARE_REF_COUNT_CLASS(itkLabelMapToBinaryImageFilterLM2IUC2)
+

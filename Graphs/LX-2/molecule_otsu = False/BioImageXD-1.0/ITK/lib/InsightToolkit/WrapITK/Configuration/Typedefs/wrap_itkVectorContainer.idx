@@ -1,0 +1,46 @@
+{itk::DataObjectDecorator<itk::VectorContainer<unsigned char, double> >} {itkDataObjectDecoratorVCUCD} {itkVectorContainer}
+{itk::SmartPointer<itk::DataObjectDecorator<itk::VectorContainer<unsigned char, double> > >} {itkDataObjectDecoratorVCUCD_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned char,double>} {itkVectorContainerUCD} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned char, double> >} {itkVectorContainerUCD_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned char,itk::Offset<2u> >} {itkVectorContainerUCO2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned char, itk::Offset<2u> > >} {itkVectorContainerUCO2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned char,itk::Offset<3u> >} {itkVectorContainerUCO3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned char, itk::Offset<3u> > >} {itkVectorContainerUCO3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::ContinuousIndex<double, 2u> >} {itkVectorContainerUICID2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::ContinuousIndex<double, 2u> > >} {itkVectorContainerUICID2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::ContinuousIndex<double, 3u> >} {itkVectorContainerUICID3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::ContinuousIndex<double, 3u> > >} {itkVectorContainerUICID3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<double, 2u> >} {itkVectorContainerUILSND2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<double, 2u> > >} {itkVectorContainerUILSND2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<double, 3u> >} {itkVectorContainerUILSND3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<double, 3u> > >} {itkVectorContainerUILSND3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<float, 2u> >} {itkVectorContainerUILSNF2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<float, 2u> > >} {itkVectorContainerUILSNF2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<float, 3u> >} {itkVectorContainerUILSNF3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<float, 3u> > >} {itkVectorContainerUILSNF3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<unsigned char, 2u> >} {itkVectorContainerUILSNUC2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<unsigned char, 2u> > >} {itkVectorContainerUILSNUC2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<unsigned char, 3u> >} {itkVectorContainerUILSNUC3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<unsigned char, 3u> > >} {itkVectorContainerUILSNUC3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<long unsigned int, 2u> >} {itkVectorContainerUILSNUL2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<long unsigned int, 2u> > >} {itkVectorContainerUILSNUL2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<long unsigned int, 3u> >} {itkVectorContainerUILSNUL3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<long unsigned int, 3u> > >} {itkVectorContainerUILSNUL3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<short unsigned int, 2u> >} {itkVectorContainerUILSNUS2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<short unsigned int, 2u> > >} {itkVectorContainerUILSNUS2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::LevelSetNode<short unsigned int, 3u> >} {itkVectorContainerUILSNUS3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::LevelSetNode<short unsigned int, 3u> > >} {itkVectorContainerUILSNUS3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<unsigned int,itk::Vector<unsigned char, 1u> >} {itkVectorContainerUIVUC1} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<unsigned int, itk::Vector<unsigned char, 1u> > >} {itkVectorContainerUIVUC1_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,double>} {itkVectorContainerULD} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, double> >} {itkVectorContainerULD_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,itk::Point<double, 2u> >} {itkVectorContainerULPD2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, itk::Point<double, 2u> > >} {itkVectorContainerULPD2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,itk::Point<double, 3u> >} {itkVectorContainerULPD3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, itk::Point<double, 3u> > >} {itkVectorContainerULPD3_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,std::set<long unsigned int, std::less<long unsigned int>, std::allocator<long unsigned int> > >} {itkVectorContainerULSUL} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, std::set<long unsigned int, std::less<long unsigned int>, std::allocator<long unsigned int> > > >} {itkVectorContainerULSUL_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,itk::Vector<double, 2u> >} {itkVectorContainerULVD2} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, itk::Vector<double, 2u> > >} {itkVectorContainerULVD2_Pointer} {itkVectorContainer}
+{itk::VectorContainer<long unsigned int,itk::Vector<double, 3u> >} {itkVectorContainerULVD3} {itkVectorContainer}
+{itk::SmartPointer<itk::VectorContainer<long unsigned int, itk::Vector<double, 3u> > >} {itkVectorContainerULVD3_Pointer} {itkVectorContainer}

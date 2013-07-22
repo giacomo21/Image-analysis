@@ -1,0 +1,6 @@
+{itk::BinaryThinningImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBinaryThinningImageFilterIUC2IUC2} {itkBinaryThinningImageFilter}
+{itk::SmartPointer<itk::BinaryThinningImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBinaryThinningImageFilterIUC2IUC2_Pointer} {itkBinaryThinningImageFilter}
+{itk::BinaryThinningImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBinaryThinningImageFilterIUL2IUL2} {itkBinaryThinningImageFilter}
+{itk::SmartPointer<itk::BinaryThinningImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBinaryThinningImageFilterIUL2IUL2_Pointer} {itkBinaryThinningImageFilter}
+{itk::BinaryThinningImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBinaryThinningImageFilterIUS2IUS2} {itkBinaryThinningImageFilter}
+{itk::SmartPointer<itk::BinaryThinningImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBinaryThinningImageFilterIUS2IUS2_Pointer} {itkBinaryThinningImageFilter}

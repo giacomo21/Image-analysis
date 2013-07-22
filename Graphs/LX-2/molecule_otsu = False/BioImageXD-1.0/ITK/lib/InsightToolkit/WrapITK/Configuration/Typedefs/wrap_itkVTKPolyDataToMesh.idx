@@ -1,0 +1,2 @@
+{itk::VTKPolyDataToMesh<itk::Mesh<double, 3u, itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> > >} {itkVTKPolyDataToMeshMD3S} {itkVTKPolyDataToMesh}
+{itk::SmartPointer<itk::VTKPolyDataToMesh<itk::Mesh<double, 3u, itk::DefaultStaticMeshTraits<double, 3u, 3u, double, float, double> > > >} {itkVTKPolyDataToMeshMD3S_Pointer} {itkVTKPolyDataToMesh}

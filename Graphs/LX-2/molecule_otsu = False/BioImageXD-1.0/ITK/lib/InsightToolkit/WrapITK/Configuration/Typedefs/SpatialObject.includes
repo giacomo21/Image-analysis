@@ -1,0 +1,966 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+#include "Transforms.includes"
+#include "Calculators.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpatialObjectProperty.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkAffineGeometryFrame.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMetaEvent.h"
+#include "itkCylinderSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkContourSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDTITubeSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVesselTubeSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPointBasedSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBlobSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPolygonSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkArrowSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkBoxSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVersorRigid3DTransform.h"
+#include "itkCenteredTransformInitializer.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCenteredVersorTransformInitializer.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkContourSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDTITubeSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkEllipseSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGaussianSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkGroupSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageMaskSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageMomentsCalculator.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkLandmarkSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkLineSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkLineSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPlaneSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPolygonGroupOrientation.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPolygonGroupSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSceneSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpatialObjectReader.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpatialObjectToImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSpatialObjectWriter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSurfaceSpatialObject.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSurfaceSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkTubeSpatialObjectPoint.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkVesselTubeSpatialObject.h"
+
+typedef itk::SpatialObjectProperty< float > itkSpatialObjectPropertyF;
+typedef itk::SpatialObjectProperty< float >::Pointer itkSpatialObjectPropertyF_Pointer;
+typedef itk::AffineGeometryFrame< double,2 > itkAffineGeometryFrameD2;
+typedef itk::AffineGeometryFrame< double,2 >::Pointer itkAffineGeometryFrameD2_Pointer;
+typedef itk::AffineGeometryFrame< double,3 > itkAffineGeometryFrameD3;
+typedef itk::AffineGeometryFrame< double,3 >::Pointer itkAffineGeometryFrameD3_Pointer;
+typedef itk::MetaEvent itkMetaEvent;
+typedef itk::SpatialObject< 2 > itkSpatialObject2;
+typedef itk::SpatialObject< 2 >::Pointer itkSpatialObject2_Pointer;
+typedef itk::SpatialObject< 3 > itkSpatialObject3;
+typedef itk::SpatialObject< 3 >::Pointer itkSpatialObject3_Pointer;
+typedef itk::CylinderSpatialObject itkCylinderSpatialObject;
+typedef itk::CylinderSpatialObject::Pointer itkCylinderSpatialObject_Pointer;
+typedef MetaEvent itkMetaEvent_Superclass;
+typedef itk::TreeNode< itk::SpatialObject< 2 >* > itkTreeNodeSO2;
+typedef itk::TreeNode< itk::SpatialObject< 2 >* >::Pointer itkTreeNodeSO2_Pointer;
+typedef itk::TreeNode< itk::SpatialObject< 3 >* > itkTreeNodeSO3;
+typedef itk::TreeNode< itk::SpatialObject< 3 >* >::Pointer itkTreeNodeSO3_Pointer;
+typedef itk::SpatialObjectTreeNode< 2 > itkSpatialObjectTreeNode2;
+typedef itk::SpatialObjectTreeNode< 2 >::Pointer itkSpatialObjectTreeNode2_Pointer;
+typedef itk::SpatialObjectTreeNode< 3 > itkSpatialObjectTreeNode3;
+typedef itk::SpatialObjectTreeNode< 3 >::Pointer itkSpatialObjectTreeNode3_Pointer;
+typedef itk::SpatialObjectPoint< 2 > itkSpatialObjectPoint2;
+typedef itk::SpatialObjectPoint< 3 > itkSpatialObjectPoint3;
+typedef itk::ContourSpatialObjectPoint< 2 > itkContourSpatialObjectPoint2;
+typedef itk::ContourSpatialObjectPoint< 3 > itkContourSpatialObjectPoint3;
+typedef itk::DTITubeSpatialObjectPoint< 3 > itkDTITubeSpatialObjectPoint3;
+typedef itk::VesselTubeSpatialObjectPoint< 2 > itkVesselTubeSpatialObjectPoint2;
+typedef itk::VesselTubeSpatialObjectPoint< 3 > itkVesselTubeSpatialObjectPoint3;
+typedef itk::PointBasedSpatialObject< 2 > itkPointBasedSpatialObject2;
+typedef itk::PointBasedSpatialObject< 2 >::Pointer itkPointBasedSpatialObject2_Pointer;
+typedef itk::PointBasedSpatialObject< 3 > itkPointBasedSpatialObject3;
+typedef itk::PointBasedSpatialObject< 3 >::Pointer itkPointBasedSpatialObject3_Pointer;
+typedef itk::ImageSpatialObject< 2,unsigned char > itkImageSpatialObject2UC;
+typedef itk::ImageSpatialObject< 2,unsigned char >::Pointer itkImageSpatialObject2UC_Pointer;
+typedef itk::ImageSpatialObject< 2,unsigned long > itkImageSpatialObject2UL;
+typedef itk::ImageSpatialObject< 2,unsigned long >::Pointer itkImageSpatialObject2UL_Pointer;
+typedef itk::ImageSpatialObject< 2,unsigned short > itkImageSpatialObject2US;
+typedef itk::ImageSpatialObject< 2,unsigned short >::Pointer itkImageSpatialObject2US_Pointer;
+typedef itk::ImageSpatialObject< 2,float > itkImageSpatialObject2F;
+typedef itk::ImageSpatialObject< 2,float >::Pointer itkImageSpatialObject2F_Pointer;
+typedef itk::ImageSpatialObject< 2,double > itkImageSpatialObject2D;
+typedef itk::ImageSpatialObject< 2,double >::Pointer itkImageSpatialObject2D_Pointer;
+typedef itk::ImageSpatialObject< 3,unsigned char > itkImageSpatialObject3UC;
+typedef itk::ImageSpatialObject< 3,unsigned char >::Pointer itkImageSpatialObject3UC_Pointer;
+typedef itk::ImageSpatialObject< 3,unsigned long > itkImageSpatialObject3UL;
+typedef itk::ImageSpatialObject< 3,unsigned long >::Pointer itkImageSpatialObject3UL_Pointer;
+typedef itk::ImageSpatialObject< 3,unsigned short > itkImageSpatialObject3US;
+typedef itk::ImageSpatialObject< 3,unsigned short >::Pointer itkImageSpatialObject3US_Pointer;
+typedef itk::ImageSpatialObject< 3,float > itkImageSpatialObject3F;
+typedef itk::ImageSpatialObject< 3,float >::Pointer itkImageSpatialObject3F_Pointer;
+typedef itk::ImageSpatialObject< 3,double > itkImageSpatialObject3D;
+typedef itk::ImageSpatialObject< 3,double >::Pointer itkImageSpatialObject3D_Pointer;
+typedef itk::BlobSpatialObject< 2 > itkBlobSpatialObject2;
+typedef itk::BlobSpatialObject< 2 >::Pointer itkBlobSpatialObject2_Pointer;
+typedef itk::BlobSpatialObject< 3 > itkBlobSpatialObject3;
+typedef itk::BlobSpatialObject< 3 >::Pointer itkBlobSpatialObject3_Pointer;
+typedef itk::PolygonSpatialObject< 2 > itkPolygonSpatialObject2;
+typedef itk::PolygonSpatialObject< 2 >::Pointer itkPolygonSpatialObject2_Pointer;
+typedef itk::PolygonSpatialObject< 3 > itkPolygonSpatialObject3;
+typedef itk::PolygonSpatialObject< 3 >::Pointer itkPolygonSpatialObject3_Pointer;
+typedef itk::ArrowSpatialObject< 2 > itkArrowSpatialObject2;
+typedef itk::ArrowSpatialObject< 2 >::Pointer itkArrowSpatialObject2_Pointer;
+typedef itk::ArrowSpatialObject< 3 > itkArrowSpatialObject3;
+typedef itk::ArrowSpatialObject< 3 >::Pointer itkArrowSpatialObject3_Pointer;
+typedef itk::BoxSpatialObject< 2 > itkBoxSpatialObject2;
+typedef itk::BoxSpatialObject< 2 >::Pointer itkBoxSpatialObject2_Pointer;
+typedef itk::BoxSpatialObject< 3 > itkBoxSpatialObject3;
+typedef itk::BoxSpatialObject< 3 >::Pointer itkBoxSpatialObject3_Pointer;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 > > itkCenteredTransformInitializerVR3DTDIUC3IUC3;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned char,3 >,itk::Image< unsigned char,3 > >::Pointer itkCenteredTransformInitializerVR3DTDIUC3IUC3_Pointer;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 > > itkCenteredTransformInitializerVR3DTDIUL3IUL3;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned long,3 >,itk::Image< unsigned long,3 > >::Pointer itkCenteredTransformInitializerVR3DTDIUL3IUL3_Pointer;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 > > itkCenteredTransformInitializerVR3DTDIUS3IUS3;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< unsigned short,3 >,itk::Image< unsigned short,3 > >::Pointer itkCenteredTransformInitializerVR3DTDIUS3IUS3_Pointer;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< float,3 >,itk::Image< float,3 > > itkCenteredTransformInitializerVR3DTDIF3IF3;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< float,3 >,itk::Image< float,3 > >::Pointer itkCenteredTransformInitializerVR3DTDIF3IF3_Pointer;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< double,3 >,itk::Image< double,3 > > itkCenteredTransformInitializerVR3DTDID3ID3;
+typedef itk::CenteredTransformInitializer< itk::VersorRigid3DTransform< double >,itk::Image< double,3 >,itk::Image< double,3 > >::Pointer itkCenteredTransformInitializerVR3DTDID3ID3_Pointer;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkCenteredVersorTransformInitializerIUC3IUC3;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkCenteredVersorTransformInitializerIUC3IUC3_Pointer;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkCenteredVersorTransformInitializerIUL3IUL3;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkCenteredVersorTransformInitializerIUL3IUL3_Pointer;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkCenteredVersorTransformInitializerIUS3IUS3;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkCenteredVersorTransformInitializerIUS3IUS3_Pointer;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< float,3 >, itk::Image< float,3 > > itkCenteredVersorTransformInitializerIF3IF3;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkCenteredVersorTransformInitializerIF3IF3_Pointer;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< double,3 >, itk::Image< double,3 > > itkCenteredVersorTransformInitializerID3ID3;
+typedef itk::CenteredVersorTransformInitializer< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkCenteredVersorTransformInitializerID3ID3_Pointer;
+typedef itk::ContourSpatialObject< 2 > itkContourSpatialObject2;
+typedef itk::ContourSpatialObject< 2 >::Pointer itkContourSpatialObject2_Pointer;
+typedef itk::ContourSpatialObject< 3 > itkContourSpatialObject3;
+typedef itk::ContourSpatialObject< 3 >::Pointer itkContourSpatialObject3_Pointer;
+typedef itk::DTITubeSpatialObject< 3 >::Superclass itkDTITubeSpatialObject3_Superclass;
+typedef itk::DTITubeSpatialObject< 3 >::Superclass::Pointer itkDTITubeSpatialObject3_Superclass_Pointer;
+typedef itk::DTITubeSpatialObject< 3 > itkDTITubeSpatialObject3;
+typedef itk::DTITubeSpatialObject< 3 >::Pointer itkDTITubeSpatialObject3_Pointer;
+typedef itk::EllipseSpatialObject< 2 > itkEllipseSpatialObject2;
+typedef itk::EllipseSpatialObject< 2 >::Pointer itkEllipseSpatialObject2_Pointer;
+typedef itk::EllipseSpatialObject< 3 > itkEllipseSpatialObject3;
+typedef itk::EllipseSpatialObject< 3 >::Pointer itkEllipseSpatialObject3_Pointer;
+typedef itk::GaussianSpatialObject< 2 > itkGaussianSpatialObject2;
+typedef itk::GaussianSpatialObject< 2 >::Pointer itkGaussianSpatialObject2_Pointer;
+typedef itk::GaussianSpatialObject< 3 > itkGaussianSpatialObject3;
+typedef itk::GaussianSpatialObject< 3 >::Pointer itkGaussianSpatialObject3_Pointer;
+typedef itk::GroupSpatialObject< 2 > itkGroupSpatialObject2;
+typedef itk::GroupSpatialObject< 2 >::Pointer itkGroupSpatialObject2_Pointer;
+typedef itk::GroupSpatialObject< 3 > itkGroupSpatialObject3;
+typedef itk::GroupSpatialObject< 3 >::Pointer itkGroupSpatialObject3_Pointer;
+typedef itk::ImageMaskSpatialObject< 2 > itkImageMaskSpatialObject2;
+typedef itk::ImageMaskSpatialObject< 2 >::Pointer itkImageMaskSpatialObject2_Pointer;
+typedef itk::ImageMaskSpatialObject< 3 > itkImageMaskSpatialObject3;
+typedef itk::ImageMaskSpatialObject< 3 >::Pointer itkImageMaskSpatialObject3_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned char,2 > > itkImageMomentsCalculatorIUC2;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned char,2 > >::Pointer itkImageMomentsCalculatorIUC2_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned char,3 > > itkImageMomentsCalculatorIUC3;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned char,3 > >::Pointer itkImageMomentsCalculatorIUC3_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned long,2 > > itkImageMomentsCalculatorIUL2;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned long,2 > >::Pointer itkImageMomentsCalculatorIUL2_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned long,3 > > itkImageMomentsCalculatorIUL3;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned long,3 > >::Pointer itkImageMomentsCalculatorIUL3_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned short,2 > > itkImageMomentsCalculatorIUS2;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned short,2 > >::Pointer itkImageMomentsCalculatorIUS2_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned short,3 > > itkImageMomentsCalculatorIUS3;
+typedef itk::ImageMomentsCalculator< itk::Image< unsigned short,3 > >::Pointer itkImageMomentsCalculatorIUS3_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< float,2 > > itkImageMomentsCalculatorIF2;
+typedef itk::ImageMomentsCalculator< itk::Image< float,2 > >::Pointer itkImageMomentsCalculatorIF2_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< float,3 > > itkImageMomentsCalculatorIF3;
+typedef itk::ImageMomentsCalculator< itk::Image< float,3 > >::Pointer itkImageMomentsCalculatorIF3_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< double,2 > > itkImageMomentsCalculatorID2;
+typedef itk::ImageMomentsCalculator< itk::Image< double,2 > >::Pointer itkImageMomentsCalculatorID2_Pointer;
+typedef itk::ImageMomentsCalculator< itk::Image< double,3 > > itkImageMomentsCalculatorID3;
+typedef itk::ImageMomentsCalculator< itk::Image< double,3 > >::Pointer itkImageMomentsCalculatorID3_Pointer;
+typedef itk::LandmarkSpatialObject< 2 > itkLandmarkSpatialObject2;
+typedef itk::LandmarkSpatialObject< 2 >::Pointer itkLandmarkSpatialObject2_Pointer;
+typedef itk::LandmarkSpatialObject< 3 > itkLandmarkSpatialObject3;
+typedef itk::LandmarkSpatialObject< 3 >::Pointer itkLandmarkSpatialObject3_Pointer;
+typedef itk::LineSpatialObject< 2 > itkLineSpatialObject2;
+typedef itk::LineSpatialObject< 2 >::Pointer itkLineSpatialObject2_Pointer;
+typedef itk::LineSpatialObject< 3 > itkLineSpatialObject3;
+typedef itk::LineSpatialObject< 3 >::Pointer itkLineSpatialObject3_Pointer;
+typedef itk::LineSpatialObjectPoint< 2 > itkLineSpatialObjectPoint2;
+typedef itk::LineSpatialObjectPoint< 3 > itkLineSpatialObjectPoint3;
+typedef itk::PlaneSpatialObject< 2 > itkPlaneSpatialObject2;
+typedef itk::PlaneSpatialObject< 2 >::Pointer itkPlaneSpatialObject2_Pointer;
+typedef itk::PlaneSpatialObject< 3 > itkPlaneSpatialObject3;
+typedef itk::PlaneSpatialObject< 3 >::Pointer itkPlaneSpatialObject3_Pointer;
+typedef itk::PolygonGroupOrientation itkPolygonGroupOrientation;
+typedef itk::PolygonGroupSpatialObject< 2 > itkPolygonGroupSpatialObject2;
+typedef itk::PolygonGroupSpatialObject< 2 >::Pointer itkPolygonGroupSpatialObject2_Pointer;
+typedef itk::PolygonGroupSpatialObject< 3 > itkPolygonGroupSpatialObject3;
+typedef itk::PolygonGroupSpatialObject< 3 >::Pointer itkPolygonGroupSpatialObject3_Pointer;
+typedef itk::SceneSpatialObject< 2 > itkSceneSpatialObject2;
+typedef itk::SceneSpatialObject< 2 >::Pointer itkSceneSpatialObject2_Pointer;
+typedef itk::SceneSpatialObject< 3 > itkSceneSpatialObject3;
+typedef itk::SceneSpatialObject< 3 >::Pointer itkSceneSpatialObject3_Pointer;
+typedef itk::SpatialObjectReader< 2 > itkSpatialObjectReader2;
+typedef itk::SpatialObjectReader< 2 >::Pointer itkSpatialObjectReader2_Pointer;
+typedef itk::SpatialObjectReader< 3 > itkSpatialObjectReader3;
+typedef itk::SpatialObjectReader< 3 >::Pointer itkSpatialObjectReader3_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned char,2 > > itkSpatialObjectToImageFilterSO2IUC2;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned char,2 > >::Pointer itkSpatialObjectToImageFilterSO2IUC2_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned long,2 > > itkSpatialObjectToImageFilterSO2IUL2;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned long,2 > >::Pointer itkSpatialObjectToImageFilterSO2IUL2_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned short,2 > > itkSpatialObjectToImageFilterSO2IUS2;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< unsigned short,2 > >::Pointer itkSpatialObjectToImageFilterSO2IUS2_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< float,2 > > itkSpatialObjectToImageFilterSO2IF2;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< float,2 > >::Pointer itkSpatialObjectToImageFilterSO2IF2_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< double,2 > > itkSpatialObjectToImageFilterSO2ID2;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 2 >,itk::Image< double,2 > >::Pointer itkSpatialObjectToImageFilterSO2ID2_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned char,3 > > itkSpatialObjectToImageFilterSO3IUC3;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned char,3 > >::Pointer itkSpatialObjectToImageFilterSO3IUC3_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned long,3 > > itkSpatialObjectToImageFilterSO3IUL3;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned long,3 > >::Pointer itkSpatialObjectToImageFilterSO3IUL3_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned short,3 > > itkSpatialObjectToImageFilterSO3IUS3;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< unsigned short,3 > >::Pointer itkSpatialObjectToImageFilterSO3IUS3_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< float,3 > > itkSpatialObjectToImageFilterSO3IF3;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< float,3 > >::Pointer itkSpatialObjectToImageFilterSO3IF3_Pointer;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< double,3 > > itkSpatialObjectToImageFilterSO3ID3;
+typedef itk::SpatialObjectToImageFilter< itk::SpatialObject< 3 >,itk::Image< double,3 > >::Pointer itkSpatialObjectToImageFilterSO3ID3_Pointer;
+typedef itk::SpatialObjectWriter< 2 > itkSpatialObjectWriter2;
+typedef itk::SpatialObjectWriter< 2 >::Pointer itkSpatialObjectWriter2_Pointer;
+typedef itk::SpatialObjectWriter< 3 > itkSpatialObjectWriter3;
+typedef itk::SpatialObjectWriter< 3 >::Pointer itkSpatialObjectWriter3_Pointer;
+typedef itk::SurfaceSpatialObject< 2 > itkSurfaceSpatialObject2;
+typedef itk::SurfaceSpatialObject< 2 >::Pointer itkSurfaceSpatialObject2_Pointer;
+typedef itk::SurfaceSpatialObject< 3 > itkSurfaceSpatialObject3;
+typedef itk::SurfaceSpatialObject< 3 >::Pointer itkSurfaceSpatialObject3_Pointer;
+typedef itk::SurfaceSpatialObjectPoint< 2 > itkSurfaceSpatialObjectPoint2;
+typedef itk::SurfaceSpatialObjectPoint< 3 > itkSurfaceSpatialObjectPoint3;
+typedef itk::TubeSpatialObjectPoint< 2 > itkTubeSpatialObjectPoint2;
+typedef itk::TubeSpatialObjectPoint< 3 > itkTubeSpatialObjectPoint3;
+typedef itk::VesselTubeSpatialObject< 2 >::Superclass itkVesselTubeSpatialObject2_Superclass;
+typedef itk::VesselTubeSpatialObject< 2 >::Superclass::Pointer itkVesselTubeSpatialObject2_Superclass_Pointer;
+typedef itk::VesselTubeSpatialObject< 2 > itkVesselTubeSpatialObject2;
+typedef itk::VesselTubeSpatialObject< 2 >::Pointer itkVesselTubeSpatialObject2_Pointer;
+typedef itk::VesselTubeSpatialObject< 3 >::Superclass itkVesselTubeSpatialObject3_Superclass;
+typedef itk::VesselTubeSpatialObject< 3 >::Superclass::Pointer itkVesselTubeSpatialObject3_Superclass_Pointer;
+typedef itk::VesselTubeSpatialObject< 3 > itkVesselTubeSpatialObject3;
+typedef itk::VesselTubeSpatialObject< 3 >::Pointer itkVesselTubeSpatialObject3_Pointer;
+

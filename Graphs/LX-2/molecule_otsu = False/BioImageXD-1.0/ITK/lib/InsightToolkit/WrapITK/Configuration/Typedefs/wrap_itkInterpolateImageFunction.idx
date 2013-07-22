@@ -1,0 +1,40 @@
+{itk::InterpolateImageFunction<itk::Image<double, 2u>,double>} {itkInterpolateImageFunctionID2D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<double, 2u>, double> >} {itkInterpolateImageFunctionID2D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<double, 2u>,float>} {itkInterpolateImageFunctionID2F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<double, 2u>, float> >} {itkInterpolateImageFunctionID2F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<double, 3u>,double>} {itkInterpolateImageFunctionID3D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<double, 3u>, double> >} {itkInterpolateImageFunctionID3D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<double, 3u>,float>} {itkInterpolateImageFunctionID3F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<double, 3u>, float> >} {itkInterpolateImageFunctionID3F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<float, 2u>,double>} {itkInterpolateImageFunctionIF2D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<float, 2u>, double> >} {itkInterpolateImageFunctionIF2D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<float, 2u>,float>} {itkInterpolateImageFunctionIF2F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<float, 2u>, float> >} {itkInterpolateImageFunctionIF2F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<float, 3u>,double>} {itkInterpolateImageFunctionIF3D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<float, 3u>, double> >} {itkInterpolateImageFunctionIF3D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<float, 3u>,float>} {itkInterpolateImageFunctionIF3F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<float, 3u>, float> >} {itkInterpolateImageFunctionIF3F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<unsigned char, 2u>,double>} {itkInterpolateImageFunctionIUC2D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<unsigned char, 2u>, double> >} {itkInterpolateImageFunctionIUC2D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<unsigned char, 2u>,float>} {itkInterpolateImageFunctionIUC2F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<unsigned char, 2u>, float> >} {itkInterpolateImageFunctionIUC2F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<unsigned char, 3u>,double>} {itkInterpolateImageFunctionIUC3D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<unsigned char, 3u>, double> >} {itkInterpolateImageFunctionIUC3D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<unsigned char, 3u>,float>} {itkInterpolateImageFunctionIUC3F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<unsigned char, 3u>, float> >} {itkInterpolateImageFunctionIUC3F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<long unsigned int, 2u>,double>} {itkInterpolateImageFunctionIUL2D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<long unsigned int, 2u>, double> >} {itkInterpolateImageFunctionIUL2D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<long unsigned int, 2u>,float>} {itkInterpolateImageFunctionIUL2F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<long unsigned int, 2u>, float> >} {itkInterpolateImageFunctionIUL2F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<long unsigned int, 3u>,double>} {itkInterpolateImageFunctionIUL3D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<long unsigned int, 3u>, double> >} {itkInterpolateImageFunctionIUL3D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<long unsigned int, 3u>,float>} {itkInterpolateImageFunctionIUL3F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<long unsigned int, 3u>, float> >} {itkInterpolateImageFunctionIUL3F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<short unsigned int, 2u>,double>} {itkInterpolateImageFunctionIUS2D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<short unsigned int, 2u>, double> >} {itkInterpolateImageFunctionIUS2D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<short unsigned int, 2u>,float>} {itkInterpolateImageFunctionIUS2F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<short unsigned int, 2u>, float> >} {itkInterpolateImageFunctionIUS2F_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<short unsigned int, 3u>,double>} {itkInterpolateImageFunctionIUS3D} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<short unsigned int, 3u>, double> >} {itkInterpolateImageFunctionIUS3D_Pointer} {itkInterpolateImageFunction}
+{itk::InterpolateImageFunction<itk::Image<short unsigned int, 3u>,float>} {itkInterpolateImageFunctionIUS3F} {itkInterpolateImageFunction}
+{itk::SmartPointer<itk::InterpolateImageFunction<itk::Image<short unsigned int, 3u>, float> >} {itkInterpolateImageFunctionIUS3F_Pointer} {itkInterpolateImageFunction}

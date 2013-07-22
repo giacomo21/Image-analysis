@@ -1,0 +1,4 @@
+{itk::PolygonSpatialObject<2u>} {itkPolygonSpatialObject2} {itkPolygonSpatialObject}
+{itk::SmartPointer<itk::PolygonSpatialObject<2u> >} {itkPolygonSpatialObject2_Pointer} {itkPolygonSpatialObject}
+{itk::PolygonSpatialObject<3u>} {itkPolygonSpatialObject3} {itkPolygonSpatialObject}
+{itk::SmartPointer<itk::PolygonSpatialObject<3u> >} {itkPolygonSpatialObject3_Pointer} {itkPolygonSpatialObject}

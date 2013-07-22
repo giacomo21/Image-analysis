@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkShapeRelabelImageFilterIUC2)
+

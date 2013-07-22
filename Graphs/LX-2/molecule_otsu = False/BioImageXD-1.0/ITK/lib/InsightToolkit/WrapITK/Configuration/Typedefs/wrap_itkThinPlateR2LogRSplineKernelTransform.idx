@@ -1,0 +1,4 @@
+{itk::ThinPlateR2LogRSplineKernelTransform<double,2u>} {itkThinPlateR2LogRSplineKernelTransformD2} {itkThinPlateR2LogRSplineKernelTransform}
+{itk::SmartPointer<itk::ThinPlateR2LogRSplineKernelTransform<double, 2u> >} {itkThinPlateR2LogRSplineKernelTransformD2_Pointer} {itkThinPlateR2LogRSplineKernelTransform}
+{itk::ThinPlateR2LogRSplineKernelTransform<double,3u>} {itkThinPlateR2LogRSplineKernelTransformD3} {itkThinPlateR2LogRSplineKernelTransform}
+{itk::SmartPointer<itk::ThinPlateR2LogRSplineKernelTransform<double, 3u> >} {itkThinPlateR2LogRSplineKernelTransformD3_Pointer} {itkThinPlateR2LogRSplineKernelTransform}

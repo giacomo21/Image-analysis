@@ -1,0 +1,12 @@
+{itk::ShapeRelabelImageFilter<itk::Image<unsigned char, 2u> >} {itkShapeRelabelImageFilterIUC2} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<unsigned char, 2u> > >} {itkShapeRelabelImageFilterIUC2_Pointer} {itkShapeRelabelImageFilter}
+{itk::ShapeRelabelImageFilter<itk::Image<unsigned char, 3u> >} {itkShapeRelabelImageFilterIUC3} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<unsigned char, 3u> > >} {itkShapeRelabelImageFilterIUC3_Pointer} {itkShapeRelabelImageFilter}
+{itk::ShapeRelabelImageFilter<itk::Image<long unsigned int, 2u> >} {itkShapeRelabelImageFilterIUL2} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<long unsigned int, 2u> > >} {itkShapeRelabelImageFilterIUL2_Pointer} {itkShapeRelabelImageFilter}
+{itk::ShapeRelabelImageFilter<itk::Image<long unsigned int, 3u> >} {itkShapeRelabelImageFilterIUL3} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<long unsigned int, 3u> > >} {itkShapeRelabelImageFilterIUL3_Pointer} {itkShapeRelabelImageFilter}
+{itk::ShapeRelabelImageFilter<itk::Image<short unsigned int, 2u> >} {itkShapeRelabelImageFilterIUS2} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<short unsigned int, 2u> > >} {itkShapeRelabelImageFilterIUS2_Pointer} {itkShapeRelabelImageFilter}
+{itk::ShapeRelabelImageFilter<itk::Image<short unsigned int, 3u> >} {itkShapeRelabelImageFilterIUS3} {itkShapeRelabelImageFilter}
+{itk::SmartPointer<itk::ShapeRelabelImageFilter<itk::Image<short unsigned int, 3u> > >} {itkShapeRelabelImageFilterIUS3_Pointer} {itkShapeRelabelImageFilter}

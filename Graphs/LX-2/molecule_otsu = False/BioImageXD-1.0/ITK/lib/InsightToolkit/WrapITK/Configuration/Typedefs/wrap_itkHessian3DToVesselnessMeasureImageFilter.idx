@@ -1,0 +1,10 @@
+{itk::Hessian3DToVesselnessMeasureImageFilter<double>} {itkHessian3DToVesselnessMeasureImageFilterD} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::SmartPointer<itk::Hessian3DToVesselnessMeasureImageFilter<double> >} {itkHessian3DToVesselnessMeasureImageFilterD_Pointer} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::Hessian3DToVesselnessMeasureImageFilter<float>} {itkHessian3DToVesselnessMeasureImageFilterF} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::SmartPointer<itk::Hessian3DToVesselnessMeasureImageFilter<float> >} {itkHessian3DToVesselnessMeasureImageFilterF_Pointer} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::Hessian3DToVesselnessMeasureImageFilter<unsigned char>} {itkHessian3DToVesselnessMeasureImageFilterUC} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::SmartPointer<itk::Hessian3DToVesselnessMeasureImageFilter<unsigned char> >} {itkHessian3DToVesselnessMeasureImageFilterUC_Pointer} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::Hessian3DToVesselnessMeasureImageFilter<long unsigned int>} {itkHessian3DToVesselnessMeasureImageFilterUL} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::SmartPointer<itk::Hessian3DToVesselnessMeasureImageFilter<long unsigned int> >} {itkHessian3DToVesselnessMeasureImageFilterUL_Pointer} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::Hessian3DToVesselnessMeasureImageFilter<short unsigned int>} {itkHessian3DToVesselnessMeasureImageFilterUS} {itkHessian3DToVesselnessMeasureImageFilter}
+{itk::SmartPointer<itk::Hessian3DToVesselnessMeasureImageFilter<short unsigned int> >} {itkHessian3DToVesselnessMeasureImageFilterUS_Pointer} {itkHessian3DToVesselnessMeasureImageFilter}

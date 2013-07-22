@@ -1,0 +1,20 @@
+{itk::NormalizeImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkNormalizeImageFilterID2ID2} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkNormalizeImageFilterID2ID2_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkNormalizeImageFilterID3ID3} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkNormalizeImageFilterID3ID3_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkNormalizeImageFilterIF2IF2} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkNormalizeImageFilterIF2IF2_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkNormalizeImageFilterIF3IF3} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkNormalizeImageFilterIF3IF3_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkNormalizeImageFilterIUC2IUC2} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkNormalizeImageFilterIUC2IUC2_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkNormalizeImageFilterIUC3IUC3} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkNormalizeImageFilterIUC3IUC3_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkNormalizeImageFilterIUL2IUL2} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkNormalizeImageFilterIUL2IUL2_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkNormalizeImageFilterIUL3IUL3} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkNormalizeImageFilterIUL3IUL3_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkNormalizeImageFilterIUS2IUS2} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkNormalizeImageFilterIUS2IUS2_Pointer} {itkNormalizeImageFilter}
+{itk::NormalizeImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkNormalizeImageFilterIUS3IUS3} {itkNormalizeImageFilter}
+{itk::SmartPointer<itk::NormalizeImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkNormalizeImageFilterIUS3IUS3_Pointer} {itkNormalizeImageFilter}

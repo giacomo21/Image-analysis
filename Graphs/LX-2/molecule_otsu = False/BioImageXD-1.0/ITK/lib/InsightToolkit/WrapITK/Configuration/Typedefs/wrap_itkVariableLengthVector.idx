@@ -1,0 +1,5 @@
+{itk::VariableLengthVector<double>} {itkVariableLengthVectorD} {itkVariableLengthVector}
+{itk::VariableLengthVector<float>} {itkVariableLengthVectorF} {itkVariableLengthVector}
+{itk::VariableLengthVector<unsigned char>} {itkVariableLengthVectorUC} {itkVariableLengthVector}
+{itk::VariableLengthVector<long unsigned int>} {itkVariableLengthVectorUL} {itkVariableLengthVector}
+{itk::VariableLengthVector<short unsigned int>} {itkVariableLengthVectorUS} {itkVariableLengthVector}

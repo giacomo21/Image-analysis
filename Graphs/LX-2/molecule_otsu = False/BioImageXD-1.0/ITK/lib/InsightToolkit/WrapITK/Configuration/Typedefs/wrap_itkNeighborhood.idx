@@ -1,0 +1,18 @@
+{itk::Neighborhood<bool,2u,itk::NeighborhoodAllocator<bool> >} {itkNeighborhoodB2} {itkNeighborhood}
+{itk::Neighborhood<bool,3u,itk::NeighborhoodAllocator<bool> >} {itkNeighborhoodB3} {itkNeighborhood}
+{itk::Neighborhood<itk::CovariantVector<float, 2u>,2u,itk::NeighborhoodAllocator<itk::CovariantVector<float, 2u> > >} {itkNeighborhoodCVF22} {itkNeighborhood}
+{itk::Neighborhood<itk::CovariantVector<float, 3u>,3u,itk::NeighborhoodAllocator<itk::CovariantVector<float, 3u> > >} {itkNeighborhoodCVF33} {itkNeighborhood}
+{itk::Neighborhood<double,2u,itk::NeighborhoodAllocator<double> >} {itkNeighborhoodD2} {itkNeighborhood}
+{itk::Neighborhood<double,3u,itk::NeighborhoodAllocator<double> >} {itkNeighborhoodD3} {itkNeighborhood}
+{itk::Neighborhood<float,2u,itk::NeighborhoodAllocator<float> >} {itkNeighborhoodF2} {itkNeighborhood}
+{itk::Neighborhood<float,3u,itk::NeighborhoodAllocator<float> >} {itkNeighborhoodF3} {itkNeighborhood}
+{itk::Neighborhood<itk::RGBPixel<short unsigned int>,2u,itk::NeighborhoodAllocator<itk::RGBPixel<short unsigned int> > >} {itkNeighborhoodRGBUS2} {itkNeighborhood}
+{itk::Neighborhood<itk::RGBPixel<short unsigned int>,3u,itk::NeighborhoodAllocator<itk::RGBPixel<short unsigned int> > >} {itkNeighborhoodRGBUS3} {itkNeighborhood}
+{itk::Neighborhood<unsigned char,2u,itk::NeighborhoodAllocator<unsigned char> >} {itkNeighborhoodUC2} {itkNeighborhood}
+{itk::Neighborhood<unsigned char,3u,itk::NeighborhoodAllocator<unsigned char> >} {itkNeighborhoodUC3} {itkNeighborhood}
+{itk::Neighborhood<long unsigned int,2u,itk::NeighborhoodAllocator<long unsigned int> >} {itkNeighborhoodUL2} {itkNeighborhood}
+{itk::Neighborhood<long unsigned int,3u,itk::NeighborhoodAllocator<long unsigned int> >} {itkNeighborhoodUL3} {itkNeighborhood}
+{itk::Neighborhood<short unsigned int,2u,itk::NeighborhoodAllocator<short unsigned int> >} {itkNeighborhoodUS2} {itkNeighborhood}
+{itk::Neighborhood<short unsigned int,3u,itk::NeighborhoodAllocator<short unsigned int> >} {itkNeighborhoodUS3} {itkNeighborhood}
+{itk::Neighborhood<itk::Vector<float, 2u>,2u,itk::NeighborhoodAllocator<itk::Vector<float, 2u> > >} {itkNeighborhoodVF22} {itkNeighborhood}
+{itk::Neighborhood<itk::Vector<float, 3u>,3u,itk::NeighborhoodAllocator<itk::Vector<float, 3u> > >} {itkNeighborhoodVF33} {itkNeighborhood}

@@ -1,0 +1,8 @@
+{itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBinaryMinMaxCurvatureFlowImageFilterID2ID2} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBinaryMinMaxCurvatureFlowImageFilterID2ID2_Pointer} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBinaryMinMaxCurvatureFlowImageFilterID3ID3} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBinaryMinMaxCurvatureFlowImageFilterID3ID3_Pointer} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBinaryMinMaxCurvatureFlowImageFilterIF2IF2} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBinaryMinMaxCurvatureFlowImageFilterIF2IF2_Pointer} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBinaryMinMaxCurvatureFlowImageFilterIF3IF3} {itkBinaryMinMaxCurvatureFlowImageFilter}
+{itk::SmartPointer<itk::BinaryMinMaxCurvatureFlowImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBinaryMinMaxCurvatureFlowImageFilterIF3IF3_Pointer} {itkBinaryMinMaxCurvatureFlowImageFilter}

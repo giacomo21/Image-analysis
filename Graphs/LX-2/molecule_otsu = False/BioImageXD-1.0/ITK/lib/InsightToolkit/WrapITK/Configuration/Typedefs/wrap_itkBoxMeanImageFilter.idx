@@ -1,0 +1,20 @@
+{itk::BoxMeanImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBoxMeanImageFilterID2ID2} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBoxMeanImageFilterID2ID2_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBoxMeanImageFilterID3ID3} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBoxMeanImageFilterID3ID3_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBoxMeanImageFilterIF2IF2} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBoxMeanImageFilterIF2IF2_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBoxMeanImageFilterIF3IF3} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBoxMeanImageFilterIF3IF3_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBoxMeanImageFilterIUC2IUC2} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBoxMeanImageFilterIUC2IUC2_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBoxMeanImageFilterIUC3IUC3} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBoxMeanImageFilterIUC3IUC3_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBoxMeanImageFilterIUL2IUL2} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBoxMeanImageFilterIUL2IUL2_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBoxMeanImageFilterIUL3IUL3} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBoxMeanImageFilterIUL3IUL3_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBoxMeanImageFilterIUS2IUS2} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBoxMeanImageFilterIUS2IUS2_Pointer} {itkBoxMeanImageFilter}
+{itk::BoxMeanImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBoxMeanImageFilterIUS3IUS3} {itkBoxMeanImageFilter}
+{itk::SmartPointer<itk::BoxMeanImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBoxMeanImageFilterIUS3IUS3_Pointer} {itkBoxMeanImageFilter}

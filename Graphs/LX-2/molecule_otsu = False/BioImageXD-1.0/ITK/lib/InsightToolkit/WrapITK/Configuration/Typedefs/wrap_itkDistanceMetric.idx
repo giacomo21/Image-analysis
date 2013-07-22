@@ -1,0 +1,4 @@
+{itk::Statistics::DistanceMetric<itk::Vector<float, 2u> >} {itkDistanceMetricVF2} {itkDistanceMetric}
+{itk::SmartPointer<itk::Statistics::DistanceMetric<itk::Vector<float, 2u> > >} {itkDistanceMetricVF2_Pointer} {itkDistanceMetric}
+{itk::Statistics::DistanceMetric<itk::Vector<float, 3u> >} {itkDistanceMetricVF3} {itkDistanceMetric}
+{itk::SmartPointer<itk::Statistics::DistanceMetric<itk::Vector<float, 3u> > >} {itkDistanceMetricVF3_Pointer} {itkDistanceMetric}

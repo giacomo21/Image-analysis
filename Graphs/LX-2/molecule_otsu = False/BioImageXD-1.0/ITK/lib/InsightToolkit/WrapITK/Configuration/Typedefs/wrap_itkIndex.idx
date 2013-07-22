@@ -1,0 +1,3 @@
+{itk::Index<1u>} {itkIndex1} {itkIndex}
+{itk::Index<2u>} {itkIndex2} {itkIndex}
+{itk::Index<3u>} {itkIndex3} {itkIndex}

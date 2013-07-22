@@ -1,0 +1,12 @@
+{itk::BinaryShapeOpeningImageFilter<itk::Image<unsigned char, 2u> >} {itkBinaryShapeOpeningImageFilterIUC2} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<unsigned char, 2u> > >} {itkBinaryShapeOpeningImageFilterIUC2_Pointer} {itkBinaryShapeOpeningImageFilter}
+{itk::BinaryShapeOpeningImageFilter<itk::Image<unsigned char, 3u> >} {itkBinaryShapeOpeningImageFilterIUC3} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<unsigned char, 3u> > >} {itkBinaryShapeOpeningImageFilterIUC3_Pointer} {itkBinaryShapeOpeningImageFilter}
+{itk::BinaryShapeOpeningImageFilter<itk::Image<long unsigned int, 2u> >} {itkBinaryShapeOpeningImageFilterIUL2} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<long unsigned int, 2u> > >} {itkBinaryShapeOpeningImageFilterIUL2_Pointer} {itkBinaryShapeOpeningImageFilter}
+{itk::BinaryShapeOpeningImageFilter<itk::Image<long unsigned int, 3u> >} {itkBinaryShapeOpeningImageFilterIUL3} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<long unsigned int, 3u> > >} {itkBinaryShapeOpeningImageFilterIUL3_Pointer} {itkBinaryShapeOpeningImageFilter}
+{itk::BinaryShapeOpeningImageFilter<itk::Image<short unsigned int, 2u> >} {itkBinaryShapeOpeningImageFilterIUS2} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<short unsigned int, 2u> > >} {itkBinaryShapeOpeningImageFilterIUS2_Pointer} {itkBinaryShapeOpeningImageFilter}
+{itk::BinaryShapeOpeningImageFilter<itk::Image<short unsigned int, 3u> >} {itkBinaryShapeOpeningImageFilterIUS3} {itkBinaryShapeOpeningImageFilter}
+{itk::SmartPointer<itk::BinaryShapeOpeningImageFilter<itk::Image<short unsigned int, 3u> > >} {itkBinaryShapeOpeningImageFilterIUS3_Pointer} {itkBinaryShapeOpeningImageFilter}

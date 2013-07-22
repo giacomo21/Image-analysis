@@ -1,0 +1,10 @@
+<Label label="Neighborhood:" />
+<StaticBox label="">
+    <BooleanInput id="Faces" label="Faces/>
+    <BooleanInput id="Corners" label="Corners/>
+    <BooleanInput id="Edges" label="Edges/>
+    <Label label="Threshold:" />
+    <StaticBox label="Gradient measure">
+        <RadioChoice id="('CentralDiff', 'Gradient')" specify="columns" majorDimension="2">
+            <RadioChoice name="Central difference"/>
+            <RadioChoice name="Gradient to neighbor"/>

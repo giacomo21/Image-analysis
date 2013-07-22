@@ -1,0 +1,235 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkApproximateSignedDistanceMapImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDanielssonDistanceMapImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkFastChamferDistanceImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSignedDanielssonDistanceMapImageFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSignedMaurerDistanceMapImageFilter.h"
+
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkApproximateSignedDistanceMapImageFilterIF2IF2;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkApproximateSignedDistanceMapImageFilterIF2IF2_Pointer;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkApproximateSignedDistanceMapImageFilterIF3IF3;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkApproximateSignedDistanceMapImageFilterIF3IF3_Pointer;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkApproximateSignedDistanceMapImageFilterID2ID2;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkApproximateSignedDistanceMapImageFilterID2ID2_Pointer;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkApproximateSignedDistanceMapImageFilterID3ID3;
+typedef itk::ApproximateSignedDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkApproximateSignedDistanceMapImageFilterID3ID3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkDanielssonDistanceMapImageFilterIUC2IUC2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUC2IUC2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkDanielssonDistanceMapImageFilterIUC3IUC3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUC3IUC3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkDanielssonDistanceMapImageFilterIUL2IUL2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUL2IUL2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkDanielssonDistanceMapImageFilterIUL3IUL3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUL3IUL3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkDanielssonDistanceMapImageFilterIUS2IUS2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUS2IUS2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkDanielssonDistanceMapImageFilterIUS3IUS3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUS3IUS3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkDanielssonDistanceMapImageFilterIF2IF2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkDanielssonDistanceMapImageFilterIF2IF2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkDanielssonDistanceMapImageFilterIF3IF3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkDanielssonDistanceMapImageFilterIF3IF3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkDanielssonDistanceMapImageFilterID2ID2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkDanielssonDistanceMapImageFilterID2ID2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkDanielssonDistanceMapImageFilterID3ID3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkDanielssonDistanceMapImageFilterID3ID3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkDanielssonDistanceMapImageFilterIUC2IF2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUC2IF2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkDanielssonDistanceMapImageFilterIUC3IF3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUC3IF3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkDanielssonDistanceMapImageFilterIUC2ID2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUC2ID2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkDanielssonDistanceMapImageFilterIUC3ID3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUC3ID3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkDanielssonDistanceMapImageFilterIUL2IF2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUL2IF2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkDanielssonDistanceMapImageFilterIUL3IF3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUL3IF3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkDanielssonDistanceMapImageFilterIUL2ID2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUL2ID2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkDanielssonDistanceMapImageFilterIUL3ID3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUL3ID3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkDanielssonDistanceMapImageFilterIUS2IF2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUS2IF2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkDanielssonDistanceMapImageFilterIUS3IF3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUS3IF3_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkDanielssonDistanceMapImageFilterIUS2ID2;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkDanielssonDistanceMapImageFilterIUS2ID2_Pointer;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkDanielssonDistanceMapImageFilterIUS3ID3;
+typedef itk::DanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkDanielssonDistanceMapImageFilterIUS3ID3_Pointer;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkFastChamferDistanceImageFilterIF2IF2;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkFastChamferDistanceImageFilterIF2IF2_Pointer;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkFastChamferDistanceImageFilterIF3IF3;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkFastChamferDistanceImageFilterIF3IF3_Pointer;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkFastChamferDistanceImageFilterID2ID2;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkFastChamferDistanceImageFilterID2ID2_Pointer;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkFastChamferDistanceImageFilterID3ID3;
+typedef itk::FastChamferDistanceImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkFastChamferDistanceImageFilterID3ID3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSignedDanielssonDistanceMapImageFilterIF2IF2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIF2IF2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSignedDanielssonDistanceMapImageFilterIF3IF3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIF3IF3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSignedDanielssonDistanceMapImageFilterID2ID2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterID2ID2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSignedDanielssonDistanceMapImageFilterID3ID3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterID3ID3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkSignedDanielssonDistanceMapImageFilterIUC2IF2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUC2IF2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkSignedDanielssonDistanceMapImageFilterIUC3IF3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUC3IF3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkSignedDanielssonDistanceMapImageFilterIUC2ID2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUC2ID2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkSignedDanielssonDistanceMapImageFilterIUC3ID3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUC3ID3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkSignedDanielssonDistanceMapImageFilterIUL2IF2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUL2IF2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkSignedDanielssonDistanceMapImageFilterIUL3IF3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUL3IF3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkSignedDanielssonDistanceMapImageFilterIUL2ID2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUL2ID2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkSignedDanielssonDistanceMapImageFilterIUL3ID3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUL3ID3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkSignedDanielssonDistanceMapImageFilterIUS2IF2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUS2IF2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkSignedDanielssonDistanceMapImageFilterIUS3IF3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUS3IF3_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkSignedDanielssonDistanceMapImageFilterIUS2ID2;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUS2ID2_Pointer;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkSignedDanielssonDistanceMapImageFilterIUS3ID3;
+typedef itk::SignedDanielssonDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkSignedDanielssonDistanceMapImageFilterIUS3ID3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > > itkSignedMaurerDistanceMapImageFilterIF2IF2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< float,2 >, itk::Image< float,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIF2IF2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkSignedMaurerDistanceMapImageFilterIF3IF3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIF3IF3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > > itkSignedMaurerDistanceMapImageFilterID2ID2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< double,2 >, itk::Image< double,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterID2ID2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkSignedMaurerDistanceMapImageFilterID3ID3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterID3ID3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > > itkSignedMaurerDistanceMapImageFilterIUC2IF2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< float,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUC2IF2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > > itkSignedMaurerDistanceMapImageFilterIUC3IF3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< float,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUC3IF3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > > itkSignedMaurerDistanceMapImageFilterIUC2ID2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,2 >, itk::Image< double,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUC2ID2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > > itkSignedMaurerDistanceMapImageFilterIUC3ID3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned char,3 >, itk::Image< double,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUC3ID3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > > itkSignedMaurerDistanceMapImageFilterIUL2IF2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< float,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUL2IF2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > > itkSignedMaurerDistanceMapImageFilterIUL3IF3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< float,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUL3IF3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > > itkSignedMaurerDistanceMapImageFilterIUL2ID2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,2 >, itk::Image< double,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUL2ID2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > > itkSignedMaurerDistanceMapImageFilterIUL3ID3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned long,3 >, itk::Image< double,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUL3ID3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > > itkSignedMaurerDistanceMapImageFilterIUS2IF2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< float,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUS2IF2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > > itkSignedMaurerDistanceMapImageFilterIUS3IF3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< float,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUS3IF3_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > > itkSignedMaurerDistanceMapImageFilterIUS2ID2;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,2 >, itk::Image< double,2 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUS2ID2_Pointer;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > > itkSignedMaurerDistanceMapImageFilterIUS3ID3;
+typedef itk::SignedMaurerDistanceMapImageFilter< itk::Image< unsigned short,3 >, itk::Image< double,3 > >::Pointer itkSignedMaurerDistanceMapImageFilterIUS3ID3_Pointer;
+

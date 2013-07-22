@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkCurvatureAnisotropicDiffusionImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkCurvatureAnisotropicDiffusionImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkCurvatureAnisotropicDiffusionImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkCurvatureAnisotropicDiffusionImageFilterIF2IF2)
+

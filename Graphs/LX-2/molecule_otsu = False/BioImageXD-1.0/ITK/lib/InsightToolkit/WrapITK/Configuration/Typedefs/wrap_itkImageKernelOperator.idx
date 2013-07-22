@@ -1,0 +1,12 @@
+{itk::ImageKernelOperator<bool,2u,itk::NeighborhoodAllocator<bool> >} {itkImageKernelOperatorB2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<bool,3u,itk::NeighborhoodAllocator<bool> >} {itkImageKernelOperatorB3} {itkImageKernelOperator}
+{itk::ImageKernelOperator<double,2u,itk::NeighborhoodAllocator<double> >} {itkImageKernelOperatorD2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<double,3u,itk::NeighborhoodAllocator<double> >} {itkImageKernelOperatorD3} {itkImageKernelOperator}
+{itk::ImageKernelOperator<float,2u,itk::NeighborhoodAllocator<float> >} {itkImageKernelOperatorF2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<float,3u,itk::NeighborhoodAllocator<float> >} {itkImageKernelOperatorF3} {itkImageKernelOperator}
+{itk::ImageKernelOperator<unsigned char,2u,itk::NeighborhoodAllocator<unsigned char> >} {itkImageKernelOperatorUC2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<unsigned char,3u,itk::NeighborhoodAllocator<unsigned char> >} {itkImageKernelOperatorUC3} {itkImageKernelOperator}
+{itk::ImageKernelOperator<long unsigned int,2u,itk::NeighborhoodAllocator<long unsigned int> >} {itkImageKernelOperatorUL2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<long unsigned int,3u,itk::NeighborhoodAllocator<long unsigned int> >} {itkImageKernelOperatorUL3} {itkImageKernelOperator}
+{itk::ImageKernelOperator<short unsigned int,2u,itk::NeighborhoodAllocator<short unsigned int> >} {itkImageKernelOperatorUS2} {itkImageKernelOperator}
+{itk::ImageKernelOperator<short unsigned int,3u,itk::NeighborhoodAllocator<short unsigned int> >} {itkImageKernelOperatorUS3} {itkImageKernelOperator}

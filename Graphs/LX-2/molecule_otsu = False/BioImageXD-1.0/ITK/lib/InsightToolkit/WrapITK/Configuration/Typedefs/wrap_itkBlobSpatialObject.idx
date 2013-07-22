@@ -1,0 +1,4 @@
+{itk::BlobSpatialObject<2u>} {itkBlobSpatialObject2} {itkBlobSpatialObject}
+{itk::SmartPointer<itk::BlobSpatialObject<2u> >} {itkBlobSpatialObject2_Pointer} {itkBlobSpatialObject}
+{itk::BlobSpatialObject<3u>} {itkBlobSpatialObject3} {itkBlobSpatialObject}
+{itk::SmartPointer<itk::BlobSpatialObject<3u> >} {itkBlobSpatialObject3_Pointer} {itkBlobSpatialObject}

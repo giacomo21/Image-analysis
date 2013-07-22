@@ -1,0 +1,20 @@
+{itk::MinimumMaximumImageFilter<itk::Image<double, 2u> >} {itkMinimumMaximumImageFilterID2} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<double, 2u> > >} {itkMinimumMaximumImageFilterID2_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<double, 3u> >} {itkMinimumMaximumImageFilterID3} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<double, 3u> > >} {itkMinimumMaximumImageFilterID3_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<float, 2u> >} {itkMinimumMaximumImageFilterIF2} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<float, 2u> > >} {itkMinimumMaximumImageFilterIF2_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<float, 3u> >} {itkMinimumMaximumImageFilterIF3} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<float, 3u> > >} {itkMinimumMaximumImageFilterIF3_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<unsigned char, 2u> >} {itkMinimumMaximumImageFilterIUC2} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<unsigned char, 2u> > >} {itkMinimumMaximumImageFilterIUC2_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<unsigned char, 3u> >} {itkMinimumMaximumImageFilterIUC3} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<unsigned char, 3u> > >} {itkMinimumMaximumImageFilterIUC3_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<long unsigned int, 2u> >} {itkMinimumMaximumImageFilterIUL2} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<long unsigned int, 2u> > >} {itkMinimumMaximumImageFilterIUL2_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<long unsigned int, 3u> >} {itkMinimumMaximumImageFilterIUL3} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<long unsigned int, 3u> > >} {itkMinimumMaximumImageFilterIUL3_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<short unsigned int, 2u> >} {itkMinimumMaximumImageFilterIUS2} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<short unsigned int, 2u> > >} {itkMinimumMaximumImageFilterIUS2_Pointer} {itkMinimumMaximumImageFilter}
+{itk::MinimumMaximumImageFilter<itk::Image<short unsigned int, 3u> >} {itkMinimumMaximumImageFilterIUS3} {itkMinimumMaximumImageFilter}
+{itk::SmartPointer<itk::MinimumMaximumImageFilter<itk::Image<short unsigned int, 3u> > >} {itkMinimumMaximumImageFilterIUS3_Pointer} {itkMinimumMaximumImageFilter}

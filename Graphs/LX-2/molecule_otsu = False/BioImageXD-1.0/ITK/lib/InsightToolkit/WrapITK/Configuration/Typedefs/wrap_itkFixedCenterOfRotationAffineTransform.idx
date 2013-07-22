@@ -1,0 +1,4 @@
+{itk::FixedCenterOfRotationAffineTransform<double,2u>} {itkFixedCenterOfRotationAffineTransformD2} {itkFixedCenterOfRotationAffineTransform}
+{itk::SmartPointer<itk::FixedCenterOfRotationAffineTransform<double, 2u> >} {itkFixedCenterOfRotationAffineTransformD2_Pointer} {itkFixedCenterOfRotationAffineTransform}
+{itk::FixedCenterOfRotationAffineTransform<double,3u>} {itkFixedCenterOfRotationAffineTransformD3} {itkFixedCenterOfRotationAffineTransform}
+{itk::SmartPointer<itk::FixedCenterOfRotationAffineTransform<double, 3u> >} {itkFixedCenterOfRotationAffineTransformD3_Pointer} {itkFixedCenterOfRotationAffineTransform}

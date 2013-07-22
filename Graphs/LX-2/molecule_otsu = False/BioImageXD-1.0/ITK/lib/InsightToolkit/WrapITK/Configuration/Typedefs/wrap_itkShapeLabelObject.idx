@@ -1,0 +1,4 @@
+{itk::ShapeLabelObject<long unsigned int,2u>} {itkShapeLabelObjectUL2} {itkShapeLabelObject}
+{itk::SmartPointer<itk::ShapeLabelObject<long unsigned int, 2u> >} {itkShapeLabelObjectUL2_Pointer} {itkShapeLabelObject}
+{itk::ShapeLabelObject<long unsigned int,3u>} {itkShapeLabelObjectUL3} {itkShapeLabelObject}
+{itk::SmartPointer<itk::ShapeLabelObject<long unsigned int, 3u> >} {itkShapeLabelObjectUL3_Pointer} {itkShapeLabelObject}

@@ -1,0 +1,4 @@
+{itk::SymmetricSecondRankTensor<double,2u>} {itkSymmetricSecondRankTensorD2} {itkSymmetricSecondRankTensor}
+{itk::SymmetricSecondRankTensor<double,3u>} {itkSymmetricSecondRankTensorD3} {itkSymmetricSecondRankTensor}
+{itk::SymmetricSecondRankTensor<float,2u>} {itkSymmetricSecondRankTensorF2} {itkSymmetricSecondRankTensor}
+{itk::SymmetricSecondRankTensor<float,3u>} {itkSymmetricSecondRankTensorF3} {itkSymmetricSecondRankTensor}

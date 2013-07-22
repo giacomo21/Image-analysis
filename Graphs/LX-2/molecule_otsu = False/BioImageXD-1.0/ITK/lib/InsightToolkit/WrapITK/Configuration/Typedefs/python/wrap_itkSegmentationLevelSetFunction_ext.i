@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkSegmentationLevelSetFunctionID3ID3)
+DECLARE_REF_COUNT_CLASS(itkSegmentationLevelSetFunctionID2ID2)
+DECLARE_REF_COUNT_CLASS(itkSegmentationLevelSetFunctionIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkSegmentationLevelSetFunctionIF2IF2)
+

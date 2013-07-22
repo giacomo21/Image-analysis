@@ -1,0 +1,4 @@
+{itk::ShiftScaleLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > >} {itkShiftScaleLabelMapFilterLM2} {itkShiftScaleLabelMapFilter}
+{itk::SmartPointer<itk::ShiftScaleLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 2u> > > >} {itkShiftScaleLabelMapFilterLM2_Pointer} {itkShiftScaleLabelMapFilter}
+{itk::ShiftScaleLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > >} {itkShiftScaleLabelMapFilterLM3} {itkShiftScaleLabelMapFilter}
+{itk::SmartPointer<itk::ShiftScaleLabelMapFilter<itk::LabelMap<itk::StatisticsLabelObject<long unsigned int, 3u> > > >} {itkShiftScaleLabelMapFilterLM3_Pointer} {itkShiftScaleLabelMapFilter}

@@ -1,0 +1,4 @@
+{itk::HoughTransform2DLinesImageFilter<double,double>} {itkHoughTransform2DLinesImageFilterDD} {itkHoughTransform2DLinesImageFilter}
+{itk::SmartPointer<itk::HoughTransform2DLinesImageFilter<double, double> >} {itkHoughTransform2DLinesImageFilterDD_Pointer} {itkHoughTransform2DLinesImageFilter}
+{itk::HoughTransform2DLinesImageFilter<float,float>} {itkHoughTransform2DLinesImageFilterFF} {itkHoughTransform2DLinesImageFilter}
+{itk::SmartPointer<itk::HoughTransform2DLinesImageFilter<float, float> >} {itkHoughTransform2DLinesImageFilterFF_Pointer} {itkHoughTransform2DLinesImageFilter}

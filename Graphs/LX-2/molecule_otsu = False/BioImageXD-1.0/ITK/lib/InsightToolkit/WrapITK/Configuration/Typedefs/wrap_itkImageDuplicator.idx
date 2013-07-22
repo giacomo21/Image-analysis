@@ -1,0 +1,40 @@
+{itk::ImageDuplicator<itk::Image<std::complex<float>, 2u> >} {itkImageDuplicatorICF2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<std::complex<float>, 2u> > >} {itkImageDuplicatorICF2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<std::complex<float>, 3u> >} {itkImageDuplicatorICF3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<std::complex<float>, 3u> > >} {itkImageDuplicatorICF3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageDuplicatorICVF22} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkImageDuplicatorICVF22_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageDuplicatorICVF33} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkImageDuplicatorICVF33_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<double, 2u> >} {itkImageDuplicatorID2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<double, 2u> > >} {itkImageDuplicatorID2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<double, 3u> >} {itkImageDuplicatorID3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<double, 3u> > >} {itkImageDuplicatorID3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<float, 2u> >} {itkImageDuplicatorIF2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<float, 2u> > >} {itkImageDuplicatorIF2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<float, 3u> >} {itkImageDuplicatorIF3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<float, 3u> > >} {itkImageDuplicatorIF3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageDuplicatorIRGBAUS2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkImageDuplicatorIRGBAUS2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageDuplicatorIRGBAUS3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkImageDuplicatorIRGBAUS3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageDuplicatorIRGBUS2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageDuplicatorIRGBUS2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageDuplicatorIRGBUS3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkImageDuplicatorIRGBUS3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<unsigned char, 2u> >} {itkImageDuplicatorIUC2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<unsigned char, 2u> > >} {itkImageDuplicatorIUC2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<unsigned char, 3u> >} {itkImageDuplicatorIUC3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<unsigned char, 3u> > >} {itkImageDuplicatorIUC3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<long unsigned int, 2u> >} {itkImageDuplicatorIUL2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<long unsigned int, 2u> > >} {itkImageDuplicatorIUL2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<long unsigned int, 3u> >} {itkImageDuplicatorIUL3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<long unsigned int, 3u> > >} {itkImageDuplicatorIUL3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<short unsigned int, 2u> >} {itkImageDuplicatorIUS2} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<short unsigned int, 2u> > >} {itkImageDuplicatorIUS2_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<short unsigned int, 3u> >} {itkImageDuplicatorIUS3} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<short unsigned int, 3u> > >} {itkImageDuplicatorIUS3_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageDuplicatorIVF22} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkImageDuplicatorIVF22_Pointer} {itkImageDuplicator}
+{itk::ImageDuplicator<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageDuplicatorIVF33} {itkImageDuplicator}
+{itk::SmartPointer<itk::ImageDuplicator<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkImageDuplicatorIVF33_Pointer} {itkImageDuplicator}

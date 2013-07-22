@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkVectorExpandImageFilterIVF33IVF33)
+DECLARE_REF_COUNT_CLASS(itkVectorExpandImageFilterIVF22IVF22)
+

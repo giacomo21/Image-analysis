@@ -1,0 +1,6 @@
+{itk::Statistics::KdTree<itk::Statistics::ListSample<itk::Vector<float, 2u> > >} {itkKdTreeLSVF2} {itkKdTree}
+{itk::SmartPointer<itk::Statistics::KdTree<itk::Statistics::ListSample<itk::Vector<float, 2u> > > >} {itkKdTreeLSVF2_Pointer} {itkKdTree}
+{itk::Statistics::KdTree<itk::Statistics::ListSample<itk::Vector<float, 3u> > >} {itkKdTreeLSVF3} {itkKdTree}
+{itk::SmartPointer<itk::Statistics::KdTree<itk::Statistics::ListSample<itk::Vector<float, 3u> > > >} {itkKdTreeLSVF3_Pointer} {itkKdTree}
+{itk::Statistics::KdTreeNode<itk::Statistics::ListSample<itk::Vector<float, 2u> > >} {itkKdTreeNodeLSVF2} {itkKdTree}
+{itk::Statistics::KdTreeNode<itk::Statistics::ListSample<itk::Vector<float, 3u> > >} {itkKdTreeNodeLSVF3} {itkKdTree}

@@ -1,0 +1,8 @@
+{itk::VesselTubeSpatialObject<2u>} {itkVesselTubeSpatialObject2} {itkVesselTubeSpatialObject}
+{itk::SmartPointer<itk::VesselTubeSpatialObject<2u> >} {itkVesselTubeSpatialObject2_Pointer} {itkVesselTubeSpatialObject}
+{itk::TubeSpatialObject<2u,itk::VesselTubeSpatialObjectPoint<2u> >} {itkVesselTubeSpatialObject2_Superclass} {itkVesselTubeSpatialObject}
+{itk::SmartPointer<itk::TubeSpatialObject<2u, itk::VesselTubeSpatialObjectPoint<2u> > >} {itkVesselTubeSpatialObject2_Superclass_Pointer} {itkVesselTubeSpatialObject}
+{itk::VesselTubeSpatialObject<3u>} {itkVesselTubeSpatialObject3} {itkVesselTubeSpatialObject}
+{itk::SmartPointer<itk::VesselTubeSpatialObject<3u> >} {itkVesselTubeSpatialObject3_Pointer} {itkVesselTubeSpatialObject}
+{itk::TubeSpatialObject<3u,itk::VesselTubeSpatialObjectPoint<3u> >} {itkVesselTubeSpatialObject3_Superclass} {itkVesselTubeSpatialObject}
+{itk::SmartPointer<itk::TubeSpatialObject<3u, itk::VesselTubeSpatialObjectPoint<3u> > >} {itkVesselTubeSpatialObject3_Superclass_Pointer} {itkVesselTubeSpatialObject}

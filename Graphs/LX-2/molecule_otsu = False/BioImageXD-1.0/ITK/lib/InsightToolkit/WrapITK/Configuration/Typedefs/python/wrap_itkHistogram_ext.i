@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkSimpleDataObjectDecoratorHD)
+DECLARE_REF_COUNT_CLASS(itkSimpleDataObjectDecoratorHF)
+DECLARE_REF_COUNT_CLASS(itkHistogramD)
+DECLARE_REF_COUNT_CLASS(itkHistogramF)
+

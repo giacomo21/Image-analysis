@@ -1,0 +1,4 @@
+{itk::VnlFFTComplexConjugateToRealImageFilter<float,2u>} {itkVnlFFTComplexConjugateToRealImageFilterF2} {itkVnlFFTComplexConjugateToRealImageFilter}
+{itk::SmartPointer<itk::VnlFFTComplexConjugateToRealImageFilter<float, 2u> >} {itkVnlFFTComplexConjugateToRealImageFilterF2_Pointer} {itkVnlFFTComplexConjugateToRealImageFilter}
+{itk::VnlFFTComplexConjugateToRealImageFilter<float,3u>} {itkVnlFFTComplexConjugateToRealImageFilterF3} {itkVnlFFTComplexConjugateToRealImageFilter}
+{itk::SmartPointer<itk::VnlFFTComplexConjugateToRealImageFilter<float, 3u> >} {itkVnlFFTComplexConjugateToRealImageFilterF3_Pointer} {itkVnlFFTComplexConjugateToRealImageFilter}

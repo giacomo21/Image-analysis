@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkIsoContourDistanceImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkIsoContourDistanceImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkIsoContourDistanceImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkIsoContourDistanceImageFilterIF2IF2)
+

@@ -1,0 +1,16 @@
+{itk::CylinderSpatialObject} {itkCylinderSpatialObject} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::CylinderSpatialObject>} {itkCylinderSpatialObject_Pointer} {itkSpatialObjectBase}
+{itk::MetaEvent} {itkMetaEvent} {itkSpatialObjectBase}
+{MetaEvent} {itkMetaEvent_Superclass} {itkSpatialObjectBase}
+{itk::SpatialObject<2u>} {itkSpatialObject2} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::SpatialObject<2u> >} {itkSpatialObject2_Pointer} {itkSpatialObjectBase}
+{itk::SpatialObject<3u>} {itkSpatialObject3} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::SpatialObject<3u> >} {itkSpatialObject3_Pointer} {itkSpatialObjectBase}
+{itk::SpatialObjectTreeNode<2u>} {itkSpatialObjectTreeNode2} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::SpatialObjectTreeNode<2u> >} {itkSpatialObjectTreeNode2_Pointer} {itkSpatialObjectBase}
+{itk::SpatialObjectTreeNode<3u>} {itkSpatialObjectTreeNode3} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::SpatialObjectTreeNode<3u> >} {itkSpatialObjectTreeNode3_Pointer} {itkSpatialObjectBase}
+{itk::TreeNode<itk::SpatialObject<2u>*>} {itkTreeNodeSO2} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::TreeNode<itk::SpatialObject<2u>*> >} {itkTreeNodeSO2_Pointer} {itkSpatialObjectBase}
+{itk::TreeNode<itk::SpatialObject<3u>*>} {itkTreeNodeSO3} {itkSpatialObjectBase}
+{itk::SmartPointer<itk::TreeNode<itk::SpatialObject<3u>*> >} {itkTreeNodeSO3_Pointer} {itkSpatialObjectBase}

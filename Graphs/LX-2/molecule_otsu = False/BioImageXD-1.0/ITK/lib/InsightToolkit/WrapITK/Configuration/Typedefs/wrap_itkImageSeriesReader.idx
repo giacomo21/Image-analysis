@@ -1,0 +1,40 @@
+{itk::ImageSeriesReader<itk::Image<std::complex<float>, 2u> >} {itkImageSeriesReaderICF2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<std::complex<float>, 2u> > >} {itkImageSeriesReaderICF2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<std::complex<float>, 3u> >} {itkImageSeriesReaderICF3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<std::complex<float>, 3u> > >} {itkImageSeriesReaderICF3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageSeriesReaderICVF22} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkImageSeriesReaderICVF22_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageSeriesReaderICVF33} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkImageSeriesReaderICVF33_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<double, 2u> >} {itkImageSeriesReaderID2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<double, 2u> > >} {itkImageSeriesReaderID2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<double, 3u> >} {itkImageSeriesReaderID3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<double, 3u> > >} {itkImageSeriesReaderID3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<float, 2u> >} {itkImageSeriesReaderIF2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<float, 2u> > >} {itkImageSeriesReaderIF2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<float, 3u> >} {itkImageSeriesReaderIF3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<float, 3u> > >} {itkImageSeriesReaderIF3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageSeriesReaderIRGBAUS2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkImageSeriesReaderIRGBAUS2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageSeriesReaderIRGBAUS3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkImageSeriesReaderIRGBAUS3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageSeriesReaderIRGBUS2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageSeriesReaderIRGBUS2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageSeriesReaderIRGBUS3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkImageSeriesReaderIRGBUS3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<unsigned char, 2u> >} {itkImageSeriesReaderIUC2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<unsigned char, 2u> > >} {itkImageSeriesReaderIUC2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<unsigned char, 3u> >} {itkImageSeriesReaderIUC3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<unsigned char, 3u> > >} {itkImageSeriesReaderIUC3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<long unsigned int, 2u> >} {itkImageSeriesReaderIUL2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<long unsigned int, 2u> > >} {itkImageSeriesReaderIUL2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<long unsigned int, 3u> >} {itkImageSeriesReaderIUL3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<long unsigned int, 3u> > >} {itkImageSeriesReaderIUL3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<short unsigned int, 2u> >} {itkImageSeriesReaderIUS2} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<short unsigned int, 2u> > >} {itkImageSeriesReaderIUS2_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<short unsigned int, 3u> >} {itkImageSeriesReaderIUS3} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<short unsigned int, 3u> > >} {itkImageSeriesReaderIUS3_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageSeriesReaderIVF22} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkImageSeriesReaderIVF22_Pointer} {itkImageSeriesReader}
+{itk::ImageSeriesReader<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageSeriesReaderIVF33} {itkImageSeriesReader}
+{itk::SmartPointer<itk::ImageSeriesReader<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkImageSeriesReaderIVF33_Pointer} {itkImageSeriesReader}

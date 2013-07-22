@@ -1,0 +1,2 @@
+{itk::CenteredSimilarity2DTransform<double>} {itkCenteredSimilarity2DTransformD} {ITKCenteredSimilarityTransforms}
+{itk::SmartPointer<itk::CenteredSimilarity2DTransform<double> >} {itkCenteredSimilarity2DTransformD_Pointer} {ITKCenteredSimilarityTransforms}

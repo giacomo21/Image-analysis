@@ -1,0 +1,40 @@
+{itk::WrapPadImageFilter<itk::Image<std::complex<float>, 2u>,itk::Image<std::complex<float>, 2u> >} {itkWrapPadImageFilterICF2ICF2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<std::complex<float>, 2u>, itk::Image<std::complex<float>, 2u> > >} {itkWrapPadImageFilterICF2ICF2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<std::complex<float>, 3u>,itk::Image<std::complex<float>, 3u> >} {itkWrapPadImageFilterICF3ICF3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<std::complex<float>, 3u>, itk::Image<std::complex<float>, 3u> > >} {itkWrapPadImageFilterICF3ICF3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>,itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkWrapPadImageFilterICVF22ICVF22} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::CovariantVector<float, 2u>, 2u>, itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkWrapPadImageFilterICVF22ICVF22_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>,itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkWrapPadImageFilterICVF33ICVF33} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::CovariantVector<float, 3u>, 3u>, itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkWrapPadImageFilterICVF33ICVF33_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkWrapPadImageFilterID2ID2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkWrapPadImageFilterID2ID2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkWrapPadImageFilterID3ID3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkWrapPadImageFilterID3ID3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkWrapPadImageFilterIF2IF2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkWrapPadImageFilterIF2IF2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkWrapPadImageFilterIF3IF3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkWrapPadImageFilterIF3IF3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>,itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkWrapPadImageFilterIRGBAUS2IRGBAUS2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 2u>, itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkWrapPadImageFilterIRGBAUS2IRGBAUS2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>,itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkWrapPadImageFilterIRGBAUS3IRGBAUS3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::RGBAPixel<short unsigned int>, 3u>, itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkWrapPadImageFilterIRGBAUS3IRGBAUS3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkWrapPadImageFilterIRGBUS2IRGBUS2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 2u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkWrapPadImageFilterIRGBUS2IRGBUS2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkWrapPadImageFilterIRGBUS3IRGBUS3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkWrapPadImageFilterIRGBUS3IRGBUS3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkWrapPadImageFilterIUC2IUC2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkWrapPadImageFilterIUC2IUC2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkWrapPadImageFilterIUC3IUC3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkWrapPadImageFilterIUC3IUC3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkWrapPadImageFilterIUL2IUL2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkWrapPadImageFilterIUL2IUL2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkWrapPadImageFilterIUL3IUL3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkWrapPadImageFilterIUL3IUL3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkWrapPadImageFilterIUS2IUS2} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkWrapPadImageFilterIUS2IUS2_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkWrapPadImageFilterIUS3IUS3} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkWrapPadImageFilterIUS3IUS3_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>,itk::Image<itk::Vector<float, 2u>, 2u> >} {itkWrapPadImageFilterIVF22IVF22} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::Vector<float, 2u>, 2u>, itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkWrapPadImageFilterIVF22IVF22_Pointer} {itkWrapPadImageFilter}
+{itk::WrapPadImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkWrapPadImageFilterIVF33IVF33} {itkWrapPadImageFilter}
+{itk::SmartPointer<itk::WrapPadImageFilter<itk::Image<itk::Vector<float, 3u>, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkWrapPadImageFilterIVF33IVF33_Pointer} {itkWrapPadImageFilter}

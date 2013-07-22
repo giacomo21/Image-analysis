@@ -1,0 +1,511 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+#include "Transforms.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageIOBase.h"
+#include "itkStreamingImageIOBase.h"
+#include "itkIPLCommonImageIO.h"
+#include "itkTransformFileReader.h"
+#include "itkTransformFileWriter.h"
+#include "itkImageIORegion.h"
+#include "itkImageIOFactory.h"
+#include "itkRawImageIO.h"
+#include "itkAnalyzeImageIO.h"
+#include "itkAnalyzeImageIOFactory.h"
+#include "itkBioRadImageIO.h"
+#include "itkBioRadImageIOFactory.h"
+#include "itkBMPImageIO.h"
+#include "itkBMPImageIOFactory.h"
+#include "itkDICOMImageIO2.h"
+#include "itkDICOMImageIO2Factory.h"
+#include "itkGDCMImageIO.h"
+#include "itkGDCMImageIOFactory.h"
+#include "itkDicomImageIO.h"
+#include "itkDicomImageIOFactory.h"
+#include "itkGE4ImageIO.h"
+#include "itkGE4ImageIOFactory.h"
+#include "itkGE5ImageIO.h"
+#include "itkGE5ImageIOFactory.h"
+#include "itkGEAdwImageIO.h"
+#include "itkGEAdwImageIOFactory.h"
+#include "itkGiplImageIO.h"
+#include "itkGiplImageIOFactory.h"
+#include "itkJPEGImageIO.h"
+#include "itkJPEGImageIOFactory.h"
+#include "itkTIFFImageIO.h"
+#include "itkTIFFImageIOFactory.h"
+#include "itkLSMImageIO.h"
+#include "itkLSMImageIOFactory.h"
+#include "itkMetaImageIO.h"
+#include "itkMetaImageIOFactory.h"
+#include "itkNiftiImageIO.h"
+#include "itkNiftiImageIOFactory.h"
+#include "itkNrrdImageIO.h"
+#include "itkNrrdImageIOFactory.h"
+#include "itkPNGImageIO.h"
+#include "itkPNGImageIOFactory.h"
+#include "itkSiemensVisionImageIO.h"
+#include "itkSiemensVisionImageIOFactory.h"
+#include "itkStimulateImageIO.h"
+#include "itkStimulateImageIOFactory.h"
+#include "itkVTKImageIO.h"
+#include "itkVTKImageIOFactory.h"
+#include "itkBruker2DSEQImageIO.h"
+#include "itkBruker2DSEQImageIOFactory.h"
+#include "itkPhilipsRECImageIO.h"
+#include "itkPhilipsRECImageIOFactory.h"
+#include "itkVoxBoCUBImageIO.h"
+#include "itkVoxBoCUBImageIOFactory.h"
+#include "itkMRCImageIO.h"
+#include "itkMRCImageIOFactory.h"
+#include "itkArchetypeSeriesFileNames.h"
+#include "itkDICOMSeriesFileNames.h"
+#include "itkGDCMSeriesFileNames.h"
+#include "itkNumericSeriesFileNames.h"
+#include "itkRegularExpressionSeriesFileNames.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageFileReader.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageFileWriter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageSeriesReader.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkImageSeriesWriter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkOrientImageFilter.h"
+
+typedef itk::ImageIOBase itkImageIOBase;
+typedef itk::ImageIOBase::Pointer itkImageIOBase_Pointer;
+typedef itk::StreamingImageIOBase itkStreamingImageIOBase;
+typedef itk::StreamingImageIOBase::Pointer itkStreamingImageIOBase_Pointer;
+typedef itk::IPLCommonImageIO itkIPLCommonImageIO;
+typedef itk::IPLCommonImageIO::Pointer itkIPLCommonImageIO_Pointer;
+typedef itk::TransformFileReader itkTransformFileReader;
+typedef itk::TransformFileReader::Pointer itkTransformFileReader_Pointer;
+typedef itk::TransformFileWriter itkTransformFileWriter;
+typedef itk::TransformFileWriter::Pointer itkTransformFileWriter_Pointer;
+typedef itk::ImageIORegion itkImageIORegion;
+typedef itk::ImageIOFactory itkImageIOFactory;
+typedef itk::RawImageIO< float,2 > itkRawImageIOF2;
+typedef itk::RawImageIO< float,2 >::Pointer itkRawImageIOF2_Pointer;
+typedef itk::RawImageIO< float,3 > itkRawImageIOF3;
+typedef itk::RawImageIO< float,3 >::Pointer itkRawImageIOF3_Pointer;
+typedef itk::AnalyzeImageIO itkAnalyzeImageIO;
+typedef itk::AnalyzeImageIO::Pointer itkAnalyzeImageIO_Pointer;
+typedef itk::AnalyzeImageIOFactory itkAnalyzeImageIOFactory;
+typedef itk::AnalyzeImageIOFactory::Pointer itkAnalyzeImageIOFactory_Pointer;
+typedef itk::BioRadImageIO itkBioRadImageIO;
+typedef itk::BioRadImageIO::Pointer itkBioRadImageIO_Pointer;
+typedef itk::BioRadImageIOFactory itkBioRadImageIOFactory;
+typedef itk::BioRadImageIOFactory::Pointer itkBioRadImageIOFactory_Pointer;
+typedef itk::BMPImageIO itkBMPImageIO;
+typedef itk::BMPImageIO::Pointer itkBMPImageIO_Pointer;
+typedef itk::BMPImageIOFactory itkBMPImageIOFactory;
+typedef itk::BMPImageIOFactory::Pointer itkBMPImageIOFactory_Pointer;
+typedef itk::DICOMImageIO2 itkDICOMImageIO2;
+typedef itk::DICOMImageIO2::Pointer itkDICOMImageIO2_Pointer;
+typedef itk::DICOMImageIO2Factory itkDICOMImageIO2Factory;
+typedef itk::DICOMImageIO2Factory::Pointer itkDICOMImageIO2Factory_Pointer;
+typedef itk::GDCMImageIO itkGDCMImageIO;
+typedef itk::GDCMImageIO::Pointer itkGDCMImageIO_Pointer;
+typedef itk::GDCMImageIOFactory itkGDCMImageIOFactory;
+typedef itk::GDCMImageIOFactory::Pointer itkGDCMImageIOFactory_Pointer;
+typedef itk::DicomImageIO itkDicomImageIO;
+typedef itk::DicomImageIO::Pointer itkDicomImageIO_Pointer;
+typedef itk::DicomImageIOFactory itkDicomImageIOFactory;
+typedef itk::DicomImageIOFactory::Pointer itkDicomImageIOFactory_Pointer;
+typedef itk::GE4ImageIO itkGE4ImageIO;
+typedef itk::GE4ImageIO::Pointer itkGE4ImageIO_Pointer;
+typedef itk::GE4ImageIOFactory itkGE4ImageIOFactory;
+typedef itk::GE4ImageIOFactory::Pointer itkGE4ImageIOFactory_Pointer;
+typedef itk::GE5ImageIO itkGE5ImageIO;
+typedef itk::GE5ImageIO::Pointer itkGE5ImageIO_Pointer;
+typedef itk::GE5ImageIOFactory itkGE5ImageIOFactory;
+typedef itk::GE5ImageIOFactory::Pointer itkGE5ImageIOFactory_Pointer;
+typedef itk::GEAdwImageIO itkGEAdwImageIO;
+typedef itk::GEAdwImageIO::Pointer itkGEAdwImageIO_Pointer;
+typedef itk::GEAdwImageIOFactory itkGEAdwImageIOFactory;
+typedef itk::GEAdwImageIOFactory::Pointer itkGEAdwImageIOFactory_Pointer;
+typedef itk::GiplImageIO itkGiplImageIO;
+typedef itk::GiplImageIO::Pointer itkGiplImageIO_Pointer;
+typedef itk::GiplImageIOFactory itkGiplImageIOFactory;
+typedef itk::GiplImageIOFactory::Pointer itkGiplImageIOFactory_Pointer;
+typedef itk::JPEGImageIO itkJPEGImageIO;
+typedef itk::JPEGImageIO::Pointer itkJPEGImageIO_Pointer;
+typedef itk::JPEGImageIOFactory itkJPEGImageIOFactory;
+typedef itk::JPEGImageIOFactory::Pointer itkJPEGImageIOFactory_Pointer;
+typedef itk::TIFFImageIO itkTIFFImageIO;
+typedef itk::TIFFImageIO::Pointer itkTIFFImageIO_Pointer;
+typedef itk::TIFFImageIOFactory itkTIFFImageIOFactory;
+typedef itk::TIFFImageIOFactory::Pointer itkTIFFImageIOFactory_Pointer;
+typedef itk::LSMImageIO itkLSMImageIO;
+typedef itk::LSMImageIO::Pointer itkLSMImageIO_Pointer;
+typedef itk::LSMImageIOFactory itkLSMImageIOFactory;
+typedef itk::LSMImageIOFactory::Pointer itkLSMImageIOFactory_Pointer;
+typedef itk::MetaImageIO itkMetaImageIO;
+typedef itk::MetaImageIO::Pointer itkMetaImageIO_Pointer;
+typedef itk::MetaImageIOFactory itkMetaImageIOFactory;
+typedef itk::MetaImageIOFactory::Pointer itkMetaImageIOFactory_Pointer;
+typedef itk::NiftiImageIO itkNiftiImageIO;
+typedef itk::NiftiImageIO::Pointer itkNiftiImageIO_Pointer;
+typedef itk::NiftiImageIOFactory itkNiftiImageIOFactory;
+typedef itk::NiftiImageIOFactory::Pointer itkNiftiImageIOFactory_Pointer;
+typedef itk::NrrdImageIO itkNrrdImageIO;
+typedef itk::NrrdImageIO::Pointer itkNrrdImageIO_Pointer;
+typedef itk::NrrdImageIOFactory itkNrrdImageIOFactory;
+typedef itk::NrrdImageIOFactory::Pointer itkNrrdImageIOFactory_Pointer;
+typedef itk::PNGImageIO itkPNGImageIO;
+typedef itk::PNGImageIO::Pointer itkPNGImageIO_Pointer;
+typedef itk::PNGImageIOFactory itkPNGImageIOFactory;
+typedef itk::PNGImageIOFactory::Pointer itkPNGImageIOFactory_Pointer;
+typedef itk::SiemensVisionImageIO itkSiemensVisionImageIO;
+typedef itk::SiemensVisionImageIO::Pointer itkSiemensVisionImageIO_Pointer;
+typedef itk::SiemensVisionImageIOFactory itkSiemensVisionImageIOFactory;
+typedef itk::SiemensVisionImageIOFactory::Pointer itkSiemensVisionImageIOFactory_Pointer;
+typedef itk::StimulateImageIO itkStimulateImageIO;
+typedef itk::StimulateImageIO::Pointer itkStimulateImageIO_Pointer;
+typedef itk::StimulateImageIOFactory itkStimulateImageIOFactory;
+typedef itk::StimulateImageIOFactory::Pointer itkStimulateImageIOFactory_Pointer;
+typedef itk::VTKImageIO itkVTKImageIO;
+typedef itk::VTKImageIO::Pointer itkVTKImageIO_Pointer;
+typedef itk::VTKImageIOFactory itkVTKImageIOFactory;
+typedef itk::VTKImageIOFactory::Pointer itkVTKImageIOFactory_Pointer;
+typedef itk::Bruker2DSEQImageIO itkBruker2DSEQImageIO;
+typedef itk::Bruker2DSEQImageIO::Pointer itkBruker2DSEQImageIO_Pointer;
+typedef itk::Bruker2DSEQImageIOFactory itkBruker2DSEQImageIOFactory;
+typedef itk::Bruker2DSEQImageIOFactory::Pointer itkBruker2DSEQImageIOFactory_Pointer;
+typedef itk::PhilipsRECImageIO itkPhilipsRECImageIO;
+typedef itk::PhilipsRECImageIO::Pointer itkPhilipsRECImageIO_Pointer;
+typedef itk::PhilipsRECImageIOFactory itkPhilipsRECImageIOFactory;
+typedef itk::PhilipsRECImageIOFactory::Pointer itkPhilipsRECImageIOFactory_Pointer;
+typedef itk::VoxBoCUBImageIO itkVoxBoCUBImageIO;
+typedef itk::VoxBoCUBImageIO::Pointer itkVoxBoCUBImageIO_Pointer;
+typedef itk::VoxBoCUBImageIOFactory itkVoxBoCUBImageIOFactory;
+typedef itk::VoxBoCUBImageIOFactory::Pointer itkVoxBoCUBImageIOFactory_Pointer;
+typedef itk::MRCImageIO itkMRCImageIO;
+typedef itk::MRCImageIO::Pointer itkMRCImageIO_Pointer;
+typedef itk::MRCImageIOFactory itkMRCImageIOFactory;
+typedef itk::MRCImageIOFactory::Pointer itkMRCImageIOFactory_Pointer;
+typedef itk::ArchetypeSeriesFileNames itkArchetypeSeriesFileNames;
+typedef itk::ArchetypeSeriesFileNames::Pointer itkArchetypeSeriesFileNames_Pointer;
+typedef itk::DICOMSeriesFileNames itkDICOMSeriesFileNames;
+typedef itk::DICOMSeriesFileNames::Pointer itkDICOMSeriesFileNames_Pointer;
+typedef itk::GDCMSeriesFileNames itkGDCMSeriesFileNames;
+typedef itk::GDCMSeriesFileNames::Pointer itkGDCMSeriesFileNames_Pointer;
+typedef itk::NumericSeriesFileNames itkNumericSeriesFileNames;
+typedef itk::NumericSeriesFileNames::Pointer itkNumericSeriesFileNames_Pointer;
+typedef itk::RegularExpressionSeriesFileNames itkRegularExpressionSeriesFileNames;
+typedef itk::RegularExpressionSeriesFileNames::Pointer itkRegularExpressionSeriesFileNames_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned char,2 > > itkImageFileReaderIUC2;
+typedef itk::ImageFileReader< itk::Image< unsigned char,2 > >::Pointer itkImageFileReaderIUC2_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned char,3 > > itkImageFileReaderIUC3;
+typedef itk::ImageFileReader< itk::Image< unsigned char,3 > >::Pointer itkImageFileReaderIUC3_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::RGBPixel< unsigned short >,2 > > itkImageFileReaderIRGBUS2;
+typedef itk::ImageFileReader< itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkImageFileReaderIRGBUS2_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::RGBPixel< unsigned short >,3 > > itkImageFileReaderIRGBUS3;
+typedef itk::ImageFileReader< itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkImageFileReaderIRGBUS3_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkImageFileReaderIRGBAUS2;
+typedef itk::ImageFileReader< itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkImageFileReaderIRGBAUS2_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkImageFileReaderIRGBAUS3;
+typedef itk::ImageFileReader< itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkImageFileReaderIRGBAUS3_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::Vector< float,2 >,2 > > itkImageFileReaderIVF22;
+typedef itk::ImageFileReader< itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkImageFileReaderIVF22_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::Vector< float,3 >,3 > > itkImageFileReaderIVF33;
+typedef itk::ImageFileReader< itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkImageFileReaderIVF33_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::CovariantVector< float,2 >,2 > > itkImageFileReaderICVF22;
+typedef itk::ImageFileReader< itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkImageFileReaderICVF22_Pointer;
+typedef itk::ImageFileReader< itk::Image< itk::CovariantVector< float,3 >,3 > > itkImageFileReaderICVF33;
+typedef itk::ImageFileReader< itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkImageFileReaderICVF33_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned long,2 > > itkImageFileReaderIUL2;
+typedef itk::ImageFileReader< itk::Image< unsigned long,2 > >::Pointer itkImageFileReaderIUL2_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned long,3 > > itkImageFileReaderIUL3;
+typedef itk::ImageFileReader< itk::Image< unsigned long,3 > >::Pointer itkImageFileReaderIUL3_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned short,2 > > itkImageFileReaderIUS2;
+typedef itk::ImageFileReader< itk::Image< unsigned short,2 > >::Pointer itkImageFileReaderIUS2_Pointer;
+typedef itk::ImageFileReader< itk::Image< unsigned short,3 > > itkImageFileReaderIUS3;
+typedef itk::ImageFileReader< itk::Image< unsigned short,3 > >::Pointer itkImageFileReaderIUS3_Pointer;
+typedef itk::ImageFileReader< itk::Image< float,2 > > itkImageFileReaderIF2;
+typedef itk::ImageFileReader< itk::Image< float,2 > >::Pointer itkImageFileReaderIF2_Pointer;
+typedef itk::ImageFileReader< itk::Image< float,3 > > itkImageFileReaderIF3;
+typedef itk::ImageFileReader< itk::Image< float,3 > >::Pointer itkImageFileReaderIF3_Pointer;
+typedef itk::ImageFileReader< itk::Image< double,2 > > itkImageFileReaderID2;
+typedef itk::ImageFileReader< itk::Image< double,2 > >::Pointer itkImageFileReaderID2_Pointer;
+typedef itk::ImageFileReader< itk::Image< double,3 > > itkImageFileReaderID3;
+typedef itk::ImageFileReader< itk::Image< double,3 > >::Pointer itkImageFileReaderID3_Pointer;
+typedef itk::ImageFileReader< itk::Image< std::complex< float >,2 > > itkImageFileReaderICF2;
+typedef itk::ImageFileReader< itk::Image< std::complex< float >,2 > >::Pointer itkImageFileReaderICF2_Pointer;
+typedef itk::ImageFileReader< itk::Image< std::complex< float >,3 > > itkImageFileReaderICF3;
+typedef itk::ImageFileReader< itk::Image< std::complex< float >,3 > >::Pointer itkImageFileReaderICF3_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned char,2 > > itkImageFileReaderVIUC2;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned char,2 > >::Pointer itkImageFileReaderVIUC2_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned long,2 > > itkImageFileReaderVIUL2;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned long,2 > >::Pointer itkImageFileReaderVIUL2_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned short,2 > > itkImageFileReaderVIUS2;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned short,2 > >::Pointer itkImageFileReaderVIUS2_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< float,2 > > itkImageFileReaderVIF2;
+typedef itk::ImageFileReader< itk::VectorImage< float,2 > >::Pointer itkImageFileReaderVIF2_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< double,2 > > itkImageFileReaderVID2;
+typedef itk::ImageFileReader< itk::VectorImage< double,2 > >::Pointer itkImageFileReaderVID2_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned char,3 > > itkImageFileReaderVIUC3;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned char,3 > >::Pointer itkImageFileReaderVIUC3_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned long,3 > > itkImageFileReaderVIUL3;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned long,3 > >::Pointer itkImageFileReaderVIUL3_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned short,3 > > itkImageFileReaderVIUS3;
+typedef itk::ImageFileReader< itk::VectorImage< unsigned short,3 > >::Pointer itkImageFileReaderVIUS3_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< float,3 > > itkImageFileReaderVIF3;
+typedef itk::ImageFileReader< itk::VectorImage< float,3 > >::Pointer itkImageFileReaderVIF3_Pointer;
+typedef itk::ImageFileReader< itk::VectorImage< double,3 > > itkImageFileReaderVID3;
+typedef itk::ImageFileReader< itk::VectorImage< double,3 > >::Pointer itkImageFileReaderVID3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned char,2 > > itkImageFileWriterIUC2;
+typedef itk::ImageFileWriter< itk::Image< unsigned char,2 > >::Pointer itkImageFileWriterIUC2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned char,3 > > itkImageFileWriterIUC3;
+typedef itk::ImageFileWriter< itk::Image< unsigned char,3 > >::Pointer itkImageFileWriterIUC3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned char >,2 > > itkImageFileWriterIRGBUC2;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned char >,2 > >::Pointer itkImageFileWriterIRGBUC2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned char >,3 > > itkImageFileWriterIRGBUC3;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned char >,3 > >::Pointer itkImageFileWriterIRGBUC3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned short >,2 > > itkImageFileWriterIRGBUS2;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkImageFileWriterIRGBUS2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned short >,3 > > itkImageFileWriterIRGBUS3;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkImageFileWriterIRGBUS3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkImageFileWriterIRGBAUS2;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkImageFileWriterIRGBAUS2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkImageFileWriterIRGBAUS3;
+typedef itk::ImageFileWriter< itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkImageFileWriterIRGBAUS3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::Vector< float,2 >,2 > > itkImageFileWriterIVF22;
+typedef itk::ImageFileWriter< itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkImageFileWriterIVF22_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::Vector< float,3 >,3 > > itkImageFileWriterIVF33;
+typedef itk::ImageFileWriter< itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkImageFileWriterIVF33_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::CovariantVector< float,2 >,2 > > itkImageFileWriterICVF22;
+typedef itk::ImageFileWriter< itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkImageFileWriterICVF22_Pointer;
+typedef itk::ImageFileWriter< itk::Image< itk::CovariantVector< float,3 >,3 > > itkImageFileWriterICVF33;
+typedef itk::ImageFileWriter< itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkImageFileWriterICVF33_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned long,2 > > itkImageFileWriterIUL2;
+typedef itk::ImageFileWriter< itk::Image< unsigned long,2 > >::Pointer itkImageFileWriterIUL2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned long,3 > > itkImageFileWriterIUL3;
+typedef itk::ImageFileWriter< itk::Image< unsigned long,3 > >::Pointer itkImageFileWriterIUL3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned short,2 > > itkImageFileWriterIUS2;
+typedef itk::ImageFileWriter< itk::Image< unsigned short,2 > >::Pointer itkImageFileWriterIUS2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< unsigned short,3 > > itkImageFileWriterIUS3;
+typedef itk::ImageFileWriter< itk::Image< unsigned short,3 > >::Pointer itkImageFileWriterIUS3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< float,2 > > itkImageFileWriterIF2;
+typedef itk::ImageFileWriter< itk::Image< float,2 > >::Pointer itkImageFileWriterIF2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< float,3 > > itkImageFileWriterIF3;
+typedef itk::ImageFileWriter< itk::Image< float,3 > >::Pointer itkImageFileWriterIF3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< double,2 > > itkImageFileWriterID2;
+typedef itk::ImageFileWriter< itk::Image< double,2 > >::Pointer itkImageFileWriterID2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< double,3 > > itkImageFileWriterID3;
+typedef itk::ImageFileWriter< itk::Image< double,3 > >::Pointer itkImageFileWriterID3_Pointer;
+typedef itk::ImageFileWriter< itk::Image< std::complex< float >,2 > > itkImageFileWriterICF2;
+typedef itk::ImageFileWriter< itk::Image< std::complex< float >,2 > >::Pointer itkImageFileWriterICF2_Pointer;
+typedef itk::ImageFileWriter< itk::Image< std::complex< float >,3 > > itkImageFileWriterICF3;
+typedef itk::ImageFileWriter< itk::Image< std::complex< float >,3 > >::Pointer itkImageFileWriterICF3_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned char,2 > > itkImageFileWriterVIUC2;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned char,2 > >::Pointer itkImageFileWriterVIUC2_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned long,2 > > itkImageFileWriterVIUL2;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned long,2 > >::Pointer itkImageFileWriterVIUL2_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned short,2 > > itkImageFileWriterVIUS2;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned short,2 > >::Pointer itkImageFileWriterVIUS2_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< float,2 > > itkImageFileWriterVIF2;
+typedef itk::ImageFileWriter< itk::VectorImage< float,2 > >::Pointer itkImageFileWriterVIF2_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< double,2 > > itkImageFileWriterVID2;
+typedef itk::ImageFileWriter< itk::VectorImage< double,2 > >::Pointer itkImageFileWriterVID2_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned char,3 > > itkImageFileWriterVIUC3;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned char,3 > >::Pointer itkImageFileWriterVIUC3_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned long,3 > > itkImageFileWriterVIUL3;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned long,3 > >::Pointer itkImageFileWriterVIUL3_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned short,3 > > itkImageFileWriterVIUS3;
+typedef itk::ImageFileWriter< itk::VectorImage< unsigned short,3 > >::Pointer itkImageFileWriterVIUS3_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< float,3 > > itkImageFileWriterVIF3;
+typedef itk::ImageFileWriter< itk::VectorImage< float,3 > >::Pointer itkImageFileWriterVIF3_Pointer;
+typedef itk::ImageFileWriter< itk::VectorImage< double,3 > > itkImageFileWriterVID3;
+typedef itk::ImageFileWriter< itk::VectorImage< double,3 > >::Pointer itkImageFileWriterVID3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned char,2 > > itkImageSeriesReaderIUC2;
+typedef itk::ImageSeriesReader< itk::Image< unsigned char,2 > >::Pointer itkImageSeriesReaderIUC2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned char,3 > > itkImageSeriesReaderIUC3;
+typedef itk::ImageSeriesReader< itk::Image< unsigned char,3 > >::Pointer itkImageSeriesReaderIUC3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBPixel< unsigned short >,2 > > itkImageSeriesReaderIRGBUS2;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkImageSeriesReaderIRGBUS2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBPixel< unsigned short >,3 > > itkImageSeriesReaderIRGBUS3;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkImageSeriesReaderIRGBUS3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBAPixel< unsigned short >,2 > > itkImageSeriesReaderIRGBAUS2;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBAPixel< unsigned short >,2 > >::Pointer itkImageSeriesReaderIRGBAUS2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkImageSeriesReaderIRGBAUS3;
+typedef itk::ImageSeriesReader< itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkImageSeriesReaderIRGBAUS3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::Vector< float,2 >,2 > > itkImageSeriesReaderIVF22;
+typedef itk::ImageSeriesReader< itk::Image< itk::Vector< float,2 >,2 > >::Pointer itkImageSeriesReaderIVF22_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::Vector< float,3 >,3 > > itkImageSeriesReaderIVF33;
+typedef itk::ImageSeriesReader< itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkImageSeriesReaderIVF33_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::CovariantVector< float,2 >,2 > > itkImageSeriesReaderICVF22;
+typedef itk::ImageSeriesReader< itk::Image< itk::CovariantVector< float,2 >,2 > >::Pointer itkImageSeriesReaderICVF22_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< itk::CovariantVector< float,3 >,3 > > itkImageSeriesReaderICVF33;
+typedef itk::ImageSeriesReader< itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkImageSeriesReaderICVF33_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned long,2 > > itkImageSeriesReaderIUL2;
+typedef itk::ImageSeriesReader< itk::Image< unsigned long,2 > >::Pointer itkImageSeriesReaderIUL2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned long,3 > > itkImageSeriesReaderIUL3;
+typedef itk::ImageSeriesReader< itk::Image< unsigned long,3 > >::Pointer itkImageSeriesReaderIUL3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned short,2 > > itkImageSeriesReaderIUS2;
+typedef itk::ImageSeriesReader< itk::Image< unsigned short,2 > >::Pointer itkImageSeriesReaderIUS2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< unsigned short,3 > > itkImageSeriesReaderIUS3;
+typedef itk::ImageSeriesReader< itk::Image< unsigned short,3 > >::Pointer itkImageSeriesReaderIUS3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< float,2 > > itkImageSeriesReaderIF2;
+typedef itk::ImageSeriesReader< itk::Image< float,2 > >::Pointer itkImageSeriesReaderIF2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< float,3 > > itkImageSeriesReaderIF3;
+typedef itk::ImageSeriesReader< itk::Image< float,3 > >::Pointer itkImageSeriesReaderIF3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< double,2 > > itkImageSeriesReaderID2;
+typedef itk::ImageSeriesReader< itk::Image< double,2 > >::Pointer itkImageSeriesReaderID2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< double,3 > > itkImageSeriesReaderID3;
+typedef itk::ImageSeriesReader< itk::Image< double,3 > >::Pointer itkImageSeriesReaderID3_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< std::complex< float >,2 > > itkImageSeriesReaderICF2;
+typedef itk::ImageSeriesReader< itk::Image< std::complex< float >,2 > >::Pointer itkImageSeriesReaderICF2_Pointer;
+typedef itk::ImageSeriesReader< itk::Image< std::complex< float >,3 > > itkImageSeriesReaderICF3;
+typedef itk::ImageSeriesReader< itk::Image< std::complex< float >,3 > >::Pointer itkImageSeriesReaderICF3_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,2 > > itkImageSeriesWriterIUC3IUC2;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned char,3 >,itk::Image< unsigned char,2 > >::Pointer itkImageSeriesWriterIUC3IUC2_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,2 > > itkImageSeriesWriterIUL3IUL2;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned long,3 >,itk::Image< unsigned long,2 > >::Pointer itkImageSeriesWriterIUL3IUL2_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,2 > > itkImageSeriesWriterIUS3IUS2;
+typedef itk::ImageSeriesWriter< itk::Image< unsigned short,3 >,itk::Image< unsigned short,2 > >::Pointer itkImageSeriesWriterIUS3IUS2_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< float,3 >,itk::Image< float,2 > > itkImageSeriesWriterIF3IF2;
+typedef itk::ImageSeriesWriter< itk::Image< float,3 >,itk::Image< float,2 > >::Pointer itkImageSeriesWriterIF3IF2_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< double,3 >,itk::Image< double,2 > > itkImageSeriesWriterID3ID2;
+typedef itk::ImageSeriesWriter< itk::Image< double,3 >,itk::Image< double,2 > >::Pointer itkImageSeriesWriterID3ID2_Pointer;
+typedef itk::ImageSeriesWriter< itk::Image< itk::RGBPixel< unsigned short >,3 >,itk::Image< itk::RGBPixel< unsigned short >,2 > > itkImageSeriesWriterIRGBUS3IRGBUS2;
+typedef itk::ImageSeriesWriter< itk::Image< itk::RGBPixel< unsigned short >,3 >,itk::Image< itk::RGBPixel< unsigned short >,2 > >::Pointer itkImageSeriesWriterIRGBUS3IRGBUS2_Pointer;
+typedef itk::OrientImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > > itkOrientImageFilterIRGBUS3IRGBUS3;
+typedef itk::OrientImageFilter< itk::Image< itk::RGBPixel< unsigned short >,3 >, itk::Image< itk::RGBPixel< unsigned short >,3 > >::Pointer itkOrientImageFilterIRGBUS3IRGBUS3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > > itkOrientImageFilterIRGBAUS3IRGBAUS3;
+typedef itk::OrientImageFilter< itk::Image< itk::RGBAPixel< unsigned short >,3 >, itk::Image< itk::RGBAPixel< unsigned short >,3 > >::Pointer itkOrientImageFilterIRGBAUS3IRGBAUS3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > > itkOrientImageFilterIVF33IVF33;
+typedef itk::OrientImageFilter< itk::Image< itk::Vector< float,3 >,3 >, itk::Image< itk::Vector< float,3 >,3 > >::Pointer itkOrientImageFilterIVF33IVF33_Pointer;
+typedef itk::OrientImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > > itkOrientImageFilterICVF33ICVF33;
+typedef itk::OrientImageFilter< itk::Image< itk::CovariantVector< float,3 >,3 >, itk::Image< itk::CovariantVector< float,3 >,3 > >::Pointer itkOrientImageFilterICVF33ICVF33_Pointer;
+typedef itk::OrientImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkOrientImageFilterIUC3IUC3;
+typedef itk::OrientImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkOrientImageFilterIUC3IUC3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkOrientImageFilterIUL3IUL3;
+typedef itk::OrientImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkOrientImageFilterIUL3IUL3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkOrientImageFilterIUS3IUS3;
+typedef itk::OrientImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkOrientImageFilterIUS3IUS3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< float,3 >, itk::Image< float,3 > > itkOrientImageFilterIF3IF3;
+typedef itk::OrientImageFilter< itk::Image< float,3 >, itk::Image< float,3 > >::Pointer itkOrientImageFilterIF3IF3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< double,3 >, itk::Image< double,3 > > itkOrientImageFilterID3ID3;
+typedef itk::OrientImageFilter< itk::Image< double,3 >, itk::Image< double,3 > >::Pointer itkOrientImageFilterID3ID3_Pointer;
+typedef itk::OrientImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< std::complex< float >,3 > > itkOrientImageFilterICF3ICF3;
+typedef itk::OrientImageFilter< itk::Image< std::complex< float >,3 >, itk::Image< std::complex< float >,3 > >::Pointer itkOrientImageFilterICF3ICF3_Pointer;
+

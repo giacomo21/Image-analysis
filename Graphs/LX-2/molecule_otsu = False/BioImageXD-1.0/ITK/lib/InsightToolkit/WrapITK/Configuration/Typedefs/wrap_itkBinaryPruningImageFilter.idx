@@ -1,0 +1,10 @@
+{itk::BinaryPruningImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBinaryPruningImageFilterID2ID2} {itkBinaryPruningImageFilter}
+{itk::SmartPointer<itk::BinaryPruningImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBinaryPruningImageFilterID2ID2_Pointer} {itkBinaryPruningImageFilter}
+{itk::BinaryPruningImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBinaryPruningImageFilterIF2IF2} {itkBinaryPruningImageFilter}
+{itk::SmartPointer<itk::BinaryPruningImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBinaryPruningImageFilterIF2IF2_Pointer} {itkBinaryPruningImageFilter}
+{itk::BinaryPruningImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBinaryPruningImageFilterIUC2IUC2} {itkBinaryPruningImageFilter}
+{itk::SmartPointer<itk::BinaryPruningImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBinaryPruningImageFilterIUC2IUC2_Pointer} {itkBinaryPruningImageFilter}
+{itk::BinaryPruningImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBinaryPruningImageFilterIUL2IUL2} {itkBinaryPruningImageFilter}
+{itk::SmartPointer<itk::BinaryPruningImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBinaryPruningImageFilterIUL2IUL2_Pointer} {itkBinaryPruningImageFilter}
+{itk::BinaryPruningImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBinaryPruningImageFilterIUS2IUS2} {itkBinaryPruningImageFilter}
+{itk::SmartPointer<itk::BinaryPruningImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBinaryPruningImageFilterIUS2IUS2_Pointer} {itkBinaryPruningImageFilter}

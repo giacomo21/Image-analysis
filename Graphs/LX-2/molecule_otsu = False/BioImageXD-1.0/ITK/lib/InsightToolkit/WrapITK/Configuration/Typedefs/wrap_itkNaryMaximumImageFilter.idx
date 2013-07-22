@@ -1,0 +1,40 @@
+{itk::NaryMaximumImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkNaryMaximumImageFilterID2ID2} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkNaryMaximumImageFilterID2ID2_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,itk::Functor::Maximum1<double, double> >} {itkNaryMaximumImageFilterID2ID2_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, itk::Functor::Maximum1<double, double> > >} {itkNaryMaximumImageFilterID2ID2_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkNaryMaximumImageFilterID3ID3} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkNaryMaximumImageFilterID3ID3_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,itk::Functor::Maximum1<double, double> >} {itkNaryMaximumImageFilterID3ID3_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, itk::Functor::Maximum1<double, double> > >} {itkNaryMaximumImageFilterID3ID3_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkNaryMaximumImageFilterIF2IF2} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkNaryMaximumImageFilterIF2IF2_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,itk::Functor::Maximum1<float, float> >} {itkNaryMaximumImageFilterIF2IF2_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, itk::Functor::Maximum1<float, float> > >} {itkNaryMaximumImageFilterIF2IF2_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkNaryMaximumImageFilterIF3IF3} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkNaryMaximumImageFilterIF3IF3_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Functor::Maximum1<float, float> >} {itkNaryMaximumImageFilterIF3IF3_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Functor::Maximum1<float, float> > >} {itkNaryMaximumImageFilterIF3IF3_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkNaryMaximumImageFilterIUC2IUC2} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkNaryMaximumImageFilterIUC2IUC2_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,itk::Functor::Maximum1<unsigned char, unsigned char> >} {itkNaryMaximumImageFilterIUC2IUC2_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, itk::Functor::Maximum1<unsigned char, unsigned char> > >} {itkNaryMaximumImageFilterIUC2IUC2_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkNaryMaximumImageFilterIUC3IUC3} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkNaryMaximumImageFilterIUC3IUC3_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,itk::Functor::Maximum1<unsigned char, unsigned char> >} {itkNaryMaximumImageFilterIUC3IUC3_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, itk::Functor::Maximum1<unsigned char, unsigned char> > >} {itkNaryMaximumImageFilterIUC3IUC3_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkNaryMaximumImageFilterIUL2IUL2} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkNaryMaximumImageFilterIUL2IUL2_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,itk::Functor::Maximum1<long unsigned int, long unsigned int> >} {itkNaryMaximumImageFilterIUL2IUL2_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, itk::Functor::Maximum1<long unsigned int, long unsigned int> > >} {itkNaryMaximumImageFilterIUL2IUL2_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkNaryMaximumImageFilterIUL3IUL3} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkNaryMaximumImageFilterIUL3IUL3_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,itk::Functor::Maximum1<long unsigned int, long unsigned int> >} {itkNaryMaximumImageFilterIUL3IUL3_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, itk::Functor::Maximum1<long unsigned int, long unsigned int> > >} {itkNaryMaximumImageFilterIUL3IUL3_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkNaryMaximumImageFilterIUS2IUS2} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkNaryMaximumImageFilterIUS2IUS2_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,itk::Functor::Maximum1<short unsigned int, short unsigned int> >} {itkNaryMaximumImageFilterIUS2IUS2_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, itk::Functor::Maximum1<short unsigned int, short unsigned int> > >} {itkNaryMaximumImageFilterIUS2IUS2_Superclass_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryMaximumImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkNaryMaximumImageFilterIUS3IUS3} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryMaximumImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkNaryMaximumImageFilterIUS3IUS3_Pointer} {itkNaryMaximumImageFilter}
+{itk::NaryFunctorImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,itk::Functor::Maximum1<short unsigned int, short unsigned int> >} {itkNaryMaximumImageFilterIUS3IUS3_Superclass} {itkNaryMaximumImageFilter}
+{itk::SmartPointer<itk::NaryFunctorImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, itk::Functor::Maximum1<short unsigned int, short unsigned int> > >} {itkNaryMaximumImageFilterIUS3IUS3_Superclass_Pointer} {itkNaryMaximumImageFilter}

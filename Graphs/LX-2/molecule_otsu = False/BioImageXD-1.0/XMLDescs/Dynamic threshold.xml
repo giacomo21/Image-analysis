@@ -1,0 +1,8 @@
+<StaticBox label="">
+    <Choice id="StatisticsType" label="Statistics type:">/
+    <StaticBox label="Neighborhood (only odd values)">
+        <br>
+        <IntegerInput id="X" label="X:"/>
+        <br>
+        <IntegerInput id="Y" label="Y:"/>
+    </StaticBox>

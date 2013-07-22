@@ -1,0 +1,4 @@
+{itk::SurfaceSpatialObject<2u>} {itkSurfaceSpatialObject2} {itkSurfaceSpatialObject}
+{itk::SmartPointer<itk::SurfaceSpatialObject<2u> >} {itkSurfaceSpatialObject2_Pointer} {itkSurfaceSpatialObject}
+{itk::SurfaceSpatialObject<3u>} {itkSurfaceSpatialObject3} {itkSurfaceSpatialObject}
+{itk::SmartPointer<itk::SurfaceSpatialObject<3u> >} {itkSurfaceSpatialObject3_Pointer} {itkSurfaceSpatialObject}

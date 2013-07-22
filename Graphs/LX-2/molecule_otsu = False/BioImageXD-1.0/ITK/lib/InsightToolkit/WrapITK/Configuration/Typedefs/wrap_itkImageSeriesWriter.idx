@@ -1,0 +1,12 @@
+{itk::ImageSeriesWriter<itk::Image<double, 3u>,itk::Image<double, 2u> >} {itkImageSeriesWriterID3ID2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<double, 3u>, itk::Image<double, 2u> > >} {itkImageSeriesWriterID3ID2_Pointer} {itkImageSeriesWriter}
+{itk::ImageSeriesWriter<itk::Image<float, 3u>,itk::Image<float, 2u> >} {itkImageSeriesWriterIF3IF2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<float, 3u>, itk::Image<float, 2u> > >} {itkImageSeriesWriterIF3IF2_Pointer} {itkImageSeriesWriter}
+{itk::ImageSeriesWriter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>,itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageSeriesWriterIRGBUS3IRGBUS2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<itk::RGBPixel<short unsigned int>, 3u>, itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageSeriesWriterIRGBUS3IRGBUS2_Pointer} {itkImageSeriesWriter}
+{itk::ImageSeriesWriter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 2u> >} {itkImageSeriesWriterIUC3IUC2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 2u> > >} {itkImageSeriesWriterIUC3IUC2_Pointer} {itkImageSeriesWriter}
+{itk::ImageSeriesWriter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 2u> >} {itkImageSeriesWriterIUL3IUL2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 2u> > >} {itkImageSeriesWriterIUL3IUL2_Pointer} {itkImageSeriesWriter}
+{itk::ImageSeriesWriter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 2u> >} {itkImageSeriesWriterIUS3IUS2} {itkImageSeriesWriter}
+{itk::SmartPointer<itk::ImageSeriesWriter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 2u> > >} {itkImageSeriesWriterIUS3IUS2_Pointer} {itkImageSeriesWriter}

@@ -1,0 +1,8 @@
+{itk::ApproximateSignedDistanceMapImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkApproximateSignedDistanceMapImageFilterID2ID2} {itkApproximateSignedDistanceMapImageFilter}
+{itk::SmartPointer<itk::ApproximateSignedDistanceMapImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkApproximateSignedDistanceMapImageFilterID2ID2_Pointer} {itkApproximateSignedDistanceMapImageFilter}
+{itk::ApproximateSignedDistanceMapImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkApproximateSignedDistanceMapImageFilterID3ID3} {itkApproximateSignedDistanceMapImageFilter}
+{itk::SmartPointer<itk::ApproximateSignedDistanceMapImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkApproximateSignedDistanceMapImageFilterID3ID3_Pointer} {itkApproximateSignedDistanceMapImageFilter}
+{itk::ApproximateSignedDistanceMapImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkApproximateSignedDistanceMapImageFilterIF2IF2} {itkApproximateSignedDistanceMapImageFilter}
+{itk::SmartPointer<itk::ApproximateSignedDistanceMapImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkApproximateSignedDistanceMapImageFilterIF2IF2_Pointer} {itkApproximateSignedDistanceMapImageFilter}
+{itk::ApproximateSignedDistanceMapImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkApproximateSignedDistanceMapImageFilterIF3IF3} {itkApproximateSignedDistanceMapImageFilter}
+{itk::SmartPointer<itk::ApproximateSignedDistanceMapImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkApproximateSignedDistanceMapImageFilterIF3IF3_Pointer} {itkApproximateSignedDistanceMapImageFilter}

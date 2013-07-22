@@ -1,0 +1,60 @@
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>,itk::Image<double, 2u> >} {itkLabelGeometryImageFilterIUC2ID2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>, itk::Image<double, 2u> > >} {itkLabelGeometryImageFilterIUC2ID2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>,itk::Image<float, 2u> >} {itkLabelGeometryImageFilterIUC2IF2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>, itk::Image<float, 2u> > >} {itkLabelGeometryImageFilterIUC2IF2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelGeometryImageFilterIUC2IUC2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelGeometryImageFilterIUC2IUC2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelGeometryImageFilterIUC2IUL2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUC2IUL2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelGeometryImageFilterIUC2IUS2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUC2IUS2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>,itk::Image<double, 3u> >} {itkLabelGeometryImageFilterIUC3ID3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>, itk::Image<double, 3u> > >} {itkLabelGeometryImageFilterIUC3ID3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>,itk::Image<float, 3u> >} {itkLabelGeometryImageFilterIUC3IF3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>, itk::Image<float, 3u> > >} {itkLabelGeometryImageFilterIUC3IF3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelGeometryImageFilterIUC3IUC3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelGeometryImageFilterIUC3IUC3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelGeometryImageFilterIUC3IUL3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUC3IUL3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelGeometryImageFilterIUC3IUS3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUC3IUS3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<double, 2u> >} {itkLabelGeometryImageFilterIUL2ID2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<double, 2u> > >} {itkLabelGeometryImageFilterIUL2ID2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<float, 2u> >} {itkLabelGeometryImageFilterIUL2IF2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<float, 2u> > >} {itkLabelGeometryImageFilterIUL2IF2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelGeometryImageFilterIUL2IUC2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelGeometryImageFilterIUL2IUC2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelGeometryImageFilterIUL2IUL2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUL2IUL2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelGeometryImageFilterIUL2IUS2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUL2IUS2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<double, 3u> >} {itkLabelGeometryImageFilterIUL3ID3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<double, 3u> > >} {itkLabelGeometryImageFilterIUL3ID3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<float, 3u> >} {itkLabelGeometryImageFilterIUL3IF3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<float, 3u> > >} {itkLabelGeometryImageFilterIUL3IF3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelGeometryImageFilterIUL3IUC3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelGeometryImageFilterIUL3IUC3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelGeometryImageFilterIUL3IUL3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUL3IUL3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelGeometryImageFilterIUL3IUS3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUL3IUS3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<double, 2u> >} {itkLabelGeometryImageFilterIUS2ID2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<double, 2u> > >} {itkLabelGeometryImageFilterIUS2ID2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<float, 2u> >} {itkLabelGeometryImageFilterIUS2IF2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<float, 2u> > >} {itkLabelGeometryImageFilterIUS2IF2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelGeometryImageFilterIUS2IUC2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelGeometryImageFilterIUS2IUC2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelGeometryImageFilterIUS2IUL2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUS2IUL2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelGeometryImageFilterIUS2IUS2} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelGeometryImageFilterIUS2IUS2_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<double, 3u> >} {itkLabelGeometryImageFilterIUS3ID3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<double, 3u> > >} {itkLabelGeometryImageFilterIUS3ID3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<float, 3u> >} {itkLabelGeometryImageFilterIUS3IF3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<float, 3u> > >} {itkLabelGeometryImageFilterIUS3IF3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelGeometryImageFilterIUS3IUC3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelGeometryImageFilterIUS3IUC3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelGeometryImageFilterIUS3IUL3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUS3IUL3_Pointer} {itkLabelGeometryImageFilter}
+{itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelGeometryImageFilterIUS3IUS3} {itkLabelGeometryImageFilter}
+{itk::SmartPointer<itk::LabelGeometryImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelGeometryImageFilterIUS3IUS3_Pointer} {itkLabelGeometryImageFilter}

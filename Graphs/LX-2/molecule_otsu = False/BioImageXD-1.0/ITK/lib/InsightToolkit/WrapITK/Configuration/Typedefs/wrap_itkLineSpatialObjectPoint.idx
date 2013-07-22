@@ -1,0 +1,2 @@
+{itk::LineSpatialObjectPoint<2u>} {itkLineSpatialObjectPoint2} {itkLineSpatialObjectPoint}
+{itk::LineSpatialObjectPoint<3u>} {itkLineSpatialObjectPoint3} {itkLineSpatialObjectPoint}

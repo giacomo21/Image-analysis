@@ -1,0 +1,40 @@
+{itk::AreaOpeningImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,double>} {itkAreaOpeningImageFilterID2ID2} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, double> >} {itkAreaOpeningImageFilterID2ID2_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u>,double,std::greater<double> >} {itkAreaOpeningImageFilterID2ID2_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u>, double, std::greater<double> > >} {itkAreaOpeningImageFilterID2ID2_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,double>} {itkAreaOpeningImageFilterID3ID3} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, double> >} {itkAreaOpeningImageFilterID3ID3_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u>,double,std::greater<double> >} {itkAreaOpeningImageFilterID3ID3_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u>, double, std::greater<double> > >} {itkAreaOpeningImageFilterID3ID3_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,double>} {itkAreaOpeningImageFilterIF2IF2} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, double> >} {itkAreaOpeningImageFilterIF2IF2_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u>,double,std::greater<float> >} {itkAreaOpeningImageFilterIF2IF2_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u>, double, std::greater<float> > >} {itkAreaOpeningImageFilterIF2IF2_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,double>} {itkAreaOpeningImageFilterIF3IF3} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, double> >} {itkAreaOpeningImageFilterIF3IF3_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,double,std::greater<float> >} {itkAreaOpeningImageFilterIF3IF3_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, double, std::greater<float> > >} {itkAreaOpeningImageFilterIF3IF3_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,double>} {itkAreaOpeningImageFilterIUC2IUC2} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, double> >} {itkAreaOpeningImageFilterIUC2IUC2_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u>,double,std::greater<unsigned char> >} {itkAreaOpeningImageFilterIUC2IUC2_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u>, double, std::greater<unsigned char> > >} {itkAreaOpeningImageFilterIUC2IUC2_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,double>} {itkAreaOpeningImageFilterIUC3IUC3} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, double> >} {itkAreaOpeningImageFilterIUC3IUC3_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u>,double,std::greater<unsigned char> >} {itkAreaOpeningImageFilterIUC3IUC3_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u>, double, std::greater<unsigned char> > >} {itkAreaOpeningImageFilterIUC3IUC3_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,double>} {itkAreaOpeningImageFilterIUL2IUL2} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, double> >} {itkAreaOpeningImageFilterIUL2IUL2_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u>,double,std::greater<long unsigned int> >} {itkAreaOpeningImageFilterIUL2IUL2_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u>, double, std::greater<long unsigned int> > >} {itkAreaOpeningImageFilterIUL2IUL2_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,double>} {itkAreaOpeningImageFilterIUL3IUL3} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, double> >} {itkAreaOpeningImageFilterIUL3IUL3_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u>,double,std::greater<long unsigned int> >} {itkAreaOpeningImageFilterIUL3IUL3_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u>, double, std::greater<long unsigned int> > >} {itkAreaOpeningImageFilterIUL3IUL3_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,double>} {itkAreaOpeningImageFilterIUS2IUS2} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, double> >} {itkAreaOpeningImageFilterIUS2IUS2_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u>,double,std::greater<short unsigned int> >} {itkAreaOpeningImageFilterIUS2IUS2_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u>, double, std::greater<short unsigned int> > >} {itkAreaOpeningImageFilterIUS2IUS2_Superclass_Pointer} {itkAreaOpeningImageFilter}
+{itk::AreaOpeningImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,double>} {itkAreaOpeningImageFilterIUS3IUS3} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AreaOpeningImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, double> >} {itkAreaOpeningImageFilterIUS3IUS3_Pointer} {itkAreaOpeningImageFilter}
+{itk::AttributeMorphologyBaseImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u>,double,std::greater<short unsigned int> >} {itkAreaOpeningImageFilterIUS3IUS3_Superclass} {itkAreaOpeningImageFilter}
+{itk::SmartPointer<itk::AttributeMorphologyBaseImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u>, double, std::greater<short unsigned int> > >} {itkAreaOpeningImageFilterIUS3IUS3_Superclass_Pointer} {itkAreaOpeningImageFilter}

@@ -1,0 +1,64 @@
+{itk::ImageBase<2u>} {itkImageBase2} {itkImage}
+{itk::SmartPointer<itk::ImageBase<2u> >} {itkImageBase2_Pointer} {itkImage}
+{itk::ImageBase<3u>} {itkImageBase3} {itkImage}
+{itk::SmartPointer<itk::ImageBase<3u> >} {itkImageBase3_Pointer} {itkImage}
+{itk::Image<std::complex<float>,2u>} {itkImageCF2} {itkImage}
+{itk::SmartPointer<itk::Image<std::complex<float>, 2u> >} {itkImageCF2_Pointer} {itkImage}
+{itk::Image<std::complex<float>,3u>} {itkImageCF3} {itkImage}
+{itk::SmartPointer<itk::Image<std::complex<float>, 3u> >} {itkImageCF3_Pointer} {itkImage}
+{itk::Image<itk::CovariantVector<float, 2u>,2u>} {itkImageCVF22} {itkImage}
+{itk::SmartPointer<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageCVF22_Pointer} {itkImage}
+{itk::Image<itk::CovariantVector<float, 3u>,3u>} {itkImageCVF33} {itkImage}
+{itk::SmartPointer<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageCVF33_Pointer} {itkImage}
+{itk::Image<double,2u>} {itkImageD2} {itkImage}
+{itk::SmartPointer<itk::Image<double, 2u> >} {itkImageD2_Pointer} {itkImage}
+{itk::Image<double,3u>} {itkImageD3} {itkImage}
+{itk::SmartPointer<itk::Image<double, 3u> >} {itkImageD3_Pointer} {itkImage}
+{itk::Image<float,2u>} {itkImageF2} {itkImage}
+{itk::SmartPointer<itk::Image<float, 2u> >} {itkImageF2_Pointer} {itkImage}
+{itk::Image<float,3u>} {itkImageF3} {itkImage}
+{itk::SmartPointer<itk::Image<float, 3u> >} {itkImageF3_Pointer} {itkImage}
+{itk::Image<itk::FixedArray<float, 2u>,2u>} {itkImageFAF22} {itkImage}
+{itk::SmartPointer<itk::Image<itk::FixedArray<float, 2u>, 2u> >} {itkImageFAF22_Pointer} {itkImage}
+{itk::Image<itk::FixedArray<float, 3u>,3u>} {itkImageFAF33} {itkImage}
+{itk::SmartPointer<itk::Image<itk::FixedArray<float, 3u>, 3u> >} {itkImageFAF33_Pointer} {itkImage}
+{itk::Image<itk::Offset<2u>,2u>} {itkImageO22} {itkImage}
+{itk::SmartPointer<itk::Image<itk::Offset<2u>, 2u> >} {itkImageO22_Pointer} {itkImage}
+{itk::Image<itk::Offset<3u>,3u>} {itkImageO33} {itkImage}
+{itk::SmartPointer<itk::Image<itk::Offset<3u>, 3u> >} {itkImageO33_Pointer} {itkImage}
+{itk::Image<itk::RGBAPixel<unsigned char>,2u>} {itkImageRGBAUC2} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBAPixel<unsigned char>, 2u> >} {itkImageRGBAUC2_Pointer} {itkImage}
+{itk::Image<itk::RGBAPixel<unsigned char>,3u>} {itkImageRGBAUC3} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBAPixel<unsigned char>, 3u> >} {itkImageRGBAUC3_Pointer} {itkImage}
+{itk::Image<itk::RGBAPixel<short unsigned int>,2u>} {itkImageRGBAUS2} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageRGBAUS2_Pointer} {itkImage}
+{itk::Image<itk::RGBAPixel<short unsigned int>,3u>} {itkImageRGBAUS3} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageRGBAUS3_Pointer} {itkImage}
+{itk::Image<itk::RGBPixel<unsigned char>,2u>} {itkImageRGBUC2} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBPixel<unsigned char>, 2u> >} {itkImageRGBUC2_Pointer} {itkImage}
+{itk::Image<itk::RGBPixel<unsigned char>,3u>} {itkImageRGBUC3} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBPixel<unsigned char>, 3u> >} {itkImageRGBUC3_Pointer} {itkImage}
+{itk::Image<itk::RGBPixel<short unsigned int>,2u>} {itkImageRGBUS2} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageRGBUS2_Pointer} {itkImage}
+{itk::Image<itk::RGBPixel<short unsigned int>,3u>} {itkImageRGBUS3} {itkImage}
+{itk::SmartPointer<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageRGBUS3_Pointer} {itkImage}
+{itk::Image<itk::SymmetricSecondRankTensor<double, 2u>,2u>} {itkImageSSRTD22} {itkImage}
+{itk::SmartPointer<itk::Image<itk::SymmetricSecondRankTensor<double, 2u>, 2u> >} {itkImageSSRTD22_Pointer} {itkImage}
+{itk::Image<itk::SymmetricSecondRankTensor<double, 3u>,3u>} {itkImageSSRTD33} {itkImage}
+{itk::SmartPointer<itk::Image<itk::SymmetricSecondRankTensor<double, 3u>, 3u> >} {itkImageSSRTD33_Pointer} {itkImage}
+{itk::Image<unsigned char,2u>} {itkImageUC2} {itkImage}
+{itk::SmartPointer<itk::Image<unsigned char, 2u> >} {itkImageUC2_Pointer} {itkImage}
+{itk::Image<unsigned char,3u>} {itkImageUC3} {itkImage}
+{itk::SmartPointer<itk::Image<unsigned char, 3u> >} {itkImageUC3_Pointer} {itkImage}
+{itk::Image<long unsigned int,2u>} {itkImageUL2} {itkImage}
+{itk::SmartPointer<itk::Image<long unsigned int, 2u> >} {itkImageUL2_Pointer} {itkImage}
+{itk::Image<long unsigned int,3u>} {itkImageUL3} {itkImage}
+{itk::SmartPointer<itk::Image<long unsigned int, 3u> >} {itkImageUL3_Pointer} {itkImage}
+{itk::Image<short unsigned int,2u>} {itkImageUS2} {itkImage}
+{itk::SmartPointer<itk::Image<short unsigned int, 2u> >} {itkImageUS2_Pointer} {itkImage}
+{itk::Image<short unsigned int,3u>} {itkImageUS3} {itkImage}
+{itk::SmartPointer<itk::Image<short unsigned int, 3u> >} {itkImageUS3_Pointer} {itkImage}
+{itk::Image<itk::Vector<float, 2u>,2u>} {itkImageVF22} {itkImage}
+{itk::SmartPointer<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageVF22_Pointer} {itkImage}
+{itk::Image<itk::Vector<float, 3u>,3u>} {itkImageVF33} {itkImage}
+{itk::SmartPointer<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageVF33_Pointer} {itkImage}

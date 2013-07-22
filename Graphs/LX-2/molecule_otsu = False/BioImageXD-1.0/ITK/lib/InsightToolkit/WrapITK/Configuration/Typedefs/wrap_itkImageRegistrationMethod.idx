@@ -1,0 +1,20 @@
+{itk::ImageRegistrationMethod<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkImageRegistrationMethodID2ID2} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkImageRegistrationMethodID2ID2_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkImageRegistrationMethodID3ID3} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkImageRegistrationMethodID3ID3_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkImageRegistrationMethodIF2IF2} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkImageRegistrationMethodIF2IF2_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkImageRegistrationMethodIF3IF3} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkImageRegistrationMethodIF3IF3_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkImageRegistrationMethodIUC2IUC2} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkImageRegistrationMethodIUC2IUC2_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkImageRegistrationMethodIUC3IUC3} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkImageRegistrationMethodIUC3IUC3_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkImageRegistrationMethodIUL2IUL2} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkImageRegistrationMethodIUL2IUL2_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkImageRegistrationMethodIUL3IUL3} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkImageRegistrationMethodIUL3IUL3_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkImageRegistrationMethodIUS2IUS2} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkImageRegistrationMethodIUS2IUS2_Pointer} {itkImageRegistrationMethod}
+{itk::ImageRegistrationMethod<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkImageRegistrationMethodIUS3IUS3} {itkImageRegistrationMethod}
+{itk::SmartPointer<itk::ImageRegistrationMethod<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkImageRegistrationMethodIUS3IUS3_Pointer} {itkImageRegistrationMethod}

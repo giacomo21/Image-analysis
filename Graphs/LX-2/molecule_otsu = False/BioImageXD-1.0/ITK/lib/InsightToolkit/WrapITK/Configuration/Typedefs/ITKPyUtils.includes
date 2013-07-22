@@ -1,0 +1,61 @@
+#include "Base.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPyCommand.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkPyImageFilter.h"
+
+typedef itk::PyCommand itkPyCommand;
+typedef itk::PyCommand::Pointer itkPyCommand_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > > itkPyImageFilterIUC2IUC2;
+typedef itk::PyImageFilter< itk::Image< unsigned char,2 >, itk::Image< unsigned char,2 > >::Pointer itkPyImageFilterIUC2IUC2_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > > itkPyImageFilterIUC3IUC3;
+typedef itk::PyImageFilter< itk::Image< unsigned char,3 >, itk::Image< unsigned char,3 > >::Pointer itkPyImageFilterIUC3IUC3_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > > itkPyImageFilterIUL2IUL2;
+typedef itk::PyImageFilter< itk::Image< unsigned long,2 >, itk::Image< unsigned long,2 > >::Pointer itkPyImageFilterIUL2IUL2_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > > itkPyImageFilterIUL3IUL3;
+typedef itk::PyImageFilter< itk::Image< unsigned long,3 >, itk::Image< unsigned long,3 > >::Pointer itkPyImageFilterIUL3IUL3_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > > itkPyImageFilterIUS2IUS2;
+typedef itk::PyImageFilter< itk::Image< unsigned short,2 >, itk::Image< unsigned short,2 > >::Pointer itkPyImageFilterIUS2IUS2_Pointer;
+typedef itk::PyImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > > itkPyImageFilterIUS3IUS3;
+typedef itk::PyImageFilter< itk::Image< unsigned short,3 >, itk::Image< unsigned short,3 > >::Pointer itkPyImageFilterIUS3IUS3_Pointer;
+

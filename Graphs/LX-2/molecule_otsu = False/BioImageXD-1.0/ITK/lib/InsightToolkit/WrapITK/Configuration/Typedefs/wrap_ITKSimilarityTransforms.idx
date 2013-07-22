@@ -1,0 +1,4 @@
+{itk::Similarity2DTransform<double>} {itkSimilarity2DTransformD} {ITKSimilarityTransforms}
+{itk::SmartPointer<itk::Similarity2DTransform<double> >} {itkSimilarity2DTransformD_Pointer} {ITKSimilarityTransforms}
+{itk::Similarity3DTransform<double>} {itkSimilarity3DTransformD} {ITKSimilarityTransforms}
+{itk::SmartPointer<itk::Similarity3DTransform<double> >} {itkSimilarity3DTransformD_Pointer} {ITKSimilarityTransforms}

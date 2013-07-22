@@ -1,0 +1,20 @@
+{itk::InterpolateImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkInterpolateImageFilterID2ID2} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkInterpolateImageFilterID2ID2_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkInterpolateImageFilterID3ID3} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkInterpolateImageFilterID3ID3_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkInterpolateImageFilterIF2IF2} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkInterpolateImageFilterIF2IF2_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkInterpolateImageFilterIF3IF3} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkInterpolateImageFilterIF3IF3_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkInterpolateImageFilterIUC2IUC2} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkInterpolateImageFilterIUC2IUC2_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkInterpolateImageFilterIUC3IUC3} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkInterpolateImageFilterIUC3IUC3_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkInterpolateImageFilterIUL2IUL2} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkInterpolateImageFilterIUL2IUL2_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkInterpolateImageFilterIUL3IUL3} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkInterpolateImageFilterIUL3IUL3_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkInterpolateImageFilterIUS2IUS2} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkInterpolateImageFilterIUS2IUS2_Pointer} {itkInterpolateImageFilter}
+{itk::InterpolateImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkInterpolateImageFilterIUS3IUS3} {itkInterpolateImageFilter}
+{itk::SmartPointer<itk::InterpolateImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkInterpolateImageFilterIUS3IUS3_Pointer} {itkInterpolateImageFilter}

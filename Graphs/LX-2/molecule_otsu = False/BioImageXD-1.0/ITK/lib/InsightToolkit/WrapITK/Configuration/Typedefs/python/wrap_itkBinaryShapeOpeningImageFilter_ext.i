@@ -1,0 +1,9 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkBinaryShapeOpeningImageFilterIUC2)
+

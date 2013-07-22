@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkVectorRescaleIntensityImageFilterIVF33IVF33)
+DECLARE_REF_COUNT_CLASS(itkVectorRescaleIntensityImageFilterIVF33IVF33_Superclass)
+DECLARE_REF_COUNT_CLASS(itkVectorRescaleIntensityImageFilterIVF22IVF22)
+DECLARE_REF_COUNT_CLASS(itkVectorRescaleIntensityImageFilterIVF22IVF22_Superclass)
+

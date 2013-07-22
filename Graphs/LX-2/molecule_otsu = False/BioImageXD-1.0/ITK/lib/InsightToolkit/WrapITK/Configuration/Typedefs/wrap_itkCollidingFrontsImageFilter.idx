@@ -1,0 +1,8 @@
+{itk::CollidingFrontsImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCollidingFrontsImageFilterID2ID2} {itkCollidingFrontsImageFilter}
+{itk::SmartPointer<itk::CollidingFrontsImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCollidingFrontsImageFilterID2ID2_Pointer} {itkCollidingFrontsImageFilter}
+{itk::CollidingFrontsImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCollidingFrontsImageFilterID3ID3} {itkCollidingFrontsImageFilter}
+{itk::SmartPointer<itk::CollidingFrontsImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCollidingFrontsImageFilterID3ID3_Pointer} {itkCollidingFrontsImageFilter}
+{itk::CollidingFrontsImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCollidingFrontsImageFilterIF2IF2} {itkCollidingFrontsImageFilter}
+{itk::SmartPointer<itk::CollidingFrontsImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCollidingFrontsImageFilterIF2IF2_Pointer} {itkCollidingFrontsImageFilter}
+{itk::CollidingFrontsImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCollidingFrontsImageFilterIF3IF3} {itkCollidingFrontsImageFilter}
+{itk::SmartPointer<itk::CollidingFrontsImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCollidingFrontsImageFilterIF3IF3_Pointer} {itkCollidingFrontsImageFilter}

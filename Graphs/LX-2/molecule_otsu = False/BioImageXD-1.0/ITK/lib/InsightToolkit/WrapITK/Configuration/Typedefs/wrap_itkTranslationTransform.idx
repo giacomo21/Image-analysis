@@ -1,0 +1,4 @@
+{itk::TranslationTransform<double,2u>} {itkTranslationTransformD2} {itkTranslationTransform}
+{itk::SmartPointer<itk::TranslationTransform<double, 2u> >} {itkTranslationTransformD2_Pointer} {itkTranslationTransform}
+{itk::TranslationTransform<double,3u>} {itkTranslationTransformD3} {itkTranslationTransform}
+{itk::SmartPointer<itk::TranslationTransform<double, 3u> >} {itkTranslationTransformD3_Pointer} {itkTranslationTransform}

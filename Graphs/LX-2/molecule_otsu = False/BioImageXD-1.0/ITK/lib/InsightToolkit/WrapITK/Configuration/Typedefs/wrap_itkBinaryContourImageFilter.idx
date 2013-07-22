@@ -1,0 +1,20 @@
+{itk::BinaryContourImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBinaryContourImageFilterID2ID2} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBinaryContourImageFilterID2ID2_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBinaryContourImageFilterID3ID3} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBinaryContourImageFilterID3ID3_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBinaryContourImageFilterIF2IF2} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBinaryContourImageFilterIF2IF2_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBinaryContourImageFilterIF3IF3} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBinaryContourImageFilterIF3IF3_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBinaryContourImageFilterIUC2IUC2} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBinaryContourImageFilterIUC2IUC2_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBinaryContourImageFilterIUC3IUC3} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBinaryContourImageFilterIUC3IUC3_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBinaryContourImageFilterIUL2IUL2} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBinaryContourImageFilterIUL2IUL2_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBinaryContourImageFilterIUL3IUL3} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBinaryContourImageFilterIUL3IUL3_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBinaryContourImageFilterIUS2IUS2} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBinaryContourImageFilterIUS2IUS2_Pointer} {itkBinaryContourImageFilter}
+{itk::BinaryContourImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBinaryContourImageFilterIUS3IUS3} {itkBinaryContourImageFilter}
+{itk::SmartPointer<itk::BinaryContourImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBinaryContourImageFilterIUS3IUS3_Pointer} {itkBinaryContourImageFilter}

@@ -1,0 +1,12 @@
+{itk::LabelVotingImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelVotingImageFilterIUC2IUC2} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelVotingImageFilterIUC2IUC2_Pointer} {itkLabelVotingImageFilter}
+{itk::LabelVotingImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelVotingImageFilterIUC3IUC3} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelVotingImageFilterIUC3IUC3_Pointer} {itkLabelVotingImageFilter}
+{itk::LabelVotingImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelVotingImageFilterIUL2IUL2} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelVotingImageFilterIUL2IUL2_Pointer} {itkLabelVotingImageFilter}
+{itk::LabelVotingImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelVotingImageFilterIUL3IUL3} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelVotingImageFilterIUL3IUL3_Pointer} {itkLabelVotingImageFilter}
+{itk::LabelVotingImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelVotingImageFilterIUS2IUS2} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelVotingImageFilterIUS2IUS2_Pointer} {itkLabelVotingImageFilter}
+{itk::LabelVotingImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelVotingImageFilterIUS3IUS3} {itkLabelVotingImageFilter}
+{itk::SmartPointer<itk::LabelVotingImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelVotingImageFilterIUS3IUS3_Pointer} {itkLabelVotingImageFilter}

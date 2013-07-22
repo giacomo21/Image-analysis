@@ -1,0 +1,20 @@
+{itk::DynamicThreshold3DImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkDynamicThreshold3DImageFilterID2ID2} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkDynamicThreshold3DImageFilterID2ID2_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkDynamicThreshold3DImageFilterID3ID3} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkDynamicThreshold3DImageFilterID3ID3_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkDynamicThreshold3DImageFilterIF2IF2} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkDynamicThreshold3DImageFilterIF2IF2_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkDynamicThreshold3DImageFilterIF3IF3} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkDynamicThreshold3DImageFilterIF3IF3_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkDynamicThreshold3DImageFilterIUC2IUC2} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkDynamicThreshold3DImageFilterIUC2IUC2_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkDynamicThreshold3DImageFilterIUC3IUC3} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkDynamicThreshold3DImageFilterIUC3IUC3_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkDynamicThreshold3DImageFilterIUL2IUL2} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkDynamicThreshold3DImageFilterIUL2IUL2_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkDynamicThreshold3DImageFilterIUL3IUL3} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkDynamicThreshold3DImageFilterIUL3IUL3_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkDynamicThreshold3DImageFilterIUS2IUS2} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkDynamicThreshold3DImageFilterIUS2IUS2_Pointer} {itkDynamicThreshold3DImageFilter}
+{itk::DynamicThreshold3DImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkDynamicThreshold3DImageFilterIUS3IUS3} {itkDynamicThreshold3DImageFilter}
+{itk::SmartPointer<itk::DynamicThreshold3DImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkDynamicThreshold3DImageFilterIUS3IUS3_Pointer} {itkDynamicThreshold3DImageFilter}

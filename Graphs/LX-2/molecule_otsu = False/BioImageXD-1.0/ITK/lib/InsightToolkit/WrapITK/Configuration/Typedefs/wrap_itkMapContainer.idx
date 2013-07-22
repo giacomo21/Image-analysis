@@ -1,0 +1,12 @@
+{itk::MapContainer<long unsigned int,double>} {itkMapContainerULD} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, double> >} {itkMapContainerULD_Pointer} {itkMapContainer}
+{itk::MapContainer<long unsigned int,itk::Point<double, 2u> >} {itkMapContainerULPD2} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, itk::Point<double, 2u> > >} {itkMapContainerULPD2_Pointer} {itkMapContainer}
+{itk::MapContainer<long unsigned int,itk::Point<double, 3u> >} {itkMapContainerULPD3} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, itk::Point<double, 3u> > >} {itkMapContainerULPD3_Pointer} {itkMapContainer}
+{itk::MapContainer<long unsigned int,std::set<long unsigned int, std::less<long unsigned int>, std::allocator<long unsigned int> > >} {itkMapContainerULSUL} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, std::set<long unsigned int, std::less<long unsigned int>, std::allocator<long unsigned int> > > >} {itkMapContainerULSUL_Pointer} {itkMapContainer}
+{itk::MapContainer<long unsigned int,itk::Vector<double, 2u> >} {itkMapContainerULVD2} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, itk::Vector<double, 2u> > >} {itkMapContainerULVD2_Pointer} {itkMapContainer}
+{itk::MapContainer<long unsigned int,itk::Vector<double, 3u> >} {itkMapContainerULVD3} {itkMapContainer}
+{itk::SmartPointer<itk::MapContainer<long unsigned int, itk::Vector<double, 3u> > >} {itkMapContainerULVD3_Pointer} {itkMapContainer}

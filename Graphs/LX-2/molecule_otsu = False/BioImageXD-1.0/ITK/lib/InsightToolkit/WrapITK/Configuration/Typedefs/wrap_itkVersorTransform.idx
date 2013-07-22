@@ -1,0 +1,2 @@
+{itk::VersorTransform<double>} {itkVersorTransformD} {itkVersorTransform}
+{itk::SmartPointer<itk::VersorTransform<double> >} {itkVersorTransformD_Pointer} {itkVersorTransform}

@@ -1,0 +1,4 @@
+{itk::SpatialObjectReader<2u,unsigned char,itk::DefaultStaticMeshTraits<unsigned char, 2u, 2u, float, float, unsigned char> >} {itkSpatialObjectReader2} {itkSpatialObjectReader}
+{itk::SmartPointer<itk::SpatialObjectReader<2u, unsigned char, itk::DefaultStaticMeshTraits<unsigned char, 2u, 2u, float, float, unsigned char> > >} {itkSpatialObjectReader2_Pointer} {itkSpatialObjectReader}
+{itk::SpatialObjectReader<3u,unsigned char,itk::DefaultStaticMeshTraits<unsigned char, 3u, 3u, float, float, unsigned char> >} {itkSpatialObjectReader3} {itkSpatialObjectReader}
+{itk::SmartPointer<itk::SpatialObjectReader<3u, unsigned char, itk::DefaultStaticMeshTraits<unsigned char, 3u, 3u, float, float, unsigned char> > >} {itkSpatialObjectReader3_Pointer} {itkSpatialObjectReader}

@@ -1,0 +1,20 @@
+{itk::ShotNoiseImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkShotNoiseImageFilterID2ID2} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkShotNoiseImageFilterID2ID2_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkShotNoiseImageFilterID3ID3} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkShotNoiseImageFilterID3ID3_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkShotNoiseImageFilterIF2IF2} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkShotNoiseImageFilterIF2IF2_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkShotNoiseImageFilterIF3IF3} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkShotNoiseImageFilterIF3IF3_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkShotNoiseImageFilterIUC2IUC2} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkShotNoiseImageFilterIUC2IUC2_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkShotNoiseImageFilterIUC3IUC3} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkShotNoiseImageFilterIUC3IUC3_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkShotNoiseImageFilterIUL2IUL2} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkShotNoiseImageFilterIUL2IUL2_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkShotNoiseImageFilterIUL3IUL3} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkShotNoiseImageFilterIUL3IUL3_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkShotNoiseImageFilterIUS2IUS2} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkShotNoiseImageFilterIUS2IUS2_Pointer} {itkShotNoiseImageFilter}
+{itk::ShotNoiseImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkShotNoiseImageFilterIUS3IUS3} {itkShotNoiseImageFilter}
+{itk::SmartPointer<itk::ShotNoiseImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkShotNoiseImageFilterIUS3IUS3_Pointer} {itkShotNoiseImageFilter}

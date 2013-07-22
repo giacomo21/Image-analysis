@@ -1,0 +1,6 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkBinaryMask3DMeshSourceIUS3MD3Q)
+DECLARE_REF_COUNT_CLASS(itkBinaryMask3DMeshSourceIUL3MD3Q)
+DECLARE_REF_COUNT_CLASS(itkBinaryMask3DMeshSourceIUC3MD3Q)
+

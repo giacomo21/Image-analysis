@@ -1,0 +1,10 @@
+{itk::ContourExtractor2DImageFilter<itk::Image<double, 2u> >} {itkContourExtractor2DImageFilterID2} {itkContourExtractor2DImageFilter}
+{itk::SmartPointer<itk::ContourExtractor2DImageFilter<itk::Image<double, 2u> > >} {itkContourExtractor2DImageFilterID2_Pointer} {itkContourExtractor2DImageFilter}
+{itk::ContourExtractor2DImageFilter<itk::Image<float, 2u> >} {itkContourExtractor2DImageFilterIF2} {itkContourExtractor2DImageFilter}
+{itk::SmartPointer<itk::ContourExtractor2DImageFilter<itk::Image<float, 2u> > >} {itkContourExtractor2DImageFilterIF2_Pointer} {itkContourExtractor2DImageFilter}
+{itk::ContourExtractor2DImageFilter<itk::Image<unsigned char, 2u> >} {itkContourExtractor2DImageFilterIUC2} {itkContourExtractor2DImageFilter}
+{itk::SmartPointer<itk::ContourExtractor2DImageFilter<itk::Image<unsigned char, 2u> > >} {itkContourExtractor2DImageFilterIUC2_Pointer} {itkContourExtractor2DImageFilter}
+{itk::ContourExtractor2DImageFilter<itk::Image<long unsigned int, 2u> >} {itkContourExtractor2DImageFilterIUL2} {itkContourExtractor2DImageFilter}
+{itk::SmartPointer<itk::ContourExtractor2DImageFilter<itk::Image<long unsigned int, 2u> > >} {itkContourExtractor2DImageFilterIUL2_Pointer} {itkContourExtractor2DImageFilter}
+{itk::ContourExtractor2DImageFilter<itk::Image<short unsigned int, 2u> >} {itkContourExtractor2DImageFilterIUS2} {itkContourExtractor2DImageFilter}
+{itk::SmartPointer<itk::ContourExtractor2DImageFilter<itk::Image<short unsigned int, 2u> > >} {itkContourExtractor2DImageFilterIUS2_Pointer} {itkContourExtractor2DImageFilter}

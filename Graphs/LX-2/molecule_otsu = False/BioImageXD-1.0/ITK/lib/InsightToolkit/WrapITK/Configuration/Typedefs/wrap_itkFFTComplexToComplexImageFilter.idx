@@ -1,0 +1,4 @@
+{itk::FFTComplexToComplexImageFilter<float,2u>} {itkFFTComplexToComplexImageFilterF2} {itkFFTComplexToComplexImageFilter}
+{itk::SmartPointer<itk::FFTComplexToComplexImageFilter<float, 2u> >} {itkFFTComplexToComplexImageFilterF2_Pointer} {itkFFTComplexToComplexImageFilter}
+{itk::FFTComplexToComplexImageFilter<float,3u>} {itkFFTComplexToComplexImageFilterF3} {itkFFTComplexToComplexImageFilter}
+{itk::SmartPointer<itk::FFTComplexToComplexImageFilter<float, 3u> >} {itkFFTComplexToComplexImageFilterF3_Pointer} {itkFFTComplexToComplexImageFilter}

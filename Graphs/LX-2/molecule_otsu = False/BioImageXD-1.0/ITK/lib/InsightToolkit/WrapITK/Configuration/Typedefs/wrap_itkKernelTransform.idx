@@ -1,0 +1,4 @@
+{itk::KernelTransform<double,2u>} {itkKernelTransformD2} {itkKernelTransform}
+{itk::SmartPointer<itk::KernelTransform<double, 2u> >} {itkKernelTransformD2_Pointer} {itkKernelTransform}
+{itk::KernelTransform<double,3u>} {itkKernelTransformD3} {itkKernelTransform}
+{itk::SmartPointer<itk::KernelTransform<double, 3u> >} {itkKernelTransformD3_Pointer} {itkKernelTransform}

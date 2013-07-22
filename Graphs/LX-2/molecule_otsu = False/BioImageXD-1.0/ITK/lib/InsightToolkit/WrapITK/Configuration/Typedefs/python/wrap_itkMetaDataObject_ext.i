@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkMetaDataObjectUL)
+DECLARE_REF_COUNT_CLASS(itkMetaDataObjectUI)
+DECLARE_REF_COUNT_CLASS(itkMetaDataObjectF)
+DECLARE_REF_COUNT_CLASS(itkMetaDataObjectD)
+

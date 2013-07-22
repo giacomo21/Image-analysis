@@ -1,0 +1,2 @@
+{itk::PyCommand} {itkPyCommand} {PyCommand}
+{itk::SmartPointer<itk::PyCommand>} {itkPyCommand_Pointer} {PyCommand}

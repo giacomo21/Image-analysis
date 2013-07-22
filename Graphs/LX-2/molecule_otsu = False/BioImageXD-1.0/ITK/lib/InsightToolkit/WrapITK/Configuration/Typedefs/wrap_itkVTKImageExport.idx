@@ -1,0 +1,22 @@
+{itk::VTKImageExportBase} {itkVTKImageExportBase} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExportBase>} {itkVTKImageExportBase_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<double, 2u> >} {itkVTKImageExportID2} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<double, 2u> > >} {itkVTKImageExportID2_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<double, 3u> >} {itkVTKImageExportID3} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<double, 3u> > >} {itkVTKImageExportID3_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<float, 2u> >} {itkVTKImageExportIF2} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<float, 2u> > >} {itkVTKImageExportIF2_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<float, 3u> >} {itkVTKImageExportIF3} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<float, 3u> > >} {itkVTKImageExportIF3_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<unsigned char, 2u> >} {itkVTKImageExportIUC2} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<unsigned char, 2u> > >} {itkVTKImageExportIUC2_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<unsigned char, 3u> >} {itkVTKImageExportIUC3} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<unsigned char, 3u> > >} {itkVTKImageExportIUC3_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<long unsigned int, 2u> >} {itkVTKImageExportIUL2} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<long unsigned int, 2u> > >} {itkVTKImageExportIUL2_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<long unsigned int, 3u> >} {itkVTKImageExportIUL3} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<long unsigned int, 3u> > >} {itkVTKImageExportIUL3_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<short unsigned int, 2u> >} {itkVTKImageExportIUS2} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<short unsigned int, 2u> > >} {itkVTKImageExportIUS2_Pointer} {itkVTKImageExport}
+{itk::VTKImageExport<itk::Image<short unsigned int, 3u> >} {itkVTKImageExportIUS3} {itkVTKImageExport}
+{itk::SmartPointer<itk::VTKImageExport<itk::Image<short unsigned int, 3u> > >} {itkVTKImageExportIUS3_Pointer} {itkVTKImageExport}

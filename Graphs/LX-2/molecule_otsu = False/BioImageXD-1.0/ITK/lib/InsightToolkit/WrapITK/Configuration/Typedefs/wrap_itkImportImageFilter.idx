@@ -1,0 +1,20 @@
+{itk::ImportImageFilter<double,2u>} {itkImportImageFilterD2} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<double, 2u> >} {itkImportImageFilterD2_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<double,3u>} {itkImportImageFilterD3} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<double, 3u> >} {itkImportImageFilterD3_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<float,2u>} {itkImportImageFilterF2} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<float, 2u> >} {itkImportImageFilterF2_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<float,3u>} {itkImportImageFilterF3} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<float, 3u> >} {itkImportImageFilterF3_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<unsigned char,2u>} {itkImportImageFilterUC2} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<unsigned char, 2u> >} {itkImportImageFilterUC2_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<unsigned char,3u>} {itkImportImageFilterUC3} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<unsigned char, 3u> >} {itkImportImageFilterUC3_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<long unsigned int,2u>} {itkImportImageFilterUL2} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<long unsigned int, 2u> >} {itkImportImageFilterUL2_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<long unsigned int,3u>} {itkImportImageFilterUL3} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<long unsigned int, 3u> >} {itkImportImageFilterUL3_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<short unsigned int,2u>} {itkImportImageFilterUS2} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<short unsigned int, 2u> >} {itkImportImageFilterUS2_Pointer} {itkImportImageFilter}
+{itk::ImportImageFilter<short unsigned int,3u>} {itkImportImageFilterUS3} {itkImportImageFilter}
+{itk::SmartPointer<itk::ImportImageFilter<short unsigned int, 3u> >} {itkImportImageFilterUS3_Pointer} {itkImportImageFilter}

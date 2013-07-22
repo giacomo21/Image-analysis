@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkCannySegmentationLevelSetImageFilterID3ID3D)
+DECLARE_REF_COUNT_CLASS(itkCannySegmentationLevelSetImageFilterIF3IF3F)
+DECLARE_REF_COUNT_CLASS(itkCannySegmentationLevelSetImageFilterID2ID2D)
+DECLARE_REF_COUNT_CLASS(itkCannySegmentationLevelSetImageFilterIF2IF2F)
+

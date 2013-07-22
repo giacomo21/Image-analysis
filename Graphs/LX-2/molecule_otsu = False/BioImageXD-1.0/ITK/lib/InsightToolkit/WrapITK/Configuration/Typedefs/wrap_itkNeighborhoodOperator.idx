@@ -1,0 +1,12 @@
+{itk::NeighborhoodOperator<bool,2u,itk::NeighborhoodAllocator<bool> >} {itkNeighborhoodOperatorB2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<bool,3u,itk::NeighborhoodAllocator<bool> >} {itkNeighborhoodOperatorB3} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<double,2u,itk::NeighborhoodAllocator<double> >} {itkNeighborhoodOperatorD2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<double,3u,itk::NeighborhoodAllocator<double> >} {itkNeighborhoodOperatorD3} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<float,2u,itk::NeighborhoodAllocator<float> >} {itkNeighborhoodOperatorF2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<float,3u,itk::NeighborhoodAllocator<float> >} {itkNeighborhoodOperatorF3} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<unsigned char,2u,itk::NeighborhoodAllocator<unsigned char> >} {itkNeighborhoodOperatorUC2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<unsigned char,3u,itk::NeighborhoodAllocator<unsigned char> >} {itkNeighborhoodOperatorUC3} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<long unsigned int,2u,itk::NeighborhoodAllocator<long unsigned int> >} {itkNeighborhoodOperatorUL2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<long unsigned int,3u,itk::NeighborhoodAllocator<long unsigned int> >} {itkNeighborhoodOperatorUL3} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<short unsigned int,2u,itk::NeighborhoodAllocator<short unsigned int> >} {itkNeighborhoodOperatorUS2} {itkNeighborhoodOperator}
+{itk::NeighborhoodOperator<short unsigned int,3u,itk::NeighborhoodAllocator<short unsigned int> >} {itkNeighborhoodOperatorUS3} {itkNeighborhoodOperator}

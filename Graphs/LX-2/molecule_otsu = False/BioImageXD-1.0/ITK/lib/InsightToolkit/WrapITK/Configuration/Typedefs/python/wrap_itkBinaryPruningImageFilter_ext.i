@@ -1,0 +1,8 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkBinaryPruningImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkBinaryPruningImageFilterIF2IF2)
+DECLARE_REF_COUNT_CLASS(itkBinaryPruningImageFilterIUS2IUS2)
+DECLARE_REF_COUNT_CLASS(itkBinaryPruningImageFilterIUL2IUL2)
+DECLARE_REF_COUNT_CLASS(itkBinaryPruningImageFilterIUC2IUC2)
+

@@ -1,0 +1,2 @@
+{itk::RGBPixel<unsigned char>} {itkRGBPixelUC} {itkRGBPixel}
+{itk::RGBPixel<short unsigned int>} {itkRGBPixelUS} {itkRGBPixel}

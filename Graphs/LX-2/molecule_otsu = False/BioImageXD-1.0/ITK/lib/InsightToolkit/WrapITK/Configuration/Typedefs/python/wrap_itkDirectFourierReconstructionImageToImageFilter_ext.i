@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkDirectFourierReconstructionImageToImageFilterDD)
+DECLARE_REF_COUNT_CLASS(itkDirectFourierReconstructionImageToImageFilterFF)
+

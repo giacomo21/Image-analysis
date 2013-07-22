@@ -1,0 +1,4 @@
+{itk::CenteredAffineTransform<double,2u>} {itkCenteredAffineTransformD2} {itkCenteredAffineTransform}
+{itk::SmartPointer<itk::CenteredAffineTransform<double, 2u> >} {itkCenteredAffineTransformD2_Pointer} {itkCenteredAffineTransform}
+{itk::CenteredAffineTransform<double,3u>} {itkCenteredAffineTransformD3} {itkCenteredAffineTransform}
+{itk::SmartPointer<itk::CenteredAffineTransform<double, 3u> >} {itkCenteredAffineTransformD3_Pointer} {itkCenteredAffineTransform}

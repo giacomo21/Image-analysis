@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkChangeLabelLabelMapFilterLM3)
+DECLARE_REF_COUNT_CLASS(itkChangeLabelLabelMapFilterLM2)
+

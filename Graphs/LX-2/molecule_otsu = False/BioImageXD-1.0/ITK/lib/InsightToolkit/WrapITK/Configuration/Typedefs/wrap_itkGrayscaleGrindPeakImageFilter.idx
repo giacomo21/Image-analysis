@@ -1,0 +1,20 @@
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkGrayscaleGrindPeakImageFilterID2ID2} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkGrayscaleGrindPeakImageFilterID2ID2_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkGrayscaleGrindPeakImageFilterID3ID3} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkGrayscaleGrindPeakImageFilterID3ID3_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkGrayscaleGrindPeakImageFilterIF2IF2} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkGrayscaleGrindPeakImageFilterIF2IF2_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkGrayscaleGrindPeakImageFilterIF3IF3} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkGrayscaleGrindPeakImageFilterIF3IF3_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkGrayscaleGrindPeakImageFilterIUC2IUC2} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkGrayscaleGrindPeakImageFilterIUC2IUC2_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkGrayscaleGrindPeakImageFilterIUC3IUC3} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkGrayscaleGrindPeakImageFilterIUC3IUC3_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkGrayscaleGrindPeakImageFilterIUL2IUL2} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkGrayscaleGrindPeakImageFilterIUL2IUL2_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkGrayscaleGrindPeakImageFilterIUL3IUL3} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkGrayscaleGrindPeakImageFilterIUL3IUL3_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkGrayscaleGrindPeakImageFilterIUS2IUS2} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkGrayscaleGrindPeakImageFilterIUS2IUS2_Pointer} {itkGrayscaleGrindPeakImageFilter}
+{itk::GrayscaleGrindPeakImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkGrayscaleGrindPeakImageFilterIUS3IUS3} {itkGrayscaleGrindPeakImageFilter}
+{itk::SmartPointer<itk::GrayscaleGrindPeakImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkGrayscaleGrindPeakImageFilterIUS3IUS3_Pointer} {itkGrayscaleGrindPeakImageFilter}

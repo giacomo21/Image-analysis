@@ -1,0 +1,8 @@
+{itk::CannyEdgeDetectionImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkCannyEdgeDetectionImageFilterID2ID2} {itkCannyEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::CannyEdgeDetectionImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkCannyEdgeDetectionImageFilterID2ID2_Pointer} {itkCannyEdgeDetectionImageFilter}
+{itk::CannyEdgeDetectionImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkCannyEdgeDetectionImageFilterID3ID3} {itkCannyEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::CannyEdgeDetectionImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkCannyEdgeDetectionImageFilterID3ID3_Pointer} {itkCannyEdgeDetectionImageFilter}
+{itk::CannyEdgeDetectionImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkCannyEdgeDetectionImageFilterIF2IF2} {itkCannyEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::CannyEdgeDetectionImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkCannyEdgeDetectionImageFilterIF2IF2_Pointer} {itkCannyEdgeDetectionImageFilter}
+{itk::CannyEdgeDetectionImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkCannyEdgeDetectionImageFilterIF3IF3} {itkCannyEdgeDetectionImageFilter}
+{itk::SmartPointer<itk::CannyEdgeDetectionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkCannyEdgeDetectionImageFilterIF3IF3_Pointer} {itkCannyEdgeDetectionImageFilter}

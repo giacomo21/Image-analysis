@@ -1,0 +1,8 @@
+{itk::NarrowBandImageFilterBase<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkNarrowBandImageFilterBaseID2ID2} {itkNarrowBandImageFilterBase}
+{itk::SmartPointer<itk::NarrowBandImageFilterBase<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkNarrowBandImageFilterBaseID2ID2_Pointer} {itkNarrowBandImageFilterBase}
+{itk::NarrowBandImageFilterBase<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkNarrowBandImageFilterBaseID3ID3} {itkNarrowBandImageFilterBase}
+{itk::SmartPointer<itk::NarrowBandImageFilterBase<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkNarrowBandImageFilterBaseID3ID3_Pointer} {itkNarrowBandImageFilterBase}
+{itk::NarrowBandImageFilterBase<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkNarrowBandImageFilterBaseIF2IF2} {itkNarrowBandImageFilterBase}
+{itk::SmartPointer<itk::NarrowBandImageFilterBase<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkNarrowBandImageFilterBaseIF2IF2_Pointer} {itkNarrowBandImageFilterBase}
+{itk::NarrowBandImageFilterBase<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkNarrowBandImageFilterBaseIF3IF3} {itkNarrowBandImageFilterBase}
+{itk::SmartPointer<itk::NarrowBandImageFilterBase<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkNarrowBandImageFilterBaseIF3IF3_Pointer} {itkNarrowBandImageFilterBase}

@@ -1,0 +1,5 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkBSplineDeformableTransformD33)
+DECLARE_REF_COUNT_CLASS(itkBSplineDeformableTransformD22)
+

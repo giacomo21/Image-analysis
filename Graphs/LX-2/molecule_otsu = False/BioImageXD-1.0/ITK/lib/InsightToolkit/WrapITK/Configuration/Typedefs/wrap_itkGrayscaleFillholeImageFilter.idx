@@ -1,0 +1,20 @@
+{itk::GrayscaleFillholeImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkGrayscaleFillholeImageFilterID2ID2} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkGrayscaleFillholeImageFilterID2ID2_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkGrayscaleFillholeImageFilterID3ID3} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkGrayscaleFillholeImageFilterID3ID3_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkGrayscaleFillholeImageFilterIF2IF2} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkGrayscaleFillholeImageFilterIF2IF2_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkGrayscaleFillholeImageFilterIF3IF3} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkGrayscaleFillholeImageFilterIF3IF3_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkGrayscaleFillholeImageFilterIUC2IUC2} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkGrayscaleFillholeImageFilterIUC2IUC2_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkGrayscaleFillholeImageFilterIUC3IUC3} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkGrayscaleFillholeImageFilterIUC3IUC3_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkGrayscaleFillholeImageFilterIUL2IUL2} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkGrayscaleFillholeImageFilterIUL2IUL2_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkGrayscaleFillholeImageFilterIUL3IUL3} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkGrayscaleFillholeImageFilterIUL3IUL3_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkGrayscaleFillholeImageFilterIUS2IUS2} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkGrayscaleFillholeImageFilterIUS2IUS2_Pointer} {itkGrayscaleFillholeImageFilter}
+{itk::GrayscaleFillholeImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkGrayscaleFillholeImageFilterIUS3IUS3} {itkGrayscaleFillholeImageFilter}
+{itk::SmartPointer<itk::GrayscaleFillholeImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkGrayscaleFillholeImageFilterIUS3IUS3_Pointer} {itkGrayscaleFillholeImageFilter}

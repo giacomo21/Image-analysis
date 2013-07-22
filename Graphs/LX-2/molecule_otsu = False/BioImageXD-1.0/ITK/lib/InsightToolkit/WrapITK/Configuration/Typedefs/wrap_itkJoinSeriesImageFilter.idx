@@ -1,0 +1,10 @@
+{itk::JoinSeriesImageFilter<itk::Image<double, 2u>,itk::Image<double, 3u> >} {itkJoinSeriesImageFilterID2ID3} {itkJoinSeriesImageFilter}
+{itk::SmartPointer<itk::JoinSeriesImageFilter<itk::Image<double, 2u>, itk::Image<double, 3u> > >} {itkJoinSeriesImageFilterID2ID3_Pointer} {itkJoinSeriesImageFilter}
+{itk::JoinSeriesImageFilter<itk::Image<float, 2u>,itk::Image<float, 3u> >} {itkJoinSeriesImageFilterIF2IF3} {itkJoinSeriesImageFilter}
+{itk::SmartPointer<itk::JoinSeriesImageFilter<itk::Image<float, 2u>, itk::Image<float, 3u> > >} {itkJoinSeriesImageFilterIF2IF3_Pointer} {itkJoinSeriesImageFilter}
+{itk::JoinSeriesImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 3u> >} {itkJoinSeriesImageFilterIUC2IUC3} {itkJoinSeriesImageFilter}
+{itk::SmartPointer<itk::JoinSeriesImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 3u> > >} {itkJoinSeriesImageFilterIUC2IUC3_Pointer} {itkJoinSeriesImageFilter}
+{itk::JoinSeriesImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 3u> >} {itkJoinSeriesImageFilterIUL2IUL3} {itkJoinSeriesImageFilter}
+{itk::SmartPointer<itk::JoinSeriesImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 3u> > >} {itkJoinSeriesImageFilterIUL2IUL3_Pointer} {itkJoinSeriesImageFilter}
+{itk::JoinSeriesImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 3u> >} {itkJoinSeriesImageFilterIUS2IUS3} {itkJoinSeriesImageFilter}
+{itk::SmartPointer<itk::JoinSeriesImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 3u> > >} {itkJoinSeriesImageFilterIUS2IUS3_Pointer} {itkJoinSeriesImageFilter}

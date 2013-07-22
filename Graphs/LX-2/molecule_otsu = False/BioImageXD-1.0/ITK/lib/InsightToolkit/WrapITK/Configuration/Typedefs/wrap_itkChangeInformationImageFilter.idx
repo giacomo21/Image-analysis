@@ -1,0 +1,20 @@
+{itk::ChangeInformationImageFilter<itk::Image<double, 2u> >} {itkChangeInformationImageFilterID2} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<double, 2u> > >} {itkChangeInformationImageFilterID2_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<double, 3u> >} {itkChangeInformationImageFilterID3} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<double, 3u> > >} {itkChangeInformationImageFilterID3_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<float, 2u> >} {itkChangeInformationImageFilterIF2} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<float, 2u> > >} {itkChangeInformationImageFilterIF2_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<float, 3u> >} {itkChangeInformationImageFilterIF3} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<float, 3u> > >} {itkChangeInformationImageFilterIF3_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<unsigned char, 2u> >} {itkChangeInformationImageFilterIUC2} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<unsigned char, 2u> > >} {itkChangeInformationImageFilterIUC2_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<unsigned char, 3u> >} {itkChangeInformationImageFilterIUC3} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<unsigned char, 3u> > >} {itkChangeInformationImageFilterIUC3_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<long unsigned int, 2u> >} {itkChangeInformationImageFilterIUL2} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<long unsigned int, 2u> > >} {itkChangeInformationImageFilterIUL2_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<long unsigned int, 3u> >} {itkChangeInformationImageFilterIUL3} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<long unsigned int, 3u> > >} {itkChangeInformationImageFilterIUL3_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<short unsigned int, 2u> >} {itkChangeInformationImageFilterIUS2} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<short unsigned int, 2u> > >} {itkChangeInformationImageFilterIUS2_Pointer} {itkChangeInformationImageFilter}
+{itk::ChangeInformationImageFilter<itk::Image<short unsigned int, 3u> >} {itkChangeInformationImageFilterIUS3} {itkChangeInformationImageFilter}
+{itk::SmartPointer<itk::ChangeInformationImageFilter<itk::Image<short unsigned int, 3u> > >} {itkChangeInformationImageFilterIUS3_Pointer} {itkChangeInformationImageFilter}

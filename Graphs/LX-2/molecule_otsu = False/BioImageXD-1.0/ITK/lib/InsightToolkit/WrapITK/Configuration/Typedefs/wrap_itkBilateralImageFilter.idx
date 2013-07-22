@@ -1,0 +1,20 @@
+{itk::BilateralImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkBilateralImageFilterID2ID2} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkBilateralImageFilterID2ID2_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkBilateralImageFilterID3ID3} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkBilateralImageFilterID3ID3_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkBilateralImageFilterIF2IF2} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkBilateralImageFilterIF2IF2_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkBilateralImageFilterIF3IF3} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkBilateralImageFilterIF3IF3_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkBilateralImageFilterIUC2IUC2} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkBilateralImageFilterIUC2IUC2_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkBilateralImageFilterIUC3IUC3} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkBilateralImageFilterIUC3IUC3_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkBilateralImageFilterIUL2IUL2} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkBilateralImageFilterIUL2IUL2_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkBilateralImageFilterIUL3IUL3} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkBilateralImageFilterIUL3IUL3_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkBilateralImageFilterIUS2IUS2} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkBilateralImageFilterIUS2IUS2_Pointer} {itkBilateralImageFilter}
+{itk::BilateralImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkBilateralImageFilterIUS3IUS3} {itkBilateralImageFilter}
+{itk::SmartPointer<itk::BilateralImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkBilateralImageFilterIUS3IUS3_Pointer} {itkBilateralImageFilter}

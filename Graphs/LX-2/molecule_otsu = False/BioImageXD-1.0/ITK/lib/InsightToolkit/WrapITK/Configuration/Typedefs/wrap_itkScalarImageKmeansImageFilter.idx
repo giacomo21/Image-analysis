@@ -1,0 +1,60 @@
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>,itk::Image<unsigned char, 2u> >} {itkScalarImageKmeansImageFilterID2IUC2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>, itk::Image<unsigned char, 2u> > >} {itkScalarImageKmeansImageFilterID2IUC2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>,itk::Image<long unsigned int, 2u> >} {itkScalarImageKmeansImageFilterID2IUL2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>, itk::Image<long unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterID2IUL2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>,itk::Image<short unsigned int, 2u> >} {itkScalarImageKmeansImageFilterID2IUS2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 2u>, itk::Image<short unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterID2IUS2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>,itk::Image<unsigned char, 3u> >} {itkScalarImageKmeansImageFilterID3IUC3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>, itk::Image<unsigned char, 3u> > >} {itkScalarImageKmeansImageFilterID3IUC3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>,itk::Image<long unsigned int, 3u> >} {itkScalarImageKmeansImageFilterID3IUL3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>, itk::Image<long unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterID3IUL3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>,itk::Image<short unsigned int, 3u> >} {itkScalarImageKmeansImageFilterID3IUS3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<double, 3u>, itk::Image<short unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterID3IUS3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>,itk::Image<unsigned char, 2u> >} {itkScalarImageKmeansImageFilterIF2IUC2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>, itk::Image<unsigned char, 2u> > >} {itkScalarImageKmeansImageFilterIF2IUC2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>,itk::Image<long unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIF2IUL2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>, itk::Image<long unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIF2IUL2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>,itk::Image<short unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIF2IUS2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 2u>, itk::Image<short unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIF2IUS2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>,itk::Image<unsigned char, 3u> >} {itkScalarImageKmeansImageFilterIF3IUC3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u> > >} {itkScalarImageKmeansImageFilterIF3IUC3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>,itk::Image<long unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIF3IUL3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>, itk::Image<long unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIF3IUL3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>,itk::Image<short unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIF3IUS3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<float, 3u>, itk::Image<short unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIF3IUS3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkScalarImageKmeansImageFilterIUC2IUC2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkScalarImageKmeansImageFilterIUC2IUC2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>,itk::Image<long unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUC2IUL2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>, itk::Image<long unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUC2IUL2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>,itk::Image<short unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUC2IUS2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 2u>, itk::Image<short unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUC2IUS2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkScalarImageKmeansImageFilterIUC3IUC3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkScalarImageKmeansImageFilterIUC3IUC3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>,itk::Image<long unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUC3IUL3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>, itk::Image<long unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUC3IUL3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>,itk::Image<short unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUC3IUS3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<unsigned char, 3u>, itk::Image<short unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUC3IUS3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkScalarImageKmeansImageFilterIUL2IUC2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkScalarImageKmeansImageFilterIUL2IUC2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUL2IUL2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUL2IUL2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUL2IUS2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUL2IUS2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkScalarImageKmeansImageFilterIUL3IUC3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkScalarImageKmeansImageFilterIUL3IUC3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUL3IUL3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUL3IUL3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUL3IUS3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUL3IUS3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<unsigned char, 2u> >} {itkScalarImageKmeansImageFilterIUS2IUC2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<unsigned char, 2u> > >} {itkScalarImageKmeansImageFilterIUS2IUC2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUS2IUL2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUS2IUL2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkScalarImageKmeansImageFilterIUS2IUS2} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkScalarImageKmeansImageFilterIUS2IUS2_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<unsigned char, 3u> >} {itkScalarImageKmeansImageFilterIUS3IUC3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<unsigned char, 3u> > >} {itkScalarImageKmeansImageFilterIUS3IUC3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUS3IUL3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUS3IUL3_Pointer} {itkScalarImageKmeansImageFilter}
+{itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkScalarImageKmeansImageFilterIUS3IUS3} {itkScalarImageKmeansImageFilter}
+{itk::SmartPointer<itk::ScalarImageKmeansImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkScalarImageKmeansImageFilterIUS3IUS3_Pointer} {itkScalarImageKmeansImageFilter}

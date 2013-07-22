@@ -1,0 +1,3 @@
+{itk::Size<1u>} {itkSize1} {itkSize}
+{itk::Size<2u>} {itkSize2} {itkSize}
+{itk::Size<3u>} {itkSize3} {itkSize}

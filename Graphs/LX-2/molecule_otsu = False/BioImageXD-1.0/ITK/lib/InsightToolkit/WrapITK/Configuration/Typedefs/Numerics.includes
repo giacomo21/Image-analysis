@@ -1,0 +1,595 @@
+#include "VXLNumerics.includes"
+#include "Base.includes"
+#include "VXLNumerics.includes"
+
+
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCostFunction.h"
+#include "itkSingleValuedCostFunction.h"
+#include "itkSingleValuedVnlCostFunctionAdaptor.h"
+#include "itkMultipleValuedCostFunction.h"
+#include "itkMultipleValuedVnlCostFunctionAdaptor.h"
+#include "itkRandomVariateGeneratorBase.h"
+#include "itkCumulativeGaussianCostFunction.h"
+#include "itkShapePriorMAPCostFunctionBase.h"
+#include "itkShapePriorMAPCostFunction.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSample.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkSimpleDataObjectDecorator.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkListSample.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkMembershipFunctionBase.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkOptimizer.h"
+#include "itkNonLinearOptimizer.h"
+#include "itkSingleValuedNonLinearOptimizer.h"
+#include "itkSingleValuedNonLinearVnlOptimizer.h"
+#include "itkMultipleValuedNonLinearOptimizer.h"
+#include "itkMultipleValuedNonLinearVnlOptimizer.h"
+#include "itkConjugateGradientOptimizer.h"
+#include "itkGradientDescentOptimizer.h"
+#include "itkLBFGSOptimizer.h"
+#include "itkLevenbergMarquardtOptimizer.h"
+#include "itkOnePlusOneEvolutionaryOptimizer.h"
+#include "itkQuaternionRigidTransformGradientDescentOptimizer.h"
+#include "itkRegularStepGradientDescentBaseOptimizer.h"
+#include "itkRegularStepGradientDescentOptimizer.h"
+#include "itkVersorTransformOptimizer.h"
+#include "itkAmoebaOptimizer.h"
+#include "itkCumulativeGaussianOptimizer.h"
+#include "itkExhaustiveOptimizer.h"
+#include "itkFRPROptimizer.h"
+#include "itkLBFGSBOptimizer.h"
+#include "itkPowellOptimizer.h"
+#include "itkSPSAOptimizer.h"
+#include "itkVersorRigid3DTransformOptimizer.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkDistanceMetric.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkEuclideanDistanceMetric.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkHistogramToTextureFeaturesFilter.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkListSample.h"
+#include "itkKdTree.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkCommand.h"
+#include "itkStatisticsLabelObject.h"
+#include "itkOffset.h"
+#include "itkVector.h"
+#include "itkCovariantVector.h"
+#include "itkContinuousIndex.h"
+#include "itkArray.h"
+#include "itkFixedArray.h"
+#include "itkRGBPixel.h"
+#include "itkRGBAPixel.h"
+#include "itkSymmetricSecondRankTensor.h"
+#include "itkImage.h"
+#include "itkVectorImage.h"
+#include "itkVariableLengthVector.h"
+#include "itkPoint.h"
+#include "itkLevelSetNode.h"
+#include "itkFlatStructuringElement.h"
+#include "itkSpatialObject.h"
+#include "itkHistogram.h"
+#include "itkLabelMap.h"
+#include "itkScalarImageToTextureFeaturesFilter.h"
+
+typedef itk::CostFunction itkCostFunction;
+typedef itk::CostFunction::Pointer itkCostFunction_Pointer;
+typedef itk::SingleValuedCostFunction itkSingleValuedCostFunction;
+typedef itk::SingleValuedCostFunction::Pointer itkSingleValuedCostFunction_Pointer;
+typedef itk::SingleValuedVnlCostFunctionAdaptor itkSingleValuedVnlCostFunctionAdaptor;
+typedef itk::MultipleValuedCostFunction itkMultipleValuedCostFunction;
+typedef itk::MultipleValuedCostFunction::Pointer itkMultipleValuedCostFunction_Pointer;
+typedef itk::MultipleValuedVnlCostFunctionAdaptor itkMultipleValuedVnlCostFunctionAdaptor;
+typedef itk::Statistics::RandomVariateGeneratorBase itkRandomVariateGeneratorBase;
+typedef itk::Statistics::RandomVariateGeneratorBase::Pointer itkRandomVariateGeneratorBase_Pointer;
+typedef itk::MultipleValuedCostFunction itkMultipleValuedCostFunction;
+typedef itk::MultipleValuedCostFunction::Pointer itkMultipleValuedCostFunction_Pointer;
+typedef itk::CumulativeGaussianCostFunction itkCumulativeGaussianCostFunction;
+typedef itk::CumulativeGaussianCostFunction::Pointer itkCumulativeGaussianCostFunction_Pointer;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< float,2 >,float > itkShapePriorMAPCostFunctionBaseIF2F;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< float,2 >,float >::Pointer itkShapePriorMAPCostFunctionBaseIF2F_Pointer;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< double,2 >,double > itkShapePriorMAPCostFunctionBaseID2D;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< double,2 >,double >::Pointer itkShapePriorMAPCostFunctionBaseID2D_Pointer;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< float,3 >,float > itkShapePriorMAPCostFunctionBaseIF3F;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< float,3 >,float >::Pointer itkShapePriorMAPCostFunctionBaseIF3F_Pointer;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< double,3 >,double > itkShapePriorMAPCostFunctionBaseID3D;
+typedef itk::ShapePriorMAPCostFunctionBase< itk::Image< double,3 >,double >::Pointer itkShapePriorMAPCostFunctionBaseID3D_Pointer;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< float,2 >,float > itkShapePriorMAPCostFunctionIF2F;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< float,2 >,float >::Pointer itkShapePriorMAPCostFunctionIF2F_Pointer;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< double,2 >,double > itkShapePriorMAPCostFunctionID2D;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< double,2 >,double >::Pointer itkShapePriorMAPCostFunctionID2D_Pointer;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< float,3 >,float > itkShapePriorMAPCostFunctionIF3F;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< float,3 >,float >::Pointer itkShapePriorMAPCostFunctionIF3F_Pointer;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< double,3 >,double > itkShapePriorMAPCostFunctionID3D;
+typedef itk::ShapePriorMAPCostFunction< itk::Image< double,3 >,double >::Pointer itkShapePriorMAPCostFunctionID3D_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< double,1 > > itkSampleFAD1;
+typedef itk::Statistics::Sample< itk::FixedArray< double,1 > >::Pointer itkSampleFAD1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< float,1 > > itkSampleFAF1;
+typedef itk::Statistics::Sample< itk::FixedArray< float,1 > >::Pointer itkSampleFAF1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,1 > > itkSampleFAUL1;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,1 > >::Pointer itkSampleFAUL1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,1 > > itkSampleFAUS1;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,1 > >::Pointer itkSampleFAUS1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,1 > > itkSampleFAUC1;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,1 > >::Pointer itkSampleFAUC1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,1 > > itkSampleFASL1;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,1 > >::Pointer itkSampleFASL1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,1 > > itkSampleFASS1;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,1 > >::Pointer itkSampleFASS1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,1 > > itkSampleFASC1;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,1 > >::Pointer itkSampleFASC1_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< double,2 > > itkSampleFAD2;
+typedef itk::Statistics::Sample< itk::FixedArray< double,2 > >::Pointer itkSampleFAD2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< float,2 > > itkSampleFAF2;
+typedef itk::Statistics::Sample< itk::FixedArray< float,2 > >::Pointer itkSampleFAF2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,2 > > itkSampleFAUL2;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,2 > >::Pointer itkSampleFAUL2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,2 > > itkSampleFAUS2;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,2 > >::Pointer itkSampleFAUS2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,2 > > itkSampleFAUC2;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,2 > >::Pointer itkSampleFAUC2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,2 > > itkSampleFASL2;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,2 > >::Pointer itkSampleFASL2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,2 > > itkSampleFASS2;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,2 > >::Pointer itkSampleFASS2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,2 > > itkSampleFASC2;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,2 > >::Pointer itkSampleFASC2_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< double,3 > > itkSampleFAD3;
+typedef itk::Statistics::Sample< itk::FixedArray< double,3 > >::Pointer itkSampleFAD3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< float,3 > > itkSampleFAF3;
+typedef itk::Statistics::Sample< itk::FixedArray< float,3 > >::Pointer itkSampleFAF3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,3 > > itkSampleFAUL3;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned long,3 > >::Pointer itkSampleFAUL3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,3 > > itkSampleFAUS3;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned short,3 > >::Pointer itkSampleFAUS3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,3 > > itkSampleFAUC3;
+typedef itk::Statistics::Sample< itk::FixedArray< unsigned char,3 > >::Pointer itkSampleFAUC3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,3 > > itkSampleFASL3;
+typedef itk::Statistics::Sample< itk::FixedArray< signed long,3 > >::Pointer itkSampleFASL3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,3 > > itkSampleFASS3;
+typedef itk::Statistics::Sample< itk::FixedArray< signed short,3 > >::Pointer itkSampleFASS3_Pointer;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,3 > > itkSampleFASC3;
+typedef itk::Statistics::Sample< itk::FixedArray< signed char,3 > >::Pointer itkSampleFASC3_Pointer;
+typedef itk::Statistics::Sample< itk::Vector< float,2 > > itkSampleVF2;
+typedef itk::Statistics::Sample< itk::Vector< float,2 > >::Pointer itkSampleVF2_Pointer;
+typedef itk::Statistics::Sample< itk::Vector< float,3 > > itkSampleVF3;
+typedef itk::Statistics::Sample< itk::Vector< float,3 > >::Pointer itkSampleVF3_Pointer;
+typedef itk::Statistics::Sample< itk::Array< float > > itkSampleAF;
+typedef itk::Statistics::Sample< itk::Array< float > >::Pointer itkSampleAF_Pointer;
+typedef itk::Statistics::Sample< itk::Array< double > > itkSampleAD;
+typedef itk::Statistics::Sample< itk::Array< double > >::Pointer itkSampleAD_Pointer;
+typedef itk::Statistics::Histogram< float > itkHistogramF;
+typedef itk::Statistics::Histogram< float >::Pointer itkHistogramF_Pointer;
+typedef itk::Statistics::Histogram< double > itkHistogramD;
+typedef itk::Statistics::Histogram< double >::Pointer itkHistogramD_Pointer;
+typedef itk::SimpleDataObjectDecorator< itk::Statistics::Histogram< float > * > itkSimpleDataObjectDecoratorHF;
+typedef itk::SimpleDataObjectDecorator< itk::Statistics::Histogram< float > * >::Pointer itkSimpleDataObjectDecoratorHF_Pointer;
+typedef itk::SimpleDataObjectDecorator< itk::Statistics::Histogram< double > * > itkSimpleDataObjectDecoratorHD;
+typedef itk::SimpleDataObjectDecorator< itk::Statistics::Histogram< double > * >::Pointer itkSimpleDataObjectDecoratorHD_Pointer;
+typedef itk::Statistics::ListSample< itk::Vector< float,2 > > itkListSampleVF2;
+typedef itk::Statistics::ListSample< itk::Vector< float,2 > >::Pointer itkListSampleVF2_Pointer;
+typedef itk::Statistics::ListSample< itk::Vector< float,3 > > itkListSampleVF3;
+typedef itk::Statistics::ListSample< itk::Vector< float,3 > >::Pointer itkListSampleVF3_Pointer;
+typedef itk::Statistics::MembershipFunctionBase< itk::Vector< float,2 > > itkMembershipFunctionBaseVF2;
+typedef itk::Statistics::MembershipFunctionBase< itk::Vector< float,2 > >::Pointer itkMembershipFunctionBaseVF2_Pointer;
+typedef itk::Statistics::MembershipFunctionBase< itk::Vector< float,3 > > itkMembershipFunctionBaseVF3;
+typedef itk::Statistics::MembershipFunctionBase< itk::Vector< float,3 > >::Pointer itkMembershipFunctionBaseVF3_Pointer;
+typedef itk::Optimizer itkOptimizer;
+typedef itk::Optimizer::Pointer itkOptimizer_Pointer;
+typedef itk::NonLinearOptimizer itkNonLinearOptimizer;
+typedef itk::NonLinearOptimizer::Pointer itkNonLinearOptimizer_Pointer;
+typedef itk::SingleValuedNonLinearOptimizer itkSingleValuedNonLinearOptimizer;
+typedef itk::SingleValuedNonLinearOptimizer::Pointer itkSingleValuedNonLinearOptimizer_Pointer;
+typedef itk::SingleValuedNonLinearVnlOptimizer itkSingleValuedNonLinearVnlOptimizer;
+typedef itk::SingleValuedNonLinearVnlOptimizer::Pointer itkSingleValuedNonLinearVnlOptimizer_Pointer;
+typedef itk::MultipleValuedNonLinearOptimizer itkMultipleValuedNonLinearOptimizer;
+typedef itk::MultipleValuedNonLinearOptimizer::Pointer itkMultipleValuedNonLinearOptimizer_Pointer;
+typedef itk::MultipleValuedNonLinearVnlOptimizer itkMultipleValuedNonLinearVnlOptimizer;
+typedef itk::MultipleValuedNonLinearVnlOptimizer::Pointer itkMultipleValuedNonLinearVnlOptimizer_Pointer;
+typedef itk::ConjugateGradientOptimizer itkConjugateGradientOptimizer;
+typedef itk::ConjugateGradientOptimizer::Pointer itkConjugateGradientOptimizer_Pointer;
+typedef itk::GradientDescentOptimizer itkGradientDescentOptimizer;
+typedef itk::GradientDescentOptimizer::Pointer itkGradientDescentOptimizer_Pointer;
+typedef itk::LBFGSOptimizer itkLBFGSOptimizer;
+typedef itk::LBFGSOptimizer::Pointer itkLBFGSOptimizer_Pointer;
+typedef itk::LevenbergMarquardtOptimizer itkLevenbergMarquardtOptimizer;
+typedef itk::LevenbergMarquardtOptimizer::Pointer itkLevenbergMarquardtOptimizer_Pointer;
+typedef itk::OnePlusOneEvolutionaryOptimizer itkOnePlusOneEvolutionaryOptimizer;
+typedef itk::OnePlusOneEvolutionaryOptimizer::Pointer itkOnePlusOneEvolutionaryOptimizer_Pointer;
+typedef itk::QuaternionRigidTransformGradientDescentOptimizer itkQuaternionRigidTransformGradientDescentOptimizer;
+typedef itk::QuaternionRigidTransformGradientDescentOptimizer::Pointer itkQuaternionRigidTransformGradientDescentOptimizer_Pointer;
+typedef itk::RegularStepGradientDescentBaseOptimizer itkRegularStepGradientDescentBaseOptimizer;
+typedef itk::RegularStepGradientDescentBaseOptimizer::Pointer itkRegularStepGradientDescentBaseOptimizer_Pointer;
+typedef itk::RegularStepGradientDescentOptimizer itkRegularStepGradientDescentOptimizer;
+typedef itk::RegularStepGradientDescentOptimizer::Pointer itkRegularStepGradientDescentOptimizer_Pointer;
+typedef itk::VersorTransformOptimizer itkVersorTransformOptimizer;
+typedef itk::VersorTransformOptimizer::Pointer itkVersorTransformOptimizer_Pointer;
+typedef itk::AmoebaOptimizer itkAmoebaOptimizer;
+typedef itk::AmoebaOptimizer::Pointer itkAmoebaOptimizer_Pointer;
+typedef itk::CumulativeGaussianOptimizer itkCumulativeGaussianOptimizer;
+typedef itk::CumulativeGaussianOptimizer::Pointer itkCumulativeGaussianOptimizer_Pointer;
+typedef itk::ExhaustiveOptimizer itkExhaustiveOptimizer;
+typedef itk::ExhaustiveOptimizer::Pointer itkExhaustiveOptimizer_Pointer;
+typedef itk::FRPROptimizer itkFRPROptimizer;
+typedef itk::FRPROptimizer::Pointer itkFRPROptimizer_Pointer;
+typedef itk::LBFGSBOptimizer itkLBFGSBOptimizer;
+typedef itk::LBFGSBOptimizer::Pointer itkLBFGSBOptimizer_Pointer;
+typedef itk::PowellOptimizer itkPowellOptimizer;
+typedef itk::PowellOptimizer::Pointer itkPowellOptimizer_Pointer;
+typedef itk::SPSAOptimizer itkSPSAOptimizer;
+typedef itk::SPSAOptimizer::Pointer itkSPSAOptimizer_Pointer;
+typedef itk::VersorRigid3DTransformOptimizer itkVersorRigid3DTransformOptimizer;
+typedef itk::VersorRigid3DTransformOptimizer::Pointer itkVersorRigid3DTransformOptimizer_Pointer;
+typedef itk::Statistics::DistanceMetric< itk::Vector< float,2 > > itkDistanceMetricVF2;
+typedef itk::Statistics::DistanceMetric< itk::Vector< float,2 > >::Pointer itkDistanceMetricVF2_Pointer;
+typedef itk::Statistics::DistanceMetric< itk::Vector< float,3 > > itkDistanceMetricVF3;
+typedef itk::Statistics::DistanceMetric< itk::Vector< float,3 > >::Pointer itkDistanceMetricVF3_Pointer;
+typedef itk::Statistics::EuclideanDistanceMetric< itk::Vector< float,2 > > itkEuclideanDistanceMetricVF2;
+typedef itk::Statistics::EuclideanDistanceMetric< itk::Vector< float,2 > >::Pointer itkEuclideanDistanceMetricVF2_Pointer;
+typedef itk::Statistics::EuclideanDistanceMetric< itk::Vector< float,3 > > itkEuclideanDistanceMetricVF3;
+typedef itk::Statistics::EuclideanDistanceMetric< itk::Vector< float,3 > >::Pointer itkEuclideanDistanceMetricVF3_Pointer;
+typedef itk::Statistics::HistogramToTextureFeaturesFilter< itk::Statistics::Histogram< double > > itkHistogramToTextureFeaturesFilterHD;
+typedef itk::Statistics::HistogramToTextureFeaturesFilter< itk::Statistics::Histogram< double > >::Pointer itkHistogramToTextureFeaturesFilterHD_Pointer;
+typedef itk::Statistics::HistogramToTextureFeaturesFilter< itk::Statistics::Histogram< float > > itkHistogramToTextureFeaturesFilterHF;
+typedef itk::Statistics::HistogramToTextureFeaturesFilter< itk::Statistics::Histogram< float > >::Pointer itkHistogramToTextureFeaturesFilterHF_Pointer;
+typedef itk::Statistics::KdTree< itk::Statistics::ListSample< itk::Vector< float,2 > > > itkKdTreeLSVF2;
+typedef itk::Statistics::KdTree< itk::Statistics::ListSample< itk::Vector< float,2 > > >::Pointer itkKdTreeLSVF2_Pointer;
+typedef itk::Statistics::KdTree< itk::Statistics::ListSample< itk::Vector< float,3 > > > itkKdTreeLSVF3;
+typedef itk::Statistics::KdTree< itk::Statistics::ListSample< itk::Vector< float,3 > > >::Pointer itkKdTreeLSVF3_Pointer;
+typedef itk::Statistics::KdTreeNode< itk::Statistics::ListSample< itk::Vector< float,2 > > > itkKdTreeNodeLSVF2;
+typedef itk::Statistics::KdTreeNode< itk::Statistics::ListSample< itk::Vector< float,3 > > > itkKdTreeNodeLSVF3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned char,2 > > itkScalarImageToTextureFeaturesFilterIUC2;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned char,2 > >::Pointer itkScalarImageToTextureFeaturesFilterIUC2_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned char,3 > > itkScalarImageToTextureFeaturesFilterIUC3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned char,3 > >::Pointer itkScalarImageToTextureFeaturesFilterIUC3_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned long,2 > > itkScalarImageToTextureFeaturesFilterIUL2;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned long,2 > >::Pointer itkScalarImageToTextureFeaturesFilterIUL2_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned long,3 > > itkScalarImageToTextureFeaturesFilterIUL3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned long,3 > >::Pointer itkScalarImageToTextureFeaturesFilterIUL3_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned short,2 > > itkScalarImageToTextureFeaturesFilterIUS2;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned short,2 > >::Pointer itkScalarImageToTextureFeaturesFilterIUS2_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned short,3 > > itkScalarImageToTextureFeaturesFilterIUS3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< unsigned short,3 > >::Pointer itkScalarImageToTextureFeaturesFilterIUS3_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< float,2 > > itkScalarImageToTextureFeaturesFilterIF2;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< float,2 > >::Pointer itkScalarImageToTextureFeaturesFilterIF2_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< float,3 > > itkScalarImageToTextureFeaturesFilterIF3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< float,3 > >::Pointer itkScalarImageToTextureFeaturesFilterIF3_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< double,2 > > itkScalarImageToTextureFeaturesFilterID2;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< double,2 > >::Pointer itkScalarImageToTextureFeaturesFilterID2_Pointer;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< double,3 > > itkScalarImageToTextureFeaturesFilterID3;
+typedef itk::Statistics::ScalarImageToTextureFeaturesFilter< itk::Image< double,3 > >::Pointer itkScalarImageToTextureFeaturesFilterID3_Pointer;
+

@@ -1,0 +1,4 @@
+{itk::LineSpatialObject<2u>} {itkLineSpatialObject2} {itkLineSpatialObject}
+{itk::SmartPointer<itk::LineSpatialObject<2u> >} {itkLineSpatialObject2_Pointer} {itkLineSpatialObject}
+{itk::LineSpatialObject<3u>} {itkLineSpatialObject3} {itkLineSpatialObject}
+{itk::SmartPointer<itk::LineSpatialObject<3u> >} {itkLineSpatialObject3_Pointer} {itkLineSpatialObject}

@@ -1,0 +1,4 @@
+{itk::FFTRealToComplexConjugateImageFilter<float,2u>} {itkFFTRealToComplexConjugateImageFilterF2} {itkFFTRealToComplexConjugateImageFilter}
+{itk::SmartPointer<itk::FFTRealToComplexConjugateImageFilter<float, 2u> >} {itkFFTRealToComplexConjugateImageFilterF2_Pointer} {itkFFTRealToComplexConjugateImageFilter}
+{itk::FFTRealToComplexConjugateImageFilter<float,3u>} {itkFFTRealToComplexConjugateImageFilterF3} {itkFFTRealToComplexConjugateImageFilter}
+{itk::SmartPointer<itk::FFTRealToComplexConjugateImageFilter<float, 3u> >} {itkFFTRealToComplexConjugateImageFilterF3_Pointer} {itkFFTRealToComplexConjugateImageFilter}

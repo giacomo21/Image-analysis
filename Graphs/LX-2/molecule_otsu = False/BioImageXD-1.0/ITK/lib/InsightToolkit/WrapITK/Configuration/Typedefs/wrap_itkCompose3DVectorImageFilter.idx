@@ -1,0 +1,4 @@
+{itk::Compose3DVectorImageFilter<itk::Image<float, 3u>,itk::Image<itk::Vector<float, 3u>, 3u> >} {itkCompose3DVectorImageFilterIF3IVF33} {itkCompose3DVectorImageFilter}
+{itk::SmartPointer<itk::Compose3DVectorImageFilter<itk::Image<float, 3u>, itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkCompose3DVectorImageFilterIF3IVF33_Pointer} {itkCompose3DVectorImageFilter}
+{itk::TernaryFunctorImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Image<float, 3u>,itk::Image<itk::Vector<float, 3u>, 3u>,itk::Function::Compose3DVector<float> >} {itkCompose3DVectorImageFilterIF3IVF33_Superclass} {itkCompose3DVectorImageFilter}
+{itk::SmartPointer<itk::TernaryFunctorImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Image<itk::Vector<float, 3u>, 3u>, itk::Function::Compose3DVector<float> > >} {itkCompose3DVectorImageFilterIF3IVF33_Superclass_Pointer} {itkCompose3DVectorImageFilter}

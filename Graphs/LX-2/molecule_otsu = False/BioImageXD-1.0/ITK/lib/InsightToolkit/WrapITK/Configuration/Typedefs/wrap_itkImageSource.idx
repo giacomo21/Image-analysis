@@ -1,0 +1,72 @@
+{itk::ImageSource<itk::Image<std::complex<float>, 2u> >} {itkImageSourceICF2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<std::complex<float>, 2u> > >} {itkImageSourceICF2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<std::complex<float>, 3u> >} {itkImageSourceICF3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<std::complex<float>, 3u> > >} {itkImageSourceICF3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::CovariantVector<float, 2u>, 2u> >} {itkImageSourceICVF22} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::CovariantVector<float, 2u>, 2u> > >} {itkImageSourceICVF22_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::CovariantVector<float, 3u>, 3u> >} {itkImageSourceICVF33} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::CovariantVector<float, 3u>, 3u> > >} {itkImageSourceICVF33_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<double, 2u> >} {itkImageSourceID2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<double, 2u> > >} {itkImageSourceID2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<double, 3u> >} {itkImageSourceID3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<double, 3u> > >} {itkImageSourceID3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<float, 2u> >} {itkImageSourceIF2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<float, 2u> > >} {itkImageSourceIF2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<float, 3u> >} {itkImageSourceIF3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<float, 3u> > >} {itkImageSourceIF3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBAPixel<unsigned char>, 2u> >} {itkImageSourceIRGBAUC2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBAPixel<unsigned char>, 2u> > >} {itkImageSourceIRGBAUC2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBAPixel<unsigned char>, 3u> >} {itkImageSourceIRGBAUC3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBAPixel<unsigned char>, 3u> > >} {itkImageSourceIRGBAUC3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> >} {itkImageSourceIRGBAUS2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBAPixel<short unsigned int>, 2u> > >} {itkImageSourceIRGBAUS2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> >} {itkImageSourceIRGBAUS3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBAPixel<short unsigned int>, 3u> > >} {itkImageSourceIRGBAUS3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBPixel<unsigned char>, 2u> >} {itkImageSourceIRGBUC2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBPixel<unsigned char>, 2u> > >} {itkImageSourceIRGBUC2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBPixel<unsigned char>, 3u> >} {itkImageSourceIRGBUC3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBPixel<unsigned char>, 3u> > >} {itkImageSourceIRGBUC3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBPixel<short unsigned int>, 2u> >} {itkImageSourceIRGBUS2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBPixel<short unsigned int>, 2u> > >} {itkImageSourceIRGBUS2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::RGBPixel<short unsigned int>, 3u> >} {itkImageSourceIRGBUS3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::RGBPixel<short unsigned int>, 3u> > >} {itkImageSourceIRGBUS3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::SymmetricSecondRankTensor<double, 2u>, 2u> >} {itkImageSourceISSRTD22} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::SymmetricSecondRankTensor<double, 2u>, 2u> > >} {itkImageSourceISSRTD22_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::SymmetricSecondRankTensor<double, 3u>, 3u> >} {itkImageSourceISSRTD33} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::SymmetricSecondRankTensor<double, 3u>, 3u> > >} {itkImageSourceISSRTD33_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<unsigned char, 2u> >} {itkImageSourceIUC2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<unsigned char, 2u> > >} {itkImageSourceIUC2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<unsigned char, 3u> >} {itkImageSourceIUC3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<unsigned char, 3u> > >} {itkImageSourceIUC3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<long unsigned int, 2u> >} {itkImageSourceIUL2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<long unsigned int, 2u> > >} {itkImageSourceIUL2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<long unsigned int, 3u> >} {itkImageSourceIUL3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<long unsigned int, 3u> > >} {itkImageSourceIUL3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<short unsigned int, 2u> >} {itkImageSourceIUS2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<short unsigned int, 2u> > >} {itkImageSourceIUS2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<short unsigned int, 3u> >} {itkImageSourceIUS3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<short unsigned int, 3u> > >} {itkImageSourceIUS3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::Vector<float, 2u>, 2u> >} {itkImageSourceIVF22} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::Vector<float, 2u>, 2u> > >} {itkImageSourceIVF22_Pointer} {itkImageSource}
+{itk::ImageSource<itk::Image<itk::Vector<float, 3u>, 3u> >} {itkImageSourceIVF33} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::Image<itk::Vector<float, 3u>, 3u> > >} {itkImageSourceIVF33_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<double, 2u> >} {itkImageSourceVID2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<double, 2u> > >} {itkImageSourceVID2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<double, 3u> >} {itkImageSourceVID3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<double, 3u> > >} {itkImageSourceVID3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<float, 2u> >} {itkImageSourceVIF2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<float, 2u> > >} {itkImageSourceVIF2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<float, 3u> >} {itkImageSourceVIF3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<float, 3u> > >} {itkImageSourceVIF3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<unsigned char, 2u> >} {itkImageSourceVIUC2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<unsigned char, 2u> > >} {itkImageSourceVIUC2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<unsigned char, 3u> >} {itkImageSourceVIUC3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<unsigned char, 3u> > >} {itkImageSourceVIUC3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<long unsigned int, 2u> >} {itkImageSourceVIUL2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<long unsigned int, 2u> > >} {itkImageSourceVIUL2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<long unsigned int, 3u> >} {itkImageSourceVIUL3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<long unsigned int, 3u> > >} {itkImageSourceVIUL3_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<short unsigned int, 2u> >} {itkImageSourceVIUS2} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<short unsigned int, 2u> > >} {itkImageSourceVIUS2_Pointer} {itkImageSource}
+{itk::ImageSource<itk::VectorImage<short unsigned int, 3u> >} {itkImageSourceVIUS3} {itkImageSource}
+{itk::SmartPointer<itk::ImageSource<itk::VectorImage<short unsigned int, 3u> > >} {itkImageSourceVIUS3_Pointer} {itkImageSource}

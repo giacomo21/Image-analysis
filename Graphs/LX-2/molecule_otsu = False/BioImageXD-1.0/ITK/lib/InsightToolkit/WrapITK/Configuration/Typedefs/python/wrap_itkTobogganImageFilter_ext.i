@@ -1,0 +1,13 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterID3)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterID2)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIF3)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIF2)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUS3)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUS2)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUL3)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUL2)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUC3)
+DECLARE_REF_COUNT_CLASS(itkTobogganImageFilterIUC2)
+

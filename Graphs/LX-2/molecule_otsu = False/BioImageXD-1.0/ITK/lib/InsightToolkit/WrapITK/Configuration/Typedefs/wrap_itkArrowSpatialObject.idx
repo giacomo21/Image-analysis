@@ -1,0 +1,4 @@
+{itk::ArrowSpatialObject<2u>} {itkArrowSpatialObject2} {itkArrowSpatialObject}
+{itk::SmartPointer<itk::ArrowSpatialObject<2u> >} {itkArrowSpatialObject2_Pointer} {itkArrowSpatialObject}
+{itk::ArrowSpatialObject<3u>} {itkArrowSpatialObject3} {itkArrowSpatialObject}
+{itk::SmartPointer<itk::ArrowSpatialObject<3u> >} {itkArrowSpatialObject3_Pointer} {itkArrowSpatialObject}

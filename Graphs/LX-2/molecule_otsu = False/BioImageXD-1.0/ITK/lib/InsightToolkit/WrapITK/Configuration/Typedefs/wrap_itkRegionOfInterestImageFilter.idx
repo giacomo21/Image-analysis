@@ -1,0 +1,20 @@
+{itk::RegionOfInterestImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkRegionOfInterestImageFilterID2ID2} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkRegionOfInterestImageFilterID2ID2_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkRegionOfInterestImageFilterID3ID3} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkRegionOfInterestImageFilterID3ID3_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkRegionOfInterestImageFilterIF2IF2} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkRegionOfInterestImageFilterIF2IF2_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkRegionOfInterestImageFilterIF3IF3} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkRegionOfInterestImageFilterIF3IF3_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkRegionOfInterestImageFilterIUC2IUC2} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkRegionOfInterestImageFilterIUC2IUC2_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkRegionOfInterestImageFilterIUC3IUC3} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkRegionOfInterestImageFilterIUC3IUC3_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkRegionOfInterestImageFilterIUL2IUL2} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkRegionOfInterestImageFilterIUL2IUL2_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkRegionOfInterestImageFilterIUL3IUL3} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkRegionOfInterestImageFilterIUL3IUL3_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkRegionOfInterestImageFilterIUS2IUS2} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkRegionOfInterestImageFilterIUS2IUS2_Pointer} {itkRegionOfInterestImageFilter}
+{itk::RegionOfInterestImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkRegionOfInterestImageFilterIUS3IUS3} {itkRegionOfInterestImageFilter}
+{itk::SmartPointer<itk::RegionOfInterestImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkRegionOfInterestImageFilterIUS3IUS3_Pointer} {itkRegionOfInterestImageFilter}

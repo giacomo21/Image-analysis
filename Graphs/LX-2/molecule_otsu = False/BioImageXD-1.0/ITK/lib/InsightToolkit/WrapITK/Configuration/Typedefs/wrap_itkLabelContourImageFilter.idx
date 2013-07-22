@@ -1,0 +1,20 @@
+{itk::LabelContourImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkLabelContourImageFilterID2ID2} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkLabelContourImageFilterID2ID2_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkLabelContourImageFilterID3ID3} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkLabelContourImageFilterID3ID3_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkLabelContourImageFilterIF2IF2} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkLabelContourImageFilterIF2IF2_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkLabelContourImageFilterIF3IF3} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkLabelContourImageFilterIF3IF3_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkLabelContourImageFilterIUC2IUC2} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkLabelContourImageFilterIUC2IUC2_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkLabelContourImageFilterIUC3IUC3} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkLabelContourImageFilterIUC3IUC3_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkLabelContourImageFilterIUL2IUL2} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkLabelContourImageFilterIUL2IUL2_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkLabelContourImageFilterIUL3IUL3} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkLabelContourImageFilterIUL3IUL3_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkLabelContourImageFilterIUS2IUS2} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkLabelContourImageFilterIUS2IUS2_Pointer} {itkLabelContourImageFilter}
+{itk::LabelContourImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkLabelContourImageFilterIUS3IUS3} {itkLabelContourImageFilter}
+{itk::SmartPointer<itk::LabelContourImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkLabelContourImageFilterIUS3IUS3_Pointer} {itkLabelContourImageFilter}

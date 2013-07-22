@@ -1,0 +1,4 @@
+{itk::SceneSpatialObject<2u>} {itkSceneSpatialObject2} {itkSceneSpatialObject}
+{itk::SmartPointer<itk::SceneSpatialObject<2u> >} {itkSceneSpatialObject2_Pointer} {itkSceneSpatialObject}
+{itk::SceneSpatialObject<3u>} {itkSceneSpatialObject3} {itkSceneSpatialObject}
+{itk::SmartPointer<itk::SceneSpatialObject<3u> >} {itkSceneSpatialObject3_Pointer} {itkSceneSpatialObject}

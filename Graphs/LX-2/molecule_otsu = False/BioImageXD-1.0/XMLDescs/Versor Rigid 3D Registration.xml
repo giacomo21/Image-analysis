@@ -1,0 +1,17 @@
+<StaticBox label="Fixed image">
+    <br>
+    <BooleanInput id="UsePreviousAsFixed" label="Use previous time point as fixed image/>
+    <SliceSelection id="FixedTimepoint" label="Timepoint for fixed image"/>
+</StaticBox>
+<StaticBox label="">
+    <SliceSelection id="BackgroundPixelValue" label="Set background pixel value as"/>
+    <StaticBox label="Accuracy and speed settings">
+        <br>
+        <IntegerInput id="MaxIterations" label="Maximum iterations"/>
+        <br>
+        <FloatInput id="MaxStepLength" label="Maximum step length"/>
+        <br>
+        <FloatInput id="MinStepLength" label="Minimum step length"/>
+    </StaticBox>
+    <StaticBox label="">
+        <Choice id="RotateAround" label="Rotate around">/

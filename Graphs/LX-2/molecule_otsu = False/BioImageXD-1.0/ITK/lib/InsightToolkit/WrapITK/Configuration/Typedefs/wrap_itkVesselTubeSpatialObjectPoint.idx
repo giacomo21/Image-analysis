@@ -1,0 +1,2 @@
+{itk::VesselTubeSpatialObjectPoint<2u>} {itkVesselTubeSpatialObjectPoint2} {itkVesselTubeSpatialObjectPoint}
+{itk::VesselTubeSpatialObjectPoint<3u>} {itkVesselTubeSpatialObjectPoint3} {itkVesselTubeSpatialObjectPoint}

@@ -1,0 +1,8 @@
+{itk::ZeroCrossingImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkZeroCrossingImageFilterID2ID2} {itkZeroCrossingImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkZeroCrossingImageFilterID2ID2_Pointer} {itkZeroCrossingImageFilter}
+{itk::ZeroCrossingImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkZeroCrossingImageFilterID3ID3} {itkZeroCrossingImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkZeroCrossingImageFilterID3ID3_Pointer} {itkZeroCrossingImageFilter}
+{itk::ZeroCrossingImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkZeroCrossingImageFilterIF2IF2} {itkZeroCrossingImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkZeroCrossingImageFilterIF2IF2_Pointer} {itkZeroCrossingImageFilter}
+{itk::ZeroCrossingImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkZeroCrossingImageFilterIF3IF3} {itkZeroCrossingImageFilter}
+{itk::SmartPointer<itk::ZeroCrossingImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkZeroCrossingImageFilterIF3IF3_Pointer} {itkZeroCrossingImageFilter}

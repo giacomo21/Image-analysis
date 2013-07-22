@@ -1,0 +1,20 @@
+{itk::ImageSpatialObject<2u,double>} {itkImageSpatialObject2D} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<2u, double> >} {itkImageSpatialObject2D_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<2u,float>} {itkImageSpatialObject2F} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<2u, float> >} {itkImageSpatialObject2F_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<2u,unsigned char>} {itkImageSpatialObject2UC} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<2u, unsigned char> >} {itkImageSpatialObject2UC_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<2u,long unsigned int>} {itkImageSpatialObject2UL} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<2u, long unsigned int> >} {itkImageSpatialObject2UL_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<2u,short unsigned int>} {itkImageSpatialObject2US} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<2u, short unsigned int> >} {itkImageSpatialObject2US_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<3u,double>} {itkImageSpatialObject3D} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<3u, double> >} {itkImageSpatialObject3D_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<3u,float>} {itkImageSpatialObject3F} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<3u, float> >} {itkImageSpatialObject3F_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<3u,unsigned char>} {itkImageSpatialObject3UC} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<3u, unsigned char> >} {itkImageSpatialObject3UC_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<3u,long unsigned int>} {itkImageSpatialObject3UL} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<3u, long unsigned int> >} {itkImageSpatialObject3UL_Pointer} {itkImageSpatialObject}
+{itk::ImageSpatialObject<3u,short unsigned int>} {itkImageSpatialObject3US} {itkImageSpatialObject}
+{itk::SmartPointer<itk::ImageSpatialObject<3u, short unsigned int> >} {itkImageSpatialObject3US_Pointer} {itkImageSpatialObject}

@@ -1,0 +1,20 @@
+{itk::SpeckleNoiseImageFilter<itk::Image<double, 2u>,itk::Image<double, 2u> >} {itkSpeckleNoiseImageFilterID2ID2} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<double, 2u>, itk::Image<double, 2u> > >} {itkSpeckleNoiseImageFilterID2ID2_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<double, 3u>,itk::Image<double, 3u> >} {itkSpeckleNoiseImageFilterID3ID3} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<double, 3u>, itk::Image<double, 3u> > >} {itkSpeckleNoiseImageFilterID3ID3_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<float, 2u>,itk::Image<float, 2u> >} {itkSpeckleNoiseImageFilterIF2IF2} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<float, 2u>, itk::Image<float, 2u> > >} {itkSpeckleNoiseImageFilterIF2IF2_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<float, 3u>,itk::Image<float, 3u> >} {itkSpeckleNoiseImageFilterIF3IF3} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u> > >} {itkSpeckleNoiseImageFilterIF3IF3_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkSpeckleNoiseImageFilterIUC2IUC2} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkSpeckleNoiseImageFilterIUC2IUC2_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkSpeckleNoiseImageFilterIUC3IUC3} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkSpeckleNoiseImageFilterIUC3IUC3_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkSpeckleNoiseImageFilterIUL2IUL2} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkSpeckleNoiseImageFilterIUL2IUL2_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkSpeckleNoiseImageFilterIUL3IUL3} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkSpeckleNoiseImageFilterIUL3IUL3_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkSpeckleNoiseImageFilterIUS2IUS2} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkSpeckleNoiseImageFilterIUS2IUS2_Pointer} {itkSpeckleNoiseImageFilter}
+{itk::SpeckleNoiseImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkSpeckleNoiseImageFilterIUS3IUS3} {itkSpeckleNoiseImageFilter}
+{itk::SmartPointer<itk::SpeckleNoiseImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkSpeckleNoiseImageFilterIUS3IUS3_Pointer} {itkSpeckleNoiseImageFilter}

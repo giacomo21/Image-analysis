@@ -1,0 +1,2 @@
+{itk::QuadEdgeMeshTraits<double,2u,bool,bool,float,float>} {itkQuadEdgeMeshTraitsD2BBFF} {itkQuadEdgeMeshTraits}
+{itk::QuadEdgeMeshTraits<double,3u,bool,bool,float,float>} {itkQuadEdgeMeshTraitsD3BBFF} {itkQuadEdgeMeshTraits}

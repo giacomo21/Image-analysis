@@ -1,0 +1,4 @@
+{itk::Statistics::HistogramToRunLengthFeaturesFilter<itk::Statistics::Histogram<double, itk::Statistics::DenseFrequencyContainer2> >} {itkHistogramToRunLengthFeaturesFilterHD} {itkHistogramToRunLengthFeaturesFilter}
+{itk::SmartPointer<itk::Statistics::HistogramToRunLengthFeaturesFilter<itk::Statistics::Histogram<double, itk::Statistics::DenseFrequencyContainer2> > >} {itkHistogramToRunLengthFeaturesFilterHD_Pointer} {itkHistogramToRunLengthFeaturesFilter}
+{itk::Statistics::HistogramToRunLengthFeaturesFilter<itk::Statistics::Histogram<float, itk::Statistics::DenseFrequencyContainer2> >} {itkHistogramToRunLengthFeaturesFilterHF} {itkHistogramToRunLengthFeaturesFilter}
+{itk::SmartPointer<itk::Statistics::HistogramToRunLengthFeaturesFilter<itk::Statistics::Histogram<float, itk::Statistics::DenseFrequencyContainer2> > >} {itkHistogramToRunLengthFeaturesFilterHF_Pointer} {itkHistogramToRunLengthFeaturesFilter}

@@ -1,0 +1,8 @@
+{itk::BoundingBox<long unsigned int,2,double,itk::MapContainer<long unsigned int, itk::Point<double, 2u> > >} {itkBoundingBoxUL2DMCULPD2} {itkBoundingBox}
+{itk::SmartPointer<itk::BoundingBox<long unsigned int, 2, double, itk::MapContainer<long unsigned int, itk::Point<double, 2u> > > >} {itkBoundingBoxUL2DMCULPD2_Pointer} {itkBoundingBox}
+{itk::BoundingBox<long unsigned int,2,double,itk::VectorContainer<long unsigned int, itk::Point<double, 2u> > >} {itkBoundingBoxUL2DVCULPD2} {itkBoundingBox}
+{itk::SmartPointer<itk::BoundingBox<long unsigned int, 2, double, itk::VectorContainer<long unsigned int, itk::Point<double, 2u> > > >} {itkBoundingBoxUL2DVCULPD2_Pointer} {itkBoundingBox}
+{itk::BoundingBox<long unsigned int,3,double,itk::MapContainer<long unsigned int, itk::Point<double, 3u> > >} {itkBoundingBoxUL3DMCULPD3} {itkBoundingBox}
+{itk::SmartPointer<itk::BoundingBox<long unsigned int, 3, double, itk::MapContainer<long unsigned int, itk::Point<double, 3u> > > >} {itkBoundingBoxUL3DMCULPD3_Pointer} {itkBoundingBox}
+{itk::BoundingBox<long unsigned int,3,double,itk::VectorContainer<long unsigned int, itk::Point<double, 3u> > >} {itkBoundingBoxUL3DVCULPD3} {itkBoundingBox}
+{itk::SmartPointer<itk::BoundingBox<long unsigned int, 3, double, itk::VectorContainer<long unsigned int, itk::Point<double, 3u> > > >} {itkBoundingBoxUL3DVCULPD3_Pointer} {itkBoundingBox}

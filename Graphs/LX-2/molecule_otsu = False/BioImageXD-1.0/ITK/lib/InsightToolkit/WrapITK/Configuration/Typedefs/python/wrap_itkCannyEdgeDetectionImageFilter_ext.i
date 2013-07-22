@@ -1,0 +1,7 @@
+%import wrap_pyBase.i
+
+DECLARE_REF_COUNT_CLASS(itkCannyEdgeDetectionImageFilterID3ID3)
+DECLARE_REF_COUNT_CLASS(itkCannyEdgeDetectionImageFilterID2ID2)
+DECLARE_REF_COUNT_CLASS(itkCannyEdgeDetectionImageFilterIF3IF3)
+DECLARE_REF_COUNT_CLASS(itkCannyEdgeDetectionImageFilterIF2IF2)
+

@@ -1,0 +1,4 @@
+{itk::Array<double>} {itkArrayD} {itkArray}
+{itk::Array<float>} {itkArrayF} {itkArray}
+{itk::Array<long int>} {itkArraySL} {itkArray}
+{itk::Array<long unsigned int>} {itkArrayUL} {itkArray}

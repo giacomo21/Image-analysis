@@ -1,0 +1,34 @@
+{itk::FunctionBase<itk::ContinuousIndex<double, 2u>,itk::Array<double> >} {itkFunctionBaseCID2AD} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::ContinuousIndex<double, 2u>, itk::Array<double> > >} {itkFunctionBaseCID2AD_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::ContinuousIndex<double, 3u>,itk::Array<double> >} {itkFunctionBaseCID3AD} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::ContinuousIndex<double, 3u>, itk::Array<double> > >} {itkFunctionBaseCID3AD_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::ContinuousIndex<float, 2u>,itk::Array<double> >} {itkFunctionBaseCIF2AD} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::ContinuousIndex<float, 2u>, itk::Array<double> > >} {itkFunctionBaseCIF2AD_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::ContinuousIndex<float, 3u>,itk::Array<double> >} {itkFunctionBaseCIF3AD} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::ContinuousIndex<float, 3u>, itk::Array<double> > >} {itkFunctionBaseCIF3AD_Pointer} {itkFunctionBase}
+{itk::FunctionBase<double,double>} {itkFunctionBaseDD} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<double, double> >} {itkFunctionBaseDD_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Image<float, 2u>,double>} {itkFunctionBaseIF2D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Image<float, 2u>, double> >} {itkFunctionBaseIF2D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Image<float, 3u>,double>} {itkFunctionBaseIF3D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Image<float, 3u>, double> >} {itkFunctionBaseIF3D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Image<short unsigned int, 2u>,double>} {itkFunctionBaseIUS2D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Image<short unsigned int, 2u>, double> >} {itkFunctionBaseIUS2D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Image<short unsigned int, 3u>,double>} {itkFunctionBaseIUS3D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Image<short unsigned int, 3u>, double> >} {itkFunctionBaseIUS3D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<double, 2u>,double>} {itkFunctionBasePD2D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<double, 2u>, double> >} {itkFunctionBasePD2D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<double, 2u>,itk::Vector<double, 2u> >} {itkFunctionBasePD2VD2} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<double, 2u>, itk::Vector<double, 2u> > >} {itkFunctionBasePD2VD2_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<double, 3u>,double>} {itkFunctionBasePD3D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<double, 3u>, double> >} {itkFunctionBasePD3D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<double, 3u>,itk::Vector<double, 3u> >} {itkFunctionBasePD3VD3} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<double, 3u>, itk::Vector<double, 3u> > >} {itkFunctionBasePD3VD3_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<float, 2u>,double>} {itkFunctionBasePF2D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<float, 2u>, double> >} {itkFunctionBasePF2D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Point<float, 3u>,double>} {itkFunctionBasePF3D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Point<float, 3u>, double> >} {itkFunctionBasePF3D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Vector<float, 2u>,double>} {itkFunctionBaseVF2D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Vector<float, 2u>, double> >} {itkFunctionBaseVF2D_Pointer} {itkFunctionBase}
+{itk::FunctionBase<itk::Vector<float, 3u>,double>} {itkFunctionBaseVF3D} {itkFunctionBase}
+{itk::SmartPointer<itk::FunctionBase<itk::Vector<float, 3u>, double> >} {itkFunctionBaseVF3D_Pointer} {itkFunctionBase}

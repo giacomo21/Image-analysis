@@ -1,0 +1,2 @@
+{itk::Array2D<double>} {itkArray2DD} {itkArray2D}
+{itk::Array2D<unsigned int>} {itkArray2DUI} {itkArray2D}

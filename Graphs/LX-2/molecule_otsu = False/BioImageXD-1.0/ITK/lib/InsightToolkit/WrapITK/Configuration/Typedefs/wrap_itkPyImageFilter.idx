@@ -1,0 +1,12 @@
+{itk::PyImageFilter<itk::Image<unsigned char, 2u>,itk::Image<unsigned char, 2u> >} {itkPyImageFilterIUC2IUC2} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<unsigned char, 2u>, itk::Image<unsigned char, 2u> > >} {itkPyImageFilterIUC2IUC2_Pointer} {itkPyImageFilter}
+{itk::PyImageFilter<itk::Image<unsigned char, 3u>,itk::Image<unsigned char, 3u> >} {itkPyImageFilterIUC3IUC3} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<unsigned char, 3u>, itk::Image<unsigned char, 3u> > >} {itkPyImageFilterIUC3IUC3_Pointer} {itkPyImageFilter}
+{itk::PyImageFilter<itk::Image<long unsigned int, 2u>,itk::Image<long unsigned int, 2u> >} {itkPyImageFilterIUL2IUL2} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<long unsigned int, 2u>, itk::Image<long unsigned int, 2u> > >} {itkPyImageFilterIUL2IUL2_Pointer} {itkPyImageFilter}
+{itk::PyImageFilter<itk::Image<long unsigned int, 3u>,itk::Image<long unsigned int, 3u> >} {itkPyImageFilterIUL3IUL3} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<long unsigned int, 3u>, itk::Image<long unsigned int, 3u> > >} {itkPyImageFilterIUL3IUL3_Pointer} {itkPyImageFilter}
+{itk::PyImageFilter<itk::Image<short unsigned int, 2u>,itk::Image<short unsigned int, 2u> >} {itkPyImageFilterIUS2IUS2} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<short unsigned int, 2u>, itk::Image<short unsigned int, 2u> > >} {itkPyImageFilterIUS2IUS2_Pointer} {itkPyImageFilter}
+{itk::PyImageFilter<itk::Image<short unsigned int, 3u>,itk::Image<short unsigned int, 3u> >} {itkPyImageFilterIUS3IUS3} {itkPyImageFilter}
+{itk::SmartPointer<itk::PyImageFilter<itk::Image<short unsigned int, 3u>, itk::Image<short unsigned int, 3u> > >} {itkPyImageFilterIUS3IUS3_Pointer} {itkPyImageFilter}
